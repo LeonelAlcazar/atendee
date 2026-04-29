@@ -1,0 +1,190 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "atende — inicio" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: atende.
+      - navigation [ref=e5]:
+        - link "Servicios" [ref=e6] [cursor=pointer]:
+          - /url: /servicios
+        - link "Casos de uso" [ref=e7] [cursor=pointer]:
+          - /url: /casos-de-uso
+        - link "FAQ" [ref=e8] [cursor=pointer]:
+          - /url: /#faq
+      - link "Hablar por WhatsApp" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20atende.com.ar%20y%20quiero%20saber%20m%C3%A1s
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: WHATSAPP BUSINESS · ARGENTINA
+        - heading "Tu negocio atendido mientras dormís." [level=1] [ref=e16]
+        - paragraph [ref=e17]: Bots de atención, turnos y ventas por WhatsApp para PyMEs argentinas. Sin apps, sin contratos, sin que tus clientes aprendan nada nuevo.
+        - generic [ref=e18]:
+          - link "Hablar por WhatsApp" [ref=e19] [cursor=pointer]:
+            - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20atende.com.ar%20y%20quiero%20saber%20m%C3%A1s
+          - link "Ver cómo funciona" [ref=e20] [cursor=pointer]:
+            - /url: "#como-funciona"
+        - list [ref=e21]:
+          - listitem [ref=e22]: Sin instalación
+          - listitem [ref=e24]: Sin contratos
+          - listitem [ref=e26]: Setup en 48h
+          - listitem [ref=e28]: Soporte humano
+      - img "Ejemplo de conversación de WhatsApp" [ref=e31]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: atende
+          - generic [ref=e36]: en línea
+        - generic [ref=e37]:
+          - generic [ref=e39]: ¿Atienden hoy?
+          - generic [ref=e41]: Hola! Sí, hasta las 20hs. ¿En qué te ayudo?
+          - generic [ref=e43]: Quiero turno para mañana
+          - generic [ref=e45]: Tengo 11hs o 16:30. ¿Cuál preferís?
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Qué hacemos
+        - heading "Tres formas de automatizar tu WhatsApp." [level=2] [ref=e50]
+        - paragraph [ref=e51]: Cada una resuelve un problema distinto. Podés elegir uno, dos o los tres.
+      - generic [ref=e52]:
+        - link "01 Atención automática Respondé las preguntas frecuentes 24/7, sin tener a alguien siempre conectado. Ver detalles →" [ref=e53] [cursor=pointer]:
+          - /url: /servicios#atencion
+          - generic [ref=e55]:
+            - generic [ref=e56]: "01"
+            - heading "Atención automática" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Respondé las preguntas frecuentes 24/7, sin tener a alguien siempre conectado.
+            - generic [ref=e59]: Ver detalles →
+        - link "02 Turnos por WhatsApp Tus clientes piden turno por chat. Vos lo ves en tu calendario. Ver detalles →" [ref=e60] [cursor=pointer]:
+          - /url: /servicios#turnos
+          - generic [ref=e62]:
+            - generic [ref=e63]: "02"
+            - heading "Turnos por WhatsApp" [level=3] [ref=e64]
+            - paragraph [ref=e65]: Tus clientes piden turno por chat. Vos lo ves en tu calendario.
+            - generic [ref=e66]: Ver detalles →
+        - link "03 Ventas y seguimiento Convertí consultas en ventas y recuperá las que se enfrían. Ver detalles →" [ref=e67] [cursor=pointer]:
+          - /url: /servicios#ventas
+          - generic [ref=e69]:
+            - generic [ref=e70]: "03"
+            - heading "Ventas y seguimiento" [level=3] [ref=e71]
+            - paragraph [ref=e72]: Convertí consultas en ventas y recuperá las que se enfrían.
+            - generic [ref=e73]: Ver detalles →
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]: Cómo funciona
+        - heading "De charla informal a bot funcionando en 48hs." [level=2] [ref=e78]
+      - list [ref=e79]:
+        - listitem [ref=e80]:
+          - generic [ref=e81]: "01"
+          - heading "Charlamos" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Te conocemos, vemos tu volumen actual y qué necesitás resolver.
+        - listitem [ref=e84]:
+          - generic [ref=e85]: "02"
+          - heading "Diseñamos el flujo" [level=3] [ref=e86]
+          - paragraph [ref=e87]: Armamos los mensajes, las preguntas, las derivaciones. Lo aprobás vos.
+        - listitem [ref=e88]:
+          - generic [ref=e89]: "03"
+          - heading "Conectamos tu WhatsApp" [level=3] [ref=e90]
+          - paragraph [ref=e91]: Configuramos WhatsApp Business API con Meta. Tu número, tu marca.
+        - listitem [ref=e92]:
+          - generic [ref=e93]: "04"
+          - heading "Mejoramos con datos" [level=3] [ref=e94]
+          - paragraph [ref=e95]: Cada mes vemos qué se resuelve solo, qué no, y ajustamos.
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - generic [ref=e99]: Por qué atende
+        - heading "Menos consultas que respondés vos. Más ventas que cierran solas." [level=2] [ref=e100]
+      - list [ref=e101]:
+        - listitem [ref=e102]:
+          - generic [ref=e103]: +0%
+          - paragraph [ref=e104]: Consultas resueltas sin humano
+        - listitem [ref=e105]:
+          - generic [ref=e106]: "-0%"
+          - paragraph [ref=e107]: Tiempo promedio de respuesta
+        - listitem [ref=e108]:
+          - generic [ref=e109]: 0/7
+          - paragraph [ref=e110]: Atención sin pausa
+      - paragraph [ref=e111]: "* Cifras estimadas basadas en clientes actuales. Tus resultados varían según volumen y rubro."
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - generic [ref=e115]: Casos de uso
+        - heading "Funciona en cualquier rubro donde tus clientes ya te escriben." [level=2] [ref=e116]
+      - list [ref=e117]:
+        - listitem [ref=e118]:
+          - generic [ref=e119]: Para
+          - heading "Clínicas y consultorios" [level=3] [ref=e120]
+          - paragraph [ref=e121]: Las recepcionistas pasan el día respondiendo "¿a qué hora atienden?" y "¿tienen turno para esta semana?".
+        - listitem [ref=e122]:
+          - generic [ref=e123]: Para
+          - heading "Peluquerías y estéticas" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Pierden turnos porque nadie atiende durante un servicio. La agenda en papel genera dobles reservas.
+        - listitem [ref=e126]:
+          - generic [ref=e127]: Para
+          - heading "Inmobiliarias" [level=3] [ref=e128]
+          - paragraph [ref=e129]: Cada consulta requiere mandar fotos, ficha técnica, dirección. Los corredores responden lo mismo 20 veces por día.
+        - listitem [ref=e130]:
+          - generic [ref=e131]: Para
+          - heading "Comercios de barrio" [level=3] [ref=e132]
+          - paragraph [ref=e133]: No tienen tiempo para responder mientras atienden el local. Los pedidos por WhatsApp se mezclan con todo lo demás.
+      - link "Ver todos los casos →" [ref=e135] [cursor=pointer]:
+        - /url: /casos-de-uso
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]: Preguntas frecuentes
+        - heading "Lo que más nos preguntan." [level=2] [ref=e140]
+      - list [ref=e141]:
+        - listitem [ref=e142]:
+          - group [ref=e143]:
+            - generic "¿Necesito WhatsApp Business API?" [ref=e144] [cursor=pointer]:
+              - generic [ref=e145]: ¿Necesito WhatsApp Business API?
+              - img [ref=e146]
+        - listitem [ref=e147]:
+          - group [ref=e148]:
+            - generic "¿Pierdo el control de mi número?" [ref=e149] [cursor=pointer]:
+              - generic [ref=e150]: ¿Pierdo el control de mi número?
+              - img [ref=e151]
+        - listitem [ref=e152]:
+          - group [ref=e153]:
+            - generic "¿Cuánto tarda el setup?" [ref=e154] [cursor=pointer]:
+              - generic [ref=e155]: ¿Cuánto tarda el setup?
+              - img [ref=e156]
+        - listitem [ref=e157]:
+          - group [ref=e158]:
+            - generic "¿Funciona con mi sistema de turnos actual?" [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]: ¿Funciona con mi sistema de turnos actual?
+              - img [ref=e161]
+        - listitem [ref=e162]:
+          - group [ref=e163]:
+            - generic "¿Qué pasa si un cliente quiere hablar con una persona?" [ref=e164] [cursor=pointer]:
+              - generic [ref=e165]: ¿Qué pasa si un cliente quiere hablar con una persona?
+              - img [ref=e166]
+        - listitem [ref=e167]:
+          - group [ref=e168]:
+            - generic "¿Cuánto cuesta?" [ref=e169] [cursor=pointer]:
+              - generic [ref=e170]: ¿Cuánto cuesta?
+              - img [ref=e171]
+    - generic [ref=e173]:
+      - heading "Empezá hoy." [level=2] [ref=e174]
+      - paragraph [ref=e175]: Charlamos por WhatsApp, vemos qué necesitás y te pasamos un presupuesto a medida en el día.
+      - link "Hablar por WhatsApp" [ref=e176] [cursor=pointer]:
+        - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20atende.com.ar%20y%20quiero%20saber%20m%C3%A1s
+      - paragraph [ref=e177]: Te respondemos en minutos, en horario comercial.
+  - contentinfo [ref=e178]:
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - generic [ref=e181]: atende.
+        - paragraph [ref=e182]: Bots de atención, turnos y ventas por WhatsApp para PyMEs argentinas.
+        - link "Hablar por WhatsApp" [ref=e183] [cursor=pointer]:
+          - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20el%20footer%20de%20atende.com.ar
+      - generic [ref=e184]:
+        - generic [ref=e185]: Navegación
+        - link "Inicio" [ref=e186] [cursor=pointer]:
+          - /url: /
+        - link "Servicios" [ref=e187] [cursor=pointer]:
+          - /url: /servicios
+        - link "Casos de uso" [ref=e188] [cursor=pointer]:
+          - /url: /casos-de-uso
+      - generic [ref=e189]:
+        - generic [ref=e190]: Contacto
+        - link "WhatsApp · +54 351 290 1337" [ref=e191] [cursor=pointer]:
+          - /url: https://wa.me/543512901337
+        - link "hola@atende.com.ar" [ref=e192] [cursor=pointer]:
+          - /url: mailto:hola@atende.com.ar
+        - generic [ref=e193]: Córdoba, Argentina
+    - generic [ref=e195]: atende · Córdoba, Argentina · 2026

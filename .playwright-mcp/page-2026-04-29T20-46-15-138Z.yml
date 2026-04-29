@@ -1,0 +1,45 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "atende — inicio" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: atende.
+      - navigation [ref=e5]:
+        - link "Servicios" [ref=e6] [cursor=pointer]:
+          - /url: /servicios
+        - link "Casos de uso" [ref=e7] [cursor=pointer]:
+          - /url: /casos-de-uso
+        - link "FAQ" [ref=e8] [cursor=pointer]:
+          - /url: /#faq
+      - link "Hablar por WhatsApp" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20atende.com.ar%20y%20quiero%20saber%20m%C3%A1s
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: Error 404
+      - heading "No atendemos esto." [level=1] [ref=e15]
+      - paragraph [ref=e16]: La página que buscás no existe — o ya no existe. Volvé al inicio o escribinos.
+      - link "Volver al inicio" [ref=e18] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: atende.
+        - paragraph [ref=e23]: Bots de atención, turnos y ventas por WhatsApp para PyMEs argentinas.
+        - link "Hablar por WhatsApp" [ref=e24] [cursor=pointer]:
+          - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20el%20footer%20de%20atende.com.ar
+      - generic [ref=e25]:
+        - generic [ref=e26]: Navegación
+        - link "Inicio" [ref=e27] [cursor=pointer]:
+          - /url: /
+        - link "Servicios" [ref=e28] [cursor=pointer]:
+          - /url: /servicios
+        - link "Casos de uso" [ref=e29] [cursor=pointer]:
+          - /url: /casos-de-uso
+      - generic [ref=e30]:
+        - generic [ref=e31]: Contacto
+        - link "WhatsApp · +54 351 290 1337" [ref=e32] [cursor=pointer]:
+          - /url: https://wa.me/543512901337
+        - link "hola@atende.com.ar" [ref=e33] [cursor=pointer]:
+          - /url: mailto:hola@atende.com.ar
+        - generic [ref=e34]: Córdoba, Argentina
+    - generic [ref=e36]: atende · Córdoba, Argentina · 2026

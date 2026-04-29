@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "atende — inicio" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - text: atende.
+      - navigation [ref=e5]:
+        - link "Servicios" [ref=e6] [cursor=pointer]:
+          - /url: /servicios
+        - link "Casos de uso" [ref=e7] [cursor=pointer]:
+          - /url: /casos-de-uso
+        - link "FAQ" [ref=e8] [cursor=pointer]:
+          - /url: /#faq
+      - link "Hablar por WhatsApp" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20atende.com.ar%20y%20quiero%20saber%20m%C3%A1s
+  - main [ref=e11]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Casos de uso
+      - 'heading "Distintos rubros, la misma idea: que tu WhatsApp trabaje sin vos." [level=2] [ref=e16]'
+      - paragraph [ref=e17]: Cuatro ejemplos de cómo se ve atende en negocios reales. Si tu rubro no está, lo armamos a medida.
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Caso
+        - heading "Clínicas y consultorios" [level=2] [ref=e23]
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - text: Problema
+            - paragraph [ref=e26]: Las recepcionistas pasan el día respondiendo "¿a qué hora atienden?" y "¿tienen turno para esta semana?".
+          - generic [ref=e27]:
+            - text: Cómo lo resolvemos
+            - paragraph [ref=e28]: atende responde horarios, da turnos y manda recordatorios. La recepción atiende solo lo que necesita atención humana.
+      - img "Ejemplo de conversación de WhatsApp" [ref=e30]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: atende
+          - generic [ref=e35]: en línea
+        - generic [ref=e36]:
+          - generic [ref=e38]: ¿Atienden obra social Galeno?
+          - generic [ref=e40]: Sí, atendemos Galeno. ¿Querés que te dé turno?
+          - generic [ref=e42]: Sí, con la Dra. López
+          - generic [ref=e44]: Tengo martes 10:30 o jueves 15:00.
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Caso
+        - heading "Peluquerías y estéticas" [level=2] [ref=e50]
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - text: Problema
+            - paragraph [ref=e53]: Pierden turnos porque nadie atiende durante un servicio. La agenda en papel genera dobles reservas.
+          - generic [ref=e54]:
+            - text: Cómo lo resolvemos
+            - paragraph [ref=e55]: El bot toma turnos durante el horario de trabajo y manda recordatorio el día anterior. Sin doble reserva, sin huecos.
+      - img "Ejemplo de conversación de WhatsApp" [ref=e57]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: atende
+          - generic [ref=e62]: en línea
+        - generic [ref=e63]:
+          - generic [ref=e65]: Hola, para corte y color
+          - generic [ref=e67]: Buenísimo! ¿Qué día te queda?
+          - generic [ref=e69]: Sábado
+          - generic [ref=e71]: Tenemos 11hs o 14:30. Color demora ~2hs.
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]: Caso
+        - heading "Inmobiliarias" [level=2] [ref=e77]
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - text: Problema
+            - paragraph [ref=e80]: Cada consulta requiere mandar fotos, ficha técnica, dirección. Los corredores responden lo mismo 20 veces por día.
+          - generic [ref=e81]:
+            - text: Cómo lo resolvemos
+            - paragraph [ref=e82]: atende manda automáticamente toda la info de la propiedad consultada y agenda visitas. El corredor entra solo cuando hay interés real.
+      - img "Ejemplo de conversación de WhatsApp" [ref=e84]:
+        - generic [ref=e87]:
+          - generic [ref=e88]: atende
+          - generic [ref=e89]: en línea
+        - generic [ref=e90]:
+          - generic [ref=e92]: Hola, ví el depto de Nueva Córdoba
+          - generic [ref=e94]: Te paso ficha + fotos 📎
+          - generic [ref=e96]: ¿Te interesa coordinar visita?
+          - generic [ref=e98]: Sí, sábado a la tarde
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]: Caso
+        - heading "Comercios de barrio" [level=2] [ref=e104]
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - text: Problema
+            - paragraph [ref=e107]: No tienen tiempo para responder mientras atienden el local. Los pedidos por WhatsApp se mezclan con todo lo demás.
+          - generic [ref=e108]:
+            - text: Cómo lo resolvemos
+            - paragraph [ref=e109]: El bot toma pedidos, calcula totales y avisa cuando están listos. El comercio ve solo el pedido cerrado, no el ida y vuelta.
+      - img "Ejemplo de conversación de WhatsApp" [ref=e111]:
+        - generic [ref=e114]:
+          - generic [ref=e115]: atende
+          - generic [ref=e116]: en línea
+        - generic [ref=e117]:
+          - generic [ref=e119]: Hola, quiero hacer un pedido
+          - generic [ref=e121]: Dale! ¿Qué necesitás?
+          - generic [ref=e123]: 2 docenas de empanadas, mitad carne mitad pollo
+          - generic [ref=e125]: ✅ $X. Listo en 25 min. ¿Pasás a buscar o delivery?
+    - generic [ref=e127]:
+      - heading "¿No ves tu rubro? Lo armamos a medida." [level=2] [ref=e128]
+      - link "Hablar por WhatsApp" [ref=e129] [cursor=pointer]:
+        - /url: https://wa.me/543512901337?text=Hola%2C%20mi%20rubro%20no%20est%C3%A1%20en%20los%20casos%20pero%20quiero%20saber%20si%20me%20sirve
+  - contentinfo [ref=e130]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]: atende.
+        - paragraph [ref=e134]: Bots de atención, turnos y ventas por WhatsApp para PyMEs argentinas.
+        - link "Hablar por WhatsApp" [ref=e135] [cursor=pointer]:
+          - /url: https://wa.me/543512901337?text=Hola%2C%20vi%20el%20footer%20de%20atende.com.ar
+      - generic [ref=e136]:
+        - generic [ref=e137]: Navegación
+        - link "Inicio" [ref=e138] [cursor=pointer]:
+          - /url: /
+        - link "Servicios" [ref=e139] [cursor=pointer]:
+          - /url: /servicios
+        - link "Casos de uso" [ref=e140] [cursor=pointer]:
+          - /url: /casos-de-uso
+      - generic [ref=e141]:
+        - generic [ref=e142]: Contacto
+        - link "WhatsApp · +54 351 290 1337" [ref=e143] [cursor=pointer]:
+          - /url: https://wa.me/543512901337
+        - link "hola@atende.com.ar" [ref=e144] [cursor=pointer]:
+          - /url: mailto:hola@atende.com.ar
+        - generic [ref=e145]: Córdoba, Argentina
+    - generic [ref=e147]: atende · Córdoba, Argentina · 2026
