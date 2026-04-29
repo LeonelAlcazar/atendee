@@ -8,10 +8,13 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 function Counter({ to }: { to: number }) {
   const ref = React.useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.6 });
-  const [val, setVal] = React.useState(0);
+  const [val, setVal] = React.useState(to);
+  const animated = React.useRef(false);
 
   React.useEffect(() => {
-    if (!inView) return;
+    if (!inView || animated.current) return;
+    animated.current = true;
+    setVal(0);
     const controls = animate(0, to, {
       duration: 1.4,
       ease: 'easeOut',
