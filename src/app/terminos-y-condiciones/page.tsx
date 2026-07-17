@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
 import { LegalDocument } from '@/components/legal/LegalDocument';
 import { site } from '@/content/site';
+import { createPageMetadata } from '@/lib/metadata';
 
 const lastUpdated = '26 de junio de 2026';
 const linkClass = 'underline underline-offset-4 hover:text-coral';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: 'Términos y condiciones',
   description:
     'Términos y condiciones de uso y contratación de atende para clientes y usuarios en Argentina.',
-  alternates: {
-    canonical: '/terminos-y-condiciones',
-  },
-};
+  path: '/terminos-y-condiciones',
+});
 
 const sections = [
   {

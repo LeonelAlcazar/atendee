@@ -1,10 +1,11 @@
 export const site = {
   name: 'atende',
   domain: 'atende.com.ar',
-  url: 'https://atende.com.ar',
-  tagline: 'Tu negocio atendido mientras dormís.',
+  url: 'https://www.atende.com.ar',
+  appUrl: 'https://app.atende.com.ar',
+  tagline: 'Tu negocio atendido, incluso cuando vos no estás.',
   description:
-    'Bots de atención, turnos y ventas por WhatsApp para PyMEs argentinas. Sin apps, sin contratos, sin que tus clientes aprendan nada nuevo.',
+    'Atende responde consultas por WhatsApp, ordena las conversaciones y deja a tu equipo tomar el control cuando hace falta.',
   whatsapp: {
     number: '543512901337',
     display: '+54 351 290 1337',
@@ -13,9 +14,9 @@ export const site = {
   location: 'Córdoba, Argentina',
   legalName: 'atende',
   trustStrip: [
-    'Sin instalación',
-    'Sin contratos',
-    'Setup en 48h',
+    'Conectás con QR',
+    'Tu número sigue siendo tuyo',
+    'Tu equipo puede intervenir',
     'Soporte humano',
   ] as const,
 } as const;

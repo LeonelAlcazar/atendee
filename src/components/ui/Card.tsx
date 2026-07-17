@@ -14,11 +14,11 @@ export function Card({
 }: CardProps) {
   const padding = padded ? 'p-8 md:p-10' : '';
   const hoverFx = hover
-    ? 'transition-transform duration-150 hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[var(--shadow-brut-lg)]'
+    ? 'transition-[transform,box-shadow,background-color] duration-150 hover:translate-x-[-3px] hover:translate-y-[-3px] hover:bg-surface hover:shadow-[var(--shadow-brut-lg)]'
     : '';
   return (
     <div
-      className={`bg-bg border-2 border-ink shadow-[var(--shadow-brut)] ${padding} ${hoverFx} ${className}`}
+      className={`rounded-lg border-2 border-ink bg-surface shadow-[var(--shadow-brut)] ${padding} ${hoverFx} ${className}`}
       {...rest}
     >
       {children}

@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
 import { LegalDocument } from '@/components/legal/LegalDocument';
 import { site } from '@/content/site';
+import { createPageMetadata } from '@/lib/metadata';
 
 const lastUpdated = '26 de junio de 2026';
 const linkClass = 'underline underline-offset-4 hover:text-coral';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: 'Política de privacidad',
   description:
     'Política de privacidad de atende para el tratamiento de datos personales en Argentina.',
-  alternates: {
-    canonical: '/politica-de-privacidad',
-  },
-};
+  path: '/politica-de-privacidad',
+});
 
 const sections = [
   {

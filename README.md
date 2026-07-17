@@ -1,15 +1,19 @@
 # atende.com.ar
 
-Static marketing site for atende — WhatsApp automation for Argentinian PyMEs.
+Static marketing site for Atende, the WhatsApp automation and shared-inbox product for Argentine businesses.
+
+The public site lives at `https://www.atende.com.ar`. Account entry and guided onboarding live at `https://app.atende.com.ar`.
 
 ## Stack
 
-- Next.js 15 (App Router) with `output: 'export'` (fully static)
-- TypeScript, strict
-- Tailwind CSS v4 (CSS-based config)
-- Self-hosted Google Fonts (Instrument Sans, Inter Tight, IBM Plex Mono)
-- Framer Motion (hero entrance + stat counters only)
-- Vitest (for `src/lib/wa.ts`)
+- Next.js 15 App Router with `output: 'export'`
+- React 19 and strict TypeScript
+- Tailwind CSS v4 with a hand-built component system
+- `next/font` for self-hosted Instrument Sans, Inter Tight, and IBM Plex Mono
+- Lucide React for the small number of interface icons
+- Vitest for URL helper tests
+
+The site has no server runtime, CMS, form handler, analytics dependency, or client-side animation library. `npm run build` creates the deployable `out/` directory.
 
 ## Develop
 
@@ -18,34 +22,31 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open `http://localhost:3000`.
 
-## Build
-
-```bash
-npm run build
-```
-
-Static output lands in `out/`. Deploy that directory to any static host.
-
-## Test
+## Verify
 
 ```bash
 npm test
+npx tsc --noEmit
+npm run build
 ```
 
-## Editing copy
+## Content
 
-All Spanish copy lives in `src/content/`:
+Spanish marketing copy and shared product facts live in `src/content/`:
 
-- `site.ts` — phone number, domain, tagline (single source of truth)
-- `servicios.ts` — three services + example conversations
-- `casos.ts` — vertical case examples
-- `faq.ts` — landing page FAQ
-- `stats.ts` — stat numbers (placeholder; replace before launch)
+- `site.ts` — public domain, app domain, contact details, tagline, and trust statements
+- `landing.ts` — landing-page positioning, features, onboarding steps, control story, and CTA copy
+- `servicios.ts` — detailed service examples and conversations
+- `casos.ts` — vertical examples
+- `faq.ts` — landing-page questions and answers
 
-Components contain zero hardcoded copy. To change the WhatsApp number or domain, edit `site.ts`.
+Keep product claims aligned with the working app. In particular, the current connection flow uses the QR experience shown in `app.atende.com.ar`; do not describe it as a Meta Business API approval flow.
 
-## Pre-launch checklist
+## Social assets
 
-See `docs/superpowers/specs/2026-04-29-atende-site-design.md` section 12 for the items that need real data before going live.
+- `public/icon.svg` is the source favicon mark
+- `public/favicon.ico` contains common browser icon sizes
+- `public/og-source.svg` is the editable 1200×630 social-card source
+- `public/og.png` is the exported social card used by page metadata

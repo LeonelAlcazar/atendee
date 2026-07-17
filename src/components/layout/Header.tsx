@@ -1,63 +1,56 @@
-'use client';
-
-import * as React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { MobileMenu } from './MobileMenu';
-import { buildWaLink } from '@/lib/wa';
+import { site } from '@/content/site';
 
 const nav = [
-  { href: '/servicios', label: 'Servicios' },
-  { href: '/casos-de-uso', label: 'Casos de uso' },
-  { href: '/#faq', label: 'FAQ' },
+  { href: '/#producto', label: 'Producto' },
+  { href: '/#como-funciona', label: 'Cómo funciona' },
+  { href: '/#casos', label: 'Ejemplos' },
+  { href: '/#faq', label: 'Preguntas' },
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = React.useState(false);
-
-  React.useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   return (
-    <header
-      className={`sticky top-0 z-40 bg-bg border-b-2 border-ink transition-[padding] ${
-        scrolled ? 'py-2' : 'py-4'
-      }`}
-    >
-      <div className="mx-auto max-w-7xl px-5 md:px-8 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 border-b-2 border-ink bg-bg">
+      <div className="mx-auto flex h-[4.75rem] max-w-7xl items-center justify-between gap-5 px-5 md:px-8">
         <Link
           href="/"
-          className="font-display font-semibold text-2xl md:text-3xl tracking-[-0.02em]"
-          aria-label="atende — inicio"
+          className="group flex items-center gap-2.5 rounded-sm"
         >
-          atende<span className="text-coral">.</span>
+          <span
+            className="grid size-9 place-items-center rounded-md border-2 border-ink bg-coral font-display text-base font-bold shadow-[var(--shadow-brut-xs)] transition-transform group-hover:-rotate-3"
+            aria-hidden="true"
+          >
+            A
+          </span>
+          <span className="font-display text-2xl font-semibold tracking-[-0.035em]">
+            atende<span className="text-coral">.</span>
+          </span>
+          <span className="sr-only">Inicio</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 font-body text-base">
-          {nav.map((n) => (
+        <nav className="hidden items-center gap-6 font-body text-sm lg:flex" aria-label="Navegación principal">
+          {nav.map((item) => (
             <Link
-              key={n.href}
-              href={n.href}
-              className="hover:text-coral transition-colors"
+              key={item.href}
+              href={item.href}
+              className="rounded-sm py-2 font-medium transition-colors hover:text-coral"
             >
-              {n.label}
+              {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden md:block">
-          <Button
-            href={buildWaLink('Hola, vi atende.com.ar y quiero saber más')}
-            variant="primary"
-            size="md"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="hidden items-center gap-4 md:flex">
+          <a
+            href={site.appUrl}
+            className="rounded-sm px-2 py-2 text-sm font-semibold underline decoration-2 underline-offset-4 hover:text-coral"
           >
-            Hablar por WhatsApp
+            Entrar
+          </a>
+          <Button href={site.appUrl} variant="primary" size="md">
+            Crear mi espacio <span aria-hidden="true">→</span>
           </Button>
         </div>
 

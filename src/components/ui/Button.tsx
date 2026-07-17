@@ -16,23 +16,23 @@ type AnchorProps = CommonProps &
   };
 
 const base =
-  'inline-flex items-center justify-center gap-2 border-2 border-ink ' +
-  'font-medium tracking-tight transition-transform duration-150 ' +
-  'shadow-[var(--shadow-brut)] active:translate-x-[2px] active:translate-y-[2px] ' +
-  'active:shadow-none focus-visible:outline-none focus-visible:ring-2 ' +
-  'focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:ring-offset-bg';
+  'inline-flex min-h-11 items-center justify-center gap-2 rounded-md border-2 border-ink ' +
+  'font-display font-semibold tracking-[-0.015em] transition-[transform,box-shadow,background-color,color] duration-150 ' +
+  'shadow-[var(--shadow-brut-sm)] active:translate-x-[2px] active:translate-y-[2px] ' +
+  'active:shadow-none';
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-forest text-bg hover:translate-x-[-2px] hover:translate-y-[-2px] ' +
-    'hover:shadow-[var(--shadow-brut-coral)]',
+    'bg-coral !text-ink hover:translate-x-[-2px] hover:translate-y-[-2px] ' +
+    'hover:bg-coral-soft hover:shadow-[var(--shadow-brut)]',
   outline:
-    'bg-transparent text-ink hover:bg-forest hover:text-bg',
+    'bg-surface text-ink hover:translate-x-[-2px] hover:translate-y-[-2px] ' +
+    'hover:bg-forest hover:text-bg hover:shadow-[var(--shadow-brut-coral)]',
 };
 
 const sizes: Record<Size, string> = {
-  md: 'px-5 py-3 text-base',
-  lg: 'px-7 py-4 text-lg',
+  md: 'px-5 py-2.5 text-sm md:text-base',
+  lg: 'px-6 py-3.5 text-base md:px-7 md:text-lg',
 };
 
 export function Button({

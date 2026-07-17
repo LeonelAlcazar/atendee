@@ -4,12 +4,14 @@ import { CaseBlock } from '@/components/casos/CaseBlock';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
 import { buildWaLink } from '@/lib/wa';
+import { createPageMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: 'Casos de uso',
   description:
-    'Ejemplos reales de cómo atende automatiza WhatsApp en clínicas, peluquerías, inmobiliarias y comercios.',
-};
+    'Ejemplos de cómo atende puede automatizar WhatsApp en clínicas, peluquerías, inmobiliarias y comercios.',
+  path: '/casos-de-uso',
+});
 
 export default function CasosDeUsoPage() {
   return (
@@ -18,6 +20,7 @@ export default function CasosDeUsoPage() {
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeader
             eyebrow="Casos de uso"
+            level="h1"
             title={
               <>
                 Distintos rubros, <span className="text-coral">la misma idea</span>:

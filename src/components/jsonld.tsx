@@ -4,8 +4,8 @@ const data = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'LocalBusiness',
-      '@id': `${site.url}#business`,
+      '@type': 'Organization',
+      '@id': `${site.url}#organization`,
       name: site.name,
       url: site.url,
       description: site.description,
@@ -19,11 +19,20 @@ const data = {
       },
     },
     {
-      '@type': 'Service',
-      name: 'Automatización de WhatsApp para PyMEs',
-      provider: { '@id': `${site.url}#business` },
-      areaServed: 'AR',
+      '@type': 'SoftwareApplication',
+      '@id': `${site.url}#software`,
+      name: 'Atende',
+      url: site.appUrl,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      provider: { '@id': `${site.url}#organization` },
       description: site.description,
+      featureList: [
+        'Respuestas automáticas por WhatsApp',
+        'Bandeja compartida de conversaciones',
+        'Derivación a atención humana',
+        'Gestión de equipos',
+      ],
     },
   ],
 };

@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import { Instrument_Sans, Inter_Tight, IBM_Plex_Mono } from 'next/font/google';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { JsonLd } from '@/components/jsonld';
 import { site } from '@/content/site';
 import './globals.css';
 
@@ -43,6 +42,12 @@ export const metadata: Metadata = {
     type: 'website',
     images: ['/og.png'],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${site.name} — ${site.tagline}`,
+    description: site.description,
+    images: ['/og.png'],
+  },
   alternates: {
     canonical: '/',
   },
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: '/icon.svg',
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
     shortcut: '/favicon.ico',
   },
 };
@@ -73,6 +78,12 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
       <body>
+        <a
+          href="#contenido"
+          className="fixed left-4 top-3 z-[100] -translate-y-24 rounded-md border-2 border-ink bg-coral px-4 py-2 font-display font-semibold shadow-[var(--shadow-brut-sm)] transition-transform focus:translate-y-0"
+        >
+          Saltar al contenido
+        </a>
         <svg
           aria-hidden="true"
           width="0"
@@ -90,9 +101,8 @@ export default function RootLayout({
           </filter>
         </svg>
         <Header />
-        <main>{children}</main>
+        <main id="contenido">{children}</main>
         <Footer />
-        <JsonLd />
       </body>
     </html>
   );

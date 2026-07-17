@@ -10,7 +10,7 @@ export function CaseBlock({
   reverse?: boolean;
 }) {
   return (
-    <section className="border-b-2 border-ink py-16 md:py-24">
+    <section id={caso.id} className="scroll-mt-24 border-b-2 border-ink py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div
           className={`grid gap-10 md:grid-cols-[1.3fr_1fr] items-start ${
