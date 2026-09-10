@@ -1,14 +1,16 @@
 import { site } from '@/content/site';
+import { organizationId, serializeJsonLd, softwareId, websiteId } from '@/lib/structured-data';
 
 const data = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': `${site.url}#organization`,
+      '@id': organizationId,
       name: site.name,
       url: site.url,
       description: site.description,
+      logo: { '@type': 'ImageObject', url: `${site.url}/atende-instagram-logo.png` },
       telephone: `+${site.whatsapp.number}`,
       email: site.email,
       areaServed: 'AR',
@@ -19,13 +21,21 @@ const data = {
       },
     },
     {
-      '@type': 'SoftwareApplication',
-      '@id': `${site.url}#software`,
+      '@type': 'WebSite',
+      '@id': websiteId,
+      url: `${site.url}/`,
       name: 'Atende',
-      url: site.appUrl,
+      inLanguage: 'es-AR',
+      publisher: { '@id': organizationId },
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': softwareId,
+      name: 'Atende',
+      url: `${site.url}/`,
       applicationCategory: 'BusinessApplication',
       operatingSystem: 'Web',
-      provider: { '@id': `${site.url}#organization` },
+      provider: { '@id': organizationId },
       description: site.description,
       featureList: [
         'Respuestas automáticas por WhatsApp',
@@ -37,11 +47,11 @@ const data = {
   ],
 };
 
-export function JsonLd() {
+export function JsonLd({ value = data }: { value?: unknown }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(value) }}
     />
   );
 }

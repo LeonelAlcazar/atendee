@@ -11,7 +11,7 @@ export function ChatMockup({ messages, className = '' }: ChatMockupProps) {
     <figure
       className={`max-w-sm rounded-lg border-2 border-ink bg-surface p-4 shadow-[var(--shadow-brut)] md:p-5 ${className}`}
     >
-      <figcaption className="sr-only">Ejemplo de conversación de WhatsApp</figcaption>
+      <figcaption className="mb-3 text-xs text-mute">Ejemplo ilustrativo de conversación de WhatsApp</figcaption>
       <div className="flex items-center gap-2 pb-3 border-b-2 border-ink mb-4">
         <div className="grid size-8 place-items-center rounded border-2 border-ink bg-coral font-display text-sm font-bold">
           A

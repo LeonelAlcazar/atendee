@@ -4,10 +4,10 @@ import { MobileMenu } from './MobileMenu';
 import { site } from '@/content/site';
 
 const nav = [
-  { href: '/#producto', label: 'Producto' },
+  { href: '/servicios', label: 'Soluciones' },
   { href: '/#como-funciona', label: 'Cómo funciona' },
-  { href: '/#casos', label: 'Ejemplos' },
-  { href: '/#faq', label: 'Preguntas' },
+  { href: '/casos-de-uso', label: 'Casos de uso' },
+  { href: '/precios', label: 'Precios' },
 ];
 
 export function Header() {
@@ -49,8 +49,8 @@ export function Header() {
           >
             Entrar
           </a>
-          <Button href={site.appUrl} variant="primary" size="md">
-            Crear mi espacio <span aria-hidden="true">→</span>
+          <Button href="/demo" data-cta="header-demo" variant="primary" size="md">
+            Solicitar demo <span aria-hidden="true">→</span>
           </Button>
         </div>
 

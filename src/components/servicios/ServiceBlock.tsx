@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/Button';
 import { ChatMockup } from '@/components/ui/ChatMockup';
 import { Tag } from '@/components/ui/Tag';
 import { buildWaLink } from '@/lib/wa';
+import Link from 'next/link';
 
 export function ServiceBlock({
   servicio,
@@ -48,6 +49,8 @@ export function ServiceBlock({
               </ul>
             </div>
 
+            <p className="rounded-md border border-ink/20 bg-coral-soft/40 p-4 text-sm leading-relaxed">{servicio.scope}</p>
+            <Link href={`/servicios/${servicio.slug}`} className="font-semibold underline underline-offset-4">Ver cómo funciona, requisitos y preguntas frecuentes<span className="sr-only"> de {servicio.title}</span> →</Link>
             <div className="pt-4">
               <Button
                 href={buildWaLink(servicio.ctaContext)}
@@ -56,7 +59,7 @@ export function ServiceBlock({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Pedir este servicio
+                Consultar por esta solución
               </Button>
             </div>
           </div>

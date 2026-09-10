@@ -20,7 +20,7 @@ export function Footer() {
             <span className="sr-only">Inicio</span>
           </Link>
           <p className="mt-5 max-w-sm text-base leading-relaxed text-bg/65">
-            Respuestas automáticas y una bandeja simple para atender mejor por WhatsApp.
+            Software de atención y ventas por WhatsApp con IA para empresas y PyMEs argentinas.
           </p>
           <a
             href={site.appUrl}
@@ -38,6 +38,8 @@ export function Footer() {
           <Link href="/#como-funciona" className="w-fit hover:text-coral">Cómo funciona</Link>
           <Link href="/#casos" className="w-fit hover:text-coral">Ejemplos</Link>
           <Link href="/#faq" className="w-fit hover:text-coral">Preguntas</Link>
+          <Link href="/precios" className="w-fit hover:text-coral">Precios y contratación</Link>
+          <Link href="/demo" className="w-fit hover:text-coral">Solicitar una demo</Link>
         </div>
 
         <div className="flex flex-col gap-3 text-sm">

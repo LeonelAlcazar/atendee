@@ -1,14 +1,14 @@
 export const landing = {
   hero: {
-    eyebrow: 'ATENCIÓN POR WHATSAPP · CON IA',
-    titleBefore: 'Tu negocio',
-    titleAccent: 'atendido.',
-    titleAfter: 'Incluso cuando vos no estás.',
+    eyebrow: 'PARA EMPRESAS Y PYMES ARGENTINAS',
+    titleBefore: 'WhatsApp',
+    titleAccent: 'con IA.',
+    titleAfter: 'Más tiempo para vender.',
     description:
-      'Atende responde lo repetitivo, ordena cada conversación y llama a tu equipo cuando hace falta. Todo desde el WhatsApp que tus clientes ya usan.',
-    primaryCta: 'Crear mi espacio',
-    secondaryCta: 'Ver cómo funciona',
-    reassurance: 'Si es tu primera vez, te guiamos paso a paso.',
+      'Automatizá las consultas repetidas y reuní a tu equipo en una bandeja compartida. Atende responde con la información de tu negocio y deriva a una persona cuando hace falta.',
+    primaryCta: 'Solicitar una demo',
+    secondaryCta: 'Crear mi espacio',
+    reassurance: 'Revisamos tu caso de uso y el alcance antes de contratar.',
   },
   facts: [
     {
@@ -104,13 +104,13 @@ export const landing = {
       'Estos son ejemplos de tareas concretas que podés sacar de encima sin perder el trato humano.',
   },
   finalCta: {
-    eyebrow: 'EMPEZÁ HOY',
+    eyebrow: 'HABLEMOS DE TU OPERACIÓN',
     titleBefore: 'Que el próximo mensaje',
     titleAccent: 'no quede esperando.',
     description:
-      'Creá tu espacio, conectá WhatsApp y prepará a Atende para responder como tu negocio.',
-    primaryCta: 'Crear mi espacio',
-    secondaryCta: 'Hablar con nosotros',
-    reassurance: 'Crear la cuenta no te obliga a contratar un plan.',
+      'Contanos cuántas consultas recibís, quién las atiende y qué querés mejorar. Evaluamos cómo aplicar Atende a tu empresa.',
+    primaryCta: 'Solicitar una demo',
+    secondaryCta: 'Consultar por WhatsApp',
+    reassurance: 'Conversá sobre el alcance y los planes antes de contratar.',
   },
 } as const;

@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "test": "vitest run",
+    "check:seo": "node scripts/check-export.mjs",
+    "verify": "npm test && tsc --noEmit && npm run build && npm run check:seo",
     "test:watch": "vitest"
   },
   "dependencies": {
@@ -19,6 +21,7 @@
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "cheerio": "^1.2.0",
     "postcss": "^8.5.12",
     "tailwindcss": "^4.2.4",
     "typescript": "^5.7.2",

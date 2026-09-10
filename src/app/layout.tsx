@@ -3,6 +3,9 @@ import { Instrument_Sans, Inter_Tight, IBM_Plex_Mono } from 'next/font/google';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { site } from '@/content/site';
+import { JsonLd } from '@/components/jsonld';
+import { pages } from '@/content/pages';
+import { ConversionEvents } from '@/components/ConversionEvents';
 import './globals.css';
 
 const display = Instrument_Sans({
@@ -29,7 +32,7 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: `${pages.home.title} — ${site.name}`,
     template: `%s — ${site.name}`,
   },
   description: site.description,
@@ -54,6 +57,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
   },
   icons: {
     icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
@@ -78,6 +82,8 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
       <body>
+        <JsonLd />
+        <ConversionEvents />
         <a
           href="#contenido"
           className="fixed left-4 top-3 z-[100] -translate-y-24 rounded-md border-2 border-ink bg-coral px-4 py-2 font-display font-semibold shadow-[var(--shadow-brut-sm)] transition-transform focus:translate-y-0"

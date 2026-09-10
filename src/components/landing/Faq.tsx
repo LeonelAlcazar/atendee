@@ -1,10 +1,10 @@
 import { Plus } from 'lucide-react';
-import { faq } from '@/content/faq';
+import { faq, type FaqItem } from '@/content/faq';
 import { site } from '@/content/site';
 import { buildWaLink } from '@/lib/wa';
 import { Tag } from '@/components/ui/Tag';
 
-export function Faq() {
+export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
   return (
     <section id="faq" className="scroll-mt-20 border-b-2 border-ink bg-surface py-20 md:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 md:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
@@ -27,7 +27,7 @@ export function Faq() {
         </div>
 
         <div className="flex flex-col gap-3">
-          {faq.map((item, index) => (
+          {items.map((item, index) => (
             <details
               key={item.q}
               className="group rounded-lg border-2 border-ink bg-bg shadow-[var(--shadow-brut-xs)] open:bg-coral-soft/45"

@@ -23,7 +23,6 @@ export function ComoFunciona() {
         </div>
 
         <ol className="relative mt-16 grid gap-10 md:grid-cols-4 md:gap-6">
-          <div className="absolute left-[12.5%] right-[12.5%] top-7 hidden border-t-2 border-dashed border-ink/25 md:block" aria-hidden="true" />
           {landing.steps.map((step) => (
             <li key={step.number} className="relative">
               <span className="relative z-10 grid size-14 place-items-center rounded-full border-2 border-ink bg-surface font-mono text-xs text-coral-strong shadow-[var(--shadow-brut-sm)]">

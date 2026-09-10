@@ -61,10 +61,10 @@ export function MobileMenu({ nav }: { nav: Nav }) {
   }, [close, open]);
 
   return (
-    <div className="flex items-center gap-2 md:hidden">
+    <div className="flex items-center gap-2 lg:hidden">
       <a
         href={site.appUrl}
-        className="inline-flex min-h-11 items-center rounded-md border border-ink bg-surface px-3 text-sm font-semibold"
+        className="inline-flex min-h-11 items-center rounded-md border border-ink bg-surface px-3 text-sm font-semibold md:hidden"
       >
         Entrar
       </a>
@@ -127,8 +127,8 @@ export function MobileMenu({ nav }: { nav: Nav }) {
 
           <div className="border-t-2 border-ink bg-coral-soft p-5">
             <div className="grid gap-3">
-              <Button href={site.appUrl} variant="primary" size="lg" className="w-full">
-                Crear mi espacio <span aria-hidden="true">→</span>
+              <Button href="/demo" data-cta="mobile-demo" onClick={close} variant="primary" size="lg" className="w-full">
+                Solicitar una demo <span aria-hidden="true">→</span>
               </Button>
               <a
                 href={buildWaLink('Hola, vi atende.com.ar y quiero saber más')}

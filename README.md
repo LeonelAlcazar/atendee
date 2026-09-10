@@ -11,9 +11,9 @@ The public site lives at `https://www.atende.com.ar`. Account entry and guided o
 - Tailwind CSS v4 with a hand-built component system
 - `next/font` for self-hosted Instrument Sans, Inter Tight, and IBM Plex Mono
 - Lucide React for the small number of interface icons
-- Vitest for URL helper tests
+- Vitest for contact and structured-data tests; Cheerio for auditing exported HTML
 
-The site has no server runtime, CMS, form handler, analytics dependency, or client-side animation library. `npm run build` creates the deployable `out/` directory.
+The site has no server runtime, CMS, form handler, analytics dependency, or client-side animation library. The demo form prepares a WhatsApp/email inquiry in the browser. `npm run build` creates the deployable `out/` directory.
 
 ## Develop
 
@@ -27,9 +27,7 @@ Open `http://localhost:3000`.
 ## Verify
 
 ```bash
-npm test
-npx tsc --noEmit
-npm run build
+npm run verify
 ```
 
 ## Content
@@ -41,6 +39,10 @@ Spanish marketing copy and shared product facts live in `src/content/`:
 - `servicios.ts` — detailed service examples and conversations
 - `casos.ts` — vertical examples
 - `faq.ts` — landing-page questions and answers
+- `pages.ts` — commercial page metadata and sitemap modification dates
+- `pricing.ts` — buying and pricing questions
+
+Solution detail pages, `/precios` and `/demo` support the B2B buying flow. See [SEO and sales notes](docs/seo-and-sales.md) for product-claim sources, conversion events, verification and search monitoring.
 
 Keep product claims aligned with the working app. In particular, the current connection flow uses the QR experience shown in `app.atende.com.ar`; do not describe it as a Meta Business API approval flow.
 

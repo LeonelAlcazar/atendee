@@ -5,7 +5,7 @@ export const site = {
   appUrl: 'https://app.atende.com.ar',
   tagline: 'Tu negocio atendido, incluso cuando vos no estás.',
   description:
-    'Atende responde consultas por WhatsApp, ordena las conversaciones y deja a tu equipo tomar el control cuando hace falta.',
+    'Automatizá la atención y las consultas de venta por WhatsApp con IA. Atende reúne a tu equipo en una bandeja compartida para empresas y PyMEs argentinas.',
   whatsapp: {
     number: '543512901337',
     display: '+54 351 290 1337',

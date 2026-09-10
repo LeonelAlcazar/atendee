@@ -5,17 +5,18 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
 import { buildWaLink } from '@/lib/wa';
 import { createPageMetadata } from '@/lib/metadata';
+import { pages } from '@/content/pages';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { JsonLd } from '@/components/jsonld';
+import { pageGraph } from '@/lib/structured-data';
 
-export const metadata: Metadata = createPageMetadata({
-  title: 'Casos de uso',
-  description:
-    'Ejemplos de cómo atende puede automatizar WhatsApp en clínicas, peluquerías, inmobiliarias y comercios.',
-  path: '/casos-de-uso',
-});
+export const metadata: Metadata = createPageMetadata(pages.cases);
+const breadcrumbs = [{ name: 'Inicio', path: '/' }, { name: 'Casos de uso', path: '/casos-de-uso' }];
 
 export default function CasosDeUsoPage() {
   return (
     <>
+      <Breadcrumbs items={breadcrumbs} />
       <section className="border-b-2 border-ink py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeader
@@ -23,11 +24,10 @@ export default function CasosDeUsoPage() {
             level="h1"
             title={
               <>
-                Distintos rubros, <span className="text-coral">la misma idea</span>:
-                que tu WhatsApp trabaje sin vos.
+                WhatsApp con IA <span className="text-coral">para distintos rubros.</span>
               </>
             }
-            sub="Cuatro ejemplos de cómo se ve atende en negocios reales. Si tu rubro no está, lo armamos a medida."
+            sub="Ejemplos ilustrativos de atención con Atende, no testimonios de clientes. Las respuestas dependen de la información configurada; las reservas y consultas a otros sistemas requieren una integración acordada."
           />
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function CasosDeUsoPage() {
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-5 md:px-8 text-center flex flex-col items-center gap-6">
           <h2 className="font-display font-semibold text-4xl md:text-6xl tracking-[-0.025em] leading-[0.95]">
-            ¿No ves tu rubro? <span className="text-coral">Lo armamos a medida.</span>
+            ¿No ves tu rubro? <span className="text-coral">Evaluemos tu caso.</span>
           </h2>
           <Button
             href={buildWaLink('Hola, mi rubro no está en los casos pero quiero saber si me sirve')}
@@ -52,6 +52,7 @@ export default function CasosDeUsoPage() {
           </Button>
         </div>
       </section>
+      <JsonLd value={pageGraph({ ...pages.cases, breadcrumbs })} />
     </>
   );
 }

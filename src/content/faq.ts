@@ -5,6 +5,10 @@ export type FaqItem = {
 
 export const faq: FaqItem[] = [
   {
+    q: '¿Qué es Atende y para qué empresas sirve?',
+    a: 'Atende es un software de atención y ventas por WhatsApp con inteligencia artificial para empresas y PyMEs argentinas. Combina respuestas configuradas con la información del negocio, una bandeja compartida y la posibilidad de que una persona continúe la conversación.',
+  },
+  {
     q: '¿Cómo conecto mi WhatsApp?',
     a: 'Desde el panel de Atende pedís un código QR y lo escaneás con el teléfono que usa tu negocio. El panel te muestra en todo momento si el número está conectado y listo.',
   },
@@ -26,6 +30,14 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Después de crear tu espacio vas a ver los planes disponibles antes de confirmar cualquier pago. Si querés saber cuál te conviene, escribinos y lo vemos con vos.',
+    a: 'Los planes disponibles, sus precios y los límites de respuestas del agente se consultan en la app antes de confirmar el pago. Si necesitás una integración o querés evaluar el alcance para tu empresa, podés solicitar una demo y una propuesta comercial.',
+  },
+  {
+    q: '¿Se integra con mi agenda, CRM o sistema de gestión?',
+    a: 'Las integraciones se evalúan según el sistema, los accesos disponibles y el flujo que necesitás. Las reservas, consultas de stock y recordatorios automáticos requieren confirmar una integración; no están incluidos por defecto.',
+  },
+  {
+    q: '¿Qué tengo que preparar para empezar?',
+    a: 'Necesitás acceso al WhatsApp del negocio para vincularlo por QR, información actualizada sobre tus servicios y preguntas frecuentes, y una persona que revise las respuestas y atienda las derivaciones. El alcance y los tiempos de configuración dependen de tu operación.',
   },
 ];

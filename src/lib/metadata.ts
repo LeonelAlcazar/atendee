@@ -15,7 +15,7 @@ export function createPageMetadata({
   const socialTitle = `${title} — ${site.name}`;
 
   return {
-    title,
+    title: { absolute: socialTitle },
     description,
     alternates: {
       canonical: path,
@@ -27,13 +27,13 @@ export function createPageMetadata({
       siteName: site.name,
       locale: 'es_AR',
       type: 'website',
-      images: ['/og.png'],
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Atende: atención por WhatsApp con IA para tu negocio' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: socialTitle,
       description,
-      images: ['/og.png'],
+      images: [{ url: '/og.png', alt: 'Atende: atención por WhatsApp con IA para tu negocio' }],
     },
   };
 }

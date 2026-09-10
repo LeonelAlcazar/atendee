@@ -18,10 +18,10 @@
   <circle cx="95" cy="194" r="5" fill="#E6482C"/>
   <text x="109" y="199" font-family="monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#141414">ATENCIÓN POR WHATSAPP · CON IA</text>
 
-  <text x="72" y="305" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4" fill="#141414">Tu negocio</text>
-  <text x="72" y="390" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4" fill="#E6482C">atendido.</text>
-  <text x="72" y="457" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-2" fill="#141414">Incluso cuando vos no estás.</text>
-  <text x="76" y="536" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#68615A">Respuestas automáticas y una bandeja simple para tu equipo.</text>
+  <text x="72" y="305" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4" fill="#141414">WhatsApp</text>
+  <text x="72" y="390" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4" fill="#E6482C">con IA.</text>
+  <text x="72" y="457" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-2" fill="#141414">Más tiempo para vender.</text>
+  <text x="76" y="536" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#68615A">Atención y ventas para empresas y PyMEs argentinas.</text>
 
   <rect x="762" y="122" width="342" height="390" rx="12" fill="#141414"/>
   <rect x="750" y="110" width="342" height="390" rx="12" fill="#FFFDF8" stroke="#141414" stroke-width="3"/>
@@ -33,9 +33,9 @@
   <text x="794" y="227" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#141414">¿Tienen turno mañana</text>
   <text x="794" y="246" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#141414">a la tarde?</text>
   <rect x="846" y="286" width="218" height="82" rx="10" fill="#0F3D2E" stroke="#141414" stroke-width="2"/>
-  <text x="862" y="313" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">Mañana tenemos 16:30</text>
-  <text x="862" y="334" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">o 18:00. ¿Cuál te queda</text>
-  <text x="862" y="355" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">mejor?</text>
+  <text x="862" y="313" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">¿Qué servicio necesitás?</text>
+  <text x="862" y="334" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">El equipo te confirma</text>
+  <text x="862" y="355" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">la disponibilidad.</text>
   <rect x="815" y="395" width="213" height="32" rx="16" fill="#CDEEE5"/>
   <circle cx="834" cy="411" r="5" fill="#147C72"/>
   <text x="846" y="416" font-family="monospace" font-size="11" font-weight="700" fill="#147C72">RESPONDIDO POR ATENDE</text>

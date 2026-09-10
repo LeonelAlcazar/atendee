@@ -18,8 +18,8 @@ export function Hero() {
           <Tag filled>{landing.hero.eyebrow}</Tag>
 
           <h1 className="max-w-3xl font-display text-[3.6rem] font-semibold leading-[0.88] tracking-[-0.055em] sm:text-7xl lg:text-[5.65rem]">
-            <span className="block">{landing.hero.titleBefore}</span>
-            <span className="block text-coral">{landing.hero.titleAccent}</span>
+            <span className="block">{landing.hero.titleBefore}</span>{' '}
+            <span className="block text-coral">{landing.hero.titleAccent}</span>{' '}
             <span className="mt-1 block">{landing.hero.titleAfter}</span>
           </h1>
 
@@ -29,7 +29,8 @@ export function Hero() {
 
           <div className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row">
             <Button
-              href={site.appUrl}
+              href="/demo"
+              data-cta="hero-demo"
               variant="primary"
               size="lg"
               className="group"
@@ -42,7 +43,7 @@ export function Hero() {
                 →
               </span>
             </Button>
-            <Button href="#como-funciona" variant="outline" size="lg">
+            <Button href={site.appUrl} data-cta="hero-signup" variant="outline" size="lg">
               {landing.hero.secondaryCta}
             </Button>
           </div>

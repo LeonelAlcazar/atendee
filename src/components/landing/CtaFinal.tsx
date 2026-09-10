@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/Button';
 import { landing } from '@/content/landing';
-import { site } from '@/content/site';
 import { buildWaLink } from '@/lib/wa';
 
 type Props = {
@@ -36,7 +35,8 @@ export function CtaFinal({
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
-              href={site.appUrl}
+              href="/demo"
+              data-cta="final-demo"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border-2 border-ink bg-forest px-6 py-3.5 font-display text-base font-semibold !text-bg shadow-[var(--shadow-brut-sm)] transition-[transform,box-shadow] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[var(--shadow-brut-lg)]"
             >
               {landing.finalCta.primaryCta} <span aria-hidden="true">→</span>

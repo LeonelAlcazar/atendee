@@ -1,0 +1,56 @@
+# SEO, AI search and B2B sales
+
+## Content and scope
+
+The public audience is Spanish-speaking businesses and PyMEs in Argentina. The main conversion is a qualified demo inquiry; self-service account creation remains available. The homepage links to three distinct solution pages, a use-case page, pricing guidance and the demo request.
+
+Product claims were checked against the sibling repositories on 2026-09-10:
+
+- `atende-dashboard/src/app/t/[slug]/conversations/conversations-workspace.tsx`: shared conversation history, manual responses and human-attention states.
+- `atende-dashboard/src/app/t/[slug]/whatsapp/connection-manager.tsx`: QR connection.
+- `atende-agent/src/infrastructure/features/faq/faq.feature.ts` and `lifecycle/lifecycle.feature.ts`: configured answers and human escalation.
+- `atende-dashboard/src/lib/billing/plans.ts`: monthly agent-response limits and plans filtered by deployment configuration. Public pricing points to the actual enabled checkout plans rather than duplicating potentially unavailable prices.
+
+Calendar reservations, proactive follow-ups, reminders, live stock and CRM operations require a separately confirmed integration. Examples are explicitly illustrative. Do not add invented customer counts, testimonials, ratings, conversion uplifts, guaranteed availability, implementation deadlines or free-trial terms.
+
+## Search implementation
+
+- All ten public pages export complete HTML with descriptive titles, descriptions, canonical URLs and social previews. New solution routes use `generateStaticParams`.
+- Organization, WebSite and SoftwareApplication entities share stable IDs across pages. Commercial pages include WebPage metadata, visible breadcrumbs where applicable and Service entities on solution details.
+- FAQ markup and the accessible HTML disclosures use the same content objects. This improves consistency; it does not promise a FAQ rich result or an AI citation.
+- `src/content/pages.ts` and the solution catalog feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
+- Robots permits public crawling and the metadata permits search snippets and large image previews. Unknown URLs retain a real 404 and noindex.
+- The SVG source and generated PNG social card describe the same product positioning as the homepage.
+
+The implementation follows [Google's AI features guidance](https://developers.google.com/search/docs/appearance/ai-features) and [SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). Google recommends crawlable, helpful content, internal links and structured data consistent with visible content. Special AI text files are not required for its AI search features. Search inclusion and ranking still depend on the search engines.
+
+## Conversion flow and measurement
+
+`/demo` prepares a message containing the company, approximate monthly inquiry volume, priority and optional context. The visitor reviews it and chooses WhatsApp or email. Preparing a message is **not** a submitted lead or a confirmed booking. No inquiry is stored or transmitted by the site; sending takes place through the selected channel. Direct contact links remain available without JavaScript.
+
+The site emits `atende:conversion` browser events and forwards them to `window.dataLayer` only if an analytics integration already supplies it:
+
+| Event | Meaning | Fields |
+| --- | --- | --- |
+| `atende_cta_click` | Visitor clicks a demo, app, WhatsApp or email link | `page`, `destination`, `placement` |
+| `atende_demo_prepared` | Visitor prepares a valid inquiry for review | `page`, `placement` |
+
+These hooks make no network requests and set no cookies or browser storage. They contain no company name, inquiry text, full outbound URL or query parameters. No analytics account or collector is configured in this repository. Wire a chosen collector to these events to measure visits-to-contact clicks; record actual qualified leads and sales in the sales system. Do not count a contact click as a sale.
+
+## Verification and ongoing operation
+
+Run `npm run verify` to execute unit tests, TypeScript, the production build and the exported-site audit. `npm run check:seo` checks an existing `out/` build for canonical and social metadata, sitemap completeness, visible schema content, internal links and fragments, crawl rules and sales CTAs.
+
+For browser checks, serve `out/` with clean URL support and verify desktop, mobile and tablet navigation; native required-field validation; inquiry preview; both outbound URLs; FAQ disclosures; and the no-JavaScript contact fallback. Browser and Lighthouse artifacts belong in ignored `output/playwright/`.
+
+After deployment, check the live sitemap and new routes, then submit `https://www.atende.com.ar/sitemap.xml` in the site's verified Search Console property. No Search Console credentials or analytics property are present in this repository. Monitor indexing, query relevance, demo inquiries and qualified opportunities over time. Keep prices in sync with checkout if public numeric pricing is introduced later.
+
+### Verification recorded on 2026-09-10
+
+- Nine unit tests, TypeScript, production export and the ten-page HTML audit passed.
+- Browser checks covered every page at 390, 820 and 1440 pixels, with no content overflow or JavaScript runtime errors. All ten pages also loaded without JavaScript.
+- Mobile/tablet navigation, focus containment, Escape, navigation scroll restoration, FAQ disclosures and real 404 responses passed.
+- The inquiry flow passed required-field and whitespace validation, mobile preview, message updates after editing, identical WhatsApp/email content and conversion-event checks without inquiry data.
+- Mobile Lighthouse against the local production export: homepage 97 performance; demo and turn-request solution 98 performance. All three scored 100 for accessibility, best practices and SEO, with zero layout shift. Lab scores are not field-performance or ranking measurements.
+
+The dependency install also reported existing Next.js/Vitest toolchain advisories. No runtime dependencies were added by this change; the deployed output is static. Framework/security upgrades remain separate maintenance work.

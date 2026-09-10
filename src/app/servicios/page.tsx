@@ -4,17 +4,18 @@ import { ServiceBlock } from '@/components/servicios/ServiceBlock';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { CtaFinal } from '@/components/landing/CtaFinal';
 import { createPageMetadata } from '@/lib/metadata';
+import { pages } from '@/content/pages';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { JsonLd } from '@/components/jsonld';
+import { pageGraph } from '@/lib/structured-data';
 
-export const metadata: Metadata = createPageMetadata({
-  title: 'Servicios',
-  description:
-    'Atención automática, turnos por WhatsApp y ventas y seguimiento. Tres servicios diseñados para PyMEs argentinas que viven en WhatsApp.',
-  path: '/servicios',
-});
+export const metadata: Metadata = createPageMetadata(pages.services);
+const breadcrumbs = [{ name: 'Inicio', path: '/' }, { name: 'Soluciones', path: '/servicios' }];
 
 export default function ServiciosPage() {
   return (
     <>
+      <Breadcrumbs items={breadcrumbs} />
       <section className="border-b-2 border-ink py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeader
@@ -22,10 +23,10 @@ export default function ServiciosPage() {
             level="h1"
             title={
               <>
-                Tres servicios. <span className="text-coral">Una sola conversación</span>.
+                Automatización de WhatsApp <span className="text-coral">para tu empresa.</span>
               </>
             }
-            sub="Cada uno funciona por separado o combinado. Todos viven dentro de tu WhatsApp."
+            sub="Atención al cliente, solicitudes de turnos y consultas de venta con IA y una bandeja compartida. Conocé qué resuelve cada flujo y qué requiere una integración adicional."
           />
         </div>
       </section>
@@ -35,6 +36,7 @@ export default function ServiciosPage() {
       ))}
 
       <CtaFinal context="Hola, vi la página de servicios y quiero saber más" />
+      <JsonLd value={pageGraph({ ...pages.services, breadcrumbs })} />
     </>
   );
 }

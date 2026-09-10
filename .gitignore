@@ -8,3 +8,4 @@ coverage/
 .vercel
 output/
 *.tsbuildinfo
+.playwright-cli/

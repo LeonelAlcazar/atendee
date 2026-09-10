@@ -1,6 +1,7 @@
 import type { Caso } from '@/content/casos';
 import { ChatMockup } from '@/components/ui/ChatMockup';
 import { Tag } from '@/components/ui/Tag';
+import Link from 'next/link';
 
 export function CaseBlock({
   caso,
@@ -18,7 +19,7 @@ export function CaseBlock({
           }`}
         >
           <div className="flex flex-col gap-5">
-            <Tag filled>Caso</Tag>
+            <Tag filled>Ejemplo de uso</Tag>
             <h2 className="font-display font-semibold text-3xl md:text-5xl tracking-[-0.025em] leading-[0.95]">
               {caso.industry}
             </h2>
@@ -37,6 +38,8 @@ export function CaseBlock({
                 <p className="font-body text-base mt-2">{caso.solution}</p>
               </div>
             </div>
+            <Link href={`/servicios/${caso.id === 'clinicas' || caso.id === 'peluquerias' ? 'turnos-whatsapp' : 'ventas-whatsapp'}`} className="mt-3 inline-flex min-h-11 items-center font-semibold underline underline-offset-4">Ver solución y alcance para este caso →</Link>
+            <Link href="/demo" className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4">Evaluar Atende para mi negocio →</Link>
           </div>
 
           <div className="md:justify-self-end">

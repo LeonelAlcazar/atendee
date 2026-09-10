@@ -39,7 +39,7 @@ export function ProductPreview() {
         </span>
         <div className="flex items-center gap-1.5 font-mono text-[9px] uppercase text-forest">
           <span className="size-1.5 rounded-full bg-mint-strong" aria-hidden="true" />
-          En vivo
+          Ejemplo
         </div>
       </div>
 
@@ -130,7 +130,7 @@ export function ProductPreview() {
               </div>
 
               <div className="max-w-[88%] self-end rounded-md rounded-br-none border border-ink bg-forest px-3 py-2 text-xs leading-relaxed text-bg shadow-[2px_2px_0_var(--color-coral)]">
-                ¡Hola, María! Mañana tenemos 16:30 o 18:00. ¿Cuál te queda mejor?
+                ¡Hola, María! ¿Qué servicio necesitás? El equipo te confirma la disponibilidad.
                 <span className="mt-1 flex items-center justify-end gap-1 font-mono text-[7px] text-bg/65">
                   Atende · 10:42 ✓✓
                 </span>
@@ -152,6 +152,9 @@ export function ProductPreview() {
           </section>
         </div>
       </div>
+      <figcaption className="sr-only">
+        Ejemplo ilustrativo de atención y derivación en la bandeja de Atende.
+      </figcaption>
     </figure>
   );
 }
