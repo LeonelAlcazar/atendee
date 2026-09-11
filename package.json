@@ -4,27 +4,41 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:content && next build && node scripts/prepare-standalone.mjs",
     "test": "vitest run",
-    "check:seo": "node scripts/check-export.mjs",
+    "check:seo": "tsx scripts/check-site.mjs",
     "verify": "npm test && tsc --noEmit && npm run build && npm run check:seo",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "start": "node .next/standalone/server.js",
+    "check:content": "tsx scripts/check-content.ts"
   },
   "dependencies": {
+    "entities": "^8.1.0",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.468.0",
-    "next": "^15.5.20",
+    "marked": "^18.0.12",
+    "next": "^15.5.25",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "sanitize-html": "^2.17.7",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "@types/sanitize-html": "^2.16.1",
     "cheerio": "^1.2.0",
-    "postcss": "^8.5.12",
+    "postcss": "^8.5.28",
     "tailwindcss": "^4.2.4",
+    "tsx": "^4.23.13",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
+  },
+  "overrides": {
+    "sharp": "^0.35.4",
+    "postcss": "$postcss"
   }
 }

@@ -5,7 +5,7 @@ import { site } from '@/content/site';
 
 const nav = [
   { href: '/servicios', label: 'Soluciones' },
-  { href: '/#como-funciona', label: 'Cómo funciona' },
+  { href: '/blog', label: 'Guías' },
   { href: '/casos-de-uso', label: 'Casos de uso' },
   { href: '/precios', label: 'Precios' },
 ];

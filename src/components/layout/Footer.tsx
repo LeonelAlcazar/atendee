@@ -38,6 +38,7 @@ export function Footer() {
           <Link href="/#como-funciona" className="w-fit hover:text-coral">Cómo funciona</Link>
           <Link href="/#casos" className="w-fit hover:text-coral">Ejemplos</Link>
           <Link href="/#faq" className="w-fit hover:text-coral">Preguntas</Link>
+          <Link href="/blog" className="w-fit hover:text-coral">Guías y comparativas</Link>
           <Link href="/precios" className="w-fit hover:text-coral">Precios y contratación</Link>
           <Link href="/demo" className="w-fit hover:text-coral">Solicitar una demo</Link>
         </div>

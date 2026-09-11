@@ -15,10 +15,10 @@ Calendar reservations, proactive follow-ups, reminders, live stock and CRM opera
 
 ## Search implementation
 
-- All ten public pages export complete HTML with descriptive titles, descriptions, canonical URLs and social previews. New solution routes use `generateStaticParams`.
+- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution routes use `generateStaticParams`; the Markdown blog uses request-time SSR. The catalog adds 40 articles, 11 topic pages, a blog index and editorial page. See [blog publishing and runtime](blog.md).
 - Organization, WebSite and SoftwareApplication entities share stable IDs across pages. Commercial pages include WebPage metadata, visible breadcrumbs where applicable and Service entities on solution details.
 - FAQ markup and the accessible HTML disclosures use the same content objects. This improves consistency; it does not promise a FAQ rich result or an AI citation.
-- `src/content/pages.ts` and the solution catalog feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
+- `src/content/pages.ts`, the solution catalog and published Markdown feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
 - Robots permits public crawling and the metadata permits search snippets and large image previews. Unknown URLs retain a real 404 and noindex.
 - The SVG source and generated PNG social card describe the same product positioning as the homepage.
 
@@ -39,18 +39,8 @@ These hooks make no network requests and set no cookies or browser storage. They
 
 ## Verification and ongoing operation
 
-Run `npm run verify` to execute unit tests, TypeScript, the production build and the exported-site audit. `npm run check:seo` checks an existing `out/` build for canonical and social metadata, sitemap completeness, visible schema content, internal links and fragments, crawl rules and sales CTAs.
+Run `npm run verify` to execute unit tests, TypeScript, the production build and the HTTP audit. `npm run check:seo` starts the built standalone server and checks every public page, including the Markdown catalog, for canonical and social metadata, sitemap completeness, visible schema content, internal links and fragments, crawl rules and sales CTAs. It also verifies SSR, RSS and real 404 responses.
 
-For browser checks, serve `out/` with clean URL support and verify desktop, mobile and tablet navigation; native required-field validation; inquiry preview; both outbound URLs; FAQ disclosures; and the no-JavaScript contact fallback. Browser and Lighthouse artifacts belong in ignored `output/playwright/`.
+For browser checks, run the production server with `npm start` and verify desktop, mobile and tablet navigation; native required-field validation; inquiry preview; both outbound URLs; FAQ disclosures; and the no-JavaScript contact fallback. Browser and Lighthouse artifacts belong in ignored `output/playwright/`.
 
 After deployment, check the live sitemap and new routes, then submit `https://www.atende.com.ar/sitemap.xml` in the site's verified Search Console property. No Search Console credentials or analytics property are present in this repository. Monitor indexing, query relevance, demo inquiries and qualified opportunities over time. Keep prices in sync with checkout if public numeric pricing is introduced later.
-
-### Verification recorded on 2026-09-10
-
-- Nine unit tests, TypeScript, production export and the ten-page HTML audit passed.
-- Browser checks covered every page at 390, 820 and 1440 pixels, with no content overflow or JavaScript runtime errors. All ten pages also loaded without JavaScript.
-- Mobile/tablet navigation, focus containment, Escape, navigation scroll restoration, FAQ disclosures and real 404 responses passed.
-- The inquiry flow passed required-field and whitespace validation, mobile preview, message updates after editing, identical WhatsApp/email content and conversion-event checks without inquiry data.
-- Mobile Lighthouse against the local production export: homepage 97 performance; demo and turn-request solution 98 performance. All three scored 100 for accessibility, best practices and SEO, with zero layout shift. Lab scores are not field-performance or ranking measurements.
-
-The dependency install also reported existing Next.js/Vitest toolchain advisories. No runtime dependencies were added by this change; the deployed output is static. Framework/security upgrades remain separate maintenance work.

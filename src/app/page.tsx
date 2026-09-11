@@ -1,3 +1,4 @@
+import { BlogTeaser } from '@/components/blog/BlogTeaser';
 import { Hero } from '@/components/landing/Hero';
 import { ServiciosTeaser } from '@/components/landing/ServiciosTeaser';
 import { ComoFunciona } from '@/components/landing/ComoFunciona';
@@ -23,6 +24,7 @@ export default function HomePage() {
       <ComoFunciona />
       <ControlHumano />
       <CasosTeaser />
+      <BlogTeaser />
       <Faq />
       <CtaFinal context="Hola, vi atende.com.ar y quiero saber si Atende sirve para mi negocio" />
       <JsonLd value={pageGraph({ ...pages.home, faq })} />

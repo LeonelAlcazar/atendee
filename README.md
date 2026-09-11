@@ -1,24 +1,24 @@
 # atende.com.ar
 
-Static marketing site for Atende, the WhatsApp automation and shared-inbox product for Argentine businesses.
+Marketing site and Markdown blog for Atende, the WhatsApp automation and shared-inbox product for Argentine businesses.
 
 The public site lives at `https://www.atende.com.ar`. Account entry and guided onboarding live at `https://app.atende.com.ar`.
 
 ## Stack
 
-- Next.js 15 App Router with `output: 'export'`
+- Next.js 15 App Router with `output: 'standalone'` and request-time SSR for the blog
 - React 19 and strict TypeScript
 - Tailwind CSS v4 with a hand-built component system
 - `next/font` for self-hosted Instrument Sans, Inter Tight, and IBM Plex Mono
 - Lucide React for the small number of interface icons
-- Vitest for contact and structured-data tests; Cheerio for auditing exported HTML
+- Vitest for content, contact and structured-data tests; Cheerio for auditing production HTTP responses
 
-The site has no server runtime, CMS, form handler, analytics dependency, or client-side animation library. The demo form prepares a WhatsApp/email inquiry in the browser. `npm run build` creates the deployable `out/` directory.
+The blog reads validated Markdown from `content/blog/` on the server. The demo form prepares a WhatsApp/email inquiry in the browser. `npm run build` creates the deployable `.next/standalone/` directory, including Markdown and assets; `npm start` runs its Node server. The previous static `out/` deployment is no longer used. See [blog publishing and deployment](docs/blog.md) for setup and the editorial workflow.
 
 ## Develop
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -31,6 +31,8 @@ npm run verify
 ```
 
 ## Content
+
+The blog starts with 40 Spanish articles across 30 sectors, six tool comparisons and four practical guides. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
 
 Spanish marketing copy and shared product facts live in `src/content/`:
 

@@ -1,7 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: 'standalone',
+  outputFileTracingIncludes: { '/*': ['./content/blog/**/*.md'] },
   outputFileTracingRoot: process.cwd(),
   trailingSlash: false,
   images: {

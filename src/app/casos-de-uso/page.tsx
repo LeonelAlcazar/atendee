@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { casos } from '@/content/casos';
 import { CaseBlock } from '@/components/casos/CaseBlock';
@@ -41,6 +42,7 @@ export default function CasosDeUsoPage() {
           <h2 className="font-display font-semibold text-4xl md:text-6xl tracking-[-0.025em] leading-[0.95]">
             ¿No ves tu rubro? <span className="text-coral">Evaluemos tu caso.</span>
           </h2>
+          <Link href="/blog" className="py-2 font-semibold underline underline-offset-4">Explorá las guías de WhatsApp para más rubros →</Link>
           <Button
             href={buildWaLink('Hola, mi rubro no está en los casos pero quiero saber si me sirve')}
             variant="primary"
