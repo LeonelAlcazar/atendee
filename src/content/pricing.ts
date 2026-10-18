@@ -2,6 +2,14 @@ import type { FaqItem } from './faq';
 
 export const pricingFaq: FaqItem[] = [
   {
+    q: '¿Puedo usar Atende solamente como CRM?',
+    a: 'Sí. Plan CRM incluye la bandeja compartida y las herramientas de CRM para que tu equipo responda manualmente. No incluye automatizaciones ni respuestas del asistente. Consultá el precio vigente en la app antes de confirmar el pago.',
+  },
+  {
+    q: '¿Qué planes incluyen Whatsapp MCP?',
+    a: 'Whatsapp MCP está disponible en todos los planes, incluido Plan CRM. Permite conectar herramientas externas a tu espacio de WhatsApp.',
+  },
+  {
     q: '¿Dónde puedo ver el precio de Atende?',
     a: 'Creá tu espacio e ingresá a la sección de facturación de la app para ver los planes habilitados, el precio y las condiciones antes de confirmar el pago. También podés consultar al equipo comercial por WhatsApp o email.',
   },
