@@ -69,6 +69,8 @@ Si elegís una herramienta para cubrir únicamente WhatsApp, definí cómo segui
 
 Prepará un contacto que consulta por dos canales y otro que necesita el estado de un pedido. En el primer caso, verificá qué información realmente se vincula. En el segundo, pedí que muestren qué ocurre cuando el sistema externo no encuentra la orden. Una lista de conectores no demuestra que el flujo de tu empresa esté resuelto.
 
+Si el problema está en repartir consultas y retomar conversaciones cuando alguien se ausenta, la guía de [alternativas a Callbell](/blog/alternativas-a-callbell) propone una prueba con dos agentes. Para evaluar información vigente, calidad de las respuestas y pase desde IA, consultá la comparación de [alternativas a Aivo](/blog/alternativas-a-aivo).
+
 ## Cuándo revisar tu proceso actual antes de cambiar
 
 Si ya dependés de recorridos entre canales o sistemas que funcionan en respond.io, documentalos antes de considerar un reemplazo. La decisión puede ser mejorar ese recorrido o reducir alcance, pero debe basarse en lo que usa el equipo y en lo que espera el cliente.

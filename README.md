@@ -32,7 +32,7 @@ npm run verify
 
 ## Content
 
-The blog contains 42 Spanish articles: 30 sector guides, six tool comparisons and six practical guides. The October 2026 additions cover quotations and attention outside business hours. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
+The blog contains 45 Spanish articles: 30 sector guides, nine tool comparisons and six practical guides. The October 2026 additions cover quotations, attention outside business hours, and alternatives to Botmaker, Aivo and Callbell. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
 
 Spanish marketing copy and shared product facts live in `src/content/`:
 

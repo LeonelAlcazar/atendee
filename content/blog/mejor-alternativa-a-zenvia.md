@@ -96,6 +96,8 @@ Si el problema está en la primera atención de WhatsApp, podés incluir Atende 
 
 También podés consultar nuestras guías de [alternativas a Manychat](/blog/mejor-alternativa-a-manychat) y [alternativas a respond.io](/blog/mejor-alternativa-a-respond-io) para preparar preguntas sobre marketing y atención entre canales. Son comparaciones de alcance, no una recomendación de migrar a cualquier herramienta que aparezca allí.
 
+Si necesitás que la automatización complete pasos en otros sistemas, la guía de [alternativas a Botmaker](/blog/alternativas-a-botmaker) propone una prueba de acciones, validación humana y continuidad de procesos antes de cambiar de plataforma.
+
 Si tu solución actual cumple las funciones necesarias pero deja consultas sin atender, revisá quién toma los pendientes y cómo se actualizan las respuestas. Cambiar de plataforma no resuelve por sí mismo una responsabilidad que nadie tiene asignada.
 
 ## Una prueba de demo que ayuda a decidir

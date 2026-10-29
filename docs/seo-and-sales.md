@@ -23,7 +23,7 @@ WhatsApp MCP access does not imply that any external CRM, inventory, booking or 
 
 ## Search implementation
 
-- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution routes use `generateStaticParams`; the Markdown blog uses request-time SSR. The catalog contains 42 articles, 11 topic pages, a blog index and editorial page. See [blog publishing and runtime](blog.md).
+- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution routes use `generateStaticParams`; the Markdown blog uses request-time SSR. The catalog contains 45 articles, including nine comparisons, 11 topic pages, a blog index and editorial page. See [blog publishing and runtime](blog.md).
 - Organization, WebSite and SoftwareApplication entities share stable IDs across pages. Commercial pages include WebPage metadata, visible breadcrumbs where applicable and Service entities on solution details.
 - FAQ markup and the accessible HTML disclosures use the same content objects. This improves consistency; it does not promise a FAQ rich result or an AI citation.
 - `src/content/pages.ts`, the solution catalog and published Markdown feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
@@ -43,6 +43,12 @@ The editorial scope preserves QR connection, human review, and separately confir
 Before describing this iteration as live, record its deployed commit and verify the production routes, metadata, links and sitemap. Keep that evidence separate from local validation results. Sitemap submission and URL inspection also require access to the verified `atende.com.ar` Search Console property; checking a public sitemap is not the same as submitting it.
 
 Google ended FAQ rich results on May 7, 2026, as recorded in its [documentation updates](https://developers.google.com/search/updates#may-2026). Visible FAQs remain useful, and any retained FAQ schema must match them. The empty search-appearance export does not establish a schema defect.
+
+## Additional comparison guides
+
+Three subsequent comparisons cover alternatives to Botmaker, Aivo and Callbell. They focus respectively on process execution, answer quality and shared team attention, with plural options, primary sources checked on October 28, 2026, and concrete evaluation scenarios. This is an editorial expansion; the supplied Search Console exports do not establish demand for those three brands. The original report remains a record of the earlier 42-article iteration.
+
+The new articles link to related comparisons and operational guides, with contextual links from the existing Zenvia and respond.io articles. The footer links directly to `/blog/tema/alternativas` so visitors can find all nine comparisons.
 
 ## Conversion flow and measurement
 
