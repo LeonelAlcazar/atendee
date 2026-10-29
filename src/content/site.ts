@@ -5,7 +5,7 @@ export const site = {
   appUrl: 'https://app.atende.com.ar',
   tagline: 'Tu negocio atendido, incluso cuando vos no estás.',
   description:
-    'Automatizá la atención y las consultas de venta por WhatsApp con IA. Atende reúne a tu equipo en una bandeja compartida para empresas y PyMEs argentinas.',
+    'Atende es un software de atención y ventas por WhatsApp con IA para empresas y PyMEs argentinas. Respuestas configuradas, bandeja compartida y control humano.',
   whatsapp: {
     number: '543512901337',
     display: '+54 351 290 1337',

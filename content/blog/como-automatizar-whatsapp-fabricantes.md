@@ -11,7 +11,7 @@ summary: >-
   plazo deseado. El equipo técnico valida tolerancias, materiales, capacidad y
   presupuesto antes de comprometer fabricación o entrega.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-10-28'
 category: industria-y-logistica
 sector: Fabricantes y proveedores industriales
 tags:
@@ -21,6 +21,7 @@ tags:
 related:
   - como-automatizar-whatsapp-empresa
   - como-automatizar-whatsapp-logistica
+  - cotizaciones-por-whatsapp-automaticas
 faq:
   - q: >-
       ¿Qué información preparar para automatizar WhatsApp en fabricantes y
@@ -60,6 +61,8 @@ En una venta industrial, un nombre de pieza rara vez describe por completo el pe
 2. Reuní cantidad, material especificado y plazo deseado. No conviertas medidas ni cambies tolerancias sin revisión de quien prepara la oferta.
 
 3. El área técnica verifica documentación y factibilidad, y ventas confirma condiciones. Una cotización revisada debe distinguirse de un pedido aceptado para producir.
+
+Vinculá cada propuesta con la referencia y revisión de la documentación que evaluó el equipo. Si el cliente envía otro plano, cambia el material o modifica la cantidad, confirmá si la oferta anterior sigue siendo válida antes de comunicar un precio. Para organizar esa revisión, usá la [plantilla de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas): permite dejar explícitos el alcance, la fuente de precios, los responsables y los pendientes. Es un procedimiento del negocio, no una validación técnica automática de Atende.
 
 ## Ejemplo de conversación
 

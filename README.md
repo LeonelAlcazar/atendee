@@ -32,7 +32,7 @@ npm run verify
 
 ## Content
 
-The blog starts with 40 Spanish articles across 30 sectors, six tool comparisons and four practical guides. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
+The blog contains 42 Spanish articles: 30 sector guides, six tool comparisons and six practical guides. The October 2026 additions cover quotations and attention outside business hours. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
 
 Spanish marketing copy and shared product facts live in `src/content/`:
 
@@ -45,6 +45,8 @@ Spanish marketing copy and shared product facts live in `src/content/`:
 - `pricing.ts` — buying and pricing questions
 
 Solution detail pages, `/precios` and `/demo` support the B2B buying flow. See [SEO and sales notes](docs/seo-and-sales.md) for product-claim sources, conversion events, verification and search monitoring.
+
+The [October 2026 Search Console analysis](docs/search-console-2026-10-28.md) documents all seven exports, their limitations, the content priorities and the follow-up measurement plan.
 
 Keep product claims aligned with the working app. In particular, the current connection flow uses the QR experience shown in `app.atende.com.ar`; do not describe it as a Meta Business API approval flow.
 

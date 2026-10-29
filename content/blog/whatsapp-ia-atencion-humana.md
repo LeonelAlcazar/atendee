@@ -10,7 +10,7 @@ summary: >-
   continuar desde la bandeja compartida. Una derivación útil conserva el motivo,
   explica el siguiente paso y respeta el horario de atención humana.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-10-28'
 category: guias
 tags:
   - WhatsApp
@@ -19,6 +19,7 @@ tags:
 related:
   - como-automatizar-whatsapp-empresa
   - mensajes-automaticos-whatsapp-negocios
+  - atencion-comercial-whatsapp-24-7
 faq:
   - q: ¿El cliente puede pedir hablar con una persona?
     a: >-
@@ -59,6 +60,8 @@ Esta tabla es una lista de revisión del proceso, no una promesa de campos autom
 Asigná una responsabilidad operativa: recepción para turnos, ventas para presupuestos o administración para pedidos existentes. Aunque varias personas tengan acceso a la bandeja, el negocio necesita decidir quién revisa los pendientes y cuándo.
 
 Prepará un mensaje para cuando hay equipo disponible y otro para fuera de horario. Si la consulta se deriva a la noche, no debe decir que una persona está contestando en ese instante. El cliente necesita conocer el siguiente paso sin una promesa de tiempo que nadie verificó.
+
+Al comenzar la jornada, una persona debe revisar las conversaciones que quedaron pendientes y decidir quién continúa cada una. Revisá el motivo, los datos ya recibidos y cualquier compromiso comunicado; una respuesta automática no significa que el caso esté resuelto. Acordá también quién se ocupa si el responsable habitual está ausente. La [guía de atención comercial fuera de horario](/blog/atencion-comercial-whatsapp-24-7) desarrolla esta revisión y las pruebas de horario y conexión. La asignación de responsabilidades es parte del procedimiento del equipo, no una promesa de reparto automático de conversaciones.
 
 ## Cómo probar la intervención en Atende
 

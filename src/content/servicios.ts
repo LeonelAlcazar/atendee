@@ -5,6 +5,7 @@ export type ChatMessage = { from: 'them' | 'us'; text: string };
 export type Servicio = {
   id: 'atencion' | 'turnos' | 'ventas';
   slug: string;
+  updated: string;
   number: string;
   title: string;
   seoTitle: string;
@@ -18,12 +19,14 @@ export type Servicio = {
   scope: string;
   workflow: { title: string; text: string }[];
   faq: FaqItem[];
+  guides?: { slug: string; label: string }[];
 };
 
 export const servicios: Servicio[] = [
   {
     id: 'atencion',
     slug: 'atencion-automatica-whatsapp',
+    updated: '2026-09-10',
     number: '01',
     title: 'Atención automática por WhatsApp con IA',
     seoTitle: 'Atención al cliente por WhatsApp con IA',
@@ -88,6 +91,7 @@ export const servicios: Servicio[] = [
   {
     id: 'turnos',
     slug: 'turnos-whatsapp',
+    updated: '2026-09-10',
     number: '02',
     title: 'Consultas y solicitudes de turnos por WhatsApp',
     seoTitle: 'Gestión de consultas y turnos por WhatsApp',
@@ -152,56 +156,57 @@ export const servicios: Servicio[] = [
   {
     id: 'ventas',
     slug: 'ventas-whatsapp',
+    updated: '2026-10-28',
     number: '03',
-    title: 'Atención de consultas de venta por WhatsApp',
-    seoTitle: 'WhatsApp para ventas y equipos comerciales',
+    title: 'Atención comercial por WhatsApp con IA',
+    seoTitle: 'Atención comercial por WhatsApp con IA',
     short:
-      'Atendé consultas comerciales por WhatsApp con IA. Reuní la necesidad del cliente y compartí el historial con tu equipo de ventas desde Atende.',
+      'Respondé consultas comerciales fuera de horario y reuní solicitudes de cotización por WhatsApp con IA. Tu equipo revisa precios, stock y propuestas.',
     description:
-      'Atende atiende la primera consulta comercial con la información de tu negocio, pregunta qué busca el cliente y deja el contexto disponible para tus vendedores. El equipo retoma la conversación para revisar disponibilidad, preparar una propuesta y avanzar con el cierre.',
+      'Atende responde consultas de venta por WhatsApp, incluso fuera del horario de tu equipo, con la información que configurás. Pregunta qué necesita el cliente y reúne los datos para una cotización en la bandeja compartida. Tus vendedores revisan precios y disponibilidad antes de enviar una propuesta o confirmar un pedido.',
     bullets: [
-      'Respuestas sobre productos, servicios y condiciones configuradas',
-      'Preguntas para entender la necesidad del cliente',
+      'Respuestas sobre productos y condiciones configuradas, también fuera de horario',
+      'Solicitud de producto, cantidad y zona para preparar una cotización',
       'Conversaciones e historial accesibles para tus vendedores',
-      'Intervención humana para presupuestos y excepciones comerciales',
+      'Revisión humana de precios, disponibilidad y excepciones comerciales',
     ],
     conversation: [
-      { from: 'them', text: 'Hola, busco equipamiento para mi local' },
+      { from: 'them', text: 'Hola, ¿me pueden cotizar equipamiento para mi local?' },
       {
         from: 'us',
-        text: '¡Hola! ¿Qué tipo de negocio tenés y qué equipo necesitás?',
+        text: '¡Hola! ¿Qué equipo necesitás, en qué cantidad y para qué localidad?',
       },
       {
         from: 'them',
-        text: 'Una cafetería. Necesito una máquina para el mostrador',
+        text: 'Una máquina para una cafetería en Córdoba',
       },
       {
         from: 'us',
-        text: 'Te paso con ventas para que revise las opciones y prepare una propuesta.',
+        text: 'Dejo tu solicitud para ventas. El equipo revisará precio y disponibilidad antes de enviarte la cotización.',
       },
     ],
     ctaContext:
-      'Hola, quiero evaluar Atende para las consultas de venta de mi empresa',
-    fit: 'Para equipos comerciales, comercios e inmobiliarias que reciben consultas por WhatsApp y necesitan entender el interés de cada contacto antes de dedicar tiempo a una propuesta.',
+      'Hola, quiero evaluar Atende para atender consultas comerciales y solicitudes de cotización por WhatsApp',
+    fit: 'Para equipos comerciales, comercios y distribuidoras que reciben consultas por WhatsApp fuera de horario o necesitan reunir los datos de cada solicitud antes de preparar un presupuesto.',
     requirements: [
       'Productos o servicios y condiciones comerciales que se pueden comunicar.',
       'Preguntas de calificación: necesidad, cantidad, zona o plazo, según tu negocio.',
-      'Criterios para pasar la conversación a ventas y un responsable de continuarla.',
+      'Criterios de derivación, horario de atención humana y un responsable de continuar la conversación.',
     ],
     scope:
-      'Los presupuestos definitivos y las condiciones especiales quedan a cargo de tu equipo, salvo una integración acordada. El acceso a stock, CRM, catálogos externos y los mensajes proactivos de seguimiento se evalúan por separado.',
+      'La atención fuera de horario depende de que el servicio y la conexión estén activos; no implica que haya un vendedor disponible las 24 horas. Reunir una solicitud no confirma una cotización ni un pedido. Los precios y presupuestos definitivos quedan a cargo de tu equipo, salvo una integración acordada. El acceso a stock, listas de precios, CRM externo y los seguimientos proactivos se evalúa por separado.',
     workflow: [
       {
         title: 'Atendé el primer contacto',
-        text: 'Respondé las dudas que ya tienen una respuesta definida y explicá qué información necesita ventas para avanzar.',
+        text: 'Respondé preguntas sobre productos y condiciones que ya configuraste, incluso cuando ventas no está disponible. Informá cuándo continúa la atención humana.',
       },
       {
-        title: 'Entendé la oportunidad',
-        text: 'Configurá preguntas útiles para tu proceso: producto, cantidad, ubicación o fecha prevista de compra.',
+        title: 'Reuní la solicitud de cotización',
+        text: 'Pedí producto o servicio, cantidad, localidad y plazo según tu proceso. Los datos quedan en la conversación para que tu equipo evalúe la solicitud.',
       },
       {
-        title: 'Continuá con contexto',
-        text: 'Un vendedor lee el historial en la bandeja compartida y sigue la conversación para preparar la propuesta.',
+        title: 'Revisá y enviá la propuesta',
+        text: 'Un vendedor lee el historial en la bandeja compartida, verifica precios y disponibilidad, y continúa la conversación. El presupuesto y el pedido se confirman en esa instancia.',
       },
     ],
     faq: [
@@ -210,12 +215,30 @@ export const servicios: Servicio[] = [
         a: 'Responde consultas iniciales con la información configurada y reúne la necesidad del cliente en la conversación. Los vendedores pueden revisar el historial y continuar desde la misma bandeja.',
       },
       {
-        q: '¿Atende envía presupuestos o consulta stock en tiempo real?',
-        a: 'Puede comunicar información comercial configurada. Calcular presupuestos o consultar stock en otro sistema requiere una integración habilitada y reglas comerciales definidas.',
+        q: '¿Puedo ofrecer atención comercial 24/7 por WhatsApp?',
+        a: 'Atende puede responder consultas configuradas y reunir solicitudes fuera del horario comercial mientras el servicio y la conexión estén activos. La atención humana depende del horario de tu equipo. Definí qué puede responder y cómo informar cuándo continuará un vendedor.',
+      },
+      {
+        q: '¿Se puede cotizar por WhatsApp automáticamente con Atende?',
+        a: 'Podés automatizar las preguntas para reunir una solicitud y comunicar condiciones comerciales configuradas. Calcular un presupuesto con precios vigentes, descuentos o stock de otro sistema requiere una integración habilitada y reglas comerciales definidas. Sin esa integración, tu equipo revisa y envía la cotización; la solicitud no confirma un precio ni un pedido.',
       },
       {
         q: '¿Hace seguimiento automático de contactos que dejaron de responder?',
         a: 'El envío proactivo de seguimientos no está incluido por defecto. Tu equipo puede retomar las conversaciones desde la bandeja; cualquier automatización adicional se evalúa según el caso.',
+      },
+    ],
+    guides: [
+      {
+        slug: 'atencion-comercial-whatsapp-24-7',
+        label: 'Cómo organizar la atención comercial fuera de horario',
+      },
+      {
+        slug: 'cotizaciones-por-whatsapp-automaticas',
+        label: 'Cómo preparar solicitudes de cotización por WhatsApp',
+      },
+      {
+        slug: 'como-automatizar-whatsapp-distribuidoras',
+        label: 'Ejemplos de atención y solicitudes de cotización para distribuidoras',
       },
     ],
   },

@@ -10,7 +10,7 @@ summary: >-
   capacidad, precio y fecha; el estado de un envío necesita una referencia y
   datos del sistema o del responsable.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-10-28'
 category: industria-y-logistica
 sector: Empresas de logística y transporte
 tags:
@@ -20,6 +20,7 @@ tags:
 related:
   - como-automatizar-whatsapp-empresa
   - como-automatizar-whatsapp-fabricantes
+  - cotizaciones-por-whatsapp-automaticas
 faq:
   - q: >-
       ¿Qué información preparar para automatizar WhatsApp en empresas de
@@ -59,6 +60,8 @@ faq:
 2. Para cotizar, reuní localidades, bultos, peso y dimensiones con sus unidades. Conservá cualquier condición especial para que operaciones determine si acepta la carga.
 
 3. El equipo verifica capacidad, servicio y condiciones. Una fecha deseada queda como solicitud hasta que se confirme retiro y compromiso de entrega.
+
+Antes de preparar el presupuesto, operaciones debe aclarar si el peso y las medidas corresponden a cada bulto o al conjunto. Revisá también las condiciones de retiro y entrega que puedan cambiar el servicio. Si el cliente agrega una caja o modifica el destino, la propuesta necesita una nueva revisión; no alcanza con conservar el total anterior. La [guía de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas) ofrece una plantilla para distinguir los datos recibidos, el precio verificado y lo que todavía falta confirmar.
 
 ## Ejemplo de conversación
 

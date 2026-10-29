@@ -5,7 +5,7 @@ export const landing = {
     titleAccent: 'con IA.',
     titleAfter: 'Más tiempo para vender.',
     description:
-      'Automatizá las consultas repetidas y reuní a tu equipo en una bandeja compartida. Atende responde con la información de tu negocio y deriva a una persona cuando hace falta.',
+      'Atende es un software de atención y ventas por WhatsApp con IA para empresas y PyMEs argentinas. Responde consultas con la información de tu negocio y reúne a tu equipo en una bandeja compartida para intervenir cuando hace falta.',
     primaryCta: 'Solicitar una demo',
     secondaryCta: 'Crear mi espacio',
     reassurance: 'Revisamos tu caso de uso y el alcance antes de contratar.',
@@ -13,8 +13,8 @@ export const landing = {
   facts: [
     {
       number: '01',
-      title: 'Responde 24/7',
-      text: 'Horarios, precios y preguntas frecuentes, sin hacer esperar.',
+      title: 'Atiende fuera de horario',
+      text: 'Horarios y preguntas frecuentes, con la información que vos configurás.',
     },
     {
       number: '02',
@@ -33,7 +33,7 @@ export const landing = {
     },
   ],
   product: {
-    eyebrow: 'TODO EN UN SOLO LUGAR',
+    eyebrow: 'QUÉ ES ATENDE',
     titleBefore: 'Tu equipo ve todo.',
     titleAccent: 'Atende se ocupa de lo repetitivo.',
     description:

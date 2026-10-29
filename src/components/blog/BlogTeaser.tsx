@@ -3,9 +3,9 @@ import { getPosts } from '@/lib/blog';
 import { PostCard } from './PostCard';
 export function BlogTeaser() {
   const featured = [
-    'como-automatizar-whatsapp-concesionaria',
-    'como-automatizar-whatsapp-clinicas',
-    'mejor-alternativa-a-manychat',
+    'como-automatizar-whatsapp-distribuidoras',
+    'cotizaciones-por-whatsapp-automaticas',
+    'mejor-alternativa-a-zenvia',
   ];
   const posts = getPosts();
   return (
@@ -18,8 +18,8 @@ export function BlogTeaser() {
           Una mejor atención empieza con un proceso claro.
         </h2>
         <p className="mt-5 max-w-2xl text-lg text-mute">
-          Qué automatizar, qué datos pedir y cuándo pasar la conversación a tu
-          equipo. Encontrá ejemplos para tu rubro.
+          Cómo preparar solicitudes de cotización, responder consultas y elegir
+          una herramienta para tu negocio.
         </p>
         <div className="mt-9 grid gap-5 md:grid-cols-3">
           {featured

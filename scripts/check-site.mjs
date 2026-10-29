@@ -81,6 +81,22 @@ try {
     expectedPaths.map((path) => (path === '/' ? origin : origin + path)).sort(),
     'Sitemap must cover every public page and every published Markdown post',
   );
+  const commercialDates = new Map([
+    ...Object.values(pages).map((page) => [page.path, page.updated]),
+    ...servicios.map((service) => [
+      `/servicios/${service.slug}`,
+      service.updated,
+    ]),
+  ]);
+  for (const entry of sitemap('url').toArray()) {
+    const path = new URL(sitemap(entry).find('loc').text()).pathname;
+    if (!commercialDates.has(path)) continue;
+    assert.equal(
+      sitemap(entry).find('lastmod').text().slice(0, 10),
+      commercialDates.get(path),
+      `${path}: sitemap date must reflect this page's content update`,
+    );
+  }
   const titles = new Set();
   const descriptions = new Set();
   const documents = new Map();
@@ -245,6 +261,7 @@ try {
 
   for (const path of [
     '/does-not-exist',
+    '/servicios/does-not-exist',
     '/blog/does-not-exist',
     '/blog/tema/does-not-exist',
   ]) {

@@ -1,6 +1,6 @@
 ---
-title: 'Mejor alternativa a Manychat para WhatsApp: cómo elegir'
-seoTitle: 'Mejor alternativa a Manychat para WhatsApp: cómo elegir'
+title: 'Alternativas a Manychat para WhatsApp: cómo elegir'
+seoTitle: 'Alternativas a Manychat para WhatsApp: cómo elegir'
 description: >-
   Compará Manychat y Atende según atención por WhatsApp, campañas y trabajo del
   equipo. Criterios, límites y fuentes para elegir según tu negocio.
@@ -11,7 +11,7 @@ summary: >-
   funciones de Manychat con esos casos. La mejor opción depende del proceso, el
   canal y el alcance contratado.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-10-28'
 category: alternativas
 tags:
   - WhatsApp
@@ -34,19 +34,19 @@ faq:
 sources:
   - title: 'Manychat: producto de WhatsApp'
     url: 'https://manychat.com/product/whatsapp'
-    checkedAt: '2026-09-10'
+    checkedAt: '2026-10-28'
   - title: 'Manychat: métodos de conexión de WhatsApp'
     url: >-
       https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method
-    checkedAt: '2026-09-10'
+    checkedAt: '2026-10-28'
 ---
 Una marca que quiere construir recorridos a partir de campañas tiene un problema diferente de una concesionaria cuyos vendedores reciben la misma pregunta por una unidad. Antes de cambiar de herramienta, separá captación, primera atención y cierre. Un flujo que funciona para una campaña puede necesitar otro diseño para un cliente que ya compró y pide ayuda.
 
 ## Qué propone Manychat y qué propone Atende
 
-Manychat presenta automatizaciones de WhatsApp para preguntas frecuentes, calificación de contactos y mensajes de seguimiento. [Producto oficial de Manychat](https://manychat.com/product/whatsapp). Su ayuda documenta métodos de conexión, incluida la coexistencia en los casos que admite. [Métodos de conexión de WhatsApp](https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method). Esas funciones se deben evaluar en la configuración y el plan aplicables.
+Manychat presenta automatizaciones de WhatsApp para preguntas frecuentes, calificación de contactos y mensajes de seguimiento. [Producto oficial de Manychat](https://manychat.com/product/whatsapp). Su ayuda indica que conecta WhatsApp mediante la plataforma de Meta y permite usar un número existente o adquirir uno nuevo durante la configuración. Las opciones concretas deben confirmarse para tu caso. [Métodos de conexión de WhatsApp](https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method).
 
-Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
+Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM externo o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
 
 ## Comparación por necesidad
 
@@ -58,6 +58,12 @@ Atende responde consultas por WhatsApp a partir de información configurada, per
 
 La tabla compara criterios de elección. No implica que una función de Manychat esté incluida en todos sus planes, ni que ambas herramientas sean intercambiables.
 
+## Conexión e historial: dos puntos que no conviene confundir
+
+La guía general de Manychat consultada el 28 de octubre de 2026 advierte que el historial de chats no se transfiere a Manychat. También menciona coexistencia con WhatsApp Business App. Confirmá qué información permanece en la app y qué podrá ver el equipo dentro de Manychat con el método habilitado para tu número. [Guía oficial de conexión](https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method).
+
+El flujo de Atende descrito aquí usa QR desde dispositivos vinculados; no es una conexión mediante la API oficial de Meta. Tampoco implica que se importen automáticamente los flujos o el historial de otra plataforma. Para comparar, prepará una conversación que esté abierta y verificá dónde encontrará el equipo su contexto después del cambio.
+
 ## La prueba que conviene llevar a una demo
 
 Probá una consulta que llega desde un anuncio con referencia de producto, otra que pide hablar con un vendedor y otra de postventa. Después probá por separado el seguimiento a alguien que dejó de responder: ese caso exige una capacidad distinta de responder un mensaje entrante. Verificá que la propuesta incluya exactamente el recorrido que necesitás.
@@ -66,7 +72,7 @@ Probá una consulta que llega desde un anuncio con referencia de producto, otra 
 
 Si ya tenés campañas que cumplen su objetivo y tu equipo sabe mantenerlas, revisá primero si el problema está en sus mensajes o en la responsabilidad de atención. Cambiar de plataforma sin corregir ese proceso puede dejar el mismo pendiente en una nueva bandeja.
 
-Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: los importes y condiciones se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
+Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: sus [planes y condiciones](/precios) se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
 
 ## Qué confirmar antes de migrar
 

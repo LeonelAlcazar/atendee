@@ -4,15 +4,15 @@ export const pages = {
     path: '/',
     title: 'WhatsApp con IA para empresas y PyMEs en Argentina',
     description:
-      'Automatizá la atención y las consultas de venta por WhatsApp con IA. Bandeja compartida, control humano y tu mismo número. Solicitá una demo de Atende.',
-    updated: '2026-09-10',
+      'Atende es un software de atención y ventas por WhatsApp con IA para empresas argentinas. Respuestas automáticas, bandeja compartida y control humano.',
+    updated: '2026-10-28',
   },
   services: {
     path: '/servicios',
     title: 'Automatización de WhatsApp para empresas',
     description:
       'Conocé las soluciones de Atende para atención al cliente, solicitudes de turnos y consultas de venta por WhatsApp. Alcance, ejemplos e integraciones.',
-    updated: '2026-09-10',
+    updated: '2026-10-28',
   },
   cases: {
     path: '/casos-de-uso',

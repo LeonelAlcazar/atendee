@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...Object.values(pages),
     ...servicios.map((service) => ({
       path: `/servicios/${service.slug}`,
-      updated: pages.services.updated,
+      updated: service.updated,
     })),
     ...legalPages,
     {

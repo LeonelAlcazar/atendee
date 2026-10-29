@@ -134,6 +134,30 @@ export default async function ServicePage({ params }: Props) {
           </div>
         </div>
       </section>
+      {service.guides?.length ? (
+        <nav
+          aria-label="Guías para aplicar esta solución"
+          className="border-b-2 border-ink bg-mint/35 py-10"
+        >
+          <div className="mx-auto max-w-7xl px-5 md:px-8">
+            <h2 className="font-display text-2xl font-semibold">
+              Prepará tu proceso comercial
+            </h2>
+            <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-2">
+              {service.guides.map((guide) => (
+                <li key={guide.slug}>
+                  <Link
+                    href={`/blog/${guide.slug}`}
+                    className="inline-flex min-h-11 items-center underline underline-offset-4"
+                  >
+                    {guide.label} →
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      ) : null}
       <Faq items={service.faq} />
       <nav
         aria-label="Otras soluciones"

@@ -1,89 +1,150 @@
 ---
-title: Cómo automatizar WhatsApp en una distribuidora mayorista
-seoTitle: Cómo automatizar WhatsApp en una distribuidora mayorista
+title: 'WhatsApp para distribuidores: cómo ordenar la toma de pedidos'
+seoTitle: 'WhatsApp para distribuidores: toma de pedidos y automatización'
 description: >-
-  Prepará consultas mayoristas con productos, cantidades y zona de reparto por
-  WhatsApp. Un flujo para listas, mínimos y cotizaciones verificadas.
+  Organizá pedidos mayoristas por WhatsApp con códigos, cajas, unidades y zona de
+  reparto. Flujo, ejemplo y plantilla para verificar precios, stock y entrega.
 summary: >-
-  Una distribuidora puede automatizar información de mínimos, zonas y recepción
-  de listas. Identificá cliente nuevo o habitual, productos, cantidades y
-  localidad. Ventas confirma lista aplicable, stock, condiciones de pago y
-  recorrido de entrega antes de aceptar el pedido.
+  Para ordenar la toma de pedidos por WhatsApp en una distribuidora, reuní la
+  identificación del comercio, los productos con su presentación, las cantidades
+  y la localidad de entrega. La automatización puede responder condiciones
+  generales y pedir datos faltantes. Ventas verifica la lista de precios
+  aplicable, stock, pago y reparto antes de aceptar el pedido; recibir una lista
+  no equivale a cargar una venta en el sistema.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-10-28'
 category: comercio
 sector: Distribuidoras y mayoristas
 tags:
   - WhatsApp
-  - Distribuidoras y mayoristas
+  - distribuidores
+  - pedidos mayoristas
   - automatización
 related:
+  - cotizaciones-por-whatsapp-automaticas
+  - atencion-comercial-whatsapp-24-7
   - como-automatizar-whatsapp-empresa
-  - como-automatizar-whatsapp-tiendas-online
 faq:
-  - q: >-
-      ¿Qué información preparar para automatizar WhatsApp en distribuidoras y
-      mayoristas?
+  - q: ¿Se puede automatizar la toma de pedidos por WhatsApp para distribuidores?
     a: >-
-      Prepará esta información: Condiciones informativas de compra mínima y
-      zonas atendidas. Catálogo con códigos, unidades por presentación y reglas
-      para leer listas. Responsable que valida precios por cliente, pagos y
-      recorridos de reparto.
-  - q: ¿Atende confirma operaciones o consulta otros sistemas por defecto?
+      Se puede preparar la solicitud: responder condiciones generales y reunir
+      productos, presentación, cantidades y localidad. En Atende, confirmar stock,
+      aplicar precios por cliente o registrar el pedido en un sistema requiere
+      revisión del equipo o una integración acordada por separado.
+  - q: ¿Cómo evitar confundir cajas y unidades en un pedido mayorista?
     a: >-
-      Atende responde con la información configurada y permite que tu equipo
-      continúe desde una bandeja compartida. Consultar datos en tiempo real,
-      crear reservas, registrar pedidos o enviar recordatorios requiere una
-      integración confirmada por separado.
+      Pedí código, presentación y cantidad por renglón. Si el cliente escribe
+      solamente un número, aclaralo antes de avanzar. El vendedor debe verificar
+      la equivalencia del empaque vigente; no corresponde deducirla de una compra
+      anterior o de un producto parecido.
+  - q: ¿Atende consulta el stock y la cuenta corriente de cada cliente?
+    a: >-
+      No por defecto. Atende responde con información configurada y permite
+      continuar desde una bandeja compartida. Leer stock, saldos, límites de
+      crédito o listas personalizadas necesita evaluar el sistema de gestión,
+      sus accesos y la integración concreta.
+  - q: ¿Automatizar pedidos incluye compras a proveedores?
+    a: >-
+      Son procesos distintos. Esta guía trata solicitudes de los comercios que
+      compran a una distribuidora. Reponer mercadería con un proveedor, emitir una
+      orden de compra o comprometer un pago requiere un circuito propio y no
+      forma parte del flujo básico de Atende.
 ---
-Una lista de reposición de un comercio habitual requiere menos preguntas que una consulta de alguien que todavía no conoce el mínimo de compra. Si la atención no distingue esos casos, pide datos repetidos o comunica condiciones que no corresponden. El flujo debe conservar unidades y presentaciones, porque diez cajas no equivalen a diez unidades. La propuesta definitiva depende de la lista y del stock que el equipo verifique.
+Un comercio escribe “mandame lo mismo de la semana pasada, pero seis del azul”. Para el vendedor habitual quizá alcance como inicio de una conversación. Para preparar un pedido sin errores faltan referencias: cuál es el producto, si son cajas o unidades, a qué sucursal va y qué condiciones están vigentes. La automatización resulta útil cuando ayuda a completar esos datos y deja visible lo que todavía debe revisar ventas.
 
-## Qué información preparar
+Esta guía se centra en pedidos que recibe una distribuidora de sus clientes. La compra mayorista de mercadería a proveedores es otro proceso: necesita reglas de reposición, autorización y pago propias.
 
-- Condiciones informativas de compra mínima y zonas atendidas.
-- Catálogo con códigos, unidades por presentación y reglas para leer listas.
-- Responsable que valida precios por cliente, pagos y recorridos de reparto.
+## Qué parte de la toma de pedidos conviene automatizar
 
-## Qué responder y qué confirmar con el equipo
+Separá tres momentos: **recibir la consulta, preparar la solicitud y confirmar el pedido**. Un asistente puede responder zonas atendidas o mínimos configurados y preguntar qué necesita el comercio. La confirmación depende de información que suele cambiar por cliente y por día.
 
-| Consulta | Cómo resolverla |
+| Consulta del comercio | Respuesta o siguiente paso |
 | --- | --- |
-| Zona y mínimo | Responder información comercial configurada. |
-| Lista de reposición | Reunir códigos, presentación y cantidades. |
-| Cuenta corriente y entrega | Verificar con administración y ventas antes de confirmar. |
+| “¿Reparten en mi localidad?” | Informar la cobertura vigente; verificar el domicilio si está en el límite de zona. |
+| “Quiero cuatro cajas del P12” | Aclarar presentación y reunir los demás renglones. |
+| “¿Me mantenés el precio anterior?” | Derivar a ventas para verificar la lista aplicable. |
+| “Descontalo de mi cuenta corriente” | Administración revisa identidad, saldo y condiciones. |
+| “Agregalo al pedido que ya salió” | Identificar el pedido y consultar a quien controla preparación y reparto. |
 
-## Un flujo de atención paso a paso
+No presentes una solicitud recibida como una venta aceptada. Si el pedido todavía no tiene verificación comercial, el mensaje debe decirlo.
 
-1. Preguntá si ya compra a la distribuidora y cuál es la localidad del comercio. Identificá la cuenta con el proceso del negocio antes de compartir condiciones particulares.
+## Los datos mínimos de una lista mayorista
 
-2. Recibí la lista y pedí aclaración de renglones sin presentación. No sustituyas un código por un producto parecido sin aprobación del cliente y del vendedor.
+Prepará una forma de pedir datos que el comercio pueda responder desde el celular. No hace falta exigir toda la información administrativa antes de decir si la distribuidora atiende su zona.
 
-3. Ventas verifica disponibilidad, lista aplicable y fecha de reparto. El pedido se confirma después de esa revisión y de las condiciones administrativas necesarias.
+1. **Comercio y sucursal.** Preguntá si es cliente nuevo o habitual. El equipo debe identificar la cuenta antes de compartir precios o condiciones particulares.
+2. **Localidad y modalidad de entrega.** Diferenciá reparto de retiro. Una ruta habitual no confirma que haya lugar en el próximo recorrido.
+3. **Producto y presentación.** Pedí código o descripción inequívoca, variante y empaque. “Detergente de un litro, caja por doce” es más claro que “doce detergentes”.
+4. **Cantidad por renglón.** Conservá la unidad elegida: cajas, paquetes, kilos o unidades. No conviertas una presentación sin verificar su equivalencia.
+5. **Necesidad de entrega.** Registrá cuándo lo necesita el cliente como preferencia; ventas confirma si puede cumplirla.
 
-## Ejemplo de conversación
+Si recibís una foto, un audio o una lista que no se puede interpretar con certeza en el flujo probado, pedí que aclaren los renglones en texto. La disponibilidad de un formato de mensaje no demuestra que todos sus productos y cantidades se hayan leído correctamente.
 
-Ejemplo ilustrativo para adaptar a la información y al proceso de tu negocio. No representa una conversación real ni una operación confirmada.
+## Un flujo de recepción y validación en seis pasos
 
-> Cliente: Necesito reponer seis cajas del producto P12.
+### 1. Distinguir una nueva compra de un pedido existente
+
+“Quiero comprar” y “me faltó una caja” requieren responsables distintos. Para un pedido existente, reuní su referencia y el motivo. No vuelvas a recorrer el formulario comercial ni generes otra solicitud como si fuera una compra nueva.
+
+### 2. Revisar la zona y las condiciones generales
+
+Respondé desde información vigente: cobertura, mínimos y modalidades disponibles. Si un mínimo varía según localidad, no comuniques un único importe como si aplicara a todas las cuentas. Las excepciones las resuelve el equipo.
+
+### 3. Aclarar únicamente los renglones incompletos
+
+Si el cliente ya envió código y cantidad, no los preguntes de nuevo. Concentrá la aclaración en lo que impide cotizar: presentación faltante, variante ambigua o mezcla de cajas y unidades.
+
+### 4. Revisar el contenido con el comprador
+
+Pedí que confirme los productos y las cantidades antes de pasar la solicitud a ventas. Si cambia de seis a cuatro cajas, el vendedor debe reconocer la corrección en el historial. Este control es una revisión de la conversación, no una promesa de un formulario o resumen automático del producto.
+
+### 5. Verificar condiciones y proponer faltantes
+
+Ventas revisa stock, precios aplicables, pago y entrega. Un reemplazo requiere informar diferencias de producto, presentación y precio y obtener aceptación. No sustituyas automáticamente un artículo porque su nombre sea parecido.
+
+### 6. Confirmar por el circuito comercial del negocio
+
+El equipo informa qué se aceptó, el total revisado y la entrega acordada. La carga en el sistema de gestión y su referencia deben verificarse allí. Para diseñar esa etapa, usá la [guía de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas).
+
+## Ejemplo: cuatro cajas no son cuatro unidades
+
+Ejemplo ilustrativo; no representa un pedido real ni una operación confirmada.
+
+> Comercio: Necesito cuatro del P12 y diez del B20 para Villa Allende.
 >
-> Asistente: ¿Es para el mismo comercio y localidad de tu cuenta? El equipo va a verificar la presentación.
+> Asistente: ¿Las cuatro del P12 son cajas o unidades? ¿Y las diez del B20? También necesito el nombre del comercio para que ventas identifique tu cuenta.
 >
-> Cliente: Sí, para el local de Alta Córdoba.
+> Comercio: P12, cuatro cajas por seis; B20, diez unidades. Almacén del Parque.
 >
-> Asistente: Paso la lista para confirmar stock, condiciones y próximo reparto disponible.
+> Asistente: Gracias. La solicitud es P12, cuatro cajas por seis, y B20, diez unidades, para Villa Allende. Ventas debe revisar tu cuenta, precios, stock y reparto antes de confirmar el pedido.
 
-## Casos que conviene probar antes de activar
+Si el catálogo actual indica otra presentación para P12, el vendedor vuelve a consultar. El dato enviado por el cliente sirve para expresar qué quiere; no reemplaza la información vigente de la distribuidora.
 
-Probá una lista con cajas y unidades mezcladas, un cliente nuevo fuera de zona y un cambio de presentación. El asistente no debe asegurar crédito ni un recorrido de reparto a partir de datos generales. Si el comercio necesita precio personalizado, la verificación de cuenta precede a la respuesta.
+## Plantilla para preparar la revisión de ventas
 
-## Cómo implementarlo con Atende
+Usá esta lista en el procedimiento interno del equipo. No describe campos que Atende complete automáticamente.
 
-En Atende configurás la información y las respuestas de tu negocio, vinculás el número de WhatsApp mediante QR y supervisás las conversaciones desde una bandeja compartida. Definí quién toma las derivaciones y probá consultas reales anonimizadas antes de atender clientes.
+```text
+Comercio y sucursal:
+Cliente nuevo / cuenta identificada por el equipo:
+Localidad y entrega o retiro:
+Código | descripción y presentación | cantidad y unidad:
+Cambios que hizo el cliente durante la conversación:
+Falta verificar: precios / stock / pago / reparto
+Responsable de confirmar:
+Referencia del pedido, cuando exista en el sistema:
+```
 
-El flujo básico responde y reúne contexto. Consultar stock, agendas, pedidos o un CRM, ejecutar acciones en otro sistema y enviar recordatorios o seguimientos proactivos requiere una integración evaluada por separado. Revisá el alcance de la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) y prepará tus ejemplos para una [demo](/demo).
+## Cómo empezar con Atende y cuándo integrar el sistema de gestión
 
-## Qué medir y revisar
+Atende vincula WhatsApp mediante QR, responde con la información configurada y permite que tu equipo lea el historial y continúe desde una bandeja compartida. Podés empezar por consultas generales y preparación de solicitudes. Definí quién revisa las derivaciones y cómo atiende las que llegan [fuera del horario comercial](/blog/atencion-comercial-whatsapp-24-7).
 
-Medí listas completas para cotizar, renglones que necesitan aclaración y pedidos confirmados por ventas. Revisá entregas acordadas frente a entregas efectivas en el sistema operativo, sin inferirlas del chat.
+Consultar stock en tiempo real, elegir una lista por cliente, aprobar crédito y registrar pedidos requiere una integración evaluada por separado. Antes de acordarla, verificá qué sistema tiene el dato correcto, quién puede modificarlo y qué ocurre si no responde. Para crear pedidos, también hace falta acordar cómo evitar que un reintento duplique la operación.
 
-Asigná un responsable para corregir respuestas y actualizar información cuando cambien los servicios o las condiciones. Podés usar la [guía general de automatización](/blog/como-automatizar-whatsapp-empresa) para preparar la primera revisión con tu equipo.
+## Qué probar y medir
+
+Probá una lista con unidades mezcladas, un producto discontinuado, un cambio después de la revisión y una entrega fuera de zona. Revisá especialmente “lo mismo de la vez pasada”: el asistente no debe inventar un pedido anterior ni usar condiciones privadas sin identificar la cuenta.
+
+Medí solicitudes listas para cotizar, renglones que exigieron aclaración y pedidos confirmados en el sistema. Si bajan las preguntas repetidas pero aumentan los errores de presentación, el flujo necesita corregirse. La cantidad de chats respondidos, por sí sola, no indica cuántas compras se concretaron.
+
+Para evaluar el alcance, llevá a una [demo](/demo) una lista anonimizada, las reglas de mínimos y dos excepciones habituales. Podés revisar la solución de [ventas por WhatsApp](/servicios/ventas-whatsapp) y las [condiciones de contratación](/precios) con ese proceso definido.
