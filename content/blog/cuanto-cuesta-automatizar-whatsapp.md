@@ -11,7 +11,7 @@ summary: >-
   vigentes de Atende se consultan en la app o mediante una propuesta para tu
   empresa.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-02'
 category: guias
 tags:
   - WhatsApp
@@ -20,6 +20,7 @@ tags:
 related:
   - como-automatizar-whatsapp-empresa
   - mejor-alternativa-a-whatsapp-business
+  - automatizar-whatsapp-gratis
 faq:
   - q: ¿Hay un precio único para automatizar cualquier negocio?
     a: >-
@@ -40,6 +41,8 @@ Comparar dos herramientas por un número mensual sin mirar el alcance puede llev
 Reuní una muestra de actividad del negocio: consultas por mes, motivos frecuentes, personas que atienden y franjas de mayor demanda. Distinguí mensajes de conversaciones y de respuestas de IA. No conviertas una unidad en otra sin que el proveedor explique cómo la contabiliza.
 
 En Atende, los planes contemplan límites de respuestas del agente y dependen de las opciones habilitadas en la contratación. Revisá los [precios y condiciones](/precios) y los planes vigentes en la app antes de elegir. Si el uso es irregular, preguntá cómo se gestionan los límites y qué opciones hay al crecer.
+
+Cada espacio de trabajo en Atende puede obtener 100 créditos de bienvenida por única vez, al instante y sin tarjeta de crédito ni suscripción; cada crédito equivale a una respuesta del asistente. Con la guía para [automatizar WhatsApp gratis](/blog/automatizar-whatsapp-gratis), activalos desde Plan > Créditos gratis para tu espacio, configurá la automatización y probala antes de elegir un plan pago.
 
 ## Separá los componentes del presupuesto
 
