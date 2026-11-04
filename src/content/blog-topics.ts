@@ -1,5 +1,12 @@
 export const blogTopics = [
   {
+    slug: 'bot-de-whatsapp',
+    name: 'Bot de WhatsApp',
+    seoTitle: 'Bot de WhatsApp: creación, costos e IA para ventas',
+    description:
+      'Entendé qué hace un bot de WhatsApp, cómo configurarlo y probarlo, qué cambia entre gratis y pago y cómo usar IA en consultas de venta.',
+  },
+  {
     slug: 'guias',
     name: 'Guías de WhatsApp',
     description:
@@ -73,9 +80,9 @@ export function getBlogTopic(slug: string) {
 }
 export const blogPage = {
   path: '/blog' as const,
-  title: 'Guías de WhatsApp para negocios y alternativas',
+  title: 'Bot de WhatsApp: guías, automatización y alternativas',
   description:
-    'Aprendé a automatizar WhatsApp según tu rubro. Guías prácticas, ejemplos de conversaciones y comparativas para elegir cómo atender con IA y tu equipo.',
+    'Aprendé qué es un bot de WhatsApp, cómo crearlo y qué costos evaluar. Guías por rubro y comparativas para atender con IA y tu equipo.',
 };
 export const editorialPage = {
   path: '/blog/editorial' as const,

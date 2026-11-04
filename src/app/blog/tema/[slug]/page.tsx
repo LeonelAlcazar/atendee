@@ -15,7 +15,10 @@ function topicPage(slug: string) {
   return {
     ...topic,
     path: `/blog/tema/${slug}` as const,
-    title: `${topic.name}: guías de WhatsApp para negocios`,
+    title:
+      'seoTitle' in topic
+        ? topic.seoTitle
+        : `${topic.name}: guías de WhatsApp para negocios`,
   };
 }
 export async function generateMetadata({ params }: Props) {

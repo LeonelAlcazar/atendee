@@ -20,7 +20,7 @@ export function Footer() {
             <span className="sr-only">Inicio</span>
           </Link>
           <p className="mt-5 max-w-sm text-base leading-relaxed text-bg/65">
-            Software de atención y ventas por WhatsApp con IA para empresas y PyMEs argentinas.
+            Bot de WhatsApp con IA y bandeja compartida para la atención y las ventas de empresas y PyMEs argentinas.
           </p>
           <a
             href={site.appUrl}
@@ -39,6 +39,7 @@ export function Footer() {
           <Link href="/#casos" className="w-fit hover:text-coral">Ejemplos</Link>
           <Link href="/#faq" className="w-fit hover:text-coral">Preguntas</Link>
           <Link href="/blog" className="w-fit hover:text-coral">Guías de WhatsApp</Link>
+          <Link href="/blog/tema/bot-de-whatsapp" className="w-fit hover:text-coral">Guías de bot de WhatsApp</Link>
           <Link href="/blog/tema/alternativas" className="w-fit hover:text-coral">Alternativas y comparativas</Link>
           <Link href="/precios" className="w-fit hover:text-coral">Precios y contratación</Link>
           <Link href="/demo" className="w-fit hover:text-coral">Solicitar una demo</Link>

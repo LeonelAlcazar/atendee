@@ -39,8 +39,8 @@ export default function PricingPage() {
           <SectionHeader
             level="h1"
             eyebrow="PRECIOS Y CONTRATACIÓN"
-            title="Un plan para tu forma de atender."
-            sub="Los precios vigentes y los límites de respuestas de IA están en la app, antes de confirmar el pago. Si tu empresa necesita evaluar una integración o un flujo específico, conversemos sobre el alcance."
+            title="Planes para tu bot de WhatsApp."
+            sub="El costo de Atende depende del plan y de las respuestas de IA incluidas. Los precios vigentes se consultan en la app, antes de confirmar el pago. Si necesitás una integración o un flujo específico, evaluamos su alcance con tu empresa."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href={site.appUrl} data-cta="pricing-plans" size="lg">
@@ -64,7 +64,46 @@ export default function PricingPage() {
       <section className="border-b-2 border-ink bg-surface py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <h2 className="font-display text-3xl font-semibold md:text-4xl">
-            Cómo elegir un plan de WhatsApp con IA
+            Atención manual o respuestas con IA
+          </h2>
+          <div className="mt-9 grid gap-6 md:grid-cols-2">
+            <article className="rounded-lg border-2 border-ink bg-bg p-6 shadow-[var(--shadow-brut-sm)]">
+              <h3 className="font-display text-2xl font-semibold">Plan CRM</h3>
+              <p className="mt-4 leading-relaxed text-mute">
+                Para equipos que responden manualmente desde la bandeja
+                compartida. Incluye las herramientas de CRM; no incluye
+                automatizaciones ni respuestas del asistente. Su precio se
+                consulta en la app.
+              </p>
+            </article>
+            <article className="rounded-lg border-2 border-ink bg-bg p-6 shadow-[var(--shadow-brut-sm)]">
+              <h3 className="font-display text-2xl font-semibold">
+                Planes con respuestas de IA
+              </h3>
+              <p className="mt-4 leading-relaxed text-mute">
+                Para usar el bot con la información de tu negocio y supervisar
+                las conversaciones desde la bandeja. Revisá las respuestas
+                mensuales incluidas, las condiciones de uso y los planes
+                habilitados para tu espacio antes de contratar.
+              </p>
+            </article>
+          </div>
+          <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+            Si todavía estás comparando opciones, revisá{' '}
+            <Link
+              href="/blog/bot-de-whatsapp-gratis-o-pago"
+              className="font-semibold underline underline-offset-4"
+            >
+              cuándo elegir un bot de WhatsApp gratis o pago
+            </Link>
+            : además del precio, considerá supervisión, límites e integraciones.
+          </p>
+        </div>
+      </section>
+      <section className="border-b-2 border-ink py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <h2 className="font-display text-3xl font-semibold md:text-4xl">
+            Qué revisar para calcular el costo
           </h2>
           <div className="mt-9 grid gap-6 md:grid-cols-3">
             {criteria.map(([title, text]) => (
@@ -77,6 +116,16 @@ export default function PricingPage() {
               </article>
             ))}
           </div>
+          <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+            Definí primero la tarea que querés automatizar. Podés revisar{' '}
+            <Link
+              href="/servicios"
+              className="font-semibold underline underline-offset-4"
+            >
+              el alcance de atención, turnos y ventas por WhatsApp
+            </Link>{' '}
+            antes de elegir un plan.
+          </p>
         </div>
       </section>
       <section className="border-b-2 border-ink py-16 md:py-20">

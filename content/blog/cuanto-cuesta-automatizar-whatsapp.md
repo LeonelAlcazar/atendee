@@ -11,7 +11,7 @@ summary: >-
   vigentes de Atende se consultan en la app o mediante una propuesta para tu
   empresa.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-02'
+updatedAt: '2026-11-04'
 category: guias
 tags:
   - WhatsApp
@@ -35,6 +35,8 @@ faq:
 sources: []
 ---
 Comparar dos herramientas por un número mensual sin mirar el alcance puede llevar a contratar procesos diferentes. Una propuesta puede cubrir respuestas a consultas y otra incluir campañas, integración con un sistema o trabajo de implementación. Antes de comparar importes, escribí qué necesita hacer el negocio y qué parte continuará resolviendo tu equipo. Esta guía propone una forma de pedir presupuestos comparables; no publica tarifas ni estima un ahorro garantizado.
+
+Si tu primera decisión es si necesitás contratar algo, consultá [bot de WhatsApp gratis o pago](/blog/bot-de-whatsapp-gratis-o-pago). Esa guía ayuda a elegir entre funciones básicas de la app, una prueba de automatización con límites y un plan recurrente. Una vez elegido el alcance, usá los componentes de presupuesto de este artículo para comparar propuestas equivalentes.
 
 ## Definí qué uso querés contratar
 

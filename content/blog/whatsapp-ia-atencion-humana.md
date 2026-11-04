@@ -10,7 +10,7 @@ summary: >-
   continuar desde la bandeja compartida. Una derivación útil conserva el motivo,
   explica el siguiente paso y respeta el horario de atención humana.
 publishedAt: '2026-09-10'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-04'
 category: guias
 tags:
   - WhatsApp
@@ -35,6 +35,8 @@ faq:
 sources: []
 ---
 La atención automática pierde utilidad si el cliente tiene que empezar de cero al hablar con una persona. Diseñar la derivación es parte de la implementación inicial: el equipo necesita saber qué se preguntó, qué respondió el cliente y qué falta verificar. El objetivo no es evitar todas las intervenciones humanas, sino hacer que cada una empiece con información suficiente.
+
+En consultas comerciales, ese pase debe conservar producto, cantidad, localidad y cualquier condición pendiente. La guía de [bot de WhatsApp con IA para ventas](/blog/bot-de-whatsapp-con-ia-para-ventas) desarrolla cómo preparar esa primera atención sin dar por confirmados stock, precio final o una venta. Acá nos concentramos en quién retoma el intercambio y cómo revisarlo.
 
 ## Cuándo pasar la conversación
 

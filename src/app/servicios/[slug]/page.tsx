@@ -141,7 +141,7 @@ export default async function ServicePage({ params }: Props) {
         >
           <div className="mx-auto max-w-7xl px-5 md:px-8">
             <h2 className="font-display text-2xl font-semibold">
-              Prepará tu proceso comercial
+              Guías para preparar esta solución
             </h2>
             <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-2">
               {service.guides.map((guide) => (

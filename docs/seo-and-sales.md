@@ -23,7 +23,7 @@ WhatsApp MCP access does not imply that any external CRM, inventory, booking or 
 
 ## Search implementation
 
-- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution routes use `generateStaticParams`; the Markdown blog uses request-time SSR. The catalog contains 45 articles, including nine comparisons, 11 topic pages, a blog index and editorial page. See [blog publishing and runtime](blog.md).
+- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution routes use `generateStaticParams`; the Markdown blog uses request-time SSR. The catalog contains 50 articles, including nine comparisons, 12 topic pages, a blog index and editorial page. See [blog publishing and runtime](blog.md).
 - Organization, WebSite and SoftwareApplication entities share stable IDs across pages. Commercial pages include WebPage metadata, visible breadcrumbs where applicable and Service entities on solution details.
 - FAQ markup and the accessible HTML disclosures use the same content objects. This improves consistency; it does not promise a FAQ rich result or an AI citation.
 - `src/content/pages.ts`, the solution catalog and published Markdown feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
@@ -49,6 +49,25 @@ Google ended FAQ rich results on May 7, 2026, as recorded in its [documentation 
 Three subsequent comparisons cover alternatives to Botmaker, Aivo and Callbell. They focus respectively on process execution, answer quality and shared team attention, with plural options, primary sources checked on October 28, 2026, and concrete evaluation scenarios. This is an editorial expansion; the supplied Search Console exports do not establish demand for those three brands. The original report remains a record of the earlier 42-article iteration.
 
 The new articles link to related comparisons and operational guides, with contextual links from the existing Zenvia and respond.io articles. The footer links directly to `/blog/tema/alternativas` so visitors can find all nine comparisons.
+
+## November 2026: bot de WhatsApp
+
+Four guides address distinct reader tasks rather than repeating the same query:
+
+| Route | Reader task |
+| --- | --- |
+| `/blog/bot-de-whatsapp` | Understand bot types, scope and connection choices. |
+| `/blog/como-crear-un-bot-de-whatsapp` | Prepare information, configure a first workflow and test exceptions. |
+| `/blog/bot-de-whatsapp-gratis-o-pago` | Choose between basic app tools, a limited automation trial and paid usage. |
+| `/blog/bot-de-whatsapp-con-ia-para-ventas` | Qualify sales inquiries and hand off with context and pending confirmations. |
+
+The homepage targets the commercial product query, pricing addresses Atende's buying conditions, and the new `/blog/tema/bot-de-whatsapp` collection organizes the educational guides. Homepage features, contextual service/pricing links, the footer and existing implementation, cost, free-credits and human-handoff guides provide discovery paths. Existing article publication dates stay unchanged; their review dates reflect the added guidance and links.
+
+Answer summaries, examples, comparison tables, FAQs, primary sources and clear product limits make each article useful to readers and interpretable by search and answer engines. The existing server-rendered content, canonical metadata, BlogPosting/collection data, RSS and sitemap derive from the same catalog. This is an implementation for discoverability; indexing, rankings and AI citations require observation after publication.
+
+The free-versus-paid article complements `/blog/automatizar-whatsapp-gratis`: the former helps choose an approach, while the latter documents activation of the current welcome credits. Plan CRM remains manual-only. Atende's QR connection must not be described as WhatsApp Business Platform onboarding. Features of the WhatsApp Business app and eligibility-dependent Meta offerings must be checked against current primary documentation before making comparisons.
+
+Local release verification on 2026-11-04 passed `npm run verify`: 14 tests, TypeScript, 50-article validation, the standalone production build and the 74-page HTTP SEO audit. Browser review covered the homepage, pricing, service index, attention and sales solutions, blog index, new topic and four new articles at 320, 390 and 1440 pixels without document overflow. Article index navigation and native FAQ keyboard interaction passed. Ignored evidence is stored under `output/seo-bot-whatsapp/` and `output/playwright/`. Production confirmation is a separate check against the deployed commit and custom domain.
 
 ## Conversion flow and measurement
 

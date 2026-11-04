@@ -5,8 +5,8 @@ export type FaqItem = {
 
 export const faq: FaqItem[] = [
   {
-    q: '¿Qué es Atende y para qué empresas sirve?',
-    a: 'Atende es un software de atención y ventas por WhatsApp con inteligencia artificial para empresas y PyMEs argentinas. Combina respuestas configuradas con la información del negocio, una bandeja compartida y la posibilidad de que una persona continúe la conversación.',
+    q: '¿Qué es un bot de WhatsApp y qué hace Atende?',
+    a: 'Un bot de WhatsApp es un programa que responde mensajes automáticamente según reglas o información configurada. Atende usa IA para atender consultas de empresas y PyMEs argentinas con los datos del negocio. Incluye conexión por QR, una bandeja compartida y la posibilidad de que una persona continúe la conversación.',
   },
   {
     q: '¿Cómo conecto mi WhatsApp?',
@@ -19,6 +19,10 @@ export const faq: FaqItem[] = [
   {
     q: '¿Atende responde todo solo?',
     a: 'Responde las consultas para las que lo preparaste. Si falta información o una conversación necesita a una persona, tu equipo puede tomarla desde la bandeja.',
+  },
+  {
+    q: '¿Puedo probar las respuestas antes de usar el bot con clientes?',
+    a: 'Como parte de la configuración, probá preguntas habituales, consultas con información incompleta y pedidos de hablar con una persona. Revisá las respuestas en la bandeja y ajustá la información antes de ampliar el uso. Tu equipo debe seguir supervisando y actualizar los datos cuando cambien.',
   },
   {
     q: '¿Puedo sumar a mi equipo?',

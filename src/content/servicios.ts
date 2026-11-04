@@ -26,14 +26,14 @@ export const servicios: Servicio[] = [
   {
     id: 'atencion',
     slug: 'atencion-automatica-whatsapp',
-    updated: '2026-09-10',
+    updated: '2026-11-04',
     number: '01',
     title: 'Atención automática por WhatsApp con IA',
-    seoTitle: 'Atención al cliente por WhatsApp con IA',
+    seoTitle: 'Bot de WhatsApp para atención al cliente con IA',
     short:
       'Respondé preguntas frecuentes por WhatsApp y derivá a tu equipo desde una bandeja compartida. Para empresas y PyMEs argentinas.',
     description:
-      'Atende es un asistente de IA para la atención al cliente por WhatsApp. Responde con la información que configurás sobre tu empresa: horarios, ubicación, servicios y condiciones comerciales. Tu equipo ve el historial y puede continuar la conversación desde el panel web.',
+      'Atende es un bot de WhatsApp con IA para responder preguntas de atención al cliente: horarios, ubicación, servicios y condiciones comerciales que configurás sobre tu empresa. Se conecta por QR. Tu equipo ve el historial y puede continuar la conversación desde la bandeja compartida.',
     bullets: [
       'Respuestas a preguntas frecuentes, incluso fuera de horario',
       'Información y tono configurados para tu negocio',
@@ -85,6 +85,16 @@ export const servicios: Servicio[] = [
       {
         q: '¿Atende puede responder fuera del horario comercial?',
         a: 'Sí, puede responder consultas configuradas fuera del horario comercial mientras el servicio y la conexión estén activos. La disponibilidad de una persona depende del horario de tu equipo.',
+      },
+    ],
+    guides: [
+      {
+        slug: 'bot-de-whatsapp',
+        label: 'Qué es un bot de WhatsApp y qué tareas puede resolver',
+      },
+      {
+        slug: 'como-crear-un-bot-de-whatsapp',
+        label: 'Cómo preparar respuestas y probar las derivaciones',
       },
     ],
   },
@@ -156,7 +166,7 @@ export const servicios: Servicio[] = [
   {
     id: 'ventas',
     slug: 'ventas-whatsapp',
-    updated: '2026-10-28',
+    updated: '2026-11-04',
     number: '03',
     title: 'Atención comercial por WhatsApp con IA',
     seoTitle: 'Atención comercial por WhatsApp con IA',
@@ -228,6 +238,10 @@ export const servicios: Servicio[] = [
       },
     ],
     guides: [
+      {
+        slug: 'bot-de-whatsapp-con-ia-para-ventas',
+        label: 'Cómo usar un bot con IA para reunir consultas y derivarlas a ventas',
+      },
       {
         slug: 'atencion-comercial-whatsapp-24-7',
         label: 'Cómo organizar la atención comercial fuera de horario',

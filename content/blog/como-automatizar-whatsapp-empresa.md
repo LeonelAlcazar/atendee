@@ -12,7 +12,7 @@ summary: >-
   y permite continuar desde una bandeja compartida; las acciones sobre stock,
   agenda, pedidos o CRM externo requieren una integración específica.
 publishedAt: '2026-09-10'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-04'
 category: guias
 tags:
   - WhatsApp
@@ -51,6 +51,8 @@ faq:
 sources: []
 ---
 Automatizar WhatsApp empieza por elegir qué trabajo querés resolver. Una empresa que tarda en responder horarios necesita algo distinto de una distribuidora que recibe listas mayoristas o un hotel que debe verificar habitaciones. El primer alcance tiene que ser lo bastante concreto para que el equipo pueda decir si la consulta quedó bien atendida.
+
+Si todavía estás evaluando herramientas, la guía de [qué es un bot de WhatsApp](/blog/bot-de-whatsapp) distingue respuestas básicas, flujos e IA. Cuando ya definiste el proceso, usá la plantilla y los casos de prueba de [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp) para convertirlo en una configuración verificable.
 
 Para una PyME argentina, también conviene preparar condiciones locales que afectan la respuesta: sucursales, zonas de entrega, horarios, feriados y la forma en que el negocio comunica sus precios. Esos datos deben salir de la empresa. El asistente no debería deducirlos a partir del rubro o de una conversación anterior.
 

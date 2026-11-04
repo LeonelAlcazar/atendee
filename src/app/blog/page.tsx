@@ -40,8 +40,8 @@ export default function BlogPage() {
               <span className="text-coral">Mejores conversaciones.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-mute">
-              Cómo automatizar WhatsApp en tu negocio: procesos por rubro,
-              ejemplos para probar y criterios para elegir una herramienta.
+              Cómo elegir y crear un bot de WhatsApp para tu negocio: guías de
+              configuración, costos, IA para ventas y procesos por rubro.
             </p>
             <Link
               href="/blog/editorial"
@@ -55,17 +55,18 @@ export default function BlogPage() {
               Para empezar
             </p>
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight">
-              ¿Qué conviene automatizar primero?
+              ¿Qué es un bot de WhatsApp?
             </h2>
             <p className="mt-4 leading-relaxed">
-              Elegí una consulta repetida, prepará una respuesta confiable y
-              definí quién toma las excepciones.
+              Es un programa que responde mensajes automáticamente. Puede seguir
+              reglas o usar IA; necesita información vigente y un criterio para
+              pasar la conversación a tu equipo.
             </p>
             <Link
-              href="/blog/como-automatizar-whatsapp-empresa"
+              href="/blog/bot-de-whatsapp"
               className="mt-5 inline-block py-2 font-semibold underline underline-offset-4"
             >
-              Leer la guía paso a paso →
+              Entender los tipos de bot y cómo elegir →
             </Link>
           </aside>
         </div>

@@ -9,7 +9,7 @@ export function BuyerFit() {
         <SectionHeader
           eyebrow="ELEGÍ POR DÓNDE EMPEZAR"
           title="¿Qué necesita resolver tu empresa?"
-          sub="Atende combina un asistente de IA para WhatsApp con una bandeja compartida. Empezá por una tarea frecuente y definí cuándo debe intervenir tu equipo."
+          sub="Empezá por una consulta frecuente: qué puede responder el bot, qué información necesita y cuándo debe intervenir tu equipo. Cada solución combina IA y una bandeja compartida."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {servicios.map((service) => (
@@ -27,8 +27,12 @@ export function BuyerFit() {
                 href={`/servicios/${service.slug}`}
                 className="mt-6 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
               >
-                Ver alcance y ejemplos{' '}
-                <span className="sr-only"> de {service.title}</span>
+                Ver{' '}
+                {service.id === 'atencion'
+                  ? 'atención automática'
+                  : service.id === 'turnos'
+                    ? 'solicitudes de turnos'
+                    : 'atención comercial'}{' '}
                 <span aria-hidden="true"> →</span>
               </Link>
             </article>

@@ -61,6 +61,17 @@ Use Node.js 22.14 or newer. The build validates all Markdown, creates the standa
 
 Adding or editing a Markdown file in the repository requires deploying it to the running environment. Persistent Node runtimes read the deployed files per request; immutable/serverless deployments need a new deployment for file changes. Rebuild after changing code, taxonomy or homepage features. Do not leave a CDN configured to serve the previous static `out/` site.
 
+### Current production publishing path
+
+As checked on 2026-11-04, `www.atende.com.ar` is served by the existing Vercel project `atende`. Its Git integration deploys `main` from `LeonelAlcazar/atendee`; GitHub's Production deployment records and the Vercel commit status identify the deployed revision. After `npm run verify` and visual review, commit the intended changes and push `origin main`. Observe that commit's Vercel status and Production deployment, then verify the custom domain rather than assuming a successful push is a successful release. Preserve the Next.js server runtime and Markdown file tracing.
+
+```bash
+gh api repos/LeonelAlcazar/atendee/commits/<full-sha>/status
+gh api 'repos/LeonelAlcazar/atendee/deployments?sha=<full-sha>'
+```
+
+Check changed pages, article bodies, canonical URLs, internal links, `/sitemap.xml` and `/blog/feed.xml` on `https://www.atende.com.ar`. Search Console submission is separate from deployment and needs access to the verified property.
+
 ## SEO and generative search
 
 Article pages include the full body, a short answer, an index, visible author/date, FAQs, sources where applicable and related reading. Metadata includes canonical, article Open Graph, Twitter card and RSS discovery. BlogPosting, BreadcrumbList, FAQPage and topic collection data describe visible content and share the site's organization identity. The sitemap uses editorial modification dates, not the time of a build.

@@ -15,7 +15,7 @@ summary: >-
   agotan, el asistente deja de responder hasta que sumes créditos con una
   recompensa aprobada o elijas un plan con automatización.
 publishedAt: '2026-11-02'
-updatedAt: '2026-11-02'
+updatedAt: '2026-11-04'
 category: guias
 tags:
   - WhatsApp
@@ -62,6 +62,8 @@ sources: []
 Para automatizar WhatsApp gratis con Atende, entrá a [app.atende.com.ar](https://app.atende.com.ar), creá tu espacio de trabajo y activá los 100 créditos de bienvenida desde la pantalla Plan. Después cargá la información de tu negocio y conectá tu número por QR. No necesitás tarjeta ni suscripción para activar los créditos; elegir un plan pago es una decisión aparte.
 
 Tené en cuenta la unidad: cada crédito equivale a una respuesta del asistente, no a un cliente ni a una conversación completa.
+
+Si todavía estás decidiendo qué herramienta necesitás, compará [un bot de WhatsApp gratis con uno pago](/blog/bot-de-whatsapp-gratis-o-pago): las funciones básicas de una app, los créditos de prueba y una suscripción resuelven alcances distintos. Para preparar las respuestas y evaluar si funcionan, acompañá estos pasos de activación con la [guía para crear y probar un bot](/blog/como-crear-un-bot-de-whatsapp).
 
 ## Qué incluye la prueba gratis de Atende
 

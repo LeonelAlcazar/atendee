@@ -32,7 +32,7 @@ npm run verify
 
 ## Content
 
-The blog contains 45 Spanish articles: 30 sector guides, nine tool comparisons and six practical guides. The October 2026 additions cover quotations, attention outside business hours, and alternatives to Botmaker, Aivo and Callbell. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
+The blog contains 50 Spanish articles: 30 sector guides, nine tool comparisons and 11 practical guides. The November 2026 additions cover free automation credits and four distinct questions about a bot de WhatsApp: what it does, how to create one, free versus paid options, and AI for sales inquiries. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
 
 Spanish marketing copy and shared product facts live in `src/content/`:
 

@@ -1,11 +1,11 @@
 export const landing = {
   hero: {
     eyebrow: 'PARA EMPRESAS Y PYMES ARGENTINAS',
-    titleBefore: 'WhatsApp',
+    titleBefore: 'Bot de WhatsApp',
     titleAccent: 'con IA.',
-    titleAfter: 'Más tiempo para vender.',
+    titleAfter: 'Vos al mando.',
     description:
-      'Atende es un software de atención y ventas por WhatsApp con IA para empresas y PyMEs argentinas. Responde consultas con la información de tu negocio y reúne a tu equipo en una bandeja compartida para intervenir cuando hace falta.',
+      'Atende es un bot de WhatsApp con IA para empresas y PyMEs argentinas. Responde consultas con la información que configurás y reúne las conversaciones en una bandeja compartida para que tu equipo intervenga cuando hace falta.',
     primaryCta: 'Solicitar una demo',
     secondaryCta: 'Crear mi espacio',
     reassurance: 'Revisamos tu caso de uso y el alcance antes de contratar.',
@@ -14,7 +14,7 @@ export const landing = {
     {
       number: '01',
       title: 'Atiende fuera de horario',
-      text: 'Horarios y preguntas frecuentes, con la información que vos configurás.',
+      text: 'Preguntas frecuentes configuradas, mientras el servicio y la conexión estén activos.',
     },
     {
       number: '02',
@@ -37,7 +37,7 @@ export const landing = {
     titleBefore: 'Tu equipo ve todo.',
     titleAccent: 'Atende se ocupa de lo repetitivo.',
     description:
-      'Una bandeja compartida para responder, supervisar y entender qué está pasando, sin mezclar chats personales ni perder consultas.',
+      'Un bot para las consultas repetidas y una bandeja compartida para supervisar respuestas, leer el historial y continuar la atención con tu equipo.',
     features: [
       {
         id: 'inbox',
@@ -81,7 +81,7 @@ export const landing = {
     {
       number: '04',
       title: 'Empezá a atender',
-      text: 'Atende responde y tu equipo supervisa todo desde una sola bandeja.',
+      text: 'Probá preguntas y derivaciones. Después, Atende responde y tu equipo supervisa desde una sola bandeja.',
     },
   ],
   control: {

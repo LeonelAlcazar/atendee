@@ -2,12 +2,16 @@ import type { FaqItem } from './faq';
 
 export const pricingFaq: FaqItem[] = [
   {
+    q: '¿Cuánto cuesta un bot de WhatsApp con Atende?',
+    a: 'El precio depende del plan habilitado y de los límites de respuestas de IA. Consultá el importe, la moneda y las condiciones vigentes en la app antes de pagar. Las integraciones con otros sistemas requieren evaluar su alcance; no se presupuestan solo con la cantidad de chats.',
+  },
+  {
     q: '¿Puedo usar Atende solamente como CRM?',
     a: 'Sí. Plan CRM incluye la bandeja compartida y las herramientas de CRM para que tu equipo responda manualmente. No incluye automatizaciones ni respuestas del asistente. Consultá el precio vigente en la app antes de confirmar el pago.',
   },
   {
-    q: '¿Qué planes incluyen Whatsapp MCP?',
-    a: 'Whatsapp MCP está disponible en todos los planes, incluido Plan CRM. Permite conectar herramientas externas a tu espacio de WhatsApp.',
+    q: '¿Qué planes incluyen WhatsApp MCP?',
+    a: 'WhatsApp MCP está disponible en todos los planes, incluido Plan CRM. Permite el acceso de herramientas externas autorizadas a tu espacio de WhatsApp. Ese acceso no incluye por sí solo una integración con tu agenda, stock o CRM, ni habilita la automatización del Plan CRM.',
   },
   {
     q: '¿Dónde puedo ver el precio de Atende?',

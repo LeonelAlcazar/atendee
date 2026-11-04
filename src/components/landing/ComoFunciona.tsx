@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { landing } from '@/content/landing';
@@ -35,6 +36,19 @@ export function ComoFunciona() {
             </li>
           ))}
         </ol>
+
+        <p className="mt-10 max-w-3xl leading-relaxed text-mute">
+          Antes de usarlo con clientes, definí las consultas que puede resolver,
+          probá qué pasa cuando falta información y acordá quién toma cada
+          derivación.{' '}
+          <Link
+            href="/blog/como-crear-un-bot-de-whatsapp"
+            className="font-semibold underline underline-offset-4"
+          >
+            Seguí la guía para crear y probar un bot de WhatsApp
+          </Link>
+          .
+        </p>
       </div>
     </section>
   );

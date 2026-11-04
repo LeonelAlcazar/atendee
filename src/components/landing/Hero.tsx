@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { ProductPreview } from '@/components/ui/ProductPreview';
 import { Tag } from '@/components/ui/Tag';
@@ -26,6 +27,13 @@ export function Hero() {
           <p className="max-w-xl font-body text-lg leading-relaxed text-mute md:text-xl">
             {landing.hero.description}
           </p>
+
+          <Link
+            href="/blog/bot-de-whatsapp"
+            className="inline-flex min-h-11 items-center text-sm font-semibold underline underline-offset-4"
+          >
+            Qué es un bot de WhatsApp y qué puede responder →
+          </Link>
 
           <div className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row">
             <Button
