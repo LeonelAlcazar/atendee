@@ -1,21 +1,22 @@
 ---
-title: 'WhatsApp automático para empresas: cómo implementarlo paso a paso'
-seoTitle: 'WhatsApp automático para empresas: guía de implementación'
+title: 'Cómo automatizar WhatsApp Business en tu empresa, paso a paso'
+seoTitle: 'Automatizar WhatsApp Business en tu empresa: guía paso a paso'
 description: >-
-  Automatizá WhatsApp en tu empresa con un proceso concreto: información vigente,
-  consultas comerciales, intervención humana, pruebas y métricas para empezar.
+  Cómo automatizar WhatsApp Business: qué tarea elegir según tu rubro, qué se
+  puede hacer hoy, qué necesita una conexión y cómo probarlo antes de depender.
 summary: >-
-  Para implementar WhatsApp automático en una empresa, elegí una consulta
-  repetida, prepará información vigente y definí qué debe confirmar una persona.
-  Probá respuestas correctas, datos faltantes y el pase al equipo antes de
-  activarlo. Atende conecta el número por QR, responde con información configurada
-  y permite continuar desde una bandeja compartida; las acciones sobre stock,
-  agenda, pedidos o CRM externo requieren una integración específica.
+  Para automatizar WhatsApp Business en tu empresa, elegí una tarea repetida y
+  llevala hasta el final: reservar el turno, tomar la reserva o registrar el
+  pedido. Prepará los datos, definí qué confirma una persona y probá desde otro
+  número. Atende conecta tu número por QR, contesta mensajes de texto y deriva a
+  tu equipo. Conectado a tu agenda o tu sistema, termina la tarea en la charla, y
+  esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el
+  pedido y tu equipo lo confirma.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-04'
+updatedAt: '2026-11-06'
 category: guias
 tags:
-  - WhatsApp
+  - WhatsApp Business
   - automatización
   - empresas
   - atención al cliente
@@ -27,105 +28,160 @@ related:
 faq:
   - q: ¿Qué necesita una empresa para automatizar WhatsApp?
     a: >-
-      Necesita un alcance inicial, información comercial vigente, una persona
-      responsable de actualizarla y un proceso para continuar las excepciones.
-      En Atende también se vincula el número por QR y se prueba la atención
-      desde la bandeja compartida antes de depender del flujo.
-  - q: ¿Necesito un CRM externo para empezar con WhatsApp automático?
+      Una tarea inicial, información comercial vigente, una persona que la
+      mantenga al día y un proceso para las excepciones. En Atende, además, creás
+      tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás
+      créditos o un plan y escaneás el QR.
+  - q: ¿Necesito un CRM para empezar con WhatsApp automático?
     a: >-
-      No es necesario para el flujo básico de Atende: podés configurar
-      respuestas y compartir conversaciones con tu equipo. Leer o modificar
-      datos de un CRM externo requiere evaluar una integración específica.
+      No. Podés empezar con respuestas configuradas y una bandeja compartida. Si
+      querés que el asistente registre interesados en tu CRM o planilla, hace
+      falta conectarlo, y esa conexión se arma a pedido para tu negocio.
   - q: ¿Se puede automatizar la atención fuera de horario?
     a: >-
-      Se puede responder información configurada y reunir solicitudes mientras
-      el equipo está ausente, siempre que la conexión y el servicio estén
-      activos. Los mensajes deben informar el horario humano y dejar claras las
-      verificaciones pendientes; no implica disponibilidad ininterrumpida.
+      Sí. Atende responde mensajes de texto a cualquier hora, mientras el servicio
+      y tu WhatsApp estén conectados. Eso no significa que haya personas
+      disponibles: el asistente tiene que informar el horario de tu equipo y
+      dejar claro qué queda pendiente.
   - q: ¿Cuál es la diferencia entre responder una consulta y automatizar una venta?
     a: >-
-      Responder puede informar condiciones o reunir datos del comprador. Una
-      venta puede requerir stock, precio final, aceptación, pago y registro en
-      otros sistemas. Esas acciones necesitan confirmaciones verificables y no
-      vienen incluidas por el solo hecho de atender con IA.
+      Responder informa condiciones o junta datos. Una venta puede pedir stock,
+      precio final, aceptación, pago y registro en otro sistema. Conectado a ese
+      sistema, el asistente hace esa parte y confirma el resultado; la decisión
+      comercial y las excepciones siguen siendo de tu equipo.
+  - q: ¿Puedo automatizar WhatsApp Business con n8n o ChatGPT?
+    a: >-
+      Sí, si tenés a alguien técnico. Necesitás la API oficial de WhatsApp, la
+      API de un modelo, un servidor y un flujo que después hay que mantener. La
+      guía para crear un bot cuenta qué implica. Atende sirve para el caso en que
+      no querés armar ni mantener todo eso.
 sources: []
 ---
-Automatizar WhatsApp empieza por elegir qué trabajo querés resolver. Una empresa que tarda en responder horarios necesita algo distinto de una distribuidora que recibe listas mayoristas o un hotel que debe verificar habitaciones. El primer alcance tiene que ser lo bastante concreto para que el equipo pueda decir si la consulta quedó bien atendida.
+Automatizar WhatsApp Business en una empresa es decidir qué tarea deja de pasar por una persona: reservar el turno, tomar la reserva, registrar el pedido, cotizar. La respuesta corta es elegir una sola, la más repetida, y llevarla hasta el final antes de sumar otra. Una clínica, una distribuidora y un hotel no empiezan por el mismo lado, así que el primer paso depende de tu rubro.
 
-Si todavía estás evaluando herramientas, la guía de [qué es un bot de WhatsApp](/blog/bot-de-whatsapp) distingue respuestas básicas, flujos e IA. Cuando ya definiste el proceso, usá la plantilla y los casos de prueba de [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp) para convertirlo en una configuración verificable.
+Esta guía es el mapa: te ayuda a elegir la tarea, muestra qué funciona hoy y te manda a la página de tu actividad. Si todavía estás entendiendo la tecnología, [qué es un bot de WhatsApp](/blog/bot-de-whatsapp) distingue respuestas, flujos e IA.
 
-Para una PyME argentina, también conviene preparar condiciones locales que afectan la respuesta: sucursales, zonas de entrega, horarios, feriados y la forma en que el negocio comunica sus precios. Esos datos deben salir de la empresa. El asistente no debería deducirlos a partir del rubro o de una conversación anterior.
+## Qué tarea automatizar primero, según tu rubro
+
+| Si tenés | Empezá por | Seguí en |
+| --- | --- | --- |
+| Clínica, consultorio o veterinaria | Reservar o reprogramar el turno, solo en lo administrativo | [Clínicas y consultorios](/casos-de-uso/clinicas-y-consultorios) |
+| Peluquería, estética o gimnasio | Reservar el lugar en la agenda | [Peluquerías y estética](/casos-de-uso/peluquerias-y-estetica) |
+| Restaurante u hotel | Tomar la reserva | [Restaurantes y hoteles](/casos-de-uso/restaurantes-y-hoteles) |
+| Comercio o distribuidora | Consultar stock y registrar el pedido | [Comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras) |
+| Concesionaria o inmobiliaria | Cotizar, calcular financiación, registrar al interesado y agendar la visita | [Concesionarias e inmobiliarias](/casos-de-uso/concesionarias-e-inmobiliarias) |
+| Estudio o servicio profesional | Calificar la consulta y registrarla | [Servicios profesionales](/casos-de-uso/servicios-profesionales) |
+
+Si preferís entrar por la tarea y no por el rubro, tenés [turnos y reservas](/servicios/turnos-whatsapp), [ventas y pedidos](/servicios/ventas-whatsapp) y [atención automática](/servicios/atencion-automatica-whatsapp). Las tres están juntas en [la página de servicios](/servicios), para elegir por lo que querés dejar hecho. Para el detalle de tu actividad, el [blog](/blog) tiene guías por rubro.
+
+Una tarea terminada se ve así:
+
+> **Ejemplo ilustrativo, con el sistema de reservas conectado**
+>
+> **Cliente:** ¿Tienen mesa para seis el sábado a las 21?
+>
+> **Asistente:** Tengo 21:00 o 21:30. ¿Cuál preferís?
+>
+> **Cliente:** A las 21
+>
+> **Asistente:** Listo, quedó tu reserva para seis el sábado a las 21:00.
+
+Conectado a tu sistema, Atende toma la reserva y tu equipo sigue al tanto desde la bandeja; esa conexión se arma a pedido para tu negocio. Sin conexión, el asistente junta el pedido y tu equipo lo confirma.
+
+## Qué funciona hoy y qué se arma a pedido
+
+Antes de planificar, mirá el estado real. No todo lo que se puede imaginar existe, y mejor saberlo antes de prometérselo a tus clientes:
+
+| Acción | Estado hoy |
+| --- | --- |
+| Responder mensajes de texto a cualquier hora | Incluido en los planes con IA |
+| Derivar a una persona y cerrar la conversación | Incluido en los planes con IA |
+| Enviar fotos y videos de tu biblioteca | Incluido en los planes con IA |
+| Recordar datos del contacto y del negocio | Incluido en los planes con IA |
+| Reservar, reprogramar o cancelar turnos | A pedido, conectado a tu agenda |
+| Tomar reservas y consultar disponibilidad | A pedido, conectado a tu sistema |
+| Registrar pedidos y consultar stock o precios | A pedido, conectado a tu sistema |
+| Cotizar y calcular financiación | A pedido, conectado a tu sistema |
+| Registrar interesados en tu CRM o planilla | A pedido, conectado a tu sistema |
+| Recordatorios y seguimientos | A pedido, armados para tu negocio |
+
+“A cualquier hora” vale mientras el servicio y tu WhatsApp estén conectados. Hay demo de lo conectado para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Contamos aparte [cómo se arma cada conexión](/integraciones). Los límites importan tanto como la lista: el asistente trabaja con mensajes de texto, y audios, imágenes, documentos y grupos no llegan a Atende.
 
 ## 1. Elegí una consulta frecuente con un siguiente paso claro
 
-Revisá una muestra de conversaciones recientes y anotá el motivo, la información que pidió el cliente y el trabajo que hizo una persona. Usá ejemplos anonimizados para las pruebas. No midas el problema solo por la cantidad de mensajes: diez saludos pueden pertenecer a una única consulta.
+Revisá una muestra de conversaciones recientes y anotá el motivo, qué pidió el cliente y qué trabajo hizo una persona. No midas el problema solo por la cantidad de mensajes: diez saludos pueden ser una única consulta.
 
-Elegí un primer caso que tenga una respuesta o una derivación definida. Por ejemplo:
+Elegí un primer caso que tenga un final definido:
 
-| Caso inicial | Resultado esperado | Confirmación pendiente |
+| Caso inicial | Resultado esperado | Queda para una persona |
 | --- | --- | --- |
-| Pregunta por una zona de atención | El cliente conoce la cobertura configurada. | Una dirección excepcional se revisa con el equipo. |
-| Solicitud de cotización | Ventas recibe producto, cantidad y localidad. | Precio, disponibilidad y propuesta final. |
-| Consulta de un servicio | El cliente conoce el alcance publicado. | Excepciones o condiciones particulares. |
-| Pedido de hablar con una persona | El equipo puede continuar con el historial. | La atención humana según el horario informado. |
+| Pregunta por una zona de atención | El cliente conoce la cobertura. | Una dirección excepcional. |
+| Solicitud de presupuesto | Ventas recibe producto, cantidad y localidad. | Precio final y propuesta. |
+| Pedido de turno | El turno queda reservado, o la solicitud completa si no hay conexión. | Casos fuera de agenda. |
+| Pedido de hablar con una persona | El chat queda marcado para tu equipo. | La atención, en el horario informado. |
 
-Si no podés describir el resultado esperado, todavía falta definir el proceso. “Que la IA venda” es demasiado amplio para configurar y revisar una primera implementación.
+Si no podés describir el resultado esperado, todavía falta definir el proceso. “Que la IA venda” es demasiado amplio para configurar y revisar.
 
-## 2. Separá información estable de datos que cambian por operación
+## 2. Separá información estable de datos que cambian
 
-Armá una base breve con horarios, sedes, servicios, condiciones y excepciones. Asigná un responsable para mantener cada dato que cambie. Un texto correcto hoy puede dejar de serlo si se modifica el reparto o cierra una sucursal.
+Armá una base breve con horarios, sedes, servicios, condiciones y excepciones. Para una PyME argentina, sumá lo que define la respuesta real: zonas de entrega, retiro o envío, feriados, medios de pago, si pedís seña, qué obras sociales tomás, cómo funcionan las cuotas. Asigná a alguien para mantener cada dato. El asistente no debería deducirlos del rubro.
 
 Distinguí tres fuentes:
 
-- **Información configurada:** horarios, ubicación o descripción de un servicio que el negocio mantiene actualizados.
-- **Decisiones por caso:** un descuento excepcional, una devolución o un presupuesto técnico que revisa una persona.
-- **Datos de otro sistema:** stock actual, estado de un pedido o disponibilidad de agenda, que necesitan consulta verificable.
+- **Información configurada:** horarios, ubicación o descripción de un servicio.
+- **Decisiones por caso:** un descuento excepcional, una devolución o un presupuesto técnico.
+- **Datos de otro sistema:** stock actual, estado de un pedido o disponibilidad de agenda.
 
-Cargar un catálogo no convierte la atención en una consulta de stock en tiempo real. Tampoco permite inferir que un precio publicado aplica a todas las cantidades, cuentas o modalidades de entrega.
+Cargar un catálogo no convierte la atención en una consulta de stock en tiempo real. Tampoco permite suponer que un precio publicado vale para todas las cantidades, cuentas o modalidades de entrega.
 
-## 3. Diseñá las preguntas y el pase a una persona
+## 3. Definí las preguntas y el pase a tu equipo
 
-Escribí qué dato necesita el siguiente responsable para avanzar. En vez de pedir todo al comienzo, preguntá lo que falta en la conversación. Si el cliente ya dijo producto y cantidad, podés pasar a la localidad sin volver al saludo inicial.
+Escribí qué dato necesita quien sigue para avanzar. En vez de pedir todo al comienzo, preguntá lo que falta en la conversación.
 
-Definí cuándo se deriva: pedido explícito de hablar con alguien, reclamo, información que no está disponible o una decisión fuera del alcance. Acordá quién revisa esos casos y qué mensaje recibe el cliente mientras espera.
+Definí cuándo se deriva: pedido de hablar con alguien, reclamo, información que no está cargada o una decisión fuera de alcance. Sin conexión, sumá un caso más: cuando el pedido esté completo.
 
-La [guía de atención humana](/blog/whatsapp-ia-atencion-humana) explica cómo conservar contexto. Si el principal problema ocurre cuando cierra el negocio, empezá por el circuito de [atención comercial fuera de horario](/blog/atencion-comercial-whatsapp-24-7).
+Dos cosas que hay que saber antes de armar el circuito. Derivar marca el chat como “Necesita humano” pero no le avisa a nadie, así que alguien tiene que mirar los pendientes. Y para que una persona siga, responder no alcanza: también hay que marcar ese estado, y la pausa termina cuando el chat se cierra solo, 12 horas después del último mensaje del cliente. Está todo en [cómo pausar el bot y tomar el chat](/blog/whatsapp-ia-atencion-humana). Si trabajan varios sobre el mismo número, mirá [WhatsApp para varios usuarios](/blog/whatsapp-varios-usuarios). Si el problema principal aparece cuando cerrás, empezá por la [atención fuera de horario](/blog/atencion-comercial-whatsapp-24-7).
 
-## 4. Configurá Atende y verificá la operación del número
+## 4. Configurá Atende y conectá el número
 
-En Atende vinculás WhatsApp mediante QR, configurás la información del negocio y supervisás conversaciones desde una bandeja compartida. El equipo puede leer el historial y responder manualmente. La conexión y el servicio deben estar activos para que funcione la atención automática.
+Son cinco pasos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el QR. Se conecta por QR. No es la API oficial de Meta, y nadie puede prometerte que WhatsApp no va a restringir un número. Tus clientes te siguen escribiendo al mismo WhatsApp.
 
-Definí quién revisa el estado de la conexión, quién corrige información comercial y quién atiende los casos que requieren una persona. Pueden ser integrantes del mismo equipo, pero las responsabilidades deben estar claras.
+Definí quién revisa que la conexión siga activa, quién corrige la información y quién toma las derivaciones. Pueden ser las mismas personas, pero tiene que estar claro. Para el detalle, usá la plantilla de [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp).
 
-Probá el flujo con el número y la configuración que vas a usar. Si el negocio tiene requisitos específicos de conexión, canales o sistemas, verificalos antes de contratar: no se resuelven únicamente eligiendo el texto de bienvenida.
+## 5. Probá las excepciones, no solo la respuesta esperada
 
-## 5. Probá las excepciones además de la respuesta esperada
-
-Una pregunta bien escrita con todos los datos es solo una parte del uso real. Esta lista permite observar decisiones concretas:
+No hay modo de prueba: una vez vinculado el número, el asistente contesta a todos tus contactos. Probalo desde otro número; usa créditos. Una pregunta bien escrita con todos los datos es solo una parte del uso real:
 
 | Prueba | Comportamiento que conviene verificar |
 | --- | --- |
-| “¿Cuánto sale?” sin indicar producto | Pedir la referencia necesaria. |
-| Cambio de cantidad o de servicio | Continuar con la última necesidad del cliente. |
-| Precio o disponibilidad no verificados | Explicar que falta revisión, sin inventar un dato. |
-| “Quiero hablar con alguien” | Permitir que el equipo continúe y explicar su horario. |
-| Consulta que no pertenece al negocio | Reconocer el límite y evitar respuestas comerciales improcedentes. |
-| Una persona retoma la atención | Leer el contexto y responder sin duplicar el intercambio. |
+| “¿Cuánto sale?” sin indicar producto | Pide la referencia necesaria. |
+| Cambio de cantidad o de servicio | Sigue con la última necesidad del cliente. |
+| Precio o disponibilidad sin verificar | Explica que falta revisión, sin inventar un dato. |
+| “Quiero hablar con alguien” | Deriva y explica el horario de tu equipo. |
+| Consulta que no es de tu negocio | Reconoce el límite. |
+| Una persona toma el chat | Marca “Necesita humano” y el asistente deja de contestar. |
 
-Guardá qué ocurrió y qué debería ocurrir. Corregí la información o el alcance y repetí los casos afectados. No hace falta automatizar todas las consultas para empezar con una tarea que sí quedó probada.
+Guardá qué pasó y qué debería haber pasado. Corregí y repetí los casos afectados. No hace falta automatizar todas las consultas para empezar con una tarea que sí quedó probada.
 
-## 6. Evaluá las integraciones cuando el proceso las necesita
+## 6. Pedí la conexión cuando el proceso ya funciona
 
-“Recibimos tu solicitud” describe una conversación. “Tu pedido quedó registrado” afirma una acción que necesita evidencia. Antes de automatizar reservas, pedidos, stock o CRM externo, identificá el sistema responsable, la información que se consulta y la confirmación que devuelve.
+“Recibimos tu solicitud” describe una conversación. “Tu pedido quedó registrado” afirma una acción que necesita evidencia. Antes de conectar, identificá el sistema responsable, qué se consulta y qué confirmación devuelve.
 
-Una integración debe contemplar fallas: dato inexistente, acceso vencido, sistema sin respuesta o un mensaje repetido. Si no pudo confirmar una operación, el asistente tiene que comunicar el pendiente y pasar el caso al equipo.
+Una conexión tiene que contemplar fallas: dato inexistente, acceso vencido, sistema sin respuesta o un mensaje repetido. Si no pudo confirmar la operación, el asistente tiene que decir qué quedó pendiente y pasar el caso al equipo.
 
-En Atende, esas integraciones, los recordatorios y los seguimientos proactivos se evalúan por separado. Si tu objetivo es presupuestar, la [guía de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas) distingue recopilación de datos, cálculo y emisión formal.
+No te damos un armador de flujos: armamos la conexión con tu sistema. Los recordatorios y seguimientos también se arman a pedido, y con un cuidado propio, porque mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Si tu objetivo es presupuestar, la [guía de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas) separa reunir datos, calcular y emitir.
 
-## 7. Medí resultados que correspondan al alcance
+## 7. Medí lo que corresponde a ese alcance
 
-Separá respuestas útiles, derivaciones atendidas y operaciones confirmadas. Una conversación respondida no equivale a una venta, y una derivación no está resuelta hasta que alguien atiende el motivo.
+Separá respuestas útiles, derivaciones atendidas y operaciones confirmadas. Una conversación respondida no es una venta, y una derivación no está resuelta hasta que alguien atiende el motivo.
 
-Compará consultas del mismo tipo antes y después. Revisá tiempo hasta la respuesta humana, datos que hubo que pedir otra vez y correcciones de información. Si el equipo ahorra preguntas iniciales pero debe corregir precios, todavía hay un problema que resolver.
+Compará consultas del mismo tipo antes y después. Mirá el tiempo hasta la respuesta humana, los datos que hubo que pedir otra vez y las correcciones. Si el equipo ahorra preguntas iniciales pero tiene que corregir precios, todavía hay un problema por resolver.
 
-Para empezar, prepará una lista de consultas frecuentes, su respuesta vigente, las excepciones y el responsable de cada paso. Después revisá la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp), las [condiciones de contratación](/precios) y llevá tus casos a una [demo](/demo). Las guías del [blog por rubro](/blog) ayudan a adaptar los datos y las pruebas a tu actividad.
+## Otros caminos que seguramente estás mirando
+
+- **Gratis.** La app de WhatsApp Business tiene [mensajes automáticos](/blog/mensajes-automaticos-whatsapp-negocios), y Atende da [100 créditos de bienvenida](/blog/automatizar-whatsapp-gratis). Para decidir, mirá [gratis o pago](/blog/bot-de-whatsapp-gratis-o-pago).
+- **Con n8n, ChatGPT o Claude.** Se puede si tenés quien lo mantenga. La cuenta honesta está al final de [cómo crear un bot](/blog/como-crear-un-bot-de-whatsapp).
+- **Con el agente de Meta.** Si te aparece en la app, mirá [cuándo te alcanza](/blog/agente-ia-whatsapp-business-meta).
+- **Costos.** Desde octubre de 2026 cambiaron las tarifas de Meta; la cuenta por unidad está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
+
+Para arrancar, armá una lista con tus consultas frecuentes, su respuesta vigente, las excepciones y el responsable de cada paso, y llevala a una [demo](/demo). Si querés saber primero qué hace el producto, está en [qué es Atende](/que-es-atende).

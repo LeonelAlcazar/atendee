@@ -1,145 +1,142 @@
 ---
-title: 'Alternativas a Callbell para organizar la atención de tu equipo'
-seoTitle: 'Alternativas a Callbell: respond.io y Atende para equipos'
+title: 'Alternativas a Callbell en Argentina: cómo atender WhatsApp entre varios sin pisarse'
+seoTitle: 'Alternativas a Callbell en Argentina: bandeja para equipos'
 description: >-
-  Compará Callbell, respond.io y Atende por bandeja, responsables, canales y
-  automatización. Pruebas de trabajo en equipo y puntos a revisar antes de migrar.
+  Callbell ordena a un equipo en varios canales. Qué pasa cuando alguien toma un
+  chat, cuánto sale por agente y cuándo conviene otra herramienta o quedarte.
 summary: >-
-  Para elegir una alternativa a Callbell, definí cómo se asigna, atiende y retoma
-  cada conversación. respond.io es una opción para evaluar una operación
-  multicanal con automatizaciones e integraciones; Atende, para atención de
-  WhatsApp con historial compartido y continuidad humana. Callbell también
-  ofrece IA y otros módulos, por lo que conviene comparar el alcance que
-  realmente usás, no solamente la bandeja.
+  Quedate en Callbell si tu problema es ordenar a varias personas en varios
+  canales: cobra por agente, ofrece WhatsApp por API y tiene Instagram, Telegram y
+  TikTok. Mirá alternativas si lo que te falta es que el turno quede reservado
+  antes de que alguien lo toque. Atende apunta a eso, conectado a tu agenda y con
+  la conexión armada a pedido, pero trabaja solo en WhatsApp, por QR y con mensajes
+  de texto. Si necesitás API oficial o multicanal, Atende no es la opción.
 publishedAt: '2026-10-28'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
   - Callbell
+  - alternativas
   - bandeja compartida
-  - WhatsApp
-  - atención al cliente
+  - equipos
 related:
   - mejor-alternativa-a-respond-io
-  - alternativas-a-aivo
+  - mejor-alternativa-a-kommo
   - whatsapp-ia-atencion-humana
-  - cuanto-cuesta-automatizar-whatsapp
+  - chatbots-whatsapp-argentina-comparativa
 faq:
-  - q: ¿Qué alternativas a Callbell sirven para un equipo de atención?
+  - q: ¿Cuánto sale Callbell?
     a: >-
-      respond.io merece evaluación si necesitás centralizar varios canales y
-      conectar automatizaciones con otros sistemas. Atende puede evaluarse para
-      WhatsApp con historial compartido, gestión manual e IA según el plan.
-      Probá las asignaciones y los casos pendientes de tu operación antes de
-      decidir.
-  - q: ¿Callbell es solamente una bandeja de WhatsApp?
+      Según su página al 6 de noviembre de 2026, 14 € por agente por mes en el plan
+      base y 18 € en Plus, sin impuestos, más WhatsApp desde 20 € por mes. Las
+      tarifas de Meta van aparte. Confirmá moneda y facturación para Argentina.
+  - q: ¿Si respondo desde la bandeja de Atende, el asistente se calla?
     a: >-
-      No. Su oferta pública incluye una plataforma multicanal, agentes de IA,
-      chatbot, campañas y opciones de integración, además del trabajo multiagente.
-      Confirmá qué módulos usás hoy y cuáles están incluidos en la propuesta que
-      estés comparando.
-  - q: ¿Escanear un QR significa que dos herramientas usan la misma conexión?
+      No. Responder o tocar Asignarme no lo pausa. Para que deje de responder en un
+      chat marcá Necesita humano. La conversación se cierra 12 horas después del
+      último mensaje del contacto, y si escribe de nuevo vuelve el asistente.
+  - q: ¿Atende tiene permisos por rol como una herramienta de equipos?
     a: >-
-      No. Callbell documenta un QR dentro del alta de coexistencia con la API
-      oficial. Atende vincula el número por QR desde dispositivos vinculados y no
-      utiliza esa API en el flujo descrito. Hay que verificar el método completo,
-      además de cómo se ve el paso de conexión.
-  - q: ¿Atende permite atender manualmente sin automatización?
+      No. Cada persona entra con su cuenta y todas trabajan sobre las mismas
+      conversaciones, sin permisos por rol. Si tu operación los necesita, una
+      herramienta como Callbell puede encajar mejor. Confirmalo con el proveedor.
+  - q: ¿Atende funciona en Instagram o Telegram?
     a: >-
-      Sí, existe un modo CRM de atención manual. La disponibilidad de planes y las
-      funciones habilitadas se confirman en la contratación. Si también necesitás
-      respuestas de IA, verificá que el plan permita automatización; no debe
-      suponerse que todos los planes la incluyen.
+      No. Atende trabaja solo en WhatsApp, con un número por espacio. Si atendés
+      por varios canales, Callbell o respond.io cubren esa necesidad y Atende no.
 sources:
-  - title: 'Callbell: plataforma multiagente y módulos'
+  - title: 'Callbell: inicio'
     url: 'https://www.callbell.eu/es/'
-    checkedAt: '2026-10-28'
-  - title: 'Callbell: cómo funciona la asignación automática'
-    url: 'https://callbellsupport.zendesk.com/hc/es/articles/24886954423196-C%C3%B3mo-funciona-la-asignaci%C3%B3n-autom%C3%A1tica'
-    checkedAt: '2026-10-28'
-  - title: 'Callbell: WhatsApp API y coexistencia'
-    url: 'https://callbellsupport.zendesk.com/hc/es/articles/21492784735388-WhatsApp-API-Coexistence'
-    checkedAt: '2026-10-28'
-  - title: 'respond.io: WhatsApp Business API y capacidades'
-    url: 'https://respond.io/whatsapp-business-api'
-    checkedAt: '2026-10-28'
+    checkedAt: '2026-11-06'
+  - title: 'Callbell: precios'
+    url: 'https://www.callbell.eu/es/precios/'
+    checkedAt: '2026-11-06'
+  - title: 'Callbell: conectar WhatsApp Business con Coexistence'
+    url: 'https://www.callbell.eu/en/how-to-connect-whatsapp-business-with-callbell-using-coexistence/'
+    checkedAt: '2026-11-06'
+  - title: 'Whaticket: precios'
+    url: 'https://whaticket.com/precios'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: migrar un número a la Plataforma'
+    url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: usar la app y la API en el mismo número'
+    url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/'
+    checkedAt: '2026-11-06'
 ---
-Dos vendedores responden la misma consulta mientras otra queda sin atender. Un cliente retoma una conversación cerrada, pero su contacto habitual está ausente. Estos problemas suelen aparecer cuando crece el equipo y cada chat necesita un responsable claro.
+Reservar un turno por WhatsApp entre tres personas suele terminar igual: dos contestan, ninguna confirma y el cliente vuelve a escribir. Callbell ataca ese desorden con una bandeja compartida. Atende ataca otra parte del problema: que el turno quede reservado antes de que alguien lo tenga que tocar. Si estás comparando las dos, primero decidí cuál de esos dolores es el tuyo.
 
-Si buscás alternativas a Callbell, compará cómo trabajan **Callbell, respond.io y Atende** frente a esas situaciones. La mejor opción para tu operación depende de los canales, las reglas de atención y las funciones que necesitás mantener.
+Aclaración necesaria: Atende publica esto y compite con Callbell. Los datos de Callbell son los que muestra su sitio al 6 de noviembre de 2026, no una prueba propia. Más sobre el método en los [criterios editoriales](/blog/editorial).
 
-Esta guía la publica Atende y tiene un interés comercial. Las características de otros proveedores se verificaron en fuentes oficiales el 28 de octubre de 2026. Los escenarios de prueba y los criterios de decisión son propuestas editoriales; no representan una prueba comparativa ejecutada ni resultados de clientes.
+## Lo que Callbell le resuelve a un equipo
 
-## Qué ofrece Callbell y qué deberías conservar
+[Callbell](https://www.callbell.eu/es/) se presenta como plataforma para equipos de ventas y soporte: "Todos tus canales. Una sola inbox para el equipo." Reúne WhatsApp, Instagram, TikTok, Messenger, Telegram y chat web, con asignación de chats, campañas de WhatsApp, conexión con tu CRM, "flujos sin código, API y webhooks" y agentes de IA que responden y pasan los interesados a una persona. Muestra insignias de Meta Business Partner y WhatsApp Business Partner.
 
-Callbell presenta una plataforma multiagente con bandeja multicanal, agentes de IA, chatbot, campañas y opciones de integración. Por eso, cambiar de herramienta puede afectar más que la pantalla desde la que responde el equipo. Inventariá los módulos que utilizás antes de comparar una suscripción con otra. [Oferta oficial de Callbell](https://www.callbell.eu/es/).
+Para WhatsApp usa un canal de tipo [WhatsApp Cloud](https://www.callbell.eu/en/how-to-connect-whatsapp-business-with-callbell-using-coexistence/), y con Coexistence podés seguir usando la app en el teléfono, con requisitos de la API y una versión mínima de la app.
 
-Su documentación distingue asignación rotativa y asignación según la cantidad de conversaciones abiertas de cada agente. También contempla disponibilidad y condiciones para reasignar conversaciones reabiertas. Si hoy dependés de esas reglas, incluilas en la prueba del reemplazo. [Asignación automática en Callbell](https://callbellsupport.zendesk.com/hc/es/articles/24886954423196-C%C3%B3mo-funciona-la-asignaci%C3%B3n-autom%C3%A1tica).
+## Qué pasa cuando alguien toma un chat
 
-Antes de migrar por un reparto de trabajo que no funciona, revisá qué regla está activa y qué estados usa el equipo. Puede haber un problema de configuración o de responsabilidad operativa que acompañaría a la empresa a cualquier plataforma.
+Acá se ve la diferencia entre comprar una bandeja y comprar un asistente que trabaja dentro de una. En Atende funciona así, y conviene que lo sepas antes de que te pase con un cliente:
 
-## Alternativa 1: respond.io para una operación entre canales y sistemas
+| Lo que hacés | Lo que pasa en Atende hoy |
+| --- | --- |
+| Tocás "Asignarme" | El chat queda a tu nombre. El asistente sigue respondiendo |
+| Respondés desde la bandeja | Tu mensaje sale. El asistente sigue respondiendo |
+| Marcás "Necesita humano" | El asistente deja de responder en ese chat |
+| Pasan 12 horas del último mensaje del contacto | El chat se cierra. Si escribe de nuevo, vuelve el asistente |
+| Pasás a "Modo CRM" | El asistente se apaga para todo el espacio |
+| Buscás una conversación | Por contacto o teléfono, no por el texto. Filtrás por estado, etiqueta y responsable |
 
-respond.io presenta una bandeja omnicanal, agentes de IA, automatizaciones, distribución de consultas e integraciones con aplicaciones externas. Su oferta de WhatsApp usa la API y contempla coexistencia con WhatsApp Business App. Revisá los requisitos y la configuración aplicables a tu número. [WhatsApp y capacidades de respond.io](https://respond.io/whatsapp-business-api).
+Cuando el asistente deriva, el chat queda marcado para tu equipo, pero nadie recibe un aviso especial. Alguien tiene que mirar la bandeja. Tampoco hay permisos por rol, y hoy la bandeja no distingue qué mensaje escribió el asistente y cuál una persona; eso está planeado. El paso a paso está en [cómo combinar IA y atención humana](/blog/whatsapp-ia-atencion-humana).
 
-Podés incluirlo en la evaluación si una misma consulta pasa entre canales o necesita datos de otros sistemas. El criterio es comprobar la continuidad completa: qué ve el agente, cómo encuentra el contacto y qué sucede cuando falta un dato. Una integración anunciada no demuestra por sí sola que la acción particular de tu negocio esté resuelta.
+Pedile a Callbell que te muestre esa misma tabla con sus bots y agentes de IA encendidos. Es la prueba que más información da.
 
-La [guía de alternativas a respond.io](/blog/mejor-alternativa-a-respond-io) amplía las preguntas sobre canales, conexión y migración.
+## Callbell precios, en euros
 
-## Alternativa 2: Atende para organizar WhatsApp y la continuidad humana
+[Su página al 6 de noviembre de 2026](https://www.callbell.eu/es/precios/) muestra precios sin impuestos:
 
-Atende permite revisar conversaciones con historial compartido y responder manualmente. Incluye gestión manual de CRM y opciones de automatización según el plan. Puede evaluarse cuando el trabajo se concentra en WhatsApp y el equipo necesita sostener la primera atención y continuar las excepciones desde el mismo contexto.
+| Concepto | Precio |
+| --- | --- |
+| Chat multiagente | 14 € por agente, por mes |
+| Chat multiagente Plus | 18 € por agente, por mes |
+| Enterprise, más de 50 agentes | A medida |
+| WhatsApp | Desde 20 € por mes |
+| Cuenta extra (Facebook, Instagram, WhatsApp, Telegram, TikTok) | 20 € por mes |
+| Bot builder avanzado | 59 € por mes |
+| Campañas de WhatsApp | 0,02 € por contacto alcanzado |
 
-La conexión se realiza por QR desde dispositivos vinculados; el flujo descrito no utiliza la API oficial de Meta. Leer o modificar un CRM externo, consultar stock, confirmar reservas o enviar seguimientos proactivos requiere un alcance acordado por separado.
+Con cinco personas en el plan base, un WhatsApp y el bot builder: 5 × 14 + 20 + 59 = 149 € por mes, antes de impuestos y de las tarifas de Meta, que la página aclara que van por separado. El selector de dólares aparece, pero no pudimos leer esos importes, así que confirmá moneda y facturación para Argentina.
 
-Probá la gestión de responsables y pendientes que necesita tu equipo. No deduzcas que tener una bandeja compartida incluye las mismas reglas automáticas de distribución que usabas en Callbell. Si querés atención exclusivamente manual, revisá esa opción; si necesitás IA, confirmá que esté habilitada en el plan. Podés consultar los [servicios de Atende](/servicios) y sus [condiciones de contratación](/precios).
+Los planes de Atende se ven [en la app](/precios) antes de pagar.
 
-## Comparación por tareas del equipo
+## Callbell gana en estos casos
 
-La tabla sirve para preparar una demostración. Las funciones del proveedor deben confirmarse para el plan y la configuración concretos.
+- Tu equipo atiende por Instagram, Telegram o TikTok además de WhatsApp.
+- Necesitás la conexión por API, o usar la app y la API en el mismo número.
+- Mandás campañas de WhatsApp. Atende no hace difusiones.
+- Querés armar tus propios flujos sin depender de nadie.
+- Tu volumen lo llevan personas y lo que falta es orden, no automatización.
 
-| Tarea | Callbell | respond.io | Atende |
-| --- | --- | --- | --- |
-| Centralizar la atención | Revisar los canales y módulos que usás hoy. | Validar cada canal necesario en su propuesta omnicanal. | Evaluar el alcance centrado en WhatsApp. |
-| Repartir consultas | Revisar la regla automática activa y sus excepciones. | Demostrar la distribución con las reglas de tu operación. | Probar la gestión de responsables; confirmar cualquier automatismo requerido. |
-| Cambiar de responsable | Comprobar qué ocurre con el contexto y los pendientes. | Comprobar el pase en el recorrido configurado. | Continuar desde el historial compartido y la atención manual. |
-| Combinar IA y personas | Evaluar módulos contratados y momento de intervención. | Evaluar el agente y la continuidad del equipo. | Respuestas configuradas según el plan y pase humano. |
-| Consultar otro sistema | Confirmar acción y acceso en la integración utilizada. | Confirmar acción y acceso en la integración propuesta. | Evaluar la integración externa por separado. |
+En cualquiera de estos, Atende no es la opción.
 
-No decidas solamente por la cantidad de personas que pueden abrir una conversación. Lo que importa es si cada consulta tiene un siguiente paso visible y alguien responsable de realizarlo.
+## Otras salidas según lo que te falte
 
-## Una demo con dos agentes y una conversación que vuelve
+Si tu problema es precio y querés mantener QR o API, [Whaticket](https://whaticket.com/precios) publica desde US$ 49 por mes con mínimo de 3 usuarios, según su página al 6 de noviembre de 2026; los tokens de IA van aparte. Si lo que falta es un embudo de ventas, mirá [Kommo](/blog/mejor-alternativa-a-kommo). Si tus canales son muchos y el equipo grande, [respond.io](/blog/mejor-alternativa-a-respond-io).
 
-Usá cuentas de prueba y datos ficticios. Este escenario ilustra un equipo comercial, pero se puede adaptar a soporte:
+Si lo que te falta es que la tarea se termine sola, ejemplo ilustrativo de una peluquería con la agenda conectada:
 
-1. **Entra una consulta nueva.** Un cliente pide información de un servicio. Observá quién la recibe y cómo sabe el segundo agente que alguien ya está atendiendo.
-2. **Cambia el motivo.** El cliente aclara que ya contrató y necesita revisar una gestión pendiente. Probá el pase al responsable adecuado y verificá que no se pierda esa aclaración.
-3. **El responsable queda ausente.** Revisá quién puede retomar y qué ocurre con la asignación. La regla acordada debe evitar que el caso dependa de alguien que no está disponible.
-4. **La conversación se cierra y vuelve a abrirse.** El cliente envía información nueva. Comprobá dónde aparece, quién la revisa y si conserva el contexto.
-5. **Llega otro contacto con un nombre parecido.** Verificá que el equipo pueda distinguirlos antes de usar información de la conversación anterior.
+> **Contacto:** ¿Tenés lugar para corte el jueves a la tarde?
+>
+> **Asistente:** Tengo jueves 16:00 o 17:30. ¿Cuál te queda mejor?
+>
+> **Contacto:** A las 16
+>
+> **Asistente:** Listo, te reservé el jueves a las 16:00.
 
-Después, repetí el recorrido con una primera respuesta de IA si esa función forma parte del alcance. El cliente debe poder pedir una persona, y el equipo debe reconocer qué explicó el asistente. La [guía de atención humana](/blog/whatsapp-ia-atencion-humana) permite preparar ese control.
+Conectado a tu agenda, Atende reserva el turno mientras vos estás con la tijera en la mano. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Mirá [qué hace falta para conectar tu agenda](/integraciones) y cómo se ve en [peluquerías y estética](/casos-de-uso/peluquerias-y-estetica).
 
-Anotá errores observados, pasos manuales y consultas que quedaron sin responsable. Medí el tiempo hasta una respuesta útil, no solo hasta que se asignó el chat. Si el problema principal está en la calidad de las respuestas de IA, la [comparación de alternativas a Aivo](/blog/alternativas-a-aivo) propone pruebas específicas de información vigente y límites de respuesta.
+## Lo que te conviene saber antes de mover el número
 
-## Conexión e historial: verificá el método completo
+Atende se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número. Responde mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan ni al asistente ni a la bandeja, algo que un equipo acostumbrado a recibir comprobantes por foto tiene que pensar dos veces. Trabaja con un número por espacio y todavía no tenemos reseñas públicas.
 
-Callbell documenta una modalidad de coexistencia con la API oficial que permite mantener la app de WhatsApp Business y usa un QR durante el alta. También describe una importación opcional con límites: seis meses de mensajes individuales y dos semanas de archivos adjuntos. Esas condiciones corresponden al ingreso mediante esa modalidad, no a una exportación garantizada hacia cualquier proveedor. [Documentación de coexistencia de Callbell](https://callbellsupport.zendesk.com/hc/es/articles/21492784735388-WhatsApp-API-Coexistence).
-
-Ver un QR en dos herramientas no demuestra que usen la misma conexión. En Atende se utiliza la vinculación de dispositivos. Antes de mover un número, confirmá su configuración actual, el procedimiento de destino y qué historial quedará disponible para el equipo. Si necesitás obligatoriamente la API oficial, el alcance descrito de Atende no cumple ese requisito.
-
-## Qué llevar al cambiar de bandeja
-
-Inventariá contactos, conversaciones abiertas, responsables, etiquetas, notas y reglas de atención que tu operación utiliza. Confirmá qué puede exportarse, en qué formato y qué puede importarse al destino; no todos los conceptos tienen necesariamente una equivalencia directa.
-
-Prepará una lista de pendientes con su responsable y próximo paso. El equipo debe poder continuar atendiendo aunque ciertos datos históricos solo queden disponibles para consulta en otro lugar. Acordá cómo se accederá a ellos antes de la transición.
-
-Si también usás campañas, bots o integraciones, tratá cada recorrido como una parte del proyecto. Reproducir la recepción de mensajes no demuestra que esos procesos sigan funcionando.
-
-## Cómo comparar el costo sin perder alcance
-
-Pedí propuestas para el mismo equipo, canales, números y volumen. Separá licencias, uso, automatizaciones, cargos de canal cuando correspondan y trabajo de implementación. Para una operación en Argentina, confirmá moneda de facturación, horario de soporte y quién resolverá una incidencia de conexión.
-
-Contemplá además el trabajo manual que quede después del cambio. Una propuesta con menos módulos puede servir si la operación también se simplifica; si el equipo debe reconstruir tareas todos los días, ese esfuerzo forma parte del costo.
-
-La [guía de costos de automatización](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a ordenar esos rubros. Para evaluar Atende, llevá el escenario de atención con dos agentes a una [demo](/demo) y comprobá la bandeja, el historial y el plan que corresponden al trabajo real de tu equipo.
+Si tu número hoy vive solo en la API de Callbell, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y Atende se vincula desde la app. Con Coexistence, [la desconexión se hace](https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/) desde la app. Preguntale a Callbell por tu caso y por el historial; ese paso no lo probamos con cada proveedor. Al vincularlo, el asistente le contesta a todos: probalo desde otro número; usa créditos. Si querés verlo con tu equipo, pedí una [demo](/demo).

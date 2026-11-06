@@ -1,80 +1,163 @@
 ---
-title: 'Mejor alternativa a Wati para WhatsApp: qué evaluar'
-seoTitle: 'Mejor alternativa a Wati para WhatsApp: qué evaluar'
+title: 'Alternativas a Wati en Argentina: agentes de IA, créditos y API oficial'
+seoTitle: 'Alternativas a Wati en Argentina: precios y créditos'
 description: >-
-  Compará Wati y Atende por bandeja compartida, automatización y necesidades del
-  equipo. Incluye casos para probar y fuentes oficiales de referencia.
+  Wati ya vende agentes de IA con créditos medidos sobre la API oficial. Cómo
+  se gastan, qué tablas de precios leer y cuándo conviene quedarte o cambiar.
 summary: >-
-  Atende es una opción para evaluar respuestas por WhatsApp con IA y trabajo del
-  equipo desde una bandeja compartida. Para comparar con Wati, probá los
-  canales, las reglas de atención y las automatizaciones que necesitás. Confirmá
-  el alcance del plan y de cualquier integración antes de elegir.
+  Quedate en Wati si necesitás la API oficial, plantillas y campañas, o si querés
+  armar agentes de IA con su herramienta. Hoy Wati dejó de ser solo una bandeja:
+  vende agentes Astra, con créditos que se gastan por respuesta y por acción. Mirá
+  alternativas si no querés armar nada y necesitás que el lugar en la clase quede
+  reservado en tu agenda. Atende hace eso conectado a tu sistema, con la conexión
+  armada a pedido, solo en WhatsApp y por QR, sin API oficial.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
-  - automatización
-  - comparativas
+  - Wati
+  - agentes de IA
+  - alternativas
+  - precios
 related:
-  - como-automatizar-whatsapp-empresa
+  - alternativas-a-botmaker
+  - mejor-alternativa-a-respond-io
+  - como-automatizar-whatsapp-gimnasios
   - cuanto-cuesta-automatizar-whatsapp
 faq:
-  - q: ¿Atende es la mejor alternativa a Wati para cualquier empresa?
+  - q: ¿Cuánto sale Wati?
     a: >-
-      No hay una opción universal. Compará el proceso que necesitás, los
-      canales, la intervención humana y las integraciones. Probá los mismos
-      casos en cada herramienta y confirmá el alcance de la propuesta.
-  - q: ¿La migración incluye historial e integraciones automáticamente?
+      Según su página de precios al 6 de noviembre de 2026, con pago anual, US$ 45,
+      US$ 95 o US$ 239 por mes, más cargos por mensaje según su tarifario. Su página
+      de agentes Astra muestra otras cifras, así que pedí la cotización completa.
+  - q: ¿Cómo se gastan los créditos de IA de Wati?
     a: >-
-      No lo asumas. Confirmá cómo se conectará el número, qué historial estará
-      disponible y qué sistemas o automatizaciones hay que configurar. En
-      Atende, las integraciones se evalúan por separado.
+      Según su página de Astra, 1 crédito por una respuesta de texto simple, 3 por una
+      respuesta enriquecida o una acción, y 5 por minuto de voz. Los créditos extra
+      cuestan US$ 20 cada 1.000. Sus páginas no coinciden en cuánto duran.
+  - q: ¿Atende cobra por crédito?
+    a: >-
+      Un crédito es una respuesta del asistente, y varios mensajes seguidos del
+      contacto cuentan como una sola. Si se terminan el plan y los créditos, el
+      asistente deja de responder y nadie te avisa. Los importes se ven en la app.
+  - q: ¿Atende sirve si necesito la API oficial?
+    a: >-
+      No. Se conecta por QR. No es la API oficial de Meta. Si necesitás plantillas
+      aprobadas, campañas o un proveedor oficial, Wati encaja mejor.
 sources:
-  - title: 'Wati: documentación del producto'
-    url: 'https://docs.wati.io/reference/introduction'
-    checkedAt: '2026-09-10'
-  - title: 'Wati: bandeja de atención multicanal'
-    url: >-
-      https://support.wati.io/en/articles/11463002-how-to-use-the-multi-channel-team-inbox-in-wati
-    checkedAt: '2026-09-10'
+  - title: 'Wati: inicio'
+    url: 'https://www.wati.io/'
+    checkedAt: '2026-11-06'
+  - title: 'Wati: precios'
+    url: 'https://www.wati.io/pricing/'
+    checkedAt: '2026-11-06'
+  - title: 'Wati: comparación de planes'
+    url: 'https://www.wati.io/pricing-comparison/'
+    checkedAt: '2026-11-06'
+  - title: 'Wati: precios de Astra'
+    url: 'https://www.wati.io/products/astra/en/pricing/'
+    checkedAt: '2026-11-06'
+  - title: 'Wati: créditos en Astra'
+    url: 'https://support.wati.io/en/articles/14076302-how-does-credits-rollover-and-credit-consumption-work-in-astra'
+    checkedAt: '2026-11-06'
+  - title: 'Wati: WhatsApp Business API'
+    url: 'https://www.wati.io/whatsapp-business-api/'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: migrar un número a la Plataforma'
+    url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account'
+    checkedAt: '2026-11-06'
 ---
-Tener una bandeja compartida no determina por sí solo cómo se distribuye el trabajo. Un local con dos personas puede revisar pendientes de forma distinta de un equipo con varias áreas. La evaluación tiene que mostrar quién ve la consulta, quién responde y qué ocurre cuando esa persona no está disponible. También debe distinguir respuesta entrante de campañas y reglas de seguimiento.
+Una socia del gimnasio escribe a las diez de la noche para anotarse en la clase de las 7. Si querés que eso termine con el lugar reservado, [Wati](https://www.wati.io/) y Atende te proponen caminos distintos. En Wati armás un agente sobre la API oficial y pagás créditos por lo que hace. En Atende te armamos la conexión con tu agenda y contás respuestas del asistente.
 
-## Qué propone Wati y qué propone Atende
+Atende publica esta nota y le interesa que la elijas, así que chequeá los enlaces. Los datos de Wati salen de sus páginas al 6 de noviembre de 2026 y no probamos el producto. Cómo decidimos qué publicar está en los [criterios editoriales](/blog/editorial).
 
-La documentación de Wati describe una bandeja para atención de equipo y herramientas de automatización. [Documentación oficial de Wati](https://docs.wati.io/reference/introduction). Su ayuda explica la gestión de conversaciones de varios canales en un espacio de trabajo. [Bandeja multicanal de Wati](https://support.wati.io/en/articles/11463002-how-to-use-the-multi-channel-team-inbox-in-wati). Verificá los canales y reglas disponibles en la configuración que estés evaluando.
+## Wati ya no es solo una bandeja con bots
 
-Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
+Si tu última referencia es una bandeja con automatización, quedó vieja. [Su portada](https://www.wati.io/) gira alrededor de Astra, un agente de IA que lleva conversaciones de punta a punta y pasa a una persona con todo el hilo. La demo muestra capturar un dato, calificar a un mayorista y confirmar un pedido. Suma WhatsApp, Instagram, Messenger, TikTok y chat web en una bandeja, más de 100 integraciones y un armador de chatbots sin código.
 
-## Comparación por necesidad
+Debajo está la [API oficial](https://www.wati.io/whatsapp-business-api/): se presenta como conexión BSP oficial, con plantillas y gestión de consentimiento, y su [comparación de planes](https://www.wati.io/pricing-comparison/) la marca en todos.
 
-| Necesidad | Qué evaluar en Wati | Alcance de Atende |
+## Cómo se va la plata en créditos
+
+Este es el punto que más conviene entender. Según [la página de precios de Astra](https://www.wati.io/products/astra/en/pricing/):
+
+| Lo que hace el agente | Créditos |
+| --- | --- |
+| Respuesta de texto simple o acción simple | 1 |
+| Respuesta enriquecida (imágenes, PDF, tablas, documentos) | 3 |
+| Acciones | 3 |
+| Minuto de llamada con agente de voz | 5 |
+
+Una cuenta de ejemplo, con supuestos nuestros. Si anotar a alguien en una clase lleva seis respuestas de texto y una acción, son 6 + 3 = 9 créditos. Con 5.000 créditos alcanzan para unas 550 conversaciones así. Si en cada una mandás además la grilla en PDF, sumá 3.
+
+Los créditos extra salen US$ 20 cada 1.000. Hay una diferencia entre sus páginas: la de Astra dice que valen 3 meses y [su centro de ayuda](https://support.wati.io/en/articles/14076302-how-does-credits-rollover-and-credit-consumption-work-in-astra) dice que vencen a 1 mes. La ayuda aclara que los créditos del plan pasan al mes siguiente hasta un tope de dos veces lo mensual. Pedí esto por escrito.
+
+En Atende la unidad es otra: un crédito es una respuesta del asistente, y si el contacto manda tres mensajes seguidos cuentan como una sola. Tiene una contra que tenés que saber: cuando se terminan el plan y los créditos, el asistente deja de responder y no hay aviso.
+
+## Wati precios: dos tablas que no coinciden
+
+Wati muestra dos juegos de precios, y conviene saber cuál te están cotizando. Según [su página al 6 de noviembre de 2026](https://www.wati.io/pricing/), con pago anual:
+
+| Plan | Por mes | Usuarios | Contactos activos | Créditos de IA | Agentes de IA |
+| --- | --- | --- | --- | --- | --- |
+| Growth | US$ 45 | 3 | 500 | 2.500 | 1 |
+| Pro | US$ 95 | 5 | 1.000 | 10.000 | 2 |
+| Business | US$ 239 | 10 | 2.500 | 25.000 | Sin límite |
+
+Y [la página de Astra](https://www.wati.io/products/astra/en/pricing/) lista otra escala, con pago mensual y 20% menos en anual:
+
+| Plan | Por mes | Agentes | Créditos | Canales |
+| --- | --- | --- | --- | --- |
+| Free | US$ 0 | 1 | 100 | Solo web |
+| Pro | US$ 99 | Hasta 3 | 5.000 | Web y WhatsApp |
+| Business | US$ 399 | Sin límite | 25.000 | Web y WhatsApp |
+
+Cuatro cosas para preguntar:
+
+- **Growth y los agentes.** La tabla de precios le da un agente, pero [la comparación de planes](https://www.wati.io/pricing-comparison/) marca Astra solo en Pro y Business.
+- **Las acciones a medida.** En la página de Astra, "API actions" con webhooks y REST figuran solo en Business. Si tu agenda necesita eso, la cuenta cambia de escalón.
+- **Las reservas.** La demo de su portada confirma un pedido, pero las páginas que abrimos no describen reservar turnos. Pedí que te lo muestren con tu agenda.
+- **Los mensajes.** Todos los planes llevan cargos por mensaje según su tarifario, y cada número extra suma US$ 29 por mes.
+
+Los planes de Atende se ven [en la app](/precios).
+
+## Cómo se comparan
+
+| Criterio | Wati | Atende |
 | --- | --- | --- |
-| Trabajo del equipo | Probar reglas de atención y canales de la propuesta. | Historial compartido y posibilidad de intervención humana. |
-| Automatizaciones | Validar cada disparador y su resultado. | Respuestas con información configurada; acciones externas por evaluar. |
-| Datos variables | Mostrar de dónde salen stock, pedido o agenda. | Consulta de otros sistemas requiere integración confirmada. |
+| Conexión con WhatsApp | API oficial, BSP | Se conecta por QR. No es la API oficial de Meta |
+| Quién arma el agente | Tu equipo, sin código | Vos cargás el contexto y nosotros armamos la conexión |
+| Unidad de cobro de la IA | Créditos por respuesta y acción | Respuestas del asistente |
+| Campañas y plantillas | Sí | No |
+| Canales | WhatsApp, Instagram, Messenger, TikTok, web | Solo WhatsApp |
+| Voz | Agente de voz | No |
+| Integraciones | Más de 100 listadas | Cada conexión se hace para tu negocio |
 
-La tabla compara criterios de elección. No implica que una función de Wati esté incluida en todos sus planes, ni que ambas herramientas sean intercambiables.
+## Cuándo Wati encaja mejor
 
-## La prueba que conviene llevar a una demo
+Atende no es la opción si necesitás alguna de estas:
 
-Abrí una conversación que necesita cambiar de responsable a mitad de atención. Pedí que muestren cómo encuentra el contexto la segunda persona y qué recibe el cliente. Agregá un caso fuera de horario y otro que pide una acción en un sistema externo. Anotá qué se pudo demostrar y qué quedó sujeto a implementación.
+- API oficial, plantillas aprobadas y campañas de WhatsApp.
+- Tienda en Shopify, o CRM con conexión ya hecha.
+- Agentes que tu equipo pueda armar y cambiar por su cuenta.
+- Voz, o más de un canal.
 
-## Cuándo revisar tu proceso actual antes de cambiar
+## Cuando querés el lugar reservado sin armar nada
 
-Si Wati ya sostiene reglas que el equipo usa todos los días, evaluá si el problema es la herramienta, su configuración o la falta de un responsable de pendientes. Un cambio de plataforma merece una prueba cuando mejora un requisito concreto y permite mantener los procesos necesarios.
+Si el gimnasio no tiene a nadie para diseñar un agente, medir créditos y ajustar acciones, este es el pedido real. Ejemplo ilustrativo, con la agenda conectada:
 
-Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: los importes y condiciones se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
+> **Contacto:** ¿Hay lugar en funcional mañana a las 7?
+>
+> **Asistente:** Quedan dos lugares. ¿Te anoto?
+>
+> **Contacto:** Sí
+>
+> **Asistente:** Listo, te reservé funcional mañana a las 7.
 
-## Qué confirmar antes de migrar
+Conectado a tu agenda, Atende reserva el lugar. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Mirá [peluquerías, estética y gimnasios](/casos-de-uso/peluquerias-y-estetica), y [qué hay que conectar](/integraciones) para cada acción.
 
-Inventariá reglas, plantillas usadas por el negocio y conversaciones pendientes. Confirmá qué elementos se pueden conservar y cuáles se configuran nuevamente. Probá la continuidad con un alcance acotado antes de considerar resuelto el pase de toda la atención.
+## Lo que Atende no te da
 
-Guardá una lista de consultas pendientes y verificá cómo seguirá atendiéndolas el equipo. No des por concluida una migración solo porque el número se conectó: probá recepción, respuesta, intervención humana y cualquier dependencia externa que forme parte del alcance.
+Sin API oficial, y no podemos prometer que WhatsApp no restrinja un número. Sin campañas: los recordatorios se arman a pedido, y mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Un número por espacio y sin reseñas públicas todavía.
 
-## Cómo evaluar Atende para tu negocio
-
-Traé consultas anonimizadas y explicá qué datos necesita confirmar tu equipo. En una [demo](/demo) podés revisar la atención, la bandeja y las integraciones necesarias. Usá la misma lista de casos para las herramientas que evalúes y anotá el resultado observado, junto con lo que todavía requiere confirmación.
-
-Esta comparación la publica Atende y tiene un interés comercial. Las afirmaciones sobre otros proveedores se limitan a sus fuentes indicadas; los escenarios de prueba son criterios propuestos por nosotros. Leé nuestros [criterios editoriales](/blog/editorial) para interpretar el alcance y las fechas de consulta.
+Si tu número está en la API de Wati, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y Atende se vincula desde la app. Preguntá primero cómo hacerlo; ese paso no lo probamos con cada proveedor. Al vincularlo el asistente le contesta a todos, así que probalo desde otro número; usa créditos. Podés ver tu caso en una [demo](/demo).

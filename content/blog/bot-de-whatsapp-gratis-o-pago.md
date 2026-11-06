@@ -2,18 +2,19 @@
 title: 'Bot de WhatsApp gratis o pago: cómo elegir según tu uso'
 seoTitle: 'Bot de WhatsApp gratis o pago: límites, uso y costos'
 description: >-
-  Elegí entre herramientas básicas, créditos de prueba y un bot de WhatsApp pago.
-  Compará respuestas, conversaciones y cargos de API sin confundir sus límites.
+  Elegí entre herramientas básicas, créditos de prueba y un bot de WhatsApp pago
+  según la tarea que tiene que terminar. Incluye los cargos de Meta desde octubre.
 summary: >-
-  Para comunicar una bienvenida o ausencia, revisá primero las herramientas de
-  WhatsApp Business. Si necesitás respuestas con IA, una prueba limitada permite
-  evaluar el comportamiento antes de pagar. Atende ofrece 100 créditos de
-  bienvenida por espacio, una sola vez y sin tarjeta: cada crédito es una
-  respuesta del asistente. Elegí un plan según el uso medido y el alcance; una
-  conversación puede consumir varias respuestas y los cargos de API, cuando
-  aplican, son un concepto diferente.
+  Si solo necesitás avisar que cerraste, alcanza con las herramientas gratis de
+  WhatsApp Business. Para que un asistente con IA junte pedidos, una prueba
+  acotada te deja evaluarlo: Atende da 100 créditos de bienvenida por espacio,
+  una sola vez y sin tarjeta, y cada crédito es una respuesta. Para que reserve
+  el turno o registre el pedido hace falta una conexión con tu sistema, y eso ya
+  no entra en lo gratis. Por la API oficial, además, Meta cobra desde el 1 de
+  octubre de 2026 los mensajes de servicio después de los primeros 1.000 por
+  número y por mes.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-04'
+updatedAt: '2026-11-06'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -30,58 +31,73 @@ faq:
   - q: ¿Existe un bot de WhatsApp gratis?
     a: >-
       Hay herramientas básicas en WhatsApp Business y pruebas limitadas de
-      asistentes con IA. Para elegir, verificá qué tarea resuelven y qué significa
-      gratis: cantidad de respuestas, duración, funciones y condiciones. Una
-      descarga gratuita no implica que todas las funciones sean gratuitas.
-  - q: ¿Cuánto cuesta un bot de WhatsApp?
+      asistentes con IA. Sirven para avisar, contestar y juntar datos. Reservar
+      un turno o registrar un pedido en tu sistema necesita una conexión, y eso
+      casi nunca entra en lo gratis. Fijate qué tarea resuelve cada oferta y qué
+      significa gratis en ella.
+  - q: ¿Un bot gratis sale gratis si usa la API oficial?
     a: >-
-      No hay un precio único: depende de la herramienta, la unidad de uso, las
-      funciones y las integraciones. En Atende, los precios y planes habilitados
-      se consultan en la app antes de contratar. Si una propuesta usa WhatsApp
-      Business Platform, revisá por separado los cargos de mensajería aplicables.
+      No del todo. Aunque la herramienta no cobre, por la API Meta factura aparte:
+      en Argentina, USD 0,026 por mensaje de servicio desde el 1.001 de cada mes,
+      según la tarifa vigente desde el 1 de octubre de 2026. Pedí que cada
+      propuesta diga qué conexión usa y quién paga ese cargo.
   - q: ¿Los 100 créditos de Atende son 100 conversaciones?
     a: >-
       No. Cada crédito equivale a una respuesta del asistente. Una conversación
       puede necesitar varias respuestas y las pruebas también consumen. Los
-      créditos de bienvenida se obtienen una sola vez por espacio y no se
-      renuevan mensualmente.
-  - q: ¿Qué pasa cuando se terminan los créditos gratis?
+      créditos de bienvenida se activan una sola vez por espacio y no se renuevan
+      todos los meses.
+  - q: ¿Cuándo conviene pasar de la prueba gratis a un plan pago?
     a: >-
-      Sin respuestas disponibles, el asistente deja de responder
-      automáticamente. Para continuar, revisá las recompensas disponibles o un
-      plan con automatización. Las recompensas tienen sus propias condiciones y
-      no equivalen a un plan gratuito ilimitado.
+      Cuando la prueba ya resuelve una tarea repetida y necesitás sostenerla. Con
+      los créditos en cero el asistente deja de contestar, y la app no avisa antes.
+      Si no tenés un plan, el panel se bloquea salvo Plan e integraciones, y los
+      mensajes nuevos dejan de entrar a la bandeja.
   - q: ¿Cualquier plan pago de Atende incluye un bot?
     a: >-
-      No. El Plan CRM está orientado a la atención manual y no incluye
-      automatizaciones ni respuestas del asistente. Si necesitás un bot,
-      comprobá que el plan elegido habilite automatización y revisá su límite de
-      respuestas antes de confirmar el pago.
+      No. El Plan CRM es para atender a mano y no trae asistente ni
+      automatización, aunque tengas créditos. Si necesitás un bot, comprobá que
+      el plan elegido lo habilite y revisá su límite de respuestas antes de
+      confirmar el pago.
 sources:
+  - title: 'Meta: precios de WhatsApp Business Platform y tarifas por país'
+    url: 'https://developers.facebook.com/docs/whatsapp/pricing'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: mensajes de servicio y de utilidad desde octubre de 2026'
+    url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: precios de la Plataforma (página comercial)'
+    url: 'https://whatsappbusiness.com/es-la/products/platform-pricing/'
+    checkedAt: '2026-11-06'
   - title: 'WhatsApp: descarga de Business App'
     url: 'https://whatsappbusiness.com/products/business-app-get-started/'
-    checkedAt: '2026-11-04'
+    checkedAt: '2026-11-06'
   - title: 'WhatsApp: funciones de Business App'
     url: 'https://whatsappbusiness.com/products/business-app-features/'
-    checkedAt: '2026-11-04'
-  - title: 'WhatsApp: precios de Business Platform'
-    url: 'https://whatsappbusiness.com/products/platform-pricing/'
-    checkedAt: '2026-11-04'
-  - title: 'WhatsApp: disponibilidad de Meta Business Agent'
-    url: 'https://whatsappbusiness.com/products/business-app-ai-agent/'
-    checkedAt: '2026-11-04'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: cómo configurar Meta Business Agent'
+    url: 'https://faq.whatsapp.com/1153795669452207'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: planes de Meta One'
+    url: 'https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/'
+    checkedAt: '2026-11-06'
 ---
-Un **bot de WhatsApp gratis** puede servir para probar una forma de atención, pero primero hay que definir qué necesitás automatizar. Un saludo, una respuesta con IA y una consulta de stock son trabajos distintos. Comparar ofertas solo por la palabra “gratis” mezcla funciones y límites que no son equivalentes.
+Un **bot de WhatsApp gratis** te puede saludar y avisar que cerraste. Reservar un turno o registrar un pedido en tu sistema es otro trabajo, y casi nunca entra en lo gratis. Antes de comparar ofertas, definí hasta dónde tiene que llegar la tarea, porque la palabra “gratis” mezcla funciones y límites que no son equivalentes.
 
-Si buscás activar la prueba de Atende, seguí los pasos de [los 100 créditos gratis de bienvenida](/blog/automatizar-whatsapp-gratis). Esta guía te ayuda a decidir si esa prueba, las herramientas básicas de WhatsApp Business o un plan pago responden a tu necesidad.
+| Lo que necesitás | Con qué alcanza | Dónde empieza a costar |
+| --- | --- | --- |
+| Avisar el horario, dar la bienvenida, tener respuestas guardadas | La app de WhatsApp Business | En tiempo: cada consulta la sigue leyendo una persona |
+| Contestar preguntas escritas de cualquier manera y juntar pedidos | Una prueba con créditos, después un plan con IA | Cuando se termina el saldo |
+| Reservar, registrar pedidos, cotizar con datos del momento | Una conexión con tu sistema | Desde el principio: hay que armarla |
+| Mandar campañas o avisos que inicia el negocio | La API oficial, con plantillas | En cada mensaje entregado |
+
+Si buscás activar la prueba de Atende, seguí los pasos de [los 100 créditos de bienvenida](/blog/automatizar-whatsapp-gratis). Esta guía te ayuda a decidir si esa prueba, las herramientas de WhatsApp Business o un plan pago responden a lo que necesitás.
 
 ## Cuándo empezar con WhatsApp Business
 
-La app de WhatsApp Business se descarga gratis. Para tareas iniciales ofrece herramientas como bienvenida, ausencia y respuestas rápidas; revisá cuáles resuelven tu proceso actual antes de contratar otra solución. [Descarga oficial](https://whatsappbusiness.com/products/business-app-get-started/) y [funciones de la app](https://whatsappbusiness.com/products/business-app-features/).
+La app de WhatsApp Business [se descarga gratis](https://whatsappbusiness.com/products/business-app-get-started/). Para tareas iniciales tiene [bienvenida, ausencia y respuestas rápidas](https://whatsappbusiness.com/products/business-app-features/). Si recibís pocas consultas y el problema es que te escriben cuando cerraste, un aviso claro puede ser suficiente: tenés textos listos en [mensajes automáticos para copiar](/blog/mensajes-automaticos-whatsapp-negocios). Lo que no cambia es que alguien tiene que leer e interpretar cada consulta.
 
-Por ejemplo, si recibís pocas consultas y el problema es que escriben cuando cerraste, un aviso claro puede ser suficiente: horario humano, información necesaria y siguiente paso. Si alguien tiene que interpretar cada consulta, ese trabajo continúa en manos del equipo aunque el saludo sea automático.
-
-Meta también ofrece un agente con IA para empresas elegibles en ciertos mercados. Comprobá disponibilidad y condiciones en tu cuenta; no presupongas que está habilitado para todos los negocios argentinos ni que todas sus funciones están incluidas por descargar la app. [Meta Business Agent](https://whatsappbusiness.com/products/business-app-ai-agent/).
+Meta también tiene un agente con IA dentro de la app, Meta Business Agent. Su ayuda dice que hoy está [solo en algunos países y para empresas seleccionadas](https://faq.whatsapp.com/1153795669452207), con lista de espera y sin fecha. Para sumarle capacidad vende [Meta One, desde USD 14,99 por mes](https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/), y aclara que planes y precios varían según la región y la cuenta. Si te aparece en la pestaña Herramientas, vale la pena mirarlo antes de contratar otra cosa. Lo contamos en [el agente de IA de WhatsApp Business](/blog/agente-ia-whatsapp-business-meta).
 
 ## Qué significa gratis en una propuesta de bot
 
@@ -95,21 +111,35 @@ Antes de vincular el número, identificá cuál de estas modalidades estás eval
 | Plan gratuito permanente | El uso que declare ese proveedor. | Límites de volumen, equipo, funciones y soporte. |
 | Software que podés instalar | Control sobre una implementación propia. | Hosting, mantenimiento, conexión y trabajo técnico. |
 
-Una prueba no necesita cubrir toda tu actividad mensual para ser útil. Sí necesita permitirte observar la tarea que querés resolver. Si solo probaste saludos, todavía no sabés cómo atenderá una pregunta incompleta o un reclamo.
+Una prueba no necesita cubrir toda tu actividad mensual para ser útil. Sí necesita dejarte ver la tarea que querés resolver. Si solo probaste saludos, todavía no sabés cómo va a atender una pregunta incompleta o un reclamo.
 
 ## Qué podés evaluar con los créditos de Atende
 
-Atende ofrece **100 créditos de bienvenida por espacio de trabajo, una sola vez, sin tarjeta ni suscripción**. Se activan desde Plan. Cada crédito equivale a una respuesta del asistente; no se renuevan todos los meses.
+Atende da **100 créditos de bienvenida por espacio, una sola vez, sin tarjeta ni suscripción**. Se activan desde Plan y cada crédito es una respuesta del asistente. No se renuevan.
 
-Usalos para comprobar si la información configurada alcanza, cómo responde el bot y si el equipo puede continuar desde el historial compartido. La conexión usa QR. Las acciones sobre agendas, stock o CRM externo y los seguimientos proactivos requieren una integración o un alcance acordados por separado.
+Antes de usarlos, dos cosas. [No hay modo de prueba](/preguntas-frecuentes): apenas escaneás el QR, el asistente contesta a todos tus contactos, así que probalo desde otro número; usa créditos. Y lo que vas a ver es el camino sin conexión: el asistente junta el pedido y tu equipo lo confirma.
 
-Una prueba útil tiene tres grupos de casos:
+Lo que termina la tarea es la conexión, y eso no sale de los créditos:
+
+> **Ejemplo ilustrativo, con el sistema de pedidos conectado**
+>
+> **Cliente:** ¿Tenés 20 cajas de guantes talle M para retirar el viernes?
+>
+> **Asistente:** Sí, hay stock. ¿Te las cargo para el viernes?
+>
+> **Cliente:** Dale
+>
+> **Asistente:** Listo, registré tu pedido de 20 cajas de guantes talle M para retirar el viernes.
+
+Conectado a tu sistema, Atende registra el pedido; esa conexión se arma a pedido para tu negocio. Acá está [lo que se puede conectar](/integraciones), y en la [demo](/demo) se habla cada caso.
+
+Una prueba útil con créditos tiene tres grupos de casos:
 
 - **Consulta conocida:** el dato está cargado y el bot debe informarlo correctamente.
 - **Consulta incompleta:** falta una referencia y el bot tiene que pedirla.
-- **Excepción:** el caso necesita una persona y debe poder continuar con contexto.
+- **Excepción:** el caso necesita una persona, y el chat tiene que quedar marcado para tu equipo.
 
-Guardá los resultados y las respuestas consumidas. Reservá parte del saldo para volver a probar lo que corregiste. Cuando no quedan respuestas disponibles, el asistente deja de responder automáticamente; revisá el saldo y el siguiente paso antes de depender de él para la atención habitual.
+Guardá los resultados y reservá parte del saldo para volver a probar lo que corregiste. La app no avisa cuando quedan pocos créditos: miralos en Plan. Cuando se terminan, el asistente deja de contestar. Si además no tenés un plan, el panel se bloquea salvo Plan e integraciones, y los mensajes nuevos no entran a la bandeja, aunque siguen llegando al WhatsApp de tu teléfono.
 
 ## Contá respuestas, no solo conversaciones
 
@@ -125,26 +155,34 @@ Este ejemplo es un cálculo ilustrativo, no consumo medido ni una tarifa de Aten
 | Respuestas reservadas para pruebas | 60 |
 | Uso estimado del mes | 1.260 respuestas |
 
-Si el promedio fuera seis, las consultas consumirían 2.400 respuestas antes de sumar las pruebas. Por eso conviene medir conversaciones representativas y distinguir preguntas breves de consultas largas.
+Si el promedio fuera seis, las consultas consumirían 2.400 respuestas antes de sumar las pruebas. Por eso conviene medir conversaciones reales y distinguir preguntas breves de consultas largas.
 
-La cuenta orientativa es: **consultas atendidas por el bot × respuestas promedio + respuestas de prueba**. Revisala con el contador real de la herramienta. No intentes ahorrar eliminando preguntas necesarias ni confundas una respuesta corta con una consulta resuelta.
+La cuenta orientativa es: **consultas atendidas por el bot × respuestas promedio + respuestas de prueba**. No intentes ahorrar sacando preguntas necesarias, ni confundas una respuesta corta con una consulta resuelta.
 
 ## El costo de la API es distinto del costo del bot
 
-En soluciones que utilizan WhatsApp Business Platform, Meta publica cargos según el mercado y la categoría de los mensajes entregados. También contempla mensajes sin cargo, como los de servicio dentro de la ventana de atención de 24 horas que se renueva con cada mensaje del usuario. [Precios oficiales de Business Platform](https://whatsappbusiness.com/products/platform-pricing/).
+Si una propuesta usa WhatsApp Business Platform, la API oficial, hay un cargo más que no depende del proveedor: el de Meta. Y cambió hace poco.
 
-Que un mensaje no tenga cargo de Meta no implica que el proveedor del bot, la IA o el trabajo de implementación sean gratuitos. Del mismo modo, una cantidad de créditos del asistente no describe por sí sola los cargos de una implementación de API.
+**Desde el 1 de octubre de 2026 [Meta volvió a cobrar los mensajes de servicio](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages)**, que eran gratis desde noviembre de 2024. También cobra los mensajes de utilidad enviados dentro de la ventana de atención, que eran gratis desde julio de 2025. Si leíste que lo que respondés dentro de las 24 horas no se paga, esa regla ya no corre, aunque la [página comercial de precios](https://whatsappbusiness.com/es-la/products/platform-pricing/) de WhatsApp todavía lo decía el 6 de noviembre de 2026. Nos guiamos por la documentación técnica y las planillas de tarifas, que traen fecha y valor.
 
-Pedí que la propuesta identifique la conexión utilizada y quién factura cada concepto. No apliques automáticamente las tarifas de Cloud API al flujo QR de Atende ni supongas que cualquier suscripción incluye todos los cargos de terceros.
+Lo que sigue sin cargo, según [la página de precios de Meta](https://developers.facebook.com/docs/whatsapp/pricing):
+
+- Los primeros 1.000 mensajes de servicio entregados por mes en cada número. No se acumulan, y Meta cobra desde el 1.001.
+- Los mensajes dentro de la ventana que abre un anuncio que lleva a WhatsApp, que puede durar hasta 7 días.
+- Lo que te escribe el cliente.
+
+Para Argentina, la tarifa de lista vigente desde el 1 de octubre de 2026 es USD 0,026 por mensaje de servicio entregado. La cuenta completa, con ejemplo y por categoría, está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
+
+Esa cuenta no aplica al QR. Atende se conecta por QR. No es la API oficial de Meta, y Meta publica esas tarifas solo para la API, no para un número que sigue en la app. A cambio, nadie te puede prometer que WhatsApp no va a restringir el número. Pedí que cada propuesta diga qué conexión usa y quién factura cada concepto, y no supongas que una suscripción cubre los cargos de terceros.
 
 ## Cuándo tiene sentido pasar a un plan pago
 
-La señal útil es que la prueba resuelve una tarea repetida y necesitás sostenerla con mayor volumen o con condiciones que la opción gratuita no ofrece. Antes de pagar, verificá tres cosas:
+La señal útil es que la prueba resuelve una tarea repetida y necesitás sostenerla con más volumen. Antes de pagar, verificá tres cosas:
 
-1. **Resultado:** el bot respondió correctamente y el equipo pudo atender las excepciones.
-2. **Uso:** mediste la unidad consumida y entendés qué pasa al alcanzar el límite.
-3. **Alcance:** el plan incluye las funciones necesarias y las integraciones pendientes están identificadas.
+1. **Resultado:** el bot respondió bien y tu equipo pudo atender las excepciones.
+2. **Uso:** mediste la unidad consumida y entendés qué pasa al llegar al límite.
+3. **Alcance:** el plan trae lo que necesitás, y las conexiones pendientes están identificadas.
 
-En Atende, el **Plan CRM no incluye automatización ni respuestas del asistente**. Si querés usar un bot, elegí un plan que la habilite y consultá las opciones vigentes en [la app](https://app.atende.com.ar) antes de confirmar el pago. Los precios se mantienen en ese flujo de contratación.
+En Atende, el **Plan CRM no trae automatización ni respuestas del asistente**. Si querés un bot, elegí un plan que lo habilite. Los planes vigentes se ven en [la app](https://app.atende.com.ar) antes de pagar, y en [precios](/precios) está qué entra en cada uno.
 
-Para pedir presupuestos equivalentes, usá la [guía de costos de automatización](/blog/cuanto-cuesta-automatizar-whatsapp). Si todavía falta definir qué le vas a pedir al asistente, prepará primero las [instrucciones y pruebas del bot](/blog/como-crear-un-bot-de-whatsapp). Podés revisar el alcance de Atende en [precios](/precios) y llevar tus casos a una [demo](/demo).
+Si todavía falta definir qué le vas a pedir al asistente, prepará primero las [instrucciones y pruebas del bot](/blog/como-crear-un-bot-de-whatsapp).

@@ -1,87 +1,133 @@
 ---
-title: 'Alternativas a Manychat para WhatsApp: cómo elegir'
-seoTitle: 'Alternativas a Manychat para WhatsApp: cómo elegir'
+title: 'Alternativas a ManyChat en Argentina: flujos de marketing o tareas terminadas'
+seoTitle: 'Alternativas a ManyChat en Argentina: cuándo cambiar'
 description: >-
-  Compará Manychat y Atende según atención por WhatsApp, campañas y trabajo del
-  equipo. Criterios, límites y fuentes para elegir según tu negocio.
+  ManyChat se usa para flujos de marketing. Qué no pudimos confirmar de sus
+  precios, cuándo quedarte y cuándo necesitás que la reserva quede tomada.
 summary: >-
-  Atende es una alternativa a evaluar si buscás responder consultas por WhatsApp
-  con información del negocio y continuar con tu equipo desde una bandeja
-  compartida. Si tu prioridad son campañas y recorridos de marketing, evaluá las
-  funciones de Manychat con esos casos. La mejor opción depende del proceso, el
-  canal y el alcance contratado.
+  Quedate en ManyChat si tu trabajo son flujos de marketing, sobre todo desde
+  Instagram, y tu equipo los arma. Mirá alternativas si necesitás que la reserva o
+  el pedido queden registrados en tu sistema y no solo que alguien reciba un
+  mensaje. Atende apunta a eso: conectado a tu sistema, toma la reserva en
+  WhatsApp, con la conexión armada a pedido. No hace campañas ni Instagram. Sus
+  precios y planes no pudimos abrirlos el 6 de noviembre de 2026, así que
+  confirmalos con el proveedor.
 publishedAt: '2026-09-10'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
-  - automatización
-  - comparativas
+  - ManyChat
+  - alternativas
+  - marketing
+  - precios
 related:
-  - como-automatizar-whatsapp-empresa
-  - cuanto-cuesta-automatizar-whatsapp
+  - alternativas-a-cliengo
+  - mejor-alternativa-a-wati
+  - como-automatizar-whatsapp-restaurantes
+  - chatbots-whatsapp-argentina-comparativa
 faq:
-  - q: ¿Atende es la mejor alternativa a Manychat para cualquier empresa?
+  - q: ¿Cuánto sale ManyChat para WhatsApp en Argentina?
     a: >-
-      No hay una opción universal. Compará el proceso que necesitás, los
-      canales, la intervención humana y las integraciones. Probá los mismos
-      casos en cada herramienta y confirmá el alcance de la propuesta.
-  - q: ¿La migración incluye historial e integraciones automáticamente?
+      No pudimos confirmarlo: su página de precios y su centro de ayuda bloquearon
+      nuestra lectura el 6 de noviembre de 2026. Terceros informan un esquema por
+      contactos activos, pero no coinciden en todo. Mirá el precio en tu cuenta.
+  - q: ¿ManyChat incluye IA o se paga aparte?
     a: >-
-      No lo asumas. Confirmá cómo se conectará el número, qué historial estará
-      disponible y qué sistemas o automatizaciones hay que configurar. En
-      Atende, las integraciones se evalúan por separado.
+      Las fuentes no coinciden. Algunas la ubican dentro de los planes pagos y otras
+      como agregado. Tampoco está claro qué rige para cuentas de Argentina, así que
+      confirmalo con ManyChat antes de contratar.
+  - q: ¿Atende hace campañas o responde comentarios de Instagram?
+    a: >-
+      No. Atende trabaja solo en WhatsApp, responde mensajes de texto que le escriben
+      y no hace difusiones. Si tu operación vive de campañas o comentarios, seguí
+      con una herramienta de marketing.
+  - q: ¿Atende puede tomar una reserva en WhatsApp?
+    a: >-
+      Conectado a tu sistema, sí, y esa conexión se arma a pedido para tu negocio.
+      Sin conexión, el asistente junta el pedido y tu equipo lo confirma.
 sources:
-  - title: 'Manychat: producto de WhatsApp'
-    url: 'https://manychat.com/product/whatsapp'
-    checkedAt: '2026-10-28'
-  - title: 'Manychat: métodos de conexión de WhatsApp'
-    url: >-
-      https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method
-    checkedAt: '2026-10-28'
+  - title: 'Comunidad de Manychat: nuevos planes de precios'
+    url: 'https://community.manychat.com/general-q-a-43/manychat-new-pricing-plans-8875'
+    checkedAt: '2026-11-06'
+  - title: 'Hackceleration: cuánto cuesta ManyChat'
+    url: 'https://hackceleration.com/labs/manychat-pricing'
+    checkedAt: '2026-11-06'
+  - title: 'Chatarmin: precios de ManyChat'
+    url: 'https://chatarmin.com/en/blog/manychat-pricing'
+    checkedAt: '2026-11-06'
+  - title: 'DuoTach: chatbots de WhatsApp en Argentina'
+    url: 'https://duotach.com/blog/mejores-chatbots-whatsapp-argentina'
+    checkedAt: '2026-11-06'
+  - title: 'Cliengo: comparación con ManyChat'
+    url: 'https://guiawabusiness.cliengo.com/comparativas/cliengo-vs-manychat'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: precios de WhatsApp Business Platform'
+    url: 'https://developers.facebook.com/docs/whatsapp/pricing'
+    checkedAt: '2026-11-06'
 ---
-Una marca que quiere construir recorridos a partir de campañas tiene un problema diferente de una concesionaria cuyos vendedores reciben la misma pregunta por una unidad. Antes de cambiar de herramienta, separá captación, primera atención y cierre. Un flujo que funciona para una campaña puede necesitar otro diseño para un cliente que ya compró y pide ayuda.
+Un flujo de marketing lleva a alguien de un comentario en Instagram a un mensaje con un cupón. Tomar una reserva para el sábado a las 21 pide otra cosa: saber si hay mesa, anotarla y confirmarla. Si buscás alternativas a ManyChat, empezá por ahí. Si tu trabajo es el primero, probablemente no necesitás cambiar. Si es el segundo, probablemente estás mirando una herramienta pensada para otra tarea.
 
-## Qué propone Manychat y qué propone Atende
+Atende publica esta nota y compite por parte de ese presupuesto, así que tomala con esa distancia. El método está en los [criterios editoriales](/blog/editorial).
 
-Manychat presenta automatizaciones de WhatsApp para preguntas frecuentes, calificación de contactos y mensajes de seguimiento. [Producto oficial de Manychat](https://manychat.com/product/whatsapp). Su ayuda indica que conecta WhatsApp mediante la plataforma de Meta y permite usar un número existente o adquirir uno nuevo durante la configuración. Las opciones concretas deben confirmarse para tu caso. [Métodos de conexión de WhatsApp](https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method).
+## Lo que no pudimos confirmar
 
-Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM externo o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
+Empezamos por acá porque es lo más importante. El 6 de noviembre de 2026 intentamos abrir la página de precios de ManyChat y su centro de ayuda, y los dos bloquearon la lectura. Por eso todo lo que sigue viene de terceros y no lo presentamos como vigente. **Confirmalo con ManyChat, o mirá el precio dentro de tu cuenta.**
 
-## Comparación por necesidad
-
-| Necesidad | Qué evaluar en Manychat | Alcance de Atende |
+| Tema | Qué dicen terceros | Fuente y su interés |
 | --- | --- | --- |
-| Campañas y seguimiento | Probar los recorridos de marketing que necesitás. | Los mensajes proactivos no están incluidos por defecto. |
-| Atención de consultas | Evaluar las respuestas y cómo continúa el equipo. | Respuestas configuradas, historial compartido e intervención humana. |
-| Conexión del número | Confirmar método y compatibilidad en la ayuda vigente. | Vinculación mediante el QR mostrado en el panel. |
+| Modelo de precios | Por contactos activos en el mes | [Comunidad de Manychat](https://community.manychat.com/general-q-a-43/manychat-new-pricing-plans-8875), enero de 2026 |
+| Alcance | Ese modelo se lanzó en Reino Unido, Canadá, Israel, Italia, Polonia, Australia, Japón y Turquía para cuentas nuevas. Otras regiones seguían igual | La misma fuente. No sabemos si hoy aplica a Argentina |
+| Fecha del cambio | 2 de marzo de 2026, con planes Essential, Pro, Business y Advanced | [Chatarmin](https://chatarmin.com/en/blog/manychat-pricing), que compite con ManyChat |
+| WhatsApp | Desde el plan Pro, con los cargos de Meta aparte | [Hackceleration](https://hackceleration.com/labs/manychat-pricing), con enlace de afiliado |
+| IA | Unas fuentes la ponen dentro de los planes y otras como agregado | Hackceleration y Chatarmin |
+| Precio en dólares | Hackceleration no lo copió por el mismo bloqueo. DuoTach dice "no confirmado en su sitio oficial" | [DuoTach](https://duotach.com/blog/mejores-chatbots-whatsapp-argentina), que vende Vozia |
 
-La tabla compara criterios de elección. No implica que una función de Manychat esté incluida en todos sus planes, ni que ambas herramientas sean intercambiables.
+Si alguien te da un precio de ManyChat para Argentina con mucha seguridad, pedile la fuente. Y sumá el dato de Meta, que sí pudimos leer: [desde el 1 de octubre de 2026](https://developers.facebook.com/docs/whatsapp/pricing) cobra los mensajes de servicio a partir del 1.001 de cada mes, por número.
 
-## Conexión e historial: dos puntos que no conviene confundir
+## Para qué lo eligen, según quienes lo comparan
 
-La guía general de Manychat consultada el 28 de octubre de 2026 advierte que el historial de chats no se transfiere a Manychat. También menciona coexistencia con WhatsApp Business App. Confirmá qué información permanece en la app y qué podrá ver el equipo dentro de Manychat con el método habilitado para tu número. [Guía oficial de conexión](https://help.manychat.com/hc/en-us/articles/19247843644060-How-to-connect-WhatsApp-to-Manychat-choosing-the-best-method).
+[DuoTach](https://duotach.com/blog/mejores-chatbots-whatsapp-argentina) lo describe como "constructor de automatizaciones multicanal (Instagram, Messenger, WhatsApp, SMS, email)". [Cliengo](https://guiawabusiness.cliengo.com/comparativas/cliengo-vs-manychat), que también compite con él, reconoce que "para Instagram DM masivo, ManyChat sigue siendo referente". Las dos fuentes son rivales, y aun así coinciden en dónde le ven fuerza.
 
-El flujo de Atende descrito aquí usa QR desde dispositivos vinculados; no es una conexión mediante la API oficial de Meta. Tampoco implica que se importen automáticamente los flujos o el historial de otra plataforma. Para comparar, prepará una conversación que esté abierta y verificá dónde encontrará el equipo su contexto después del cambio.
+También DuoTach le marca un límite local: dice que no tiene presencia ni soporte específico para Argentina. Si eso te importa, preguntalo directamente.
 
-## La prueba que conviene llevar a una demo
+## Un flujo de marketing y una tarea terminada piden cosas distintas
 
-Probá una consulta que llega desde un anuncio con referencia de producto, otra que pide hablar con un vendedor y otra de postventa. Después probá por separado el seguimiento a alguien que dejó de responder: ese caso exige una capacidad distinta de responder un mensaje entrante. Verificá que la propuesta incluya exactamente el recorrido que necesitás.
+| Lo que necesitás | Herramienta de flujos | Atende |
+| --- | --- | --- |
+| Responder comentarios de Instagram | Es su terreno, según terceros | No lo hace |
+| Mandar mensajes masivos por Instagram | Es su terreno, según terceros | No lo hace |
+| Armar recorridos con botones | Vos armás el flujo | No te damos un armador de flujos |
+| Saber si hay mesa el sábado | Depende de lo que conectes y quién lo arme | Conectado a tu sistema, a pedido |
+| Registrar la reserva | Depende de lo que conectes y quién lo arme | Conectado a tu sistema, a pedido |
+| Atender a alguien que pregunta algo fuera del guion | Depende del flujo y de la IA que tengas | Responde con lo que le contaste de tu negocio, o deriva |
+| Canales | Varios, según terceros | Solo WhatsApp |
 
-## Cuándo revisar tu proceso actual antes de cambiar
+## Cuándo seguir con ManyChat
 
-Si ya tenés campañas que cumplen su objetivo y tu equipo sabe mantenerlas, revisá primero si el problema está en sus mensajes o en la responsabilidad de atención. Cambiar de plataforma sin corregir ese proceso puede dejar el mismo pendiente en una nueva bandeja.
+Atende no es la opción si tu negocio se mueve así:
 
-Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: sus [planes y condiciones](/precios) se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
+- Tus ventas arrancan en Instagram: comentarios, historias y mensajes directos.
+- Tu equipo arma campañas de mensajes y cambia los recorridos seguido.
+- Querés empezar con poco y crecer por cantidad de contactos, si ese esquema aplica a tu cuenta.
 
-## Qué confirmar antes de migrar
+## Si la plata está en la reserva y no en la campaña
 
-Inventariá automatizaciones, entradas desde anuncios y pasos de seguimiento. Confirmá cómo seguirá funcionando tu número, qué historial estará disponible y qué recorridos habrá que reconstruir. No supongas que una automatización se importa de una plataforma a otra.
+Un restaurante que recibe por WhatsApp "somos seis el sábado" no necesita un recorrido con botones. Necesita que alguien mire la disponibilidad a las 21 de un viernes, cuando el salón está lleno. Ejemplo ilustrativo, con el sistema de reservas conectado:
 
-Guardá una lista de consultas pendientes y verificá cómo seguirá atendiéndolas el equipo. No des por concluida una migración solo porque el número se conectó: probá recepción, respuesta, intervención humana y cualquier dependencia externa que forme parte del alcance.
+> **Contacto:** Somos seis el sábado, ¿tienen mesa a las 21?
+>
+> **Asistente:** A las 21 no me queda, tengo 20:30 o 22:15. ¿Cuál preferís?
+>
+> **Contacto:** 20:30
+>
+> **Asistente:** Listo, te reservé mesa para seis el sábado a las 20:30.
 
-## Cómo evaluar Atende para tu negocio
+Conectado a tu sistema, Atende toma la reserva y tu equipo ve toda la conversación. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Mirá [restaurantes y hoteles](/casos-de-uso/restaurantes-y-hoteles) y [qué hace falta conectar](/integraciones).
 
-Traé consultas anonimizadas y explicá qué datos necesita confirmar tu equipo. En una [demo](/demo) podés revisar la atención, la bandeja y las integraciones necesarias. Usá la misma lista de casos para las herramientas que evalúes y anotá el resultado observado, junto con lo que todavía requiere confirmación.
+Otras salidas: si tu volumen está en WhatsApp y anuncios, [Cliengo](/blog/alternativas-a-cliengo) dice enfocarse ahí. Si querés agentes con API oficial, [Wati](/blog/mejor-alternativa-a-wati). Si querés comparar por rubro, la [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) los ordena.
 
-Esta comparación la publica Atende y tiene un interés comercial. Las afirmaciones sobre otros proveedores se limitan a sus fuentes indicadas; los escenarios de prueba son criterios propuestos por nosotros. Leé nuestros [criterios editoriales](/blog/editorial) para interpretar el alcance y las fechas de consulta.
+## Lo que Atende no te va a resolver
+
+Se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número. Mandar mensajes masivos desde un número vinculado por QR suma riesgo: Atende no hace difusiones, y los recordatorios y seguimientos se arman a pedido.
+
+Responde mensajes de texto. Una foto de un comprobante, un audio o una ubicación no llegan. Tiene un solo canal, un número por espacio, y todavía no tenemos reseñas públicas. Si con todo eso sigue encajando, [pedí una demo](/demo) con una semana real de reservas.

@@ -1,23 +1,23 @@
 ---
-title: 'Atención comercial 24/7 por WhatsApp: cómo organizarla'
-seoTitle: 'Atención comercial 24/7 por WhatsApp: guía para PyMEs'
+title: 'Atención comercial 24/7 por WhatsApp: qué se puede terminar de noche y qué espera a una persona'
+seoTitle: 'Atención comercial 24/7 por WhatsApp: qué se resuelve de noche'
 description: >-
-  Organizá la atención comercial por WhatsApp fuera de horario: consultas útiles,
-  solicitudes pendientes, intervención humana y revisión del equipo al abrir.
+  Qué significa atención comercial 24/7 por WhatsApp: qué tareas se cierran
+  fuera de horario, cuáles esperan a tu equipo y cómo revisar los pendientes.
 summary: >-
-  La atención comercial 24/7 por WhatsApp puede cubrir información frecuente y
-  recepción de solicitudes fuera del horario del equipo. Debe indicar cuándo
-  interviene una persona y qué falta confirmar. En Atende, la respuesta automática
-  depende de que la conexión y el servicio estén activos; no implica atención
-  humana permanente ni una garantía de disponibilidad ininterrumpida.
+  Atención comercial 24/7 por WhatsApp es la frase que se busca. Lo que Atende
+  hace es responder mensajes de texto a cualquier hora, mientras el servicio y tu
+  WhatsApp estén conectados. De noche puede informar y juntar pedidos, y conectado
+  a tu sistema, reservar o registrar la tarea. Reclamos, excepciones y precios
+  especiales esperan a una persona. No hay guardia humana ni garantía de servicio.
 publishedAt: '2026-10-28'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: guias
 tags:
   - WhatsApp
   - atención comercial
   - fuera de horario
-  - automatización
+  - bandeja compartida
 related:
   - cotizaciones-por-whatsapp-automaticas
   - whatsapp-ia-atencion-humana
@@ -26,101 +26,118 @@ related:
 faq:
   - q: ¿Atención comercial 24/7 significa que siempre responde una persona?
     a: >-
-      No. La automatización puede responder información configurada mientras el
-      equipo está fuera de horario. Las consultas que requieren una persona
-      siguen el horario humano informado. El negocio debe distinguir ambos
-      alcances en sus mensajes.
+      No. Atende responde mensajes de texto a cualquier hora, mientras el servicio
+      y tu WhatsApp estén conectados, pero no hay personas de guardia. Lo que
+      necesita a alguien espera al horario de tu equipo.
   - q: ¿Atende garantiza que WhatsApp responda sin interrupciones?
     a: >-
-      No corresponde prometer disponibilidad ininterrumpida. La respuesta
-      automática necesita una conexión de WhatsApp y un servicio activos.
-      Revisá el estado de la conexión, los límites del plan y quién se ocupa
-      de recuperar la atención si ocurre una incidencia.
-  - q: ¿Qué pasa si llega una solicitud de cotización durante la noche?
+      No. Si se desconecta tu WhatsApp o se agotan las respuestas y los créditos,
+      el asistente deja de contestar y no hay aviso. Por eso conviene mirar la
+      conexión y los créditos al empezar el día.
+  - q: ¿Qué se puede terminar de noche sin nadie en el local?
     a: >-
-      El asistente puede responder información configurada y reunir producto,
-      cantidad y otros datos necesarios. El equipo revisa la conversación durante
-      su atención para confirmar precio y condiciones. Una solicitud recibida no
-      equivale a un presupuesto emitido.
-  - q: ¿La automatización retoma sola las conversaciones al día siguiente?
+      Sin conexión: informar, mandar fotos y videos y juntar pedidos para que tu
+      equipo confirme. Conectado a tu sistema: reservar, consultar stock, registrar
+      el pedido o cotizar. Esa conexión se arma a pedido para tu negocio.
+  - q: ¿Por qué un chat de la noche puede no aparecer entre los pendientes?
     a: >-
-      No debe asumirse. El equipo necesita una rutina para revisar pendientes y
-      continuar desde la bandeja. En Atende, los seguimientos proactivos y
-      recordatorios automáticos requieren un alcance evaluado por separado.
+      La conversación se cierra sola 12 horas después del último mensaje del
+      contacto, aunque esté en Necesita humano. Pasa a Finalizadas, así que la
+      revisión de la mañana tiene que mirar también ese filtro.
+  - q: ¿El asistente retoma solo las conversaciones al día siguiente?
+    a: >-
+      No. Atende no manda mensajes por su cuenta. Los seguimientos se arman a
+      pedido, y escribirle a quien no lo pidió desde un número vinculado por QR
+      tiene riesgo de restricción. Tu equipo retoma desde la bandeja.
 sources: []
 ---
-Un comprador escribe a las 22:30 porque recién terminó de trabajar. Puede necesitar saber si atendés su localidad, qué información enviar para cotizar o a qué hora hablar con un vendedor. Una respuesta útil le permite avanzar y le explica qué ocurrirá después. Si solo dice “ya te atiende un asesor” cuando el equipo vuelve al día siguiente, crea una expectativa que la operación no puede cumplir.
+Una noche cualquiera en el WhatsApp de una gomería. Ejemplo ilustrativo:
 
-Para organizar atención comercial fuera de horario, diseñá dos partes juntas: lo que se resuelve en el momento y la revisión humana que retoma los pendientes. La promesa al cliente tiene que coincidir con ambas.
-
-## Definí qué significa 24/7 en tu negocio
-
-Escribí por separado el horario del equipo, el alcance de las respuestas automáticas y las condiciones técnicas necesarias. Que un asistente pueda responder de noche no significa que haya vendedores, logística o administración trabajando a esa hora.
-
-En Atende, la atención automática depende de que el servicio y la conexión de WhatsApp estén activos. También hay que revisar el alcance y los límites del plan contratado. Usá “atención fuera de horario” para explicar la función concreta y evitá prometer respuesta permanente o resolución inmediata de cualquier consulta.
-
-La información de horarios debe contemplar días hábiles, fines de semana y cierres especiales. En una empresa argentina que recibe consultas desde otros países, aclarar la hora de Argentina puede evitar confusiones. Si tenés varias sucursales, indicá a cuál corresponde el horario.
-
-## Qué puede avanzar mientras el equipo está ausente
-
-| Tipo de consulta | Objetivo fuera de horario | Qué queda para una persona |
+| Hora | Mensaje | Qué pasa |
 | --- | --- | --- |
-| Ubicación, servicios o cobertura | Responder información vigente del negocio. | Aclarar excepciones que no estén configuradas. |
-| Nueva consulta comercial | Reunir producto o servicio y necesidad del comprador. | Evaluar la oportunidad y continuar la venta. |
-| Solicitud de cotización | Pedir variante, cantidad y localidad cuando corresponda. | Verificar precio, stock y condiciones. |
-| Cambio de un pedido existente | Identificar la referencia y el cambio solicitado. | Confirmar si puede modificarse la operación. |
-| Reclamo o pedido de hablar con alguien | Reconocer el motivo y explicar el horario humano. | Revisar el caso y responder con contexto. |
+| 20:10 | "¿Hasta qué hora abren mañana?" | Se responde y listo |
+| 22:35 | "¿Tienen 4 cubiertas 175/65 R14? Las quiero para el sábado" | Conectado a tu sistema, consulta stock y registra el pedido. Sin conexión, junta los datos y tu equipo confirma |
+| 23:50 | "Me cobraron dos veces" | Reclamo: queda marcado para una persona |
+| 01:15 | Audio de dos minutos | No llega a Atende. Nadie contesta |
+| 07:30 | "¿Me hacen precio si llevo ocho?" | Espera al vendedor |
 
-Si una consulta necesita atención inmediata, el mensaje debe seguir el circuito real que el negocio tenga para ese caso. No inventes una guardia ni describas la derivación como una persona ya disponible. Para servicios con asistencia durante una estadía, por ejemplo, el contacto de recepción cumple una función distinta de ventas.
+Eso es, en concreto, lo que se puede esperar de una atención comercial "24/7": [algunas tareas se terminan solas](/servicios/atencion-automatica-whatsapp), otras quedan listas para la mañana y una se pierde si no la previste.
 
-## Prepará un mensaje que explique el siguiente paso
+## Qué cubre la palabra 24/7 y qué deja afuera
 
-Este ejemplo es ilustrativo; reemplazá los horarios y temas por los reales antes de usarlo.
+"24/7" es la frase que la gente pone en Google. Dicho con precisión: Atende responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. No hay un corte por horario, y eso es todo lo que el término cubre. No hay personas de guardia ni garantía de que el servicio no se interrumpa, y lo mejor es que tu negocio tampoco prometa otra cosa.
 
-> Hola, soy el asistente de [negocio]. El equipo comercial atiende de lunes a viernes de 9 a 18, hora de Argentina. Puedo ayudarte con información de servicios y zonas de atención. Si querés una cotización, contame qué necesitás y en qué localidad: el equipo revisa precio y condiciones durante su horario.
+Separá dos horarios en cualquier mensaje al público: el del asistente, que contesta cuando escribas, y el de tu equipo, que confirma lo que necesita una persona.
 
-Si la persona ya explicó el motivo, contestá desde esa información. No hace falta mostrar todas las opciones ni preguntar nuevamente el producto. Para más variantes de redacción, consultá los [ejemplos de mensajes automáticos](/blog/mensajes-automaticos-whatsapp-negocios).
+## Lo que se termina sin nadie en el local
 
-Evitá usar “mañana” sin considerar si el próximo día es hábil. Un horario real es más útil que una fecha deducida incorrectamente durante un feriado.
+| Tarea | Qué necesita | Estado hoy |
+| --- | --- | --- |
+| Informar horarios, zonas y medios de pago | Cargarlos en "Preguntas frecuentes" o en el contexto | Incluido en los planes con IA |
+| Mandar fotos y videos de un producto | Subirlos a tu biblioteca | Incluido en los planes con IA |
+| Juntar un pedido o una solicitud de presupuesto | Decirle qué datos pedir | Incluido; tu equipo lo confirma |
+| Reservar un turno o una mesa | Tu agenda o tu sistema de reservas | A pedido, conectado a tu agenda |
+| Consultar stock y registrar el pedido | Tu sistema | A pedido, conectado a tu sistema |
+| Cotizar con tu lista | Tu sistema | A pedido, conectado a tu sistema |
+| Anotar al interesado en tu CRM o planilla | Tu sistema | A pedido, conectado a tu sistema |
 
-## Organizá la revisión de pendientes al abrir
+Mirá la diferencia entre las dos mitades. Sin conexión, la noche deja trabajo ordenado. Con conexión, deja trabajo hecho.
 
-La bandeja compartida permite continuar con el historial, pero el negocio tiene que definir quién lo hace. La siguiente rutina es una propuesta operativa para el equipo, no una promesa de asignación o agenda automática de Atende.
+## Un pedido cargado a las 22:35
 
-1. **Revisar las conversaciones pendientes.** Identificá qué pidió el cliente y cuál es la última información que dio, incluidos cambios posteriores.
-2. **Separar por motivo y responsabilidad.** Ventas revisa consultas comerciales; quien gestione pedidos atiende cambios de operaciones existentes. Acordá esta distribución con el equipo.
-3. **Detectar compromisos y fechas.** Priorizá según criterios internos verificables: una entrega de hoy puede necesitar revisión antes que una consulta general. No deduzcas urgencia solo por la cantidad de mensajes.
-4. **Continuar con contexto.** La persona confirma qué va a revisar, sin pedir nuevamente todos los datos disponibles.
-5. **Dejar claro el próximo paso.** Si falta una validación de stock o precio, explicalo antes de dar por atendida la consulta.
+Ejemplo ilustrativo.
 
-La [guía para pasar de IA a atención humana](/blog/whatsapp-ia-atencion-humana) detalla cómo evitar que el cliente empiece desde cero. Enviar seguimientos automáticos o recordatorios posteriores requiere evaluar una capacidad adicional; no viene implícito en responder mensajes entrantes.
-
-## Un caso de punta a punta
-
-Ejemplo ilustrativo de una empresa que vende equipamiento:
-
-> Cliente, fuera de horario: Necesito dos equipos del modelo R8 para un local en Córdoba.
+> Comprador: ¿Tienen 4 cubiertas 175/65 R14? Las quiero para el sábado
 >
-> Asistente: ¿En qué localidad está el local y necesitás instalación? El equipo comercial revisa las propuestas de lunes a viernes de 9 a 18.
+> Asistente: Tengo 6 en stock. ¿Las retirás por el local o preferís envío?
 >
-> Cliente: Córdoba capital, con instalación.
+> Comprador: Retiro
 >
-> Asistente: Gracias. La solicitud es por dos R8 con instalación en Córdoba capital. El equipo debe confirmar precio, disponibilidad y alcance del trabajo durante su atención.
->
-> Vendedora, al retomar: Vi tu consulta por dos R8 con instalación. Voy a revisar la disponibilidad y necesito confirmar las características del lugar para preparar la propuesta.
+> Asistente: Listo, registré el pedido 6120: 4 cubiertas para retirar el sábado. El local abre a las 9.
 
-No se prometió un presupuesto nocturno ni una instalación confirmada. El intercambio dejó contexto para el siguiente paso. La [guía de cotizaciones automáticas](/blog/cotizaciones-por-whatsapp-automaticas) explica qué necesita esa propuesta para convertirse en un presupuesto revisado.
+Conectado a tu sistema de stock y pedidos, Atende termina esa tarea mientras el local está cerrado; esa conexión se arma a pedido para tu negocio, y contamos [qué hay que definir para conectar tu stock](/integraciones). Sin conexión, el asistente junta medida, cantidad y forma de retiro, y tu equipo confirma a la mañana. Si lo que más te llega de noche son pedidos de precio, mirá [cómo pasar un presupuesto por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas).
 
-## Probá el cierre y la reapertura del negocio
+## Lo que espera a una persona aunque sean las tres de la mañana
 
-Probá un mensaje justo después del cierre, uno durante el fin de semana y otro cuando el cliente pide una persona varias veces. Verificá que el flujo no repita preguntas ni anuncie un pase inmediato si no hay equipo disponible.
+- **Reclamos por cobros o entregas.** El asistente reconoce el motivo y deriva. No define quién tiene razón.
+- **Precios especiales y excepciones.** Un descuento, un plazo de pago, un cambio de condiciones.
+- **Cambios sobre algo en curso.** Un pedido despachado, una seña, una entrega coordinada.
+- **Lo que no sabe.** Está armado para no inventar datos: si le falta algo, lo dice o deriva. Como diseño, no como garantía.
 
-Revisá también cómo detectar y recuperar una conexión interrumpida. Definí quién puede comprobar el estado en el panel y realizar la reconexión cuando corresponda. Un mensaje de ausencia no reemplaza esa responsabilidad operativa.
+Derivar marca la conversación como Necesita humano y a nadie le suena nada. Si tu negocio tiene urgencias de verdad, publicá una línea propia y escribila en el contexto, porque la bandeja no reemplaza una guardia. Y que el asistente diga cuándo atiende tu equipo sin prometer un llamado que nadie va a hacer: "Esto lo tiene que ver el equipo, que atiende de lunes a viernes de 9 a 18, hora de Argentina." La [guía para pasar de la IA a una persona](/blog/whatsapp-ia-atencion-humana) detalla ese traspaso, y los [ejemplos de mensajes automáticos](/blog/mensajes-automaticos-whatsapp-negocios) sirven para ajustar el tono.
 
-Medí por separado el tiempo hasta la primera respuesta automática y el tiempo hasta la intervención humana. Sumá pendientes sin revisar, consultas con información suficiente y correcciones necesarias. Una respuesta nocturna no demuestra que se concretó una venta.
+## Cuándo el asistente se queda callado de noche
 
-## Cómo evaluar Atende para este recorrido
+| Qué pasó | Qué ve el contacto | Cómo te enterás |
+| --- | --- | --- |
+| Se desconectó tu WhatsApp | Sin respuesta | En la pantalla WhatsApp del panel |
+| Se agotaron las respuestas y los créditos | Sin respuesta | Nadie avisa. Los mensajes siguen entrando a la bandeja. Plan muestra los créditos disponibles, no lo que queda del mes |
+| Mandó audio, foto, video, documento o ubicación | Sin respuesta | No aparece en la bandeja. Queda en el teléfono vinculado |
+| La conversación está en Necesita humano | Sin respuesta del asistente | Figura entre los pendientes |
+| Quedó activo Modo CRM | Sin respuesta | El interruptor del encabezado |
 
-Atende conecta el número por QR, responde con información configurada y permite supervisar el historial y continuar manualmente desde una bandeja compartida. El alcance básico sirve para organizar la primera atención; confirmar stock, emitir cotizaciones o ejecutar acciones en otros sistemas requiere revisión humana o una integración específica.
+Atende no te avisa que el asistente dejó de responder, así que conviene no descubrirlo el lunes. Si el contacto insiste por escrito después de un audio, el asistente puede explicar que por este chat solo recibe texto, siempre que se lo hayas dejado escrito.
 
-Prepará tus horarios, los motivos de consulta más frecuentes y el responsable de retomar cada caso. Con eso podés revisar la solución de [atención comercial por WhatsApp](/servicios/ventas-whatsapp), consultar los [planes y límites](/precios) y llevar el recorrido completo a una [demo](/demo).
+## La revisión de la mañana no termina en los pendientes
+
+Una conversación se cierra sola 12 horas después del último mensaje del contacto, aunque esté en Necesita humano. Alguien que escribió a las 20:30 ya está en Finalizadas a las 8:30, y si abrís a las 9 no lo ves entre los pendientes. Este orden evita perderlo:
+
+1. **Mirá la conexión y los créditos.** Pantalla WhatsApp y Plan. Si la conexión está bien y hay mensajes de texto que el asistente no contestó, puede que se hayan agotado las respuestas del mes.
+2. **Abrí los pendientes de respuesta.** Ahí están las conversaciones derivadas que siguen abiertas.
+3. **Filtrá Finalizadas.** Recorré lo que se cerró durante la noche y buscá reclamos o pedidos sin terminar. Para contestar en una de esas, primero hay que reabrirla.
+4. **Mirá el teléfono del negocio.** Los audios y las fotos de la noche están ahí y en ningún otro lado.
+5. **Marcá lo que vas a seguir vos.** Responder o tocar "Asignarme" no frena al asistente. Si querés seguir a mano, poné esa conversación en Necesita humano.
+
+Tené presente el otro lado del cierre automático: si el contacto vuelve a escribir después, la conversación se reabre y responde el asistente, aunque la tuviera una persona.
+
+## Nadie retoma solo: seguimientos, feriados y vacaciones
+
+El asistente no vuelve a escribirle a nadie a la mañana. Atende no manda mensajes por su cuenta, así que el que dejó un pedido a medias queda esperando hasta que tu equipo lo retome. Los seguimientos y recordatorios se arman a pedido para tu negocio. Antes de pedirlos, recordá que se conecta por QR. No es la API oficial de Meta, y escribirle a gente que no lo pidió pone en riesgo el número.
+
+Tampoco se entera del calendario si no se lo contás. Si cerrás un feriado puente o en enero, actualizá el contexto antes de irte y volvé a cambiarlo al abrir. Si no, va a seguir diciendo que el equipo atiende el lunes. Escribí los días y las horas tal como son, con hora de Argentina si te escriben de otros países, y evitá "mañana": en un viernes a la noche esa palabra promete un sábado que quizás no trabajás.
+
+## Por dónde empezar con la atención fuera de horario
+
+Revisá una semana de chats y anotá qué llegó fuera de horario: qué se podía contestar, qué se podía terminar y qué necesitaba a alguien. Con esa lista cargás las respuestas, definís quién hace la revisión de la mañana y sabés si te conviene pedir una conexión.
+
+Para la parte comercial está [tomar pedidos por WhatsApp](/servicios/ventas-whatsapp), y en [casos de uso](/casos-de-uso) podés ver qué tarea conviene terminar de noche en tu rubro. Podés traer esa semana de chats a una [demo](/demo).

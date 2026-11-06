@@ -1,129 +1,147 @@
 ---
-title: 'Alternativas a Zenvia para WhatsApp: qué comparar en una PyME'
-seoTitle: 'Alternativas a Zenvia para WhatsApp: guía para PyMEs'
+title: 'Alternativas a Zenvia y Sirena en Argentina: cuándo cambiar y cuándo quedarte'
+seoTitle: 'Alternativas a Zenvia y Sirena en Argentina'
 description: >-
-  Compará Zenvia y Atende por conexión de WhatsApp, atención, canales e
-  integraciones. Criterios, prueba de demo y revisión de costos antes de migrar.
+  Qué pasó con Sirena, qué muestra Zenvia en sus precios y cuándo una PyME necesita
+  una nube de clientes o le alcanza con registrar la consulta en WhatsApp.
 summary: >-
-  Para elegir una alternativa a Zenvia, compará primero las tareas y los canales
-  que tu empresa realmente usa. Zenvia presenta Customer Cloud para una operación
-  multicanal y ofrece WhatsApp mediante la API oficial. Atende se concentra en
-  atención de WhatsApp con información configurada, conexión por QR e
-  intervención humana. La elección depende del alcance, las integraciones y la
-  forma de operar el número; no hay un reemplazo universal.
+  Quedate en Zenvia si necesitás SMS, email y WhatsApp en una misma plataforma,
+  campañas, datos de clientes unificados y proveedor oficial de Meta: es una nube
+  pensada para operaciones medianas y grandes. Mirá alternativas si sos una PyME y lo que
+  querés es calificar una consulta y registrarla sin armar un proyecto. Atende hace
+  eso conectado a tu sistema, con la conexión armada a pedido, solo en WhatsApp y
+  por QR. Sirena hoy redirige a Zenvia: si la buscás, estás buscando Zenvia.
 publishedAt: '2026-09-10'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
   - Zenvia
+  - Sirena
   - alternativas
-  - comparativas
+  - precios
 related:
-  - mejor-alternativa-a-manychat
-  - mejor-alternativa-a-respond-io
-  - como-automatizar-whatsapp-empresa
-  - cuanto-cuesta-automatizar-whatsapp
+  - alternativas-a-aivo
+  - mejor-alternativa-a-kommo
+  - como-automatizar-whatsapp-estudios-contables
+  - chatbots-whatsapp-argentina-comparativa
 faq:
-  - q: ¿Cuál es la mejor alternativa a Zenvia para una PyME?
+  - q: ¿Qué pasó con Sirena?
     a: >-
-      Depende del proceso. Atende puede evaluarse para responder consultas por
-      WhatsApp y permitir que el equipo continúe desde una bandeja compartida.
-      Si necesitás una API oficial, varios canales o integraciones que ya usa tu
-      operación, compará esos requisitos explícitamente antes de elegir.
-  - q: ¿Atende usa la misma conexión de WhatsApp que Zenvia?
+      Zenvia la compró en 2020. Al 6 de noviembre de 2026, sirena.app redirige a una
+      página de Zenvia que promociona Zenvia Customer Cloud y ya no menciona a Sirena.
+      Zenvia Conversion aparece solo como acceso para usuarios.
+  - q: ¿Cuánto sale Zenvia en Argentina?
     a: >-
-      No. Zenvia ofrece WhatsApp mediante la API oficial según su información
-      pública. El flujo de Atende descrito aquí vincula el número por QR desde
-      dispositivos vinculados; no se presenta como una conexión mediante la
-      API oficial de Meta. Esa diferencia debe evaluarse antes de migrar.
-  - q: ¿Atende es más barato que Zenvia?
+      Según su página al 6 de noviembre de 2026, el software va de USD 0 a USD 845 por
+      mes, más paquete de canales y activación. Muestra dólares y pesos mexicanos, no
+      pesos argentinos. Pedí la cotización para Argentina.
+  - q: ¿Zenvia tiene oficina en Argentina?
     a: >-
-      No se puede afirmar sin comparar propuestas vigentes para el mismo uso.
-      Pedí el costo del software, el volumen incluido, los usuarios, la
-      implementación, los cargos de canal cuando correspondan y las
-      integraciones. También contemplá el trabajo que seguirá haciendo el equipo.
-  - q: ¿La migración desde Zenvia incluye historial, contactos y automatizaciones?
+      Sí. Su sitio lista oficinas en Brasil, en la Ciudad Autónoma de Buenos Aires y en
+      México. Para un cliente que quiera trato local, es un punto a favor frente a
+      proveedores sin presencia en el país.
+  - q: ¿Atende manda SMS o campañas como Zenvia?
     a: >-
-      No lo asumas. Confirmá con ambos proveedores el procedimiento del número,
-      el acceso a datos e historial y los flujos que habrá que reconstruir.
-      Conectar WhatsApp a otra herramienta no demuestra que todos esos elementos
-      se hayan transferido.
+      No. Atende responde mensajes de texto en WhatsApp y no hace campañas ni SMS. Si
+      tu operación depende de eso, Zenvia es mejor elección.
 sources:
+  - title: 'Zenvia: inicio'
+    url: 'https://zenvia.com/es/'
+    checkedAt: '2026-11-06'
+  - title: 'Zenvia: precios'
+    url: 'https://zenvia.com/es/precios/'
+    checkedAt: '2026-11-06'
   - title: 'Zenvia: Customer Cloud'
     url: 'https://zenvia.com/es-mx/customer-cloud/'
-    checkedAt: '2026-10-28'
-  - title: 'Zenvia: solución de WhatsApp y API oficial'
+    checkedAt: '2026-11-06'
+  - title: 'Zenvia: WhatsApp Business'
     url: 'https://zenvia.com/es-mx/whatsapp/'
-    checkedAt: '2026-10-28'
+    checkedAt: '2026-11-06'
+  - title: 'Zenvia: compra de Sirena'
+    url: 'https://zenvia.com/blog/zenvia-adquire-sirena/'
+    checkedAt: '2026-11-06'
+  - title: 'sirena.app: redirección a Zenvia'
+    url: 'https://www.sirena.app/'
+    checkedAt: '2026-11-06'
+  - title: 'Zenvia: página de destino de Sirena'
+    url: 'https://zenvia.com/produtos/zenvia-conversion/'
+    checkedAt: '2026-11-06'
+  - title: 'Develop Argentina: ficha de Sirena'
+    url: 'https://developargentina.com/directorio/sirena'
+    checkedAt: '2026-11-06'
 ---
-Buscar alternativas a Zenvia es más fácil si podés completar esta frase: “Queremos cambiar porque hoy no logramos…”. La respuesta puede ser repartir consultas, sostener campañas, atender fuera de horario o reducir trabajo de configuración. Cada problema pide una comparación distinta.
+Un estudio contable recibe por WhatsApp: "soy monotributista y quiero pasar a responsable inscripto". Lo que necesita es calificar esa consulta y que quede registrada para el contador que corresponda. Una nube de clientes con SMS, email, campañas y datos unificados también puede hacerlo, y puede ser mucho más de lo que ese estudio va a usar. Por ahí pasa la decisión con Zenvia.
 
-Esta guía compara Zenvia y Atende desde la operación de una PyME. La publica Atende y tiene un interés comercial. Las características de Zenvia se apoyan en las fuentes oficiales enlazadas, consultadas el 28 de octubre de 2026; las pruebas y criterios de elección son recomendaciones editoriales propias. No presentamos un ranking independiente ni damos por equivalentes sus planes.
+Esta comparativa es de Atende, que vende otra cosa y tiene interés en que la mires. Las cifras son las de Zenvia al 6 de noviembre de 2026, y no probamos su producto. Los [criterios editoriales](/blog/editorial) explican qué chequeamos y qué no.
 
-## Qué ofrece cada propuesta
+## Si buscabas Sirena, ya estás buscando Zenvia
 
-Zenvia presenta Customer Cloud como una plataforma que reúne marketing, ventas y atención con automatización e IA. Su oferta pública incluye operación multicanal. El alcance concreto depende de los módulos y condiciones de la propuesta. [Zenvia Customer Cloud](https://zenvia.com/es-mx/customer-cloud/).
+Sirena era una startup de Buenos Aires con una herramienta de WhatsApp para equipos de venta. [Zenvia la compró en 2020](https://zenvia.com/blog/zenvia-adquire-sirena/) y anunció que iba a sumar su tecnología a la plataforma. La [ficha de Develop Argentina](https://developargentina.com/directorio/sirena) cuenta que siguió bajo el nombre Zenvia Conversion.
 
-Atende responde consultas de WhatsApp con la información configurada del negocio y permite que el equipo revise el historial y continúe manualmente desde una bandeja compartida. Vincula el número mediante QR. Consultar stock, registrar pedidos, operar un CRM externo o hacer seguimientos proactivos requiere una integración o alcance acordado por separado. Podés revisar sus [servicios](/servicios) antes de armar la prueba.
+Hoy [sirena.app](https://www.sirena.app/) redirige a una [página de Zenvia](https://zenvia.com/produtos/zenvia-conversion/), en portugués, que promociona Customer Cloud y no menciona a Sirena ni a Conversion. En [Customer Cloud](https://zenvia.com/es-mx/customer-cloud/), Conversion aparece solo como enlace de acceso. Si sos usuario de los viejos tiempos, preguntá qué plan tenés y qué producto vas a tener en la próxima renovación.
 
-La diferencia comercial importante es qué trabajo necesitás resolver completo. Para una empresa que ya coordina varios canales, conservar ese recorrido puede ser indispensable. Para otra que recibe consultas repetidas en WhatsApp, la primera atención y el pase a una persona pueden ser el alcance inicial.
+## Qué vende Zenvia hoy
 
-## La conexión de WhatsApp es un criterio de elección
+[Zenvia](https://zenvia.com/es/) se define alrededor del recorrido del cliente, con Customer Cloud como "IA completa para vender más y atender mejor". La plataforma se organiza en [cuatro grupos](https://zenvia.com/es-mx/customer-cloud/): atraer, convertir, atender y nutrir. Trae envíos masivos, bandeja unificada, tickets, un perfil de contacto único con CDP propio y agentes de IA.
 
-Zenvia ofrece el canal mediante la API oficial de WhatsApp y presenta opciones de coexistencia. Confirmá la elegibilidad y las condiciones de tu número en su proceso vigente. [Solución de WhatsApp de Zenvia](https://zenvia.com/es-mx/whatsapp/).
+Sus canales son WhatsApp, Instagram, Messenger, SMS, email y webchat, y tiene un enlace a RCS. Se presenta como BSP oficial de WhatsApp y dice que el agente se puede armar sin código, con tu número, tu base de conocimiento y tu configuración. Integra CRM, ERP y medios de pago.
 
-En Atende, el flujo aquí descrito usa un QR que se escanea desde dispositivos vinculados. No es una oferta basada en la API oficial de Meta. Si tu empresa exige esa API como requisito de contratación, el alcance descrito de Atende no lo satisface.
+Tiene oficina en Grierson 255, CABA, y un plan Enterprise. Eso la separa de muchas herramientas extranjeras que atienden Argentina a la distancia.
 
-Antes de mover el número, verificá cómo está conectado hoy, quién administra sus accesos y qué procedimiento se necesita para el destino. No supongas que conservar el número garantiza conservar historial, plantillas, campañas o integraciones. Pedí una respuesta específica para tu configuración.
+## Zenvia precios en Argentina
 
-## Compará tareas completas, no una lista de funciones
+[Su página de precios](https://zenvia.com/es/precios/) al 6 de noviembre de 2026 muestra dólares y pesos mexicanos. Pesos argentinos, no. Estos son los valores de lista en dólares; hay un descuento vigente para cuentas nuevas hasta el 30 de noviembre.
 
-| Criterio | Qué revisar en la propuesta de Zenvia | Qué revisar en Atende |
+| Plan | Software por mes | Usuarios | "Interactionz" | [Activación con WhatsApp](https://zenvia.com/es-mx/whatsapp/) |
+| --- | --- | --- | --- | --- |
+| Starter | USD 0 | 1 | 100 | USD 137 |
+| Specialist | USD 130 | 10 | 500 | USD 137 |
+| Expert | USD 390 | 30 | 2.000 | USD 421 |
+| Professional | USD 845 | 50 | 5.000 | USD 842 |
+| Enterprise | Bajo consulta | Bajo consulta | Bajo consulta | Bajo consulta |
+
+Tres cosas para leer con cuidado. Los mensajes salen de un paquete de canales aparte: el más chico que muestra son USD 20 por mes, con hasta 1.088 SMS o 362 WhatsApp. La página aclara que son volúmenes de Brasil, y su FAQ dice 431 WhatsApp para ese mismo paquete. El título dice "desde $150 USD", mientras Starter suma USD 20. Y esa página muestra "¡SETUP GRATIS!" en los planes a los que la de WhatsApp les suma la activación. Pedí que te coticen el total para tu volumen, con la moneda en la que vas a pagar.
+
+Los planes de Atende [se ven en la app](/precios).
+
+## Una nube de clientes o un asistente en tu número
+
+| Criterio | Zenvia | Atende |
 | --- | --- | --- |
-| Atención inicial | Qué respuestas y automatizaciones incluye el alcance contratado. | Calidad de respuestas con la información configurada y manejo de lo desconocido. |
-| Trabajo del equipo | Cómo se continúa una consulta entre las áreas que necesitás. | Lectura del historial, intervención manual y responsabilidad de revisar pendientes. |
-| Canales | Cuáles están incluidos y cómo se conectan con tu operación. | Que el alcance centrado en WhatsApp cubra la necesidad del proyecto. |
-| Datos y acciones | Sistema, conector y acción incluidos en la propuesta. | Integración evaluada aparte para stock, pedidos, agenda o CRM externo. |
-| Conexión | Requisitos del número y procedimiento para la API oficial. | Vinculación por QR y operación de la conexión. |
-| Costos | Software, uso, canal, implementación y adicionales aplicables. | Plan habilitado, límites de uso y alcance adicional acordado. |
+| Pensada para | Marketing, ventas y atención en varias áreas | Un negocio con un número de WhatsApp |
+| Canales | WhatsApp, SMS, email, Instagram, Messenger, webchat | Solo WhatsApp, mensajes de texto |
+| Conexión con WhatsApp | BSP oficial. Pide registro empresarial y cuenta comercial verificada en Meta | Se conecta por QR. No es la API oficial de Meta |
+| Campañas | Sí, con segmentación | No |
+| Datos de clientes | CDP propio y perfil unificado | Nombre, número, etiquetas y notas |
+| Quién arma | Tu equipo, sin código. Hay acompañamiento según el caso | Vos cargás el contexto y nosotros armamos la conexión |
+| Terminar una tarea | Agentes y conectores a CRM y ERP | Conectado a tu sistema, a pedido |
 
-La tabla es una lista de revisión, no una afirmación de que todos los planes incluyan las mismas capacidades. Pedí que cada proveedor marque qué puede demostrar ahora, qué requiere configuración adicional y qué queda fuera.
+## Cuándo Zenvia es la mejor opción
 
-## Qué alternativas evaluar según el problema
+Atende no es para vos si:
 
-Si el problema está en la primera atención de WhatsApp, podés incluir Atende en una prueba con preguntas frecuentes, solicitudes comerciales y pase humano. Si el requisito es conservar una operación multicanal, una integración existente o una conexión por API oficial, esa condición debe filtrar la lista antes de comparar facilidad de uso.
+- Mandás SMS o campañas de email y WhatsApp como parte del negocio.
+- Necesitás una base de clientes unificada entre marketing, ventas y atención.
+- Tenés diez usuarios o más y varias áreas trabajando sobre el mismo contacto.
+- Tu empresa exige API oficial y proveedor reconocido por Meta.
+- Querés un proveedor con oficina en Argentina y con plan Enterprise.
 
-También podés consultar nuestras guías de [alternativas a Manychat](/blog/mejor-alternativa-a-manychat) y [alternativas a respond.io](/blog/mejor-alternativa-a-respond-io) para preparar preguntas sobre marketing y atención entre canales. Son comparaciones de alcance, no una recomendación de migrar a cualquier herramienta que aparezca allí.
+## Cuando te alcanza con calificar y registrar
 
-Si necesitás que la automatización complete pasos en otros sistemas, la guía de [alternativas a Botmaker](/blog/alternativas-a-botmaker) propone una prueba de acciones, validación humana y continuidad de procesos antes de cambiar de plataforma.
+Muchos negocios de servicios no quieren una nube. Quieren que la consulta llegue ordenada. Ejemplo ilustrativo de un estudio contable, con su planilla o CRM conectado:
 
-Si tu solución actual cumple las funciones necesarias pero deja consultas sin atender, revisá quién toma los pendientes y cómo se actualizan las respuestas. Cambiar de plataforma no resuelve por sí mismo una responsabilidad que nadie tiene asignada.
+> **Contacto:** Soy monotributista y quiero pasar a responsable inscripto. ¿Me pueden asesorar?
+>
+> **Asistente:** Sí. ¿Qué actividad tenés y desde cuándo facturás?
+>
+> **Contacto:** Diseño, desde 2023
+>
+> **Asistente:** Listo, registré tu consulta para el estudio con esos datos.
 
-## Una prueba de demo que ayuda a decidir
+Conectado a tu sistema, Atende califica la consulta y la registra, y esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta los datos y tu equipo los confirma desde la bandeja. Más ejemplos en [servicios profesionales](/casos-de-uso/servicios-profesionales), y el detalle en [cómo armamos cada conexión](/integraciones) y [qué es Atende](/que-es-atende). Si lo que te falta es un embudo de ventas, mirá [Kommo](/blog/mejor-alternativa-a-kommo).
 
-Llevá los mismos casos anonimizados a ambas propuestas. Para cada uno, anotá qué se resolvió, qué tuvo que hacer una persona y qué dato faltó.
+## Si tu número hoy está en Zenvia
 
-1. **Consulta habitual.** Un comprador pregunta por una condición vigente. Revisá que la respuesta coincida con tu negocio y no agregue excepciones inexistentes.
-2. **Dato que no está disponible.** El comprador pide stock o precio personalizado. Observá si el flujo obtiene un dato verificado o explica qué debe revisar el equipo.
-3. **Cambio de intención.** La conversación empieza como una compra nueva y pasa a un reclamo sobre un pedido. El equipo debe poder continuar con ese contexto.
-4. **Intervención humana.** El cliente pide un vendedor fuera de horario. Revisá qué mensaje recibe y cómo se retoma al abrir.
-5. **Dependencia externa.** Si una integración forma parte del presupuesto, probá también qué pasa cuando el sistema no responde o no encuentra el pedido.
+[Zenvia explica](https://zenvia.com/es-mx/whatsapp/) que un número que pasa a su API deja de funcionar en la app y queda solo en la API. Atende se vincula escaneando un QR desde el teléfono, así que primero tenés que resolver cómo liberar ese número y qué pasa con tus plantillas e historial. Ese paso no lo probamos con cada proveedor. Atende no importa conversaciones, y una vez vinculado le contesta a todos tus contactos: probalo desde otro número; usa créditos.
 
-Una demo con datos preparados puede mostrar el recorrido esperado. Para evaluar la operación cotidiana también necesitás ver una excepción y entender quién la corrige.
-
-## Cómo comparar el costo total
-
-Pedí propuestas para el mismo período, volumen y equipo. Detallá el software, el uso incluido y cómo se computa, los usuarios o números necesarios, la implementación, los cargos de canal cuando correspondan y el mantenimiento de integraciones.
-
-Sumá el trabajo interno: cargar información, revisar respuestas y resolver excepciones. No atribuyas un ahorro a una plataforma si, para conseguirlo, quitaste una función que el negocio todavía necesita.
-
-No afirmamos que Atende sea más barato. Podés consultar sus [planes y condiciones](/precios) y usar la [guía de costos de automatización](/blog/cuanto-cuesta-automatizar-whatsapp) para preparar una comparación equivalente. Los importes deben confirmarse al contratar.
-
-## Antes de cambiar de plataforma
-
-Inventariá números, canales, automatizaciones, integraciones y conversaciones abiertas. Definí quién continúa esas consultas durante la transición y cómo accede a la información necesaria. Confirmá con los proveedores qué puede exportarse, qué estará disponible para consulta y qué habrá que reconstruir.
-
-Acordá un criterio de puesta en marcha: recepción y respuesta comprobadas, intervención humana probada y dependencias externas verificadas. Si un caso indispensable no funciona, debe resolverse antes de depender de la nueva configuración para toda la operación.
-
-Para evaluar Atende, [prepará una consulta para una demo](/demo) con tu problema principal, los sistemas que necesitás conectar y los casos de prueba. Los [criterios editoriales](/blog/editorial) explican cómo delimitamos las comparaciones y sus fuentes.
+Sumá los límites de Atende a la decisión. No podemos prometer que WhatsApp no restrinja un número. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Hay un número por espacio, no hay campañas y todavía no tenemos reseñas públicas. Si con eso te cierra, lo podés ver en una [demo](/demo).

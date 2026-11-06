@@ -1,77 +1,142 @@
 ---
-title: 'Mejor alternativa a Kommo para WhatsApp: Atende y CRM'
-seoTitle: 'Mejor alternativa a Kommo para WhatsApp: Atende y CRM'
+title: 'Alternativas a Kommo en Argentina: cuándo necesitás un CRM y cuándo no'
+seoTitle: 'Alternativas a Kommo en Argentina: CRM o tarea terminada'
 description: >-
-  Evaluá Kommo y Atende según CRM, consultas por WhatsApp y atención del equipo.
-  Comparativa con criterios de prueba y límites de integración claros.
+  Kommo ya vende reservas y agentes de IA, no solo un embudo. Cuánto sale, con
+  qué mínimo, cuándo quedarte y cuándo te sobra un CRM para lo que necesitás.
 summary: >-
-  Atende puede ser una alternativa si tu necesidad principal es atender
-  consultas de WhatsApp con IA y compartir el historial con el equipo. Si
-  necesitás administrar oportunidades, etapas y seguimiento comercial en un CRM,
-  evaluá Kommo con ese proceso. Atende no se presenta como un reemplazo completo
-  de un CRM.
+  Quedate en Kommo si tus vendedores trabajan sobre un embudo: etapas, tareas y
+  seguimiento de cada oportunidad, porque Atende no es un CRM. Hoy Kommo también
+  vende reservas y agentes de IA. Mirá alternativas si te sobra el CRM y lo que
+  querés es cotizar y registrar al interesado en el WhatsApp que ya usás, sin
+  mínimos de seis meses por usuario. Atende hace eso conectado a tu sistema, con
+  la conexión armada a pedido, solo en WhatsApp y por QR.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
-  - automatización
-  - comparativas
+  - Kommo
+  - CRM
+  - alternativas
+  - precios
 related:
-  - como-automatizar-whatsapp-empresa
-  - cuanto-cuesta-automatizar-whatsapp
+  - mejor-alternativa-a-zenvia
+  - alternativas-a-cliengo
+  - como-automatizar-whatsapp-concesionaria
+  - chatbots-whatsapp-argentina-comparativa
 faq:
-  - q: ¿Atende es la mejor alternativa a Kommo para cualquier empresa?
+  - q: ¿Cuánto sale Kommo?
     a: >-
-      No hay una opción universal. Compará el proceso que necesitás, los
-      canales, la intervención humana y las integraciones. Probá los mismos
-      casos en cada herramienta y confirmá el alcance de la propuesta.
-  - q: ¿La migración incluye historial e integraciones automáticamente?
+      Según su página al 6 de noviembre de 2026, US$ 20, 30 o 45 por usuario por
+      mes, con un mínimo de 6 meses. El pago mensual no está disponible y factura
+      solo en dólares. Los cargos de Meta se revisan aparte.
+  - q: ¿Kommo reserva turnos?
     a: >-
-      No lo asumas. Confirmá cómo se conectará el número, qué historial estará
-      disponible y qué sistemas o automatizaciones hay que configurar. En
-      Atende, las integraciones se evalúan por separado.
+      Eso dice su sitio: vende páginas de reserva, calendarios, un agente de IA para
+      reservas y recordatorios. Según su página de planes, la reserva de citas figura
+      en el plan Pro. Pedí que te lo muestren con tu agenda antes de contratar.
+  - q: ¿Atende reemplaza un CRM?
+    a: >-
+      No. Atende tiene bandeja, etiquetas, responsable y notas, pero no embudos ni
+      campos a medida. Lo que puede hacer, conectado a tu sistema, es registrar al
+      interesado en tu CRM o planilla. Esa conexión se arma a pedido.
+  - q: ¿Qué es el Plan CRM de Atende?
+    a: >-
+      Es un plan manual: bandeja compartida, etiquetas y notas, sin asistente ni
+      automatización. El nombre puede confundir. No compite con un CRM de ventas
+      como Kommo.
 sources:
-  - title: 'Kommo: WhatsApp CRM'
-    url: 'https://www.kommo.com/whatsapp/'
-    checkedAt: '2026-09-10'
+  - title: 'Kommo: inicio'
+    url: 'https://www.kommo.com/es/'
+    checkedAt: '2026-11-06'
+  - title: 'Kommo: planes y precios'
+    url: 'https://www.kommo.com/es/buy/tariff/'
+    checkedAt: '2026-11-06'
+  - title: 'Kommo: chatbot para WhatsApp'
+    url: 'https://www.kommo.com/es/whatsapp/chatbot-para-whatsapp/'
+    checkedAt: '2026-11-06'
+  - title: 'Kommo: conectar la app de WhatsApp Business'
+    url: 'https://support.kommo.com/docs/whatsapp-business-app-connect'
+    checkedAt: '2026-11-06'
+  - title: 'Whaticket: precios'
+    url: 'https://whaticket.com/precios'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: precios de WhatsApp Business Platform'
+    url: 'https://developers.facebook.com/docs/whatsapp/pricing'
+    checkedAt: '2026-11-06'
 ---
-Un equipo puede querer responder más rápido sin cambiar dónde registra sus oportunidades. Otro necesita que cada conversación termine asociada a una etapa comercial, un responsable y un próximo paso. Son necesidades relacionadas, pero contratar una bandeja de atención no resuelve automáticamente el registro de ventas. Escribí cuál de esos procesos querés reemplazar y cuál debe seguir en tu sistema actual.
+Hay dos tipos de negocio que buscan esto. En uno, el vendedor abre el CRM a la mañana para ver en qué etapa está cada interesado. En el otro, abre WhatsApp para ver qué quedó sin contestar, y lo que quiere es que el presupuesto salga y el interesado quede anotado sin depender de él. El primero está bien en Kommo. El segundo probablemente paga por un embudo que nadie mira.
 
-## Qué propone Kommo y qué propone Atende
+Publicamos esto desde Atende y competimos con Kommo en parte de lo que hace, así que tomalo como una opinión informada. Los datos de Kommo son de sus páginas al 6 de noviembre de 2026; no lo probamos lado a lado. Nuestros [criterios editoriales](/blog/editorial) cuentan cómo trabajamos.
 
-Kommo presenta su producto de WhatsApp vinculado a una bandeja de conversaciones, automatización y gestión de oportunidades por etapas de un pipeline comercial. Esa propuesta combina mensajería y trabajo de CRM, por lo que conviene probar ambas partes durante la evaluación. [Fuente oficial de Kommo](https://www.kommo.com/whatsapp/).
+## Kommo ya no vende solo un embudo
 
-Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
+Si lo conocías como CRM de WhatsApp, actualizá la idea. [Su portada](https://www.kommo.com/es/) dice "El CRM con IA todo en uno que automatiza chats, reservas y procesos en WhatsApp, TikTok e Instagram". Además del Pipeline CRM, lista un agente de IA de ventas y uno para reservas, con "páginas de reserva, calendarios, programación con IA y recordatorios incluidos". En su [página de chatbot](https://www.kommo.com/es/whatsapp/chatbot-para-whatsapp/) habla de automatizar reservas en tu calendario desde la conversación.
 
-## Comparación por necesidad
+O sea: Kommo también actúa en la conversación. La diferencia está en lo que comprás alrededor.
 
-| Necesidad | Qué evaluar en Kommo | Alcance de Atende |
+Para WhatsApp, su [ayuda](https://support.kommo.com/docs/whatsapp-business-app-connect) describe conectar la app de WhatsApp Business escaneando un QR dentro de un flujo con cuenta de Meta. Meta decide la elegibilidad: las cuentas nuevas no califican de inmediato, y solo se importan los chats de los últimos 30 días.
+
+## Lo que pagás en Kommo
+
+Según [su página al 6 de noviembre de 2026](https://www.kommo.com/es/buy/tariff/), con facturación en dólares y un mínimo de 6 meses:
+
+| Plan | Por usuario, por mes | Pago cada 6 meses, por usuario | Agentes de IA | Créditos de IA por usuario |
+| --- | --- | --- | --- | --- |
+| Básico | US$ 20 | US$ 120 | No figuran | 750 |
+| Avanzado | US$ 30 | US$ 180 | Hasta 3 | 1.250 |
+| Pro | US$ 45 | US$ 270 | Hasta 50 | 2.250 |
+| Empresarial | A la medida | No figura | A medida | Según configuración |
+
+La página aclara que "el pago mensual no está disponible actualmente", que todos los usuarios van en el mismo plan y que los créditos sin usar no pasan al mes siguiente. La reserva de citas aparece en Pro. Una cuenta de ejemplo: cuatro vendedores en Pro son 4 × US$ 270, o sea US$ 1.080 por adelantado cada seis meses, más los cargos que correspondan por mensajes.
+
+Sobre esos cargos, confirmá el dato vigente. [Meta cobra](https://developers.facebook.com/docs/whatsapp/pricing) desde el 1 de octubre de 2026 los mensajes de servicio a partir del 1.001 de cada mes, por número. Si alguna página todavía dice que esos mensajes son gratis, pedí el dato actualizado.
+
+Atende no publica importes acá: [los planes se ven en la app](/precios) antes de pagar.
+
+## Qué comprás en cada caso
+
+| Criterio | Kommo | Atende |
 | --- | --- | --- |
-| Registro de oportunidades | Probar las etapas y gestiones de CRM necesarias. | No se ofrece como CRM completo; integrar uno requiere evaluación. |
-| Primera atención | Probar respuesta y continuación desde el equipo. | IA con información configurada y bandeja compartida. |
-| Datos entre sistemas | Revisar las operaciones concretas que querés conectar. | Lectura o escritura en sistemas externos se confirma por separado. |
+| Centro del producto | CRM: embudo, etapas, tareas | Asistente en tu WhatsApp y bandeja compartida |
+| Registro de oportunidades | Dentro de Kommo | En tu CRM o planilla, conectado a pedido |
+| Reservas | Página, calendario y agente propios | Conectado a tu agenda, la que ya usás |
+| Quién lo configura | Tu equipo, con sus bots y agentes | Vos cargás el contexto y nosotros armamos la conexión |
+| Canales | WhatsApp, Instagram, TikTok, Messenger y más | Solo WhatsApp, un número por espacio |
+| Conexión con WhatsApp | Flujo con cuenta de Meta | Se conecta por QR. No es la API oficial de Meta |
+| Contrato | Mínimo 6 meses, en dólares | Condiciones en la app |
 
-La tabla compara criterios de elección. No implica que una función de Kommo esté incluida en todos sus planes, ni que ambas herramientas sean intercambiables.
+## Cuándo Kommo es mejor elección
 
-## La prueba que conviene llevar a una demo
+Atende no es la opción si:
 
-Tomá una consulta de un cliente que vuelve a preguntar por una propuesta anterior. Pedí que muestren cómo se encuentra el historial, quién continúa y dónde queda la oportunidad comercial. Luego probá una consulta nueva que solo necesita un horario. Así podés separar la utilidad del CRM de la atención cotidiana.
+- Tus vendedores viven en un embudo con etapas, tareas y previsiones.
+- Querés reportes de ventas y seguimiento por vendedor.
+- Necesitás Instagram y TikTok en el mismo lugar.
+- Querés que la agenda, las reservas y el CRM estén en un solo producto.
 
-## Cuándo revisar tu proceso actual antes de cambiar
+## Cuando te sobra el CRM
 
-Si el equipo utiliza las etapas del CRM para coordinar propuestas y previsiones, considerá el costo de perder ese proceso al migrar. Puede resultar más apropiado ajustar la atención dentro del sistema o evaluar una integración, siempre que el alcance concreto esté confirmado.
+Muchas concesionarias y agencias chicas lo que tienen es una planilla, un vendedor y demasiados chats. El trabajo real es contestar qué hay en stock, calcular las cuotas y que el interesado quede anotado. Un CRM completo para eso es mucho, y si nadie lo actualiza termina siendo una segunda planilla.
 
-Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: los importes y condiciones se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
+Lo que hoy podemos mostrar funcionando es justo esto: una demo para una concesionaria de motos que consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente. Ejemplo ilustrativo de esa conversación:
 
-## Qué confirmar antes de migrar
+> **Contacto:** ¿Tenés la 150 en negra? ¿Cómo queda en 12 cuotas?
+>
+> **Asistente:** Sí, hay una. En 12 cuotas te queda en [cuota que devuelve tu sistema] por mes. ¿Te anoto para que siga un vendedor?
+>
+> **Contacto:** Dale
+>
+> **Asistente:** Listo, te anoté como interesado en la 150 negra en 12 cuotas.
 
-Enumerá campos, etapas y tareas que usa ventas. Definí dónde vivirán después del cambio y cómo se recuperan los registros anteriores. Una conversación disponible en el historial no implica que exista una oportunidad sincronizada en el CRM.
+Conectado a tu sistema, Atende cotiza y registra al interesado, y esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta los datos y tu equipo los confirma. Tu vendedor ve toda la conversación y sigue desde la bandeja. Más en [concesionarias e inmobiliarias](/casos-de-uso/concesionarias-e-inmobiliarias) y en [qué hace falta para conectar tu CRM](/integraciones).
 
-Guardá una lista de consultas pendientes y verificá cómo seguirá atendiéndolas el equipo. No des por concluida una migración solo porque el número se conectó: probá recepción, respuesta, intervención humana y cualquier dependencia externa que forme parte del alcance.
+## Si estás entre Kommo y Whaticket
 
-## Cómo evaluar Atende para tu negocio
+Es otra comparación frecuente. [Whaticket](https://whaticket.com/precios) se vende como CRM de WhatsApp, con conexiones por QR o API, desde US$ 49 por mes con mínimo de 3 usuarios y sin planes fijos, según su página al 6 de noviembre de 2026; los tokens de IA se pagan aparte a OpenAI. Kommo apuesta por el embudo y el contrato semestral. Si tu duda es esa, mirá también la [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa).
 
-Traé consultas anonimizadas y explicá qué datos necesita confirmar tu equipo. En una [demo](/demo) podés revisar la atención, la bandeja y las integraciones necesarias. Usá la misma lista de casos para las herramientas que evalúes y anotá el resultado observado, junto con lo que todavía requiere confirmación.
+## Antes de dejar Kommo
 
-Esta comparación la publica Atende y tiene un interés comercial. Las afirmaciones sobre otros proveedores se limitan a sus fuentes indicadas; los escenarios de prueba son criterios propuestos por nosotros. Leé nuestros [criterios editoriales](/blog/editorial) para interpretar el alcance y las fechas de consulta.
+Una conversación guardada no es una oportunidad en el embudo. Anotá qué campos, etapas y tareas usa ventas y dónde van a vivir después. Atende no tiene embudos, campos a medida ni exportación de contactos, y su bandeja busca por contacto o teléfono, no por el texto de los mensajes.
+
+Sumá estos límites a tu decisión: responde mensajes de texto, así que audios, fotos, documentos, ubicaciones y grupos no llegan. No podemos prometer que WhatsApp no restrinja un número. Y no tenemos reseñas públicas todavía. El "Plan CRM" de Atende, pese al nombre, es la bandeja manual sin asistente, no un CRM de ventas. Si tu caso pasa ese filtro, llevalo a una [demo](/demo).

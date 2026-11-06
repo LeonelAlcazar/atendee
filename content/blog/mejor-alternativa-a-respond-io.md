@@ -1,90 +1,137 @@
 ---
-title: 'Alternativas a respond.io: WhatsApp, equipo e integraciones'
-seoTitle: 'Alternativas a respond.io para WhatsApp en PyMEs'
+title: 'Alternativas a respond.io en Argentina: cuándo pagar multicanal y cuándo alcanza WhatsApp'
+seoTitle: 'Alternativas a respond.io en Argentina: multicanal o WhatsApp'
 description: >-
-  Compará respond.io y Atende por canales, automatización e integraciones. Una
-  guía para PyMEs que evalúan su atención por WhatsApp y el trabajo del equipo.
+  respond.io reúne WhatsApp, Instagram, email y llamadas en una bandeja. Cuánto
+  sale, cuándo quedarte y cuándo te alcanza con un canal que termine la reserva.
 summary: >-
-  Atende merece evaluación cuando la prioridad es atender WhatsApp con
-  información configurada y una bandeja compartida. Si necesitás varios canales
-  e integraciones concretas dentro de una plataforma, revisá respond.io con esos
-  requisitos. Elegí según el flujo real y confirmá las funciones incluidas.
+  Quedate en respond.io si tus clientes te llegan por WhatsApp, Instagram, email y
+  teléfono, y un equipo grande tiene que seguir cada caso en un solo hilo. Mirá
+  alternativas si casi todo entra por WhatsApp y lo que falta es tomar la reserva
+  sin que alguien la cargue. Atende hace eso conectado a tu sistema, con la conexión
+  armada a pedido, pero tiene un solo canal, un número por espacio y conexión por
+  QR. Si necesitás multicanal o API oficial, Atende no es la opción.
 publishedAt: '2026-09-10'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
-  - automatización
-  - comparativas
+  - respond.io
+  - multicanal
+  - alternativas
+  - precios
 related:
-  - como-automatizar-whatsapp-empresa
-  - cuanto-cuesta-automatizar-whatsapp
+  - alternativas-a-callbell
+  - mejor-alternativa-a-zenvia
+  - como-automatizar-whatsapp-hoteles
+  - chatbots-whatsapp-argentina-comparativa
 faq:
-  - q: ¿Atende es la mejor alternativa a respond.io para cualquier empresa?
+  - q: ¿Cuánto sale respond.io?
     a: >-
-      No hay una opción universal. Compará el proceso que necesitás, los
-      canales, la intervención humana y las integraciones. Probá los mismos
-      casos en cada herramienta y confirmá el alcance de la propuesta.
-  - q: ¿La migración incluye historial e integraciones automáticamente?
+      Según su página al 6 de noviembre de 2026, con pago anual, desde US$ 79 por mes
+      en Starter, US$ 159 en Growth y US$ 279 en Advanced. Los cargos de WhatsApp no
+      están incluidos, y usuarios y contactos extra se cobran aparte.
+  - q: ¿respond.io usa la API oficial de WhatsApp?
     a: >-
-      No lo asumas. Confirmá cómo se conectará el número, qué historial estará
-      disponible y qué sistemas o automatizaciones hay que configurar. En
-      Atende, las integraciones se evalúan por separado.
+      Sí. Se presenta como proveedor oficial de WhatsApp Business y soporta
+      Coexistence, para usar la API y la app en el mismo número. Atende no ofrece eso:
+      se conecta por QR y no es la API oficial de Meta.
+  - q: ¿Atende atiende Instagram o email?
+    a: >-
+      No. Atende trabaja solo en WhatsApp, con un número por espacio. Si esos canales
+      son parte real de tu atención, respond.io es mejor elección.
+  - q: ¿Puede un equipo grande trabajar en Atende?
+    a: >-
+      Todo tu equipo trabaja sobre las mismas conversaciones, con responsable, etiquetas
+      y notas. No hay permisos por rol ni reglas de distribución de contactos, algo que
+      un equipo grande suele necesitar.
 sources:
+  - title: 'respond.io: inicio'
+    url: 'https://respond.io/'
+    checkedAt: '2026-11-06'
+  - title: 'respond.io: precios'
+    url: 'https://respond.io/pricing'
+    checkedAt: '2026-11-06'
   - title: 'respond.io: WhatsApp Business API'
     url: 'https://respond.io/whatsapp-business-api'
-    checkedAt: '2026-10-28'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: precios de WhatsApp Business Platform'
+    url: 'https://developers.facebook.com/docs/whatsapp/pricing'
+    checkedAt: '2026-11-06'
 ---
-Una empresa que recibe consultas en varios canales puede necesitar identificar a un mismo cliente entre ellos. Otra concentra la atención en WhatsApp y solo busca que su personal encuentre el historial. Antes de pagar por una plataforma, listá qué canales se usan de verdad y qué información debe cruzarse. No cuentes como requisito una posibilidad que nadie de la operación va a mantener.
+Antes de comparar planes, hacé un ejercicio corto: abrí las últimas cien consultas de tu negocio y anotá por dónde entró cada una. Si un hotel recibe la reserva por WhatsApp, la pregunta por Instagram, el voucher por mail y la queja por teléfono, necesita las cuatro en el mismo hilo. Si noventa entraron por WhatsApp, el problema se parece más a tomar la reserva a tiempo que a unir canales. Esa cuenta decide si respond.io vale lo que cuesta.
 
-## Qué propone respond.io y qué propone Atende
+Atende publica esto y vende algo más angosto que respond.io, así que el sesgo está declarado. La información de respond.io es de su sitio al 6 de noviembre de 2026, sin prueba lado a lado. Los [criterios editoriales](/blog/editorial) explican el método.
 
-respond.io presenta una solución de WhatsApp Business API con automatizaciones, trabajo de equipo e integraciones con otras aplicaciones. Su documentación comercial también describe atención en varios canales. Esas capacidades justifican evaluar cómo se distribuyen conversaciones y datos entre sistemas. [Fuente oficial de respond.io](https://respond.io/whatsapp-business-api).
+## Qué hace bien respond.io
 
-Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM externo o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
+[Su portada](https://respond.io/) habla de reunir "all customer touchpoints and CRMs in a team inbox with AI Agents and native lead management". Junta WhatsApp, TikTok, Instagram, Messenger, email y llamadas VoIP, y pone las llamadas de WhatsApp y Messenger en el mismo hilo que los mensajes.
 
-## Comparación por necesidad
+Sus agentes de IA tampoco se quedan en responder. Según [su página de WhatsApp](https://respond.io/whatsapp-business-api), "qualify leads, book appointments and assign or close conversations on their own", y su portada suma gestionar reservas, pasar datos de pago y actualizar registros del CRM. Tiene integraciones nativas con HubSpot desde Growth y con Salesforce desde Advanced, más Zapier y Make desde Growth.
 
-| Necesidad | Qué evaluar en respond.io | Alcance de Atende |
+Para WhatsApp se presenta como proveedor oficial y soporta Coexistence, que permite usar la API y la app en el mismo número.
+
+## Lo que sale respond.io, en dólares
+
+[Su página al 6 de noviembre de 2026](https://respond.io/pricing), con pago anual:
+
+| Plan | Por mes | Por año | Usuarios | Contactos activos | Créditos de IA |
+| --- | --- | --- | --- | --- | --- |
+| Starter | US$ 79 | US$ 948 | 5 | Su página dice que este cobro empieza en Growth | 5.000 |
+| Growth | US$ 159 | US$ 1.908 | 10 | Desde 1.000 | Desde 10.000 |
+| Advanced | US$ 279 | US$ 3.348 | 10 | Desde 1.000 | Desde 20.000 |
+| Enterprise | A medida | A medida | Sin límite | A medida | Desde 40.000 |
+
+Lo que se suma a esa tabla:
+
+- **Usuarios extra:** US$ 12, 20 o 24 por mes, según el plan.
+- **Contactos activos de más:** US$ 12 cada 100 en Growth y US$ 15 en Advanced, al cierre del ciclo.
+- **Créditos de IA de más:** US$ 15 cada 1.000.
+- **WhatsApp:** los cargos de Meta no están en ninguna suscripción. Cargás saldo en la plataforma.
+
+La columna de contactos activos es la que más mueve la cuenta. Un Growth con 1.500 contactos activos en un mes paga US$ 60 más ese mes. Una temporada alta se nota. Y la FAQ nombra a Growth, Advanced y Enterprise como los planes con agentes de IA sin costo extra: si querés esos agentes, Starter puede no ser tu plan.
+
+Por el lado de Meta, [desde el 1 de octubre de 2026](https://developers.facebook.com/docs/whatsapp/pricing) los mensajes de servicio se cobran a partir del 1.001 de cada mes, por número. El detalle por rubro está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). Lo de Atende se ve [en la app](/precios), antes de pagar.
+
+## Multicanal frente a un canal resuelto
+
+| Criterio | respond.io | Atende |
 | --- | --- | --- |
-| Canales de atención | Validar cada canal y el recorrido entre ellos. | El alcance descrito aquí se centra en WhatsApp. |
-| Integraciones | Probar el sistema y la acción que necesitás. | Cada integración se evalúa antes de confirmar compatibilidad. |
-| Intervención del equipo | Revisar cómo continúa una conversación en tu configuración. | Bandeja compartida con historial y atención manual. |
+| Canales | WhatsApp, Instagram, TikTok, Messenger, email, VoIP | Solo WhatsApp, un número por espacio |
+| Tipo de conexión | Proveedor oficial de la API, con Coexistence | Se conecta por QR. No es la API oficial de Meta |
+| Llamadas | Sí, en el mismo hilo | No |
+| Acciones en la conversación | Agentes con reservas y CRM, con lo que configures | Conectado a tu sistema, a pedido |
+| Quién arma | Tu equipo, desde plantillas o a medida | Vos cargás el contexto y nosotros armamos la conexión |
+| Integraciones | HubSpot, Salesforce, Zapier, Make | Cada conexión se hace para tu negocio, sin catálogo |
+| Distribución de contactos | Ruteo inteligente | Asignación manual en la bandeja |
 
-La tabla compara criterios de elección. No implica que una función de respond.io esté incluida en todos sus planes, ni que ambas herramientas sean intercambiables.
+## Dónde respond.io es claramente mejor
 
-## API, coexistencia y alcance de la conexión
+Atende no es la opción si:
 
-La información oficial de respond.io describe conexión mediante WhatsApp Business API y una opción de coexistencia con WhatsApp Business App en el mismo número. Verificá requisitos, configuración y qué historial ve el equipo en cada entorno. [WhatsApp en respond.io](https://respond.io/whatsapp-business-api).
+- Más de un canal trae consultas reales todos los días.
+- Tu equipo es grande y necesitás ruteo automático y métricas por agente.
+- Hacés o recibís llamadas y querés todo en un hilo.
+- Usás HubSpot o Salesforce y querés una conexión ya hecha.
+- Tu empresa pide proveedor oficial de la API.
 
-En Atende, el flujo descrito usa QR desde dispositivos vinculados y no se presenta como una conexión mediante la API oficial de Meta. Si esa API es un requisito de tu empresa, consideralo antes de comparar respuestas o facilidad de uso. La posibilidad de atender WhatsApp no hace equivalentes los métodos de conexión.
+## Cuando todo entra por WhatsApp
 
-## Qué implica reemplazar una operación con varios canales
+Un hotel chico de las sierras no siempre tiene un problema de canales. Tiene a la recepcionista en el check-in y una consulta de disponibilidad sin contestar. Ejemplo ilustrativo, con el sistema de reservas conectado:
 
-Prepará una lista de las entradas que usás y del destino de cada consulta. Por ejemplo, un cliente puede consultar primero en una red social y continuar por WhatsApp. El equipo necesita saber dónde buscar el contexto, quién responde y qué datos tiene que volver a verificar.
+> **Contacto:** ¿Tienen habitación doble del 12 al 14?
+>
+> **Asistente:** Sí, me queda una con vista al río. ¿La reservo a tu nombre?
+>
+> **Contacto:** Sí, dale
+>
+> **Asistente:** Listo, te reservé la doble del 12 al 14. La seña se coordina con recepción.
 
-Si elegís una herramienta para cubrir únicamente WhatsApp, definí cómo seguirá la atención de los demás canales y cuánto trabajo implica. Probá también contactos con nombres parecidos: no des por hecho que dos conversaciones pertenecen a la misma persona. Estos son criterios de evaluación del proceso, no una afirmación sobre cómo resuelve identidades cada plataforma.
+Conectado a tu sistema, Atende toma la reserva y consulta disponibilidad. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma desde la bandeja, donde ve toda la conversación. Más en [restaurantes y hoteles](/casos-de-uso/restaurantes-y-hoteles) y en [cómo se conecta tu sistema de reservas](/integraciones).
 
-## La prueba que conviene llevar a una demo
+Fijate que la seña queda en manos del equipo: cobrar es otra conexión, y hay que definirla. Si tu caso necesita pagos en el chat de un hotel, la [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) nombra opciones de ese rubro.
 
-Prepará un contacto que consulta por dos canales y otro que necesita el estado de un pedido. En el primer caso, verificá qué información realmente se vincula. En el segundo, pedí que muestren qué ocurre cuando el sistema externo no encuentra la orden. Una lista de conectores no demuestra que el flujo de tu empresa esté resuelto.
+## Por qué un canal también tiene costo
 
-Si el problema está en repartir consultas y retomar conversaciones cuando alguien se ausenta, la guía de [alternativas a Callbell](/blog/alternativas-a-callbell) propone una prueba con dos agentes. Para evaluar información vigente, calidad de las respuestas y pase desde IA, consultá la comparación de [alternativas a Aivo](/blog/alternativas-a-aivo).
+Elegir Atende es renunciar a Instagram y al email dentro de la misma herramienta, y eso tiene un precio: esas consultas siguen en otro lado. También renunciás a la API oficial, y no podemos prometer que WhatsApp no restrinja un número.
 
-## Cuándo revisar tu proceso actual antes de cambiar
-
-Si ya dependés de recorridos entre canales o sistemas que funcionan en respond.io, documentalos antes de considerar un reemplazo. La decisión puede ser mejorar ese recorrido o reducir alcance, pero debe basarse en lo que usa el equipo y en lo que espera el cliente.
-
-Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: sus [planes y condiciones](/precios) se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
-
-## Qué confirmar antes de migrar
-
-Revisá números, canales, integraciones y conversaciones abiertas. Definí quién atenderá cada entrada durante la transición y cómo se preservará el contexto. Confirmá condiciones de conexión y acceso al historial con los proveedores antes de hacer cambios.
-
-Guardá una lista de consultas pendientes y verificá cómo seguirá atendiéndolas el equipo. No des por concluida una migración solo porque el número se conectó: probá recepción, respuesta, intervención humana y cualquier dependencia externa que forme parte del alcance.
-
-## Cómo evaluar Atende para tu negocio
-
-Traé consultas anonimizadas y explicá qué datos necesita confirmar tu equipo. En una [demo](/demo) podés revisar la atención, la bandeja y las integraciones necesarias. Usá la misma lista de casos para las herramientas que evalúes y anotá el resultado observado, junto con lo que todavía requiere confirmación.
-
-Esta comparación la publica Atende y tiene un interés comercial. Las afirmaciones sobre otros proveedores se limitan a sus fuentes indicadas; los escenarios de prueba son criterios propuestos por nosotros. Leé nuestros [criterios editoriales](/blog/editorial) para interpretar el alcance y las fechas de consulta.
+Responde mensajes de texto, así que audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Y no tenemos reseñas públicas todavía, mientras que respond.io muestra las suyas. Si el ejercicio de las cien consultas te dio mayoría de WhatsApp, llevá esas consultas a una [demo](/demo).
