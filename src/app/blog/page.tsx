@@ -2,13 +2,15 @@ import Link from 'next/link';
 import { blogPage, blogTopics } from '@/content/blog-topics';
 import { site } from '@/content/site';
 import { getPosts } from '@/lib/blog';
+import { latestUpdate } from '@/lib/blog-content';
 import { createPageMetadata } from '@/lib/metadata';
+import { blogNode } from '@/lib/blog-seo';
 import { pageGraph, organizationId } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { PostCard } from '@/components/blog/PostCard';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
 export const metadata = {
   ...createPageMetadata(blogPage),
   alternates: {
@@ -35,19 +37,20 @@ export default function BlogPage() {
               El blog de Atende · {posts.length} guías y comparativas
             </p>
             <h1 className="mt-5 break-words font-display text-[clamp(2.25rem,10.5vw,3rem)] font-semibold leading-[1.02] tracking-[-0.04em] md:text-7xl">
-              Menos dudas.
+              Turnos, pedidos y presupuestos,
               <br />
-              <span className="text-coral">Mejores conversaciones.</span>
+              <span className="text-coral">resueltos por WhatsApp.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-mute">
-              Cómo elegir y crear un bot de WhatsApp para tu negocio: guías de
-              configuración, costos, IA para ventas y procesos por rubro.
+              Guías para que un bot de WhatsApp reserve, cotice o registre el
+              pedido en tu negocio: qué hay que conectar, qué hace tu equipo
+              mientras tanto, cuánto cuesta y con qué compararlo.
             </p>
             <Link
               href="/blog/editorial"
-              className="mt-5 inline-block py-2 text-sm underline underline-offset-4"
+              className="mt-5 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
             >
-              Quién escribe y cómo elaboramos las guías
+              Quién publica y cómo elaboramos las guías
             </Link>
           </div>
           <aside className="self-center rounded-lg border-2 border-ink bg-sun/70 p-7 shadow-[var(--shadow-brut)]">
@@ -58,13 +61,14 @@ export default function BlogPage() {
               ¿Qué es un bot de WhatsApp?
             </h2>
             <p className="mt-4 leading-relaxed">
-              Es un programa que responde mensajes automáticamente. Puede seguir
-              reglas o usar IA; necesita información vigente y un criterio para
-              pasar la conversación a tu equipo.
+              Es un programa que contesta mensajes por vos. Si además lo
+              conectás a tu agenda o a tu sistema, puede reservar el turno o
+              registrar el pedido en la misma conversación, con tu equipo al
+              tanto.
             </p>
             <Link
               href="/blog/bot-de-whatsapp"
-              className="mt-5 inline-block py-2 font-semibold underline underline-offset-4"
+              className="mt-5 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
             >
               Entender los tipos de bot y cómo elegir →
             </Link>
@@ -97,6 +101,12 @@ export default function BlogPage() {
               </li>
             ))}
           </ul>
+          <Link
+            href="/casos-de-uso"
+            className="mt-4 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
+          >
+            Ver qué tarea termina Atende en cada rubro →
+          </Link>
         </nav>
         {topics.map((topic) => (
           <section
@@ -113,7 +123,7 @@ export default function BlogPage() {
               </h2>
               <Link
                 href={`/blog/tema/${topic.slug}`}
-                className="py-2 text-sm underline underline-offset-4"
+                className="inline-flex min-h-11 items-center text-sm underline underline-offset-4"
               >
                 Ver tema →
               </Link>
@@ -132,7 +142,7 @@ export default function BlogPage() {
         ))}
         <a
           href="/blog/feed.xml"
-          className="mt-12 inline-block py-3 text-sm underline underline-offset-4"
+          className="mt-12 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
         >
           Seguir el blog por RSS
         </a>
@@ -140,13 +150,11 @@ export default function BlogPage() {
       <JsonLd
         value={pageGraph({
           ...blogPage,
+          updated: latestUpdate(posts),
           breadcrumbs,
           extra: [
             {
-              '@type': 'Blog',
-              '@id': `${site.url}/blog#blog`,
-              url: `${site.url}/blog`,
-              name: 'Blog de Atende',
+              ...blogNode,
               inLanguage: 'es-AR',
               publisher: { '@id': organizationId },
               blogPost: posts.map((post) => ({

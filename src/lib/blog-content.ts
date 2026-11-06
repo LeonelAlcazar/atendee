@@ -6,6 +6,7 @@ import sanitizeHtml from 'sanitize-html';
 import { decodeHTML } from 'entities';
 import { z } from 'zod';
 import { blogTopics } from '../content/blog-topics';
+import { argentinaToday } from './dates';
 
 export const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const slug = z.string().regex(slugPattern);
@@ -177,40 +178,89 @@ export function parsePost(raw: string, filename: string): BlogPost {
   return { ...result.data, slug: postSlug, ...rendered };
 }
 
-export function loadPosts(
-  directory = path.join(process.cwd(), 'content/blog'),
-  now = new Date(),
-): BlogPost[] {
-  const today = now.toISOString().slice(0, 10);
-  const posts = readdirSync(directory)
-    .filter((file) => file.endsWith('.md'))
-    .map((file) =>
-      parsePost(readFileSync(path.join(directory, file), 'utf8'), file),
-    );
+const postsDirectory = () => path.join(process.cwd(), 'content/blog');
+const markdownFiles = (directory: string) =>
+  readdirSync(directory).filter((file) => file.endsWith('.md'));
+const readPost = (directory: string, file: string) =>
+  parsePost(readFileSync(path.join(directory, file), 'utf8'), file);
+
+// Both loaders use these rules, so they agree on what is published. A problem
+// stops the strict loader; the runtime loader repairs the post and carries on.
+function publish(
+  posts: BlogPost[],
+  today: string,
+  onProblem: (message: string) => void,
+) {
   const published = posts.filter(
     (post) => !post.draft && post.publishedAt <= today,
   );
   const available = new Set(published.map((post) => post.slug));
-  for (const post of published) {
-    if (
-      post.updatedAt > today ||
-      post.sources.some((source) => source.checkedAt > today)
-    )
-      throw new Error(`${post.slug}: future review date`);
-    if (
-      new Set(post.related).size !== post.related.length ||
-      post.related.some((item) => item === post.slug || !available.has(item))
-    ) {
-      throw new Error(
-        `${post.slug}: related links must name distinct published posts`,
+  return published
+    .map((post) => {
+      if (
+        post.updatedAt > today ||
+        post.sources.some((source) => source.checkedAt > today)
+      )
+        onProblem(`${post.slug}: future review date`);
+      const related = [...new Set(post.related)].filter(
+        (item) => item !== post.slug && available.has(item),
       );
+      if (related.length !== post.related.length)
+        onProblem(
+          `${post.slug}: related links must name distinct published posts`,
+        );
+      return {
+        ...post,
+        related,
+        updatedAt: post.updatedAt > today ? today : post.updatedAt,
+      };
+    })
+    .sort(
+      (a, b) =>
+        b.publishedAt.localeCompare(a.publishedAt) ||
+        a.slug.localeCompare(b.slug),
+    );
+}
+
+// Every Markdown file, published or not. Throws on the first invalid one.
+export function readAllPosts(directory = postsDirectory()) {
+  return markdownFiles(directory).map((file) => readPost(directory, file));
+}
+
+// Strict: the build and scripts/check-content.ts rely on this throwing.
+export function loadPosts(
+  directory = postsDirectory(),
+  now = new Date(),
+): BlogPost[] {
+  return publish(readAllPosts(directory), argentinaToday(now), (message) => {
+    throw new Error(message);
+  });
+}
+
+// For requests and ISR. A scheduled post goes live with no build behind it, so
+// one bad post must not stop the other pages from rendering. A missing folder
+// still throws: ISR then keeps the last good page instead of an empty blog.
+export function loadPostsForRuntime(
+  directory = postsDirectory(),
+  now = new Date(),
+  report: (message: string) => void = console.error,
+): BlogPost[] {
+  const posts = markdownFiles(directory).flatMap((file) => {
+    try {
+      return [readPost(directory, file)];
+    } catch (error) {
+      report(`Skipped ${file}: ${(error as Error).message}`);
+      return [];
     }
-  }
-  return published.sort(
-    (a, b) =>
-      b.publishedAt.localeCompare(a.publishedAt) ||
-      a.slug.localeCompare(b.slug),
-  );
+  });
+  return publish(posts, argentinaToday(now), report);
+}
+
+export function latestUpdate(posts: Pick<BlogPost, 'updatedAt'>[]) {
+  return posts
+    .map((post) => post.updatedAt)
+    .sort()
+    .at(-1);
 }
 
 export function formatBlogDate(value: string) {

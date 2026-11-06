@@ -1,152 +1,140 @@
 ---
-title: 'Cotizaciones por WhatsApp automáticas: cómo preparar el proceso'
-seoTitle: 'Cotizaciones por WhatsApp automáticas: guía para empresas'
+title: 'Cotizaciones por WhatsApp automáticas: cómo pasar un presupuesto sin salir del chat'
+seoTitle: 'Presupuesto por WhatsApp: cómo cotizar automáticamente'
 description: >-
-  Cómo recibir solicitudes y preparar cotizaciones por WhatsApp: datos mínimos,
-  revisión de precios, ejemplo de conversación y cuándo hace falta integrar sistemas.
+  Cómo cotizar por WhatsApp en Argentina: qué datos cambian el presupuesto, una
+  cuenta de ejemplo paso a paso y qué hace falta para calcularlo en la conversación.
 summary: >-
-  Para cotizar por WhatsApp automáticamente necesitás datos completos del pedido
-  y una fuente confiable de precios y condiciones. Podés empezar automatizando
-  preguntas frecuentes y la recopilación de información para ventas. Calcular un
-  importe final, emitir un presupuesto o registrarlo en otro sistema requiere
-  reglas verificadas y una integración específica; el flujo básico de Atende no
-  genera cotizaciones formales por defecto.
+  Para pasar un presupuesto por WhatsApp de forma automática hacen falta tres
+  cosas: los datos que cambian el importe, una fuente de precios vigente y una
+  regla de cálculo. Conectado a tu sistema, Atende hace la cotización en la
+  conversación y la registra; esa conexión se arma a pedido para tu negocio. Sin
+  conexión, el asistente junta el pedido y tu equipo pasa el presupuesto.
 publishedAt: '2026-10-28'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: guias
 tags:
   - WhatsApp
   - cotizaciones
+  - presupuestos
   - ventas
-  - automatización
 related:
   - como-automatizar-whatsapp-distribuidoras
   - atencion-comercial-whatsapp-24-7
-  - como-automatizar-whatsapp-empresa
+  - como-automatizar-whatsapp-fabricantes
   - cuanto-cuesta-automatizar-whatsapp
 faq:
   - q: ¿Se puede cotizar por WhatsApp automáticamente con Atende?
     a: >-
-      Atende puede responder con información configurada y ayudar a reunir los
-      datos que necesita ventas. Calcular precios personalizados, emitir una
-      cotización formal o registrarla en otro sistema no está incluido por
-      defecto: requiere una integración evaluada por separado o revisión humana.
-  - q: ¿Qué datos conviene pedir antes de preparar un presupuesto?
+      Sí, conectado a tu sistema: Atende consulta tu lista, hace la cuenta y
+      registra la cotización en la conversación. Esa conexión se arma a pedido
+      para tu negocio. Sin conexión, el asistente junta el pedido y tu equipo pasa
+      el presupuesto.
+  - q: ¿Qué datos hay que pedir antes de pasar un presupuesto?
     a: >-
-      Pedí el producto o servicio, su variante o alcance, la cantidad y los datos
-      que cambian el precio, como localidad o modalidad de entrega. Solicitá
-      información de facturación cuando corresponda a la etapa comercial, sin
-      convertir la primera consulta en un formulario innecesario.
-  - q: ¿Una cotización enviada confirma stock o reserva un producto?
+      Solo los que cambian el importe o el alcance: producto o servicio, variante,
+      cantidad con su unidad, localidad y si es retiro o envío. Si un dato no
+      mueve la cuenta, conviene no preguntarlo.
+  - q: ¿El asistente puede mandar un presupuesto en PDF?
     a: >-
-      No por sí sola. El negocio debe indicar qué disponibilidad verificó, la
-      vigencia de la propuesta y qué paso confirma el pedido. Reservar mercadería
-      o registrar una venta requiere la acción correspondiente en el sistema.
-  - q: ¿Cómo evitar que el asistente use un precio desactualizado?
+      Hoy no. El asistente y la bandeja adjuntan solo fotos y videos de tu
+      biblioteca, así que la cotización sale en texto y el documento formal va por
+      el canal que ya usás. Tampoco llegan a Atende listas en foto ni audios.
+  - q: ¿Un presupuesto enviado reserva el stock?
     a: >-
-      Definí una fuente vigente, un responsable y una regla de revisión. Si el
-      precio cambia por cliente, fecha o cantidad y no existe una consulta
-      verificada a esa fuente, el asistente debe pedir los datos y pasar el caso a
-      ventas en vez de deducir un total.
+      Solo si tu sistema lo hace y la conexión lo informa. Si no, el asistente
+      tiene que aclarar que la mercadería no queda reservada hasta que ventas
+      confirme el pedido.
+  - q: ¿Cómo evito que el asistente pase un precio viejo?
+    a: >-
+      Con conexión, cada cotización lee la lista vigente. Sin conexión, cargá en
+      preguntas frecuentes solo precios que alguien actualiza, con fecha, y dejá
+      los descuentos y las cuentas especiales para una persona.
 sources: []
 ---
-“¿Cuánto me sale?” puede ser una pregunta de una línea y requerir cinco decisiones internas. El valor cambia según el producto, la cantidad, el trabajo incluido, el envío o las condiciones del cliente. Antes de automatizar una cotización, definí cuál de esas decisiones puede resolverse con información vigente y cuál necesita a una persona.
+Alguien escribe "¿cuánto me salen doce estantes con envío a Río Cuarto?" y recibe la cotización en la misma charla, con detalle, vigencia y número. Eso es pasar un presupuesto por WhatsApp de forma automática. Para que funcione, la cuenta la tiene que hacer tu sistema: el asistente pide los datos, se los pasa a esa conexión y repite el resultado.
 
-El primer resultado útil suele ser una **solicitud lista para cotizar**: el vendedor recibe el contexto necesario y puede preparar una propuesta sin empezar otra vez la conversación. Ese paso ya permite evaluar la automatización aunque todavía no conectes el sistema que calcula los importes.
+En Argentina casi todos dicen presupuesto y algunos dicen cotización. Acá usamos las dos palabras para lo mismo, salvo cuando hablamos del documento formal.
 
-## Qué significa automatizar una cotización
+## La cuenta completa, con números de ejemplo
 
-Conviene diferenciar tres entregables para que el cliente sepa qué está recibiendo.
+Cifras ilustrativas: el proveedor, la lista y las reglas son inventados, y no son precios de Atende. Un proveedor de estanterías recibe el pedido de arriba.
 
-| Entregable | Qué contiene | Qué debe verificarse |
+| Renglón | De dónde sale | Cuenta | Importe |
+| --- | --- | --- | ---: |
+| Precio de lista | Lista vigente, modelo E40 | 12 × $85.000 | $1.020.000 |
+| Bonificación | Regla: 5% desde 10 unidades | 5% de $1.020.000 | −$51.000 |
+| Subtotal | | | $969.000 |
+| Flete a Río Cuarto | Tabla de zonas: zona 2 | Tarifa fija | $48.000 |
+| Neto | | | $1.017.000 |
+| IVA | Alícuota de ejemplo: 21% | 21% de $1.017.000 | $213.570 |
+| **Total** | | | **$1.230.570** |
+
+Si además ofrece 3 cuotas con 12% de recargo, el total financiado es $1.378.238,40, en cuotas de $459.412,80. También ilustrativo.
+
+Mirá la columna del medio. Cada renglón es una decisión que alguien tomó: que el 5% arranca en 10 unidades, que Río Cuarto es zona 2, que el flete lleva IVA. Si una de esas reglas vive en la cabeza del vendedor, todavía no se puede automatizar. Primero hay que escribirla.
+
+## Precio de lista, cotización calculada o presupuesto formal
+
+Tres cosas distintas que se piden con la misma frase: "¿cuánto sale?".
+
+| Qué le mandás | Qué es | Qué necesita |
 | --- | --- | --- |
-| Información comercial | Un precio publicado o condiciones generales configuradas. | Vigencia, producto al que aplica y qué incluye. |
-| Solicitud lista para cotizar | Necesidad, variante, cantidad y condiciones pedidas por el cliente. | Que no falten datos para que ventas trabaje. |
-| Cotización formal | Propuesta revisada, importe, alcance y condiciones del negocio. | Cálculo, fuente de precios, disponibilidad y aprobación correspondiente. |
+| Precio informado | Un valor publicado, igual para todos | Lo cargás en "Preguntas frecuentes" y alguien lo mantiene al día |
+| Cotización calculada | Una cuenta con cantidad, zona y bonificación | A pedido, conectado a tu sistema |
+| Presupuesto formal | Un documento con condiciones y número | Lo emite tu sistema o una persona |
 
-Una respuesta de IA no reemplaza la fuente de precios. Si el importe depende de una lista personalizada, el asistente no debería reconstruirlo a partir de ejemplos o de lo que pagó otro comprador. Tampoco corresponde presentar un valor orientativo como un presupuesto cerrado.
+Para muchas consultas alcanza con las dos primeras, y el documento formal llega cuando el comprador ya decidió.
 
-## Pedí los datos que cambian la propuesta
+## Los datos que mueven el importe
 
-Diseñá las preguntas desde el trabajo del vendedor. Cada dato debe ayudar a elegir un producto, calcular un alcance o identificar una condición.
+La regla es corta: cada pregunta tiene que cambiar el importe o el alcance. Si no cambia la cuenta, no la hagas.
 
-- **Producto o servicio.** Pedí código, referencia del aviso o descripción. Si el cliente ya lo indicó, continuá desde ahí.
-- **Variante y alcance.** Medida, presentación, material o tareas incluidas. “Instalación” puede significar trabajos distintos.
-- **Cantidad.** Conservá la unidad: una caja, una unidad y un metro no son intercambiables.
-- **Entrega o ejecución.** Localidad, retiro o envío y fecha que necesita el cliente. La fecha solicitada queda pendiente de confirmación.
-- **Condiciones especiales.** Cuenta comercial o requisitos que alteren la propuesta, cuando sean relevantes.
+| Rubro | Qué preguntar |
+| --- | --- |
+| Estanterías, aberturas, [muebles a medida](/blog/como-automatizar-whatsapp-mueblerias) | Medidas, material, color, colocación |
+| Corralón, ferretería, mayorista | Código o descripción, presentación, cantidad, retiro o envío |
+| Flete y transporte | Origen, destino, bultos, peso, medidas |
+| Imprenta y cartelería | Cantidad, material, terminación, plazo |
+| Servicio técnico | Equipo, falla, zona, si es a domicilio |
 
-Pedí datos administrativos en la etapa en que el negocio los necesita. Una consulta inicial por un servicio no exige necesariamente completar toda la información de facturación. Para listas de reposición, la [guía de WhatsApp para distribuidores](/blog/como-automatizar-whatsapp-distribuidoras) desarrolla códigos, presentaciones y revisión por cliente.
+Conservá siempre la unidad: una caja, una unidad y un metro no son intercambiables. Para listas de reposición, la [guía de WhatsApp para distribuidores](/blog/como-automatizar-whatsapp-distribuidoras) desarrolla códigos y presentaciones, y para piezas con plano, la [guía para empresas industriales](/blog/como-automatizar-whatsapp-fabricantes) agrega revisiones y mínimos. En seguros las preguntas clave son uso, GNC y localidad, porque sin ellas la cotización vuelve a empezar; la [guía para agencias de seguros](/blog/como-automatizar-whatsapp-seguros) también separa ese pedido de un siniestro.
 
-## El recorrido desde la consulta hasta el presupuesto
+## Ejemplo ilustrativo: el presupuesto sale en la conversación
 
-### 1. Identificá qué se está solicitando
-
-Diferenciá una cotización nueva de una consulta por una propuesta existente. Si alguien escribe “¿sigue vigente el presupuesto de ayer?”, el siguiente paso es identificar esa propuesta y revisarla, no empezar otra.
-
-### 2. Aclará lo que impide cotizar
-
-Si faltan dos datos, pedí esos dos. Si aparece un cambio, como pasar de diez a veinte unidades, revisá si también cambia la presentación, el descuento o la entrega. No mantengas el total anterior como si siguiera vigente.
-
-### 3. Explicá qué queda pendiente
-
-El cierre de esta etapa debe indicar quién verifica el precio y las condiciones. Fuera de horario, informá cuándo atiende el equipo. La [guía de atención comercial fuera de horario](/blog/atencion-comercial-whatsapp-24-7) explica cómo organizar esos pendientes.
-
-### 4. Revisá la propuesta antes de enviarla
-
-El responsable valida descripción, cantidades, importes, conceptos incluidos y excluidos, vigencia y condiciones de pago y entrega. Si el negocio usa un sistema para presupuestar, ese sistema debe ser la referencia del documento emitido.
-
-### 5. Separá aceptación y ejecución
-
-El cliente puede aceptar una propuesta, pero todavía faltar la confirmación del pedido, un pago o la reserva de un recurso. Comunicar el siguiente paso evita que “me interesa” se interprete como una operación terminada.
-
-## Ejemplo de conversación para una consulta incompleta
-
-Ejemplo ilustrativo para un proveedor de equipamiento. Los datos y mensajes deben adaptarse al negocio; no son una cotización ni un resultado de clientes de Atende.
-
-> Cliente: ¿Me cotizás doce estantes?
+> Comprador: ¿Cuánto me salen 12 estantes E40 con envío a Río Cuarto?
 >
-> Asistente: ¿Qué modelo o medidas necesitás? ¿La consulta incluye envío? Si es así, indicame la localidad.
+> Asistente: 12 E40 con 5% por cantidad y envío a Río Cuarto dan $1.230.570 con IVA. Vale por 5 días hábiles. ¿Te lo registro?
 >
-> Cliente: Modelo E40, doce unidades, con envío a Río Cuarto.
+> Comprador: Sí, a nombre de la ferretería
 >
-> Asistente: Gracias. Para cotizar serían doce unidades del E40 con envío a Río Cuarto. ¿Necesitás recibirlas para alguna fecha?
->
-> Cliente: Antes del 15 del mes próximo.
->
-> Asistente: Paso la solicitud a ventas para revisar precio, disponibilidad, envío y si puede cumplirse esa fecha. Todavía no hay un importe ni una entrega confirmados.
+> Asistente: Quedó registrado el presupuesto 3108 por $1.230.570. El stock se reserva cuando ventas confirme el pedido.
 
-El intercambio permite que ventas avance. Si la cantidad cambia después, el equipo revisa la propuesta completa antes de enviarla de nuevo.
+Conectado a tu sistema de precios, Atende hace esa cuenta y deja el presupuesto registrado; esa conexión se arma a pedido para tu negocio, y contamos [qué hay que definir para conectar tus precios](/integraciones). Algo parecido ya funciona en una demo para una concesionaria de motos: consulta stock y precios, calcula la financiación y anota al interesado en Google Sheets. Es una demo, no un cliente.
 
-## Plantilla de revisión para el equipo
+## Sin conexión: el asistente junta, tu equipo presupuesta
 
-Esta lista sirve para el procedimiento interno. No implica que Atende genere un documento, calcule un total o complete campos automáticamente.
+El asistente pide modelo, cantidad, localidad y entrega, deja todo en la conversación y la deriva. Quien la toma ve toda la charla y arma el presupuesto sin volver a preguntar. Ese paso solo ya ahorra el ida y vuelta de preguntas, y te muestra qué se pide antes de conectar nada.
 
-```text
-Referencia de la conversación o propuesta existente:
-Producto / servicio y variante:
-Cantidad y unidad:
-Alcance incluido y excluido:
-Localidad y modalidad de entrega:
-Fecha solicitada por el cliente:
-Precio y fuente revisados por:
-Disponibilidad verificada por:
-Vigencia y condiciones de la propuesta:
-Pendientes antes de confirmar la operación:
-```
+Lo que no conviene es dejarlo calcular por su cuenta. Que sepa multiplicar no significa que sepa qué cuenta tiene bonificación o qué precio cambió el lunes. Con un precio informado puede responder; con una cuenta que dependa de tus reglas, dice que ventas la revisa.
 
-## Cuándo hace falta una integración
+## Reglas que conviene decidir antes de automatizar la cuenta
 
-Atende permite configurar información, vincular WhatsApp mediante QR y continuar las conversaciones desde una bandeja compartida. Para automatizar la emisión de una cotización hay que evaluar por separado el sistema que calcula precios, sus accesos y las acciones autorizadas.
+- **Vigencia.** Cuántos días vale y en qué moneda. En un país donde las listas cambian seguido, un presupuesto sin fecha es un problema que aparece cuando el comprador vuelve al mes.
+- **Excepciones.** Un descuento fuera de la regla lo autoriza una persona. El asistente no negocia.
+- **Cambios después del total.** Si los 12 pasan a ser 20, cambian la bonificación y quizá el flete. Se recalcula todo.
+- **Reintentos.** Una misma charla puede repetir el paso. La conexión tiene que reconocer un presupuesto ya creado y no duplicarlo. La demo de motos todavía puede anotar dos veces al mismo interesado, así que esto se define desde el principio.
+- **Stock.** Decí si el presupuesto reserva mercadería. Si no reserva, que el asistente lo aclare.
+- **Fallas.** Si tu sistema no responde, no hay total: el asistente dice que no pudo calcular y deriva a una persona.
 
-La integración debería tener reglas concretas: de dónde obtiene la lista vigente, cómo identifica al cliente, quién autoriza excepciones y qué respuesta confirma que el presupuesto se creó. Si el sistema no responde, el flujo debe dejar la solicitud pendiente. Si el cliente repite el mensaje, no debería crear dos documentos sin control.
+## Listas en foto, audios y PDF
 
-Antes de acordar ese alcance, probá un precio que cambió, un producto sin stock, una solicitud repetida y una cantidad modificada después del cálculo. No alcanza con demostrar el caso en el que todos los datos coinciden.
+Mucha gente pide presupuesto con la foto de la lista del albañil o con un audio de dos minutos. Nada de eso llega a Atende: el asistente no se entera y no contesta. Dejale escrito qué responder si alguien avisa que mandó algo: "Por acá no me llegan fotos ni audios. Escribime los productos y las cantidades."
 
-## Cómo saber si el proceso mejoró
+En sentido contrario, el asistente y la bandeja adjuntan solo fotos y videos de tu biblioteca. La cotización sale en texto. Si necesitás un documento en PDF, va por el canal que ya usás, y si tu sistema lo genera, en la conexión se puede definir que devuelva el número o un enlace.
 
-Compará consultas del mismo tipo. Revisá cuántas llegan con datos completos, cuánto tarda el equipo en enviar una propuesta y cuántas requieren corrección de productos, cantidades o condiciones. Registrá por separado cotizaciones enviadas, aceptaciones y ventas confirmadas.
+## Qué llevar a la primera charla
 
-Una respuesta rápida con información incompleta puede trasladar trabajo al vendedor. El criterio útil es si la consulta avanza con menos aclaraciones y sin errores comerciales.
+Tres presupuestos reales de los últimos meses: uno simple, uno con bonificación y uno que salió mal. Sumá tu lista vigente y las reglas de la columna del medio, escritas. Con eso se ve rápido qué parte se puede conectar y qué parte conviene dejar en manos de tu equipo.
 
-Podés evaluar la [atención de ventas por WhatsApp](/servicios/ventas-whatsapp) con tres solicitudes anonimizadas: una simple, una incompleta y una excepción. Llevá esos casos a una [demo](/demo) y revisá [planes y alcance de contratación](/precios) después de identificar qué necesita integración.
+Podés traerlos a una [demo](/demo), mirar cómo se [registra cada pedido por WhatsApp](/servicios/ventas-whatsapp) y comparar el recorrido por rubro en [casos de uso](/casos-de-uso). Si los pedidos te llegan de noche, la [guía de atención fuera de horario](/blog/atencion-comercial-whatsapp-24-7) explica qué se puede cerrar sin nadie en el local, y la [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a pensar qué conviene automatizar primero.

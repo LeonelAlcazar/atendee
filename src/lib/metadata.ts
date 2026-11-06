@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { site } from '@/content/site';
 
+const socialImageAlt =
+  'Atende: bot de WhatsApp que reserva, cotiza y toma pedidos, conectado a tu agenda o a tu sistema';
+
 type PageMetadata = {
   title: string;
   description: string;
@@ -27,13 +30,13 @@ export function createPageMetadata({
       siteName: site.name,
       locale: 'es_AR',
       type: 'website',
-      images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Atende: atención por WhatsApp con IA para tu negocio' }],
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: socialImageAlt }],
     },
     twitter: {
       card: 'summary_large_image',
       title: socialTitle,
       description,
-      images: [{ url: '/og.png', alt: 'Atende: atención por WhatsApp con IA para tu negocio' }],
+      images: [{ url: '/og.png', alt: socialImageAlt }],
     },
   };
 }

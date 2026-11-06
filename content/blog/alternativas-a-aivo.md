@@ -1,147 +1,136 @@
 ---
-title: 'Alternativas a Aivo: cómo comparar atención con IA para empresas'
-seoTitle: 'Alternativas a Aivo: Zenvia y Atende según tu operación'
+title: 'Alternativas a Aivo en Argentina: qué le queda a una PyME ahora que es Engageware'
+seoTitle: 'Alternativas a Aivo en Argentina para PyMEs'
 description: >-
-  Compará Aivo Suite, Zenvia y Atende por respuestas con IA, intervención humana
-  e integraciones. Criterios, prueba de calidad y decisiones antes de migrar.
+  Aivo hoy es parte de Engageware y apunta a bancos, aseguradoras y telcos. Qué
+  opciones mirar si sos una PyME y por qué conviene quedarte si estás regulado.
 summary: >-
-  Entre las alternativas a Aivo, Zenvia merece evaluación para coordinar
-  marketing, ventas y atención en varios canales; Atende, para concentrar la
-  primera atención y el trabajo humano en WhatsApp. Aivo se presenta actualmente
-  como Aivo Suite dentro de Engageware, con un enfoque empresarial en IA y
-  procesos conectados. La elección debe partir de las respuestas, acciones y
-  controles que tu operación necesita conservar.
+  Si sos banco, aseguradora o telco, Aivo sigue teniendo sentido: hoy es parte de
+  Engageware, que se define para industrias reguladas. Si sos una PyME que quiere
+  reprogramar un turno o tomar un pedido por WhatsApp, conviene mirar otras
+  opciones, porque su página ya no le habla a ese comprador y no publica precios.
+  Atende apunta a ese segundo caso, conectado a tu agenda y con la conexión armada
+  a pedido. Se conecta por QR y no por la API oficial, así que no sirve para un
+  entorno regulado.
 publishedAt: '2026-10-28'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
   - Aivo
+  - Engageware
   - alternativas
-  - inteligencia artificial
-  - atención al cliente
+  - PyMEs
 related:
   - mejor-alternativa-a-zenvia
   - alternativas-a-botmaker
-  - whatsapp-ia-atencion-humana
-  - cuanto-cuesta-automatizar-whatsapp
+  - chatbots-whatsapp-argentina-comparativa
+  - como-automatizar-whatsapp-clinicas
 faq:
-  - q: ¿Qué alternativas a Aivo conviene evaluar?
+  - q: ¿Aivo sigue existiendo?
     a: >-
-      Esta guía compara Zenvia para una operación que combine varios canales y
-      áreas, y Atende para atención de WhatsApp con información configurada y
-      continuidad humana. Son opciones para alcances distintos; la elección
-      requiere probar las tareas, integraciones y controles indispensables.
-  - q: ¿Aivo y Engageware son propuestas independientes?
+      Sí, como Aivo Suite dentro de Engageware, que la compró en 2023. Al 6 de
+      noviembre de 2026, aivo.co redirige a engageware.com, donde figuran AgentBot,
+      Engage, Live, Voice y Studio.
+  - q: ¿Cuánto cuesta Aivo?
     a: >-
-      La información oficial consultada presenta Aivo Suite dentro del ecosistema
-      Engageware. Para comparar una contratación o renovación, identificá los
-      módulos y servicios concretos de tu propuesta; el nombre de la suite no
-      demuestra que todos estén incluidos.
-  - q: ¿Atende reemplaza todas las funciones de Aivo Suite?
+      No lo sabemos. Su página al 6 de noviembre de 2026 habla de precios que
+      crecen con el uso, sin cifras ni planes. Para tener un número hay que hablar
+      con ventas de Engageware.
+  - q: ¿Qué alternativa a Aivo sirve para una PyME argentina?
     a: >-
-      No corresponde asumirlo. Atende ofrece atención de WhatsApp, historial
-      compartido e intervención humana, con automatización según el plan. Su
-      conexión usa QR desde dispositivos vinculados, no la API oficial de Meta.
-      Operar sistemas externos o reproducir otros canales necesita una
-      evaluación específica.
-  - q: ¿Cómo comparar la calidad de dos asistentes con IA?
+      Depende de la tarea. Para responder consultas simples puede alcanzar el
+      agente de Meta, si tu cuenta tiene acceso. Para terminar un turno o un pedido
+      mirá Atende, Cliengo o Chatsell. Si tu equipo quiere armar agentes, Botmaker.
+  - q: ¿Atende sirve para un banco o una aseguradora?
     a: >-
-      Usá las mismas consultas y la misma información vigente. Probá respuestas
-      conocidas, preguntas sin información suficiente, cambios en una condición y
-      pedidos de una persona. Evaluá correcciones necesarias y resolución real,
-      además de cuántas conversaciones se derivan.
+      No. Se conecta por QR y no por la API oficial de Meta, tiene un solo canal y
+      no tiene permisos por rol. Para ese entorno, Aivo u otra plataforma pensada
+      para esas exigencias es mejor elección.
 sources:
+  - title: 'aivo.co: redirección a Engageware'
+    url: 'https://www.aivo.co/'
+    checkedAt: '2026-11-06'
+  - title: 'Engageware: inicio'
+    url: 'https://www.engageware.com/'
+    checkedAt: '2026-11-06'
   - title: 'Engageware: Aivo Suite'
     url: 'https://engageware.com/aivo/'
-    checkedAt: '2026-10-28'
-  - title: 'Engageware: AgentBot y agentes de IA'
-    url: 'https://engageware.com/aivo/agentbot-chatbot/'
-    checkedAt: '2026-10-28'
-  - title: 'Engageware: Live y atención humana'
-    url: 'https://engageware.com/aivo/live-chat/'
-    checkedAt: '2026-10-28'
-  - title: 'Zenvia: Customer Cloud'
-    url: 'https://zenvia.com/es-mx/customer-cloud/'
-    checkedAt: '2026-10-28'
-  - title: 'Zenvia: solución de WhatsApp y API oficial'
-    url: 'https://zenvia.com/es-mx/whatsapp/'
-    checkedAt: '2026-10-28'
+    checkedAt: '2026-11-06'
+  - title: 'La Nación: la compra de Aivo por Engageware'
+    url: 'https://www.lanacion.com.ar/tecnologia/de-leones-al-mundo-la-empresa-argentina-de-ia-que-fue-comprada-por-un-gigante-de-eeuu-nid25082023/'
+    checkedAt: '2026-11-06'
 ---
-Si evaluás alternativas a Aivo, empezá por el problema que motivó la búsqueda. Puede ser difícil mantener las respuestas, conservar el contexto al pasar a una persona o conectar una operación con el sistema de la empresa. Una herramienta que responde bien las preguntas frecuentes puede cubrir un primer alcance; reemplazar un circuito que consulta datos y ejecuta acciones exige otra evaluación.
+Si querés que tu consultorio reprograme un turno por WhatsApp y llegaste a Aivo porque era la empresa cordobesa de chatbots, hay un dato que cambia la búsqueda. Hoy [aivo.co redirige a Engageware](https://www.aivo.co/), que se define como plataforma para industrias reguladas. Para un banco eso es una buena noticia. Para un consultorio con dos secretarias, significa que hay que buscar en otro lado.
 
-Comparamos **Aivo Suite, Zenvia y Atende** con ese criterio. Atende publica esta guía y tiene un interés comercial. Las funciones atribuidas a otros proveedores se apoyan en sus fuentes oficiales, consultadas el 28 de octubre de 2026. Los criterios de decisión y las pruebas propuestas son nuestro análisis, no un ranking independiente ni resultados medidos entre las plataformas.
+Esta nota la escribe Atende, que vende una de las opciones, así que leela con ese filtro. Lo que decimos de Aivo sale de páginas que abrimos el 6 de noviembre de 2026; no usamos el producto. El método está en los [criterios editoriales](/blog/editorial).
 
-## Qué es Aivo en su oferta actual
+## De Leones a las industrias reguladas
 
-Aivo se presenta como **Aivo Suite dentro de Engageware**. Su oferta reúne IA conversacional, atención humana y herramientas para conectar procesos, con un posicionamiento empresarial que destaca organizaciones reguladas. Para comparar, conviene identificar los módulos de la propuesta que recibís y sus responsabilidades. [Aivo Suite de Engageware](https://engageware.com/aivo/).
+[La Nación](https://www.lanacion.com.ar/tecnologia/de-leones-al-mundo-la-empresa-argentina-de-ia-que-fue-comprada-por-un-gigante-de-eeuu-nid25082023/) contó en agosto de 2023 que Engageware, una empresa estadounidense, compró a Aivo, nacida en Leones, Córdoba. La nota menciona instituciones financieras, gestoras de patrimonio y corredores de seguros como destinatarios de esa ampliación.
 
-La página de AgentBot describe agentes que trabajan con datos y acciones autorizadas mediante Studio, además del pase a especialistas cuando hace falta intervención humana. Live se presenta como el espacio de atención de esos especialistas, con contexto y distribución según criterios operativos. Son capacidades declaradas por el proveedor; su aplicación a tu empresa debe demostrarse con el alcance presupuestado. [AgentBot y agentes de IA](https://engageware.com/aivo/agentbot-chatbot/), [Live](https://engageware.com/aivo/live-chat/).
+Tres años después, el foco se ve en la portada. [Engageware](https://www.engageware.com/) se presenta como "The most used AI-powered customer engagement platform for regulated industries". Su [página de Aivo](https://engageware.com/aivo/) dice "Trusted by leading banks, insurers, and telecoms" y lista AgentBot, Engage, Live, Voice y Studio, con WhatsApp como uno de los canales.
 
-Si tu operación exige controles de acceso, trazabilidad o requisitos particulares de contratación, incorporalos a la evaluación. La descripción comercial de una plataforma no reemplaza la revisión que necesita tu organización.
+Tampoco es solo un bot que contesta. Engageware dice que sus agentes resuelven conversaciones, completan transacciones y agendan citas, conectados al CRM, al contact center y a los sistemas centrales.
 
-## Dos alternativas según el trabajo que querés resolver
+## Ubicá tu negocio antes de comparar funciones
 
-### Zenvia: cuando varias áreas deben compartir el recorrido
+La comparación de funciones sirve de poco si el comprador es otro. Empezá por acá:
 
-Zenvia Customer Cloud presenta funciones de marketing, ventas y atención, una bandeja multicanal, chatbots con IA e integraciones. Puede entrar en la comparación si el proyecto abarca tanto la captación como la atención posterior y necesitás revisar cómo se conectan esas áreas. Este encaje es un criterio de evaluación, no una equivalencia completa con Aivo. [Zenvia Customer Cloud](https://zenvia.com/es-mx/customer-cloud/).
+| Tu situación | Qué pesa más | Por dónde empezar |
+| --- | --- | --- |
+| Banco, aseguradora, telco o financiera | Control sobre la IA, sistemas centrales, varios canales | Aivo de Engageware. Compará con planes a medida de [Botmaker](/blog/alternativas-a-botmaker) y [Zenvia](/blog/mejor-alternativa-a-zenvia) |
+| Empresa mediana con equipo de atención y campañas | Bandeja, canales, integraciones | Zenvia, Botmaker o [respond.io](/blog/mejor-alternativa-a-respond-io) |
+| PyME con un número y poca gente | Que el turno o el pedido quede hecho sin armar nada | Atende, [Cliengo](/blog/alternativas-a-cliengo) o Chatsell |
+| Negocio chico con preguntas repetidas | Contestar lo mismo sin gastar | El [agente de Meta](/blog/mejor-alternativa-a-whatsapp-business), si tu cuenta tiene acceso |
 
-Su oferta de WhatsApp utiliza la API oficial. Confirmá qué configuración, canales e integraciones incluye la propuesta concreta. [WhatsApp de Zenvia](https://zenvia.com/es-mx/whatsapp/). La [comparativa de Zenvia](/blog/mejor-alternativa-a-zenvia) amplía los puntos de conexión y contratación.
+La [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) desarrolla cada grupo.
 
-### Atende: cuando el alcance inicial está en WhatsApp
+## Aivo precios: qué se puede saber
 
-Atende puede evaluarse si querés responder consultas con información configurada y que una persona continúe desde una bandeja con historial compartido. También permite organizar la atención manual; la automatización depende del plan contratado. La vinculación del número se hace por QR desde dispositivos vinculados y no mediante la API oficial de Meta.
+Poco. [Su página](https://engageware.com/aivo/) dice "Scalable pricing that grows with usage" y, al 6 de noviembre de 2026, no muestra planes ni montos. Para un presupuesto real hay que hablar con ventas de Engageware. Es normal en software para grandes cuentas, y es una señal de a quién apunta.
 
-Este alcance puede resultar pertinente para una PyME que necesita ordenar preguntas comerciales y derivaciones. Consultar stock, operar un CRM externo, reservar recursos o enviar seguimientos proactivos requiere un alcance confirmado por separado. Si tu proyecto exige canales o controles que no están verificados, no des por hecho que Atende reemplaza la suite actual. Revisá los [servicios disponibles](/servicios) con tus requisitos concretos.
+Los planes de Atende [se ven en la app](/precios) antes de pagar.
 
-## Tabla de decisión por operación
+## Aivo y Atende, punto por punto
 
-La tabla combina capacidades publicadas con preguntas para la contratación. No indica que una función esté incluida en todos los planes ni asigna puntuaciones de calidad sin una prueba.
+| Criterio | Aivo de Engageware | Atende |
+| --- | --- | --- |
+| A quién le habla | Bancos, aseguradoras y telcos | PyMEs argentinas con un número de WhatsApp |
+| Qué termina en la conversación | Transacciones y citas, conectado a sistemas centrales | Conectado a tu agenda o sistema: turnos, reservas, pedidos y cotizaciones |
+| Quién lo arma | Tiene Studio para diseñar experiencias. Cómo se implementa hay que pedirlo | Vos cargás el contexto y nosotros armamos la conexión |
+| Conexión con WhatsApp | Figura como canal. El tipo de conexión no aparece en lo que abrimos | Se conecta por QR. No es la API oficial de Meta |
+| Canales | WhatsApp, SMS y voz, con agentes y atención en vivo | Solo WhatsApp, mensajes de texto |
+| Precio | Sin cifras públicas | Sin importes en este sitio: los planes se ven en la app. La conexión a pedido no tiene precio publicado |
 
-| Decisión | Aivo Suite | Zenvia | Atende |
-| --- | --- | --- | --- |
-| Unidad del proyecto | Identificar módulos de IA, Live y conexión de procesos requeridos. | Identificar áreas y canales incluidos en Customer Cloud. | Delimitar la atención de WhatsApp y el trabajo del equipo. |
-| Base de respuestas | Probar qué conocimiento usa el agente y cómo se actualiza. | Probar la información utilizada por el chatbot configurado. | Probar respuestas con la información vigente del negocio. |
-| Continuidad humana | Evaluar el pase a Live y el contexto recibido. | Evaluar la continuidad entre las áreas configuradas. | Revisar historial compartido e intervención manual. |
-| Acciones externas | Confirmar el flujo, datos y acciones mediante la integración propuesta. | Confirmar el conector y la acción contratados. | Evaluar cada integración por separado. |
-| Criterio para descartar | Falta un control o recorrido indispensable en la propuesta. | Falta un canal o acción indispensable en la propuesta. | Se exige API oficial u otra capacidad que el alcance ofrecido no cubre. |
+## Cuándo quedarte con Aivo
 
-En una evaluación para Argentina, probá también el vocabulario que usan tus clientes, las localidades y los horarios reales del negocio. No alcanza con que la interfaz esté en español: las respuestas deben interpretar las consultas de tu operación sin inventar cobertura, condiciones o fechas.
+- Tu área de cumplimiento te pide una plataforma pensada para industrias reguladas. Atende no pasa esa vara: se conecta por QR y no por la API oficial.
+- Necesitás voz, campañas, base de conocimiento y agenda dentro de la misma suite.
+- Ya lo tenés conectado a sistemas centrales y funciona. Cambiar eso cuesta más que cualquier licencia.
 
-## Cómo probar la calidad de atención con IA
+Si tu contrato viene de antes de la compra, lo que conviene revisar son los módulos, el soporte y la moneda de tu renovación, sin apurarte a cambiar de proveedor.
 
-Prepará un conjunto pequeño de consultas anonimizadas y una respuesta esperada para cada una. El mismo equipo debe revisar los resultados de todos los proveedores. Evitá comparar una configuración completa con otra que todavía no recibió información suficiente.
+## Cuándo una PyME debería seguir buscando
 
-Una prueba útil para un negocio de servicios puede seguir esta secuencia:
+Si sos un consultorio, una veterinaria o un centro odontológico, tu pregunta es más chica y más concreta: que el paciente pueda mover el turno sin que la secretaria deje la recepción. Ejemplo ilustrativo, con la agenda conectada:
 
-1. **Respuesta conocida.** Informá el horario vigente y preguntalo de dos maneras habituales. Ambas respuestas deben coincidir con el dato.
-2. **Cambio de información.** Actualizá ese horario siguiendo el procedimiento del proveedor y repetí la consulta. Observá quién hizo el cambio, cómo verificó su publicación y si reaparece la versión anterior.
-3. **Dato ausente.** Preguntá por una zona de cobertura que no figura en la información entregada. La respuesta debe reconocer que falta verificarla, sin deducirla por cercanía.
-4. **Respuesta insuficiente.** Después de una explicación general, escribí “eso no resuelve mi problema”. Revisá si el asistente identifica qué falta o repite la misma frase.
-5. **Pedido de una persona.** Solicitá hablar con el equipo tras varios mensajes. La persona debe encontrar el motivo actual y lo que ya se respondió.
-6. **Cierre de la consulta.** Revisá qué se considera resuelto y qué queda pendiente. Terminar el intercambio no demuestra que el cliente obtuvo una solución.
+> **Contacto:** Necesito pasar el turno del martes
+>
+> **Asistente:** Tengo jueves 10:00 o viernes 16:30. ¿Cuál te queda mejor?
+>
+> **Contacto:** El jueves
+>
+> **Asistente:** Listo, te pasé el turno al jueves a las 10:00.
 
-Estos son escenarios ilustrativos, no pruebas ejecutadas contra los proveedores. En una demo, registrá el resultado observado y los cambios de configuración necesarios.
+Conectado a tu agenda, Atende reprograma el turno y tu equipo sigue viendo toda la conversación. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma.
 
-Clasificá las respuestas como correctas, incompletas, incorrectas o pendientes de revisión humana. Una derivación adecuada puede ser el resultado correcto. Reducir derivaciones a costa de sostener respuestas equivocadas no mejora la atención.
+Si alguien pregunta si atienden tal obra social, el asistente responde con lo que cargaste. Lo clínico va a una persona: el asistente queda para lo administrativo y no está para juntar datos de pacientes. Más detalle en [clínicas y consultorios](/casos-de-uso/clinicas-y-consultorios), en [qué hay que conectar](/integraciones) y en [qué es Atende](/que-es-atende).
 
-## Qué cambia si la IA también debe ejecutar acciones
+## Lo que no vas a encontrar si venís de una suite grande
 
-Responder “podemos revisar tu solicitud” y cambiar un dato en un sistema son entregables diferentes. Para el segundo, definí quién autoriza la acción, dónde se confirma y qué debe ocurrir si falla. Si esa ejecución es central en tu proyecto, la guía de [alternativas a Botmaker](/blog/alternativas-a-botmaker) desarrolla una comparación orientada a esos procesos.
-
-También separá la atención entrante de campañas y seguimientos. Que una solución responda consultas no demuestra que tenga configurado el envío proactivo que tu empresa necesita. En Atende, ese alcance se evalúa por separado.
-
-## Migrar implica revisar conocimiento y operación
-
-Antes de cambiar, inventariá las respuestas, excepciones y flujos que hoy se usan. Marcá qué información sigue vigente y qué parte existe únicamente como una configuración del proveedor anterior. No supongas que exportar un documento transfiere las reglas con las que se aplicaba.
-
-Conservá una muestra de casos de prueba con sus resultados esperados. Sirve para verificar que la nueva configuración responde correctamente después de cargar la información. Documentá también los responsables y el contexto que debe llegar cuando una consulta se deriva; la [guía de pase a atención humana](/blog/whatsapp-ia-atencion-humana) ayuda a preparar esa parte.
-
-Confirmá por separado el procedimiento del número, el acceso al historial y los cambios en sistemas externos. Si se reduce el alcance, identificá qué tareas volverá a hacer el equipo y si tiene capacidad para sostenerlas. Una migración puede simplificar la configuración y, a la vez, agregar trabajo manual.
-
-## Cómo comparar la propuesta económica
-
-Pedí el mismo alcance a cada proveedor: canales, volumen y su unidad de medición, personas que atienden, configuración, mantenimiento de respuestas e integraciones. Incluí las horas internas para revisar calidad y actualizar información. Confirmá también moneda de facturación, condiciones del servicio y horario de soporte aplicable a tu operación.
-
-No afirmamos que una alternativa sea más barata. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) permite preparar la comparación; los [planes de Atende](/precios) deben revisarse según las funciones habilitadas.
-
-Para una [demo de Atende](/demo), llevá preguntas habituales, una condición que cambió y un caso que deba continuar una persona. Si necesitás ejecutar una acción externa, describila aparte para verificar su viabilidad antes de incluirla en la decisión.
+- **Conexión por QR.** No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número.
+- **Sin voz, campañas ni chat web.** Solo WhatsApp, con mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan.
+- **Sin permisos por rol.** Cualquier integrante del espacio puede cambiar el estado de una conversación.
+- **Una línea por espacio.** Si tenés varias sucursales con números distintos, cada una es un espacio.
+- **Conexiones a pedido.** No hay un catálogo de integraciones para activar.
+- **Sin reseñas públicas todavía.** Vas a tener que evaluarnos con una [demo](/demo), no con opiniones de terceros.

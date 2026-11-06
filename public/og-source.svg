@@ -1,46 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <style>
+    .d { font-family: 'Instrument Sans', Arial, Helvetica, sans-serif; }
+    .b { font-family: 'Inter Tight', Arial, Helvetica, sans-serif; }
+    .m { font-family: 'IBM Plex Mono', monospace; }
+  </style>
   <defs>
     <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
-      <path d="M44 0H0V44" fill="none" stroke="#141414" stroke-opacity=".055"/>
+      <path d="M44 0H0V44" fill="none" stroke="#141414" stroke-opacity=".05"/>
     </pattern>
   </defs>
 
   <rect width="1200" height="630" fill="#F8F5EF"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <rect x="28" y="28" width="1144" height="574" rx="18" fill="none" stroke="#141414" stroke-width="3"/>
+  <rect width="716" height="630" fill="url(#grid)"/>
 
-  <rect x="76" y="70" width="64" height="64" rx="10" fill="#E6482C" stroke="#141414" stroke-width="3"/>
-  <path d="M145 78v63H84" fill="none" stroke="#141414" stroke-width="5"/>
-  <text x="108" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#141414">A</text>
-  <text x="160" y="115" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="-1.5" fill="#141414">atende.</text>
+  <!-- Brand -->
+  <rect x="64" y="58" width="56" height="56" rx="9" fill="#141414" transform="translate(4 4)"/>
+  <rect x="64" y="58" width="56" height="56" rx="9" fill="#E6482C" stroke="#141414" stroke-width="3"/>
+  <text class="d" x="92" y="98" text-anchor="middle" font-size="31" font-weight="700" fill="#141414">A</text>
+  <text class="d" x="136" y="99" font-size="40" font-weight="600" letter-spacing="-1.6" fill="#141414">atende<tspan fill="#E6482C">.</tspan></text>
 
-  <rect x="76" y="177" width="312" height="34" rx="17" fill="#FFE1D8" stroke="#E6482C" stroke-width="1.5"/>
-  <circle cx="95" cy="194" r="5" fill="#E6482C"/>
-  <text x="109" y="199" font-family="monospace" font-size="13" font-weight="700" letter-spacing="1" fill="#141414">ATENCIÓN POR WHATSAPP · CON IA</text>
+  <!-- Headline -->
+  <text class="d" x="62" y="238" font-size="66" font-weight="600" letter-spacing="-2.8" fill="#141414">Bot de WhatsApp que</text>
+  <text class="d" x="62" y="310" font-size="66" font-weight="600" letter-spacing="-2.8" fill="#E6482C">reserva, cotiza y</text>
+  <text class="d" x="62" y="382" font-size="66" font-weight="600" letter-spacing="-2.8" fill="#E6482C">toma pedidos.</text>
 
-  <text x="72" y="305" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4" fill="#141414">WhatsApp</text>
-  <text x="72" y="390" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4" fill="#E6482C">con IA.</text>
-  <text x="72" y="457" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-2" fill="#141414">Más tiempo para vender.</text>
-  <text x="76" y="536" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#68615A">Atención y ventas para empresas y PyMEs argentinas.</text>
+  <text class="b" x="64" y="450" font-size="27" fill="#68615A">Conectado a tu agenda o a tu sistema,</text>
+  <text class="b" x="64" y="486" font-size="27" fill="#68615A">con una conexión que armamos a pedido.</text>
 
-  <rect x="762" y="122" width="342" height="390" rx="12" fill="#141414"/>
-  <rect x="750" y="110" width="342" height="390" rx="12" fill="#FFFDF8" stroke="#141414" stroke-width="3"/>
-  <rect x="750" y="110" width="342" height="58" rx="12" fill="#0F3D2E"/>
-  <path d="M750 156h342" stroke="#141414" stroke-width="3"/>
-  <circle cx="780" cy="138" r="7" fill="#E6482C"/>
-  <text x="798" y="144" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#F8F5EF">Conversación con María</text>
-  <rect x="778" y="201" width="192" height="58" rx="10" fill="#F8F5EF" stroke="#141414" stroke-width="2"/>
-  <text x="794" y="227" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#141414">¿Tienen turno mañana</text>
-  <text x="794" y="246" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#141414">a la tarde?</text>
-  <rect x="846" y="286" width="218" height="82" rx="10" fill="#0F3D2E" stroke="#141414" stroke-width="2"/>
-  <text x="862" y="313" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">¿Qué servicio necesitás?</text>
-  <text x="862" y="334" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">El equipo te confirma</text>
-  <text x="862" y="355" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F8F5EF">la disponibilidad.</text>
-  <rect x="815" y="395" width="213" height="32" rx="16" fill="#CDEEE5"/>
-  <circle cx="834" cy="411" r="5" fill="#147C72"/>
-  <text x="846" y="416" font-family="monospace" font-size="11" font-weight="700" fill="#147C72">RESPONDIDO POR ATENDE</text>
-  <rect x="778" y="451" width="286" height="24" rx="7" fill="#F2EDE3"/>
+  <text class="m" x="64" y="570" font-size="17" font-weight="500" letter-spacing="1.2" fill="#141414">WWW.ATENDE.COM.AR · CÓRDOBA, ARGENTINA</text>
 
-  <rect x="75" y="570" width="1050" height="2" fill="#141414" opacity=".18"/>
-  <text x="1084" y="592" text-anchor="end" font-family="monospace" font-size="14" font-weight="700" letter-spacing="1" fill="#141414">ATENDE.COM.AR</text>
+  <!-- Finished task -->
+  <rect x="716" width="484" height="630" fill="#0F3D2E"/>
+  <rect x="714" width="3" height="630" fill="#141414"/>
+
+  <rect x="772" y="58" width="372" height="404" rx="11" fill="#E6482C" transform="translate(9 9)"/>
+  <rect x="772" y="58" width="372" height="404" rx="11" fill="#FFFDF8" stroke="#141414" stroke-width="3"/>
+
+  <rect x="796" y="86" width="268" height="72" rx="8" fill="#F8F5EF" stroke="#141414" stroke-width="2.5"/>
+  <text class="b" x="814" y="116" font-size="21" font-weight="500" fill="#141414">Quiero un turno para corte</text>
+  <text class="b" x="814" y="143" font-size="21" font-weight="500" fill="#141414">el jueves a la tarde</text>
+
+  <rect x="836" y="172" width="284" height="72" rx="8" fill="#0F3D2E" stroke="#141414" stroke-width="2.5"/>
+  <text class="b" x="854" y="202" font-size="21" font-weight="500" fill="#F8F5EF">Tengo jueves 16:00 o 17:30.</text>
+  <text class="b" x="854" y="229" font-size="21" font-weight="500" fill="#F8F5EF">¿Cuál te queda mejor?</text>
+
+  <rect x="796" y="258" width="104" height="46" rx="8" fill="#F8F5EF" stroke="#141414" stroke-width="2.5"/>
+  <text class="b" x="814" y="288" font-size="21" font-weight="500" fill="#141414">A las 16</text>
+
+  <rect x="836" y="318" width="284" height="72" rx="8" fill="#0F3D2E" stroke="#141414" stroke-width="2.5"/>
+  <text class="b" x="854" y="348" font-size="21" font-weight="500" fill="#F8F5EF">Listo, te reservé el jueves</text>
+  <text class="b" x="854" y="375" font-size="21" font-weight="500" fill="#F8F5EF">a las 16:00.</text>
+
+  <g transform="rotate(-1.6 960 470)">
+    <rect x="776" y="428" width="384" height="92" rx="8" fill="#141414" transform="translate(7 7)"/>
+    <rect x="776" y="428" width="384" height="92" rx="8" fill="#FFFDF8" stroke="#141414" stroke-width="3"/>
+    <path d="M784 429.5h56v89h-56a6.5 6.5 0 0 1-6.5-6.5v-76a6.5 6.5 0 0 1 6.5-6.5z" fill="#CDEEE5"/>
+    <path d="M840 430v88" stroke="#141414" stroke-width="3" stroke-dasharray="7 6"/>
+    <path d="M797 474l10 10 19-20" fill="none" stroke="#141414" stroke-width="5"/>
+    <text class="d" x="858" y="469" font-size="29" font-weight="700" letter-spacing="-.6" fill="#141414">Turno reservado</text>
+    <text class="b" x="858" y="497" font-size="17.5" fill="#68615A">Jueves 16:00 · conectado a tu agenda</text>
+  </g>
+
+  <text class="b" x="772" y="572" font-size="20" fill="#F8F5EF" fill-opacity=".85">Ejemplo ilustrativo</text>
 </svg>

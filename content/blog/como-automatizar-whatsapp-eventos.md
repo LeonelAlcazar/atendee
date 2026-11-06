@@ -1,88 +1,119 @@
 ---
-title: Cómo automatizar WhatsApp para salones y eventos
-seoTitle: Cómo automatizar WhatsApp para salones y eventos
+title: 'Cómo automatizar WhatsApp en un salón de eventos: fecha, invitados y presupuesto'
+seoTitle: 'WhatsApp para salones de eventos: fecha y presupuesto'
 description: >-
-  Organizá consultas de salones, catering y eventos por WhatsApp. Reuní fecha,
-  invitados y alcance antes de coordinar visitas y propuestas con el equipo.
+  Conectado a tu calendario de fechas, Atende consulta si el sábado está libre y
+  reserva la visita al salón por WhatsApp. Qué pedir antes de pasar un presupuesto.
 summary: >-
-  Para eventos, empezá por fecha, tipo de celebración, cantidad de invitados y
-  ubicación. Respondé servicios y modalidades configuradas. El equipo verifica
-  capacidad, disponibilidad, alcance del paquete y condiciones de reserva antes
-  de confirmar una fecha o presupuesto.
+  Para automatizar el WhatsApp de un salón o un proveedor de eventos, empezá por
+  la fecha. Conectado a tu calendario, Atende consulta si está libre, reserva la
+  visita y guarda la fecha según tus reglas; esa conexión se arma a pedido. Sin
+  ella, el asistente junta fecha, tipo de evento e invitados, y tu equipo
+  confirma. El presupuesto final, la seña y el contrato quedan con una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: gastronomia-y-turismo
 sector: Salones y proveedores de eventos
 tags:
   - WhatsApp
-  - Salones y proveedores de eventos
-  - automatización
+  - salones de eventos
+  - presupuestos
+  - catering
 related:
-  - como-automatizar-whatsapp-empresa
   - como-automatizar-whatsapp-restaurantes
+  - cotizaciones-por-whatsapp-automaticas
+  - como-automatizar-whatsapp-hoteles
 faq:
-  - q: >-
-      ¿Qué información preparar para automatizar WhatsApp en salones y
-      proveedores de eventos?
+  - q: ¿El asistente puede decir si una fecha está libre?
     a: >-
-      Prepará esta información: Tipos de eventos y servicios que ofrece el
-      negocio. Capacidad informativa, zonas de cobertura y responsables de
-      agenda. Qué incluye cada modalidad y qué adicionales cotiza una persona.
-  - q: ¿Atende confirma operaciones o consulta otros sistemas por defecto?
+      Solo conectado a tu calendario, y esa conexión se arma a pedido. Sin ella no
+      debería decirlo: junta la fecha, una alternativa y los datos del evento, y tu
+      equipo responde. Un sí equivocado termina en dos familias con el mismo sábado.
+  - q: ¿Puede pasar un presupuesto por WhatsApp?
     a: >-
-      Atende responde con la información configurada y permite que tu equipo
-      continúe desde una bandeja compartida. Consultar datos en tiempo real,
-      crear reservas, registrar pedidos o enviar recordatorios requiere una
-      integración confirmada por separado.
+      Puede informar el valor de referencia y qué incluye, si lo cargaste. Conectado
+      a tu sistema, calcula con tus reglas y registra el presupuesto. El número final
+      lo revisa una persona, porque depende de invitados, menú y adicionales.
+  - q: ¿Se puede señar o firmar el contrato por WhatsApp?
+    a: >-
+      Con Atende no. El comprobante de la seña y el contrato son imágenes o PDF, que
+      no llegan al asistente, y desde la bandeja no salen documentos. Esa parte se
+      hace por el teléfono del salón, por mail o en persona.
+  - q: ¿Sirve para catering, DJ o ambientación?
+    a: >-
+      Sí, con otro orden: importan la fecha, el salón donde se hace, la zona y la
+      cantidad de invitados. Subís fotos y videos de trabajos anteriores y el
+      asistente los manda. Disponibilidad y viáticos los confirma una persona o una
+      conexión a tu calendario.
 ---
-Una consulta por una fiesta de cincuenta personas y otra por una jornada corporativa pueden necesitar espacios, horarios y servicios muy diferentes. La automatización debe ayudar a definir el pedido antes de enviar una propuesta. La fecha es especialmente relevante, pero no puede darse por reservada al recibirla: puede existir una visita pendiente, otra propuesta o condiciones comerciales que todavía deben acordarse.
+“¿Tienen libre el sábado 14 de agosto?” Casi todas las ventas de un salón arrancan así. Conectado a tu calendario de fechas, Atende consulta si ese sábado está libre, pregunta lo básico y reserva la visita, aunque la consulta llegue un domingo a la noche. Esa conexión te la armamos a pedido, y [acá contamos cómo se pide](/integraciones). Sin ella, el asistente toma la fecha y los datos de la fiesta, y tu equipo mira el calendario.
 
-## Qué información preparar
+## La fecha manda: qué contestar cuando preguntan si está libre
 
-- Tipos de eventos y servicios que ofrece el negocio.
-- Capacidad informativa, zonas de cobertura y responsables de agenda.
-- Qué incluye cada modalidad y qué adicionales cotiza una persona.
+Cada sábado se vende una sola vez. De ahí salen tres reglas.
 
-## Qué responder y qué confirmar con el equipo
+1. **Sin conexión, el asistente no dice “libre”.** El calendario vive en un cuaderno o en la cabeza de la dueña, y un sí equivocado termina en dos familias con la misma fecha. Toma el pedido, avisa que todavía hay que chequearlo y deja el chat marcado para tu equipo.
+2. **Pedí una alternativa desde el principio.** Si el 14 está tomado, tener el 21 o un viernes ya escrito te ahorra un ida y vuelta, y evita que el interesado siga buscando en otro salón.
+3. **Definí qué significa “guardar la fecha”.** Cuánto dura, cuántas fechas puede guardar una misma persona y qué pasa si aparece otro con la seña en la mano. Si vas a conectar el calendario, esas reglas van en la conexión. Sin ellas, tu equipo las aplica a mano.
 
-| Consulta | Cómo resolverla |
+## Antes de hablar de plata
+
+Un presupuesto de evento sin estos datos es una cifra al azar. Son pocas preguntas y el asistente las puede hacer en cualquier momento.
+
+| Dato | Por qué mueve el presupuesto |
 | --- | --- |
-| Servicios incluidos | Responder alcance informativo de cada modalidad. |
-| Fecha y capacidad | Reunir datos y verificar con el equipo. |
-| Presupuesto y reserva | Confirmar propuesta y condiciones antes de bloquear fecha. |
+| Tipo de evento | Casamiento, 15, empresa, egresados: cambian horario, menú y servicios |
+| Invitados | Adultos, menores y si hay gente que llega después de la cena |
+| Día y franja | Un sábado a la noche no vale lo mismo que un domingo al mediodía |
+| Formato | Sentados o de pie: la capacidad no es la misma |
+| Servicios | Menú, barra, DJ, ambientación, mesa dulce, cabina de fotos |
 
-## Un flujo de atención paso a paso
+La capacidad es un número que no se negocia por chat. Si tu salón recibe hasta 150 sentados y alguien dice “somos 170 pero apretados”, el asistente no busca la vuelta: deriva.
 
-1. Pedí tipo de evento, fecha tentativa y cantidad aproximada de invitados. Si todavía no hay fecha, preguntá por un período para que el equipo pueda orientar la búsqueda.
+## Presupuesto por cubierto: hasta dónde llega el asistente
 
-2. Reuní el alcance: salón, comida, técnica u otros servicios. No interpretes “todo incluido” como una lista universal; usá la descripción concreta del proveedor.
+Muchos salones cobran por cubierto, con adicionales y con un valor que se actualiza hasta el evento. El asistente puede informar lo que le cargues, por ejemplo qué incluye cada menú y un valor de referencia con su fecha. Sin conexión no debería armar un total cerrado.
 
-3. El responsable verifica disponibilidad y coordina una visita o propuesta. Si cambia el número de invitados, debe revisar capacidad y presupuesto antes de aceptar.
+Dejá por escrito lo que siempre preguntan: mínimo de invitados, menú infantil, hora extra, cómo se actualiza el saldo y cuánto vale el presupuesto. Si una respuesta depende de la fecha, que lo diga.
 
-## Ejemplo de conversación
+Conectado a tu sistema de presupuestos, Atende calcula con tus reglas y registra el pedido. El número final igual lo mira una persona antes de que se transforme en un compromiso. Para armar ese circuito, mirá [cómo automatizar cotizaciones](/blog/cotizaciones-por-whatsapp-automaticas).
 
-Ejemplo ilustrativo para adaptar a la información y al proceso de tu negocio. No representa una conversación real ni una operación confirmada.
+## Un cumpleaños de 15, de la consulta a la visita reservada
 
-> Cliente: Quiero un salón para un cumpleaños.
+Ejemplo ilustrativo, con el salón conectado a su calendario de fechas.
+
+> **Contacto:** Hola, ¿tienen libre el sábado 14 de agosto para un cumple de 15? Seríamos unos 120
 >
-> Asistente: ¿Qué fecha tenés en mente y para cuántas personas?
+> **Asistente:** El 14 de agosto está libre en el salón principal, que recibe hasta 150 sentados. ¿Querés conocerlo? Tengo visita el martes a las 18 o el miércoles a las 11.
 >
-> Cliente: El 14 de noviembre, unas ochenta.
+> **Contacto:** El martes. Soy Carla
 >
-> Asistente: Paso la consulta para revisar disponibilidad, capacidad y opciones. La fecha todavía no está reservada.
+> **Asistente:** Te reservé la visita del martes a las 18 a nombre de Carla, y la fecha queda guardada hasta ese día.
 
-## Casos que conviene probar antes de activar
+Sin conexión, Carla recibe otra respuesta: le dicen que la fecha hay que chequearla, y alguien del salón le contesta con el calendario en la mano. El mismo mecanismo de [reservar una visita](/servicios/turnos-whatsapp) se usa en otros negocios.
 
-Probá un pedido que duplica invitados durante el chat y una consulta por un adicional que no figura en el paquete. El asistente debe conservar el cambio y evitar prometer inclusiones. Si hay necesidades particulares de alimentación, accesibilidad o montaje, el responsable confirma el alcance en la propuesta.
+## Visita, degustación, seña y contrato
 
-## Cómo implementarlo con Atende
+El tramo final es de una persona. La visita ordena la venta, la degustación tiene sus reglas (cuándo, para quién, con qué costo) y la fecha queda vendida cuando la seña está acreditada y el contrato firmado. Hasta ahí, el asistente no dice “confirmada”.
 
-En Atende configurás la información y las respuestas de tu negocio, vinculás el número de WhatsApp mediante QR y supervisás las conversaciones desde una bandeja compartida. Definí quién toma las derivaciones y probá consultas reales anonimizadas antes de atender clientes.
+La transferencia de la seña suele venir con una captura, y esa captura nunca entra a Atende: la ves en el celular del salón y la cotejás con la cuenta. Y el contrato no sale desde la bandeja, que manda texto y archivos de tu biblioteca de fotos y videos. Mandalo por mail o por el WhatsApp del celular.
 
-El flujo básico responde y reúne contexto. Consultar stock, agendas, pedidos o un CRM, ejecutar acciones en otro sistema y enviar recordatorios o seguimientos proactivos requiere una integración evaluada por separado. Revisá el alcance de la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) y prepará tus ejemplos para una [demo](/demo).
+Las fotos y videos del salón, en cambio, juegan a favor: cargalos una vez, separados por ambiente o por tipo de fiesta, y el asistente elige cuáles mostrar.
 
-## Qué medir y revisar
+## Una venta que dura meses
 
-Medí consultas con fecha y tamaño definidos, visitas realizadas y eventos contratados. Revisá cuántas propuestas cambian por información que faltó al inicio y ajustá las preguntas que realmente afectan el presupuesto.
+Entre la primera consulta y la seña pueden pasar semanas, y varias personas opinan. Eso choca con algunas cosas que conviene saber.
 
-Asigná un responsable para corregir respuestas y actualizar información cuando cambien los servicios o las condiciones. Podés usar la [guía general de automatización](/blog/como-automatizar-whatsapp-empresa) para preparar la primera revisión con tu equipo.
+- **Cada vuelta es una charla nueva.** Pasadas 12 horas desde que el contacto escribió por última vez, el chat se cierra. Al volver, el asistente arranca con la conversación en curso y lo poco que anotó, y puede repreguntar un dato. El historial lo abre tu equipo.
+- **Las notas internas no le llegan al asistente.** “Le prometí el DJ sin cargo” en una nota no cambia sus respuestas. Si la promesa vale para todos, va en el contexto.
+- **La mamá, la quinceañera y la organizadora son tres chats.** Cada número es un contacto, y el grupo de la familia no llega a Atende. Los audios con ideas para la ambientación tampoco, ni las fotos de referencia: quedan en el teléfono.
+- **La bandeja busca por contacto o teléfono.** Si buscás “14 de agosto”, no aparece. Poné una etiqueta con la fecha o el mes de la fiesta y filtrá por ahí.
+- **El seguimiento no sale solo.** Un “¿pudiste ver el presupuesto?” tiene que mandarlo alguien de tu equipo, o armarse a pedido. Pensalo bien: tu línea está vinculada por QR, fuera de la API oficial de Meta, e insistirle a una familia que no lo espera aumenta el riesgo de restricción.
+
+## Si vendés catering, DJ o ambientación
+
+Un proveedor trabaja con otra pregunta: ¿están disponibles ese día y llegan hasta ese salón? Además de la fecha importan el lugar, la zona, los horarios de armado y la cantidad de invitados. Algunos salones trabajan solo con proveedores propios, así que conviene preguntar eso antes de presupuestar.
+
+La disponibilidad depende de tu gente y de tus equipos, no de un calendario de salón. Viáticos por distancia, horas extra y lista de equipamiento se escriben como condiciones, y el caso puntual lo confirma una persona. Con tu agenda conectada, Atende revisa el día y deja registrado el pedido; sin eso, te deja los datos y confirmás vos.
+
+Si sos un restaurante que también hace fiestas, te va a servir la [guía de reservas y pedidos](/blog/como-automatizar-whatsapp-restaurantes). Y para comparar con negocios parecidos, mirá [restaurantes y hoteles](/casos-de-uso/restaurantes-y-hoteles).

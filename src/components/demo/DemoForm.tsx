@@ -3,7 +3,12 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import { site } from '@/content/site';
-import { buildLeadMessage } from '@/lib/leads';
+import {
+  buildLeadMessage,
+  demoSystems,
+  demoTasks,
+  demoVolumes,
+} from '@/lib/leads';
 import { buildWaLink } from '@/lib/wa';
 import { trackConversion } from '@/lib/conversions';
 import { Button } from '@/components/ui/Button';
@@ -27,13 +32,14 @@ export function DemoForm() {
     const input = event.currentTarget.elements.namedItem(
       'company',
     ) as HTMLInputElement;
-    input.setCustomValidity(company ? '' : 'Ingresá el nombre de tu empresa.');
+    input.setCustomValidity(company ? '' : 'Ingresá el nombre de tu negocio.');
     if (!event.currentTarget.reportValidity()) return;
     setMessage(
       buildLeadMessage({
         company,
+        task: String(form.get('task')),
+        system: String(form.get('system')),
         volume: String(form.get('volume')),
-        need: String(form.get('need')),
         notes: String(form.get('notes') ?? ''),
       }),
     );
@@ -47,10 +53,10 @@ export function DemoForm() {
   return (
     <div className="rounded-lg border-2 border-ink bg-bg p-5 shadow-[var(--shadow-brut)] sm:p-8">
       <h2 className="font-display text-2xl font-semibold">
-        Contanos sobre tu empresa
+        Contanos qué querés sacarte de encima
       </h2>
       <p className="mt-3 leading-relaxed text-mute">
-        Prepará tu consulta y enviala por WhatsApp o email. Los campos con * son
+        Armá tu mensaje y mandalo por WhatsApp o email. Los campos con * son
         obligatorios.
       </p>
       <form onSubmit={prepare} className="mt-6" onChange={() => setMessage('')}>
@@ -58,9 +64,9 @@ export function DemoForm() {
           disabled={!ready}
           className="grid min-w-0 gap-5 disabled:opacity-60"
         >
-          <legend className="sr-only">Datos para evaluar Atende</legend>
+          <legend className="sr-only">Datos para pedir una demo</legend>
           <label className="font-semibold" htmlFor="company">
-            Empresa *
+            Tu negocio *
             <input
               id="company"
               name="company"
@@ -70,6 +76,40 @@ export function DemoForm() {
               onInput={(event) => event.currentTarget.setCustomValidity('')}
               className={field}
             />
+          </label>
+          <label className="font-semibold" htmlFor="task">
+            ¿Qué tarea querés sacarte de encima primero? *
+            <select
+              id="task"
+              name="task"
+              required
+              defaultValue=""
+              className={field}
+            >
+              <option value="" disabled>
+                Elegí una tarea
+              </option>
+              {demoTasks.map((item) => (
+                <option key={item}>{item}</option>
+              ))}
+            </select>
+          </label>
+          <label className="font-semibold" htmlFor="system">
+            ¿Dónde llevás esa tarea hoy? *
+            <select
+              id="system"
+              name="system"
+              required
+              defaultValue=""
+              className={field}
+            >
+              <option value="" disabled>
+                Elegí una opción
+              </option>
+              {demoSystems.map((item) => (
+                <option key={item}>{item}</option>
+              ))}
+            </select>
           </label>
           <label className="font-semibold" htmlFor="volume">
             Consultas por WhatsApp al mes *
@@ -83,36 +123,7 @@ export function DemoForm() {
               <option value="" disabled>
                 Elegí un rango aproximado
               </option>
-              {[
-                'Menos de 100',
-                'Entre 100 y 500',
-                'Entre 501 y 2.000',
-                'Más de 2.000',
-                'Todavía no lo sé',
-              ].map((item) => (
-                <option key={item}>{item}</option>
-              ))}
-            </select>
-          </label>
-          <label className="font-semibold" htmlFor="need">
-            ¿Qué querés resolver primero? *
-            <select
-              id="need"
-              name="need"
-              required
-              defaultValue=""
-              className={field}
-            >
-              <option value="" disabled>
-                Elegí tu prioridad
-              </option>
-              {[
-                'Atención y preguntas frecuentes',
-                'Consultas de venta',
-                'Solicitudes de turnos',
-                'Bandeja compartida para el equipo',
-                'Integrar una agenda, CRM u otro sistema',
-              ].map((item) => (
+              {demoVolumes.map((item) => (
                 <option key={item}>{item}</option>
               ))}
             </select>
@@ -132,8 +143,8 @@ export function DemoForm() {
               id="notes-help"
               className="mt-2 block text-sm font-normal text-mute"
             >
-              Podés indicar tu rubro, cuántas personas atienden o qué sistema
-              usás. Hasta 600 caracteres.
+              Por ejemplo tu rubro, cómo se llama tu sistema o cuántas personas
+              atienden. Hasta 600 caracteres.
             </span>
           </label>
           <p className="text-sm leading-relaxed text-mute">
@@ -151,15 +162,14 @@ export function DemoForm() {
             type="submit"
             className="min-h-12 rounded-md border-2 border-ink bg-coral px-5 py-3 font-display text-lg font-semibold shadow-[var(--shadow-brut-sm)] hover:bg-coral-soft"
           >
-            Preparar mi consulta →
+            Armar mi mensaje →
           </button>
         </fieldset>
       </form>
       <noscript>
         <p className="mt-5 leading-relaxed">
-          Para preparar el mensaje con este formulario necesitás JavaScript.
-          También podés usar los enlaces de WhatsApp y email de esta página para
-          consultar directamente.
+          Para armar el mensaje con este formulario necesitás JavaScript. También
+          podés usar los enlaces de WhatsApp y email de esta página.
         </p>
       </noscript>
       {message && (
@@ -169,10 +179,10 @@ export function DemoForm() {
           className="mt-8 rounded-md border-2 border-ink bg-mint p-5"
         >
           <h3 className="font-display text-xl font-semibold">
-            Tu consulta está lista para enviar
+            Tu mensaje está listo para enviar
           </h3>
           <p className="mt-2 text-sm">
-            Abrí el canal que prefieras y enviá el mensaje para contactarnos.
+            Abrí el canal que prefieras y mandanos el mensaje.
           </p>
           <p className="mt-4 whitespace-pre-wrap break-words text-sm leading-relaxed">
             {message}
@@ -187,7 +197,7 @@ export function DemoForm() {
               Abrir WhatsApp ↗
             </Button>
             <Button
-              href={`mailto:${site.email}?subject=${encodeURIComponent('Demo de Atende para mi empresa')}&body=${encodeURIComponent(message)}`}
+              href={`mailto:${site.email}?subject=${encodeURIComponent('Demo de Atende para mi negocio')}&body=${encodeURIComponent(message)}`}
               data-cta="demo-email"
               variant="outline"
             >

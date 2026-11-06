@@ -1,87 +1,121 @@
 ---
-title: Cómo automatizar el WhatsApp de tu veterinaria
-seoTitle: Cómo automatizar el WhatsApp de tu veterinaria
+title: Cómo automatizar el WhatsApp de tu veterinaria para dar turnos de vacunas, consultas y peluquería canina
+seoTitle: 'Cómo automatizar el WhatsApp de tu veterinaria: turnos y vacunas'
 description: >-
-  Separá consultas de turnos, tienda y servicios veterinarios por WhatsApp. Un
-  proceso administrativo con ejemplos y pase al equipo profesional.
+  Conectado a tu agenda, Atende reserva vacunas, consultas y baño y corte por
+  WhatsApp. Cómo separar dueño y paciente, urgencias, peluquería y alimento.
 summary: >-
-  Para una veterinaria, separá consultas de atención, peluquería y tienda. Pedí
-  el servicio y la preferencia de horario, y dejá la confirmación al equipo. Las
-  preguntas sobre síntomas, medicación o interpretación de estudios deben pasar
-  al profesional veterinario.
+  Para automatizar el WhatsApp de tu veterinaria, separá consultorio, peluquería
+  canina y mostrador. Conectado a tu agenda, Atende reserva la vacuna o el baño
+  y corte en el chat; sin esa conexión junta animal, servicio y horario, y tu
+  equipo confirma. Síntomas, dosis y fotos de heridas quedan afuera: las
+  urgencias necesitan un teléfono de guardia escrito de antemano.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: salud
 sector: Veterinarias
 tags:
   - WhatsApp
   - Veterinarias
-  - automatización
+  - Turnos
+  - Peluquería canina
 related:
-  - como-automatizar-whatsapp-empresa
   - como-automatizar-whatsapp-clinicas
+  - como-automatizar-whatsapp-peluquerias
+  - whatsapp-ia-atencion-humana
 faq:
-  - q: ¿Qué información preparar para automatizar WhatsApp en veterinarias?
+  - q: ¿El asistente sirve para urgencias de una veterinaria?
     a: >-
-      Prepará esta información: Servicios disponibles y horarios de atención,
-      tienda y peluquería. Datos administrativos mínimos: servicio, especie y
-      preferencia horaria cuando sean necesarios. Responsable del circuito
-      profesional y quien verifica productos de la tienda.
-  - q: ¿Atende confirma operaciones o consulta otros sistemas por defecto?
+      Solo para pasar el teléfono de guardia que cargaste. Dejale escrito que no
+      evalúe síntomas. No ve fotos de heridas y la derivación marca el chat sin
+      alertar a nadie, así que una urgencia nunca debería depender de la bandeja.
+  - q: ¿Puede decirme cuándo le toca la próxima vacuna a un animal?
     a: >-
-      Atende responde con la información configurada y permite que tu equipo
-      continúe desde una bandeja compartida. Consultar datos en tiempo real,
-      crear reservas, registrar pedidos o enviar recordatorios requiere una
-      integración confirmada por separado.
+      Solo si tu sistema de pacientes está conectado y esa consulta se incluyó
+      al armar la conexión. Sin eso, el dato lo da tu equipo mirando la ficha.
+      La foto de la libreta sanitaria no llega a Atende.
+  - q: ¿Atende reserva turnos de peluquería canina aparte de los de consultorio?
+    a: >-
+      Sí, si las dos agendas están conectadas; esa conexión se arma a pedido
+      para tu veterinaria. Sin conexión, el asistente junta tamaño, servicio y
+      día, y quien maneja la peluquería confirma.
+  - q: ¿Cómo encuentro en la bandeja la conversación de un paciente?
+    a: >-
+      Por el dueño: la búsqueda funciona por contacto o teléfono, no por el
+      texto de los mensajes. Buscar el nombre del animal no va a traer el chat.
 ---
-La misma bandeja puede recibir pedidos de alimento, solicitudes de baño y consultas sobre un animal que necesita atención. Empezar con una clasificación administrativa ayuda a que una consulta de tienda no se mezcle con un mensaje para el veterinario. El flujo no debe usar respuestas comerciales para dar indicaciones clínicas ni suponer que una descripción breve permite evaluar el estado del animal.
+Una dueña pide vacunar a sus dos gatos y, con tu agenda conectada, Atende le reserva dos turnos seguidos el sábado y en el mismo mensaje le pide que traiga las libretas. Ese es el punto de partida para automatizar el WhatsApp de una veterinaria: que el turno quede terminado en el chat, aunque en el consultorio estén con una cirugía y en la peluquería con un ovejero a medio secar.
 
-## Qué información preparar
+## Tres mostradores en un solo número
 
-- Servicios disponibles y horarios de atención, tienda y peluquería.
-- Datos administrativos mínimos: servicio, especie y preferencia horaria cuando sean necesarios.
-- Responsable del circuito profesional y quien verifica productos de la tienda.
+Una veterinaria de barrio suele ser tres negocios que comparten teléfono. Antes de cargar nada, separá qué entra para cada uno.
 
-## Qué responder y qué confirmar con el equipo
+| Lo que escriben | Para quién es | Qué necesita saber el asistente | Cómo termina |
+| --- | --- | --- | --- |
+| "Quiero vacunar a Luna" | Consultorio | Especie, nombre y día | Turno reservado, con la agenda conectada |
+| "Baño y corte para mi caniche" | Peluquería | Tamaño, servicio y día | Turno con el tiempo que lleva ese perro |
+| "¿Tienen la bolsa grande?" | Mostrador | Marca, tamaño, retiro o envío | Stock y precio, con tu sistema conectado |
+| "Está vomitando desde anoche" | Veterinario | Nada clínico | Teléfono de guardia y derivación |
+| "¿Cuánto le doy?" | Veterinario | Nada | Una persona contesta |
 
-| Consulta | Cómo resolverla |
-| --- | --- |
-| Baño o servicio programable | Recibir la preferencia; el equipo confirma cupo. |
-| Alimento o accesorio | Pedir producto y presentación; verificar stock. |
-| Síntomas o medicación | Pasar al canal definido por el equipo veterinario. |
+Sin conexión, las tres primeras filas terminan igual: el asistente junta el pedido y tu equipo lo confirma desde la bandeja, donde ves toda la conversación. Etiquetas como "peluquería" o "mostrador" ayudan a que cada uno filtre lo suyo. Las pone tu equipo; el asistente no las asigna.
 
-## Un flujo de atención paso a paso
+## El paciente no tiene WhatsApp: escribe su dueño
 
-1. Preguntá qué área necesita: consulta, servicio programado o tienda. Si ya lo explicó, continuá desde ese dato y evitá mostrarle un menú repetido.
+Esto te separa de una [clínica de personas](/blog/como-automatizar-whatsapp-clinicas) y cambia cómo se arma todo. El contacto es el dueño y el paciente es el animal. Un mismo número puede tener un perro y dos gatos, y una misma mascota puede tener dos personas que escriben: el turno quedó a nombre de la mamá y hoy pregunta el hijo desde su celular.
 
-2. Para una solicitud de servicio, pedí el día deseado y los datos que el equipo usa para coordinar. La duración o las condiciones pueden requerir revisión de una persona.
+En la práctica:
 
-3. En tienda, identificá producto y presentación antes de prometer retiro. En atención profesional, conservá el mensaje del cliente para que el veterinario decida cómo continuar.
+- **La primera pregunta es para quién.** "¿Para cuál de tus animales es?" evita reservar la vacuna del gato en la ficha del perro.
+- **El teléfono no siempre identifica.** Si la agenda ordena por dueño, la conexión necesita una segunda forma de encontrar el turno, o el pedido pasa a tu equipo.
+- **En la bandeja se busca por dueño.** La búsqueda funciona por contacto o teléfono, no por el texto de los mensajes. Si buscás "Toto", no lo vas a encontrar.
 
-## Ejemplo de conversación
+El asistente tiene en cuenta la conversación en curso y puede guardar notas breves, como el nombre y la especie de cada animal. La historia clínica sigue en tu sistema.
 
-Ejemplo ilustrativo para adaptar a la información y al proceso de tu negocio. No representa una conversación real ni una operación confirmada.
+## Dos gatos, dos turnos y una sola conversación
 
-> Cliente: ¿Tienen turno para baño el sábado?
+Así queda con la agenda de la veterinaria conectada (ejemplo ilustrativo):
+
+> Dueña: Hola, tengo que vacunar a mis dos gatos, Mora y Simón.
 >
-> Asistente: ¿Para qué mascota y en qué horario preferís?
+> Asistente: Te busco dos turnos seguidos. Tengo viernes 18:00 y 18:20, o sábado 10:30 y 10:50.
 >
-> Cliente: Para mi perro, a la mañana.
+> Dueña: Sábado
 >
-> Asistente: El equipo revisa los cupos y las condiciones del servicio y te confirma. Todavía no hay una reserva.
+> Asistente: Te reservé el sábado: Mora a las 10:30 y Simón a las 10:50. Traé las libretas de los dos.
 
-## Casos que conviene probar antes de activar
+La conexión con tu agenda se arma a pedido para tu veterinaria, y el asistente confirma solo lo que la agenda devolvió. Si tu sistema guarda un turno por animal, los dos turnos seguidos tienen que estar contemplados ahí. Hay más detalle en [cómo conectar la agenda de la veterinaria](/integraciones), en [turnos y reservas](/servicios/turnos-whatsapp) y en [WhatsApp para clínicas, consultorios y veterinarias](/casos-de-uso/clinicas-y-consultorios).
 
-Probá una solicitud de dosis de medicamento, una consulta por alimento que no está disponible y un servicio solicitado fuera del horario publicado. El bot debe reconocer que faltan datos verificados y pasar la consulta al responsable. La guía trata la recepción y no sustituye la definición de protocolos del establecimiento.
+## Urgencias: el teléfono de guardia va escrito, no en la bandeja
 
-## Cómo implementarlo con Atende
+Un perro atropellado, una intoxicación o un parto complicado no pueden esperar a que alguien abra la bandeja. El asistente responde de noche, mientras el servicio y tu WhatsApp estén conectados, pero cuando deriva, el chat queda en "Necesita humano" y nadie recibe un aviso especial. A la noche esa marca no llega a ningún veterinario.
 
-En Atende configurás la información y las respuestas de tu negocio, vinculás el número de WhatsApp mediante QR y supervisás las conversaciones desde una bandeja compartida. Definí quién toma las derivaciones y probá consultas reales anonimizadas antes de atender clientes.
+Decidí esto antes de vincular el número:
 
-El flujo básico responde y reúne contexto. Consultar stock, agendas, pedidos o un CRM, ejecutar acciones en otro sistema y enviar recordatorios o seguimientos proactivos requiere una integración evaluada por separado. Revisá el alcance de la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) y prepará tus ejemplos para una [demo](/demo).
+1. Si tenés guardia, escribí en el "Contexto del asistente" el teléfono y en qué horario atiende.
+2. Si no tenés, indicá adónde derivás y decilo sin vueltas: "A esta hora no hay nadie en la veterinaria".
+3. Pedile que ante cualquier síntoma no haga preguntas para medir la gravedad y pase el dato en su primera respuesta.
 
-## Qué medir y revisar
+La foto de la herida, el video del perro rengueando y la nota de voz de un dueño desesperado se quedan en el teléfono de la veterinaria, junto con el texto que acompañe a la foto. A Atende no llegan, y para el asistente no pasó nada. Quien manda nada más que una imagen recibe silencio. Por eso el teléfono de guardia también tiene que estar en el perfil de WhatsApp del negocio.
 
-Registrá cuántas conversaciones llegan a la sección correcta y cuántas solicitudes de servicios se confirman. Separá ventas de tienda, turnos y consultas profesionales para no medir todo como una misma conversión.
+Un posoperatorio que el veterinario sigue por este número va en "Necesita humano", porque responderle al dueño no frena al asistente. Y esa marca no llega al control del día siguiente: con 12 horas sin mensajes del dueño el chat se cierra, y su próxima pregunta la toma el asistente.
 
-Asigná un responsable para corregir respuestas y actualizar información cuando cambien los servicios o las condiciones. Podés usar la [guía general de automatización](/blog/como-automatizar-whatsapp-empresa) para preparar la primera revisión con tu equipo.
+## ¿Cuándo le toca la antirrábica? Vacunas y libreta sanitaria
+
+Cuánto sale una vacuna o qué días se vacuna es información administrativa: cargala en "Preguntas frecuentes". Las preguntas de al lado no lo son. "¿Se la puedo dar a un cachorro de dos meses?" o "¿le toca refuerzo?" dependen del animal, y las contesta una persona con la ficha adelante. La foto de la libreta no reemplaza esa ficha, y tampoco llega.
+
+Avisar que se viene el refuerzo implica que la veterinaria le escriba primero al dueño, algo que Atende hace solo si se arma a pedido. Para eso hacen falta tus fechas de vacunación y el acuerdo del dueño. Y hay un riesgo: lo que manda una línea vinculada por QR sin que nadie lo espere puede terminar en una restricción. La [nota sobre recordatorios](/blog/recordatorios-de-turnos-por-whatsapp) lo detalla.
+
+## Baño y corte: el turno depende del perro
+
+En peluquería canina, un caniche chico y un ovejero con el pelo enredado no ocupan el mismo lugar. Por eso el asistente pregunta tamaño, tipo de pelo y si es solo baño, y ofrece el bloque que corresponde. Definí vos el resto:
+
+- Si pedís vacunas al día para entrar a la peluquería.
+- Si hacés retiro y entrega a domicilio, y en qué zonas.
+- Qué perros tomás con bozal y cuáles no.
+
+Si un dueño avisa que el perro muerde al secarlo, el asistente lo puede guardar en una nota para sus respuestas, pero esa nota no aparece en la bandeja: quien lo va a bañar se entera por el chat o por las "Notas internas" de tu equipo. Para mostrar cortes, subí fotos a tu biblioteca y el asistente las manda cuando se las piden. La guía de [peluquerías](/blog/como-automatizar-whatsapp-peluquerias) desarrolla las agendas con servicios de distinta duración.
+
+## Alimento y pipetas: retiro, envío y qué le conviene
+
+Conectado a tu sistema, Atende consulta si hay stock de esa bolsa y a qué precio, y registra el pedido con retiro o envío. Sin conexión, responde con lo que cargaste y tu equipo confirma. Cuando la pregunta pasa de "¿tienen?" a "¿qué le doy?", o es una pipeta o un medicamento según el peso del animal, sale del mostrador y va a un veterinario.

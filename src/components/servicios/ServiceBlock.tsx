@@ -15,43 +15,46 @@ export function ServiceBlock({
   return (
     <section
       id={servicio.id}
-      className="border-b-2 border-ink py-20 md:py-28 scroll-mt-24"
+      className="scroll-mt-24 border-b-2 border-ink py-16 md:py-24"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div
-          className={`grid gap-12 md:grid-cols-2 items-start ${
+          className={`grid items-start gap-12 md:grid-cols-2 ${
             reverse ? 'md:[&>*:first-child]:order-2' : ''
           }`}
         >
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
-              <span className="font-display font-semibold text-7xl text-coral leading-none">
+              <span className="font-display text-7xl font-semibold leading-none text-coral">
                 {servicio.number}
               </span>
-              <Tag>Servicio</Tag>
+              <Tag>{servicio.title}</Tag>
             </div>
-            <h2 className="font-display font-semibold text-4xl md:text-5xl tracking-[-0.025em] leading-[0.95]">
-              {servicio.title}
+            <h2 className="font-display text-4xl font-semibold leading-[0.95] tracking-[-0.025em] md:text-5xl">
+              {servicio.headline}
             </h2>
-            <p className="font-body text-lg text-mute max-w-xl">{servicio.description}</p>
+            <p className="max-w-xl font-body text-lg leading-relaxed text-mute">
+              {servicio.short}
+            </p>
 
-            <div className="mt-2">
-              <span className="font-mono text-xs uppercase tracking-[0.08em] text-mute">
-                Qué te llevás
-              </span>
-              <ul className="mt-3 flex flex-col gap-2">
-                {servicio.bullets.map((b) => (
-                  <li key={b} className="flex items-start gap-3 font-body text-base">
-                    <span className="mt-2 size-2 bg-ink shrink-0" aria-hidden />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="flex flex-col gap-2">
+              {servicio.bullets.map((b) => (
+                <li key={b} className="flex items-start gap-3 font-body text-base">
+                  <span className="mt-2 size-2 shrink-0 bg-ink" aria-hidden />
+                  {b}
+                </li>
+              ))}
+            </ul>
 
-            <p className="rounded-md border border-ink/20 bg-coral-soft/40 p-4 text-sm leading-relaxed">{servicio.scope}</p>
-            <Link href={`/servicios/${servicio.slug}`} className="font-semibold underline underline-offset-4">Ver cómo funciona, requisitos y preguntas frecuentes<span className="sr-only"> de {servicio.title}</span> →</Link>
-            <div className="pt-4">
+            <Link
+              href={`/servicios/${servicio.slug}`}
+              className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+            >
+              Ver cómo funciona y qué necesita
+              <span className="sr-only"> {servicio.title}</span>
+              <span aria-hidden="true">&nbsp;→</span>
+            </Link>
+            <div>
               <Button
                 href={buildWaLink(servicio.ctaContext)}
                 variant="primary"
@@ -59,13 +62,17 @@ export function ServiceBlock({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Consultar por esta solución
+                Consultar por WhatsApp
               </Button>
             </div>
           </div>
 
           <div className="md:justify-self-end">
-            <ChatMockup messages={servicio.conversation} />
+            <ChatMockup
+              messages={servicio.conversation}
+              caption={servicio.caption}
+              result={servicio.result}
+            />
           </div>
         </div>
       </div>

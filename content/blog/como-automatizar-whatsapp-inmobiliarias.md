@@ -1,88 +1,124 @@
 ---
-title: Cómo automatizar WhatsApp en tu inmobiliaria
-seoTitle: Cómo automatizar WhatsApp en tu inmobiliaria
+title: 'Cómo automatizar WhatsApp en tu inmobiliaria: de la ficha a la visita agendada'
+seoTitle: 'Cómo automatizar WhatsApp en tu inmobiliaria: fichas y visitas'
 description: >-
-  Ordená consultas por propiedades, alquileres y visitas en WhatsApp. Un flujo
-  para inmobiliarias que conserva el aviso y prepara el contacto con el
-  corredor.
+  Un chatbot para inmobiliarias que manda las fotos de la ficha, aclara requisitos
+  y, conectado a tu agenda, deja la visita agendada, con el corredor al tanto.
 summary: >-
-  Para automatizar WhatsApp en una inmobiliaria, identificá propiedad, operación
-  y zona. Respondé con la ficha vigente y reuní preferencias de visita. El
-  corredor verifica disponibilidad, requisitos y condiciones antes de coordinar;
-  un mensaje de interés no reserva una propiedad.
+  Un chatbot para inmobiliarias sirve si identifica la propiedad y la operación,
+  manda fotos y videos, aclara requisitos y, conectado a tu agenda, deja la
+  visita agendada. Alquiler y venta piden preguntas distintas. La oferta, la
+  reserva y la evaluación de garantías quedan en manos del corredor. Sin
+  conexión, el asistente junta código, día y nombre, y tu equipo confirma la
+  visita.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: inmuebles-y-hogar
 sector: Inmobiliarias
 tags:
   - WhatsApp
   - Inmobiliarias
-  - automatización
+  - Alquileres
+  - Visitas
 related:
-  - como-automatizar-whatsapp-empresa
   - como-automatizar-whatsapp-consorcios
+  - como-automatizar-whatsapp-concesionaria
 faq:
-  - q: ¿Qué información preparar para automatizar WhatsApp en inmobiliarias?
+  - q: ¿Un chatbot para inmobiliarias puede agendar visitas?
     a: >-
-      Prepará esta información: Referencias de avisos y una política para
-      retirar fichas desactualizadas. Zonas, tipos de operación y requisitos
-      informativos revisados por el corredor. Responsable para visitas,
-      propietarios y gestiones de operaciones en curso.
-  - q: ¿Atende confirma operaciones o consulta otros sistemas por defecto?
+      Sí, conectado a tu agenda de visitas y a tu cartera, y esa conexión se arma
+      a pedido. Sin ella, el asistente junta el código de la propiedad, el día
+      que le sirve al interesado y su nombre, y el corredor confirma.
+  - q: ¿Atende se conecta con Zonaprop, Argenprop o Mercado Libre?
     a: >-
-      Atende responde con la información configurada y permite que tu equipo
-      continúe desde una bandeja compartida. Consultar datos en tiempo real,
-      crear reservas, registrar pedidos o enviar recordatorios requiere una
-      integración confirmada por separado.
+      No. Los portales son de donde viene la gente: Atende trabaja sobre lo que
+      entra por tu WhatsApp. Por eso conviene que cada aviso tenga un código que
+      la persona pueda escribir.
+  - q: ¿El asistente puede evaluar una garantía o un recibo de sueldo?
+    a: >-
+      No. Cuenta qué requisitos pedís, pero los documentos en PDF y las fotos
+      nunca llegan a Atende, y la evaluación es del corredor. Indicá en tu
+      configuración adónde se mandan.
+  - q: ¿Puede mandar fotos y videos de las propiedades?
+    a: >-
+      Sí, y viene en los planes con IA sin conectar nada. Subís las fotos y los
+      videos a tu biblioteca y el asistente los manda en el chat. La biblioteca
+      tiene un tope, y no admite PDF.
 ---
-Dos avisos pueden describirse como “el departamento del centro” y tener condiciones muy diferentes. La referencia de publicación es el dato que evita enviar información equivocada. Otra distinción útil es entre quien busca una propiedad y quien quiere ofrecer la suya para comercializar. El primer contacto puede ordenar ambas consultas, pero la negociación y la evaluación de documentación requieren un corredor o responsable del equipo.
+Ejemplo ilustrativo, con la cartera y la agenda de visitas conectadas a Atende.
 
-## Qué información preparar
-
-- Referencias de avisos y una política para retirar fichas desactualizadas.
-- Zonas, tipos de operación y requisitos informativos revisados por el corredor.
-- Responsable para visitas, propietarios y gestiones de operaciones en curso.
-
-## Qué responder y qué confirmar con el equipo
-
-| Consulta | Cómo resolverla |
-| --- | --- |
-| Ficha de propiedad | Identificar aviso y responder datos configurados. |
-| Visita | Reunir disponibilidad del interesado; el corredor confirma. |
-| Oferta o documentación | Derivar a quien gestiona la operación. |
-
-## Un flujo de atención paso a paso
-
-1. Pedí la referencia del aviso o, si todavía está buscando, tipo de operación, zona y características principales. Evitá pedir documentación personal para mostrar información pública.
-
-2. Explicá los datos de la ficha que estén vigentes. Si pregunta por una condición no publicada, dejá la pregunta para el corredor sin completar con supuestos.
-
-3. Para una visita, reuní preferencia horaria y pasá el historial. El corredor verifica acceso, disponibilidad de la propiedad y coordinación con ocupantes antes de confirmar.
-
-## Ejemplo de conversación
-
-Ejemplo ilustrativo para adaptar a la información y al proceso de tu negocio. No representa una conversación real ni una operación confirmada.
-
-> Cliente: Me interesa el departamento de Nueva Córdoba.
+> Interesado: Hola, vi en un portal el dos ambientes de Nueva Córdoba, código 1482. ¿Sigue en alquiler?
 >
-> Asistente: ¿Me pasás la referencia del aviso y si consultás por compra o alquiler?
+> Asistente: Sí, sigue disponible. Piden garantía propietaria o seguro de caución, y recibos de sueldo. Te paso fotos. ¿Querés verlo?
 >
-> Cliente: NC18, alquiler. Puedo verlo el sábado.
+> Interesado: Sí, el jueves después de las 18.
 >
-> Asistente: Paso la referencia y tu preferencia al corredor para verificar disponibilidad y coordinar la visita.
+> Asistente: Tengo jueves 18:30 o 19:15. ¿Cuál preferís?
+>
+> Interesado: 18:30. Soy Julieta.
+>
+> Asistente: Te agendé, Julieta: jueves 18:30 en Nueva Córdoba. La reserva del departamento la ves con el corredor.
 
-## Casos que conviene probar antes de activar
+Ese chat termina con la visita agendada porque hay dos cosas conectadas: la cartera, para saber si la propiedad sigue libre, y la agenda de visitas. Esa conexión se arma a pedido para tu inmobiliaria, y [así armamos cada integración](/integraciones). Sin ella, el asistente contesta con lo que le cargaste, junta código, día y nombre, y el corredor confirma.
 
-Probá un aviso vencido, una propiedad que ya recibió una oferta y un interesado que cambia de compra a alquiler. No debe enviarse una ficha distinta sin explicarlo. Si la conversación pasa a contratos, garantías o documentación, el equipo debe continuar con el circuito definido para esa operación.
+Lo que sigue es cómo ordenar el resto: qué preguntar en cada operación, qué datos cargar y qué nunca se resuelve en un chat. Si todavía estás eligiendo herramienta, empezá por [concesionarias e inmobiliarias](/casos-de-uso/concesionarias-e-inmobiliarias) y por lo que se puede cerrar en [ventas por WhatsApp](/servicios/ventas-whatsapp).
 
-## Cómo implementarlo con Atende
+## Alquiler y venta se atienden distinto
 
-En Atende configurás la información y las respuestas de tu negocio, vinculás el número de WhatsApp mediante QR y supervisás las conversaciones desde una bandeja compartida. Definí quién toma las derivaciones y probá consultas reales anonimizadas antes de atender clientes.
+Un interesado en alquilar compara cinco avisos el mismo día y necesita saber rápido si llega con los requisitos. Quien compra tarda meses y quiere hablar con alguien. Si el asistente trata igual a los dos, cansa a uno y apura al otro.
 
-El flujo básico responde y reúne contexto. Consultar stock, agendas, pedidos o un CRM, ejecutar acciones en otro sistema y enviar recordatorios o seguimientos proactivos requiere una integración evaluada por separado. Revisá el alcance de la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) y prepará tus ejemplos para una [demo](/demo).
+| | Alquiler | Venta |
+| --- | --- | --- |
+| Primer dato | Código, o zona, ambientes y monto mensual | Código, o zona y forma de pago |
+| Lo que siempre preguntan | Garantía, mes de depósito, mascotas, expensas | Si es apto crédito, si escuchan ofertas, si acepta permuta |
+| Hasta dónde llega el asistente | Requisitos que definiste y visita | Datos de la ficha y visita |
+| Lo que decide el corredor | Aceptar la garantía, reservar, el contrato | La oferta, la reserva, el boleto y la escritura |
 
-## Qué medir y revisar
+Si el interesado todavía no tiene una propiedad en mente, el asistente pregunta operación, zona y ambientes antes que cualquier otra cosa. Con eso puede mandar lo que tengas cargado o dejar el pedido para el corredor.
 
-Medí consultas con aviso identificado, visitas solicitadas y visitas realizadas. Separá propietarios de interesados para entender de qué lado del negocio llegan las oportunidades y cuáles requieren seguimiento del corredor.
+## Una ficha que conteste sola
 
-Asigná un responsable para corregir respuestas y actualizar información cuando cambien los servicios o las condiciones. Podés usar la [guía general de automatización](/blog/como-automatizar-whatsapp-empresa) para preparar la primera revisión con tu equipo.
+Las preguntas de ficha son siempre las mismas: expensas, metros, orientación, cochera, antigüedad, apto crédito, apto profesional. Tenerlas completas por propiedad ahorra muchos ida y vuelta.
+
+Sin conexión, esos datos viven en el Contexto del asistente y en las preguntas frecuentes, y esos dos lugares tienen límites. Alcanzan para [los emprendimientos](/blog/como-automatizar-whatsapp-constructoras) y las propiedades que más consultas reciben, no para una cartera grande. También envejecen: el día que se alquila el departamento, alguien tiene que sacarlo. Si no, el asistente va a seguir ofreciéndolo con toda tranquilidad. Conectado a tu cartera, lee la ficha vigente al momento de contestar.
+
+Las fotos y los videos van aparte y funcionan hoy, sin conectar nada. Subís el recorrido a tu biblioteca, el asistente lo encuentra y lo manda. Son fotos y videos: un plano en PDF no entra, y la biblioteca también tiene un tope, así que elegí qué subir.
+
+## Requisitos de alquiler: informar sin evaluar
+
+Contar qué pedís es útil y ahorra visitas que no iban a ningún lado. Escribilo con tus palabras: qué garantías aceptás, cuántos recibos, si la propiedad admite mascotas. Si cada propietario pide algo distinto, aclaralo por ficha.
+
+Evaluar es otra cosa. El asistente no dice si un recibo alcanza ni si una garantía sirve. Además, la gente manda el recibo en PDF y la foto del DNI apenas le dicen “requisitos”, y esos archivos nunca llegan a Atende. Dejá escrito adónde se mandan y en qué momento, y que el asistente no pida documentación en el primer contacto. Con datos de terceros, como los de un garante, mejor que el trámite pase por una persona.
+
+## Lo que llega de los portales
+
+Zonaprop, Argenprop y Mercado Libre son de donde viene buena parte de la gente, y hasta ahí llega la relación: Atende no está conectado a esos portales ni recibe sus consultas por mail. Lee lo que entra por tu WhatsApp, como texto.
+
+Por eso:
+
+- Poné un código corto y visible en cada aviso. “El departamento del centro” puede ser cualquiera de ocho, y el código evita mandar la ficha equivocada.
+- Una captura del aviso es una imagen y no llega, igual que el audio de quien prefiere contar qué busca. Si alguien manda sólo eso, el asistente no contesta, y hace falta que alguien lo vea en el teléfono de la inmobiliaria.
+
+## Las llaves, el inquilino y otras reglas de la visita
+
+Una agenda de visitas tiene más vueltas que un turno. Antes de conectarla, definí:
+
+- Quién tiene las llaves y si hay que pasarlas a buscar.
+- Si la propiedad está ocupada y con cuánta anticipación hay que avisar.
+- Si en edificios con portería hace falta anotar a quien visita.
+- Si conviene juntar varias visitas en la misma franja.
+- Qué corredor toma cada zona.
+
+Si la propiedad necesita coordinar con un ocupante, el asistente no debería agendar directo: que junte la preferencia y lo confirme una persona.
+
+## Propietarios e inquilinos también escriben
+
+No todos buscan propiedad. Por el mismo número entran:
+
+- **Quien quiere vender o alquilar la suya.** Conectado a tu planilla o tu CRM, Atende registra al propietario con zona y tipo de inmueble. La tasación la hace el corredor, sin valores por chat. Nuestra demo [anota interesados en Google Sheets](/blog/registrar-leads-de-whatsapp-en-google-sheets) de esa manera.
+- **Tu inquilino actual, porque se rompió el calefón.** Ese mensaje va a la administración de alquileres. Que el asistente pida dirección y problema, y derive. Si administrás edificios, la [guía de consorcios](/blog/como-automatizar-whatsapp-consorcios) trae el circuito de reclamos.
+- **Quien ya vio la propiedad y quiere ofertar.** Directo a una persona.
+
+Para que el asistente se corra de una negociación, marcá el chat como Necesita humano; responder desde la bandeja no alcanza. Ese estado se pierde cuando el chat se cierra solo, 12 horas después del último mensaje de la persona. Quien reaparece dos meses más tarde vuelve a hablar con el asistente, y él tiene en cuenta la conversación en curso. El corredor retoma con las Notas internas, que tu equipo ve y el asistente no lee.
+
+Una etiqueta por operación y Responsable por zona alcanzan para repartir el trabajo en la bandeja.

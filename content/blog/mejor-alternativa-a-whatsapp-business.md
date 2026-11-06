@@ -1,78 +1,162 @@
 ---
-title: Mejor alternativa a WhatsApp Business para atender en equipo
-seoTitle: Mejor alternativa a WhatsApp Business para atender en equipo
+title: 'Alternativas a WhatsApp Business en Argentina: cuándo te alcanza el agente de Meta'
+seoTitle: 'Alternativas a WhatsApp Business en Argentina: cuándo cambiar'
 description: >-
-  Cuándo evaluar una herramienta de atención además de WhatsApp Business.
-  Compará el trabajo manual, las respuestas con IA y el alcance de Atende.
+  La app de WhatsApp Business ahora trae un agente de IA de Meta. Cómo saber si
+  lo tenés, cuándo te alcanza y cuándo necesitás que el turno quede reservado.
 summary: >-
-  Si WhatsApp Business y tu organización actual permiten atender bien, podés
-  mantener ese proceso. Evaluá Atende cuando necesitás responder consultas
-  repetidas con IA y compartir el historial de atención con el equipo. La
-  decisión depende del trabajo pendiente y la supervisión que podés sostener.
+  Antes de buscar una alternativa a WhatsApp Business, fijate si tu cuenta tiene
+  el agente de IA de Meta: responde preguntas, recomienda productos y junta datos.
+  Si eso te alcanza, quedate. El acceso en Argentina depende de cada cuenta. Mirá
+  otra opción si necesitás que el turno o el pedido queden registrados en tu
+  sistema, o que todo tu equipo trabaje en una bandeja. Atende hace eso conectado a
+  tu sistema, con la conexión armada a pedido. Se conecta por QR, no es la API
+  oficial de Meta.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
-  - automatización
-  - comparativas
+  - WhatsApp Business
+  - Meta
+  - agentes de IA
+  - alternativas
 related:
-  - como-automatizar-whatsapp-empresa
+  - agente-ia-whatsapp-business-meta
   - cuanto-cuesta-automatizar-whatsapp
+  - como-automatizar-whatsapp-peluquerias
+  - chatbots-whatsapp-argentina-comparativa
 faq:
-  - q: >-
-      ¿Atende es la mejor alternativa a WhatsApp Business para cualquier
-      empresa?
+  - q: ¿Qué alternativa a WhatsApp Business conviene si somos varios?
     a: >-
-      No hay una opción universal. Compará el proceso que necesitás, los
-      canales, la intervención humana y las integraciones. Probá los mismos
-      casos en cada herramienta y confirmá el alcance de la propuesta.
-  - q: ¿La migración incluye historial e integraciones automáticamente?
+      Depende de cuánto quieras automatizar. Dos personas con pocas consultas pueden
+      quedarse en la app, con hasta cuatro dispositivos. Para asignar chats y dejar
+      notas hace falta una bandeja compartida, y para terminar tareas en el chat, una
+      con asistente conectado a tu sistema.
+  - q: ¿WhatsApp Business alcanza para reservar turnos?
     a: >-
-      No lo asumas. Confirmá cómo se conectará el número, qué historial estará
-      disponible y qué sistemas o automatizaciones hay que configurar. En
-      Atende, las integraciones se evalúan por separado.
+      La app sola, no. El agente de Meta tiene una opción para conectar un calendario
+      de Google, pero ninguna página que leímos dice en qué países funciona. Si tenés
+      acceso, probala con un turno real antes de contar con eso.
+  - q: ¿Cuánto cuesta el agente de Meta?
+    a: >-
+      Meta dice que es gratuito cada mes hasta una cantidad permitida, que no detalla
+      en lo que leímos. Meta One suma más capacidad desde USD 14,99 por mes, con precios
+      que varían por región. En la API, Meta cobra USD 2 por millón de tokens.
+  - q: ¿Tengo que apagar el agente de Meta para usar Atende?
+    a: >-
+      Te lo recomendamos. Si los dos están prendidos, el contacto puede recibir dos
+      respuestas. Elegí uno y apagá el otro antes de escanear el QR de Atende.
 sources:
-  - title: 'WhatsApp: Business App'
-    url: 'https://business.whatsapp.com/products/business-app'
-    checkedAt: '2026-09-10'
+  - title: 'WhatsApp Business: Meta Business Agent'
+    url: 'https://www.whatsappbusiness.com/es-la/products/business-app-ai-agent/'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: app para empresas'
+    url: 'https://whatsappbusiness.com/es-la/products/business-app/'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: agente de IA'
+    url: 'https://faq.whatsapp.com/1153795669452207'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: dispositivos vinculados en Business'
+    url: 'https://faq.whatsapp.com/647349420360876'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: multiagente'
+    url: 'https://faq.whatsapp.com/395911122612120/?cms_platform=android'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: Business Agent, junio de 2026'
+    url: 'https://about.fb.com/news/2026/06/meta-business-agent/'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: suscripción Meta One'
+    url: 'https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Meta One en la aplicación'
+    url: 'https://whatsappbusiness.com/es-la/products/business-app-meta-one/'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: calendario con Meta Business Agent'
+    url: 'https://faq.whatsapp.com/1474886260686868'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: precios de WhatsApp Business Platform'
+    url: 'https://developers.facebook.com/docs/whatsapp/pricing'
+    checkedAt: '2026-11-06'
+  - title: 'La Nación: agente de IA en WhatsApp Business'
+    url: 'https://www.lanacion.com.ar/tecnologia/whatsapp-business-como-funciona-el-agente-de-ia-que-ahora-te-respondera-siempre-y-que-promete-nid24022026/'
+    checkedAt: '2026-11-06'
 ---
-El problema no siempre es la herramienta. A veces falta una respuesta acordada, una persona a cargo del cierre o un horario comunicado correctamente. Antes de sumar software, identificá en qué punto se acumulan conversaciones y cuánto se repite la misma tarea. Si varias personas necesitan continuar con contexto y hay consultas repetidas que se pueden resolver con información del negocio, tiene sentido probar una capa de atención con IA.
+Si querés que el turno quede reservado mientras atendés, la pregunta cambió este año. Antes era fácil: la app de WhatsApp Business para contestar a mano y otra herramienta si querías que algo respondiera solo. Ahora Meta puso un agente de IA adentro de la misma app. Antes de buscar una alternativa, fijate si tu cuenta lo tiene y si te alcanza con lo que hace.
 
-## Qué propone WhatsApp Business y qué propone Atende
+Atende publica esta nota y vende una de las opciones. Meta es, de hecho, nuestra competencia más directa para un negocio chico, así que tomá lo que decimos con esa distancia. Las fuentes se abrieron el 6 de noviembre de 2026 y no probamos el agente en una cuenta argentina. El método está en los [criterios editoriales](/blog/editorial).
 
-WhatsApp presenta Business App como una aplicación para conectar negocios con clientes y gestionar la comunicación comercial. Para decidir si alcanza, revisá sus funciones vigentes y observá cómo las utiliza tu equipo en consultas reales. [Fuente oficial de WhatsApp Business](https://business.whatsapp.com/products/business-app).
+## El competidor nuevo está adentro de la app
 
-Atende responde consultas por WhatsApp a partir de información configurada, permite revisar el historial en una bandeja compartida y que una persona continúe la atención. La vinculación del número usa QR. Consultar stock, reservar turnos, operar un CRM o enviar mensajes proactivos requiere una integración o alcance confirmado por separado. Revisá las [funciones de Atende](/servicios) para identificar qué parte del proceso querés probar.
+[Meta Business Agent](https://www.whatsappbusiness.com/es-la/products/business-app-ai-agent/) es, en palabras de Meta, "un agente de IA que puede representar a tu empresa en chats con clientes". Según esa página, responde sobre horarios y ubicación, productos, precios, descuentos, pagos y envíos, y le hace preguntas al cliente para juntar datos. Lo entrenás con tu página de Facebook, tus chats, tu sitio y tu catálogo o lista de precios, y elegís si le contesta a todos, solo a clientes nuevos o a los que llegan por anuncios. No hace falta programar.
 
-## Comparación por necesidad
+Para un negocio que recibe siempre las mismas preguntas puede ser todo lo que necesitás, y viene de la empresa dueña del canal, sin vínculo por QR de por medio.
 
-| Necesidad | Qué evaluar en WhatsApp Business | Alcance de Atende |
-| --- | --- | --- |
-| Organización del trabajo | Revisar el proceso actual y las funciones que usa tu equipo. | Bandeja compartida para revisar y continuar conversaciones. |
-| Respuesta a consultas | Medir qué parte sigue requiriendo intervención manual. | IA que responde con información configurada. |
-| Agenda, stock y pedidos | Identificar en qué sistema confirma hoy el negocio. | Automatizarlos requiere una integración acordada. |
+## En Argentina lo define tu cuenta
 
-La tabla compara criterios de elección. No implica que una función de WhatsApp Business esté incluida en todos sus planes, ni que ambas herramientas sean intercambiables.
+Las fuentes no coinciden, y por eso no conviene dar nada por hecho:
 
-## La prueba que conviene llevar a una demo
+| Fuente | Qué dice |
+| --- | --- |
+| [La Nación](https://www.lanacion.com.ar/tecnologia/whatsapp-business-como-funciona-el-agente-de-ia-que-ahora-te-respondera-siempre-y-que-promete-nid24022026/), 24 de febrero de 2026 | "disponible desde hoy en la Argentina y en otros 16 países de Latinoamérica" |
+| [Newsroom de Meta](https://about.fb.com/news/2026/06/meta-business-agent/), 3 de junio de 2026 | Expansión a empresas de todos los tamaños a nivel global, sin nombrar países |
+| [Página del producto](https://www.whatsappbusiness.com/es-la/products/business-app-ai-agent/) | "Disponible para empresas elegibles en mercados seleccionados" |
+| [Ayuda de WhatsApp](https://faq.whatsapp.com/1153795669452207) | Solo en algunos países para empresas seleccionadas, con lista de espera que no garantiza acceso |
 
-Elegí cinco consultas que se repitan y una excepción. Resolvelas con tu proceso actual y después con una configuración de Atende. Revisá correcciones, facilidad para continuar y claridad para el cliente. La prueba debe medir un resultado que importe a tu negocio, sin asumir que usar IA reduce todo el trabajo de atención.
+La forma práctica de saberlo es abrir **Herramientas** en tu app y buscar el agente. Cómo chequearlo, pausarlo y sacarlo está en nuestra nota sobre [el agente de IA de WhatsApp Business](/blog/agente-ia-whatsapp-business-meta).
 
-## Cuándo revisar tu proceso actual antes de cambiar
+Un dato más para no comprar humo: el [anuncio global](https://about.fb.com/news/2026/06/meta-business-agent/) dice que puede "book appointments", [Meta One](https://whatsappbusiness.com/es-la/products/business-app-meta-one/) dice "programa citas" y la [ayuda](https://faq.whatsapp.com/1474886260686868) explica cómo conectar un calendario de Google. La página del producto en español no lo nombra, y ninguna dice en qué países funciona. Si tu negocio vive de los turnos, mirá si te aparece **Reservar citas** y probalo con un turno real antes de contar con eso.
 
-Si el volumen es manejable, el equipo responde correctamente y no quedan pendientes por falta de contexto, quizá convenga mejorar las respuestas y responsabilidades antes de sumar otra herramienta. La automatización necesita mantenimiento y atención humana para las excepciones.
+## Lo que cuesta quedarte en Meta
 
-Para comparar costos, pedí que cada propuesta detalle unidad de uso, equipo, implementación y cargos adicionales que apliquen. No inferimos que Atende sea más barato: los importes y condiciones se consultan al contratar. La [guía de costos](/blog/cuanto-cuesta-automatizar-whatsapp) ayuda a preparar esa lista.
+- **App y agente básico.** [Meta dice](https://whatsappbusiness.com/es-la/products/business-app-meta-one/) que el agente es "gratuito para usar cada mes hasta una cantidad permitida". Esa cantidad no figura en lo que leímos.
+- **Más capacidad.** [Meta One](https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/) ofrece planes para empresas desde USD 14,99 por mes, con "more access to Meta Business Agent on WhatsApp", y avisa que planes y precios varían por región y cuenta.
+- **Por la API.** [Meta cobra](https://developers.facebook.com/docs/whatsapp/pricing) USD 2 por millón de tokens, y calcula entre 4 y 5 centavos de dólar por mensaje. Desde el 1 de octubre de 2026 además cobra los mensajes de servicio desde el 1.001 de cada mes, por número.
 
-## Qué confirmar antes de migrar
+Los planes de Atende se ven [en la app](/precios) antes de pagar. Para armar la cuenta completa, mirá [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
 
-Para evaluar Atende, revisá el flujo de vinculación por QR que ofrece el panel y cómo trabajará el equipo con la bandeja. No presupongas importación completa del historial previo ni compatibilidad con cualquier herramienta que use el número; confirmá el caso concreto en la demo.
+## Qué hace cada opción
 
-Guardá una lista de consultas pendientes y verificá cómo seguirá atendiéndolas el equipo. No des por concluida una migración solo porque el número se conectó: probá recepción, respuesta, intervención humana y cualquier dependencia externa que forme parte del alcance.
+| Lo que necesitás | App sola | App con agente de Meta | Atende |
+| --- | --- | --- | --- |
+| Contestar a mano | Sí | Sí | Sí, desde la bandeja |
+| Responder preguntas con IA | No | Sí, si tu cuenta tiene acceso | Sí, en los planes con IA |
+| Recomendar según catálogo | Mostrás el catálogo | Sí | Con lo que le cargues |
+| Reservar el turno en tu agenda | No | Con calendario de Google, si la opción te aparece. No lo confirmamos para Argentina | Conectado a tu agenda, a pedido |
+| Registrar un pedido en tu sistema | No | No aparece en lo que abrimos | Conectado a tu sistema, a pedido |
+| Varias personas | [Teléfono y hasta 4 dispositivos](https://faq.whatsapp.com/647349420360876) | [Hasta 10 con suscripción](https://faq.whatsapp.com/395911122612120/?cms_platform=android), si está disponible | Bandeja compartida, cada uno con su cuenta |
+| Conexión | App oficial | App oficial | Se conecta por QR. No es la API oficial de Meta |
 
-## Cómo evaluar Atende para tu negocio
+## Cuándo te alcanza con Meta
 
-Traé consultas anonimizadas y explicá qué datos necesita confirmar tu equipo. En una [demo](/demo) podés revisar la atención, la bandeja y las integraciones necesarias. Usá la misma lista de casos para las herramientas que evalúes y anotá el resultado observado, junto con lo que todavía requiere confirmación.
+Quedate en la app, con o sin agente, si:
 
-Esta comparación la publica Atende y tiene un interés comercial. Las afirmaciones sobre otros proveedores se limitan a sus fuentes indicadas; los escenarios de prueba son criterios propuestos por nosotros. Leé nuestros [criterios editoriales](/blog/editorial) para interpretar el alcance y las fechas de consulta.
+- Tus consultas son horarios, precios y ubicación, y cerrás vos a mano.
+- Atendés una o dos personas desde el celular.
+- Te importa estar sobre la app oficial, sin una conexión por QR de terceros.
+- Tenés acceso al agente, lo probaste y responde bien.
+
+En ese caso Atende no te suma lo suficiente. Y si el agente no te convence porque habla de más, revisá primero lo que le cargaste.
+
+## Cuando necesitás que la tarea quede hecha
+
+Una peluquería con tres sillones no necesita que le contesten mejor. Necesita que el turno quede en la agenda sin que nadie suelte la tijera, y que las dos recepcionistas vean lo mismo. Ejemplo ilustrativo, con la agenda conectada:
+
+> **Contacto:** Quiero un turno para color el sábado a la mañana
+>
+> **Asistente:** Tengo sábado 9:30 u 11:00. ¿Cuál te queda mejor?
+>
+> **Contacto:** 9:30
+>
+> **Asistente:** Listo, te reservé el sábado a las 9:30.
+
+Conectado a tu agenda, Atende reserva el turno mientras vos atendés, y tu equipo ve toda la conversación en la misma bandeja. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Mirá [cómo se arma la conexión con tu agenda](/integraciones) y [peluquerías y estética](/casos-de-uso/peluquerias-y-estetica).
+
+Para trabajar entre varios, [WhatsApp para varios usuarios](/blog/whatsapp-varios-usuarios) explica el flujo real. Si comparás con más herramientas, la [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) las agrupa por necesidad.
+
+## Qué tenés que aceptar con Atende
+
+Se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número. Frente a la app, ese es el punto más fuerte en contra.
+
+Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Es un número por espacio y todavía no tenemos reseñas públicas. Una vez vinculado le contesta a todos tus contactos, así que probalo desde otro número; usa créditos.
+
+Si tenés el agente de Meta prendido, apagalo antes de vincular: con los dos activos, un contacto puede recibir dos respuestas. Para decidir con tu caso concreto, [pedí una demo](/demo).

@@ -1,81 +1,220 @@
 ---
-title: 'Mensajes automáticos de WhatsApp para negocios: ejemplos'
-seoTitle: 'Mensajes automáticos de WhatsApp para negocios: ejemplos'
+title: 'Mensaje automático de WhatsApp Business: ejemplos para copiar y pegar'
+seoTitle: 'Mensajes automáticos de WhatsApp Business: ejemplos para copiar'
 description: >-
-  Ejemplos de mensajes de bienvenida, fuera de horario, solicitud y derivación
-  para WhatsApp. Aprendé a adaptarlos sin prometer reservas ni respuestas
-  inexistentes.
+  Textos listos para copiar: mensaje de ausencia, fuera de horario, vacaciones y
+  bienvenida en WhatsApp Business, cómo activarlos y hasta dónde llegan.
 summary: >-
-  Un mensaje automático útil identifica al negocio, responde o pide un dato
-  necesario y explica el siguiente paso. Indicá cuándo una solicitud queda
-  pendiente y cómo interviene una persona. Adaptá los ejemplos al horario, los
-  servicios y las condiciones reales de tu empresa.
+  Un mensaje automático de WhatsApp Business se configura en la pestaña
+  Herramientas de la app: el de ausencia sale cuando elegís, por ejemplo fuera
+  del horario comercial, y el de bienvenida sale en el primer contacto. Un buen
+  texto nombra al negocio, dice cuándo volvés y qué dato conviene dejar. Tiene
+  un límite: avisa, pero no hace nada. Conectado a tu agenda, un asistente
+  reserva el turno a esa misma hora; esa conexión se arma a pedido. Acá tenés
+  ejemplos para copiar por situación y por rubro.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: guias
 tags:
-  - WhatsApp
-  - automatización
+  - WhatsApp Business
+  - mensaje de ausencia
+  - mensajes automáticos
   - atención al cliente
 related:
   - como-automatizar-whatsapp-empresa
   - whatsapp-ia-atencion-humana
+  - atencion-comercial-whatsapp-24-7
+  - bot-de-whatsapp
 faq:
-  - q: ¿Puedo usar estos mensajes en cualquier rubro?
+  - q: ¿Cómo pongo un mensaje automático en WhatsApp Business?
     a: >-
-      Usalos como punto de partida y adaptá los datos pedidos, el horario y el
-      alcance a tu negocio. Cada mensaje debe describir un proceso que tu equipo
-      pueda cumplir.
+      En la pestaña Herramientas de la app tocá “Mensaje de ausencia”, activá
+      “Enviar mensaje de ausencia”, editá el texto, elegí el horario en
+      “Programar” y a quién le llega en “Destinatarios”, y guardá. La bienvenida
+      se configura igual, desde “Mensaje de bienvenida”.
+  - q: ¿Cómo hago que el mensaje salga solo fuera de horario?
+    a: >-
+      En “Programar” elegí “Fuera del horario comercial”. Esa opción aparece solo
+      si definiste el horario en tu perfil de empresa. Si no, usá “Horario
+      personalizado”. El teléfono necesita tener internet para que el mensaje
+      salga.
+  - q: ¿Por qué no sale el mensaje de bienvenida?
+    a: >-
+      Se manda en el primer contacto y cuando alguien escribe después de 14 días
+      sin actividad en ese chat, así que un cliente reciente no lo recibe. También
+      revisá “Destinatarios” y la conexión a internet. Si Meta Business Agent
+      está conectado, la bienvenida se desactiva.
   - q: ¿Un mensaje automático puede confirmar una reserva?
     a: >-
-      Solo corresponde afirmar una reserva cuando la disponibilidad y la
-      operación fueron confirmadas. En el flujo básico de Atende, el asistente
-      recibe la solicitud y una persona verifica la agenda.
-sources: []
+      No. Un mensaje fijo no sabe qué hay disponible, así que solo puede tomar la
+      solicitud. Para confirmar hace falta un asistente conectado a tu agenda o tu
+      sistema, y esa conexión se arma a pedido para tu negocio. Sin ella, el
+      asistente junta el pedido y tu equipo lo confirma.
+  - q: ¿Puedo usar el mensaje de ausencia de la app junto con Atende?
+    a: >-
+      Mejor no. Si dejás activos los mensajes automáticos de la app y además
+      conectás Atende, el cliente puede recibir los dos. Apagalos y escribí tu
+      horario en el contexto del asistente, para que lo informe cuando haga falta.
+sources:
+  - title: 'Ayuda de WhatsApp: cómo usar los mensajes de ausencia'
+    url: 'https://faq.whatsapp.com/430926954269401/?locale=es_ES'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: cómo usar los mensajes de bienvenida'
+    url: 'https://faq.whatsapp.com/smbi/account-and-profile/how-to-use-greeting-messages'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: cómo usar las respuestas rápidas'
+    url: 'https://faq.whatsapp.com/2740839775981177/?locale=es_ES'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: bienvenida y ausencia con Meta Business Agent'
+    url: 'https://faq.whatsapp.com/1060682242241308'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp: funciones de Business App'
+    url: 'https://whatsappbusiness.com/products/business-app-features/'
+    checkedAt: '2026-11-06'
 ---
-Un mensaje de bienvenida no necesita contar toda la historia de la empresa. Su función es ayudar al cliente a avanzar. Antes de copiar una plantilla, revisá si el negocio puede cumplir lo que promete: un horario de atención humana, una confirmación de stock o una respuesta “en minutos” necesitan respaldo operativo. Los textos de esta guía son ejemplos ilustrativos para adaptar; no son conversaciones de clientes.
+Un mensaje de ausencia avisa que cerraste. Conectado a tu agenda, un asistente reserva el turno a esa misma hora. Las dos cosas sirven, y esta guía empieza por la primera: textos listos para copiar en WhatsApp Business, por situación y por rubro. Al final está dónde se termina lo que puede hacer un mensaje fijo.
 
-## Bienvenida que pide un dato útil
+Todos los textos son ejemplos ilustrativos: cambiá lo que está entre corchetes y borrá lo que tu negocio no pueda cumplir.
 
-> Hola, somos [negocio]. ¿Consultás por un producto o por un pedido que ya hiciste? Si es por un producto, pasanos su referencia; si ya compraste, el número de pedido.
+## Cómo activar un mensaje automático en WhatsApp Business
 
-Esta variante sirve para un comercio con preventa y postventa. En un consultorio, reemplazá las opciones por solicitudes y consultas administrativas. Si el cliente ya explicó el motivo, continuá desde esa información en vez de repetir la pregunta.
+**[Mensaje de ausencia](https://faq.whatsapp.com/430926954269401/?locale=es_ES):** en la pestaña Herramientas, tocá “Mensaje de ausencia” y activá “Enviar mensaje de ausencia”. Editá el texto y en “Programar” elegí una de estas opciones:
 
-Una bienvenida debería nombrar al negocio y usar el tono que el equipo puede sostener. Evitá frases largas o una lista de diez opciones que obligue a buscar dónde encaja la consulta.
+- **Enviar siempre:** sale todo el tiempo. Sirve para vacaciones.
+- **Horario personalizado:** sale en el período que marques. Sirve para un feriado.
+- **Fuera del horario comercial:** sale cuando no atendés. Aparece solo si cargaste el horario en tu perfil de empresa.
 
-## Fuera de horario con expectativas claras
+En “Destinatarios” decidí si le llega a todos, solo a quienes no están en tus contactos, a todos menos algunos o solo a algunos. Después tocá “Guardar”.
 
-> Gracias por escribir a [negocio]. El equipo atiende [horario real]. Podemos ayudarte con información de [temas configurados]. Si tu consulta necesita una persona, el equipo la revisa durante su atención.
+**[Mensaje de bienvenida](https://faq.whatsapp.com/smbi/account-and-profile/how-to-use-greeting-messages):** en Herramientas, tocá “Mensaje de bienvenida”, activá “Enviar mensaje de bienvenida”, editá el texto y elegí destinatarios.
 
-No escribas “te respondemos enseguida” si no hay nadie disponible. El horario comercial, el horario de soporte y la posibilidad de responder información con el asistente son cosas distintas. Actualizá el texto cuando cambie la atención por feriados o cierres especiales.
+Tres cosas que explican casi todos los “no me funciona”:
 
-## Solicitud de turno pendiente
+- Los dos salen solo si el teléfono tiene internet.
+- La bienvenida se manda en el primer contacto o cuando alguien vuelve a escribir después de 14 días sin actividad en ese chat. Un cliente de la semana pasada no la recibe.
+- Si Meta Business Agent está conectado, la bienvenida y la ausencia [se desactivan solas](https://faq.whatsapp.com/1060682242241308).
 
-> ¿Qué servicio necesitás y qué día y franja horaria preferís? Paso tu solicitud a recepción para revisar la agenda. El turno todavía no está reservado.
+## Mensajes de ausencia para copiar
 
-El mensaje deja claro qué datos faltan y quién confirma. Si en el futuro habilitás una integración de agenda, la confirmación debe depender de la respuesta del sistema, no de que el cliente haya elegido un horario.
+**Fuera de horario**
 
-## Consulta comercial que necesita verificación
+> Hola, gracias por escribir a [negocio]. Atendemos de lunes a viernes de 9 a 18. Dejanos tu consulta por acá y te contestamos cuando abramos.
 
-> ¿Me compartís la referencia, variante y cantidad que buscás? El equipo revisa stock y precio vigente antes de confirmar el pedido.
+**Corte del mediodía**
 
-En una concesionaria, los datos pueden ser referencia del aviso y tipo de operación. En una ferretería, medida y unidad son esenciales. Podés encontrar variantes en las [guías por rubro](/blog).
+> Estamos cerrados hasta las 16. Dejanos tu consulta y la vemos cuando volvamos.
 
-## Derivación cuando falta información
+**Fin de semana**
 
-> No tengo información confirmada para resolver esa consulta. Te paso con el equipo para que la revise con el contexto de esta conversación.
+> Hola, hoy no atendemos. El lunes a las 9 retomamos los mensajes por orden de llegada. Si es por un pedido, mandanos el número así lo tenemos a mano.
 
-La frase debe corresponder a un proceso que efectivamente permita continuar desde la bandeja. Si nadie atiende en ese momento, combiná la derivación con el horario real. No repitas indefinidamente una respuesta que el cliente ya dijo que no le sirve.
+**Feriado**
 
-## Cómo revisar tus mensajes
+> Hoy es feriado y estamos cerrados. Mañana abrimos a las [hora]. Dejá tu consulta y te respondemos ese día.
 
-| Pregunta de revisión | Qué buscar |
+**Vacaciones**
+
+> Estamos de vacaciones hasta el [fecha]. Los pedidos que entren por acá se preparan a partir de ese día. Si es urgente, escribí a [contacto].
+
+Al escribir el tuyo, evitá “te respondemos enseguida” si no hay nadie: el mensaje sale igual a las tres de la mañana. Y acordate de actualizarlo. Un aviso de vacaciones que sigue activo en marzo es peor que no tener ninguno.
+
+## Mensajes por rubro, cuando el cierre importa
+
+Un aviso genérico deja al cliente esperando. Si le pedís el dato justo, a la mañana arrancás con el trabajo medio hecho.
+
+**Consultorio o clínica**
+
+> Hola, este WhatsApp es para turnos y trámites del consultorio. Atendemos de lunes a viernes de 8 a 17. Decinos qué necesitás y con qué obra social te atendés. Si es una urgencia, no esperes respuesta por acá: llamá a [servicio de emergencias] o andá a la guardia.
+
+**Peluquería o estética**
+
+> Hola, ya cerramos por hoy. Si querés turno, dejanos el servicio y qué día te queda bien, y mañana desde las [hora] te confirmamos.
+
+**Restaurante**
+
+> Hola, ya estamos cerrados. Para reservar dejanos día, hora y cuántos son. Te confirmamos mañana desde las [hora].
+
+**Comercio o distribuidora**
+
+> Hola, los pedidos que entran después de las [hora] se preparan el día siguiente. Pasanos productos y cantidades, y si es retiro o envío.
+
+**Inmobiliaria**
+
+> Hola, gracias por escribir. Pasanos el código del aviso y si buscás alquilar o comprar. Un asesor te contesta mañana desde las [hora].
+
+**Taller o servicio técnico**
+
+> Hola, ya cerramos. Contanos qué equipo es y qué le pasa. Mañana desde las [hora] te decimos cuándo podés traerlo.
+
+## Mensajes de bienvenida para copiar
+
+**Comercio con ventas y postventa**
+
+> Hola, somos [negocio]. ¿Consultás por un producto o por un pedido que ya hiciste? Si es por un producto, pasanos cuál; si ya compraste, el número de pedido.
+
+**Negocio con turnos**
+
+> Hola, somos [negocio]. Para pedir turno decinos qué servicio buscás y qué día te queda bien. Si querés cambiar o cancelar uno, avisanos tu nombre y el día.
+
+Una bienvenida debería nombrar al negocio y pedir un solo dato. Evitá el menú de diez opciones: nadie lo lee, y con el primer mensaje el cliente ya te está contando qué quiere.
+
+## Respuestas rápidas para lo que repetís todo el día
+
+Las [respuestas rápidas](https://faq.whatsapp.com/2740839775981177/?locale=es_ES) no salen solas: las elegís vos escribiendo “/” en el chat. Se crean en Herramientas, y podés guardar hasta 50. Estas tres ahorran más tiempo:
+
+**/seña**
+
+> Para reservar pedimos una seña de [monto] por transferencia al alias [alias]. Cuando la hagas, mandanos el comprobante por acá.
+
+**/envios**
+
+> Hacemos envíos a [zonas] los [días]. Fuera de esa zona podés retirar en [dirección].
+
+**/pagos**
+
+> Aceptamos [medios de pago]. Con tarjeta, [condiciones de cuotas].
+
+## Hasta dónde llega un mensaje automático
+
+Un mensaje fijo no sabe qué pidió el cliente ni qué tenés disponible. Avisa y pide datos, y a la mañana una persona hace todo lo demás. Esta es la diferencia a las 23:40:
+
+| El cliente escribe | Mensaje de ausencia | Asistente con IA | Asistente conectado a tu sistema |
+| --- | --- | --- | --- |
+| “¿Tenés turno mañana?” | Avisa que cerraste. | Junta servicio y franja, y deja el pedido para tu equipo. | Mira la agenda, ofrece horarios y reserva. |
+| “¿Hay stock del talle 42?” | Avisa que cerraste. | Contesta con lo que tenga cargado y pasa la consulta. | Consulta stock y registra el pedido. |
+| “¿A qué hora abren?” | Lo dice, si está en el texto. | Lo dice. | Lo dice. |
+
+La última columna se ve así:
+
+> **Ejemplo ilustrativo, con la agenda conectada**
+>
+> **Cliente:** ¿Tenés turno mañana a la tarde para corte?
+>
+> **Asistente:** Tengo 16:00 o 17:30. ¿Cuál te queda mejor?
+>
+> **Cliente:** A las 16
+>
+> **Asistente:** Listo, te reservé mañana a las 16:00.
+
+Conectado a tu agenda, Atende reserva el turno; esa conexión se arma a pedido para tu negocio. Sin conexión, el asistente junta el pedido y tu equipo lo confirma. El asistente responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Si estás pensando en este paso, mirá la [guía para automatizar WhatsApp Business](/blog/como-automatizar-whatsapp-empresa) o qué hace Atende en [atención fuera de horario](/blog/atencion-comercial-whatsapp-24-7).
+
+## Si conectás Atende, cambiá dos cosas
+
+**Apagá los mensajes automáticos de la app.** Si los dejás activos, el cliente puede recibir el aviso de ausencia y además la respuesta del asistente.
+
+**Pasá tu horario al contexto del asistente.** El asistente no tiene un horario propio: contesta cuando le escriben. Lo que tiene que saber lo escribís en “Contexto del asistente”, por ejemplo:
+
+> El equipo atiende de lunes a viernes de 9 a 18. Fuera de ese horario, contestá lo que esté en esta configuración y avisá que una persona sigue el próximo día hábil. No prometas un tiempo de respuesta.
+
+Los feriados y las vacaciones van en ese mismo texto, y hay que sacarlos cuando pasan. Si querés que nadie conteste por un tiempo, el interruptor “Modo CRM” apaga al asistente en todo el espacio. El detalle de cómo se pasa un chat a una persona está en [cómo pausar el bot y tomar el chat](/blog/whatsapp-ia-atencion-humana).
+
+## Antes de publicar tu texto
+
+| Pregunta | Qué buscar |
 | --- | --- |
-| ¿La respuesta es verificable? | Cada horario o condición coincide con el negocio |
-| ¿Pide lo mínimo necesario? | Cada dato ayuda al próximo paso |
-| ¿Promete una acción? | La reserva, pedido o derivación realmente ocurre |
-| ¿Permite continuar? | Hay una persona responsable cuando el texto no alcanza |
+| ¿Puedo cumplirlo? | Cada horario y cada plazo coincide con lo que pasa de verdad. |
+| ¿Pide lo mínimo? | Cada dato ayuda al próximo paso. |
+| ¿Promete una acción? | Si dice “reservado”, algo tiene que haberlo reservado. |
+| ¿Tiene fecha de vencimiento? | Vacaciones y feriados: anotá cuándo sacarlo. |
 
-Probá cada texto con preguntas incompletas y con clientes que cambian de intención. Revisá también el mensaje que aparece cuando falta un dato. En Atende podés configurar la información y supervisar las conversaciones, mientras tu equipo continúa las excepciones. Los envíos proactivos, recordatorios y acciones en otros sistemas se evalúan por separado.
-
-Guardá una versión vigente de los textos y asigná quién los actualiza. Para organizar todo el flujo, seguí la [guía de automatización](/blog/como-automatizar-whatsapp-empresa) o revisá cómo [pasar de IA a atención humana](/blog/whatsapp-ia-atencion-humana).
+Guardá la versión vigente de tus textos y asigná a una persona para actualizarlos. Probalos desde otro teléfono, con una consulta completa y con una a medias.

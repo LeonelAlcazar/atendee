@@ -1,162 +1,158 @@
 ---
-title: 'Alternativas a Botmaker: WhatsApp, agentes y procesos'
-seoTitle: 'Alternativas a Botmaker para WhatsApp: cómo elegir'
+title: 'Alternativas a Botmaker en Argentina: armar tus agentes o que te armen la conexión'
+seoTitle: 'Alternativas a Botmaker en Argentina: cuándo cambiar'
 description: >-
-  Compará Atende, Zenvia y respond.io como alternativas a Botmaker. Revisá
-  procesos, conexión de WhatsApp, integraciones y migración con una prueba concreta.
+  Botmaker es una plataforma para crear agentes de IA. Cuándo quedarte, cuándo
+  mirar otra opción y qué pasa si nadie en tu negocio va a armar el agente.
 summary: >-
-  Atende, Zenvia y respond.io son opciones para evaluar frente a Botmaker según
-  el trabajo que necesitás cubrir. Atende se concentra en atención por WhatsApp
-  con información configurada y participación humana. Zenvia y respond.io
-  presentan propuestas multicanal con automatización. Si ya tenés procesos que
-  ejecutan acciones en otros sistemas, compará cada paso, permiso y confirmación;
-  una bandeja de chat no reemplaza por sí sola esas operaciones.
+  Quedate en Botmaker si tu equipo quiere crear y mantener sus propios agentes,
+  si necesitás la API oficial de WhatsApp o si atendés por varios canales. Mirá
+  alternativas si nadie en tu negocio va a armar esos agentes y lo que buscás es
+  que el pedido quede registrado. Atende encaja ahí: conectado a tu sistema,
+  registra el pedido en la conversación, y esa conexión se arma a pedido para tu
+  negocio. Si necesitás API oficial, multicanal o un armador propio, Atende no es
+  la opción.
 publishedAt: '2026-10-28'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: alternativas
 tags:
-  - WhatsApp
   - Botmaker
   - alternativas
-  - automatización
+  - agentes de IA
+  - precios
 related:
-  - mejor-alternativa-a-zenvia
-  - mejor-alternativa-a-respond-io
-  - alternativas-a-aivo
-  - como-automatizar-whatsapp-empresa
+  - alternativas-a-cliengo
+  - mejor-alternativa-a-wati
+  - chatbots-whatsapp-argentina-comparativa
+  - cuanto-cuesta-automatizar-whatsapp
 faq:
-  - q: ¿Qué alternativas a Botmaker conviene comparar?
+  - q: ¿Botmaker publica sus precios?
     a: >-
-      Podés evaluar Atende para primera atención de WhatsApp con intervención
-      humana, Zenvia para un recorrido que reúna campañas, ventas y atención, y
-      respond.io para trabajo comercial entre canales. La elección exige
-      verificar las funciones y conexiones de cada propuesta con tus casos.
-  - q: ¿Atende reemplaza todos los agentes y automatizaciones de Botmaker?
+      Sí. Según su página al 6 de noviembre de 2026 tiene planes en dólares desde
+      US$ 149 por mes, con autogestión en todos, más US$ 99 por única vez al abrir
+      la cuenta de WhatsApp Business Platform. Enterprise se cotiza aparte.
+  - q: ¿Botmaker y Atende hacen lo mismo?
     a: >-
-      No debe asumirse. Atende responde con información configurada y permite
-      continuar conversaciones desde una bandeja compartida. Las acciones sobre
-      stock, pedidos, agendas o un CRM externo requieren un alcance específico.
-      El flujo de conexión de Atende usa QR y no es una oferta de API oficial.
-  - q: ¿Se pueden transferir los flujos y el historial de Botmaker a otra herramienta?
+      Las dos apuntan a terminar tareas en la conversación. Botmaker te da una
+      plataforma para crear agentes en varios canales. Atende funciona solo en
+      WhatsApp y la conexión con tu sistema la armamos nosotros, a pedido.
+  - q: ¿Atende usa la API oficial de WhatsApp como Botmaker?
     a: >-
-      Hay que confirmar cada elemento con los proveedores. Poder exportar datos
-      no garantiza que la herramienta de destino importe conversaciones,
-      interprete estados o ejecute las mismas acciones. Probá la continuidad de
-      una consulta abierta y verificá las automatizaciones por separado.
-  - q: ¿Cómo comparar el precio de Botmaker y sus alternativas?
+      No. Se conecta por QR. No es la API oficial de Meta. Si tu empresa exige esa
+      API, elegí Botmaker u otro proveedor que la ofrezca.
+  - q: ¿Puedo pasar mis agentes de Botmaker a Atende?
     a: >-
-      Pedí presupuestos para el mismo alcance, volumen, equipo y período.
-      Separá software, uso, cargos de canal cuando correspondan, implementación,
-      integraciones y mantenimiento. No hay una opción más barata para todos los
-      casos si las propuestas resuelven trabajos diferentes.
+      No hay importación de agentes ni de flujos. Lo que sirve es tu inventario:
+      qué dispara cada proceso, qué sistema consulta y qué cambia. Con eso se define
+      la conexión que hay que armar, y lo demás se reconfigura.
 sources:
+  - title: 'Botmaker: inicio'
+    url: 'https://botmaker.com/es/'
+    checkedAt: '2026-11-06'
+  - title: 'Botmaker: precios'
+    url: 'https://botmaker.com/es/precios/'
+    checkedAt: '2026-11-06'
   - title: 'Botmaker: funcionamiento de la plataforma 3.0'
     url: 'https://help.botmaker.com/es/help/6743059537745850249'
-    checkedAt: '2026-10-28'
+    checkedAt: '2026-11-06'
   - title: 'Botmaker: canal de WhatsApp'
     url: 'https://botmaker.com/es/canales/whatsapp/'
-    checkedAt: '2026-10-28'
-  - title: 'Zenvia: Customer Cloud'
-    url: 'https://zenvia.com/es-mx/customer-cloud/'
-    checkedAt: '2026-10-28'
-  - title: 'Zenvia: solución de WhatsApp y API oficial'
-    url: 'https://zenvia.com/es-mx/whatsapp/'
-    checkedAt: '2026-10-28'
-  - title: 'respond.io: WhatsApp Business API'
-    url: 'https://respond.io/whatsapp-business-api'
-    checkedAt: '2026-10-28'
+    checkedAt: '2026-11-06'
+  - title: 'Forbes Argentina: planes de Botmaker y oficinas'
+    url: 'https://www.forbesargentina.com/negocios/alejandro-zuzenberg-ceo-botmaker-anuncio-nuevas-soluciones-ia-compartio-planes-crecimiento-2025-n63862/amp'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: precios de WhatsApp Business Platform'
+    url: 'https://developers.facebook.com/docs/whatsapp/pricing'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: migrar un número a la Plataforma'
+    url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account'
+    checkedAt: '2026-11-06'
 ---
-Si buscás alternativas a Botmaker, empezá por el resultado que hoy necesita tu operación. Recibir una consulta, asignarla a una persona y modificar un pedido son tres trabajos distintos. Atende, Zenvia y respond.io pueden entrar en la comparación, pero la prueba debe mostrar cuál cubre tus tareas y qué tendrías que reconstruir.
+Un pedido de diez cajas entra por WhatsApp a las once de la noche. Para que quede registrado sin que nadie lo cargue a la mañana, alguien tuvo que enseñarle a la herramienta a mirar el stock y a escribir en tu sistema. Ese "alguien" separa a Botmaker de Atende: las dos apuntan a terminar la tarea en la conversación, y cambia quién arma eso.
 
-Esta guía la publica Atende y tiene un interés comercial. Las características de otros proveedores se apoyan en sus fuentes oficiales, consultadas el 28 de octubre de 2026. Los criterios de elección y los escenarios son propuestas editoriales nuestras; no representan un ranking independiente ni pruebas de rendimiento entre plataformas.
+Atende publica esta comparativa, así que no somos neutrales. Los datos de Botmaker salen de sus propias páginas, abiertas el 6 de noviembre de 2026, y no corrimos una prueba lado a lado. Cómo trabajamos está en los [criterios editoriales](/blog/editorial).
 
-## Primero identificá qué parte de Botmaker querés reemplazar
+## Qué vende Botmaker hoy
 
-La documentación de Botmaker 3.0 describe agentes coordinados, herramientas para trabajar con sistemas externos, automatizaciones por tiempo o evento y validación humana en determinados pasos. Su propuesta puede abarcar más que contestar preguntas. [Funcionamiento de Botmaker 3.0](https://help.botmaker.com/es/help/6743059537745850249).
+Botmaker se presenta como ["La plataforma para crear Agentes de IA"](https://botmaker.com/es/). [Forbes Argentina](https://www.forbesargentina.com/negocios/alejandro-zuzenberg-ceo-botmaker-anuncio-nuevas-soluciones-ia-compartio-planes-crecimiento-2025-n63862/amp) la describe como una plataforma argentina fundada en 2016, con oficinas en Argentina, Brasil, México, Colombia y Estados Unidos.
 
-Inventariá lo que usa tu proyecto, aunque lo haya configurado un proveedor externo. Para cada recorrido, anotá:
+Su [documentación de la versión 3.0](https://help.botmaker.com/es/help/6743059537745850249) explica el modelo. Cada agente persigue un objetivo de negocio y usa "capacidades": secuencias de lógica, bases de conocimiento, integraciones MCP, acciones con código y aplicaciones externas. Un orquestador por canal reparte los mensajes y un operador humano puede validar un paso. Lo configura quien usa la plataforma, en lenguaje natural y con bloques de lógica, con un asistente de IA que ayuda a crear los agentes.
 
-- Qué mensaje o evento lo inicia.
-- Qué datos necesita y dónde los obtiene.
-- Qué cambia en otro sistema, si ejecuta una acción.
-- Quién aprueba una excepción y quién recibe una conversación pendiente.
-- Qué registro demuestra que el trabajo terminó.
+Acá no hay una herramienta que responde contra otra que actúa. Botmaker habla de agentes que ["conversan, gestionan y entregan resultados"](https://botmaker.com/es/), con integraciones a CRM, ERP, pagos y ecommerce.
 
-Por ejemplo, “atiende pedidos” puede significar reunir una lista o consultar stock, aplicar condiciones y registrar la venta. Una alternativa que cubra el primer caso puede dejar pendiente buena parte del segundo. Si todavía no usás Botmaker, este mismo inventario sirve para definir qué querés contratar.
+## Quién arma, quién mantiene y qué te queda a vos
 
-## Tres alternativas y la propuesta de referencia
-
-La columna de alcance resume información publicada por cada proveedor. La pregunta de evaluación es nuestra y ayuda a comprobar si esa oferta sirve para tu operación.
-
-| Propuesta | Alcance publicado | Qué pedir que demuestre |
+| Criterio | Botmaker, según su sitio | Atende |
 | --- | --- | --- |
-| **Botmaker, referencia** | Agentes que coordinan pasos, usan herramientas y admiten validación humana. [Documentación](https://help.botmaker.com/es/help/6743059537745850249). | Cómo queda cada paso cuando una herramienta falla o una persona debe aprobarlo. |
-| **Zenvia** | Customer Cloud reúne campañas, ventas y atención con automatización y varios canales. [Producto](https://zenvia.com/es-mx/customer-cloud/). | El recorrido entre las áreas y canales que realmente vas a contratar. |
-| **respond.io** | Presenta bandeja omnicanal, agentes de IA, distribución de contactos e integraciones. [Producto](https://respond.io/whatsapp-business-api). | Cómo pasa una consulta entre canales y responsables sin perder el contexto necesario. |
-| **Atende** | Atención de WhatsApp con información configurada, historial compartido y respuesta humana. [Servicios](/servicios). | Qué información puede resolver y qué debe verificar el equipo antes de actuar. |
+| Qué comprás | Una plataforma para crear y coordinar agentes | Un asistente en tu número, más la conexión con tu sistema armada a pedido |
+| Quién arma el agente | Vos o tu equipo, con prompts y bloques de lógica. Hay una opción guiada con Account Manager | Vos le contás qué hace tu negocio. La conexión la armamos nosotros |
+| Qué puede terminar en el chat | Lo que conectes: CRM, calendario, base de datos, pagos | Conectado a tu sistema: turnos, reservas, pedidos, cotizaciones, interesados |
+| Conexión con WhatsApp | [API de WhatsApp Business](https://botmaker.com/es/canales/whatsapp/). Se presenta como BSP oficial de Meta | Se conecta por QR. No es la API oficial de Meta |
+| Canales | WhatsApp, Instagram, Messenger, Mercado Libre, TikTok, webchat, Slack, Teams, email y voz, entre otros | Solo WhatsApp, un número por espacio |
+| Precio | Planes públicos en dólares | Sin importes en este sitio: los planes se ven en la app antes de pagar. La conexión a pedido no tiene precio publicado |
 
-La tabla no implica equivalencia de planes, permisos o integraciones. Pedí que la demostración corresponda al alcance presupuestado.
+## Botmaker precios en Argentina
 
-### Atende para primera atención y revisión humana en WhatsApp
+Según [su página al 6 de noviembre de 2026](https://botmaker.com/es/precios/), los planes se publican en dólares y todos incluyen la opción de autogestión:
 
-Puede entrar en tu lista si querés responder consultas repetidas y preparar solicitudes para que una persona continúe desde la bandeja compartida. Por ejemplo, reunir producto, cantidad y localidad antes de que ventas cotice.
+| Plan | Por mes | Conversaciones | "Agentes gratuitos" | Excedente |
+| --- | --- | --- | --- | --- |
+| Standard | US$ 149 | 3.000 | 10 | US$ 0,07 |
+| Scale | US$ 249 | 5.000 | 20 | US$ 0,06 |
+| Pro | US$ 499 | 10.000 | 50 | US$ 0,05 |
+| Enterprise | Bajo consulta | Sin límite | A medida | No figura |
 
-Consultar stock vivo, registrar pedidos, reservar turnos u operar un CRM externo requiere evaluar una integración. Atende también ofrece un Plan CRM para trabajo manual, sin respuestas de IA ni automatizaciones: no lo confundas con los planes que incluyen el asistente. Revisá los [planes y su alcance](/precios).
+Tres detalles para hacer la cuenta completa:
 
-### Zenvia para un recorrido que incluye campañas y atención
+- Abrir la cuenta de WhatsApp Business Platform cuesta US$ 99 por única vez.
+- Las notificaciones se cobran a "costo transparente de WhatsApp + 20% de servicio".
+- Un simulador en la misma página muestra USD 150 para Standard y USD 250 para un plan "Completo", un nombre que las tarjetas no usan, mientras las tarjetas dicen 149 y 249. Pedí el número y el plan por escrito.
 
-Su oferta combina etapas de captación, venta y atención al cliente. Si hoy esas áreas usan Botmaker, conviene revisar cómo quedarían dentro de Customer Cloud. Confirmá canales, módulos, responsables y conexiones incluidas en la propuesta. [Fuente de Zenvia](https://zenvia.com/es-mx/customer-cloud/).
+Si leíste que Botmaker solo se vende con demo, que tiene mínimos altos o que cobra en pesos, esa página muestra otra cosa: planes públicos, en dólares y con autogestión.
 
-Llevá un contacto que responde una campaña y después pregunta por una compra anterior. La prueba debe mostrar quién reconoce el cambio de motivo y dónde obtiene la información. Nuestra [comparativa de Zenvia](/blog/mejor-alternativa-a-zenvia) desarrolla los criterios de contratación.
+Sumá una pregunta para ventas. [Meta empezó a cobrar](https://developers.facebook.com/docs/whatsapp/pricing) el 1 de octubre de 2026 los mensajes de servicio a partir del 1.001 de cada mes, por número. Preguntá cómo llega ese cargo a tu factura. La cuenta completa está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). Los planes de Atende se ven en la app antes de pagar; [acá te contamos cómo](/precios).
 
-### respond.io para conversaciones que cruzan canales y equipos
+## Cuándo Botmaker es la mejor elección
 
-La propuesta pública incluye una bandeja para distintos canales, automatización e integraciones con otras aplicaciones. Puede ser una opción a evaluar si el problema está en continuar la conversación entre responsables. [Fuente de respond.io](https://respond.io/whatsapp-business-api).
+Si alguna de estas te describe, quedate o andá a Botmaker. Atende no es la opción.
 
-Probá un cliente que consulta por una red social y luego escribe por WhatsApp. Verificá qué información puede relacionarse, qué debe confirmar una persona y quién atiende cuando cambia el motivo. La [comparativa de respond.io](/blog/mejor-alternativa-a-respond-io) amplía ese escenario.
+- Tenés a alguien, interno o de un partner, que va a crear, probar y ajustar agentes todos los meses.
+- Tu empresa exige la API oficial de WhatsApp o un proveedor reconocido por Meta.
+- Vendés por Mercado Libre, o atendés Instagram, email y teléfono desde el mismo sistema.
+- Querés varios agentes coordinados, con lógica propia y validación humana paso por paso.
 
-## Revisá la conexión de WhatsApp antes de diseñar la migración
+## Cuando nadie va a sentarse a armar flujos
 
-Botmaker documenta conexión con WhatsApp Business API. [Canal de WhatsApp](https://botmaker.com/es/canales/whatsapp/). Zenvia presenta una oferta con API oficial, y respond.io ofrece WhatsApp Business API. Verificá el procedimiento aplicable a tu número con sus [fuentes de Zenvia](https://zenvia.com/es-mx/whatsapp/) y [respond.io](https://respond.io/whatsapp-business-api).
+Una plataforma rinde si hay quien la maneje. En muchas PyMEs no lo hay: la dueña atiende, el encargado carga pedidos y nadie tiene la tarde libre para escribir capacidades y probar variantes. La propuesta de Atende va por ese lado: no te damos un armador de flujos, armamos la conexión con tu sistema.
 
-El flujo de Atende descrito en esta guía vincula el número mediante QR desde dispositivos vinculados. No es una oferta de API oficial de Meta. Si tu contratación exige esa API, Atende no satisface ese requisito con el alcance aquí explicado.
+Ejemplo ilustrativo de una distribuidora con su sistema de pedidos conectado:
 
-Conservar un número, acceder al historial y conservar automatizaciones son decisiones separadas. Pedí por escrito cómo queda cada una. No desconectes la operación actual basándote únicamente en que otra plataforma permite usar WhatsApp.
+> **Contacto:** Necesito 10 cajas de guantes talle M para el jueves
+>
+> **Asistente:** Hay stock. ¿Retirás o te lo enviamos?
+>
+> **Contacto:** Envío, a la sucursal de Alta Córdoba
+>
+> **Asistente:** Listo, registré el pedido de 10 cajas para el jueves con envío a Alta Córdoba.
 
-## Probá un cambio de pedido, incluida la excepción
+Ese final existe solo con la conexión, y esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Tu equipo ve toda la conversación y puede seguirla desde la bandeja. Mirá [qué necesita cada acción](/integraciones), y los rubros en [casos de uso](/casos-de-uso).
 
-Este escenario es ilustrativo y sirve para comparar propuestas; no afirma que todas las herramientas lo ejecuten sin configuración adicional.
+Lo que hoy podemos mostrar funcionando es una demo para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente.
 
-> Cliente: Quiero cambiar la dirección del pedido 482. Todavía no lo recibí.
+Si buscás algo intermedio, [Cliengo](/blog/alternativas-a-cliengo) vende un agente con bandeja y API, y [Wati](/blog/mejor-alternativa-a-wati) cobra los agentes por créditos. La [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) ordena el resto.
 
-Una respuesta como “listo, ya la cambié” solo sirve si la operación ocurrió. Diseñá la prueba alrededor de estas verificaciones:
+## Lo que resignás si elegís Atende
 
-| Paso | Evidencia que necesitás ver |
-| --- | --- |
-| Identificar la solicitud | El equipo o el flujo verifica el pedido y la autorización para modificarlo. |
-| Revisar su estado | Consulta el sistema responsable; no deduce si salió por el tiempo transcurrido. |
-| Resolver la excepción | Si ya está despachado, explica el pendiente y lo pasa a quien puede intervenir. |
-| Ejecutar un cambio permitido | La dirección se actualiza en el sistema acordado y queda una confirmación verificable. |
-| Recibir otra vez el mensaje | Evita repetir una acción que ya se realizó o muestra qué debe revisar una persona. |
+- Se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número.
+- Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan.
+- Un solo canal y un número por espacio.
+- No hay catálogo de integraciones para activar por tu cuenta: cada conexión se hace a pedido.
+- Todavía no tenemos reseñas públicas en directorios de software.
 
-En una propuesta limitada a primera atención, el resultado esperado es reunir la referencia y derivar; la persona realiza las verificaciones. En una propuesta con acciones integradas, también debe probarse la modificación real y su comportamiento ante fallas. Compará el trabajo que efectivamente queda resuelto.
+## Si ya tenés agentes corriendo en Botmaker
 
-Si la dificultad está en encontrar una respuesta correcta en tus documentos, antes de ejecutar operaciones, revisá también los criterios de conocimiento y atención en [alternativas a Aivo](/blog/alternativas-a-aivo).
+Antes de tocar nada, escribí por cada agente qué lo dispara, qué sistema consulta, qué cambia y quién aprueba las excepciones. Atende no importa agentes ni flujos de otra plataforma, así que esa lista es la base de la conexión que haya que armar.
 
-## Prepará la transición de conversaciones y automatizaciones
+Después resolvé el número. Atende se vincula escaneando un QR desde el teléfono, así que el número tiene que estar activo en la app. [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que un número registrado en la Cloud API no se puede usar en la app hasta darlo de baja de esa API. Preguntale a Botmaker cómo hacerlo y qué pasa con el historial antes de mover nada. Ese paso no lo probamos con cada proveedor.
 
-Separá lo que se puede consultar, lo que se puede exportar y lo que el destino puede importar. Una copia de conversaciones no demuestra que la nueva herramienta entienda los estados o acciones del flujo anterior.
-
-Para cada proceso que se conserve, registrá el disparador, los datos necesarios, la acción, sus permisos y la persona que valida el resultado. Acordá cuáles se reconstruyen, cuáles pasan a trabajo manual y cuáles dejan de usarse porque ya no son necesarios.
-
-Incluí una conversación abierta en la prueba: un comprador pidió un cambio, pero todavía no se aprobó. El equipo debe encontrar el motivo y el pendiente después de la transición. Si además había un aviso programado, verificá dónde se controla para evitar envíos duplicados o contradictorios.
-
-Antes del cambio operativo, acordá un período de prueba, quién atiende incidencias y cómo se continúa si una función indispensable no queda disponible. No hay una transferencia universal de bots, historial e integraciones por el solo hecho de cambiar de proveedor.
-
-## Compará el presupuesto con el trabajo que queda cubierto
-
-Pedí el mismo alcance, período, equipo y volumen a cada opción. Separá suscripción, unidades de uso, cargos de canal cuando apliquen, implementación, conexiones y mantenimiento. Agregá el trabajo interno de actualizar información y revisar excepciones.
-
-Si una propuesta reduce la automatización, calculá qué tareas vuelve a hacer el equipo. Si agrega capacidades, identificá quién las va a configurar y mantener. Esa revisión ayuda a comparar costos sin declarar que una herramienta siempre es más barata.
-
-Conservá el inventario de procesos y el resultado de las pruebas junto a cada presupuesto. Para evaluar Atende, llevá a una [demo](/demo) una consulta habitual y una que hoy ejecute acciones en otro sistema. Así podés confirmar el alcance de [atención y ventas por WhatsApp](/servicios/ventas-whatsapp) antes de decidir.
+Una vez vinculado, el asistente le contesta a todos tus contactos: no hay modo de prueba. Probalo desde otro número; usa créditos. Si querés ver esto con tu caso, llevá a la [demo](/demo) un proceso que hoy corra en Botmaker y otro que hoy nadie resuelva.

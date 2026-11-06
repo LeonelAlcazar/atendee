@@ -2,17 +2,18 @@
 title: 'Bot de WhatsApp: qué es, cómo funciona y cuál necesita tu negocio'
 seoTitle: 'Bot de WhatsApp: qué es, cómo funciona y cómo elegir'
 description: >-
-  Entendé qué hace un bot de WhatsApp, las diferencias entre mensajes básicos,
-  flujos e IA, y qué revisar sobre Business, API, conexión y atención humana.
+  Qué es un bot de WhatsApp, qué cambia entre uno que responde y uno que reserva
+  el turno o registra el pedido, y qué mirar entre Business, API y QR.
 summary: >-
-  Un bot de WhatsApp es un programa que responde o guía conversaciones de forma
-  automática. Puede seguir reglas, ofrecer opciones o usar IA para interpretar
-  preguntas. Para elegirlo, definí qué debe resolver, de dónde obtiene la
-  información y cuándo interviene una persona. WhatsApp Business, la API y la
-  conexión por QR describen aspectos distintos: tener un bot no demuestra una
-  integración con stock, agenda o CRM ni una conexión por la API oficial.
+  Un bot de WhatsApp es un programa que atiende mensajes automáticamente:
+  responde, pide datos y deriva a una persona. Lo que más importa es si termina
+  la tarea. Uno que responde te explica cómo pedir turno; uno conectado a la
+  agenda del negocio lo reserva en la misma charla, y eso exige una conexión real
+  con ese sistema. Para elegir, definí qué tarea tiene que terminar, de dónde
+  sale cada dato y cuándo entra tu equipo. WhatsApp Business, la API y el QR son
+  cosas distintas: tener un bot no prueba una integración ni una conexión oficial.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-04'
+updatedAt: '2026-11-06'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -24,59 +25,91 @@ related:
   - como-crear-un-bot-de-whatsapp
   - bot-de-whatsapp-gratis-o-pago
   - bot-de-whatsapp-con-ia-para-ventas
-  - mejor-alternativa-a-whatsapp-business
+  - agente-de-ia-para-whatsapp
 faq:
   - q: ¿Qué es un bot de WhatsApp?
     a: >-
       Es un programa que atiende mensajes de WhatsApp automáticamente según
       reglas, opciones o instrucciones con IA. Puede informar, pedir datos y
-      derivar una consulta. Ejecutar una acción, como reservar un turno o
-      registrar un pedido, requiere una conexión y una confirmación del sistema
-      correspondiente.
+      derivar una consulta. Para terminar una tarea, como reservar un turno o
+      registrar un pedido, necesita una conexión con el sistema del negocio y
+      una confirmación de ese sistema.
   - q: ¿Bot y chatbot de WhatsApp significan lo mismo?
     a: >-
-      En atención comercial suelen usarse para describir un asistente que
-      conversa por WhatsApp. El nombre no indica si usa IA, si sigue un menú o
-      si puede operar otros sistemas. Pedí que te muestren esas capacidades con
-      consultas de tu negocio.
+      En atención comercial se usan para lo mismo: un asistente que conversa por
+      WhatsApp. El nombre no dice si usa IA, si sigue un menú o si puede operar
+      otros sistemas. Pedí que te muestren esas capacidades con consultas de tu
+      negocio.
   - q: ¿WhatsApp Business ya incluye un bot con IA?
     a: >-
-      La app tiene herramientas como bienvenida, ausencia y respuestas rápidas.
-      Meta también ofrece Meta Business Agent con IA para empresas elegibles en
-      determinados mercados. Revisá la disponibilidad en tu cuenta: no se puede
-      asumir que esa función está habilitada para cualquier negocio argentino.
+      La app tiene bienvenida, ausencia y respuestas rápidas. Meta también tiene
+      Meta Business Agent, con IA, pero su ayuda dice que hoy está solo en
+      algunos países y para empresas seleccionadas, con lista de espera. Si no te
+      aparece en la pestaña Herramientas, no lo tenés disponible.
   - q: ¿Un bot conectado por QR usa la API oficial de WhatsApp?
     a: >-
-      El QR por sí solo no acredita el tipo de integración. En Atende, el flujo
-      de conexión disponible se vincula desde dispositivos vinculados. Si
-      necesitás específicamente WhatsApp Business Platform o Cloud API,
-      confirmá esa arquitectura con el proveedor antes de contratar.
+      El QR por sí solo no te dice qué tecnología hay detrás, así que preguntalo.
+      En el caso de Atende, no: se conecta por QR y no es la API oficial de Meta.
+      Si tu empresa necesita WhatsApp Business Platform, confirmá esa
+      arquitectura con el proveedor antes de contratar.
   - q: ¿Un bot puede atender sin intervención humana?
     a: >-
-      Puede responder consultas dentro del alcance configurado mientras el
-      servicio y la conexión estén activos. Necesitás responsables para revisar
-      información, atender excepciones y continuar cuando el cliente pide una
-      persona. Responder automáticamente no garantiza resolver toda consulta.
+      Puede responder mensajes de texto dentro del alcance configurado, a
+      cualquier hora, mientras el servicio y tu WhatsApp estén conectados.
+      Igual hacen falta personas para actualizar la información, atender
+      excepciones y seguir cuando el cliente pide hablar con alguien.
 sources:
   - title: 'WhatsApp: funciones de Business App'
     url: 'https://whatsappbusiness.com/products/business-app-features/'
-    checkedAt: '2026-11-04'
+    checkedAt: '2026-11-06'
   - title: 'WhatsApp: Business Platform'
     url: 'https://whatsappbusiness.com/products/business-platform/'
-    checkedAt: '2026-11-04'
-  - title: 'WhatsApp: Meta Business Agent y disponibilidad'
-    url: 'https://whatsappbusiness.com/products/business-app-ai-agent/'
-    checkedAt: '2026-11-04'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp: Meta Business Agent'
+    url: 'https://whatsappbusiness.com/es-la/products/business-app-ai-agent/'
+    checkedAt: '2026-11-06'
+  - title: 'Ayuda de WhatsApp: cómo configurar Meta Business Agent'
+    url: 'https://faq.whatsapp.com/1153795669452207'
+    checkedAt: '2026-11-06'
 ---
-Un **bot de WhatsApp** es un programa que atiende mensajes automáticamente. En un negocio puede responder preguntas, pedir información para una solicitud y reconocer cuándo debe continuar una persona. “Chatbot de WhatsApp” suele describir ese mismo uso conversacional; ninguno de los dos nombres garantiza inteligencia artificial ni operaciones en otros sistemas.
+Un **bot de WhatsApp** es un programa que atiende mensajes automáticamente: contesta preguntas, pide los datos que faltan y reconoce cuándo tiene que seguir una persona. Si además está conectado a los sistemas del negocio, puede reservar el turno o registrar el pedido ahí mismo, en la charla. “Chatbot de WhatsApp” nombra lo mismo, y ninguno de los dos nombres te dice si usa inteligencia artificial ni si puede tocar otro sistema.
 
-Para entender una propuesta, separá tres cosas: cómo decide la respuesta, qué información conoce y cómo se conecta al número. Un bot puede conversar de manera natural y, aun así, necesitar que un vendedor confirme un precio.
+Para entender cualquier propuesta, hacé una sola pregunta: ¿qué pasa cuando el cliente escribe “dale, el jueves a las 16”? Ahí se separan los bots que responden de los que terminan la tarea.
+
+## Un bot que responde y un bot que termina la tarea
+
+Es el mismo pedido, atendido de dos maneras:
+
+| El cliente escribe | Un bot que responde | Un bot que termina la tarea | Qué hace falta para lo segundo |
+| --- | --- | --- | --- |
+| “Quiero un turno para el jueves” | Junta servicio y horario, y avisa que recepción confirma. | Mira la agenda, ofrece horarios y reserva el elegido. | Conexión con la agenda |
+| “¿Tienen mesa para seis el sábado?” | Explica cómo reservar y pide los datos. | Consulta disponibilidad y toma la reserva. | Conexión con el sistema de reservas |
+| “Mandame 10 cajas de lo de siempre” | Anota el pedido en el chat para que alguien lo cargue. | Consulta stock, registra el pedido y lo confirma. | Conexión con stock y pedidos |
+| “¿En cuánto me queda en 12 cuotas?” | Cuenta las condiciones generales que tiene cargadas. | Calcula la cuota con el precio del día y anota al interesado. | Conexión con precios y con tu CRM o planilla |
+
+Las dos columnas sirven. Para una peluquería con recepción, un bot que junta bien los datos ya saca trabajo. Lo importante es saber cuál te están vendiendo: varias herramientas del mercado, Atende entre ellas, hablan de ejecutar acciones, y esa promesa depende de qué sistema hay que conectar y de quién lo arma.
+
+Así se ve el final de la tarea cuando la conexión existe:
+
+> **Ejemplo ilustrativo, con la agenda conectada**
+>
+> **Cliente:** Quiero un turno para corte el jueves a la tarde
+>
+> **Asistente:** Tengo jueves 16:00 o 17:30. ¿Cuál te queda mejor?
+>
+> **Cliente:** A las 16
+>
+> **Asistente:** Listo, te reservé el jueves a las 16:00.
+
+Conectado a tu agenda, Atende reserva el turno mientras vos atendés; esa conexión se arma a pedido para tu negocio. Sin conexión, el asistente junta el pedido y tu equipo lo confirma. Lo que no debería pasar nunca es que un bot diga “reservado” sin que el sistema lo haya confirmado. El asistente de Atende está armado para informar una acción solo cuando la herramienta devuelve un resultado correcto.
+
+Si querés ver acción por acción qué necesita cada una, seguí con [qué puede hacer un agente de IA en WhatsApp](/blog/agente-de-ia-para-whatsapp).
 
 ## Cómo funciona un bot de WhatsApp
 
-El recorrido básico tiene cuatro pasos. Llega un mensaje, el programa interpreta qué hacer, consulta las reglas o la información disponible y devuelve una respuesta o deriva la conversación. El resultado depende de lo que se haya configurado y probado.
+El recorrido básico tiene cuatro pasos. Llega un mensaje, el programa interpreta qué hacer, consulta las reglas o la información disponible y devuelve una respuesta o deriva la conversación.
 
-Pensá en una consulta como “¿Hacen entregas en Alta Gracia?”. Para contestar bien, el bot necesita una zona de cobertura vigente. Si después el cliente pregunta “¿Me llega mañana?”, ya intervienen otras condiciones: existencia del producto, preparación y reparto. Conocer la zona no alcanza para confirmar una fecha.
+Pensá en una consulta como “¿Hacen entregas en Alta Gracia?”. Para contestar bien, el bot necesita una zona de cobertura vigente. Si después el cliente pregunta “¿Me llega mañana?”, ya intervienen otras condiciones: que el producto exista, la preparación y el reparto. Conocer la zona no alcanza para confirmar una fecha.
 
 Conviene evaluar por separado:
 
@@ -88,56 +121,62 @@ La tercera exige evidencia de que la operación ocurrió. Una frase convincente 
 
 ## Mensajes automáticos, bot con reglas y bot con IA
 
-Son formas de resolver tareas diferentes. Esta comparación describe su funcionamiento habitual, no una lista de prestaciones incluidas en todos los productos.
+Son formas de resolver tareas diferentes. Esta comparación describe su funcionamiento habitual, no una lista de lo que trae cada producto.
 
 | Forma de atención | Cómo responde | Para qué conviene evaluarla |
 | --- | --- | --- |
 | Mensaje automático básico | Envía un texto ante una condición, como el inicio del contacto o la ausencia. | Comunicar recepción, horario y siguiente paso. |
 | Bot con reglas o menú | Recorre opciones y condiciones definidas de antemano. | Guiar un trámite con alternativas claras. |
-| Bot con IA | Interpreta lenguaje y redacta según instrucciones e información disponible. | Atender preguntas expresadas de distintas maneras y reunir contexto. |
+| Bot con IA | Interpreta lenguaje y redacta según instrucciones e información disponible. | Atender preguntas escritas de distintas maneras y juntar contexto. |
+| Asistente conectado | Además de conversar, llama a una herramienta de tu sistema y usa el resultado. | Terminar la tarea en la charla. |
 
-La IA resulta útil cuando el cliente escribe con sus propias palabras, mezcla preguntas o corrige lo que pidió. También puede equivocarse. Por eso, la evaluación debe incluir datos faltantes, cambios de intención y pedidos de hablar con una persona.
+La IA ayuda cuando el cliente escribe con sus propias palabras, mezcla preguntas o corrige lo que pidió. También puede equivocarse. Por eso la evaluación debe incluir datos faltantes, cambios de intención y pedidos de hablar con una persona.
 
-Un menú puede servir para elegir una sucursal sin necesidad de una conversación extensa. Para un saludo o un aviso de ausencia, primero revisá los [mensajes automáticos para negocios](/blog/mensajes-automaticos-whatsapp-negocios). La elección tiene que responder al trabajo real de tu equipo.
+Un menú puede servir para elegir una sucursal sin una conversación larga. Para un saludo o un aviso de ausencia, primero mirá los [mensajes automáticos para negocios](/blog/mensajes-automaticos-whatsapp-negocios). La elección tiene que responder al trabajo real de tu equipo.
 
 ## Qué diferencia hay entre WhatsApp Business, la API y el QR
 
-**WhatsApp Business App** es la aplicación comercial. Entre sus herramientas están la bienvenida automática, los mensajes de ausencia y los atajos de respuestas rápidas. Una respuesta rápida es un texto guardado que la persona puede enviar; no equivale por sí sola a interpretar cada pregunta. [Funciones oficiales de Business App](https://whatsappbusiness.com/products/business-app-features/).
+**WhatsApp Business App** es la aplicación comercial. Entre sus herramientas están la bienvenida automática, los mensajes de ausencia y los atajos de respuestas rápidas. Una respuesta rápida es un texto guardado que una persona elige enviar; no interpreta nada por sí sola. [Funciones oficiales de Business App](https://whatsappbusiness.com/products/business-app-features/).
 
-Meta también presenta **Meta Business Agent**, una opción de IA dentro de la app para empresas elegibles en ciertos mercados. Su existencia no implica que cualquier cuenta argentina la tenga disponible; comprobalo en tu cuenta antes de organizar la atención alrededor de esa función. [Disponibilidad de Meta Business Agent](https://whatsappbusiness.com/products/business-app-ai-agent/).
+Meta también tiene **Meta Business Agent**, un agente con IA dentro de la app. Su página habla de [empresas elegibles en mercados seleccionados](https://whatsappbusiness.com/es-la/products/business-app-ai-agent/), y su ayuda dice que hoy está [solo en algunos países y para empresas seleccionadas](https://faq.whatsapp.com/1153795669452207), con lista de espera. Si no te aparece en la pestaña Herramientas, todavía no lo tenés. Lo detallamos en [el agente de IA de WhatsApp Business](/blog/agente-ia-whatsapp-business-meta).
 
-**WhatsApp Business Platform** ofrece APIs para conectar software con la mensajería comercial. Se puede implementar directamente o mediante un proveedor. La API es una vía de integración; el alcance del bot y la atención del equipo dependen de la solución que se construya o contrate. [Descripción oficial de Business Platform](https://whatsappbusiness.com/products/business-platform/).
+**WhatsApp Business Platform** ofrece APIs para conectar software con la mensajería comercial. Se implementa directamente o con un proveedor. Es una vía de integración: el alcance del bot y la atención del equipo dependen de lo que se construya o se contrate. Por esa vía Meta cobra por mensaje entregado, y los números están en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). [Descripción oficial de Business Platform](https://whatsappbusiness.com/products/business-platform/).
 
-**El QR es un mecanismo de vinculación.** No permite concluir, por su apariencia, qué tecnología usa un proveedor. En Atende se escanea desde dispositivos vinculados y el equipo trabaja en el panel web. Ese flujo no se presenta como una implementación de Cloud API. Si tu empresa exige la API oficial, revisá ese requisito expresamente antes de elegir.
+**El QR es un mecanismo de vinculación.** Mirándolo no podés saber qué tecnología usa un proveedor, así que preguntalo. En Atende la respuesta es esta: se conecta por QR, desde dispositivos vinculados, con el número que ya usás. No es la API oficial de Meta. Por eso no le aplican las tarifas que Meta publica para la Plataforma, y también por eso nadie puede prometerte que WhatsApp no va a restringir un número. Si tu empresa exige la API oficial, Atende hoy no es la opción, y conviene que lo sepas antes de contratar.
 
-También conviene confirmar qué ocurre con el número, las herramientas que ya lo usan y el historial previo. No des por incluida una migración completa porque se haya podido establecer la conexión.
+También conviene confirmar qué pasa con el número, con las herramientas que ya lo usan y con el historial previo. No des por hecha una migración completa porque se haya podido establecer la conexión.
 
-## Qué puede resolver en una PyME
+## Qué resuelve hoy en una PyME
 
-Un buen primer uso tiene información disponible y un siguiente paso reconocible. Estos ejemplos son ilustrativos:
+Un buen primer uso tiene información disponible y un siguiente paso reconocible. Este es el estado de hoy en Atende:
 
-| Consulta | Trabajo posible del bot | Qué queda por verificar |
-| --- | --- | --- |
-| “¿Atienden los sábados?” | Informar el horario configurado. | Feriados o cambios excepcionales que el negocio debe actualizar. |
-| “Necesito equipar dos locales” | Preguntar tipo de equipo y ubicación. | Alcance técnico, precio y propuesta comercial. |
-| “Quiero un turno para el jueves” | Reunir servicio y preferencia horaria. | Disponibilidad y reserva efectiva. |
-| “Tengo un problema con mi pedido” | Reconocer el motivo y facilitar el pase. | Revisión del pedido y solución por el responsable. |
+| Acción | Estado hoy |
+| --- | --- |
+| Responder mensajes de texto a cualquier hora | Incluido en los planes con IA |
+| Derivar a una persona y cerrar la conversación | Incluido en los planes con IA |
+| Enviar fotos y videos de tu biblioteca | Incluido en los planes con IA |
+| Reservar, reprogramar o cancelar turnos | A pedido, conectado a tu agenda |
+| Registrar pedidos y consultar stock o precios | A pedido, conectado a tu sistema |
+| Cotizar y calcular financiación | A pedido, conectado a tu sistema |
+| Recordatorios y seguimientos | A pedido, armados para tu negocio |
 
-En Atende podés configurar la información del negocio, responder con IA, revisar el historial compartido e intervenir manualmente. Las consultas de stock, reservas, operaciones sobre un CRM externo y seguimientos proactivos requieren un alcance o una integración confirmados por separado. La página de [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) detalla esa propuesta.
+“A cualquier hora” vale mientras el servicio y tu WhatsApp estén conectados. Atende no inicia mensajes por su cuenta, y mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Lo que hay hoy como prueba de una acción es una demo para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente. La lista completa está en [integraciones](/integraciones), y el producto entero en [qué es Atende](/que-es-atende).
+
+Un límite que conviene tener a la vista: el asistente trabaja con mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan a Atende, ni al asistente ni a la bandeja.
 
 ## Cómo elegir un bot para tu negocio
 
-Llevá a la evaluación una consulta habitual, otra incompleta y una excepción. Pedí ver el resultado completo, incluido el momento en que alguien del equipo continúa.
+Llevá a la evaluación una consulta habitual, otra incompleta y una excepción. Pedí ver el resultado completo, incluido el momento en que alguien del equipo sigue.
 
 Estas preguntas ayudan a decidir:
 
 1. **¿Qué tarea tiene que terminar?** Informar una condición, preparar una solicitud y confirmar una operación son alcances distintos.
-2. **¿De dónde obtiene cada dato?** Identificá información cargada, consultas a otro sistema y decisiones humanas.
+2. **¿De dónde saca cada dato?** Identificá información cargada, consultas a otro sistema y decisiones humanas.
 3. **¿Cómo reconoce el límite?** Probá una pregunta sin respuesta y un pedido explícito de hablar con alguien.
-4. **¿Qué recibe el equipo?** Revisá si puede leer el intercambio y continuar sin pedir todo otra vez.
-5. **¿Cómo se conecta y se mantiene?** Confirmá la arquitectura, el estado de conexión y quién atiende los problemas.
+4. **¿Qué recibe el equipo?** Revisá si puede leer el intercambio y seguir sin pedir todo otra vez, y qué hay que hacer para que el bot deje de contestar en ese chat.
+5. **¿Cómo se conecta y quién lo mantiene?** Confirmá la arquitectura, el estado de conexión y quién atiende los problemas.
 6. **¿Qué unidad se cobra?** Distinguí respuestas, mensajes, contactos y conversaciones antes de comparar planes.
 
-Si ya definiste la tarea, seguí con [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp). Si todavía estás eligiendo alcance y presupuesto, revisá [cuándo usar una opción gratis o paga](/blog/bot-de-whatsapp-gratis-o-pago). Para un equipo comercial, la guía del [bot con IA para ventas](/blog/bot-de-whatsapp-con-ia-para-ventas) explica qué datos pedir y cómo reconocer una oportunidad útil.
+Si ya definiste la tarea, seguí con [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp). Si todavía estás eligiendo alcance y presupuesto, mirá [cuándo usar una opción gratis o paga](/blog/bot-de-whatsapp-gratis-o-pago). Para un equipo comercial, la guía del [bot con IA para ventas](/blog/bot-de-whatsapp-con-ia-para-ventas) explica qué datos pedir. Y en [casos de uso](/casos-de-uso) está la acción que corresponde a cada rubro.
 
-Podés llevar esos mismos casos a una [demo de Atende](/demo). El criterio de elección es que la herramienta resuelva tu proceso con información correcta y una continuidad clara para el cliente.
+Podés llevar esos mismos casos a una [demo de Atende](/demo).

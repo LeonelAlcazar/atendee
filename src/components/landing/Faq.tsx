@@ -1,29 +1,42 @@
+import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { faq, type FaqItem } from '@/content/faq';
+import { landing } from '@/content/landing';
 import { site } from '@/content/site';
 import { buildWaLink } from '@/lib/wa';
 import { Tag } from '@/components/ui/Tag';
 
 export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
+  const copy = landing.faq;
+
   return (
     <section id="faq" className="scroll-mt-20 border-b-2 border-ink bg-surface py-20 md:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 md:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
         <div className="flex flex-col items-start lg:sticky lg:top-28 lg:self-start">
-          <Tag>Preguntas frecuentes</Tag>
+          <Tag>{copy.eyebrow}</Tag>
           <h2 className="mt-5 max-w-lg font-display text-4xl font-semibold leading-[0.94] tracking-[-0.04em] text-balance md:text-6xl">
-            Antes de conectar, <span className="text-coral">preguntá todo.</span>
+            {copy.titleBefore}{' '}
+            <span className="text-coral">{copy.titleAccent}</span>
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-mute">
-            Si tu pregunta no está acá, te responde una persona. También usamos WhatsApp para eso.
+            {copy.description}
           </p>
           <a
             href={buildWaLink('Hola, tengo una pregunta sobre Atende')}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.08em] underline decoration-2 underline-offset-4 hover:text-coral"
+            data-cta="faq-whatsapp"
+            className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold underline underline-offset-4 hover:text-coral-strong"
           >
-            Escribir al {site.whatsapp.display} <span aria-hidden="true">↗</span>
+            Escribir al {site.whatsapp.display}{' '}
+            <span aria-hidden="true">↗</span>
           </a>
+          <Link
+            href="/preguntas-frecuentes"
+            className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4 hover:text-coral-strong"
+          >
+            {copy.allLink}
+          </Link>
         </div>
 
         <div className="flex flex-col gap-3">
@@ -34,7 +47,7 @@ export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
             >
               <summary className="flex min-h-16 items-center justify-between gap-5 px-5 py-5 md:px-6">
                 <span className="flex items-start gap-4">
-                  <span className="mt-1 font-mono text-[9px] text-coral-strong">
+                  <span className="mt-1.5 font-mono text-[11px] text-coral-strong">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <span className="font-display text-lg font-semibold leading-snug tracking-[-0.02em] md:text-xl">
@@ -50,7 +63,7 @@ export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
                   />
                 </span>
               </summary>
-              <div className="border-t border-ink/20 px-5 py-5 pl-12 text-base leading-relaxed text-mute md:px-6 md:pl-16 md:text-lg">
+              <div className="border-t border-ink/20 px-5 py-5 pl-12 text-base leading-relaxed text-ink/75 md:px-6 md:pl-16 md:text-lg">
                 {item.a}
               </div>
             </details>

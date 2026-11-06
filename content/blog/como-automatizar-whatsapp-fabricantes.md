@@ -1,93 +1,132 @@
 ---
-title: Cómo automatizar WhatsApp en una empresa industrial
-seoTitle: Cómo automatizar WhatsApp en una empresa industrial
+title: 'Cómo automatizar WhatsApp en una empresa industrial: registrar pedidos técnicos sin perder el plano'
+seoTitle: 'WhatsApp para fabricantes: pedidos técnicos y presupuestos'
 description: >-
-  Organizá consultas técnicas y solicitudes de cotización por WhatsApp con
-  especificación, cantidad y plazo, antes de la revisión comercial y de
-  producción.
+  Conectado a tu sistema, Atende registra pedidos técnicos por WhatsApp:
+  pieza, revisión de plano, cantidad mínima y fecha, con ventas y producción
+  al tanto.
 summary: >-
-  Una empresa industrial puede automatizar información comercial y recepción de
-  solicitudes. Pedí producto o plano de referencia, especificación, cantidad y
-  plazo deseado. El equipo técnico valida tolerancias, materiales, capacidad y
-  presupuesto antes de comprometer fabricación o entrega.
+  Una empresa industrial puede automatizar WhatsApp para consultar stock de lo
+  que ya fabrica y registrar pedidos con código, revisión, cantidad y fecha.
+  Conectado a tu sistema, el pedido queda cargado; sin conexión, el asistente lo
+  reúne y ventas lo confirma. Un plano en PDF o una foto de la pieza nunca llegan
+  a Atende, y la fecha que pide el comprador no es plazo de fabricación: ese
+  compromiso lo da producción.
 publishedAt: '2026-09-10'
-updatedAt: '2026-10-28'
+updatedAt: '2026-11-06'
 category: industria-y-logistica
 sector: Fabricantes y proveedores industriales
 tags:
   - WhatsApp
   - Fabricantes y proveedores industriales
-  - automatización
+  - pedidos técnicos
+  - presupuestos
 related:
-  - como-automatizar-whatsapp-empresa
-  - como-automatizar-whatsapp-logistica
   - cotizaciones-por-whatsapp-automaticas
+  - como-automatizar-whatsapp-logistica
+  - como-automatizar-whatsapp-distribuidoras
+  - como-automatizar-whatsapp-empresa
 faq:
-  - q: >-
-      ¿Qué información preparar para automatizar WhatsApp en fabricantes y
-      proveedores industriales?
+  - q: ¿Puedo recibir planos por WhatsApp con Atende?
     a: >-
-      Prepará esta información: Familias de productos, capacidades comunicables
-      y zona comercial. Referencias de especificaciones y procedimiento para
-      recibir documentación técnica. Responsable que valida cantidades, mínimos,
-      materiales y fecha de fabricación.
-  - q: ¿Atende confirma operaciones o consulta otros sistemas por defecto?
+      No. PDF, DWG, STEP y fotos nunca llegan a Atende: quedan en el WhatsApp del
+      teléfono vinculado y el asistente no se entera. Definí una casilla de
+      correo para planos y dejá escrito que el asistente la indique.
+  - q: ¿El asistente puede prometer un plazo de fabricación?
     a: >-
-      Atende responde con la información configurada y permite que tu equipo
-      continúe desde una bandeja compartida. Consultar datos en tiempo real,
-      crear reservas, registrar pedidos o enviar recordatorios requiere una
-      integración confirmada por separado.
+      No debería. Registra la fecha que pide el comprador y aclara que ventas la
+      confirma. Aun conectado, solo informa lo que devuelve tu sistema, porque la
+      carga de planta y la materia prima deciden el plazo real.
+  - q: ¿Qué pasa si un pedido no llega a la cantidad mínima?
+    a: >-
+      El asistente informa el mínimo que cargaste, registra lo que pidió el
+      comprador y lo deja a ventas, sin negociar. Si el mínimo cambia según la
+      pieza, conviene no cargarlo como regla general.
+  - q: ¿Atende consulta el stock de la fábrica en el momento?
+    a: >-
+      Conectado a tu sistema, lee el stock y registra el pedido en la
+      conversación. Esa conexión se arma a pedido para tu negocio. Sin conexión,
+      el asistente junta los datos y tu equipo revisa y confirma.
+sources: []
 ---
-En una venta industrial, un nombre de pieza rara vez describe por completo el pedido. Puede haber revisiones de plano, materiales o tolerancias que cambian la propuesta. El asistente puede reunir el contexto y pasar la consulta al responsable, manteniendo las referencias originales. No debe completar una especificación faltante con una opción parecida del catálogo ni confundir un plazo deseado con capacidad disponible de producción.
+"Necesito 500 bujes como los de la vez pasada." Para alguien con años en ventas es un mensaje claro. Para un asistente, y para quien entró hace un mes, faltan cinco cosas: qué buje, qué revisión del plano, qué material, para cuándo y si 500 llega a la cantidad mínima.
 
-## Qué información preparar
+Automatizar WhatsApp en una empresa industrial resuelve justo eso: conectado a tu sistema, el asistente consulta stock de lo que ya fabricás y deja registrado el pedido técnico completo antes de que llegue a ventas. Decidir si una pieza se puede fabricar, y en qué plazo, sigue siendo tarea de tu gente.
 
-- Familias de productos, capacidades comunicables y zona comercial.
-- Referencias de especificaciones y procedimiento para recibir documentación técnica.
-- Responsable que valida cantidades, mínimos, materiales y fecha de fabricación.
+## Catálogo, repetición o desarrollo a medida: tres recorridos
 
-## Qué responder y qué confirmar con el equipo
+| Pedido | Cómo se reconoce | Qué hace el asistente | Quién lo cierra |
+| --- | --- | --- | --- |
+| Pieza de catálogo | Trae código o nombre de lista | Con conexión, consulta stock y registra el pedido. Sin ella, junta los datos | Ventas confirma fecha y flete |
+| Repetición | "Igual que la última vez" | Pide código o número de pedido anterior y pregunta si cambió el plano | Oficina técnica confirma la revisión |
+| Desarrollo a medida | Hay plano, muestra o una idea | Completa el pedido técnico e indica adónde va el plano | Ingeniería evalúa si se hace y cómo |
 
-| Consulta | Cómo resolverla |
-| --- | --- |
-| Familia de producto | Informar el alcance comercial configurado. |
-| Especificación técnica | Conservar referencia y revisión para evaluación. |
-| Capacidad y entrega | Confirmar con producción y ventas antes de cotizar. |
+La repetición es la que más se rompe. El asistente tiene en cuenta la conversación en curso, no todo el historial, así que "lo de siempre" solo significa algo si hay una conexión con tus pedidos o una persona que lo busque.
 
-## Un flujo de atención paso a paso
+## Lo que tiene que traer un pedido técnico
 
-1. Identificá producto de catálogo o desarrollo especial. Si existe una referencia anterior, pedila para que el equipo ubique la versión correcta.
+```text
+Pieza o código:
+Número de plano y revisión:
+Material y terminación:
+Cantidad y unidad:
+Entrega única o programada:
+Fecha en que lo necesita:
+Lugar de entrega o retiro:
+Empresa y CUIT:
+```
 
-2. Reuní cantidad, material especificado y plazo deseado. No conviertas medidas ni cambies tolerancias sin revisión de quien prepara la oferta.
+Cargá esta lista en "Contexto del asistente" y pedile dos cosas. Que conserve la unidad: mil piezas, mil kilos y mil metros son tres presupuestos distintos. Y que transcriba el material tal como viene: si el comprador escribe SAE 1045, no hay "parecido" que valga, y si escribe "el mismo acero", queda así hasta que alguien lo aclare.
 
-3. El área técnica verifica documentación y factibilidad, y ventas confirma condiciones. Una cotización revisada debe distinguirse de un pedido aceptado para producir.
+Si pide menos que la cantidad mínima, el asistente informa el mínimo que cargaste, registra lo que pidió y lo deja a ventas, sin negociar. Cuando el mínimo depende de la pieza o del lote de materia prima, no lo cargues como regla general. Mismo criterio con matriz o herramental: si una pieza nueva lleva ese costo, lo explica ventas, con el presupuesto en la mano.
 
-Vinculá cada propuesta con la referencia y revisión de la documentación que evaluó el equipo. Si el cliente envía otro plano, cambia el material o modifica la cantidad, confirmá si la oferta anterior sigue siendo válida antes de comunicar un precio. Para organizar esa revisión, usá la [plantilla de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas): permite dejar explícitos el alcance, la fuente de precios, los responsables y los pendientes. Es un procedimiento del negocio, no una validación técnica automática de Atende.
+## El plano no entra por este chat
 
-## Ejemplo de conversación
+Un PDF, un DWG, un STEP o una foto de la pieza al lado de un calibre nunca llegan a Atende. Quedan en el WhatsApp del teléfono vinculado, pero ni el asistente ni la bandeja los ven, y el comprador no recibe respuesta. Mucha gente de compras manda el plano primero y escribe después, así que sin una salida prevista el pedido se queda sin plano y nadie se entera.
 
-Ejemplo ilustrativo para adaptar a la información y al proceso de tu negocio. No representa una conversación real ni una operación confirmada.
+La salida es simple:
 
-> Cliente: Necesito cotizar una pieza según plano.
+1. Definí una casilla de correo para planos y cargala en el contexto.
+2. Apenas aparece la palabra plano, el asistente la da: "Los planos no llegan por este chat. Mandalos a [mail de ingeniería]."
+3. Registrá número de plano y revisión en texto, para que el archivo se pueda cruzar con el pedido.
+4. Pedí que el asunto del mail lleve la empresa y la pieza.
+
+En el otro sentido funciona a medias. Subís fotos y videos de tus productos a la biblioteca y el asistente los manda cuando hacen falta. Un catálogo en PDF, no: la biblioteca acepta solo fotos y videos.
+
+## Una repetición que queda registrada
+
+Ejemplo ilustrativo.
+
+> Comprador: Necesito 800 bujes BX-20, igual que la última vez
 >
-> Asistente: ¿Qué referencia y revisión tiene, para qué cantidad y fecha deseada?
+> Asistente: Tengo 1.200 BX-20 en stock, revisión C. ¿Es la revisión que usás?
 >
-> Cliente: Pieza A17, revisión B, cien unidades.
+> Comprador: Sí, la C. Los necesito en Río Tercero antes de fin de mes
 >
-> Asistente: Paso los datos al equipo técnico para revisar la documentación, capacidad y propuesta comercial.
+> Asistente: Quedó cargado el pedido 4471: 800 BX-20 revisión C, entrega en Río Tercero. Ventas te confirma fecha y flete.
 
-## Casos que conviene probar antes de activar
+Conectado a tu sistema de stock y pedidos, Atende hace las dos cosas: lee el stock real y deja el pedido cargado. Esa conexión se arma a pedido para tu negocio; contamos [cómo se define el alcance](/integraciones). Sin conexión, el asistente junta pieza, revisión, cantidad y lugar, y tu equipo revisa el stock y confirma. [Registrar pedidos por WhatsApp](/servicios/ventas-whatsapp) resume la acción en todos los rubros, y [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras) reúne los negocios vecinos.
 
-Probá dos revisiones del mismo plano, un material que el negocio no trabaja y un pedido con tolerancia incompleta. El asistente debe señalar la falta de información. No debería prometer certificaciones, equivalencias o capacidad productiva que no estén confirmadas en el alcance de la empresa.
+## La fecha del comprador no es tu plazo de fabricación
 
-## Cómo implementarlo con Atende
+En un pedido conviven tres fechas: la que pide el comprador, la que permite la carga de planta y la que depende de que llegue la materia prima. El asistente conoce la primera. Aun conectado, solo puede informar lo que tu sistema devuelva, y si ese dato es una estimación, tiene que decirlo como estimación.
 
-En Atende configurás la información y las respuestas de tu negocio, vinculás el número de WhatsApp mediante QR y supervisás las conversaciones desde una bandeja compartida. Definí quién toma las derivaciones y probá consultas reales anonimizadas antes de atender clientes.
+Por eso "antes de fin de mes" queda en el ejemplo como un pedido, sin compromiso. Lo mismo vale para "entrega inmediata": un stock cargado en "Preguntas frecuentes" se vuelve viejo con el primer despacho, y si no hay lectura en vivo, el asistente dice que ventas confirma.
 
-El flujo básico responde y reúne contexto. Consultar stock, agendas, pedidos o un CRM, ejecutar acciones en otro sistema y enviar recordatorios o seguimientos proactivos requiere una integración evaluada por separado. Revisá el alcance de la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) y prepará tus ejemplos para una [demo](/demo).
+El precio se complica cuando la lista se mueve con el dólar o el acero, o cuando cada cuenta tiene sus condiciones. Conviene definir [esas reglas de presupuesto](/blog/cotizaciones-por-whatsapp-automaticas) antes de calcular en el chat.
 
-## Qué medir y revisar
+## Cuentas, no conformidades y grupos con clientes
 
-Medí solicitudes con especificación y revisión identificadas, tiempo hasta cotización técnica y pedidos aceptados. Revisá qué aclaraciones provocan nuevas versiones de propuesta para mejorar la recepción de documentación.
+En la venta industrial hay situaciones que el asistente no tiene que resolver solo:
 
-Asigná un responsable para corregir respuestas y actualizar información cuando cambien los servicios o las condiciones. Podés usar la [guía general de automatización](/blog/como-automatizar-whatsapp-empresa) para preparar la primera revisión con tu equipo.
+- **Precios por cuenta.** Un teléfono no identifica a la empresa: el comprador cambia, y quien escribe hoy puede no estar autorizado. Sin una conexión que lo resuelva, el asistente no pasa condiciones de una cuenta.
+- **No conformidades.** Un lote rechazado o una medida fuera de tolerancia va directo a una persona, sin discutir responsabilidades en el chat. Las fotos del defecto tampoco llegan a Atende, así que indicá adónde mandarlas.
+- **Grupos.** Si coordinás con un cliente grande en un grupo de WhatsApp, esos mensajes no llegan a Atende. Ese canal sigue a mano.
+
+## Por dónde empezar en planta
+
+Empezá por lo que no necesita conexión: familias de producto, mínimos publicados, zonas de entrega, la casilla de planos y la lista del pedido técnico. Con eso ventas ya recibe pedidos completos. Después mirá qué se repite: si la mayoría son repeticiones de catálogo, conectar stock y pedidos es el paso que más trabajo saca.
+
+Apenas escaneás el QR, el asistente responde a todos tus contactos, también a compradores de hace años. Si tenés dos o tres cuentas grandes que hablan siempre con el mismo vendedor, avisales antes o pensá bien qué número vinculás. Las pruebas van desde otro celular y consumen créditos: mandá un "lo de siempre" y un plano, a ver qué contesta.
+
+Si vendés por volumen a través de distribuidores, mirá la [guía de toma de pedidos mayoristas](/blog/como-automatizar-whatsapp-distribuidoras). Si despachás con transporte propio o tercerizado, la [guía de logística](/blog/como-automatizar-whatsapp-logistica) sigue el pedido desde el retiro hasta el reclamo.

@@ -2,7 +2,31 @@
 
 ## Content and scope
 
-The public audience is Spanish-speaking businesses and PyMEs in Argentina. The main conversion is a qualified demo inquiry; self-service account creation remains available. The homepage links to three distinct solution pages, a use-case page, pricing guidance and the demo request.
+The public audience is Spanish-speaking businesses and PyMEs in Argentina. The main conversion is a qualified demo inquiry; self-service account creation remains available. The homepage links to the solution pages, the six rubro pages through the use-case hub, pricing guidance and the demo request.
+
+## November 2026 rebuild
+
+The evidence collected for this rebuild says on-page technique explains little and third-party mentions matter most, so the site does five things and no more:
+
+1. Lead every page with a finished task: the assistant books, quotes or records the order.
+2. Answer one real buyer question per page, in the title and an early paragraph, in the buyer's words.
+3. Remove the template. Each sector guide is its own piece, and `check:content` measures it.
+4. Publish what rivals hide: a public status of what works today, plus real limits (text only, QR rather than the official API, how to pause the assistant).
+5. Keep a clean technical base: one entity, ISR, a redirect map, truthful dates and regression guards.
+
+Claims follow an owner decision of 2026-11-06. Connected actions and reminders are a real offer built on request for each business, never included, never generic and never with a date. Inbox attribution is planned, not shipped, so copy never says the team sees who replied. `src/content/status.ts` is the canonical public status, and `AGENTS.md` holds the rules behind it. Where an older section below says an integration is "separately confirmed", that wording is superseded.
+
+Do not add per-bot robots rules, `.md` mirrors, `Accept: text/markdown`, new schema types (DefinedTermSet, ItemList, HowTo), hreflang, a glossary, `aggregateRating`, fabricated authors or self-ranked "best" lists. They have no measured benefit, and several break Google policy or Rule 2.
+
+Three guides merged into broader ones. `guideRedirects` in `next.config.ts` holds the permanent redirects, and `check:seo` reads the same list:
+
+| From `/blog/...` | To `/blog/...` |
+| --- | --- |
+| `como-automatizar-whatsapp-institutos-de-idiomas` | `como-automatizar-whatsapp-academias-y-cursos` |
+| `como-automatizar-whatsapp-proveedores-agro` | `como-automatizar-whatsapp-distribuidoras` |
+| `como-automatizar-whatsapp-taller-mecanico` | `como-automatizar-whatsapp-servicios-tecnicos` |
+
+The work that matters most happens off the site. See the [off-site and measurement plan](geo-offsite-plan.md).
 
 Product claims were checked against the sibling repositories on 2026-09-10:
 
@@ -11,7 +35,7 @@ Product claims were checked against the sibling repositories on 2026-09-10:
 - `atende-agent/src/infrastructure/features/faq/faq.feature.ts` and `lifecycle/lifecycle.feature.ts`: configured answers and human escalation.
 - `atende-dashboard/src/lib/billing/plans.ts`: monthly agent-response limits and plans filtered by deployment configuration. Public pricing points to the actual enabled checkout plans rather than duplicating potentially unavailable prices.
 
-Calendar reservations, proactive follow-ups, reminders, live stock and CRM operations require a separately confirmed integration. Examples are explicitly illustrative. Do not add invented customer counts, testimonials, ratings, conversion uplifts, guaranteed availability, implementation deadlines or free-trial terms.
+Calendar reservations, reminders, live stock and CRM operations are built on request for each business. Examples are explicitly illustrative. Do not add invented customer counts, testimonials, ratings, conversion uplifts, guaranteed availability, implementation deadlines or free-trial terms.
 
 The existing Plan CRM and WhatsApp MCP pricing statements were rechecked against the current sibling repositories on 2026-10-28:
 
@@ -23,14 +47,32 @@ WhatsApp MCP access does not imply that any external CRM, inventory, booking or 
 
 ## Search implementation
 
-- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution routes use `generateStaticParams`; the Markdown blog uses request-time SSR. The catalog contains 50 articles, including nine comparisons, 12 topic pages, a blog index and editorial page. See [blog publishing and runtime](blog.md).
-- Organization, WebSite and SoftwareApplication entities share stable IDs across pages. Commercial pages include WebPage metadata, visible breadcrumbs where applicable and Service entities on solution details.
+- Public pages serve complete HTML with descriptive titles, descriptions, canonical URLs and social previews. Solution and rubro routes use `generateStaticParams`; the Markdown blog is prerendered and revalidated hourly. See [blog publishing and runtime](blog.md#isr-and-deployment).
+- Organization, WebSite and SoftwareApplication entities share stable IDs across pages. `entityGraph` in `src/lib/structured-data.ts` builds them from the catalogs. The name is `Atende`, and `alternateName` is `atende.com.ar`, the only other name in real use. `sameAs` appears only when `site.sameAs` holds owner-confirmed profiles. Legal name, tax ID and founding date stay out until the owner supplies them. `featureList` comes from the public status table, with connected actions first and each labeled "A pedido". There is no `offers`, because prices live in the app.
+- Commercial pages include WebPage metadata with `dateModified` from the page's `updated` date, visible breadcrumbs where applicable and Service entities on solution details. All schema dates carry the `-03:00` timezone.
 - FAQ markup and the accessible HTML disclosures use the same content objects. This improves consistency; it does not promise a FAQ rich result or an AI citation.
-- `src/content/pages.ts`, the solution catalog and published Markdown feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
+- `src/content/pages.ts`, the solution and rubro catalogs and published Markdown feed the sitemap. Change dates reflect content changes, not every build. Legal dates remain tied to their documents.
+- `/llms.txt` is generated from the same catalogs, so it cannot drift. It follows the [llmstxt.org](https://llmstxt.org/) format and states what works today. It is a hedge: no major engine has confirmed using it and Google Search says it does not.
 - Robots permits public crawling and the metadata permits search snippets and large image previews. Unknown URLs retain a real 404 and noindex.
 - The SVG source and generated PNG social card describe the same product positioning as the homepage.
 
 The implementation follows [Google's AI features guidance](https://developers.google.com/search/docs/appearance/ai-features) and [SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). Google recommends crawlable, helpful content, internal links and structured data consistent with visible content. Special AI text files are not required for its AI search features. Search inclusion and ranking still depend on the search engines.
+
+### IndexNow
+
+IndexNow tells Bing, Copilot and the other participating engines that a URL changed. A submission reaches all participants. Google does not take part, and nothing suggests it helps ChatGPT. It is a manual step after a deploy, never part of the build:
+
+```bash
+# See what would be sent. This never contacts IndexNow.
+npm run indexnow -- --dry-run --since 2026-11-06
+
+# Submit, once the deploy is live and the dry run looks right.
+npm run indexnow -- --since 2026-11-06
+```
+
+The script reads the live sitemap and sends one batch. `--since` keeps only URLs whose `lastmod` is on or after that date; use it every time, because the protocol asks for changed URLs only. Leave at least five minutes between updates to the same URL. `--sitemap <url-or-file>` reads another sitemap, which is useful with `--dry-run`.
+
+The key is the file `public/<key>.txt`, which contains its own name and must be live before the first submission. To rotate it, replace the file and deploy; the script finds the key on its own. A 202 response means the key is still being validated; the script explains the other statuses.
 
 ## October 2026 Search Console iteration
 
@@ -48,7 +90,7 @@ Google ended FAQ rich results on May 7, 2026, as recorded in its [documentation 
 
 Three subsequent comparisons cover alternatives to Botmaker, Aivo and Callbell. They focus respectively on process execution, answer quality and shared team attention, with plural options, primary sources checked on October 28, 2026, and concrete evaluation scenarios. This is an editorial expansion; the supplied Search Console exports do not establish demand for those three brands. The original report remains a record of the earlier 42-article iteration.
 
-The new articles link to related comparisons and operational guides, with contextual links from the existing Zenvia and respond.io articles. The footer links directly to `/blog/tema/alternativas` so visitors can find all nine comparisons.
+The new articles link to related comparisons and operational guides, with contextual links from the existing Zenvia and respond.io articles. The footer links directly to `/blog/tema/alternativas` so visitors can find all eleven comparisons.
 
 ## November 2026: bot de WhatsApp
 
@@ -84,8 +126,8 @@ These hooks make no network requests and set no cookies or browser storage. They
 
 ## Verification and ongoing operation
 
-Run `npm run verify` to execute unit tests, TypeScript, the production build and the HTTP audit. `npm run check:seo` starts the built standalone server and checks every public page, including the Markdown catalog, for canonical and social metadata, sitemap completeness, visible schema content, internal links and fragments, crawl rules and sales CTAs. It also verifies SSR, RSS and real 404 responses.
+Run `npm run verify` to execute unit tests, TypeScript, the claims check, the production build and the HTTP audit. `npm run check:seo` starts the built standalone server and checks every public page, including the Markdown catalog, for canonical and social metadata, sitemap completeness, visible schema content, internal links and fragments, crawl rules and sales CTAs. It also verifies ISR, RSS, `llms.txt`, redirects, the IndexNow key file and real 404 responses. `npm run check:claims` fails on claims the product cannot back; [blog publishing](blog.md#banned-claims) explains its rules and exceptions.
 
 For browser checks, run the production server with `npm start` and verify desktop, mobile and tablet navigation; native required-field validation; inquiry preview; both outbound URLs; FAQ disclosures; and the no-JavaScript contact fallback. Browser and Lighthouse artifacts belong in ignored `output/playwright/`.
 
-After deployment, check the live sitemap and new routes, then submit `https://www.atende.com.ar/sitemap.xml` in the site's verified Search Console property. No Search Console credentials or analytics property are present in this repository. Monitor indexing, query relevance, demo inquiries and qualified opportunities over time. Keep prices in sync with checkout if public numeric pricing is introduced later.
+After deployment, check the live sitemap and new routes, submit `https://www.atende.com.ar/sitemap.xml` in the site's verified Search Console property, and run [IndexNow](#indexnow). No Search Console credentials or analytics property are present in this repository. Monitor indexing, query relevance, demo inquiries and qualified opportunities over time, following the [measurement plan](geo-offsite-plan.md#medición). Keep prices in sync with checkout if public numeric pricing is introduced later.

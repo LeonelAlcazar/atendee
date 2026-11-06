@@ -1,90 +1,118 @@
 ---
-title: Cómo automatizar WhatsApp en una clínica odontológica
-seoTitle: Cómo automatizar WhatsApp en una clínica odontológica
+title: Cómo automatizar el WhatsApp de un consultorio odontológico sin perder sesiones de tratamiento
+seoTitle: 'Cómo automatizar WhatsApp en una clínica odontológica: sesiones'
 description: >-
-  Una guía para organizar primeras consultas, controles y cambios de turno por
-  WhatsApp en odontología, sin automatizar diagnósticos ni presupuestos
-  clínicos.
+  Conectado a tu agenda, Atende mueve sesiones y da primeras consultas por
+  WhatsApp. Qué hacer con el dolor fuera de horario y los pedidos de presupuesto.
 summary: >-
-  Un consultorio odontológico puede automatizar horarios, ubicación y la
-  recepción de solicitudes. Distinguí primera consulta, control y cambio de
-  turno; recepción verifica la agenda. El profesional determina tratamientos,
-  urgencias clínicas y presupuestos después de la evaluación correspondiente.
+  En un consultorio odontológico, Atende puede reservar la primera consulta y
+  reprogramar una sesión respetando profesional y tiempo de sillón, siempre
+  conectado a tu agenda. Sin conexión toma el pedido y recepción confirma. No
+  evalúa dolor ni arma presupuestos de tratamiento: ante un dolor da el camino
+  que definiste y ante "¿cuánto sale?" ofrece la evaluación.
 publishedAt: '2026-09-10'
-updatedAt: '2026-09-10'
+updatedAt: '2026-11-06'
 category: salud
 sector: Consultorios odontológicos
 tags:
   - WhatsApp
   - Consultorios odontológicos
-  - automatización
+  - Turnos
+  - Presupuestos
 related:
-  - como-automatizar-whatsapp-empresa
   - como-automatizar-whatsapp-clinicas
+  - como-automatizar-whatsapp-centros-de-estetica
+  - cotizaciones-por-whatsapp-automaticas
 faq:
-  - q: >-
-      ¿Qué información preparar para automatizar WhatsApp en consultorios
-      odontológicos?
+  - q: ¿El asistente puede pasarle un presupuesto de tratamiento a un paciente?
     a: >-
-      Prepará esta información: Tipos administrativos de cita: primera consulta,
-      control y reprogramación. Horarios de profesionales y condiciones
-      informativas aprobadas por el consultorio. Canal de recepción para
-      mensajes que requieren atención del odontólogo.
-  - q: ¿Atende confirma operaciones o consulta otros sistemas por defecto?
+      No. Un presupuesto de implante, ortodoncia o prótesis sale de la
+      evaluación del profesional. El asistente da los valores que decidiste
+      publicar, como la primera consulta, y ofrece reservarla.
+  - q: ¿Qué contesta si alguien escribe con dolor un domingo a la noche?
     a: >-
-      Atende responde con la información configurada y permite que tu equipo
-      continúe desde una bandeja compartida. Consultar datos en tiempo real,
-      crear reservas, registrar pedidos o enviar recordatorios requiere una
-      integración confirmada por separado.
+      Lo que hayas dejado escrito: el teléfono de la guardia odontológica, o
+      cuándo abre el consultorio y adónde recurrir si no puede esperar. No
+      evalúa el dolor, y la derivación marca el chat sin alertar a nadie.
+  - q: ¿Se puede reprogramar una sesión con la misma odontóloga desde WhatsApp?
+    a: >-
+      Sí, conectado a tu agenda y si la conexión contempla profesional y tiempo
+      de sesión. Se arma a pedido para cada consultorio. Sin ella, el asistente
+      toma el pedido y recepción hace el cambio.
+  - q: ¿Atende recibe las radiografías que mandan los pacientes?
+    a: >-
+      No. Imágenes, PDF y notas de voz nunca llegan a Atende, ni el texto que
+      venga con la imagen. Quedan en el teléfono del consultorio, y lo más
+      simple es pedir que la placa se traiga a la consulta.
 ---
-Una primera consulta puede requerir una coordinación distinta de un control con un profesional que ya conoce al paciente. A la vez, “¿cuánto sale?” puede referirse a una consulta o a un tratamiento que depende de una evaluación. Separar esos casos permite que recepción responda con precisión sin convertir información general del consultorio en una indicación clínica. La automatización debe acompañar esa organización.
+Un paciente avisa que no llega el jueves y, con tu agenda conectada, Atende le pasa la sesión al lunes, con la misma odontóloga y el mismo tiempo de sillón, sin que recepción levante el teléfono. En un consultorio eso pesa, porque los turnos vienen encadenados y perder uno atrasa un tratamiento entero.
 
-## Qué información preparar
+Si querés automatizar WhatsApp en tu consultorio odontológico, ordená primero tres mensajes que piden respuestas muy distintas: el de quien tiene dolor, el de quien pide presupuesto y el de quien está en medio de un tratamiento. Si el grueso de tu día son turnos sueltos de varias especialidades, la [guía para clínicas](/blog/como-automatizar-whatsapp-clinicas) te va a quedar más cerca.
 
-- Tipos administrativos de cita: primera consulta, control y reprogramación.
-- Horarios de profesionales y condiciones informativas aprobadas por el consultorio.
-- Canal de recepción para mensajes que requieren atención del odontólogo.
+## "Me duele una muela": decidí hoy qué se contesta el domingo a la noche
 
-## Qué responder y qué confirmar con el equipo
+El asistente contesta a esa hora, siempre que el servicio y tu WhatsApp estén conectados. Que no evalúe dolor lo escribís vos en el contexto, porque ningún filtro automático se lo impide: que no pregunte cuánto duele ni desde cuándo para decidir si es urgente, que no sugiera qué tomar y que no opine sobre una hinchazón. Su trabajo es administrativo y depende de cómo te organizás:
 
-| Consulta | Cómo resolverla |
+| Cómo trabaja el consultorio | Qué contesta el asistente |
 | --- | --- |
-| Primera consulta | Reunir sede y preferencia horaria. |
-| Cambio de cita | Pedir la referencia del turno para revisión humana. |
-| Costo de tratamiento | Derivar la evaluación y el presupuesto al profesional. |
+| Guarda huecos para urgencias | Conectado a tu agenda, ofrece el primero libre y lo reserva |
+| No guarda huecos, pero recepción acomoda | Deja el chat marcado para buscar lugar a primera hora |
+| Fuera de horario, con guardia | Pasa el teléfono de la guardia odontológica que cargaste |
+| Fuera de horario, sin guardia | Dice cuándo abren y adónde recurrir si no puede esperar |
 
-## Un flujo de atención paso a paso
+La segunda fila tiene un problema. Cuando el asistente deriva, el chat queda marcado en la bandeja, pero a nadie le suena una alarma. Y la marca no aguanta un fin de semana: si el paciente no vuelve a escribir, el chat se cierra solo a las 12 horas, así que el lunes un dolor del sábado a la noche ya no figura entre los pendientes. Por eso la respuesta de fin de semana tiene que decir la verdad: que hoy no hay nadie en el consultorio y qué hacer mientras tanto. Un "ya te contactamos" a esa hora deja a la persona esperando algo que no va a pasar.
 
-1. Preguntá si ya se atiende en el consultorio y si solicita una cita nueva o un cambio. Evitá pedir detalles de tratamientos anteriores en el primer contacto.
+## ¿Cuánto sale un implante? El presupuesto sale del sillón
 
-2. Reuní la preferencia de día y, si corresponde, el profesional solicitado. Explicá que recepción verificará duración y disponibilidad antes de confirmar.
+Un presupuesto de tratamiento no se arma por chat, porque depende de lo que vea el profesional en la boca. Lo que sí se puede terminar en la conversación es el paso siguiente: frente a "¿cuánto sale?", la acción útil es reservar la primera consulta.
 
-3. Para una reprogramación, el equipo identifica la cita vigente y acuerda la nueva. No comuniques una cancelación hasta que la persona responsable la haya registrado.
+| Preguntan por | Qué puede decir el asistente | Qué queda para la consulta |
+| --- | --- | --- |
+| Limpieza | El valor, si decidiste publicarlo | Si hace falta algo más |
+| Blanqueamiento | Cómo lo hacés y un valor de referencia, si lo cargaste | Si es apto para esa persona |
+| Ortodoncia | Qué tipos trabajás y cómo se pagan los controles | Plan, plazos y total |
+| Implante o prótesis | Que requiere evaluación y cuánto sale esa consulta | Presupuesto completo y cuotas |
+| Cobertura | Qué obras sociales tomás y para qué prácticas | Si esa práctica entra en ese plan |
 
-## Ejemplo de conversación
+Mucha gente manda la foto de la muela o la panorámica esperando un número, y esa imagen se queda en el teléfono del consultorio: a Atende solo entra texto, así que ni el asistente ni la bandeja se enteran. Dejá escrito en el contexto que, cuando se hable de presupuesto, aclare que las placas se traen a la consulta.
 
-Ejemplo ilustrativo para adaptar a la información y al proceso de tu negocio. No representa una conversación real ni una operación confirmada.
+El camino inverso tampoco existe: Atende manda fotos y videos de tu biblioteca, no documentos. El presupuesto en PDF lo entregás en la consulta o lo manda recepción desde el teléfono.
 
-> Paciente: Necesito cambiar mi control del martes.
+## Un tratamiento en varias sesiones no se reprograma como una limpieza
+
+En un conducto, una ortodoncia o un implante, cada turno depende del anterior. Al mover una sesión hay cuatro cosas que la agenda conectada tiene que respetar:
+
+- **Profesional.** Quien empezó el tratamiento lo sigue, salvo que recepción diga otra cosa.
+- **Tiempo de sillón.** Una sesión larga no entra en el hueco de un control.
+- **Plazo.** Si la odontóloga pidió volver dentro de cierto tiempo, una fecha posterior no sirve. Sin lugar en ese plazo, el pedido pasa a recepción.
+- **Laboratorio.** Si hay un trabajo de prótesis afuera, la fecha depende de cuándo vuelve. Ese turno lo maneja una persona.
+
+Ejemplo ilustrativo, con la agenda conectada:
+
+> Paciente: No llego a la sesión del jueves. ¿La podemos pasar?
 >
-> Asistente: Te ayudo a pasar la solicitud. ¿Con qué profesional tenés el turno y qué día preferís?
+> Asistente: Tu turno es el jueves a las 17:00 con la doctora. Ella tiene lunes 18:00 o miércoles 9:30, con el mismo tiempo de sesión.
 >
-> Paciente: Con la doctora del turno tarde, el viernes.
+> Paciente: Lunes
 >
-> Asistente: Recepción va a identificar tu cita y confirmar el cambio. Por ahora no está reprogramada.
+> Asistente: Pasé tu sesión al lunes a las 18:00 con la doctora. El jueves quedó libre.
 
-## Casos que conviene probar antes de activar
+Ese cierre aparece solo después de que la agenda confirmó el cambio. La conexión se arma a pedido para tu consultorio, con las reglas de arriba; contamos [cómo se conecta la agenda del consultorio](/integraciones). Sin ella, el asistente toma el pedido, aclara que el turno del jueves sigue en pie hasta que recepción lo cambie y tu equipo lo resuelve desde la bandeja. En [turnos y reservas](/servicios/turnos-whatsapp) están las dos formas de trabajar lado a lado, y en [WhatsApp para clínicas y consultorios](/casos-de-uso/clinicas-y-consultorios) ves qué incluye el armado y cómo pedir una demo.
 
-Probá preguntas sobre dolor, indicaciones posteriores a una intervención y costos de un tratamiento no evaluado. Ninguna debe resolverse con una respuesta genérica de ventas. Definí con el consultorio el pase a una persona y comprobá que el historial preserve el pedido original sin presentarlo como un diagnóstico.
+## Preguntas cortas que igual son clínicas
 
-## Cómo implementarlo con Atende
+"¿Puedo comer después de la extracción?", "me sangra un poco, ¿es normal?", "¿sigo con el antibiótico?", "se me salió un bracket". Parecen consultas de un minuto y no le corresponden al asistente: las pasa a una persona. Dejá escrito, además, que no junte alergias, medicación ni antecedentes por chat y que no los guarde en sus notas. Esa ficha se completa en el consultorio.
 
-En Atende configurás la información y las respuestas de tu negocio, vinculás el número de WhatsApp mediante QR y supervisás las conversaciones desde una bandeja compartida. Definí quién toma las derivaciones y probá consultas reales anonimizadas antes de atender clientes.
+Cuando alguien de recepción quiera seguir uno de esos chats, tiene que cambiar el estado a "Necesita humano". Responder desde la bandeja no alcanza, porque el asistente sigue activo. Y si al día siguiente el paciente escribe "sigo igual", el chat ya se cerró y le contesta otra vez el asistente, sin la charla anterior a la vista, salvo lo que haya guardado en sus notas. Por eso a un paciente en seguimiento conviene llamarlo.
 
-El flujo básico responde y reúne contexto. Consultar stock, agendas, pedidos o un CRM, ejecutar acciones en otro sistema y enviar recordatorios o seguimientos proactivos requiere una integración evaluada por separado. Revisá el alcance de la [atención automática por WhatsApp](/servicios/atencion-automatica-whatsapp) y prepará tus ejemplos para una [demo](/demo).
+## Presupuestos sin respuesta y controles que nadie retoma
 
-## Qué medir y revisar
+El paciente que pidió presupuesto y desapareció, y el que debía volver al control periódico, son dos seguimientos que todo consultorio deja pasar. De entrada, Atende solo contesta: no abre conversaciones. Esos dos avisos se pueden armar a pedido para tu consultorio, con el acuerdo del paciente, y tienen un costado delicado: si escribís en frío desde una línea enlazada por QR, WhatsApp puede restringirla. Antes de pedirlos, leé [cómo funcionan los recordatorios](/blog/recordatorios-de-turnos-por-whatsapp).
 
-Medí primeras consultas solicitadas, reprogramaciones efectivamente confirmadas y solicitudes duplicadas. Revisá cuántas veces recepción necesita aclarar que el mensaje automático no reservó ni canceló una cita.
+## Qué dejar cargado en un consultorio odontológico
 
-Asigná un responsable para corregir respuestas y actualizar información cuando cambien los servicios o las condiciones. Podés usar la [guía general de automatización](/blog/como-automatizar-whatsapp-empresa) para preparar la primera revisión con tu equipo.
+- Quién hace qué: ortodoncia, endodoncia, niños, cirugía, y qué días atiende cada uno.
+- Tipos de turno: primera consulta, control, urgencia y sesión de tratamiento.
+- Qué valores publicás y cuáles no se dan nunca por chat.
+- La respuesta para dolor fuera de horario, con teléfono real.
+- Coberturas por práctica, con alguien a cargo de actualizarlas.
