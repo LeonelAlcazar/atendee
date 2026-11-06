@@ -7,10 +7,12 @@
     "build": "npm run check:content && next build && node scripts/prepare-standalone.mjs",
     "test": "vitest run",
     "check:seo": "tsx scripts/check-site.mjs",
-    "verify": "npm test && tsc --noEmit && npm run build && npm run check:seo",
+    "verify": "npm test && tsc --noEmit && npm run check:claims && npm run build && npm run check:seo",
     "test:watch": "vitest",
     "start": "node .next/standalone/server.js",
-    "check:content": "tsx scripts/check-content.ts"
+    "check:content": "tsx scripts/check-content.ts",
+    "check:claims": "tsx scripts/check-claims.ts",
+    "indexnow": "tsx scripts/indexnow.mjs"
   },
   "dependencies": {
     "entities": "^8.1.0",

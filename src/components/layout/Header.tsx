@@ -5,9 +5,10 @@ import { site } from '@/content/site';
 
 const nav = [
   { href: '/servicios', label: 'Soluciones' },
-  { href: '/blog', label: 'Guías' },
-  { href: '/casos-de-uso', label: 'Casos de uso' },
+  { href: '/casos-de-uso', label: 'Rubros' },
+  { href: '/integraciones', label: 'Integraciones' },
   { href: '/precios', label: 'Precios' },
+  { href: '/blog', label: 'Guías' },
 ];
 
 export function Header() {
@@ -16,7 +17,7 @@ export function Header() {
       <div className="mx-auto flex h-[4.75rem] max-w-7xl items-center justify-between gap-5 px-5 md:px-8">
         <Link
           href="/"
-          className="group flex items-center gap-2.5 rounded-sm"
+          className="group flex min-h-11 items-center gap-2.5 rounded-sm"
         >
           <span
             className="grid size-9 place-items-center rounded-md border-2 border-ink bg-coral font-display text-base font-bold shadow-[var(--shadow-brut-xs)] transition-transform group-hover:-rotate-3"
@@ -35,7 +36,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-sm py-2 font-medium transition-colors hover:text-coral"
+              className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm font-medium transition-colors hover:text-coral-strong"
             >
               {item.label}
             </Link>
@@ -45,12 +46,12 @@ export function Header() {
         <div className="hidden items-center gap-4 md:flex">
           <a
             href={site.appUrl}
-            className="rounded-sm px-2 py-2 text-sm font-semibold underline decoration-2 underline-offset-4 hover:text-coral"
+            className="inline-flex min-h-11 items-center rounded-sm px-2 text-sm font-semibold underline decoration-2 underline-offset-4 hover:text-coral-strong"
           >
             Entrar
           </a>
           <Button href="/demo" data-cta="header-demo" variant="primary" size="md">
-            Solicitar demo <span aria-hidden="true">→</span>
+            Pedí una demo <span aria-hidden="true">→</span>
           </Button>
         </div>
 

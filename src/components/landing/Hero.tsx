@@ -6,102 +6,80 @@ import { landing } from '@/content/landing';
 import { site } from '@/content/site';
 
 export function Hero() {
+  const { hero } = landing;
+
   return (
-    <section className="relative overflow-hidden border-b-2 border-ink">
-      <div className="hero-grid absolute inset-0 opacity-60" aria-hidden="true" />
-      <div
-        className="absolute -right-28 top-20 hidden size-[28rem] rounded-full border-[28px] border-coral opacity-[0.14] md:block"
-        aria-hidden="true"
-      />
+    <section className="border-b-2 border-ink">
+      <div className="grid grid-cols-[minmax(0,1fr)] lg:min-h-[calc(100svh-7.875rem)] lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
+        <div className="relative flex flex-col justify-center px-5 py-12 md:px-8 md:py-16 lg:py-12 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] lg:pr-12">
+          <div className="hero-grid absolute inset-0 opacity-60" aria-hidden="true" />
+          <div className="relative flex flex-col items-start gap-6">
+            <Tag filled>{hero.eyebrow}</Tag>
 
-      <div className="relative mx-auto grid min-h-[calc(100svh-5rem)] max-w-7xl items-center gap-14 px-5 py-14 md:px-8 md:py-20 lg:grid-cols-[0.92fr_1.08fr] lg:gap-12">
-        <div className="hero-copy flex flex-col items-start gap-6">
-          <Tag filled>{landing.hero.eyebrow}</Tag>
+            <h1 className="font-display text-[2.75rem] font-semibold leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-[clamp(3rem,4.5vw,4rem)] lg:leading-[0.98]">
+              <span className="lg:block">{hero.titleBefore}</span>{' '}
+              <span className="text-coral lg:block lg:text-balance">
+                {hero.titleAccent}
+              </span>{' '}
+              <span className="lg:block">{hero.titleAfter}</span>
+            </h1>
 
-          <h1 className="max-w-3xl font-display text-[3.6rem] font-semibold leading-[0.88] tracking-[-0.055em] sm:text-7xl lg:text-[5.65rem]">
-            <span className="block">{landing.hero.titleBefore}</span>{' '}
-            <span className="block text-coral">{landing.hero.titleAccent}</span>{' '}
-            <span className="mt-1 block">{landing.hero.titleAfter}</span>
-          </h1>
+            <p className="max-w-xl text-lg leading-relaxed text-mute xl:text-xl">
+              {hero.description}
+            </p>
 
-          <p className="max-w-xl font-body text-lg leading-relaxed text-mute md:text-xl">
-            {landing.hero.description}
-          </p>
-
-          <Link
-            href="/blog/bot-de-whatsapp"
-            className="inline-flex min-h-11 items-center text-sm font-semibold underline underline-offset-4"
-          >
-            Qué es un bot de WhatsApp y qué puede responder →
-          </Link>
-
-          <div className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row">
-            <Button
-              href="/demo"
-              data-cta="hero-demo"
-              variant="primary"
-              size="lg"
-              className="group"
-            >
-              {landing.hero.primaryCta}
-              <span
-                className="transition-transform group-hover:translate-x-1"
-                aria-hidden="true"
+            <div className="flex w-full flex-col gap-3 pt-1 sm:w-auto sm:flex-row">
+              <Button
+                href="/demo"
+                data-cta="hero-demo"
+                variant="primary"
+                size="lg"
+                className="group"
               >
-                →
-              </span>
-            </Button>
-            <Button href={site.appUrl} data-cta="hero-signup" variant="outline" size="lg">
-              {landing.hero.secondaryCta}
-            </Button>
+                {hero.primaryCta}
+                <span
+                  className="transition-transform group-hover:translate-x-1"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+              </Button>
+              <Button
+                href={site.appUrl}
+                data-cta="hero-signup"
+                variant="outline"
+                size="lg"
+              >
+                {hero.secondaryCta}
+              </Button>
+            </div>
+
+            <p className="text-sm leading-snug text-mute">
+              {hero.reassurance}{' '}
+              <Link
+                href="/que-es-atende"
+                className="inline-flex min-h-11 items-center font-semibold text-ink underline underline-offset-4 hover:text-coral-strong"
+              >
+                {hero.aboutLink}
+              </Link>
+            </p>
           </div>
-
-          <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-mute">
-            {landing.hero.reassurance}
-          </p>
-
-          <ul className="grid gap-x-5 gap-y-2 border-t border-ink/20 pt-5 font-mono text-[10px] uppercase tracking-[0.08em] text-mute sm:grid-cols-2">
-            {site.trustStrip.map((item) => (
-              <li key={item} className="flex items-center gap-2">
-                <span className="size-1.5 shrink-0 bg-coral" aria-hidden="true" />
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
 
-        <div className="hero-preview relative mx-auto w-full max-w-2xl lg:mx-0 lg:justify-self-end">
-          <div
-            className="absolute -left-4 -top-4 size-16 bg-sun md:-left-7 md:-top-7 md:size-24"
-            aria-hidden="true"
-          />
+        <div className="flex items-center border-t-2 border-ink bg-forest px-5 py-12 md:px-8 md:py-16 lg:border-l-2 lg:border-t-0 lg:py-10 lg:pl-10 lg:pr-[max(2rem,calc((100vw-80rem)/2+2rem))] xl:pl-14">
           <ProductPreview />
-          <div className="absolute -bottom-5 -left-2 border-2 border-ink bg-mint px-4 py-3 shadow-[var(--shadow-brut-sm)] sm:-left-5 md:px-5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.08em] text-mint-strong">
-              Tu equipo decide
-            </p>
-            <p className="mt-1 font-display text-sm font-semibold md:text-base">
-              Automático o humano, en un clic.
-            </p>
-          </div>
         </div>
       </div>
 
-      <div className="relative border-t-2 border-ink bg-ink text-bg">
-        <ol className="mx-auto grid max-w-7xl sm:grid-cols-2 lg:grid-cols-4">
-          {landing.facts.map((fact) => (
-            <li
-              key={fact.number}
-              className="grid grid-cols-[auto_1fr] gap-4 border-b border-bg/20 px-5 py-6 last:border-b-0 sm:border-r sm:[&:nth-child(2)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2)]:border-r lg:last:border-r-0 md:px-7"
-            >
-              <span className="font-mono text-xs text-coral">{fact.number}</span>
-              <div>
-                <h2 className="font-display text-lg font-semibold">{fact.title}</h2>
-                <p className="mt-1 text-sm leading-snug text-bg/65">{fact.text}</p>
-              </div>
+      <div className="border-t-2 border-ink bg-ink text-bg">
+        <ul className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-2 px-5 py-4 font-mono text-[11px] uppercase tracking-[0.06em] sm:grid-cols-2 md:px-8 lg:flex lg:justify-between">
+          {site.trustStrip.map((item) => (
+            <li key={item} className="flex items-center gap-2.5">
+              <span className="size-1.5 shrink-0 bg-coral" aria-hidden="true" />
+              {item}
             </li>
           ))}
-        </ol>
+        </ul>
       </div>
     </section>
   );

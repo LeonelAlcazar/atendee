@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { pages } from '@/content/pages';
 import { site } from '@/content/site';
 import { buildWaLink } from '@/lib/wa';
@@ -11,54 +12,74 @@ import { DemoForm } from '@/components/demo/DemoForm';
 export const metadata = createPageMetadata(pages.demo);
 const breadcrumbs = [
   { name: 'Inicio', path: '/' },
-  { name: 'Solicitar demo', path: '/demo' },
+  { name: 'Pedí una demo', path: '/demo' },
 ];
 
 export default function DemoPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <section className="py-14 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-start gap-12 px-5 md:px-8 lg:grid-cols-2">
+      <section className="py-12 md:py-20">
+        <div className="mx-auto grid max-w-7xl items-start gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-x-12">
+          <SectionHeader
+            level="h1"
+            eyebrow="Pedí una demo"
+            title={
+              <>
+                ¿Qué tarea querés{' '}
+                <span className="text-coral">sacarte de encima?</span>
+              </>
+            }
+            sub="Reservar turnos, registrar pedidos, pasar presupuestos, contestar lo mismo todo el día. Contanos qué se repite en tu WhatsApp y vemos qué puede terminar Atende en la conversación y qué conexión necesita tu negocio."
+          />
+          <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            <DemoForm />
+          </div>
           <div>
-            <SectionHeader
-              level="h1"
-              eyebrow="HABLEMOS DE TU EMPRESA"
-              title="Evaluá Atende con tu caso de uso."
-              sub="Solicitá una demo de atención y ventas por WhatsApp con IA. Contanos cómo trabaja tu equipo para conversar sobre el flujo, los planes y la implementación."
-            />
-            <h2 className="mt-9 font-display text-2xl font-semibold">
-              Qué podemos revisar juntos
+            <h2 className="font-display text-2xl font-semibold">
+              Qué miramos juntos
             </h2>
-            <ul className="mt-5 list-disc space-y-4 pl-5 text-lg leading-relaxed text-mute">
-              <li>
-                Las consultas que querés automatizar y las que debe tomar una
-                persona.
-              </li>
-              <li>
-                Cómo usar la bandeja compartida para supervisar respuestas y
-                continuar conversaciones.
-              </li>
-              <li>
-                El volumen de respuestas, las integraciones necesarias y las
-                condiciones antes de contratar.
-              </li>
+            <ul className="mt-4 flex flex-col gap-3 text-lg leading-relaxed text-mute">
+              {[
+                'La tarea, desde el primer mensaje hasta que queda hecha.',
+                'El sistema donde la llevás hoy y cómo se conecta. Esa conexión se arma a pedido para tu negocio.',
+                'Qué hace el asistente solo y qué queda para tu equipo.',
+                'Qué plan te sirve y cómo se cotiza la conexión.',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span
+                    className="mt-2.5 size-2 shrink-0 bg-coral"
+                    aria-hidden="true"
+                  />
+                  {item}
+                </li>
+              ))}
             </ul>
-            <div className="mt-9 rounded-lg border-2 border-ink bg-coral-soft p-6">
+            <p className="mt-6 rounded-lg border-2 border-ink bg-mint p-5 leading-relaxed">
+              Como referencia, tenemos una demo para una concesionaria de motos:
+              consulta stock y precios, calcula
+              financiación y registra al interesado en Google Sheets. Sin
+              conexión, el asistente junta el pedido y tu equipo lo confirma.{' '}
+              <Link
+                href="/integraciones"
+                className="font-semibold underline underline-offset-4"
+              >
+                Cómo armamos cada conexión
+              </Link>
+              .
+            </p>
+            <div className="mt-6 rounded-lg border-2 border-ink bg-coral-soft p-6">
               <h2 className="font-display text-xl font-semibold">
-                También podés escribirnos directamente
+                También podés escribirnos directo
               </h2>
-              <p className="mt-3 leading-relaxed">
-                Atende · {site.location}. Atención comercial en español.
-              </p>
               <a
                 href={buildWaLink(
-                  'Hola, quiero solicitar una demo de Atende para mi empresa',
+                  'Hola, quiero pedir una demo de Atende para mi negocio',
                 )}
                 data-cta="demo-direct-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 flex min-h-11 items-center font-semibold underline underline-offset-4"
+                className="mt-3 flex min-h-11 items-center font-semibold underline underline-offset-4"
               >
                 WhatsApp · {site.whatsapp.display} ↗
               </a>
@@ -70,12 +91,10 @@ export default function DemoPage() {
               </a>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-mute">
-              La solicitud inicia una conversación comercial. Coordinamos los
-              próximos pasos por el canal que elijas; no se reserva un horario
-              automáticamente.
+              Pedir una demo no te obliga a contratar y no reserva un horario:
+              coordinamos los próximos pasos por el canal que elijas.
             </p>
           </div>
-          <DemoForm />
         </div>
       </section>
       <JsonLd value={pageGraph({ ...pages.demo, breadcrumbs })} />

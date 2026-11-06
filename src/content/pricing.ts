@@ -3,30 +3,38 @@ import type { FaqItem } from './faq';
 export const pricingFaq: FaqItem[] = [
   {
     q: '¿Cuánto cuesta un bot de WhatsApp con Atende?',
-    a: 'El precio depende del plan habilitado y de los límites de respuestas de IA. Consultá el importe, la moneda y las condiciones vigentes en la app antes de pagar. Las integraciones con otros sistemas requieren evaluar su alcance; no se presupuestan solo con la cantidad de chats.',
+    a: 'Depende del plan y de las conexiones que sumes. Cada plan con IA trae una cantidad de respuestas del asistente por mes, y las conexiones con tu sistema se cotizan para cada negocio. El importe vigente del plan lo ves en la app antes de pagar.',
+  },
+  {
+    q: '¿Dónde veo el precio de los planes?',
+    a: 'Creá tu espacio y entrá a Plan en la app. Ahí ves los planes habilitados, sus límites y su precio antes de pagar. También podés preguntarnos por WhatsApp o email.',
+  },
+  {
+    q: '¿Qué es un crédito?',
+    a: 'Un crédito es una respuesta del asistente. Se usan después de la cantidad de respuestas del plan. Cada espacio tiene 100 créditos de bienvenida, una vez, que se activan sin tarjeta.',
+  },
+  {
+    q: '¿Una conversación cuenta como una sola respuesta?',
+    a: 'No. Cada vez que el asistente contesta es una respuesta, y una conversación puede usar varias. Si el contacto manda varios mensajes seguidos, se juntan y el asistente contesta una vez.',
+  },
+  {
+    q: '¿Qué pasa si se terminan las respuestas?',
+    a: 'El asistente deja de responder y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja para que tu equipo conteste a mano. Por eso conviene mirar la pantalla Plan de la app.',
+  },
+  {
+    q: '¿Las conexiones con mi sistema vienen en el plan?',
+    a: 'No. Reservar turnos, registrar pedidos o cotizar necesita una conexión que armamos a pedido para tu negocio y que se cotiza aparte. La usás sobre un plan con IA.',
   },
   {
     q: '¿Puedo usar Atende solamente como CRM?',
-    a: 'Sí. Plan CRM incluye la bandeja compartida y las herramientas de CRM para que tu equipo responda manualmente. No incluye automatizaciones ni respuestas del asistente. Consultá el precio vigente en la app antes de confirmar el pago.',
+    a: 'Sí. Plan CRM trae la bandeja compartida, las etiquetas, las notas internas y WhatsApp MCP para que tu equipo responda a mano. No tiene asistente, así que no responde solo aunque tengas créditos.',
   },
   {
     q: '¿Qué planes incluyen WhatsApp MCP?',
-    a: 'WhatsApp MCP está disponible en todos los planes, incluido Plan CRM. Permite el acceso de herramientas externas autorizadas a tu espacio de WhatsApp. Ese acceso no incluye por sí solo una integración con tu agenda, stock o CRM, ni habilita la automatización del Plan CRM.',
+    a: 'Todos, incluido Plan CRM. Permite que una aplicación de IA que vos autorizás lea tus conversaciones y mande mensajes de texto. No suma acciones al asistente ni reemplaza una conexión con tu agenda, tu stock o tu CRM.',
   },
   {
-    q: '¿Dónde puedo ver el precio de Atende?',
-    a: 'Creá tu espacio e ingresá a la sección de facturación de la app para ver los planes habilitados, el precio y las condiciones antes de confirmar el pago. También podés consultar al equipo comercial por WhatsApp o email.',
-  },
-  {
-    q: '¿Qué significa el límite de respuestas del agente?',
-    a: 'Es la cantidad de respuestas del asistente de IA que contempla el plan por mes. Una conversación puede necesitar varias respuestas. Revisá el límite del plan y el consumo previsto antes de contratar.',
-  },
-  {
-    q: '¿El plan incluye cualquier integración?',
-    a: 'No. Las conexiones con agendas, CRM, stock u otros sistemas necesitan una evaluación de compatibilidad y alcance. Confirmá por escrito qué se implementa y sus condiciones antes de contratar.',
-  },
-  {
-    q: '¿Solicitar una demo implica contratar?',
-    a: 'No. La solicitud abre una conversación comercial para evaluar tu caso. Podés consultar el funcionamiento, los planes y las condiciones antes de decidir.',
+    q: '¿Pedir una demo me obliga a contratar?',
+    a: 'No. La demo es una conversación para ver qué tarea querés sacarte de encima y qué necesita tu negocio. Decidís después.',
   },
 ];

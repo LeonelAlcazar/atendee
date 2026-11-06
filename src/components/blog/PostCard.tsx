@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { BlogPost } from '@/lib/blog-content';
+import { formatBlogDate, type BlogPost } from '@/lib/blog-content';
 import { getBlogTopic } from '@/content/blog-topics';
 
 export function PostCard({ post }: { post: BlogPost }) {
@@ -20,10 +20,14 @@ export function PostCard({ post }: { post: BlogPost }) {
       <p className="mt-4 flex-1 leading-relaxed text-mute">
         {post.description}
       </p>
+      <p className="mt-4 text-xs text-mute">
+        Actualizado el{' '}
+        <time dateTime={post.updatedAt}>{formatBlogDate(post.updatedAt)}</time>
+      </p>
       <Link
         href={`/blog/${post.slug}`}
         aria-label={`Leer: ${post.title}`}
-        className="mt-6 w-fit py-2 text-sm font-semibold underline underline-offset-4"
+        className="mt-4 inline-flex min-h-11 w-fit items-center text-sm font-semibold underline underline-offset-4"
       >
         Leer guía <span aria-hidden="true">→</span>
       </Link>

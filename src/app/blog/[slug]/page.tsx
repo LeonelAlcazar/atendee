@@ -3,13 +3,22 @@ import { notFound } from 'next/navigation';
 import { getPost, getPosts } from '@/lib/blog';
 import { formatBlogDate } from '@/lib/blog-content';
 import { postBreadcrumbs, postGraph, postMetadata } from '@/lib/blog-seo';
-import { getBlogTopic } from '@/content/blog-topics';
+import { getBlogTopic, rubroByTopic } from '@/content/blog-topics';
+import { rubros } from '@/content/rubros';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { JsonLd } from '@/components/jsonld';
 import { Button } from '@/components/ui/Button';
 import { PostCard } from '@/components/blog/PostCard';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
+// A post scheduled after the build has no static param yet. It must render on
+// demand once its date arrives, so this has to stay true.
+export const dynamicParams = true;
+export function generateStaticParams() {
+  return getPosts().map((post) => ({ slug: post.slug }));
+}
+const tocLinkClass =
+  'flex min-h-11 items-center underline-offset-4 hover:underline lg:min-h-0';
 type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   const post = getPost((await params).slug);
@@ -22,6 +31,7 @@ export default async function PostPage({ params }: Props) {
   const related = post.related.map(
     (slug) => getPosts().find((item) => item.slug === slug)!,
   );
+  const rubro = rubros.find((item) => item.slug === rubroByTopic[post.category]);
   return (
     <>
       <Breadcrumbs items={postBreadcrumbs(post)} />
@@ -29,7 +39,7 @@ export default async function PostPage({ params }: Props) {
         <header className="max-w-5xl">
           <Link
             href={`/blog/tema/${post.category}`}
-            className="inline-block rounded-full border border-ink bg-mint px-4 py-2 font-mono text-xs"
+            className="inline-flex min-h-11 items-center rounded-full border border-ink bg-mint px-4 font-mono text-xs"
           >
             {getBlogTopic(post.category)!.name}
           </Link>
@@ -39,11 +49,11 @@ export default async function PostPage({ params }: Props) {
           <p className="mt-5 max-w-3xl text-xl leading-relaxed text-mute">
             {post.description}
           </p>
-          <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-mute">
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-mute">
             <Link
               href="/blog/editorial"
               rel="author"
-              className="underline underline-offset-4"
+              className="inline-flex min-h-11 items-center underline underline-offset-4"
             >
               Equipo Atende
             </Link>
@@ -64,22 +74,61 @@ export default async function PostPage({ params }: Props) {
             <span>{post.readingMinutes} min de lectura</span>
           </div>
         </header>
-        <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16">
-          <div className="min-w-0">
-            <section
-              aria-labelledby="respuesta-breve"
-              className="rounded-lg border-2 border-ink bg-mint/60 p-6 shadow-[var(--shadow-brut-sm)] md:p-8"
+        <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-x-16">
+          {/* First in the DOM: on a phone the answer comes before the index. */}
+          <section
+            aria-labelledby="respuesta-breve"
+            className="min-w-0 rounded-lg border-2 border-ink bg-mint/60 p-6 shadow-[var(--shadow-brut-sm)] md:p-8 lg:col-start-1 lg:row-start-1"
+          >
+            <h2
+              id="respuesta-breve"
+              className="font-mono text-xs uppercase tracking-wider"
             >
-              <h2
-                id="respuesta-breve"
-                className="font-mono text-xs uppercase tracking-wider"
-              >
-                Respuesta breve
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed">{post.summary}</p>
-            </section>
+              Respuesta breve
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed">{post.summary}</p>
+          </section>
+          <aside className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            <nav
+              aria-label="Índice del artículo"
+              className="rounded-lg border border-ink bg-surface p-6 lg:sticky lg:top-24"
+            >
+              <p className="font-mono text-xs uppercase tracking-wider text-mute">
+                En esta guía
+              </p>
+              <ol className="mt-2 text-sm leading-snug lg:mt-4 lg:space-y-3 lg:leading-relaxed">
+                <li>
+                  <a href="#respuesta-breve" className={tocLinkClass}>
+                    Respuesta breve
+                  </a>
+                </li>
+                {post.headings
+                  .filter((heading) => heading.depth === 2)
+                  .map((heading) => (
+                    <li key={heading.id}>
+                      <a href={`#${heading.id}`} className={tocLinkClass}>
+                        {heading.text}
+                      </a>
+                    </li>
+                  ))}
+                <li>
+                  <a href="#preguntas-frecuentes" className={tocLinkClass}>
+                    Preguntas frecuentes
+                  </a>
+                </li>
+                {post.sources.length > 0 && (
+                  <li>
+                    <a href="#fuentes" className={tocLinkClass}>
+                      Fuentes
+                    </a>
+                  </li>
+                )}
+              </ol>
+            </nav>
+          </aside>
+          <div className="min-w-0 lg:col-start-1 lg:row-start-2">
             <div
-              className="blog-prose mt-10"
+              className="blog-prose"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
             <section
@@ -95,7 +144,7 @@ export default async function PostPage({ params }: Props) {
                     key={item.q}
                     className="rounded-lg border border-ink bg-surface p-5 open:bg-mint/25"
                   >
-                    <summary className="flex min-h-8 items-center justify-between gap-4 font-display text-lg font-semibold">
+                    <summary className="flex min-h-11 items-center justify-between gap-4 font-display text-lg font-semibold">
                       {item.q}
                       <span aria-hidden="true">+</span>
                     </summary>
@@ -131,77 +180,41 @@ export default async function PostPage({ params }: Props) {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4 text-sm leading-relaxed text-mute">
-                  Comparativa publicada por Atende. Las funciones y condiciones
-                  de cada proveedor pueden cambiar; confirmá el alcance durante
-                  la evaluación.
-                </p>
+                {post.category === 'alternativas' && (
+                  <p className="mt-4 text-sm leading-relaxed text-mute">
+                    Comparativa publicada por Atende. Las funciones y
+                    condiciones de cada proveedor pueden cambiar; confirmá el
+                    alcance durante la evaluación.
+                  </p>
+                )}
               </section>
             )}
             <section className="mt-12 rounded-lg border-2 border-ink bg-sun/60 p-7">
               <h2 className="font-display text-3xl font-semibold tracking-tight">
-                Probalo con las consultas de tu negocio.
+                Dejá que Atende termine esa tarea en tu WhatsApp.
               </h2>
               <p className="mt-4 leading-relaxed">
-                Traé ejemplos sin datos personales y contanos qué sistema usás.
-                Revisamos qué puede responder Atende y qué necesita tu equipo o
-                una integración.
+                Contanos qué tarea se repite y qué sistema usás. Conectado a tu
+                agenda o a tu sistema, Atende reserva, cotiza o registra el
+                pedido en la conversación, con tu equipo al tanto. Esa conexión
+                se arma a pedido para tu negocio; sin ella, el asistente junta
+                los datos y tu equipo confirma.
               </p>
               <Button href="/demo" data-cta="blog-demo" className="mt-6">
-                Solicitar una demo →
+                Pedí una demo →
               </Button>
+              {rubro && (
+                <p className="mt-5">
+                  <Link
+                    href={`/casos-de-uso/${rubro.slug}`}
+                    className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+                  >
+                    {rubro.title} →
+                  </Link>
+                </p>
+              )}
             </section>
           </div>
-          <aside className="order-first lg:order-last">
-            <nav
-              aria-label="Índice del artículo"
-              className="rounded-lg border border-ink bg-surface p-6 lg:sticky lg:top-24"
-            >
-              <p className="font-mono text-xs uppercase tracking-wider text-mute">
-                En esta guía
-              </p>
-              <ol className="mt-4 space-y-3 text-sm leading-relaxed">
-                <li>
-                  <a
-                    href="#respuesta-breve"
-                    className="underline-offset-4 hover:underline"
-                  >
-                    Respuesta breve
-                  </a>
-                </li>
-                {post.headings
-                  .filter((heading) => heading.depth === 2)
-                  .map((heading) => (
-                    <li key={heading.id}>
-                      <a
-                        href={`#${heading.id}`}
-                        className="underline-offset-4 hover:underline"
-                      >
-                        {heading.text}
-                      </a>
-                    </li>
-                  ))}
-                <li>
-                  <a
-                    href="#preguntas-frecuentes"
-                    className="underline-offset-4 hover:underline"
-                  >
-                    Preguntas frecuentes
-                  </a>
-                </li>
-                {post.sources.length > 0 && (
-                  <li>
-                    <a
-                      href="#fuentes"
-                      className="underline-offset-4 hover:underline"
-                    >
-                      Fuentes
-                    </a>
-                  </li>
-                )}
-              </ol>
-            </nav>
-          </aside>
         </div>
       </article>
       <section className="border-t-2 border-ink bg-mint/25 py-14">
@@ -216,7 +229,7 @@ export default async function PostPage({ params }: Props) {
           </div>
           <Link
             href="/blog"
-            className="mt-8 inline-block py-2 underline underline-offset-4"
+            className="mt-8 inline-flex min-h-11 items-center underline underline-offset-4"
           >
             Volver a todas las guías →
           </Link>

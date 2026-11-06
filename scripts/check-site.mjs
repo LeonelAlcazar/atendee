@@ -1,12 +1,20 @@
 import assert from 'node:assert/strict';
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, readdir, stat } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 import { once } from 'node:events';
-import { loadPosts } from '../src/lib/blog-content.ts';
+import { loadPosts, parsePost } from '../src/lib/blog-content.ts';
+import { toSchemaDate } from '../src/lib/dates.ts';
 import { pages, legalPages } from '../src/content/pages.ts';
+import { rubros } from '../src/content/rubros.ts';
 import { servicios } from '../src/content/servicios.ts';
-import { blogTopics, editorialPage } from '../src/content/blog-topics.ts';
+import { actionStatus } from '../src/content/status.ts';
+import {
+  blogTopics,
+  editorialPage,
+  rubroByTopic,
+} from '../src/content/blog-topics.ts';
+import { guideRedirects } from '../next.config.ts';
 import { load } from 'cheerio';
 
 // Start the actual production runtime on an available local port and audit HTTP HTML.
@@ -56,9 +64,23 @@ try {
     return response.text();
   };
   const posts = loadPosts();
+  const rubroPaths = rubros.map((rubro) => `/casos-de-uso/${rubro.slug}`);
+  assert.deepEqual(
+    rubros.map((rubro) => rubro.slug).sort(),
+    [
+      'clinicas-y-consultorios',
+      'comercios-y-distribuidoras',
+      'concesionarias-e-inmobiliarias',
+      'peluquerias-y-estetica',
+      'restaurantes-y-hoteles',
+      'servicios-profesionales',
+    ],
+    'The six rubros must be published',
+  );
   const expectedPaths = [
     ...Object.values(pages).map((page) => page.path),
     ...servicios.map((service) => `/servicios/${service.slug}`),
+    ...rubroPaths,
     ...legalPages.map((page) => page.path),
     '/blog',
     editorialPage.path,
@@ -81,12 +103,21 @@ try {
     expectedPaths.map((path) => (path === '/' ? origin : origin + path)).sort(),
     'Sitemap must cover every public page and every published Markdown post',
   );
+  for (const path of [
+    '/que-es-atende',
+    '/integraciones',
+    '/preguntas-frecuentes',
+    '/nosotros',
+    ...rubroPaths,
+  ])
+    assert.ok(urls.includes(origin + path), `${path}: missing from sitemap`);
   const commercialDates = new Map([
     ...Object.values(pages).map((page) => [page.path, page.updated]),
     ...servicios.map((service) => [
       `/servicios/${service.slug}`,
       service.updated,
     ]),
+    ...rubros.map((rubro) => [`/casos-de-uso/${rubro.slug}`, rubro.updated]),
   ]);
   for (const entry of sitemap('url').toArray()) {
     const path = new URL(sitemap(entry).find('loc').text()).pathname;
@@ -167,6 +198,27 @@ try {
     const graphs = $('script[type="application/ld+json"]')
       .map((_, el) => JSON.parse($(el).text())['@graph'])
       .get();
+    const nodes = [];
+    const collectNodes = (value) => {
+      if (Array.isArray(value)) value.forEach(collectNodes);
+      else if (value && typeof value === 'object') {
+        nodes.push(value);
+        Object.values(value).forEach(collectNodes);
+      }
+    };
+    collectNodes(graphs);
+    const identified = nodes.filter((node) => node['@id']);
+    const defined = identified.filter((node) => Object.keys(node).length > 1);
+    for (const { '@id': id } of identified) {
+      assert.ok(
+        defined.some((node) => node['@id'] === id),
+        `${url}: dangling ${id}`,
+      );
+      const urls = defined
+        .filter((node) => node['@id'] === id && node.url)
+        .map((node) => node.url);
+      assert.ok(new Set(urls).size <= 1, `${url}: conflicting urls for ${id}`);
+    }
     assert.ok(
       graphs.some((node) => node['@type'] === 'Organization'),
       `${url}: organization`,
@@ -175,6 +227,18 @@ try {
       graphs.some((node) => node['@type'] === 'WebSite'),
       `${url}: website`,
     );
+    const organization = graphs.find((node) => node['@type'] === 'Organization');
+    assert.equal(organization.name, 'Atende', `${url}: organization name`);
+    for (const key of ['legalName', 'taxID', 'foundingDate'])
+      assert.ok(!(key in organization), `${url}: unconfirmed ${key}`);
+    assert.ok(
+      !('sameAs' in organization) || organization.sameAs.length,
+      `${url}: empty sameAs`,
+    );
+    const software = graphs.find(
+      (node) => node['@type'] === 'SoftwareApplication',
+    );
+    assert.ok(software && !('offers' in software), `${url}: software offers`);
     const visible = $.root().clone();
     visible.find('script, style, noscript').remove();
     const visibleText = normalize(visible.text());
@@ -222,6 +286,13 @@ try {
         graphs.some((node) => node['@type'] === 'WebPage' && node.url === url),
         `${url}: page entity`,
       );
+      const pageDate = commercialDates.get(parsed.pathname);
+      if (pageDate)
+        assert.equal(
+          graphs.find((node) => node['@type'] === 'WebPage').dateModified,
+          toSchemaDate(pageDate),
+          `${url}: WebPage dateModified`,
+        );
       assert.ok(
         $('a[href="/demo"], a[href^="https://wa.me/"]').length,
         `${url}: missing sales CTA`,
@@ -259,20 +330,44 @@ try {
   for (const path of documents.keys())
     assert.ok(linkedPages.has(path), `Orphan page: ${path}`);
 
+  for (const rubro of rubros) {
+    const path = `/casos-de-uso/${rubro.slug}`;
+    const $ = documents.get(path);
+    assert.ok(!/^c[oó]mo\b/i.test($('title').text()), `${path}: title is a guide`);
+    assert.ok($('a[href="/demo"]', 'main').length, `${path}: demo is the next step`);
+    assert.ok(
+      normalize($('main').text()).includes('Ejemplo ilustrativo'),
+      `${path}: unlabeled example`,
+    );
+    assert.ok(
+      $('a[href^="/blog/"]', 'main').length,
+      `${path}: must link to its guides`,
+    );
+  }
+
   for (const path of [
     '/does-not-exist',
     '/servicios/does-not-exist',
+    '/casos-de-uso/does-not-exist',
     '/blog/does-not-exist',
     '/blog/tema/does-not-exist',
   ]) {
     const response = await fetch(base + path);
     assert.equal(response.status, 404, `${path}: real HTTP 404`);
     const $ = load(await response.text());
-    assert.ok(
+    assert.deepEqual(
       $('meta[name="robots"]')
         .toArray()
-        .some((el) => /noindex/.test($(el).attr('content'))),
-      `${path}: noindex`,
+        .map((el) => $(el).attr('content')),
+      ['noindex'],
+      `${path}: one robots directive`,
+    );
+    assert.equal($('meta[name="googlebot"]').length, 0, `${path}: googlebot`);
+    assert.equal($('link[rel="canonical"]').length, 0, `${path}: canonical`);
+    assert.equal($('meta[property="og:url"]').length, 0, `${path}: OG URL`);
+    assert.ok(
+      !$('title').text().includes(pages.home.title),
+      `${path}: shows the home title`,
     );
   }
   for (const post of posts) {
@@ -284,8 +379,8 @@ try {
       .find((node) => node['@type'] === 'BlogPosting');
     assert.ok(article, `${path}: BlogPosting schema`);
     assert.equal(article.headline, post.title);
-    assert.equal(article.datePublished, post.publishedAt);
-    assert.equal(article.dateModified, post.updatedAt);
+    assert.equal(article.datePublished, toSchemaDate(post.publishedAt));
+    assert.equal(article.dateModified, toSchemaDate(post.updatedAt));
     assert.equal(article.wordCount, post.wordCount);
     assert.equal(article.abstract, post.summary);
     assert.ok(
@@ -294,10 +389,24 @@ try {
     );
     assert.equal($('h1').text(), post.title);
     assert.equal($('meta[property="og:type"]').attr('content'), 'article');
+    const dates = normalize($('article header').first().text());
     assert.ok(
-      $('time[datetime="' + post.publishedAt + '"]').length,
+      $('article header time[datetime="' + post.publishedAt + '"]').length &&
+        dates.includes('Publicado el'),
       `${path}: visible publication date`,
     );
+    if (post.updatedAt !== post.publishedAt)
+      assert.ok(
+        $('article header time[datetime="' + post.updatedAt + '"]').length &&
+          dates.includes('Actualizado el'),
+        `${path}: visible update date`,
+      );
+    const rubro = rubroByTopic[post.category];
+    if (rubro)
+      assert.ok(
+        $('a[href="/casos-de-uso/' + rubro + '"]').length,
+        `${path}: link to its rubro`,
+      );
     assert.equal($('a[rel="author"]').attr('href'), '/blog/editorial');
     assert.equal(
       $('.blog-prose h2').length,
@@ -334,6 +443,71 @@ try {
     posts.map((post) => `${origin}/blog/${post.slug}`).sort(),
     'RSS must include exactly the published posts',
   );
+  const feedLinks = feed('item > link')
+    .map((_, el) => feed(el).text())
+    .get();
+
+  assert.equal(guideRedirects.length, 3, 'The three merged guides must redirect');
+  for (const { source, destination } of guideRedirects) {
+    const response = await fetch(base + source, { redirect: 'manual' });
+    assert.equal(response.status, 308, `${source}: permanent redirect`);
+    assert.equal(
+      new URL(response.headers.get('location'), base).pathname,
+      destination,
+      `${source}: redirect target`,
+    );
+    assert.ok(documents.has(destination), `${destination}: redirect target page`);
+    assert.ok(!urls.includes(origin + source), `${source}: still in sitemap`);
+    assert.ok(!feedLinks.includes(origin + source), `${source}: still in RSS`);
+  }
+
+  const llmsResponse = await fetch(base + '/llms.txt');
+  assert.equal(llmsResponse.status, 200, '/llms.txt: expected HTTP 200');
+  assert.match(llmsResponse.headers.get('content-type'), /^text\/plain/);
+  const llms = await llmsResponse.text();
+  assert.match(llms, /^# Atende\n\n> .+\n/, '/llms.txt: H1 and summary');
+  assert.ok(llms.includes('\n## Optional\n'), '/llms.txt: Optional section');
+  for (const row of actionStatus)
+    assert.ok(llms.includes(row.label), `/llms.txt: status of ${row.action}`);
+  const llmsLinks = [...llms.matchAll(/^- \[[^\]]+\]\(([^)]+)\)/gm)].map(
+    (match) => match[1],
+  );
+  assert.ok(llmsLinks.length, '/llms.txt: links');
+  for (const link of llmsLinks)
+    assert.ok(urls.includes(link), `/llms.txt: ${link} is not in the sitemap`);
+  for (const { source } of guideRedirects)
+    assert.ok(!llms.includes(source), `/llms.txt: merged guide ${source}`);
+
+  const [indexNowFile, ...extraKeys] = (
+    await readdir(new URL('public/', root))
+  ).filter((file) => /^[a-f0-9]{32}\.txt$/.test(file));
+  assert.ok(indexNowFile && !extraKeys.length, 'One IndexNow key file');
+  assert.equal(
+    (await read(indexNowFile)).trim(),
+    indexNowFile.replace(/\.txt$/, ''),
+    'IndexNow key file must contain its key',
+  );
+
+  const blogFiles = await readdir(new URL('content/blog/', root));
+  const hiddenPosts = await Promise.all(
+    blogFiles
+      .filter((file) => file.endsWith('.md'))
+      .filter((file) => !posts.some((post) => `${post.slug}.md` === file))
+      .map(async (file) =>
+        parsePost(
+          await readFile(new URL(`content/blog/${file}`, root), 'utf8'),
+          file,
+        ),
+      ),
+  );
+  for (const post of hiddenPosts) {
+    const path = `/blog/${post.slug}`;
+    assert.equal((await fetch(base + path)).status, 404, `${path}: not public`);
+    assert.ok(!urls.includes(origin + path), `${path}: hidden post in sitemap`);
+    assert.ok(!llms.includes(path), `${path}: hidden post in llms.txt`);
+  }
+
+  // ISR: prerendered at build, regenerated hourly so scheduled posts go live.
   const prerender = JSON.parse(
     await readFile(new URL('.next/prerender-manifest.json', root), 'utf8'),
   );
@@ -341,9 +515,23 @@ try {
     '/blog',
     '/sitemap.xml',
     '/blog/feed.xml',
+    '/llms.txt',
+    ...blogTopics
+      .filter((topic) => posts.some((post) => post.category === topic.slug))
+      .map((topic) => `/blog/tema/${topic.slug}`),
     ...posts.map((post) => `/blog/${post.slug}`),
   ])
-    assert.ok(!prerender.routes[path], `${path}: must use request-time SSR`);
+    assert.equal(
+      prerender.routes[path]?.initialRevalidateSeconds,
+      3600,
+      `${path}: must be static with hourly revalidation`,
+    );
+  for (const route of ['/blog/[slug]', '/blog/tema/[slug]'])
+    assert.equal(
+      prerender.dynamicRoutes[route]?.fallback,
+      null,
+      `${route}: must render scheduled posts on demand`,
+    );
   for (const post of posts)
     assert.ok(
       (
@@ -358,7 +546,7 @@ try {
   assert.ok(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
   assert.ok(!/Disallow: \/\s*$/m.test(robots), 'Crawling blocked');
   console.log(
-    `Verified ${documents.size} HTTP pages and ${posts.length} articles: metadata, canonicals, social cards, crawlability, visible structured data, sitemap, links, anchors and sales CTAs.`,
+    `Verified ${documents.size} HTTP pages and ${posts.length} articles: metadata, canonicals, social cards, crawlability, visible structured data, sitemap, links, anchors, sales CTAs, redirects, llms.txt, IndexNow key and ISR.`,
   );
 } finally {
   if (child.exitCode === null) {

@@ -1,13 +1,24 @@
 import { notFound } from 'next/navigation';
-import { getBlogTopic } from '@/content/blog-topics';
+import { blogTopics, getBlogTopic } from '@/content/blog-topics';
 import { getPosts } from '@/lib/blog';
+import { latestUpdate } from '@/lib/blog-content';
 import { createPageMetadata } from '@/lib/metadata';
 import { pageGraph } from '@/lib/structured-data';
 import { site } from '@/content/site';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { RichText } from '@/components/casos/RichText';
 import { PostCard } from '@/components/blog/PostCard';
-export const dynamic = 'force-dynamic';
+
+export const revalidate = 3600;
+// A topic whose first post is scheduled after the build has no static param yet.
+export const dynamicParams = true;
+export function generateStaticParams() {
+  const posts = getPosts();
+  return blogTopics
+    .filter((topic) => posts.some((post) => post.category === topic.slug))
+    .map((topic) => ({ slug: topic.slug }));
+}
 type Props = { params: Promise<{ slug: string }> };
 function topicPage(slug: string) {
   const topic = getBlogTopic(slug);
@@ -18,7 +29,9 @@ function topicPage(slug: string) {
     title:
       'seoTitle' in topic
         ? topic.seoTitle
-        : `${topic.name}: guías de WhatsApp para negocios`,
+        : /gu[ií]as/i.test(topic.name)
+          ? `${topic.name} para negocios`
+          : `${topic.name}: guías de WhatsApp para negocios`,
   };
 }
 export async function generateMetadata({ params }: Props) {
@@ -45,6 +58,11 @@ export default async function TopicPage({ params }: Props) {
         <p className="mt-6 max-w-3xl text-xl leading-relaxed text-mute">
           {topic.description}
         </p>
+        {'intro' in topic && (
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-mute">
+            <RichText text={topic.intro} />
+          </p>
+        )}
         <h2 className="sr-only">Guías y comparativas de {topic.name}</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
@@ -55,6 +73,7 @@ export default async function TopicPage({ params }: Props) {
       <JsonLd
         value={pageGraph({
           ...topic,
+          updated: latestUpdate(posts),
           breadcrumbs,
           extra: [
             {

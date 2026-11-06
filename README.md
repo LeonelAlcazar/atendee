@@ -1,12 +1,12 @@
 # atende.com.ar
 
-Marketing site and Markdown blog for Atende, the WhatsApp automation and shared-inbox product for Argentine businesses.
+Marketing site and Markdown blog for Atende, the WhatsApp automation product for Argentine businesses. Connected to a business's agenda or systems, Atende books, quotes and records orders in the conversation, with the team supervising from a shared inbox.
 
 The public site lives at `https://www.atende.com.ar`. Account entry and guided onboarding live at `https://app.atende.com.ar`.
 
 ## Stack
 
-- Next.js 15 App Router with `output: 'standalone'` and request-time SSR for the blog
+- Next.js 15 App Router with `output: 'standalone'`; the blog is prerendered and regenerated hourly (ISR)
 - React 19 and strict TypeScript
 - Tailwind CSS v4 with a hand-built component system
 - `next/font` for self-hosted Instrument Sans, Inter Tight, and IBM Plex Mono
@@ -30,25 +30,41 @@ Open `http://localhost:3000`.
 npm run verify
 ```
 
+This runs the unit tests, TypeScript, `check:claims` (banned product claims), the content checks (including the anti-template guard), the production build and the HTTP audit in `check:seo`. Each one can also run alone; see [blog publishing](docs/blog.md#verification).
+
 ## Content
 
-The blog contains 50 Spanish articles: 30 sector guides, nine tool comparisons and 11 practical guides. The November 2026 additions cover free automation credits and four distinct questions about a bot de WhatsApp: what it does, how to create one, free versus paid options, and AI for sales inquiries. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
+The blog holds Spanish sector guides, tool comparisons and practical guides. `npm run check:content` prints the current counts. Edit or add `.md` files in `content/blog/`; [the publishing guide](docs/blog.md) documents frontmatter, drafts, scheduling, topics and validation.
 
 Spanish marketing copy and shared product facts live in `src/content/`:
 
-- `site.ts` — public domain, app domain, contact details, tagline, and trust statements
-- `landing.ts` — landing-page positioning, features, onboarding steps, control story, and CTA copy
+- `site.ts` — public domain, app domain, contact details, tagline, trust statements and confirmed social profiles
+- `status.ts` — the public status of each action: included or on request
+- `landing.ts` — landing-page positioning, features, setup steps, control story, and CTA copy
 - `servicios.ts` — detailed service examples and conversations
-- `casos.ts` — vertical examples
+- `rubros.ts` — the six `/casos-de-uso/[slug]` pages
+- `casos.ts` — the use-case hub
 - `faq.ts` — landing-page questions and answers
 - `pages.ts` — commercial page metadata and sitemap modification dates
 - `pricing.ts` — buying and pricing questions
+- `blog-topics.ts` — blog topics, their matching rubro, and blog page metadata
 
-Solution detail pages, `/precios` and `/demo` support the B2B buying flow. See [SEO and sales notes](docs/seo-and-sales.md) for product-claim sources, conversion events, verification and search monitoring.
+Solution pages, rubro pages, `/integraciones`, `/precios` and `/demo` support the B2B buying flow. `/que-es-atende`, `/preguntas-frecuentes` and `/nosotros` state what the product is, its limits and who is behind it. See [SEO and sales notes](docs/seo-and-sales.md) for the product-claim rules, conversion events, verification and search monitoring, and the [off-site and measurement plan](docs/geo-offsite-plan.md) for the work that happens outside this repository.
 
 The [October 2026 Search Console analysis](docs/search-console-2026-10-28.md) documents all seven exports, their limitations, the content priorities and the follow-up measurement plan.
 
-Keep product claims aligned with the working app. In particular, the current connection flow uses the QR experience shown in `app.atende.com.ar`; do not describe it as a Meta Business API approval flow.
+Keep product claims aligned with the working app. Connected actions are built on request for each business, so write them as conditional: "conectado a tu agenda, Atende reserva el turno". The current connection flow uses the QR experience shown in `app.atende.com.ar`; do not describe it as a Meta Business API approval flow. `AGENTS.md` at the workspace root holds the full rules, and `npm run check:claims` enforces the phrases that have gone wrong before.
+
+## After a deploy
+
+Submit the URLs that changed to IndexNow by hand. It is not part of the build:
+
+```bash
+npm run indexnow -- --dry-run --since YYYY-MM-DD
+npm run indexnow -- --since YYYY-MM-DD
+```
+
+See [SEO and sales notes](docs/seo-and-sales.md#indexnow).
 
 ## Social assets
 

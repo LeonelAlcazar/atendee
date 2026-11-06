@@ -5,7 +5,7 @@ export function Breadcrumbs({ items }: { items: Breadcrumb[] }) {
   return (
     <nav
       aria-label="Ruta de navegación"
-      className="mx-auto max-w-7xl px-5 pt-7 text-sm text-mute md:px-8"
+      className="mx-auto max-w-7xl px-5 pt-4 text-sm text-mute md:px-8"
     >
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
         {items.map((item, index) => (
@@ -15,7 +15,7 @@ export function Breadcrumbs({ items }: { items: Breadcrumb[] }) {
               <span aria-current="page">{item.name}</span>
             ) : (
               <Link
-                className="underline underline-offset-4 hover:text-ink"
+                className="inline-flex min-h-11 min-w-11 items-center underline underline-offset-4 hover:text-ink"
                 href={item.path}
               >
                 {item.name}

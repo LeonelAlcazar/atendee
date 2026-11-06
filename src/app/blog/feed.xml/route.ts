@@ -1,6 +1,6 @@
 import { getPosts } from '@/lib/blog';
 import { createBlogFeed } from '@/lib/blog-feed';
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
 export function GET() {
   return new Response(createBlogFeed(getPosts()), {
     headers: {

@@ -14,20 +14,13 @@ export function CtaFinal({
   return (
     <section className="px-5 py-16 md:px-8 md:py-24">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-xl border-2 border-ink bg-coral px-6 py-14 shadow-[var(--shadow-brut-lg)] sm:px-10 md:py-20 lg:px-16">
-        <div className="absolute -right-16 -top-20 size-64 rounded-full border-[28px] border-ink/10 md:size-80" aria-hidden="true" />
-        <div className="absolute bottom-8 right-8 hidden grid-cols-5 gap-2 md:grid" aria-hidden="true">
-          {Array.from({ length: 20 }).map((_, index) => (
-            <span key={index} className={`size-2 ${index % 3 === 0 ? 'bg-forest' : 'bg-ink/20'}`} />
-          ))}
-        </div>
-
         <div className="relative max-w-4xl">
-          <p className="font-mono text-[10px] font-medium uppercase tracking-[0.1em] text-ink">
+          <p className="font-mono text-[11px] font-medium uppercase tracking-[0.1em] text-ink">
             {landing.finalCta.eyebrow}
           </p>
-          <h2 className="mt-5 font-display text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-balance md:text-7xl lg:text-[5.5rem]">
+          <h2 className="mt-5 font-display text-[2.75rem] font-semibold leading-[0.96] tracking-[-0.045em] text-balance sm:text-6xl md:text-7xl lg:text-[5rem]">
             {landing.finalCta.titleBefore}{' '}
-            <span className="text-surface">{landing.finalCta.titleAccent}</span>
+            <span className="text-surface sm:block">{landing.finalCta.titleAccent}</span>
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink md:text-xl">
             {landing.finalCta.description}
@@ -43,6 +36,7 @@ export function CtaFinal({
             </a>
             <Button
               href={buildWaLink(context)}
+              data-cta="final-whatsapp"
               variant="outline"
               size="lg"
               target="_blank"
@@ -51,9 +45,7 @@ export function CtaFinal({
               {landing.finalCta.secondaryCta}
             </Button>
           </div>
-          <p className="mt-5 font-mono text-[9px] font-medium uppercase tracking-[0.08em] text-ink">
-            {reassurance}
-          </p>
+          <p className="mt-5 text-sm font-medium text-ink">{reassurance}</p>
         </div>
       </div>
     </section>

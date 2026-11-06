@@ -1,8 +1,17 @@
 import { site } from '@/content/site';
 import { getBlogTopic } from '@/content/blog-topics';
 import type { BlogPost } from './blog-content';
+import { toSchemaDate } from './dates';
 import { createPageMetadata } from './metadata';
 import { organizationId, pageGraph } from './structured-data';
+
+// Repeats on each post so `isPartOf` resolves without the /blog page.
+export const blogNode = {
+  '@type': 'Blog',
+  '@id': `${site.url}/blog#blog`,
+  url: `${site.url}/blog`,
+  name: 'Blog de Atende',
+};
 
 export function postMetadata(post: BlogPost) {
   const path = `/blog/${post.slug}` as const;
@@ -21,8 +30,8 @@ export function postMetadata(post: BlogPost) {
     openGraph: {
       ...metadata.openGraph,
       type: 'article' as const,
-      publishedTime: post.publishedAt,
-      modifiedTime: post.updatedAt,
+      publishedTime: toSchemaDate(post.publishedAt),
+      modifiedTime: toSchemaDate(post.updatedAt),
       authors: [`${site.url}/blog/editorial`],
       section: getBlogTopic(post.category)!.name,
       tags: post.tags,
@@ -44,6 +53,7 @@ export function postGraph(post: BlogPost) {
     path: `/blog/${post.slug}`,
     title: post.title,
     description: post.description,
+    updated: post.updatedAt,
     breadcrumbs: postBreadcrumbs(post),
     faq: post.faq,
     extra: [
@@ -54,13 +64,14 @@ export function postGraph(post: BlogPost) {
         headline: post.title,
         description: post.description,
         abstract: post.summary,
-        datePublished: post.publishedAt,
-        dateModified: post.updatedAt,
+        datePublished: toSchemaDate(post.publishedAt),
+        dateModified: toSchemaDate(post.updatedAt),
+        // Same values as the Organization node: one @id cannot hold two urls.
         author: {
           '@type': 'Organization',
           '@id': organizationId,
-          name: 'Atende',
-          url: `${site.url}/blog/editorial`,
+          name: site.name,
+          url: site.url,
         },
         publisher: { '@id': organizationId },
         image: [`${site.url}/og.png`],
@@ -69,7 +80,7 @@ export function postGraph(post: BlogPost) {
         keywords: post.tags.join(', '),
         wordCount: post.wordCount,
         mainEntityOfPage: { '@id': `${url}#webpage` },
-        isPartOf: { '@id': `${site.url}/blog#blog` },
+        isPartOf: blogNode,
         ...(post.sources.length
           ? { citation: post.sources.map((source) => source.url) }
           : {}),

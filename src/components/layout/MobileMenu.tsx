@@ -9,6 +9,11 @@ import { buildWaLink } from '@/lib/wa';
 
 type Nav = { href: string; label: string }[];
 
+const secondary = [
+  { href: '/que-es-atende', label: 'Qué es Atende' },
+  { href: '/preguntas-frecuentes', label: 'Preguntas frecuentes' },
+];
+
 export function MobileMenu({ nav }: { nav: Nav }) {
   const [open, setOpen] = React.useState(false);
   const triggerRef = React.useRef<HTMLButtonElement>(null);
@@ -90,7 +95,7 @@ export function MobileMenu({ nav }: { nav: Nav }) {
           className="fixed inset-0 z-50 flex max-h-[100svh] flex-col overflow-y-auto bg-bg"
         >
           <div className="flex min-h-[4.75rem] items-center justify-between border-b-2 border-ink px-5">
-            <Link href="/" onClick={close} className="flex items-center gap-2.5">
+            <Link href="/" onClick={close} className="flex min-h-11 items-center gap-2.5">
               <span className="grid size-9 place-items-center rounded-md border-2 border-ink bg-coral font-display text-base font-bold shadow-[var(--shadow-brut-xs)]">
                 A
               </span>
@@ -115,7 +120,7 @@ export function MobileMenu({ nav }: { nav: Nav }) {
                 key={item.href}
                 href={item.href}
                 onClick={close}
-                className="group flex items-center justify-between border-b border-ink/25 py-5 font-display text-3xl font-semibold tracking-[-0.035em]"
+                className="group flex min-h-11 items-center justify-between border-b border-ink/25 py-4 font-display text-3xl font-semibold tracking-[-0.035em]"
               >
                 <span>{item.label}</span>
                 <span className="font-mono text-xs text-coral-strong transition-transform group-hover:translate-x-1" aria-hidden="true">
@@ -123,18 +128,31 @@ export function MobileMenu({ nav }: { nav: Nav }) {
                 </span>
               </Link>
             ))}
+            <div className="mt-3 flex flex-wrap gap-x-6">
+              {secondary.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={close}
+                  className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </nav>
 
           <div className="border-t-2 border-ink bg-coral-soft p-5">
             <div className="grid gap-3">
               <Button href="/demo" data-cta="mobile-demo" onClick={close} variant="primary" size="lg" className="w-full">
-                Solicitar una demo <span aria-hidden="true">→</span>
+                Pedí una demo <span aria-hidden="true">→</span>
               </Button>
               <a
                 href={buildWaLink('Hola, vi atende.com.ar y quiero saber más')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 text-center font-mono text-[10px] uppercase tracking-[0.08em] underline decoration-2 underline-offset-4"
+                data-cta="mobile-whatsapp"
+                className="inline-flex min-h-11 items-center justify-center text-center font-semibold underline decoration-2 underline-offset-4"
               >
                 O hablar con una persona
               </a>
