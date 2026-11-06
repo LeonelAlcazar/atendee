@@ -14,7 +14,7 @@ export const site = {
   location: 'Córdoba, Argentina',
   legalName: 'atende',
   trustStrip: [
-    'Conectás tu número con un QR',
+    'API oficial de Meta o QR, a elección',
     'Tu número sigue siendo el mismo',
     'Conexiones a pedido para tu negocio',
     'Hablás con el equipo por WhatsApp o email',

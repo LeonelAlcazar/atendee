@@ -10,7 +10,8 @@ summary: >-
   vende reservas y agentes de IA. Mirá alternativas si te sobra el CRM y lo que
   querés es cotizar y registrar al interesado en el WhatsApp que ya usás, sin
   mínimos de seis meses por usuario. Atende hace eso conectado a tu sistema, con
-  la conexión armada a pedido, solo en WhatsApp y por QR.
+  la conexión armada a pedido, solo en WhatsApp. Cómo conectar el número lo decidís
+  vos: API oficial de Meta o QR.
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -103,7 +104,7 @@ Atende no publica importes acá: [los planes se ven en la app](/precios) antes d
 | Reservas | Página, calendario y agente propios | Conectado a tu agenda, la que ya usás |
 | Quién lo configura | Tu equipo, con sus bots y agentes | Vos cargás el contexto y nosotros armamos la conexión |
 | Canales | WhatsApp, Instagram, TikTok, Messenger y más | Solo WhatsApp, un número por espacio |
-| Conexión con WhatsApp | Flujo con cuenta de Meta | Se conecta por QR. No es la API oficial de Meta |
+| Conexión con WhatsApp | Flujo con cuenta de Meta | API oficial de Meta o QR, a elección |
 | Contrato | Mínimo 6 meses, en dólares | Condiciones en la app |
 
 ## Cuándo Kommo es mejor elección
@@ -139,4 +140,4 @@ Es otra comparación frecuente. [Whaticket](https://whaticket.com/precios) se ve
 
 Una conversación guardada no es una oportunidad en el embudo. Anotá qué campos, etapas y tareas usa ventas y dónde van a vivir después. Atende no tiene embudos, campos a medida ni exportación de contactos, y su bandeja busca por contacto o teléfono, no por el texto de los mensajes.
 
-Sumá estos límites a tu decisión: responde mensajes de texto, así que audios, fotos, documentos, ubicaciones y grupos no llegan. No podemos prometer que WhatsApp no restrinja un número. Y no tenemos reseñas públicas todavía. El "Plan CRM" de Atende, pese al nombre, es la bandeja manual sin asistente, no un CRM de ventas. Si tu caso pasa ese filtro, llevalo a una [demo](/demo).
+Sumá estos límites a tu decisión: responde mensajes de texto, así que audios, fotos, documentos, ubicaciones y grupos no llegan. Y no tenemos reseñas públicas todavía. El "Plan CRM" de Atende, pese al nombre, es la bandeja manual sin asistente, no un CRM de ventas. Si tu caso pasa ese filtro, llevalo a una [demo](/demo).

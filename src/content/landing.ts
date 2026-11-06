@@ -131,8 +131,8 @@ export const landing = {
       },
       {
         number: '05',
-        title: 'Escaneás el QR',
-        text: 'Con el teléfono del negocio, desde dispositivos vinculados, y el QR abierto en otra pantalla. Tu número sigue siendo el mismo.',
+        title: 'Conectás tu número',
+        text: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. El QR lo escaneás con el teléfono del negocio, desde dispositivos vinculados, con el código abierto en otra pantalla. La API la vemos con vos en la demo.',
       },
     ],
     requestLabel: 'Lo armamos nosotros, a pedido',
@@ -141,12 +141,12 @@ export const landing = {
       'Nos contás qué sistema usás y qué tarea querés sacarte de encima. Armamos la conexión para tu negocio y el asistente la usa en la conversación.',
     nodes: [
       { name: 'Tu WhatsApp', text: 'El número que ya usás', link: '' },
-      { name: 'Atende', text: 'Entiende el pedido y usa la conexión', link: 'Por QR' },
+      { name: 'Atende', text: 'Entiende el pedido y usa la conexión', link: 'API oficial o QR' },
       { name: 'Tu sistema', text: 'Agenda, stock o CRM', link: 'A pedido' },
     ],
     requestCta: 'Contanos qué sistema usás',
     integrationsLink: 'Ver integraciones',
-    note: 'Apenas escaneás el QR, Atende les responde a todos tus contactos. No hay modo de prueba: probalo desde otro número; usa créditos.',
+    note: 'Apenas conectás tu número, Atende les responde a todos tus contactos. No hay modo de prueba: probalo desde otro número; usa créditos.',
   },
   team: {
     eyebrow: 'Tu equipo al tanto',
@@ -179,26 +179,6 @@ export const landing = {
       title: 'Sin conexión, el asistente junta el pedido y tu equipo lo confirma.',
       text: 'Si hace falta una persona, el asistente avisa y la conversación queda marcada en la bandeja. Esa marca no le manda un aviso aparte a nadie.',
     },
-  },
-  limits: {
-    eyebrow: 'Límites',
-    titleBefore: 'La letra chica,',
-    titleAccent: 'en grande.',
-    items: [
-      {
-        title: 'Entiende mensajes de texto.',
-        text: 'Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan a Atende.',
-      },
-      {
-        title: 'Se conecta por QR. No es la API oficial de Meta.',
-        text: 'Nadie puede prometerte que WhatsApp no va a restringir un número, y nosotros tampoco.',
-      },
-      {
-        title: 'Responde a cualquier hora, mientras el servicio y tu WhatsApp estén conectados.',
-        text: 'Si se desconecta el número o te quedás sin respuestas ni créditos, el asistente no contesta.',
-      },
-    ],
-    link: 'Leé las preguntas frecuentes',
   },
   faq: {
     eyebrow: 'Preguntas frecuentes',

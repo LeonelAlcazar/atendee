@@ -10,7 +10,7 @@ export function BlogTeaser() {
   ];
   const posts = getPosts();
   return (
-    <section className="border-b-2 border-ink bg-mint/35 py-20 md:py-24">
+    <section className="border-b-2 border-ink py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <p className="font-mono text-xs uppercase tracking-wider text-mute">
           Guías de bot de WhatsApp

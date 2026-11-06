@@ -111,13 +111,13 @@ Con eso, el asistente explica las condiciones y toma las fechas, y una persona a
 
 Esto pasa todos los días en un gimnasio y no llega a Atende:
 
-- **El comprobante de la cuota.** Imagen o PDF, nunca entra. Si el socio lo manda, queda en el teléfono del gimnasio y el asistente no contesta. Definí otra forma de registrar pagos.
+- **El comprobante de la cuota.** Imagen o PDF, nunca entra. Si el socio lo manda, el asistente no contesta. Definí otra forma de registrar pagos.
 - **La nota de voz.** Quien sale transpirado y manda un audio no recibe respuesta, porque el asistente trabaja con mensajes de texto.
 - **El grupo de WhatsApp.** Los mensajes de grupos nunca llegan. Lo que pregunten en el grupo de funcional queda ahí; Atende atiende los chats individuales.
 
 ## Se suspende la clase: lo que Atende no avisa solo
 
-Feriado, corte de luz, profe enfermo. Mandarles a todos "hoy no hay clase" es un mensaje masivo, y Atende no hace difusiones. Tampoco conviene improvisarlas. Atende se conecta por QR y no es la API oficial de Meta, así que los envíos que la gente no espera tienen riesgo de restricción. Los recordatorios a pedido se arman para casos puntuales, con el acuerdo de quien los recibe; la [nota sobre recordatorios](/blog/recordatorios-de-turnos-por-whatsapp) cuenta qué hace falta.
+Feriado, corte de luz, profe enfermo. Mandarles a todos "hoy no hay clase" es un mensaje masivo, y Atende no hace difusiones. Tampoco conviene improvisarlas: en un número vinculado por QR, los envíos que la gente no espera tienen riesgo de restricción. Los recordatorios a pedido se arman para casos puntuales, con el acuerdo de quien los recibe; la [nota sobre recordatorios](/blog/recordatorios-de-turnos-por-whatsapp) cuenta qué hace falta.
 
 Lo que sí podés hacer en un momento desde el celular es editar el contexto: "Hoy no hay clases a la noche por corte de luz". Quien pregunte recibe la respuesta correcta, y si tenés grupo de socios, ahí lo avisás vos.
 

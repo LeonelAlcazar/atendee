@@ -6,12 +6,12 @@ description: >-
   mirar otra opción y qué pasa si nadie en tu negocio va a armar el agente.
 summary: >-
   Quedate en Botmaker si tu equipo quiere crear y mantener sus propios agentes,
-  si necesitás la API oficial de WhatsApp o si atendés por varios canales. Mirá
-  alternativas si nadie en tu negocio va a armar esos agentes y lo que buscás es
-  que el pedido quede registrado. Atende encaja ahí: conectado a tu sistema,
+  si coordinás varios agentes con lógica propia o si atendés por varios canales.
+  Mirá alternativas si nadie en tu negocio va a armar esos agentes y lo que buscás
+  es que el pedido quede registrado. Atende encaja ahí: conectado a tu sistema,
   registra el pedido en la conversación, y esa conexión se arma a pedido para tu
-  negocio. Si necesitás API oficial, multicanal o un armador propio, Atende no es
-  la opción.
+  negocio. Tu número va por la API oficial de Meta o por QR, a elección. Si
+  necesitás multicanal o un armador propio, Atende no es la opción.
 publishedAt: '2026-10-28'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -38,8 +38,10 @@ faq:
       WhatsApp y la conexión con tu sistema la armamos nosotros, a pedido.
   - q: ¿Atende usa la API oficial de WhatsApp como Botmaker?
     a: >-
-      No. Se conecta por QR. No es la API oficial de Meta. Si tu empresa exige esa
-      API, elegí Botmaker u otro proveedor que la ofrezca.
+      Si la elegís, sí: conectás tu número con la API oficial de Meta o con un QR.
+      La diferencia está en el estatus. Botmaker se presenta como BSP oficial de Meta
+      y nosotros no nos presentamos así. Si tu empresa exige eso, elegí Botmaker u
+      otro proveedor que lo tenga.
   - q: ¿Puedo pasar mis agentes de Botmaker a Atende?
     a: >-
       No hay importación de agentes ni de flujos. Lo que sirve es tu inventario:
@@ -87,7 +89,7 @@ Acá no hay una herramienta que responde contra otra que actúa. Botmaker habla 
 | Qué comprás | Una plataforma para crear y coordinar agentes | Un asistente en tu número, más la conexión con tu sistema armada a pedido |
 | Quién arma el agente | Vos o tu equipo, con prompts y bloques de lógica. Hay una opción guiada con Account Manager | Vos le contás qué hace tu negocio. La conexión la armamos nosotros |
 | Qué puede terminar en el chat | Lo que conectes: CRM, calendario, base de datos, pagos | Conectado a tu sistema: turnos, reservas, pedidos, cotizaciones, interesados |
-| Conexión con WhatsApp | [API de WhatsApp Business](https://botmaker.com/es/canales/whatsapp/). Se presenta como BSP oficial de Meta | Se conecta por QR. No es la API oficial de Meta |
+| Conexión con WhatsApp | [API de WhatsApp Business](https://botmaker.com/es/canales/whatsapp/). Se presenta como BSP oficial de Meta | API oficial de Meta o QR, a elección |
 | Canales | WhatsApp, Instagram, Messenger, Mercado Libre, TikTok, webchat, Slack, Teams, email y voz, entre otros | Solo WhatsApp, un número por espacio |
 | Precio | Planes públicos en dólares | Sin importes en este sitio: los planes se ven en la app antes de pagar. La conexión a pedido no tiene precio publicado |
 
@@ -117,7 +119,7 @@ Sumá una pregunta para ventas. [Meta empezó a cobrar](https://developers.faceb
 Si alguna de estas te describe, quedate o andá a Botmaker. Atende no es la opción.
 
 - Tenés a alguien, interno o de un partner, que va a crear, probar y ajustar agentes todos los meses.
-- Tu empresa exige la API oficial de WhatsApp o un proveedor reconocido por Meta.
+- Tu empresa exige un proveedor reconocido por Meta: Botmaker se presenta como BSP oficial, y Atende no muestra ese estatus.
 - Vendés por Mercado Libre, o atendés Instagram, email y teléfono desde el mismo sistema.
 - Querés varios agentes coordinados, con lógica propia y validación humana paso por paso.
 
@@ -139,11 +141,11 @@ Ese final existe solo con la conexión, y esa conexión se arma a pedido para tu
 
 Lo que hoy podemos mostrar funcionando es una demo para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente.
 
-Si buscás algo intermedio, [Cliengo](/blog/alternativas-a-cliengo) vende un agente con bandeja y API, y [Wati](/blog/mejor-alternativa-a-wati) cobra los agentes por créditos. La [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) ordena el resto.
+Si buscás algo intermedio, [Cliengo](/blog/alternativas-a-cliengo) vende un agente con bandeja y campañas, y [Wati](/blog/mejor-alternativa-a-wati) cobra los agentes por créditos. La [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) ordena el resto.
 
 ## Lo que resignás si elegís Atende
 
-- Se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número.
+- No armás agentes ni lógica propia. Si cambia un proceso que pasa por tu sistema, hay que tocar la conexión.
 - Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan.
 - Un solo canal y un número por espacio.
 - No hay catálogo de integraciones para activar por tu cuenta: cada conexión se hace a pedido.
@@ -153,6 +155,6 @@ Si buscás algo intermedio, [Cliengo](/blog/alternativas-a-cliengo) vende un age
 
 Antes de tocar nada, escribí por cada agente qué lo dispara, qué sistema consulta, qué cambia y quién aprueba las excepciones. Atende no importa agentes ni flujos de otra plataforma, así que esa lista es la base de la conexión que haya que armar.
 
-Después resolvé el número. Atende se vincula escaneando un QR desde el teléfono, así que el número tiene que estar activo en la app. [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que un número registrado en la Cloud API no se puede usar en la app hasta darlo de baja de esa API. Preguntale a Botmaker cómo hacerlo y qué pasa con el historial antes de mover nada. Ese paso no lo probamos con cada proveedor.
+Después resolvé el número. Elegís cómo conectarlo: con la API oficial de Meta o con un QR. Si querés seguir por la API, cómo pasarlo lo vemos con vos en la demo. Si preferís el QR, se escanea desde el teléfono, así que el número tiene que estar activo en la app, y [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que un número registrado en la Cloud API no se puede usar en la app hasta darlo de baja de esa API. Preguntale a Botmaker cómo hacerlo y qué pasa con el historial antes de mover nada. Ese paso no lo probamos con cada proveedor. Ninguna de las dos rutas trae la promesa de que WhatsApp no restrinja el número.
 
-Una vez vinculado, el asistente le contesta a todos tus contactos: no hay modo de prueba. Probalo desde otro número; usa créditos. Si querés ver esto con tu caso, llevá a la [demo](/demo) un proceso que hoy corra en Botmaker y otro que hoy nadie resuelva.
+Una vez conectado, el asistente le contesta a todos tus contactos: no hay modo de prueba. Probalo desde otro número; usa créditos. Si querés ver esto con tu caso, llevá a la [demo](/demo) un proceso que hoy corra en Botmaker y otro que hoy nadie resuelva.

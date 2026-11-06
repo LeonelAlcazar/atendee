@@ -39,10 +39,9 @@ faq:
       arrepentimiento y derive la conversación.
   - q: ¿Qué pasa si el cliente manda el comprobante de la transferencia?
     a: >-
-      La imagen o el PDF no llegan a Atende. Quedan en el WhatsApp del teléfono de
-      la tienda. El asistente no los ve, así que no puede dar un pago por recibido:
-      pide titular, monto y hora por escrito y deriva para que alguien lo busque en
-      la cuenta.
+      La imagen o el PDF no llegan a Atende. El asistente no los ve, así que no
+      puede dar un pago por recibido: pide titular, monto y hora por escrito y
+      deriva para que alguien lo busque en la cuenta.
   - q: ¿Atende puede escribirles a quienes dejaron el carrito abandonado?
     a: >-
       Por su cuenta, no: contesta cuando le escriben. Un seguimiento de ese tipo se
@@ -115,9 +114,9 @@ En el ejemplo, el “registré” depende de tu sistema. Atende está armado par
 
 ## Comprobantes, fotos del paquete y audios
 
-Todos los días le llegan a una tienda cosas que Atende nunca recibe: la captura de la transferencia, la foto del producto golpeado y el audio de quien prefiere explicarlo hablando. A Atende entran mensajes de texto. Imágenes, audios, documentos y ubicaciones se descartan antes, con el texto que traigan al pie, así que no aparecen ni para el asistente ni en la bandeja. Quedan en la app de WhatsApp del teléfono vinculado.
+Todos los días le llegan a una tienda cosas que Atende nunca recibe: la captura de la transferencia, la foto del producto golpeado y el audio de quien prefiere explicarlo hablando. A Atende entran mensajes de texto. Imágenes, audios, documentos y ubicaciones se descartan antes, con el texto que traigan al pie, así que no aparecen ni para el asistente ni en la bandeja.
 
-Si alguien manda solo el comprobante, el asistente no contesta, porque no se enteró. Y si escribe “ahí te mandé la transferencia”, no puede darla por vista. Indicale en el contexto que explique que las imágenes no le llegan, pida titular, monto y hora por escrito y derive para que alguien lo busque en la cuenta. Con un producto roto, igual: deriva, y tu equipo mira la foto en el teléfono.
+Si alguien manda solo el comprobante, el asistente no contesta, porque no se enteró. Y si escribe “ahí te mandé la transferencia”, no puede darla por vista. Indicale en el contexto que explique que las imágenes no le llegan, pida titular, monto y hora por escrito y derive para que alguien lo busque en la cuenta. Con un producto roto, igual: deriva, y tu equipo define cómo recibir la foto.
 
 ## Antes de un Hot Sale
 
@@ -125,12 +124,12 @@ En los picos de venta es cuando más rinde el asistente y también cuando más s
 
 - **Calculá las respuestas con margen.** Cuando se terminan las del plan y los créditos, el asistente deja de contestar. El contacto no recibe nada y a vos no te llega ningún aviso. La pantalla Plan muestra los créditos disponibles, no cuántas respuestas del mes te quedan.
 - **Actualizá los plazos.** Si esa semana el correo viene demorado, cambiá el texto del contexto. El asistente repite lo que le dijiste.
-- **No uses el número para difundir la promo.** Atende se conecta por QR y no es la API oficial de Meta. Un envío masivo a gente que no lo pidió aumenta el riesgo de que WhatsApp restrinja la línea.
-- **Pensá dos veces el carrito abandonado.** Atende contesta cuando le escriben. Un seguimiento de carrito se arma a pedido, y carga con ese mismo riesgo.
+- **No uses el número para difundir la promo.** Si lo conectaste por QR, un envío masivo a gente que no lo pidió aumenta el riesgo de que WhatsApp restrinja la línea.
+- **Pensá dos veces el carrito abandonado.** Atende contesta cuando le escriben. Un seguimiento de carrito se arma a pedido, y por QR carga con ese mismo riesgo.
 
 ## La primera semana, antes de conectar nada
 
-Creás tu espacio, le contás qué vendés y cómo son tus envíos y cambios, invitás a quien atiende la postventa, activás créditos o un plan y escaneás el QR con el teléfono de la tienda. Desde ese momento responde a cualquiera que escriba. Probalo desde otro número, que usa créditos, con tres casos: un pedido sin número, “quiero devolverlo” y una pregunta que tu política no cubra.
+Creás tu espacio, le contás qué vendés y cómo son tus envíos y cambios, invitás a quien atiende la postventa, activás créditos o un plan y conectás el número de la tienda, eligiendo entre la API oficial de Meta y un QR. Desde ese momento responde a cualquiera que escriba. Probalo desde otro número, que usa créditos, con tres casos: un pedido sin número, “quiero devolverlo” y una pregunta que tu política no cubra.
 
 Con unos días de chats vas a ver qué pesa más. Si es “dónde está mi pedido”, la primera conexión es la consulta de estado; si son cambios, el registro del cambio. Tu equipo sigue encima: ve toda la conversación en la bandeja y, para seguir con un cliente, marca el chat como Necesita humano, porque contestar o tocar “Asignarme” no frena al asistente.
 

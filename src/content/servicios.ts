@@ -148,7 +148,7 @@ export const servicios: Servicio[] = [
     notes: [
       {
         title: 'Recordatorios de turno, a pedido',
-        text: 'Atende no empieza conversaciones por su cuenta. Si querés recordar turnos o avisar que se liberó un lugar, lo armamos a pedido para tu negocio: necesita los datos del turno y que el contacto haya aceptado recibir esos mensajes. Mandar mensajes que la gente no pidió desde un número conectado por QR aumenta el riesgo de que WhatsApp lo restrinja.',
+        text: 'Atende no empieza conversaciones por su cuenta. Si querés recordar turnos o avisar que se liberó un lugar, lo armamos a pedido para tu negocio: necesita los datos del turno y que el contacto haya aceptado recibir esos mensajes. Para esos avisos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
         link: {
           href: '/blog/recordatorios-de-turnos-por-whatsapp',
           label: 'Cómo funcionan los recordatorios a pedido',
@@ -182,7 +182,7 @@ export const servicios: Servicio[] = [
       },
       {
         q: '¿Manda recordatorios de turnos?',
-        a: 'A pedido. Atende no inicia conversaciones por su cuenta. Si los necesitás, los armamos para tu negocio, con el consentimiento de tus contactos y sabiendo que los mensajes no pedidos en un número conectado por QR pueden traer restricciones.',
+        a: 'A pedido. Atende no inicia conversaciones por su cuenta. Si los necesitás, los armamos para tu negocio, con el consentimiento de tus contactos. Para esos envíos conviene evaluar la API oficial de Meta.',
       },
       {
         q: '¿Sirve para clínicas y consultorios?',
@@ -361,7 +361,7 @@ export const servicios: Servicio[] = [
       },
       {
         q: '¿Hace seguimiento de los que dejaron de responder?',
-        a: 'A pedido. Atende no inicia conversaciones por su cuenta, y tu equipo puede retomarlas desde la bandeja. Si querés seguimientos, los armamos para tu negocio. Mandar mensajes que el contacto no pidió desde un número conectado por QR aumenta el riesgo de restricción.',
+        a: 'A pedido. Atende no inicia conversaciones por su cuenta, y tu equipo puede retomarlas desde la bandeja. Si querés seguimientos, los armamos para tu negocio. Para esos envíos conviene evaluar la API oficial de Meta.',
       },
       {
         q: '¿Cómo trabaja mi equipo de ventas con Atende?',
@@ -484,7 +484,7 @@ export const servicios: Servicio[] = [
       },
       {
         title: 'Conectá el número',
-        text: 'Invitás a tu equipo y activás créditos o un plan. Cargás tus preguntas frecuentes, fotos y videos, y escaneás el QR desde dispositivos vinculados. Tus clientes te siguen escribiendo al mismo WhatsApp.',
+        text: 'Invitás a tu equipo y activás créditos o un plan. Cargás tus preguntas frecuentes, fotos y videos. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Tus clientes te siguen escribiendo al mismo WhatsApp.',
       },
       {
         title: 'Probalo desde otro número',
@@ -502,7 +502,7 @@ export const servicios: Servicio[] = [
     },
     notes: [],
     requirements: [
-      'El número del negocio, el teléfono a mano para escanear el QR y otra pantalla que lo muestre.',
+      'El número del negocio y, si elegís el QR, el teléfono a mano para escanearlo y otra pantalla que lo muestre.',
       'Tus horarios, zonas, condiciones y preguntas frecuentes al día.',
       'Una persona que mire la bandeja y tome las conversaciones marcadas.',
       'Si querés que busque pedidos: qué sistema usás y qué dato puede leer.',

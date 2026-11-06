@@ -107,7 +107,7 @@ Avisarle a una clienta que le toca la próxima sesión significa escribirle vos 
 
 Una evaluación con aparato reservado y cabina bloqueada cuesta plata si nadie viene. Si pedís seña, cargá el alias y la regla de cancelación, y el asistente los pasa igual a todas. Sumá en qué casos se devuelve y cuánto antes hay que avisar, porque "se me complicó" va a aparecer.
 
-Lo que el asistente no puede es dar la seña por recibida. El comprobante llega como imagen o PDF, formatos que nunca entran a Atende, y queda solo en el teléfono del centro. Mientras alguien no mire la cuenta, ese turno sigue pendiente. Por eso conviene acordar quién revisa las transferencias y en qué momento del día, y que el asistente lo diga: "cuando se acredite, te confirmamos por acá".
+Lo que el asistente no puede es dar la seña por recibida. El comprobante llega como imagen o PDF, formatos que nunca entran a Atende. Mientras alguien no mire la cuenta, ese turno sigue pendiente. Por eso conviene acordar quién revisa las transferencias y en qué momento del día, y que el asistente lo diga: "cuando se acredite, te confirmamos por acá".
 
 ## Fotos de antes y después
 

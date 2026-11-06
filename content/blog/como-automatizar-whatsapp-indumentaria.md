@@ -59,7 +59,7 @@ Antes hay que resolver un problema que no aparece en ningún manual: casi nunca 
 
 ## “¿Lo tenés en M?” y una captura de la historia
 
-El mensaje típico trae una captura de Instagram y cuatro palabras. A Atende entran mensajes de texto: la imagen se descarta antes, y con ella lo que hayan escrito al pie. El asistente recibe “¿lo tenés en M?” sin saber de qué prenda hablan, o no recibe nada si todo vino dentro de la foto. La captura sigue en el WhatsApp del teléfono del local, pero no en la bandeja. Con los audios pasa lo mismo.
+El mensaje típico trae una captura de Instagram y cuatro palabras. A Atende entran mensajes de texto: la imagen se descarta antes, y con ella lo que hayan escrito al pie. El asistente recibe “¿lo tenés en M?” sin saber de qué prenda hablan, o no recibe nada si todo vino dentro de la foto. La captura tampoco aparece en la bandeja. Con los audios pasa lo mismo.
 
 Lo resolvés bastante con esto:
 
@@ -127,4 +127,4 @@ Si una vendedora le contesta a una clienta desde la bandeja, o toca “Asignarme
 
 En una liquidación o la semana del Día de la Madre, si preferís que el equipo responda todo a mano, pasás el espacio a Modo CRM con un botón y volvés cuando quieras.
 
-El número del local sigue siendo el mismo: se vincula por QR, que no es la API oficial de Meta. Por eso no lo uses para mandarle “llegó la colección” a toda tu lista, porque esos envíos aumentan el riesgo de restricción.
+Para conectar el número del local elegís entre la API oficial de Meta y un QR, que lo vincula sin cambiarlo. Si vas por QR, no lo uses para mandarle “llegó la colección” a toda tu lista, porque esos envíos aumentan el riesgo de restricción.

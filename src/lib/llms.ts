@@ -39,10 +39,10 @@ export function createLlmsTxt(posts: BlogPost[]) {
     `Estado de hoy:`,
     actionStatus.map((row) => `- ${row.action}: ${row.label}.`).join('\n'),
     `Demo real: para una concesionaria de motos consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente.`,
+    `Conexión: cada negocio elige cómo conectar su número, con la API oficial de Meta o con un QR.`,
     [
       `Límites:`,
       `- Responde mensajes de texto, a cualquier hora, mientras el servicio y el WhatsApp del negocio estén conectados. Audios, imágenes, videos, documentos, stickers, ubicaciones y grupos no llegan a Atende.`,
-      `- Se conecta por QR. No es la API oficial de Meta y nadie puede prometer que WhatsApp no restrinja un número.`,
       `- Una vez conectado responde a todos los contactos: no hay modo de prueba. Se prueba desde otro número y usa créditos.`,
       `- Responder desde la bandeja no pausa al asistente. Lo pausa marcar la conversación como Necesita humano, hasta que el chat se cierra solo 12 horas después del último mensaje del contacto. Modo CRM lo apaga en todo el espacio.`,
       `- Atende no manda mensajes por su cuenta. Los recordatorios y seguimientos se arman a pedido para cada negocio.`,

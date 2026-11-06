@@ -47,8 +47,8 @@ faq:
   - q: ¿Qué pasa si me mandan la foto de un repuesto?
     a: >-
       Esa foto nunca llega a Atende, y el texto escrito abajo se pierde con
-      ella. El asistente no la ve ni contesta. Pedile modelo, año y pieza por
-      texto, y que alguien de repuestos mire las fotos en el teléfono del local.
+      ella. El asistente no la ve ni contesta. Que pida modelo, año y pieza por
+      texto y derive a alguien de repuestos.
 ---
 Alguien escribe a la noche: “¿tenés la Wave en rojo y en cuántas cuotas sale?”. Para que esa charla termine bien hacen falta tres cosas hechas: confirmar que la moto está, calcular la cuota con los gastos adentro y dejar a esa persona anotada para que un vendedor la tome a la mañana.
 
@@ -117,7 +117,7 @@ Todo esto es una simulación comercial. No reemplaza la cotización final ni la 
 
 Un local de motos recibe más que consultas de venta. “Busco una 150” puede ser alguien que todavía no eligió modelo, “¿tenés la cadena para la mía?” es mostrador de repuestos y “¿me hacés el service?” es taller. La primera pregunta del asistente tiene que separar eso. Para una compra sin modelo elegido, sirve averiguar uso y localidad: hacer repartos todo el día pide otra moto que ir al trabajo los fines de semana.
 
-Para un repuesto hacen falta modelo y año, y la compatibilidad la confirma alguien que conoce la pieza. A la gente le sale natural mandar la foto de la pieza gastada o un audio con el ruido del motor, y ninguno de los dos llega a Atende. El texto escrito abajo de una foto se pierde con ella, así que quien mandó solo eso no recibe respuesta. Dejá escrito en la descripción de tu negocio que el asistente pida los datos por texto, y que alguien de repuestos mire el teléfono del local durante el día.
+Para un repuesto hacen falta modelo y año, y la compatibilidad la confirma alguien que conoce la pieza. A la gente le sale natural mandar la foto de la pieza gastada o un audio con el ruido del motor, y ninguno de los dos llega a Atende. El texto escrito abajo de una foto se pierde con ella, así que quien mandó solo eso no recibe respuesta. Dejá escrito en la descripción de tu negocio que el asistente pida los datos por texto y derive a repuestos.
 
 ## La fila anotada no le avisa a nadie
 
@@ -129,6 +129,6 @@ Sin conexión ya podés arrancar. El asistente contesta mensajes de texto a cual
 
 Para que haga lo de la demo con tus datos, conectado a tu stock y a tus condiciones de financiación, esa conexión se arma a pedido para tu negocio. No te damos un armador de flujos: miramos dónde tenés los datos hoy y armamos la conexión ahí. Tené a mano tu lista de motos, tus formas de pago y los costos que sumás al precio. Contamos [cómo trabajamos cada conexión](/integraciones), y [registrar leads de WhatsApp en Google Sheets](/blog/registrar-leads-de-whatsapp-en-google-sheets) se mete de lleno en la parte de la planilla.
 
-El número sigue siendo el del local. Se conecta por QR y no es la API oficial de Meta. Apenas lo vinculás, el asistente le responde a cualquiera que escriba, así que probalo desde otro número, que usa créditos: pedí una moto que no tengas y unas cuotas que no ofrezcas, a ver qué contesta.
+La línea del local la conectás como prefieras: con la API oficial de Meta o con un QR, que vincula el número que ya usás. Apenas queda conectada, el asistente le responde a cualquiera que escriba, así que probalo desde otro número, que usa créditos: pedí una moto que no tengas y unas cuotas que no ofrezcas, a ver qué contesta.
 
 Si también vendés autos, la [guía para concesionarias](/blog/como-automatizar-whatsapp-concesionaria) cubre usados, toma y plan de ahorro. Para ver el rubro completo andá a [concesionarias e inmobiliarias](/casos-de-uso/concesionarias-e-inmobiliarias), y para el resto de lo que se puede cerrar en un chat, a [ventas y pedidos por WhatsApp](/servicios/ventas-whatsapp).

@@ -110,7 +110,7 @@ Los grupos de WhatsApp no llegan a Atende, así que la coordinación con fletero
 
 "Tu envío salió a reparto" parece el mensaje más natural del rubro, pero Atende no escribe primero por su cuenta. Esos avisos se arman a pedido para tu empresa, leyendo los estados de tu sistema.
 
-Pensá el volumen antes de pedirlo. Tu línea está vinculada por QR, no por la API oficial de Meta, y un aviso por cada guía a personas que no lo pidieron es justo el tipo de envío que puede terminar en una restricción del número. Si lo armás, que sea para quienes lo solicitaron y con pocos envíos por tanda. Mientras tanto, el destinatario que pregunta recibe el estado, y eso ya le saca consultas a operaciones.
+Pensá el volumen antes de pedirlo, porque pesa en cómo conectás la línea: con un QR o con la API oficial de Meta. Por QR, un aviso por cada guía a personas que no lo pidieron es justo el tipo de envío que puede terminar en una restricción del número. Si lo armás, que sea para quienes lo solicitaron y con pocos envíos por tanda. Qué conexión te sirve a ese volumen lo vemos con vos en la [demo](/demo). Mientras tanto, el destinatario que pregunta recibe el estado, y eso ya le saca consultas a operaciones.
 
 ## Por dónde arrancar en una empresa de transporte
 

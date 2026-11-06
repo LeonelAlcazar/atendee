@@ -179,7 +179,7 @@ Un cuidado más: la pausa no es eterna. El chat se cierra solo 12 horas después
 
 ## Qué pasa con el seguimiento
 
-Muchos presupuestos se pierden porque nadie vuelve a escribir. Atende contesta cuando el cliente escribe: no inicia mensajes por su cuenta. Los seguimientos se arman a pedido para tu negocio. Ese trabajo tiene un cuidado propio, porque mandar mensajes que el contacto no pidió, desde un número vinculado por QR, suma riesgo de restricción.
+Muchos presupuestos se pierden porque nadie vuelve a escribir. Atende contesta cuando el cliente escribe: no inicia mensajes por su cuenta. Los seguimientos se arman a pedido para tu negocio. Ese trabajo tiene un cuidado propio: mandar mensajes que el contacto no pidió, desde un número vinculado por QR, suma riesgo de restricción, y para escribir primero conviene evaluar la API oficial de Meta, la otra forma de conectar tu número.
 
 Mientras tanto, lo más simple funciona: una etiqueta como “presupuesto enviado”, un responsable y un rato por semana para retomar esos chats desde la bandeja.
 

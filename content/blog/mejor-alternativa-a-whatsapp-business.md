@@ -10,8 +10,8 @@ summary: >-
   Si eso te alcanza, quedate. El acceso en Argentina depende de cada cuenta. Mirá
   otra opción si necesitás que el turno o el pedido queden registrados en tu
   sistema, o que todo tu equipo trabaje en una bandeja. Atende hace eso conectado a
-  tu sistema, con la conexión armada a pedido. Se conecta por QR, no es la API
-  oficial de Meta.
+  tu sistema, con la conexión armada a pedido, y elegís cómo conectar tu número:
+  con la API oficial de Meta o con un QR.
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -45,7 +45,7 @@ faq:
   - q: ¿Tengo que apagar el agente de Meta para usar Atende?
     a: >-
       Te lo recomendamos. Si los dos están prendidos, el contacto puede recibir dos
-      respuestas. Elegí uno y apagá el otro antes de escanear el QR de Atende.
+      respuestas. Elegí uno y apagá el otro antes de conectar tu número a Atende.
 sources:
   - title: 'WhatsApp Business: Meta Business Agent'
     url: 'https://www.whatsappbusiness.com/es-la/products/business-app-ai-agent/'
@@ -77,6 +77,9 @@ sources:
   - title: 'Meta: precios de WhatsApp Business Platform'
     url: 'https://developers.facebook.com/docs/whatsapp/pricing'
     checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Política de mensajes'
+    url: 'https://whatsappbusiness.com/es-la/policy/'
+    checkedAt: '2026-11-06'
   - title: 'La Nación: agente de IA en WhatsApp Business'
     url: 'https://www.lanacion.com.ar/tecnologia/whatsapp-business-como-funciona-el-agente-de-ia-que-ahora-te-respondera-siempre-y-que-promete-nid24022026/'
     checkedAt: '2026-11-06'
@@ -89,7 +92,7 @@ Atende publica esta nota y vende una de las opciones. Meta es, de hecho, nuestra
 
 [Meta Business Agent](https://www.whatsappbusiness.com/es-la/products/business-app-ai-agent/) es, en palabras de Meta, "un agente de IA que puede representar a tu empresa en chats con clientes". Según esa página, responde sobre horarios y ubicación, productos, precios, descuentos, pagos y envíos, y le hace preguntas al cliente para juntar datos. Lo entrenás con tu página de Facebook, tus chats, tu sitio y tu catálogo o lista de precios, y elegís si le contesta a todos, solo a clientes nuevos o a los que llegan por anuncios. No hace falta programar.
 
-Para un negocio que recibe siempre las mismas preguntas puede ser todo lo que necesitás, y viene de la empresa dueña del canal, sin vínculo por QR de por medio.
+Para un negocio que recibe siempre las mismas preguntas puede ser todo lo que necesitás, y viene de la empresa dueña del canal, sin sumar a un tercero.
 
 ## En Argentina lo define tu cuenta
 
@@ -124,7 +127,7 @@ Los planes de Atende se ven [en la app](/precios) antes de pagar. Para armar la 
 | Reservar el turno en tu agenda | No | Con calendario de Google, si la opción te aparece. No lo confirmamos para Argentina | Conectado a tu agenda, a pedido |
 | Registrar un pedido en tu sistema | No | No aparece en lo que abrimos | Conectado a tu sistema, a pedido |
 | Varias personas | [Teléfono y hasta 4 dispositivos](https://faq.whatsapp.com/647349420360876) | [Hasta 10 con suscripción](https://faq.whatsapp.com/395911122612120/?cms_platform=android), si está disponible | Bandeja compartida, cada uno con su cuenta |
-| Conexión | App oficial | App oficial | Se conecta por QR. No es la API oficial de Meta |
+| Conexión | App oficial | App oficial | API oficial de Meta o QR, a elección |
 
 ## Cuándo te alcanza con Meta
 
@@ -132,7 +135,7 @@ Quedate en la app, con o sin agente, si:
 
 - Tus consultas son horarios, precios y ubicación, y cerrás vos a mano.
 - Atendés una o dos personas desde el celular.
-- Te importa estar sobre la app oficial, sin una conexión por QR de terceros.
+- Te importa quedarte en la app de Meta, sin sumar una herramienta de terceros.
 - Tenés acceso al agente, lo probaste y responde bien.
 
 En ese caso Atende no te suma lo suficiente. Y si el agente no te convence porque habla de más, revisá primero lo que le cargaste.
@@ -155,8 +158,8 @@ Para trabajar entre varios, [WhatsApp para varios usuarios](/blog/whatsapp-vario
 
 ## Qué tenés que aceptar con Atende
 
-Se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número. Frente a la app, ese es el punto más fuerte en contra.
+Frente a la app, el punto más fuerte en contra es que sumás a un tercero entre tu negocio y WhatsApp, por cualquier camino. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por la API, [Meta cobra por mensaje](https://developers.facebook.com/docs/whatsapp/pricing) y [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo van plantillas. Por QR, Atende queda como un dispositivo vinculado a tu número, y según nuestra lectura esas tarifas no corren porque Meta las publica para la Plataforma. En ninguno de los dos podemos prometer que WhatsApp no restrinja un número.
 
-Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Es un número por espacio y todavía no tenemos reseñas públicas. Una vez vinculado le contesta a todos tus contactos, así que probalo desde otro número; usa créditos.
+Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Es un número por espacio y todavía no tenemos reseñas públicas. Una vez conectado le contesta a todos tus contactos, así que probalo desde otro número; usa créditos.
 
-Si tenés el agente de Meta prendido, apagalo antes de vincular: con los dos activos, un contacto puede recibir dos respuestas. Para decidir con tu caso concreto, [pedí una demo](/demo).
+Si tenés el agente de Meta prendido, apagalo antes de conectar: con los dos activos, un contacto puede recibir dos respuestas. Para decidir con tu caso concreto, [pedí una demo](/demo).

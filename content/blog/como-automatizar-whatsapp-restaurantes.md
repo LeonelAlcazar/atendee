@@ -99,7 +99,7 @@ A partir de cierta cantidad, una reserva deja de ser una mesa: hay que juntar me
 
 - **La carta.** Cargala como foto en tu biblioteca, porque un PDF no sale. Para el menú del día, actualizá el contexto desde el celu antes del servicio.
 - **Gustos y variantes.** “Mitad y mitad”, “sin cebolla”, “la grande”. El asistente repite el pedido completo antes de cerrarlo.
-- **La dirección.** Las ubicaciones compartidas no llegan a Atende, y un audio con el pedido tampoco. Pedí calle, altura, entre calles y piso por escrito. Si mandan solo el audio, no hay respuesta, y el mensaje se escucha únicamente en el celu del local.
+- **La dirección.** Las ubicaciones compartidas no llegan a Atende, y un audio con el pedido tampoco. Pedí calle, altura, entre calles y piso por escrito. Si mandan solo el audio, no hay respuesta.
 - **La demora.** El asistente no ve la cocina. “¿Cuánto tarda?” se contesta con el rango que cargaste, y en hora pico conviene ampliarlo o derivar.
 
 Conectado a tu caja, Atende registra el pedido y responde con el número. Sin conexión lo junta y caja lo confirma. Hay más detalle sobre [tomar pedidos por WhatsApp](/servicios/ventas-whatsapp).
@@ -114,6 +114,6 @@ Cuando el asistente deriva, el chat pasa a Necesita humano y él se calla ahí, 
 
 Mientras el servicio y la línea estén conectados, el asistente atiende a cualquier hora, también los días que no abrís. Escribí tus horarios y días cerrados para que no tome pedidos con la cocina apagada. Si cerrás por vacaciones y preferís contestar a mano, pasá el espacio a Modo CRM. Para pensar qué responder fuera de horario, seguí con [atención fuera de horario](/blog/atencion-comercial-whatsapp-24-7).
 
-Confirmar la reserva el día anterior es un mensaje que sale del negocio, y eso Atende no lo hace por su cuenta. Lo armamos a pedido, con una advertencia: la línea está vinculada por QR, no por la API oficial de Meta, y un mensaje inesperado suma riesgo de restricción. Usalo solo con quien reservó y aceptó recibirlo.
+Confirmar la reserva el día anterior es un mensaje que sale del negocio, y eso Atende no lo hace por su cuenta. Lo armamos a pedido. Si la línea está vinculada por QR, un mensaje inesperado suma riesgo de restricción, así que usalo solo con quien reservó y aceptó recibirlo.
 
 Si combinás salón y habitaciones, mirá el caso de [restaurantes y hoteles](/casos-de-uso/restaurantes-y-hoteles).

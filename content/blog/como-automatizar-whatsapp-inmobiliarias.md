@@ -97,7 +97,7 @@ Zonaprop, Argenprop y Mercado Libre son de donde viene buena parte de la gente, 
 Por eso:
 
 - Poné un código corto y visible en cada aviso. “El departamento del centro” puede ser cualquiera de ocho, y el código evita mandar la ficha equivocada.
-- Una captura del aviso es una imagen y no llega, igual que el audio de quien prefiere contar qué busca. Si alguien manda sólo eso, el asistente no contesta, y hace falta que alguien lo vea en el teléfono de la inmobiliaria.
+- Una captura del aviso es una imagen y no llega, igual que el audio de quien prefiere contar qué busca. Si alguien manda sólo eso, el asistente no contesta y la bandeja no lo muestra.
 
 ## Las llaves, el inquilino y otras reglas de la visita
 

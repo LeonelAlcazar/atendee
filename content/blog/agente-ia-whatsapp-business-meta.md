@@ -56,9 +56,9 @@ faq:
   - q: ¿Puedo usar Atende y el agente de Meta en el mismo número?
     a: >-
       No es recomendable. Activar el agente de Meta desconecta todos los
-      dispositivos vinculados, y Atende se conecta por QR como un dispositivo
-      vinculado. Elegí uno por número para que tus clientes no reciban
-      respuestas de dos asistentes.
+      dispositivos vinculados, y si conectás Atende por QR, es uno de ellos.
+      Elegí uno por número para que tus clientes no reciban respuestas de dos
+      asistentes.
 sources:
   - title: 'WhatsApp, centro de ayuda: cómo configurar Meta Business Agent'
     url: 'https://faq.whatsapp.com/1153795669452207'
@@ -145,7 +145,7 @@ En febrero, La Nación pedía usar la app en español y tener al menos un produc
 
 ## Antes de activarlo, mirá estos efectos
 
-- **Se cortan los dispositivos vinculados.** "Si activas Meta Business Agent, se desconectarán todos los dispositivos vinculados", dice la [ayuda](https://faq.whatsapp.com/291930066973116). Después podés volver a vincular la mayoría, excepto WhatsApp para Windows, tablets con Android y WearOS. Una herramienta conectada por QR, Atende incluida, es un dispositivo vinculado, así que contá con que se desconecte igual. Es nuestra lectura de esa ayuda: no lo probamos.
+- **Se cortan los dispositivos vinculados.** "Si activas Meta Business Agent, se desconectarán todos los dispositivos vinculados", dice la [ayuda](https://faq.whatsapp.com/291930066973116). Después podés volver a vincular la mayoría, excepto WhatsApp para Windows, tablets con Android y WearOS. Una herramienta conectada por QR, Atende incluida si la conectaste así, es un dispositivo vinculado, así que contá con que se desconecte igual. Es nuestra lectura de esa ayuda: no lo probamos.
 - **Se apagan la bienvenida y la ausencia.** Se [desactivan automáticamente](https://faq.whatsapp.com/1060682242241308), y para recuperarlas "tendrás que eliminar Meta Business Agent". También pueden verse afectadas las listas de difusión y los mensajes temporales.
 - **Meta recibe esos chats.** Tus clientes ven un [aviso](https://faq.whatsapp.com/6485307734928964) de que la IA de Meta recibe los chats, y Meta puede usar tu información y los mensajes de esos chats para mejorar su IA. Cuando eliminás el agente, dejás de compartirlos para ese fin.
 
@@ -212,9 +212,9 @@ Sin esa conexión, el asistente junta el pedido y tu equipo lo confirma. Mirá [
 
 | | Agente de Meta | Atende |
 | --- | --- | --- |
-| Dónde vive | Adentro de la app WhatsApp Business | En un panel aparte. Se conecta por QR. No es la API oficial de Meta |
+| Dónde vive | Adentro de la app WhatsApp Business | En un panel aparte. Conexión: API oficial de Meta o QR, a elección |
 | Cómo accedés | Por cuenta, con lista de espera | Creás tu [espacio](/que-es-atende) y activás créditos o un plan |
 | Acciones | Las que tu cuenta tenga habilitadas | Las conectadas a tu sistema, a pedido |
 | Si respondés a mano | La IA se frena en ese chat | El asistente sigue. Para frenarlo, marcás **Necesita humano** |
 
-Una aclaración que hacemos siempre: Atende lee mensajes de texto. Audios, fotos, videos, documentos y grupos no le llegan. Y si ya lo usás y activás el agente de Meta, contá con que se corte la vinculación y haya que volver a escanear el QR, así que elegí uno por número.
+Una aclaración que hacemos siempre: Atende lee mensajes de texto. Audios, fotos, videos, documentos y grupos no le llegan. Y si lo conectaste por QR y activás el agente de Meta, contá con que se corte la vinculación y haya que volver a escanear el QR, así que elegí uno por número.

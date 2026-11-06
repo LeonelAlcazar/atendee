@@ -132,8 +132,8 @@ Al revés pasa lo mismo: ni el asistente ni la bandeja adjuntan un PDF, así que
 
 Atende no arranca conversaciones solo. El aviso de renovación o de cuota impaga se arma a pedido para tu agencia y necesita una fuente con los vencimientos de cada póliza. Consultar si una cuota está paga funciona igual: a pedido, conectado a tu sistema. Sin esa conexión lo responde una persona.
 
-Medí el riesgo antes de pedirlo. El número está vinculado por QR, fuera de la API oficial de Meta. Un asegurado que recibe un aviso que no pidió puede reportar el número, y WhatsApp puede restringirlo. Si pasa, también se corta el canal por donde te avisan que chocaron. Limitalo a quienes aceptaron el aviso.
+Medí el riesgo antes de pedirlo. Si el número está vinculado por QR, un asegurado que recibe un aviso que no pidió puede reportarlo y WhatsApp puede restringir la línea, que es también por donde te avisan que chocaron. Limitalo a quienes aceptaron el aviso.
 
 ## Cómo queda en una agencia
 
-La secuencia es corta: el espacio de la agencia, los ramos que trabajás y lo que el asistente no contesta, la invitación a los productores, créditos o un plan y, al final, el QR. Desde ahí atiende a cualquiera que escriba, asegurados de años incluidos. Probalo desde otro número, que usa créditos, con un "me chocaron", a ver si corta lo comercial. Y antes de escanear, dejá cargado el teléfono de asistencia de cada compañía: es la respuesta que más va a importar un domingo.
+La secuencia es corta: el espacio de la agencia, los ramos que trabajás y lo que el asistente no contesta, la invitación a los productores, créditos o un plan y, al final, conectar la línea de la agencia, por la API oficial de Meta o con un QR, según prefieras. Desde ahí atiende a cualquiera que escriba, asegurados de años incluidos. Probalo desde otro número, que usa créditos, con un "me chocaron", a ver si corta lo comercial. Y antes de conectarla, dejá cargado el teléfono de asistencia de cada compañía: es la respuesta que más va a importar un domingo.

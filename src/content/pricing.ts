@@ -3,7 +3,7 @@ import type { FaqItem } from './faq';
 export const pricingFaq: FaqItem[] = [
   {
     q: '¿Cuánto cuesta un bot de WhatsApp con Atende?',
-    a: 'Depende del plan y de las conexiones que sumes. Cada plan con IA trae una cantidad de respuestas del asistente por mes, y las conexiones con tu sistema se cotizan para cada negocio. El importe vigente del plan lo ves en la app antes de pagar.',
+    a: 'Depende del plan y de las conexiones que sumes. Cada plan con IA trae una cantidad de respuestas del asistente por mes, y las conexiones con tu sistema se cotizan para cada negocio. El importe vigente del plan lo ves en la app antes de pagar. Si elegís la API oficial de Meta, tiene sus propias tarifas por mensaje: lo vemos con vos en la demo.',
   },
   {
     q: '¿Dónde veo el precio de los planes?',

@@ -69,7 +69,7 @@ Si estuviste en un mostrador de service, sabés que medio mundo contesta con una
 Para que nadie quede colgado:
 
 - Escribí en la descripción de tu negocio que el asistente pida los datos por texto y avise que no puede ver fotos ni escuchar audios.
-- Decidí quién mira el WhatsApp en el teléfono del local durante el día. Las fotos siguen entrando ahí.
+- Decidí quién recibe las fotos durante el día y por qué canal, porque al asistente no le llegan.
 - Si hay que ver el equipo para avanzar, que el asistente derive en lugar de insistir.
 
 ## Presupuesto: lo que se puede decir sin ver el equipo

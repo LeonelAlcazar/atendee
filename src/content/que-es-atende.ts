@@ -19,7 +19,7 @@ export const facts: { label: string; text: string }[] = [
   { label: 'Dónde se hace', text: 'Córdoba, Argentina.' },
   {
     label: 'Cómo se conecta',
-    text: 'Por QR, en el número que tu negocio ya usa. No es la API oficial de Meta.',
+    text: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Sigue siendo el número que tu negocio ya usa.',
   },
   { label: 'Qué recibe', text: 'Mensajes de texto de WhatsApp.' },
   {
@@ -60,7 +60,7 @@ export const notDone: string[] = [
   'No recibe audios, imágenes, videos, documentos, stickers ni ubicaciones, y tampoco mensajes de grupos. No los ve el asistente ni aparecen en la bandeja.',
   'No empieza conversaciones por su cuenta. Recordatorios y seguimientos son a pedido.',
   'No trae conexiones listas para activar: cada una se arma para un negocio.',
-  'No tiene modo de prueba. Una vez vinculado, le responde a cada contacto. Probalo desde otro número; usa créditos.',
+  'No tiene modo de prueba. Una vez conectado, le responde a cada contacto. Probalo desde otro número; usa créditos.',
   'No lee todo el historial. Tiene en cuenta la conversación en curso y las notas que guardó.',
   'No se frena porque alguien del equipo responda. Para seguir vos, marcá la conversación como Necesita humano.',
   'No alerta a tu equipo cuando deriva ni cuando se terminan las respuestas. Hay que mirar la bandeja y la pantalla Plan.',
@@ -126,7 +126,7 @@ export const nextLinks: { href: string; title: string; text: string }[] = [
   {
     href: '/preguntas-frecuentes',
     title: 'Preguntas frecuentes',
-    text: 'Tu número, el QR, los límites y cómo frenás al asistente.',
+    text: 'Tu número, cómo se conecta, los límites y cómo frenás al asistente.',
   },
   {
     href: '/nosotros',

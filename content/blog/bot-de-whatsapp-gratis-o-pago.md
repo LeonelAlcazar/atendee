@@ -40,7 +40,8 @@ faq:
       No del todo. Aunque la herramienta no cobre, por la API Meta factura aparte:
       en Argentina, USD 0,026 por mensaje de servicio desde el 1.001 de cada mes,
       según la tarifa vigente desde el 1 de octubre de 2026. Pedí que cada
-      propuesta diga qué conexión usa y quién paga ese cargo.
+      propuesta diga qué conexión usa y quién paga ese cargo. En Atende elegís la
+      ruta, y este cargo es parte de lo que mirás al elegir.
   - q: ¿Los 100 créditos de Atende son 100 conversaciones?
     a: >-
       No. Cada crédito equivale a una respuesta del asistente. Una conversación
@@ -117,7 +118,7 @@ Una prueba no necesita cubrir toda tu actividad mensual para ser útil. Sí nece
 
 Atende da **100 créditos de bienvenida por espacio, una sola vez, sin tarjeta ni suscripción**. Se activan desde Plan y cada crédito es una respuesta del asistente. No se renuevan.
 
-Antes de usarlos, dos cosas. [No hay modo de prueba](/preguntas-frecuentes): apenas escaneás el QR, el asistente contesta a todos tus contactos, así que probalo desde otro número; usa créditos. Y lo que vas a ver es el camino sin conexión: el asistente junta el pedido y tu equipo lo confirma.
+Antes de usarlos, dos cosas. [No hay modo de prueba](/preguntas-frecuentes): apenas conectás el número, el asistente contesta a todos tus contactos, así que probalo desde otro número; usa créditos. Y lo que vas a ver es el camino sin conexión: el asistente junta el pedido y tu equipo lo confirma.
 
 Lo que termina la tarea es la conexión, y eso no sale de los créditos:
 
@@ -139,7 +140,7 @@ Una prueba útil con créditos tiene tres grupos de casos:
 - **Consulta incompleta:** falta una referencia y el bot tiene que pedirla.
 - **Excepción:** el caso necesita una persona, y el chat tiene que quedar marcado para tu equipo.
 
-Guardá los resultados y reservá parte del saldo para volver a probar lo que corregiste. La app no avisa cuando quedan pocos créditos: miralos en Plan. Cuando se terminan, el asistente deja de contestar. Si además no tenés un plan, el panel se bloquea salvo Plan e integraciones, y los mensajes nuevos no entran a la bandeja, aunque siguen llegando al WhatsApp de tu teléfono.
+Guardá los resultados y reservá parte del saldo para volver a probar lo que corregiste. La app no avisa cuando quedan pocos créditos: miralos en Plan. Cuando se terminan, el asistente deja de contestar. Si además no tenés un plan, el panel se bloquea salvo Plan e integraciones, y los mensajes nuevos no entran a la bandeja. Si conectaste por QR, siguen llegando al WhatsApp de tu teléfono.
 
 ## Contá respuestas, no solo conversaciones
 
@@ -173,7 +174,7 @@ Lo que sigue sin cargo, según [la página de precios de Meta](https://developer
 
 Para Argentina, la tarifa de lista vigente desde el 1 de octubre de 2026 es USD 0,026 por mensaje de servicio entregado. La cuenta completa, con ejemplo y por categoría, está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
 
-Esa cuenta no aplica al QR. Atende se conecta por QR. No es la API oficial de Meta, y Meta publica esas tarifas solo para la API, no para un número que sigue en la app. A cambio, nadie te puede prometer que WhatsApp no va a restringir el número. Pedí que cada propuesta diga qué conexión usa y quién factura cada concepto, y no supongas que una suscripción cubre los cargos de terceros.
+En Atende, esa cuenta depende de la ruta. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por la API, estos cargos son parte de lo que mirás al elegir, y cómo quedan en tu caso lo vemos con vos en la [demo](/demo). Por QR, Meta publica esas tarifas solo para la API, no para un número que sigue en la app, así que según nuestra lectura ese cargo no corre. Por ninguna de las dos rutas te pueden prometer que WhatsApp no va a restringir el número. Pedí que cada propuesta diga qué conexión usa y quién factura cada concepto, y no supongas que una suscripción cubre los cargos de terceros.
 
 ## Cuándo tiene sentido pasar a un plan pago
 

@@ -41,9 +41,8 @@ faq:
       con el contrato adelante.
   - q: ¿Qué pasa con las fotos del auto que manda el cliente?
     a: >-
-      Nunca llegan a Atende, igual que los audios y las capturas de un aviso. Se
-      ven sólo en el teléfono de la concesionaria, así que los datos para la
-      toma se piden por texto.
+      Nunca llegan a Atende, igual que los audios y las capturas de un aviso,
+      así que los datos para la toma se piden por texto.
 ---
 Conectado a tu stock y a la agenda de ventas, Atende confirma que el auto del aviso sigue disponible y agenda el test drive del sábado mientras el vendedor está sentado con otro cliente. Para llegar ahí, primero separá lo que entra al WhatsApp de una concesionaria, porque cinco conversaciones distintas suelen arrancar con media frase.
 
@@ -63,7 +62,7 @@ Sin conexión, el asistente no sabe qué salió ayer del salón. Si cargás las 
 
 Un truco barato: poné un código corto en cada aviso. La gente pregunta por “el gris”, y con cuatro grises en el salón eso no alcanza. Con el código, vendedor y asistente hablan de la misma unidad.
 
-Quien manda una captura del aviso manda una imagen, y las imágenes no llegan a Atende: la persona queda esperando hasta que alguien la vea en el teléfono. Para el pedido inverso, el clásico “pasame más fotos”, subí fotos y videos de las unidades a tu biblioteca y el asistente los manda en el chat. Esa parte funciona sin conectar nada.
+Quien manda una captura del aviso manda una imagen, y las imágenes no llegan a Atende: la persona queda esperando, porque el asistente no contesta. Para el pedido inverso, el clásico “pasame más fotos”, subí fotos y videos de las unidades a tu biblioteca y el asistente los manda en el chat. Esa parte funciona sin conectar nada.
 
 ## Toma de usado: juntar datos sin poner precio
 
@@ -77,7 +76,7 @@ El vendedor que recibe una toma quiere saber lo mismo cada vez, y todo eso se es
 
 El asistente anota y frena ahí. Ni un valor, ni un “más o menos”: el tasador necesita ver chapa, cubiertas e historial de service, y cualquier número dicho antes se le vuelve en contra en la mesa. Tampoco hace falta pedir la cédula ni el título para una primera consulta.
 
-Lo que sí va a pasar es que el cliente mande seis fotos del tablero y un audio contando que está impecable. Eso queda en el teléfono de la concesionaria y no entra a la bandeja. Si en tu salón las tomas se resuelven mirando fotos, definí quién las revisa ahí.
+Lo que sí va a pasar es que el cliente mande seis fotos del tablero y un audio contando que está impecable. Eso no llega a Atende ni entra a la bandeja. Si en tu salón las tomas se resuelven mirando fotos, definí quién las recibe y por qué canal.
 
 ## Plan de ahorro: la consulta que más cuidado pide
 

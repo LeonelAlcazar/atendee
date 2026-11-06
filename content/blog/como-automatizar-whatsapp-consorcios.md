@@ -76,7 +76,7 @@ Para que un reclamo sirva, tiene que traer:
 - Desde cuándo pasa.
 - Quién escribe: propietario, inquilino o encargado.
 
-La foto de la mancha es lo primero que manda cualquiera, y es justo lo que Atende no recibe. Imágenes, audios y videos nunca llegan: ni el asistente ni tu equipo los encuentran en la bandeja, y el texto que acompañe la imagen desaparece también. Pedí la descripción por texto. Si la imagen hace falta, que tu equipo la mire en el teléfono de la administración.
+La foto de la mancha es lo primero que manda cualquiera, y es justo lo que Atende no recibe. Imágenes, audios y videos nunca llegan: ni el asistente ni tu equipo los encuentran en la bandeja, y el texto que acompañe la imagen desaparece también. Pedí la descripción por texto. Si la imagen hace falta, acordá con tu equipo otra vía para recibirla.
 
 ## Expensas: qué se le contesta a cualquiera
 
@@ -121,4 +121,4 @@ Hay temas que siempre van a una persona, y conviene escribirlos como lista en el
 - Peleas entre vecinos por ruidos, mascotas o cocheras.
 - Multas, intimaciones y cualquier deuda que esté en manos de un abogado.
 
-¿Y avisar un corte de agua a todo el edificio? Atende no hace difusiones masivas. Un recordatorio puntual, como el vencimiento para quien lo pidió, se puede armar a pedido, pero mandar mensajes que nadie pidió a una lista de propietarios desde un número vinculado por QR, fuera de la API oficial de Meta, puede traer restricciones. El cartel y el grupo siguen siendo mejores para eso.
+¿Y avisar un corte de agua a todo el edificio? Atende no hace difusiones masivas. Un recordatorio puntual, como el vencimiento para quien lo pidió, se puede armar a pedido, pero mandar mensajes que nadie pidió a una lista de propietarios desde un número vinculado por QR puede traer restricciones. El cartel y el grupo siguen siendo mejores para eso.

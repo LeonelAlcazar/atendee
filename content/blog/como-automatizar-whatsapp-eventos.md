@@ -96,7 +96,7 @@ Sin conexión, Carla recibe otra respuesta: le dicen que la fecha hay que cheque
 
 El tramo final es de una persona. La visita ordena la venta, la degustación tiene sus reglas (cuándo, para quién, con qué costo) y la fecha queda vendida cuando la seña está acreditada y el contrato firmado. Hasta ahí, el asistente no dice “confirmada”.
 
-La transferencia de la seña suele venir con una captura, y esa captura nunca entra a Atende: la ves en el celular del salón y la cotejás con la cuenta. Y el contrato no sale desde la bandeja, que manda texto y archivos de tu biblioteca de fotos y videos. Mandalo por mail o por el WhatsApp del celular.
+La transferencia de la seña suele venir con una captura, y esa captura nunca entra a Atende: alguien del salón coteja la seña con la cuenta. Y el contrato no sale desde la bandeja, que manda texto y archivos de tu biblioteca de fotos y videos. Mandalo por mail o por el WhatsApp del celular.
 
 Las fotos y videos del salón, en cambio, juegan a favor: cargalos una vez, separados por ambiente o por tipo de fiesta, y el asistente elige cuáles mostrar.
 
@@ -106,9 +106,9 @@ Entre la primera consulta y la seña pueden pasar semanas, y varias personas opi
 
 - **Cada vuelta es una charla nueva.** Pasadas 12 horas desde que el contacto escribió por última vez, el chat se cierra. Al volver, el asistente arranca con la conversación en curso y lo poco que anotó, y puede repreguntar un dato. El historial lo abre tu equipo.
 - **Las notas internas no le llegan al asistente.** “Le prometí el DJ sin cargo” en una nota no cambia sus respuestas. Si la promesa vale para todos, va en el contexto.
-- **La mamá, la quinceañera y la organizadora son tres chats.** Cada número es un contacto, y el grupo de la familia no llega a Atende. Los audios con ideas para la ambientación tampoco, ni las fotos de referencia: quedan en el teléfono.
+- **La mamá, la quinceañera y la organizadora son tres chats.** Cada número es un contacto, y el grupo de la familia no llega a Atende. Los audios con ideas para la ambientación tampoco, ni las fotos de referencia.
 - **La bandeja busca por contacto o teléfono.** Si buscás “14 de agosto”, no aparece. Poné una etiqueta con la fecha o el mes de la fiesta y filtrá por ahí.
-- **El seguimiento no sale solo.** Un “¿pudiste ver el presupuesto?” tiene que mandarlo alguien de tu equipo, o armarse a pedido. Pensalo bien: tu línea está vinculada por QR, fuera de la API oficial de Meta, e insistirle a una familia que no lo espera aumenta el riesgo de restricción.
+- **El seguimiento no sale solo.** Un “¿pudiste ver el presupuesto?” tiene que mandarlo alguien de tu equipo, o armarse a pedido. Pensalo bien: si tu línea está vinculada por QR, insistirle a una familia que no lo espera aumenta el riesgo de restricción.
 
 ## Si vendés catering, DJ o ambientación
 

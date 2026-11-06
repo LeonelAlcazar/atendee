@@ -122,6 +122,6 @@ Quien ya es cliente pregunta otra cosa: "¿salió algo en mi expediente?". El as
 
 También hay que saber que el asistente les contesta a todos desde que escaneás el QR, tus clientes incluidos: no hay modo de prueba ni excepción por contacto. Probalo desde otro número, que usa créditos, con una consulta de un área que no tomás y un "¿llego con el plazo?". Si un asunto delicado pide que siga una persona, marcá esa conversación como Necesita humano, porque contestar desde la bandeja no alcanza para frenarlo. Para apagarlo en todo el espacio está Modo CRM. [Cómo pasar de la IA a una persona](/blog/whatsapp-ia-atencion-humana) cubre ese traspaso.
 
-Si el estudio va a depender de esta línea, sabé que se conecta por QR. No es la API oficial de Meta, y nadie puede prometerte que WhatsApp no restrinja un número.
+Si el estudio va a depender de esta línea, decidí con calma cómo conectarla: con la API oficial de Meta o con un QR, según lo que necesites. Por ninguno de los dos caminos se puede prometer que WhatsApp no restrinja un número.
 
 [WhatsApp para estudios y servicios profesionales](/casos-de-uso/servicios-profesionales) muestra este recorrido junto al de otros estudios, y [registrar interesados](/servicios/ventas-whatsapp) sigue la misma lógica que un área de ventas. La [guía para estudios contables](/blog/como-automatizar-whatsapp-estudios-contables) resuelve un problema parecido con otras reglas: ahí lo delicado son los vencimientos y la documentación.

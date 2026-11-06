@@ -68,7 +68,7 @@ Esta guía sirve para mayoristas de alimentos, bebidas, limpieza o [ferretería]
 4. **Repetir el pedido.** El asistente lo lee renglón por renglón y espera el OK del comercio. Ahí se corrige el seis por el cuatro y la caja por el bulto.
 5. **Registrarlo.** Conectado, queda cargado en tu sistema y el comercio recibe el número de pedido. Sin conexión, la conversación queda marcada para que ventas lo cargue y le confirme.
 
-Cuando alguien manda la lista en varios mensajes seguidos, Atende espera un momento y los toma como uno solo. Con la foto de un pedido escrito a mano o un audio pasa lo contrario: no llegan, porque Atende recibe mensajes de texto. Si viene solo la foto, el asistente no contesta y la imagen queda en el WhatsApp del teléfono. Dejale escrito que, si alguien avisa que mandó una foto o un audio, pida los renglones en texto.
+Cuando alguien manda la lista en varios mensajes seguidos, Atende espera un momento y los toma como uno solo. Con la foto de un pedido escrito a mano o un audio pasa lo contrario: no llegan, porque Atende recibe mensajes de texto. Si viene solo la foto, el asistente no contesta, porque para él no llegó nada. Dejale escrito que, si alguien avisa que mandó una foto o un audio, pida los renglones en texto.
 
 ## Cada comercio con su lista
 
@@ -160,6 +160,6 @@ Antes de empezar, tené presente esto:
 
 - **Contestar no frena al asistente.** Tampoco tocar “Asignarme”. Para quedarse con un chat hay que marcarlo como Necesita humano, y eso vale hasta que la conversación se cierra, a las 12 horas del último mensaje del comercio. Si vuelve a escribir después, contesta el asistente.
 - **Derivar marca el chat, no avisa.** Nadie recibe una alerta. Definí quién mira los pendientes antes de cada hora de corte.
-- **La lista nueva no se manda a toda la cartera.** Atende se conecta por QR y no es la API oficial de Meta. Los envíos masivos que nadie pidió aumentan el riesgo de que WhatsApp restrinja el número. Un recordatorio del tipo “hoy cierra el pedido del jueves” se puede armar a pedido, con ese riesgo a la vista.
+- **La lista nueva no se manda a toda la cartera.** Si el número de pedidos está vinculado por QR, un envío masivo que nadie pidió aumenta el riesgo de que WhatsApp lo restrinja. Un recordatorio del tipo “hoy cierra el pedido del jueves” se puede armar a pedido, y si vas a escribirle seguido a la cartera, mirá también la API oficial de Meta, que es la otra forma de conectar el número.
 
 Para evaluarlo, traé a una [demo](/demo) tu lista, tus reglas de reparto y dos excepciones habituales. También podés ver [cómo registra pedidos Atende](/servicios/ventas-whatsapp), el caso completo de [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras) y la [guía de cotizaciones](/blog/cotizaciones-por-whatsapp-automaticas) si vendés con presupuesto previo.

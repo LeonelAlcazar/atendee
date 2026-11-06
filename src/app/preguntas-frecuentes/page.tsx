@@ -30,7 +30,7 @@ export default function PreguntasFrecuentesPage() {
                 <span className="text-coral">reserve su primer turno.</span>
               </>
             }
-            sub="Conectado a tu sistema, Atende reserva turnos y registra pedidos por WhatsApp. Acá están las respuestas operativas: qué pasa con tu número, qué mensajes entiende, cómo frenás al asistente y qué no hace."
+            sub="Conectado a tu sistema, Atende reserva turnos y registra pedidos por WhatsApp. Acá están las respuestas operativas: cómo conectás tu número, qué mensajes entiende, cómo frenás al asistente y qué no hace."
           />
           <nav aria-label="Temas" className="mt-8">
             <ul className="flex flex-wrap gap-2.5">

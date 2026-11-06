@@ -3,11 +3,11 @@ title: 'Cómo automatizar WhatsApp gratis con Atende'
 seoTitle: 'Automatizar WhatsApp gratis con 100 créditos de bienvenida'
 description: >-
   Automatizá WhatsApp gratis con 100 créditos de bienvenida de Atende, sin
-  tarjeta: juntá tus primeros pedidos por QR y mirá qué pasa al agotarlos.
+  tarjeta: juntá tus primeros pedidos y mirá qué pasa al agotarlos.
 summary: >-
   Entrá a app.atende.com.ar, creá tu espacio, contale qué hace tu negocio,
   invitá a tu equipo y activá “100 créditos gratis”, sin tarjeta ni suscripción.
-  Después escaneá el QR: el asistente empieza a contestar a todos tus contactos
+  Después conectá tu número: el asistente empieza a contestar a todos tus contactos
   y a juntar pedidos para que tu equipo los confirme. Cada crédito es una
   respuesta, no una conversación. Los 100 se activan una sola vez por espacio y
   no se renuevan. Cuando se terminan, el asistente deja de contestar y, sin un
@@ -54,7 +54,7 @@ faq:
       créditos. Lo mismo vale para recordatorios y seguimientos.
 sources: []
 ---
-Con los 100 créditos de bienvenida podés ver gratis a un asistente tomando pedidos en tu WhatsApp: pregunta lo que falta, junta los datos y le deja la solicitud lista a tu equipo. Para automatizar WhatsApp gratis con Atende, entrá a [app.atende.com.ar](https://app.atende.com.ar), creá tu espacio, contale qué hace tu negocio y activá los créditos. Después escaneás el QR con el número que ya usás. No necesitás tarjeta ni suscripción.
+Con los 100 créditos de bienvenida podés ver gratis a un asistente tomando pedidos en tu WhatsApp: pregunta lo que falta, junta los datos y le deja la solicitud lista a tu equipo. Para automatizar WhatsApp gratis con Atende, entrá a [app.atende.com.ar](https://app.atende.com.ar), creá tu espacio, contale qué hace tu negocio y activá los créditos. Después conectás tu número; esta guía sigue el camino del QR, con el número que ya usás. No necesitás tarjeta ni suscripción.
 
 Tené en cuenta la unidad: cada crédito es una respuesta del asistente, no un cliente ni una conversación completa.
 
@@ -70,11 +70,11 @@ Mientras tu espacio tenga créditos, podés usar la app y el asistente contesta 
 | Activación | No es automática: la hacés vos con un clic |
 | Consumo | 1 crédito por cada respuesta del asistente |
 | Renovación | No se renuevan cada mes ni son ilimitados |
-| Conexión | Por QR, con tu número. No es la API oficial de Meta |
+| Conexión | Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Esta guía sigue el QR |
 
 ## Cómo activar los créditos y conectar tu WhatsApp
 
-El orden importa, porque apenas escaneás el QR el asistente empieza a contestar.
+Estos son los pasos por QR; si preferís la API oficial, lo vemos con vos en la [demo](/demo). El orden importa, porque apenas escaneás el QR el asistente empieza a contestar.
 
 1. **Creá tu espacio.** Entrá a [app.atende.com.ar](https://app.atende.com.ar) y seguí el recorrido inicial. Primero te pide el nombre de tu equipo y un link corto.
 2. **Contale qué hace tu negocio.** Cargá la información en ese paso o después desde Asistente. Hacelo antes de conectar el número.
@@ -181,7 +181,7 @@ No hace falta una opinión positiva, sino honesta. Después de publicar, pegá e
 
 - **El asistente deja de contestar.** El cliente no recibe nada y tu equipo no recibe ninguna alerta.
 - **Si no tenés un plan, el panel se bloquea** salvo Plan e integraciones.
-- **Si no tenés un plan, los mensajes nuevos no entran a la bandeja** ni se guardan en Atende. Siguen llegando al WhatsApp de tu teléfono.
+- **Si no tenés un plan, los mensajes nuevos no entran a la bandeja** ni se guardan en Atende. Si conectaste por QR, siguen llegando al WhatsApp de tu teléfono.
 
 Conviene decidir antes de llegar a cero. Tenés dos caminos en la app: pedir las recompensas de X o Instagram, si todavía no lo hiciste, o elegir un plan pago con automatización. Los planes vigentes se ven en la app antes de pagar, y en [precios](/precios) está qué entra en cada uno.
 

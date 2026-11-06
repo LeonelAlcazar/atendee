@@ -105,7 +105,7 @@ Sin conexión, el asistente junta lo mismo, aclara que no hay lugares apartados 
 - Coberturas del seguro de viaje.
 - El nombre exacto de cada pasajero. Lo copia un asesor del documento, no de un chat.
 
-La foto del pasaporte y el PDF de una reserva nunca entran a Atende, porque toma mensajes de texto. Los vas a ver en el celular de la agencia. Si tu proceso pide esa documentación, definí por qué canal se manda y quién la recibe, sin pasar por el asistente.
+La foto del pasaporte y el PDF de una reserva nunca entran a Atende, porque toma mensajes de texto. Si tu proceso pide esa documentación, definí por qué canal se manda y quién la recibe, sin pasar por el asistente.
 
 Al revés tampoco hay camino. Un voucher, un itinerario o una factura no se adjuntan desde la bandeja, que manda texto y material de tu biblioteca: salen por mail o desde ese mismo celular.
 

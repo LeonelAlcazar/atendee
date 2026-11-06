@@ -88,7 +88,7 @@ Los convenios cambian, y una cartilla vieja en el chat produce la peor escena de
 
 ## La foto de la orden no llega a Atende
 
-Atende trabaja con mensajes de texto. La foto de una orden, el PDF de un estudio y la nota de voz de una paciente mayor nunca llegan: el asistente no los recibe, no contesta y la bandeja no los muestra. Si la foto trae un texto al pie, se pierde con ella. Esos archivos siguen entrando al teléfono de la clínica, porque Atende funciona como un dispositivo vinculado, así que alguien tiene que seguir mirándolo.
+Atende trabaja con mensajes de texto. La foto de una orden, el PDF de un estudio y la nota de voz de una paciente mayor nunca llegan: el asistente no los recibe, no contesta y la bandeja no los muestra. Si la foto trae un texto al pie, se pierde con ella. Con el número vinculado por QR, esos archivos siguen entrando al teléfono de la clínica, y alguien tiene que seguir mirándolo.
 
 Conviene anticiparlo. Pedile al asistente que, al confirmar cada turno, aclare que la orden se presenta en el mostrador, y dejá escrito en el perfil de WhatsApp de la clínica que ese canal atiende mensajes de texto.
 
@@ -124,7 +124,7 @@ Una autorización complicada suele llevar varios mensajes, y responderle al paci
 
 ## Antes de vincular el número de la clínica
 
-El asistente queda activo desde que se escanea el código y atiende a cualquier paciente, porque no hay un ensayo aparte. Por eso esta lista se completa antes del QR. Las pruebas vienen después, desde otro celular y consumiendo créditos, con los pacientes ya escribiendo. El vínculo es por QR y no pasa por la API oficial de Meta. Cada espacio lleva un solo número, así que si cada sede tiene su propio WhatsApp, cada una necesita su espacio.
+El asistente queda activo desde que el número se conecta y atiende a cualquier paciente, porque no hay un ensayo aparte. Por eso esta lista se completa antes de conectarlo. Las pruebas vienen después, desde otro celular y consumiendo créditos, con los pacientes ya escribiendo. La línea de la clínica puede entrar por la API oficial de Meta o por un QR, y esa decisión es tuya. Cada espacio lleva un solo número, así que si cada sede tiene su propio WhatsApp, cada una necesita su espacio.
 
 Dejá listo esto:
 

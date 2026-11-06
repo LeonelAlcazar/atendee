@@ -64,6 +64,9 @@ sources:
   - title: 'Meta: precios de WhatsApp Business Platform'
     url: 'https://developers.facebook.com/docs/whatsapp/pricing'
     checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Política de mensajes'
+    url: 'https://whatsappbusiness.com/es-la/policy/'
+    checkedAt: '2026-11-06'
 ---
 Un flujo de marketing lleva a alguien de un comentario en Instagram a un mensaje con un cupón. Tomar una reserva para el sábado a las 21 pide otra cosa: saber si hay mesa, anotarla y confirmarla. Si buscás alternativas a ManyChat, empezá por ahí. Si tu trabajo es el primero, probablemente no necesitás cambiar. Si es el segundo, probablemente estás mirando una herramienta pensada para otra tarea.
 
@@ -124,10 +127,10 @@ Un restaurante que recibe por WhatsApp "somos seis el sábado" no necesita un re
 
 Conectado a tu sistema, Atende toma la reserva y tu equipo ve toda la conversación. Esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Mirá [restaurantes y hoteles](/casos-de-uso/restaurantes-y-hoteles) y [qué hace falta conectar](/integraciones).
 
-Otras salidas: si tu volumen está en WhatsApp y anuncios, [Cliengo](/blog/alternativas-a-cliengo) dice enfocarse ahí. Si querés agentes con API oficial, [Wati](/blog/mejor-alternativa-a-wati). Si querés comparar por rubro, la [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) los ordena.
+Otras salidas: si tu volumen está en WhatsApp y anuncios, [Cliengo](/blog/alternativas-a-cliengo) dice enfocarse ahí. Si querés armar tus agentes y pagarlos por créditos, [Wati](/blog/mejor-alternativa-a-wati). Si querés comparar por rubro, la [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparativa) los ordena.
 
 ## Lo que Atende no te va a resolver
 
-Se conecta por QR. No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número. Mandar mensajes masivos desde un número vinculado por QR suma riesgo: Atende no hace difusiones, y los recordatorios y seguimientos se arman a pedido.
+Atende no hace difusiones, y los recordatorios y seguimientos se arman a pedido. Si pensás escribirle a mucha gente, pesa cómo conectes el número, y eso lo elegís vos: por la API oficial de Meta, [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo van plantillas; por QR, los envíos masivos suman riesgo de restricción.
 
 Responde mensajes de texto. Una foto de un comprobante, un audio o una ubicación no llegan. Tiene un solo canal, un número por espacio, y todavía no tenemos reseñas públicas. Si con todo eso sigue encajando, [pedí una demo](/demo) con una semana real de reservas.
