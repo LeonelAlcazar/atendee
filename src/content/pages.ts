@@ -44,9 +44,9 @@ export const pages = {
   },
   faq: {
     path: '/preguntas-frecuentes',
-    title: 'Preguntas frecuentes sobre Atende: número, QR, planes y límites',
+    title: 'Preguntas frecuentes sobre Atende: número, API o QR, planes y límites',
     description:
-      'Qué pasa con tu número, si es la API oficial de Meta, qué mensajes entiende, cómo pausás el asistente y cómo se conecta con tus sistemas. Respuestas directas.',
+      'Cómo elegís entre la API oficial de Meta y el QR, qué mensajes entiende, cómo pausás el asistente y cómo se conecta con tus sistemas. Respuestas directas.',
     updated: '2026-11-06',
   },
   about: {

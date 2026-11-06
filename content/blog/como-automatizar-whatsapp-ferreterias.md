@@ -39,9 +39,9 @@ faq:
       reemplazos los define una persona.
   - q: ¿Qué pasa si un cliente manda un audio o la foto de la pieza?
     a: >-
-      No llegan a Atende: solo entran mensajes de texto. Quedan en el WhatsApp del
-      teléfono del local, y alguien del mostrador los puede ver ahí. Si la foto vino
-      sola, el asistente no contesta porque no se entera.
+      No llegan a Atende: solo entran mensajes de texto. Si la foto vino sola, el
+      asistente no contesta porque no se entera. Si alguien avisa que la mandó, pide
+      los renglones escritos.
   - q: ¿Puede decir si una pieza es compatible?
     a: >-
       No debería. Compatibilidad, sección de cable, cargas y todo lo que sea gas
@@ -80,10 +80,10 @@ Medidas y unidades son donde un pedido por chat sale mal.
 
 Quien arma la lista recorriendo la obra la manda de a renglones. Atende espera un momento antes de contestar y toma los mensajes seguidos como uno solo, así no responde cinco veces y consume una sola respuesta.
 
-La foto del papel, la foto de la pieza rota y el audio grabado arriba del andamio son otra historia: no llegan. Atende recibe mensajes de texto, así que una foto sola no genera respuesta y tampoco aparece en la bandeja. Se ve únicamente en el WhatsApp del teléfono del local. En una ferretería eso pasa todos los días, así que organizalo:
+La foto del papel, la foto de la pieza rota y el audio grabado arriba del andamio son otra historia: no llegan. Atende recibe mensajes de texto, así que una foto sola no genera respuesta y tampoco aparece en la bandeja. En una ferretería eso pasa todos los días, así que organizalo:
 
 1. En el contexto, indicale que si alguien avisa “te mandé una foto” o “escuchá el audio”, explique que no le llegan y pida los renglones escritos.
-2. Que alguien del mostrador mire el teléfono del local entre cliente y cliente. Es el único lugar donde están esas fotos.
+2. Si el número está vinculado por QR, que alguien del mostrador mire el teléfono del local entre cliente y cliente: esas fotos quedan ahí.
 3. Para un envío a obra, pedí calle, altura y entre calles. Una ubicación compartida tampoco entra.
 
 ## Un presupuesto de obra, renglón por renglón
@@ -123,6 +123,6 @@ Cuando el asistente deriva, marca la conversación como Necesita humano y deja d
 
 ## Por dónde arrancar sin tocar tu sistema
 
-Empezá por lo que ya sabés de memoria: horarios, formas de pago, condiciones de envío y tu lista de equivalencias. Recién después escaneá el QR. Una vez vinculado le contesta a todo el que escriba, así que probalo desde otro número, que usa créditos, con una lista real y dos palabras que sepas que confunden.
+Empezá por lo que ya sabés de memoria: horarios, formas de pago, condiciones de envío y tu lista de equivalencias. Recién después conectá el número del local, con la API oficial de Meta o con un QR: lo elegís vos. Una vez conectado le contesta a todo el que escriba, así que probalo desde otro número, que usa créditos, con una lista real y dos palabras que sepas que confunden.
 
 Cuando veas qué piden más, pedí conectar eso. Lo que hace Atende con [stock y pedidos](/servicios/ventas-whatsapp) se arma sobre lo que ya tengas, y el caso general está en [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras). Si le vendés a otras ferreterías o a corralones, lo tuyo se parece a la [guía para distribuidores](/blog/como-automatizar-whatsapp-distribuidoras). Si lo que más pesa son los presupuestos, seguí con [cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas).

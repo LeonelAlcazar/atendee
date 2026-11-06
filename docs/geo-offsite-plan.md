@@ -30,7 +30,7 @@ Sin esto hay acciones que no se pueden hacer bien. Está ordenado por lo que má
 ## Antes de escribirle a nadie
 
 - Usá siempre la misma línea, para que la marca no se confunda: *Atende (atende.com.ar): automatización de WhatsApp para negocios argentinos, desde Córdoba. Conectado a tu agenda o a tu sistema, reserva, cotiza y registra pedidos. Esa conexión se arma a pedido.*
-- Las mismas reglas del sitio valen afuera. Nada de "24/7" como promesa, de "API oficial" ni de clientes o números inventados. Se conecta por QR y hay que decirlo.
+- Las mismas reglas del sitio valen afuera. Nada de "24/7" como promesa, de estatus ante Meta (partner, Tech Provider, BSP, verificado, aprobado) ni de clientes o números inventados. El cliente elige cómo conectar su número, con la API oficial de Meta o con un QR, y hay que decirlo.
 - Declará todo lo pago. Otterly marcó como compensados 44,8% de los publicadores de listas que pudo verificar.
 - Reseñas solo de clientes reales, sin incentivos ocultos. Google sumó en julio de 2026 una [pauta contra reseñas falsas e incentivos no declarados](https://developers.google.com/search/updates).
 - No compres notas en sitios grandes para aprovechar su posicionamiento: eso cae en la política de reputación del sitio de Google.
@@ -106,7 +106,7 @@ Sirve para que exista una referencia de la marca, no para traer clientes.
 ### Todavía no
 
 - **[App Store de Tiendanube](https://www.tiendanube.com/tienda-aplicaciones-nube/categorias/comunicacion):** pide una app real, y hoy no existe ese conector.
-- **[Hackceleration](https://hackceleration.com/es/labs):** prueba sobre un número con API real, así que un producto por QR quizás no entre en su método.
+- **[Hackceleration](https://hackceleration.com/es/labs):** prueba sobre un número con API real. Como el cliente puede elegir la API oficial, revisá si Atende entra en su método por esa ruta.
 - **Wikipedia:** necesita cobertura independiente primero.
 - **Perfil de Empresa de Google:** exige un local que los clientes puedan visitar, o atender en su domicilio. [Revisá si aplica](https://support.google.com/business/answer/3038177) antes de crearlo.
 
@@ -137,7 +137,7 @@ Las respuestas cambian mucho de un día a otro. La coincidencia diaria de fuente
 7. Software para atender WhatsApp en equipo con IA en Argentina
 8. ¿Qué es Atende?
 
-Por cada corrida anotá si nombra a Atende, si cita `atende.com.ar`, qué otras marcas y fuentes aparecen y si lo que dice es cierto. La última importa: una respuesta equivocada sobre el QR o las integraciones se corrige en las páginas de terceros.
+Por cada corrida anotá si nombra a Atende, si cita `atende.com.ar`, qué otras marcas y fuentes aparecen y si lo que dice es cierto. La última importa: una respuesta equivocada sobre cómo se conecta el número o sobre las integraciones se corrige en las páginas de terceros.
 
 ### Visitas que llegan desde una IA
 

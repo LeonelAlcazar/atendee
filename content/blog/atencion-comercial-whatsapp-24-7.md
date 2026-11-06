@@ -112,7 +112,7 @@ Derivar marca la conversación como Necesita humano y a nadie le suena nada. Si 
 | --- | --- | --- |
 | Se desconectó tu WhatsApp | Sin respuesta | En la pantalla WhatsApp del panel |
 | Se agotaron las respuestas y los créditos | Sin respuesta | Nadie avisa. Los mensajes siguen entrando a la bandeja. Plan muestra los créditos disponibles, no lo que queda del mes |
-| Mandó audio, foto, video, documento o ubicación | Sin respuesta | No aparece en la bandeja. Queda en el teléfono vinculado |
+| Mandó audio, foto, video, documento o ubicación | Sin respuesta | No llega a Atende ni aparece en la bandeja |
 | La conversación está en Necesita humano | Sin respuesta del asistente | Figura entre los pendientes |
 | Quedó activo Modo CRM | Sin respuesta | El interruptor del encabezado |
 
@@ -125,14 +125,14 @@ Una conversación se cierra sola 12 horas después del último mensaje del conta
 1. **Mirá la conexión y los créditos.** Pantalla WhatsApp y Plan. Si la conexión está bien y hay mensajes de texto que el asistente no contestó, puede que se hayan agotado las respuestas del mes.
 2. **Abrí los pendientes de respuesta.** Ahí están las conversaciones derivadas que siguen abiertas.
 3. **Filtrá Finalizadas.** Recorré lo que se cerró durante la noche y buscá reclamos o pedidos sin terminar. Para contestar en una de esas, primero hay que reabrirla.
-4. **Mirá el teléfono del negocio.** Los audios y las fotos de la noche están ahí y en ningún otro lado.
+4. **Si conectaste por QR, mirá el teléfono del negocio.** Los audios y las fotos de la noche están ahí y en ningún otro lado.
 5. **Marcá lo que vas a seguir vos.** Responder o tocar "Asignarme" no frena al asistente. Si querés seguir a mano, poné esa conversación en Necesita humano.
 
 Tené presente el otro lado del cierre automático: si el contacto vuelve a escribir después, la conversación se reabre y responde el asistente, aunque la tuviera una persona.
 
 ## Nadie retoma solo: seguimientos, feriados y vacaciones
 
-El asistente no vuelve a escribirle a nadie a la mañana. Atende no manda mensajes por su cuenta, así que el que dejó un pedido a medias queda esperando hasta que tu equipo lo retome. Los seguimientos y recordatorios se arman a pedido para tu negocio. Antes de pedirlos, recordá que se conecta por QR. No es la API oficial de Meta, y escribirle a gente que no lo pidió pone en riesgo el número.
+El asistente no vuelve a escribirle a nadie a la mañana. Atende no manda mensajes por su cuenta, así que el que dejó un pedido a medias queda esperando hasta que tu equipo lo retome. Los seguimientos y recordatorios se arman a pedido para tu negocio. Antes de pedirlos, fijate cómo está conectado el número: por QR, escribirle a gente que no lo pidió tiene riesgo de restricción, y para seguimientos frecuentes vale la pena comparar con la API oficial de Meta, la otra forma de conectarlo.
 
 Tampoco se entera del calendario si no se lo contás. Si cerrás un feriado puente o en enero, actualizá el contexto antes de irte y volvé a cambiarlo al abrir. Si no, va a seguir diciendo que el equipo atiende el lunes. Escribí los días y las horas tal como son, con hora de Argentina si te escriben de otros países, y evitá "mañana": en un viernes a la noche esa palabra promete un sábado que quizás no trabajás.
 

@@ -3,15 +3,17 @@ title: 'Cómo crear un bot de WhatsApp sin programar: instrucciones y pruebas'
 seoTitle: 'Cómo crear un bot de WhatsApp sin programar'
 description: >-
   Creá un bot de WhatsApp paso a paso: una tarea concreta, una plantilla de
-  instrucciones, el QR y pruebas reales. Y qué implica armarlo con n8n o ChatGPT.
+  instrucciones, la conexión del número y pruebas reales. Y qué implica armarlo
+  con n8n o ChatGPT.
 summary: >-
   Para crear un bot de WhatsApp sin programar, elegí una tarea que termine en
   algo comprobable, como tomar una solicitud de alquiler, y escribí qué datos
   pide, qué confirma y cuándo deriva. En Atende creás tu espacio, le contás qué
-  hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el
-  QR. Apenas lo escaneás, contesta a todos tus contactos: no hay modo de prueba,
-  así que probalo desde otro número, lo que usa créditos. Armarlo vos con n8n y
-  la API de un modelo también se puede, pero es otro trabajo.
+  hace tu negocio, invitás a tu equipo, activás créditos o un plan y conectás tu
+  número, con la API oficial de Meta o con un QR. Apenas queda conectado, contesta
+  a todos tus contactos: no hay modo de prueba, así que probalo desde otro número,
+  lo que usa créditos. Armarlo vos con n8n y la API de un modelo también se puede,
+  pero es otro trabajo.
 publishedAt: '2026-11-04'
 updatedAt: '2026-11-06'
 category: bot-de-whatsapp
@@ -29,20 +31,20 @@ faq:
   - q: ¿Se puede crear un bot de WhatsApp sin programar?
     a: >-
       Sí, con una herramienta que se configure desde un panel. En Atende le
-      contás qué hace tu negocio, vinculás WhatsApp por QR y seguís las
+      contás qué hace tu negocio, conectás tu número y seguís las
       conversaciones desde la bandeja. Para que además reserve o registre
       pedidos hace falta una conexión con tu sistema, que se arma a pedido.
   - q: ¿Necesito contratar la API de WhatsApp para configurar Atende?
     a: >-
-      No. Atende se conecta por QR y no es la API oficial de Meta. Se vincula
-      desde dispositivos vinculados del teléfono del negocio, sin programar. Si
-      tu empresa necesita WhatsApp Business Platform, confirmá esa condición
-      antes de elegir, porque es otro recorrido.
+      No es obligatorio. Elegís cómo conectar tu número: con la API oficial de
+      Meta o con un QR. Por QR, se vincula desde dispositivos vinculados del
+      teléfono del negocio, sin programar. Si tu empresa necesita WhatsApp
+      Business Platform, lo vemos con vos en la demo.
   - q: ¿Puedo probar el bot sin que le conteste a mis clientes?
     a: >-
       No hay modo de prueba. Una vez vinculado el número, el asistente contesta
       a todos tus contactos. Probalo desde otro número; usa créditos. Si querés
-      elegir el momento, dejá el espacio en Modo CRM al escanear el QR y activá
+      elegir el momento, dejá el espacio en Modo CRM al conectar el número y activá
       el asistente en un horario tranquilo.
   - q: ¿Qué información tengo que darle al bot?
     a: >-
@@ -114,7 +116,7 @@ El siguiente ejemplo corresponde al negocio ficticio de proyectores. Reemplazá 
 
 Fijate en tres detalles. La plantilla evita que una solicitud se presente como reserva, deja salir del recorrido sin contestar todo y pide derivar al completar los datos. Lo último importa: derivar marca el chat como “Necesita humano” y lo suma a los pendientes. Sin esa línea, la solicitud queda como una conversación más, y nadie la ve salvo que vaya a buscarla.
 
-## 4. Armá tu espacio y escaneá el QR
+## 4. Armá tu espacio y conectá tu número
 
 En [la app de Atende](https://app.atende.com.ar) son cinco pasos, en este orden:
 
@@ -122,11 +124,11 @@ En [la app de Atende](https://app.atende.com.ar) son cinco pasos, en este orden:
 2. **Contale qué hace tu negocio.** Pegá la plantilla. Podés saltear este paso y hacerlo después desde Asistente, pero el asistente sin contexto no sirve.
 3. **Invitá a tu equipo.** Cada persona entra con su cuenta. También se puede dejar para después.
 4. **Activá créditos o un plan.** “Probar gratis sin tarjeta” te lleva a los créditos de bienvenida y “Ver planes” a las opciones pagas. Sin una de las dos no se puede vincular WhatsApp. La guía para [automatizar WhatsApp gratis](/blog/automatizar-whatsapp-gratis) detalla los créditos.
-5. **Escaneá el QR.** En la pantalla WhatsApp abrí el QR y escanealo desde dispositivos vinculados, con el teléfono del negocio. Necesitás otra pantalla para verlo: si estabas haciendo todo desde ese celular, abrí el panel en una compu.
+5. **Conectá WhatsApp.** Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por QR, en la pantalla WhatsApp abrí el QR y escanealo desde dispositivos vinculados, con el teléfono del negocio. Necesitás otra pantalla para verlo: si estabas haciendo todo desde ese celular, abrí el panel en una compu.
 
-Se conecta por QR. No es la API oficial de Meta. Tus clientes te siguen escribiendo al mismo número.
+Por QR, tus clientes te siguen escribiendo al mismo número. Si vas por la API oficial, los pasos los vemos con vos en la [demo](/demo).
 
-**Antes de escanear, leé esto: no hay modo de prueba.** Una vez vinculado el número, el asistente contesta a todos los contactos que escriban. Cargá primero el contexto y las preguntas frecuentes. Si querés elegir el momento, pasá el interruptor de arriba a “Modo CRM” antes de escanear: los mensajes entran a la bandeja y el asistente no contesta. Volvé a “Asistente activo” cuando el negocio esté tranquilo.
+**Antes de conectar, leé esto: no hay modo de prueba.** Una vez vinculado el número, el asistente contesta a todos los contactos que escriban. Cargá primero el contexto y las preguntas frecuentes. Si querés elegir el momento, pasá el interruptor de arriba a “Modo CRM” antes de conectar: los mensajes entran a la bandeja y el asistente no contesta. Volvé a “Asistente activo” cuando el negocio esté tranquilo.
 
 ## 5. Probá una conversación completa desde otro número
 
@@ -193,4 +195,4 @@ Se puede, y mucha gente lo busca. Conviene saber qué estás comprando con tu ti
 
 Por la API oficial, además, Meta [cobra por mensaje entregado](/blog/cuanto-cuesta-automatizar-whatsapp). Meta contempla [una integración directa o con un proveedor](https://whatsappbusiness.com/products/business-platform/); las dos son un recorrido técnico aparte. Y si para evitar esos cargos usás una librería no oficial por QR, cargás con el mismo riesgo de restricción que cualquier conexión por QR, más el mantenimiento.
 
-Tiene sentido si ya tenés a alguien técnico que lo va a mantener, si necesitás la API oficial o si querés controlar cada paso. Si no, la cuenta real no es la licencia sino quién lo arregla un sábado cuando deja de andar.
+Tiene sentido si ya tenés a alguien técnico que lo va a mantener o si querés controlar cada paso. Si no, la cuenta real no es la licencia sino quién lo arregla un sábado cuando deja de andar.

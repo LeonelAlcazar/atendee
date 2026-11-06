@@ -11,10 +11,12 @@ The evidence collected for this rebuild says on-page technique explains little a
 1. Lead every page with a finished task: the assistant books, quotes or records the order.
 2. Answer one real buyer question per page, in the title and an early paragraph, in the buyer's words.
 3. Remove the template. Each sector guide is its own piece, and `check:content` measures it.
-4. Publish what rivals hide: a public status of what works today, plus real limits (text only, QR rather than the official API, how to pause the assistant).
+4. Publish what rivals hide: a public status of what works today, plus real limits (text only, no test mode, how to pause the assistant) and the customer's choice of connection, Meta's official API or QR, with its trade-offs.
 5. Keep a clean technical base: one entity, ISR, a redirect map, truthful dates and regression guards.
 
 Claims follow an owner decision of 2026-11-06. Connected actions and reminders are a real offer built on request for each business, never included, never generic and never with a date. Inbox attribution is planned, not shipped, so copy never says the team sees who replied. `src/content/status.ts` is the canonical public status, and `AGENTS.md` holds the rules behind it. Where an older section below says an integration is "separately confirmed", that wording is superseded.
+
+A second owner decision of the same day: the customer chooses how to connect the number, Meta's official API or QR. Any page that explains the connection states the choice once. Copy claims no Meta status (partner, Tech Provider, BSP, verified, approved), invents no Atende-specific detail of the API route (who pays Meta's fees, the app on that number, setup steps, timelines, prices) and promises nothing about restriction on either route. Commercial pages carry no restriction warnings, and the home has no limits section. Blog posts mention restriction only where it affects the decision, in one neutral sentence tied to the route.
 
 Do not add per-bot robots rules, `.md` mirrors, `Accept: text/markdown`, new schema types (DefinedTermSet, ItemList, HowTo), hreflang, a glossary, `aggregateRating`, fabricated authors or self-ranked "best" lists. They have no measured benefit, and several break Google policy or Rule 2.
 
@@ -80,7 +82,7 @@ The [full analysis and measurement plan](search-console-2026-10-28.md) covers al
 
 The changes target a clearer product definition on the homepage, commercial inquiry and quotation scope on `/servicios/ventas-whatsapp`, deeper distribution and Zenvia guides, focused updates to existing supporting articles, and two new guides for quotations and attention outside business hours. Existing article URLs stay stable. The home and sales service link to the relevant operational guides, and service modification dates follow actual content edits.
 
-The editorial scope preserves QR connection, human review, and separately confirmed integrations. “24/7” describes an inquiry intent, not a service availability guarantee or round-the-clock human staffing. Search Console data provides prioritization hypotheses; it does not support invented traffic forecasts, sales attribution or a claim that zero-click pages have failed.
+The editorial scope preserves the customer's connection choice (Meta's official API or QR), human review, and separately confirmed integrations. “24/7” describes an inquiry intent, not a service availability guarantee or round-the-clock human staffing. Search Console data provides prioritization hypotheses; it does not support invented traffic forecasts, sales attribution or a claim that zero-click pages have failed.
 
 Before describing this iteration as live, record its deployed commit and verify the production routes, metadata, links and sitemap. Keep that evidence separate from local validation results. Sitemap submission and URL inspection also require access to the verified `atende.com.ar` Search Console property; checking a public sitemap is not the same as submitting it.
 
@@ -107,7 +109,7 @@ The homepage targets the commercial product query, pricing addresses Atende's bu
 
 Answer summaries, examples, comparison tables, FAQs, primary sources and clear product limits make each article useful to readers and interpretable by search and answer engines. The existing server-rendered content, canonical metadata, BlogPosting/collection data, RSS and sitemap derive from the same catalog. This is an implementation for discoverability; indexing, rankings and AI citations require observation after publication.
 
-The free-versus-paid article complements `/blog/automatizar-whatsapp-gratis`: the former helps choose an approach, while the latter documents activation of the current welcome credits. Plan CRM remains manual-only. Atende's QR connection must not be described as WhatsApp Business Platform onboarding. Features of the WhatsApp Business app and eligibility-dependent Meta offerings must be checked against current primary documentation before making comparisons.
+The free-versus-paid article complements `/blog/automatizar-whatsapp-gratis`: the former helps choose an approach, while the latter documents activation of the current welcome credits. Plan CRM remains manual-only. The QR route must not be described as WhatsApp Business Platform onboarding, and the API route gets no Atende-specific setup steps until they are confirmed. Features of the WhatsApp Business app and eligibility-dependent Meta offerings must be checked against current primary documentation before making comparisons.
 
 Local release verification on 2026-11-04 passed `npm run verify`: 14 tests, TypeScript, 50-article validation, the standalone production build and the 74-page HTTP SEO audit. Browser review covered the homepage, pricing, service index, attention and sales solutions, blog index, new topic and four new articles at 320, 390 and 1440 pixels without document overflow. Article index navigation and native FAQ keyboard interaction passed. Ignored evidence is stored under `output/seo-bot-whatsapp/` and `output/playwright/`. Production confirmation is a separate check against the deployed commit and custom domain.
 

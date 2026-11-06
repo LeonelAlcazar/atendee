@@ -10,15 +10,11 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Sirve como chatbot para WhatsApp Business?',
-    a: 'Atende se vincula con un QR desde dispositivos vinculados, una función que también tienen las cuentas de WhatsApp Business, y tus clientes te siguen escribiendo al mismo número. No usa la API oficial de Meta. Si tu número está en la app WhatsApp Business, contanos en la demo y lo confirmamos para tu caso.',
+    a: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. El QR se escanea desde dispositivos vinculados, una función que también tienen las cuentas de WhatsApp Business, y tus clientes te siguen escribiendo al mismo número. Si tu número está en la app WhatsApp Business, contanos en la demo y vemos qué ruta te conviene.',
   },
   {
-    q: '¿Es la API oficial de WhatsApp?',
-    a: 'No. Atende se conecta por QR, como un dispositivo vinculado, y no es la API oficial de Meta. No pasa por una aprobación de Meta ni tiene su verificación. Si tu empresa exige la API oficial, hoy Atende no es la opción.',
-  },
-  {
-    q: '¿WhatsApp me puede restringir el número?',
-    a: 'Sí, puede pasar, y nadie puede prometerte lo contrario. La conexión por QR no tiene respaldo de Meta. Atende limita el ritmo de envío y frena ante errores repetidos, pero eso no elimina el riesgo. Mandar mensajes a quien no te escribió lo aumenta.',
+    q: '¿Atende usa la API oficial de WhatsApp o un QR?',
+    a: 'Las dos rutas, y elegís vos. La API oficial tiene las tarifas por mensaje que publica Meta y, fuera de la ventana de 24 horas, usa plantillas aprobadas. El QR queda como un dispositivo vinculado en el número que ya usás y, según nuestra lectura, Meta no cobra por mensaje en esa ruta. Si vas a escribir primero, por ejemplo con recordatorios, conviene evaluar la API. Quién paga esas tarifas y cómo es el alta lo vemos con vos en la demo.',
   },
   {
     q: '¿Cómo pido una conexión con mi agenda, mi stock o mi CRM?',
@@ -26,7 +22,7 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Qué hace Atende sin una conexión?',
-    a: 'Responde mensajes de texto, deriva a una persona, cierra la conversación, manda fotos y videos de tu biblioteca y recuerda datos del contacto y del negocio. Para un turno o un pedido, junta los datos y tu equipo lo confirma.',
+    a: 'Responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados, deriva a una persona, cierra la conversación, manda fotos y videos de tu biblioteca y recuerda datos del contacto y del negocio. Para un turno o un pedido, junta los datos y tu equipo lo confirma.',
   },
   {
     q: '¿Qué mensajes entiende?',
@@ -42,7 +38,7 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Tengo que cambiar de número?',
-    a: 'No. Conectás el número que ya usás con un QR y tus clientes te siguen escribiendo al mismo WhatsApp. Ellos no instalan nada.',
+    a: 'No. Conectás el número que ya usás y tus clientes te siguen escribiendo al mismo WhatsApp. Ellos no instalan nada.',
   },
   {
     q: '¿Cuánto cuesta?',

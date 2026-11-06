@@ -80,8 +80,8 @@ export default function NosotrosPage() {
                 label: 'Decimos los límites',
                 text: (
                   <>
-                    Solo mensajes de texto, conexión por QR y no por la API
-                    oficial de Meta, y el resto está en{' '}
+                    Solo mensajes de texto, sin modo de prueba, y el resto está
+                    en{' '}
                     <Link href="/que-es-atende" className={link}>
                       qué es Atende
                     </Link>

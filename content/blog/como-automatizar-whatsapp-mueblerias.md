@@ -73,7 +73,7 @@ Pedile al asistente que junte esto por escrito:
 3. Si en el recorrido hay un giro angosto o un descanso chico.
 4. Para un mueble a medida, qué condiciona la pared: zócalos, enchufes, caños, una columna.
 
-La gente manda la foto de la pared, el plano en PDF o un audio largo explicando la idea, y nada de eso llega a Atende, que recibe mensajes de texto. Si solo mandan la foto, no hay respuesta. La imagen queda en el celular de la mueblería, y quien tome la venta la mira ahí.
+La gente manda la foto de la pared, el plano en PDF o un audio largo explicando la idea, y nada de eso llega a Atende, que recibe mensajes de texto. Si solo mandan la foto, no hay respuesta, así que quien tome la venta tiene que acordar con el cliente cómo verla.
 
 Con los números escritos, el asistente puede avisar que la pieza mide más que el hueco. Que “entra” lo confirma ventas, porque depende de cosas que un chat no muestra.
 
@@ -124,4 +124,4 @@ Entre la seña y la entrega pasa mucho tiempo, y la consulta vuelve cuando el ch
 
 Conectado a tu sistema de pedidos, busca por el teléfono e informa el estado. Sin conexión, pide nombre y número de pedido y deriva, y tu equipo mira el historial de ese contacto en la bandeja.
 
-Los reclamos van por otro lado. “Vino rayado”, “falta un herraje”, “la puerta no cierra” van siempre a una persona. El asistente toma el pedido y el problema, y la foto del golpe se mira en el teléfono. Una etiqueta como “Reclamo” ayuda a filtrarlos y a que no se pierdan entre las consultas de venta.
+Los reclamos van por otro lado. “Vino rayado”, “falta un herraje”, “la puerta no cierra” van siempre a una persona. El asistente toma el pedido y el problema, y la foto del golpe, que a Atende no llega, la pide quien sigue el reclamo. Una etiqueta como “Reclamo” ayuda a filtrarlos y a que no se pierdan entre las consultas de venta.

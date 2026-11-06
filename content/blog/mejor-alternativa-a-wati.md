@@ -5,12 +5,13 @@ description: >-
   Wati ya vende agentes de IA con créditos medidos sobre la API oficial. Cómo
   se gastan, qué tablas de precios leer y cuándo conviene quedarte o cambiar.
 summary: >-
-  Quedate en Wati si necesitás la API oficial, plantillas y campañas, o si querés
-  armar agentes de IA con su herramienta. Hoy Wati dejó de ser solo una bandeja:
-  vende agentes Astra, con créditos que se gastan por respuesta y por acción. Mirá
-  alternativas si no querés armar nada y necesitás que el lugar en la clase quede
-  reservado en tu agenda. Atende hace eso conectado a tu sistema, con la conexión
-  armada a pedido, solo en WhatsApp y por QR, sin API oficial.
+  Quedate en Wati si mandás campañas con plantillas aprobadas, si querés voz o más
+  de un canal, o si querés armar agentes de IA con su herramienta. Hoy Wati dejó de
+  ser solo una bandeja: vende agentes Astra, con créditos que se gastan por
+  respuesta y por acción. Mirá alternativas si no querés armar nada y necesitás que
+  el lugar en la clase quede reservado en tu agenda. Atende hace eso conectado a tu
+  sistema, con la conexión armada a pedido, solo en WhatsApp. El número lo conectás
+  con la API oficial de Meta o con un QR, como prefieras.
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -42,8 +43,9 @@ faq:
       asistente deja de responder y nadie te avisa. Los importes se ven en la app.
   - q: ¿Atende sirve si necesito la API oficial?
     a: >-
-      No. Se conecta por QR. No es la API oficial de Meta. Si necesitás plantillas
-      aprobadas, campañas o un proveedor oficial, Wati encaja mejor.
+      Sí. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Lo
+      que no vas a tener son campañas: si tu operación vive de plantillas y
+      difusiones, Wati encaja mejor. El detalle de la API lo vemos con vos en la demo.
 sources:
   - title: 'Wati: inicio'
     url: 'https://www.wati.io/'
@@ -65,6 +67,9 @@ sources:
     checkedAt: '2026-11-06'
   - title: 'Meta: migrar un número a la Plataforma'
     url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Política de mensajes'
+    url: 'https://whatsappbusiness.com/es-la/policy/'
     checkedAt: '2026-11-06'
 ---
 Una socia del gimnasio escribe a las diez de la noche para anotarse en la clase de las 7. Si querés que eso termine con el lugar reservado, [Wati](https://www.wati.io/) y Atende te proponen caminos distintos. En Wati armás un agente sobre la API oficial y pagás créditos por lo que hace. En Atende te armamos la conexión con tu agenda y contás respuestas del asistente.
@@ -125,10 +130,10 @@ Los planes de Atende se ven [en la app](/precios).
 
 | Criterio | Wati | Atende |
 | --- | --- | --- |
-| Conexión con WhatsApp | API oficial, BSP | Se conecta por QR. No es la API oficial de Meta |
+| Conexión con WhatsApp | API oficial, BSP | API oficial de Meta o QR, a elección |
 | Quién arma el agente | Tu equipo, sin código | Vos cargás el contexto y nosotros armamos la conexión |
 | Unidad de cobro de la IA | Créditos por respuesta y acción | Respuestas del asistente |
-| Campañas y plantillas | Sí | No |
+| Campañas con plantillas | Sí | No |
 | Canales | WhatsApp, Instagram, Messenger, TikTok, web | Solo WhatsApp |
 | Voz | Agente de voz | No |
 | Integraciones | Más de 100 listadas | Cada conexión se hace para tu negocio |
@@ -137,7 +142,7 @@ Los planes de Atende se ven [en la app](/precios).
 
 Atende no es la opción si necesitás alguna de estas:
 
-- API oficial, plantillas aprobadas y campañas de WhatsApp.
+- Campañas de WhatsApp con plantillas aprobadas, armadas desde la misma herramienta.
 - Tienda en Shopify, o CRM con conexión ya hecha.
 - Agentes que tu equipo pueda armar y cambiar por su cuenta.
 - Voz, o más de un canal.
@@ -158,6 +163,6 @@ Conectado a tu agenda, Atende reserva el lugar. Esa conexión se arma a pedido p
 
 ## Lo que Atende no te da
 
-Sin API oficial, y no podemos prometer que WhatsApp no restrinja un número. Sin campañas: los recordatorios se arman a pedido, y mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Un número por espacio y sin reseñas públicas todavía.
+Sin campañas: los recordatorios se arman a pedido. Para mensajes que salen de tu lado conviene evaluar la API oficial: [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo se envían plantillas, y por QR escribirle a quien no lo pidió suma riesgo de restricción. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Un número por espacio y sin reseñas públicas todavía.
 
-Si tu número está en la API de Wati, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y Atende se vincula desde la app. Preguntá primero cómo hacerlo; ese paso no lo probamos con cada proveedor. Al vincularlo el asistente le contesta a todos, así que probalo desde otro número; usa créditos. Podés ver tu caso en una [demo](/demo).
+Si tu número está en la API de Wati y querés pasarlo al QR, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y el QR se escanea desde la app. Preguntá primero cómo hacerlo; ese paso no lo probamos con cada proveedor. Si preferís seguir por la API oficial, cómo mudar el número lo vemos con vos en una [demo](/demo). Al conectarlo el asistente le contesta a todos, así que probalo desde otro número; usa créditos.

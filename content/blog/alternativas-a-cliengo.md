@@ -5,12 +5,13 @@ description: >-
   Cliengo es el rival argentino más visible en WhatsApp. Sus precios publicados,
   qué pide para agendar turnos, cuándo quedarte y cuándo mirar otra opción.
 summary: >-
-  Quedate en Cliengo si querés un agente de IA con bandeja, web, anuncios y API
-  oficial, con planes publicados y prueba gratis. Mirá alternativas si no querés
+  Quedate en Cliengo si querés un agente de IA con bandeja, web, anuncios y
+  campañas, con planes publicados y prueba gratis. Mirá alternativas si no querés
   armar nada y necesitás una conexión hecha para tu sistema, en el número que ya
   usás. Atende, conectado a tu agenda, agenda la visita en la conversación, y esa
-  conexión se arma a pedido. Trabaja solo en WhatsApp y por QR. Si necesitás API
-  oficial, anuncios integrados o casos de clientes a la vista, Cliengo te conviene más.
+  conexión se arma a pedido. Trabaja solo en WhatsApp, y el número va por la API
+  oficial de Meta o por QR, a tu elección. Si necesitás campañas, anuncios integrados
+  o casos de clientes a la vista, Cliengo te conviene más.
 publishedAt: '2026-11-06'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -115,7 +116,7 @@ Acá se juega casi toda la comparación. Cliengo describe [cuatro formas de agen
 | --- | --- | --- |
 | Qué conectás | Cualquier agenda con API, según su guía | Lo que uses, con una conexión hecha para tu negocio |
 | Quién la arma | Acompañamiento en español. Integraciones a medida en Corporate | Nosotros, a pedido |
-| Conexión con WhatsApp | Coexistence y API, sobre la Cloud API | Se conecta por QR. No es la API oficial de Meta |
+| Conexión con WhatsApp | Coexistence y API, sobre la Cloud API | API oficial de Meta o QR, a elección |
 | Canales | Web, WhatsApp, Instagram, Messenger | Solo WhatsApp, un número por espacio |
 | Campañas | Sí | No |
 | Plazos | Publica plazos | No damos plazos: depende de tu sistema |
@@ -127,7 +128,7 @@ Antes de firmar con cualquiera de los dos, pedí lo mismo: que reserven un turno
 
 Atende no es la opción si:
 
-- Necesitás API oficial, plantillas y campañas de WhatsApp.
+- Mandás campañas de WhatsApp y querés armarlas desde la misma herramienta.
 - Captás con anuncios que abren chats de WhatsApp. Su [comparación con ManyChat](https://guiawabusiness.cliengo.com/comparativas/cliengo-vs-manychat) dice que ese es su foco.
 - Tu web es un canal de ventas y querés el chat ahí también.
 - Querés empezar hoy mismo con un plan publicado y una prueba, sin esperar a que nadie arme nada.
@@ -153,6 +154,8 @@ Lo que hoy podemos mostrar funcionando es una demo para una concesionaria de mot
 
 ## Lo que perdés frente a Cliengo
 
-Sin API oficial, y no podemos prometer que WhatsApp no restrinja un número. Sin web, Instagram ni Messenger. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Sin campañas: los recordatorios se arman a pedido. Un número por espacio. Sin plazos publicados ni reseñas públicas.
+Sin web, Instagram ni Messenger. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Sin campañas: los recordatorios se arman a pedido. Un número por espacio. Sin plazos publicados ni reseñas públicas.
+
+La API oficial no entra en esta lista: en Atende conectás tu número por ahí o por QR, a elección. Si vas por la API, hacé la misma pregunta que le harías a Cliengo, cómo llegan los [costos de Meta](https://developers.facebook.com/docs/whatsapp/pricing) a tu factura, y lo vemos con vos en la demo.
 
 Lo que sí podés ver antes de decidir es qué funciona hoy en [qué es Atende](/que-es-atende). Si querés mirarlo con tu agenda, [pedí una demo](/demo).

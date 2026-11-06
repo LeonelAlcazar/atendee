@@ -10,8 +10,9 @@ summary: >-
   la conexión con tus sistemas y el tiempo de tu equipo. Desde el 1 de octubre de
   2026, Meta cobra en Argentina USD 0,026 por mensaje de servicio o de utilidad y
   USD 0,0618 por mensaje de marketing, con 1.000 de servicio gratis por número y
-  por mes. Por QR no pagás esas tarifas, pero no es la API oficial y nadie puede
-  prometerte que WhatsApp no restrinja el número.
+  por mes. En Atende elegís cómo conectar tu número, con la API oficial de Meta
+  o con un QR: por la API corren esas tarifas y por QR, según nuestra lectura,
+  no, así que son parte de lo que mirás al elegir.
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-06'
 category: guias
@@ -42,10 +43,10 @@ faq:
   - q: ¿Si conecto WhatsApp por QR pago tarifas de Meta?
     a: >-
       Meta publica sus tarifas por mensaje solo para WhatsApp Business Platform,
-      la API oficial. Atende se conecta por QR y el número sigue en la app, así que
-      esas tarifas no aplican. Es nuestra lectura de sus páginas, no una frase de
-      Meta. A cambio no hay aprobación de Meta, y nadie puede prometerte que
-      WhatsApp no va a restringir un número.
+      la API oficial. Si conectás por QR, el número sigue en la app, así que esas
+      tarifas no aplican. Es nuestra lectura de sus páginas, no una frase de Meta.
+      En Atende elegís la ruta: si vas por la API oficial, esas tarifas corren, y
+      son parte de lo que mirás al elegir.
   - q: ¿La conexión con mi agenda o mi stock viene en el plan?
     a: >-
       No. Los planes con IA traen responder, derivar, cerrar conversaciones,
@@ -73,6 +74,9 @@ sources:
     checkedAt: '2026-11-06'
   - title: 'WhatsApp Business: precios de la Plataforma (página comercial)'
     url: 'https://whatsappbusiness.com/es-la/products/platform-pricing/'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Política de mensajes (última actualización 23 de septiembre de 2026)'
+    url: 'https://whatsappbusiness.com/es-la/policy/'
     checkedAt: '2026-11-06'
 ---
 Lo que cuesta que un asistente reserve un turno o registre un pedido en tu WhatsApp sale de sumar cinco partes, y cada una se mide en una unidad distinta: respuestas, mensajes, horas de implementación, conexiones y horas de tu equipo. Por eso dos presupuestos con el mismo número mensual pueden estar cobrando cosas muy diferentes.
@@ -130,19 +134,21 @@ Falta lo que sume tu proveedor y los impuestos que correspondan: preguntá las d
 
 Para quien usa [Meta Business Agent](/blog/agente-ia-whatsapp-business-meta) por la API, Meta cobra aparte: USD 2 por millón de tokens, y calcula unos 4 a 5 centavos de dólar por mensaje, según la complejidad. Ese cargo no tiene descuentos por volumen ni mensajes gratis, y sigue corriendo dentro de la ventana de los anuncios. En la app, Meta vende más capacidad del agente con [Meta One, desde USD 14,99 por mes](https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/), y aclara que planes y precios varían según la región y la cuenta.
 
-## Por QR no hay tarifas de Meta, pero hay otro costo
+## Qué cambia en la cuenta según cómo conectes tu número
 
-Atende se conecta por QR. No es la API oficial de Meta. El número sigue en la app y queda vinculado como un dispositivo más, así que la sección anterior no aplica: Meta publica esas tarifas solo para la Plataforma y, [al presentar Meta One](https://whatsappbusiness.com/es-la/products/business-app-meta-one/), dijo que "la aplicación WhatsApp Business sigue siendo gratis" y que "no habrá cambios en los mensajes". Que por QR no haya ese cargo es nuestra lectura de sus páginas, no una frase de Meta.
+Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Esa decisión define si la sección anterior entra en tu cuenta.
 
-Ese ahorro trae una contracara que va en la misma cuenta. No hay aprobación de Meta, y nadie puede prometerte que WhatsApp no va a restringir un número. Mandar mensajes que el contacto no pidió, desde un número vinculado por QR, suma riesgo. Si todas tus ventas entran por ese WhatsApp, pensá qué te costaría un día sin él.
+**Por la API oficial** corren las tarifas de arriba, y fuera de la ventana de 24 horas [solo podés escribir con plantillas aprobadas](https://whatsappbusiness.com/es-la/policy/). Esos cargos son parte de lo que mirás al elegir la ruta, y cómo quedan en tu caso lo vemos con vos en la [demo](/demo).
 
-Si tu negocio tiene que mandar campañas o exige la API oficial, tu ruta es esa, con sus tarifas. Atende hoy no la ofrece.
+**Por QR** el número sigue en la app y queda vinculado como un dispositivo más. Meta publica esas tarifas solo para la Plataforma y, [al presentar Meta One](https://whatsappbusiness.com/es-la/products/business-app-meta-one/), dijo que "la aplicación WhatsApp Business sigue siendo gratis" y que "no habrá cambios en los mensajes". Que por QR no haya ese cargo es nuestra lectura de sus páginas, no una frase de Meta.
+
+Por ninguna de las dos rutas te pueden prometer que WhatsApp no va a restringir un número, y por QR mandar mensajes que el contacto no pidió suma riesgo. Si tu negocio tiene que mandar campañas o exige la API oficial, conviene evaluar esa ruta, con sus tarifas.
 
 ## Implementación: quién hace qué
 
 Acá el valor depende de quién pone las horas. Pedí que la propuesta diga qué hace el proveedor y qué te queda a vos: escribir la información del negocio, cargar preguntas frecuentes, invitar al equipo, probar y corregir. Si te dicen “la implementación está incluida”, preguntá cuántas rondas de ajustes entran y qué pasa cuando cambian tus precios.
 
-En Atende esa parte la hacés vos desde el panel, con pasos concretos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el QR. El costo es tu tiempo, y las pruebas consumen respuestas: probalo desde otro número; usa créditos.
+En Atende, por QR, esa parte la hacés vos desde el panel, con pasos concretos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el QR. El costo es tu tiempo, y las pruebas consumen respuestas: probalo desde otro número; usa créditos. Por la API oficial, los pasos los vemos con vos en la [demo](/demo).
 
 ## La conexión: lo que separa juntar el pedido de registrarlo
 
@@ -183,8 +189,8 @@ Multiplicalo por lo que te cuesta una hora de esa persona y sumalo al resto. Us�
 | Parte | En Atende |
 | --- | --- |
 | Suscripción | Se mide en respuestas del asistente. Una conversación usa varias. Si el cliente manda varios mensajes seguidos, se agrupan en una respuesta, y lo que escribe tu equipo no consume. Los planes vigentes se ven en la app antes de pagar. |
-| Mensajes de Meta | Esas tarifas son de la API oficial, y Atende no la usa. |
-| Implementación | Desde el panel, a cargo tuyo. |
+| Mensajes de Meta | Dependen de la ruta que elijas: corren por la API oficial y, según nuestra lectura, no por QR. Miralo al elegir. |
+| Implementación | Por QR, desde el panel, a cargo tuyo. Por la API oficial, lo vemos con vos en la demo. |
 | Conexión | A pedido, para tu negocio. |
 | Equipo | El mismo trabajo de revisión que con cualquier herramienta. |
 

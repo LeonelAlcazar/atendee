@@ -33,9 +33,9 @@ faq:
       responsable. Esa regla se escribe en el contexto del asistente.
   - q: ¿Qué pasa con las fotos de facturas que mandan los clientes?
     a: >-
-      Fotos, PDF y audios nunca llegan a Atende. Quedan en el WhatsApp del
-      teléfono vinculado y el asistente no se entera. Definí un mail o una
-      carpeta compartida y dejá escrito que el asistente lo indique.
+      Fotos, PDF y audios nunca llegan a Atende, así que el asistente no se
+      entera. Definí un mail o una carpeta compartida y dejá escrito que el
+      asistente lo indique.
   - q: ¿Atende puede avisar los vencimientos a todos los clientes?
     a: >-
       Atende no manda mensajes por su cuenta. Los recordatorios se arman a
@@ -97,19 +97,19 @@ La clave fiscal merece una línea propia en el contexto: que el asistente no la 
 
 ## Fotos de facturas, PDF y audios: por dónde entran
 
-Todos los meses alguien manda la foto del ticket, el PDF de la boleta y un audio explicando todo. Nada de eso llega a Atende. El archivo aparece en el WhatsApp del teléfono vinculado, pero el asistente y la bandeja no lo ven, y la persona no recibe respuesta porque, para el asistente, no pasó nada.
+Todos los meses alguien manda la foto del ticket, el PDF de la boleta y un audio explicando todo. Nada de eso llega a Atende. Ni el asistente ni la bandeja lo ven, y la persona no recibe respuesta porque, para el asistente, no pasó nada.
 
 Lo ordenan estas decisiones:
 
 - **Un solo canal para la documentación.** Un mail o una carpeta compartida, con una persona que lo mira.
 - **El asistente lo dice cuando aparece el tema.** "Por acá no me llegan fotos ni PDF. Mandalos a [mail del estudio]." Nunca "recibido".
-- **Alguien revisa el teléfono.** Los clientes de siempre van a seguir mandando fotos, y ahí quedan.
+- **Si conectaste por QR, alguien revisa el teléfono.** Los clientes de siempre van a seguir mandando fotos, y ahí quedan.
 
 ## Avisos de vencimiento: por qué no conviene mandarlos a todos
 
 Es lo primero que pide un contador: que cada cliente reciba su aviso. Atende no manda mensajes por su cuenta. Los recordatorios se arman a pedido para tu estudio y necesitan saber qué le vence a cada uno, un dato que vive en tu sistema.
 
-Antes de pedirlo, pensá en el número: está vinculado por QR, fuera de la API oficial de Meta. Salir a escribirle a toda la cartera la semana del vencimiento, sin que nadie lo haya pedido, es el tipo de envío que puede terminar en una restricción, y ahí el estudio se queda sin canal en el peor momento. Si lo armás, que sea para quienes aceptaron el aviso y con tandas chicas.
+Antes de pedirlo, pensá en cómo conectás el número, porque el estudio puede elegir entre un QR y la API oficial de Meta. Por QR, salir a escribirle a toda la cartera la semana del vencimiento, sin que nadie lo haya pedido, es el tipo de envío que puede terminar en una restricción. Si lo armás, que sea para quienes aceptaron el aviso y con tandas chicas. Cuál te conviene para tu cartera lo vemos en la [demo](/demo).
 
 ## Cómo arranca un estudio contable
 

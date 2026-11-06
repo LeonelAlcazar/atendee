@@ -23,7 +23,7 @@ export const connectionRows: { label: string; text: string }[] = [
   },
   {
     label: 'Tus turnos y tus contactos',
-    text: 'Manda recordatorios y seguimientos armados para tu negocio, a quienes aceptaron recibirlos. Los mensajes que la gente no pidió, en un número conectado por QR, aumentan el riesgo de restricción.',
+    text: 'Manda recordatorios y seguimientos armados para tu negocio, a quienes aceptaron recibirlos. Para esos envíos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
   },
 ];
 

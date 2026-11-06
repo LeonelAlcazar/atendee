@@ -223,7 +223,7 @@ const clinicas: Rubro = {
       items: [
         {
           title: 'Audios de pacientes mayores',
-          text: 'Un audio nunca llega a Atende. El paciente no recibe respuesta del asistente y el mensaje queda en el WhatsApp del teléfono vinculado, así que alguien tiene que mirarlo.',
+          text: 'Un audio nunca llega a Atende. El paciente no recibe respuesta del asistente y el mensaje queda en el WhatsApp del teléfono del negocio, así que alguien tiene que mirarlo.',
         },
         {
           title: 'Órdenes y credenciales',
@@ -235,7 +235,7 @@ const clinicas: Rubro = {
         },
         {
           title: 'Recordatorio del día anterior',
-          text: 'No sale solo, porque Atende no empieza conversaciones por su cuenta. Se [arma a pedido](/blog/recordatorios-de-turnos-por-whatsapp), y en un número conectado por QR los mensajes que el paciente no pidió suman riesgo de restricción.',
+          text: 'No sale solo, porque Atende no empieza conversaciones por su cuenta. Se [arma a pedido](/blog/recordatorios-de-turnos-por-whatsapp), y para esos avisos conviene evaluar la API oficial de Meta.',
         },
         {
           title: 'Cuando recepción quiere seguir',
@@ -410,11 +410,11 @@ const peluquerias: Rubro = {
         },
         {
           title: 'El audio desde el auto',
-          text: 'Un audio tampoco llega y no recibe respuesta. Si tus clientas escriben mucho así, alguien tiene que revisar el teléfono vinculado.',
+          text: 'Un audio tampoco llega y no recibe respuesta. Si tus clientas escriben mucho así, alguien tiene que revisar el teléfono del negocio.',
         },
         {
           title: 'El aviso del día anterior',
-          text: 'Se arma a pedido; Atende no lo manda por su cuenta. Se conecta por QR y no es la API oficial de Meta, así que los mensajes que la clienta no pidió suman riesgo de restricción.',
+          text: 'Se arma a pedido; Atende no lo manda por su cuenta. Para esos avisos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
         },
         {
           title: 'La clienta enojada',
@@ -442,7 +442,7 @@ const peluquerias: Rubro = {
     },
     {
       q: '¿Manda recordatorios para que no falten?',
-      a: 'No por su cuenta. Los recordatorios se arman a pedido para tu negocio. Antes de pedirlos, tené en cuenta que en un número conectado por QR los mensajes que la clienta no pidió suman riesgo de restricción.',
+      a: 'No por su cuenta. Los recordatorios se arman a pedido para tu negocio. Para esos avisos conviene evaluar la API oficial de Meta.',
     },
   ],
   guides: [
@@ -547,7 +547,7 @@ const restaurantes: Rubro = {
       kind: 'table',
       id: 'problemas',
       title: 'Los mensajes que arman problema un sábado a la noche',
-      intro: 'Acá se ve si la configuración está bien hecha. No hay modo de prueba: una vez vinculado el número, el asistente responde a todos. Probá estos casos desde otro número; usa créditos.',
+      intro: 'Acá se ve si la configuración está bien hecha. No hay modo de prueba: una vez conectado el número, el asistente responde a todos. Probá estos casos desde otro número; usa créditos.',
       caption: 'Mensajes problemáticos, por qué lo son y qué conviene que haga el asistente',
       columns: ['El mensaje', 'El problema', 'Qué conviene que haga'],
       rows: [
@@ -595,7 +595,7 @@ const restaurantes: Rubro = {
       items: [
         { title: 'La carta en PDF', text: 'El asistente manda fotos y videos de la biblioteca, no documentos. Si querés que mande la carta, subila como imagen.' },
         { title: 'Ubicaciones', text: 'Si un huésped te manda su ubicación, no llega. Al revés sí: el asistente pasa tu dirección y cómo llegar como texto, si lo cargaste.' },
-        { title: '“Llegamos tarde” por audio', text: 'Un audio nunca llega a Atende. Si tu salón depende de esos avisos, alguien tiene que mirar el teléfono vinculado durante el servicio.' },
+        { title: '“Llegamos tarde” por audio', text: 'Un audio nunca llega a Atende. Si tu salón depende de esos avisos, alguien tiene que mirar el teléfono del negocio durante el servicio.' },
         { title: 'Cobrar', text: 'Atende no cobra ni confirma transferencias. Pasa los datos que cargaste y la seña la acredita tu equipo.' },
         { title: 'Un reclamo durante la estadía', text: 'Marcá el chat como Necesita humano, porque responder desde la bandeja no frena al asistente. Se cierra 12 horas después del último mensaje del huésped y, si vuelve a escribir, contesta el asistente.' },
       ],
@@ -755,7 +755,7 @@ const comercios: Rubro = {
         { title: 'Caja, bulto, pack', text: 'Cada cliente dice distinto. Si “aceite” puede ser tres productos, el asistente pregunta cuál, y las equivalencias tienen que venir en la conexión.' },
         { title: 'La lista de la semana pasada', text: 'Si tus precios cambian seguido, no los cargues en las preguntas frecuentes: el asistente repetiría el valor viejo. Los precios que se mueven se leen del sistema.' },
         { title: 'El pedido grabado dos veces', text: 'Si una respuesta se corta y el proceso se repite, un pedido puede entrar doble. La conexión lo tiene que frenar comparando cliente, día y contenido: es parte de lo que hay que resolver al armarla.' },
-        { title: 'Si WhatsApp es tu único canal', text: 'Se conecta por QR. No es la API oficial de Meta, y WhatsApp puede restringir un número. Si casi todos tus pedidos entran por ahí, tené otro camino previsto para ese día.' },
+        { title: 'Si WhatsApp es tu único canal', text: 'Si tu número se desconecta, el asistente deja de responder hasta que vuelvas a conectarlo. Si casi todos tus pedidos entran por ahí, tené otro camino previsto para ese día.' },
       ],
     },
     {
@@ -825,7 +825,7 @@ const comercios: Rubro = {
     },
     {
       q: '¿Qué pasa si un cliente manda el pedido por audio o en una foto?',
-      a: 'No llega a Atende y el asistente no responde. El mensaje queda en el WhatsApp del teléfono vinculado. Para que el pedido entre solo, tiene que venir escrito.',
+      a: 'No llega a Atende y el asistente no responde. El mensaje queda en el WhatsApp del teléfono del negocio. Para que el pedido entre solo, tiene que venir escrito.',
     },
     {
       q: '¿Atende cobra o factura el pedido?',
@@ -1006,7 +1006,7 @@ const concesionarias: Rubro = {
         { title: 'Una propiedad que ya se alquiló', text: 'Si tu ficha no se actualiza, el asistente va a decir que sigue disponible. La respuesta es tan buena como tu cartera.' },
         { title: 'Precios que cambian', text: 'Una lista vieja en las preguntas frecuentes te compromete. Lo que cambia seguido se lee del sistema, y la cuota siempre se presenta como estimada.' },
         { title: 'Fotos del stock o de la cartera', text: 'Subís fotos y videos a la biblioteca y el asistente los manda; eso no necesita conexión. La biblioteca tiene un tope por espacio, así que alcanza para lo que más se consulta, no para toda la cartera. Fichas en PDF no manda.' },
-        { title: 'El usado por foto y la ubicación', text: 'Las fotos del auto que mandan a tasar, los audios y las ubicaciones no llegan a Atende. Tu vendedor los ve en el teléfono vinculado.' },
+        { title: 'El usado por foto y la ubicación', text: 'Las fotos del auto que mandan a tasar, los audios y las ubicaciones no llegan a Atende. Tu vendedor los ve en el teléfono del negocio.' },
         { title: 'Cuando el vendedor quiere seguir', text: 'Responder desde la bandeja no frena al asistente. Hay que marcar el chat como Necesita humano, sobre todo si está negociando.' },
       ],
     },
@@ -1156,7 +1156,7 @@ const profesionales: Rubro = {
       title: 'Situaciones que hay que resolver antes de que pasen',
       items: [
         { title: 'Viernes a las 20, plazo corriendo', text: 'El asistente registra y marca la consulta, pero no le suena a nadie el teléfono, y el chat se cierra solo 12 horas después del último mensaje. Si atendés urgencias, el teléfono de guardia va en el mensaje. Si no, que lo diga con claridad.' },
-        { title: 'La carta documento en PDF', text: 'Documentos, fotos y audios no llegan a Atende. La cédula que el contacto saca con el celular queda en el WhatsApp del teléfono vinculado, y el asistente no sabe que existe.' },
+        { title: 'La carta documento en PDF', text: 'Documentos, fotos y audios no llegan a Atende. La cédula que el contacto saca con el celular queda en el WhatsApp del teléfono del negocio, y el asistente no sabe que existe.' },
         { title: '“¿Cuánto me cobrás?”', text: 'El asistente dice solo lo que decidiste publicar: el valor de la consulta, que la primera no tiene costo, o que los honorarios los habla el profesional. Nunca estima el costo de un caso.' },
         { title: 'Vencimientos que cambian', text: 'Un estudio contable recibe la misma pregunta en cada vencimiento. Si cargás fechas en las preguntas frecuentes, alguien tiene que actualizarlas cada mes; si no, mejor que pase a una persona.' },
         { title: 'Cuando el profesional toma el caso', text: 'Contestar desde la bandeja no frena al asistente. Marcá el chat como Necesita humano. Se cierra 12 horas después del último mensaje del contacto y, si vuelve a escribir, responde el asistente.' },
@@ -1204,7 +1204,7 @@ const profesionales: Rubro = {
     },
     {
       q: '¿Puede recibir escritos, telegramas o comprobantes?',
-      a: 'No. Las fotos y los documentos no llegan a Atende. Quedan en el WhatsApp del teléfono vinculado. El asistente trabaja solo con mensajes de texto.',
+      a: 'No. Las fotos y los documentos no llegan a Atende. Quedan en el WhatsApp del teléfono del negocio. El asistente trabaja solo con mensajes de texto.',
     },
     {
       q: '¿Sirve sin CRM?',

@@ -102,6 +102,17 @@ export default function IntegracionesPage() {
               </article>
             ))}
           </div>
+          <p className="mt-8 max-w-3xl leading-relaxed text-mute">
+            Tu WhatsApp va por separado de esta conexión. Elegís cómo conectar tu
+            número: con la API oficial de Meta o con un QR.{' '}
+            <Link
+              href="/que-es-atende#conexion"
+              className="font-semibold text-ink underline underline-offset-4"
+            >
+              Qué cambia entre una ruta y la otra
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

@@ -10,8 +10,9 @@ summary: >-
   reprogramar un turno o tomar un pedido por WhatsApp, conviene mirar otras
   opciones, porque su página ya no le habla a ese comprador y no publica precios.
   Atende apunta a ese segundo caso, conectado a tu agenda y con la conexión armada
-  a pedido. Se conecta por QR y no por la API oficial, así que no sirve para un
-  entorno regulado.
+  a pedido. Podés conectar el número con la API oficial de Meta o con un QR, pero
+  tiene un solo canal y no tiene permisos por rol, así que no sirve para un entorno
+  regulado.
 publishedAt: '2026-10-28'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -43,9 +44,9 @@ faq:
       mirá Atende, Cliengo o Chatsell. Si tu equipo quiere armar agentes, Botmaker.
   - q: ¿Atende sirve para un banco o una aseguradora?
     a: >-
-      No. Se conecta por QR y no por la API oficial de Meta, tiene un solo canal y
-      no tiene permisos por rol. Para ese entorno, Aivo u otra plataforma pensada
-      para esas exigencias es mejor elección.
+      No. Tiene un solo canal, no tiene permisos por rol y apunta a PyMEs.
+      Poder elegir la API oficial de Meta no cambia eso. Para ese entorno, Aivo u otra
+      plataforma pensada para esas exigencias es mejor elección.
 sources:
   - title: 'aivo.co: redirección a Engageware'
     url: 'https://www.aivo.co/'
@@ -98,13 +99,13 @@ Los planes de Atende [se ven en la app](/precios) antes de pagar.
 | A quién le habla | Bancos, aseguradoras y telcos | PyMEs argentinas con un número de WhatsApp |
 | Qué termina en la conversación | Transacciones y citas, conectado a sistemas centrales | Conectado a tu agenda o sistema: turnos, reservas, pedidos y cotizaciones |
 | Quién lo arma | Tiene Studio para diseñar experiencias. Cómo se implementa hay que pedirlo | Vos cargás el contexto y nosotros armamos la conexión |
-| Conexión con WhatsApp | Figura como canal. El tipo de conexión no aparece en lo que abrimos | Se conecta por QR. No es la API oficial de Meta |
+| Conexión con WhatsApp | Figura como canal. El tipo de conexión no aparece en lo que abrimos | API oficial de Meta o QR, a elección |
 | Canales | WhatsApp, SMS y voz, con agentes y atención en vivo | Solo WhatsApp, mensajes de texto |
 | Precio | Sin cifras públicas | Sin importes en este sitio: los planes se ven en la app. La conexión a pedido no tiene precio publicado |
 
 ## Cuándo quedarte con Aivo
 
-- Tu área de cumplimiento te pide una plataforma pensada para industrias reguladas. Atende no pasa esa vara: se conecta por QR y no por la API oficial.
+- Tu área de cumplimiento te pide una plataforma pensada para industrias reguladas. Atende no pasa esa vara: apunta a PyMEs, no tiene permisos por rol y cualquier integrante del espacio puede cambiar el estado de una conversación.
 - Necesitás voz, campañas, base de conocimiento y agenda dentro de la misma suite.
 - Ya lo tenés conectado a sistemas centrales y funciona. Cambiar eso cuesta más que cualquier licencia.
 
@@ -128,7 +129,6 @@ Si alguien pregunta si atienden tal obra social, el asistente responde con lo qu
 
 ## Lo que no vas a encontrar si venís de una suite grande
 
-- **Conexión por QR.** No es la API oficial de Meta, y no podemos prometer que WhatsApp no restrinja un número.
 - **Sin voz, campañas ni chat web.** Solo WhatsApp, con mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan.
 - **Sin permisos por rol.** Cualquier integrante del espacio puede cambiar el estado de una conversación.
 - **Una línea por espacio.** Si tenés varias sucursales con números distintos, cada una es un espacio.

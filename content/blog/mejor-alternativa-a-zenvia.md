@@ -9,8 +9,9 @@ summary: >-
   campañas, datos de clientes unificados y proveedor oficial de Meta: es una nube
   pensada para operaciones medianas y grandes. Mirá alternativas si sos una PyME y lo que
   querés es calificar una consulta y registrarla sin armar un proyecto. Atende hace
-  eso conectado a tu sistema, con la conexión armada a pedido, solo en WhatsApp y
-  por QR. Sirena hoy redirige a Zenvia: si la buscás, estás buscando Zenvia.
+  eso conectado a tu sistema, con la conexión armada a pedido, solo en WhatsApp, con
+  tu número por la API oficial de Meta o por QR, como elijas. Sirena hoy redirige a
+  Zenvia: si la buscás, estás buscando Zenvia.
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -110,7 +111,7 @@ Los planes de Atende [se ven en la app](/precios).
 | --- | --- | --- |
 | Pensada para | Marketing, ventas y atención en varias áreas | Un negocio con un número de WhatsApp |
 | Canales | WhatsApp, SMS, email, Instagram, Messenger, webchat | Solo WhatsApp, mensajes de texto |
-| Conexión con WhatsApp | BSP oficial. Pide registro empresarial y cuenta comercial verificada en Meta | Se conecta por QR. No es la API oficial de Meta |
+| Conexión con WhatsApp | BSP oficial. Pide registro empresarial y cuenta comercial verificada en Meta | API oficial de Meta o QR, a elección |
 | Campañas | Sí, con segmentación | No |
 | Datos de clientes | CDP propio y perfil unificado | Nombre, número, etiquetas y notas |
 | Quién arma | Tu equipo, sin código. Hay acompañamiento según el caso | Vos cargás el contexto y nosotros armamos la conexión |
@@ -123,7 +124,7 @@ Atende no es para vos si:
 - Mandás SMS o campañas de email y WhatsApp como parte del negocio.
 - Necesitás una base de clientes unificada entre marketing, ventas y atención.
 - Tenés diez usuarios o más y varias áreas trabajando sobre el mismo contacto.
-- Tu empresa exige API oficial y proveedor reconocido por Meta.
+- Tu empresa pide un proveedor que se presente como BSP oficial: Zenvia lo hace, Atende no.
 - Querés un proveedor con oficina en Argentina y con plan Enterprise.
 
 ## Cuando te alcanza con calificar y registrar
@@ -142,6 +143,6 @@ Conectado a tu sistema, Atende califica la consulta y la registra, y esa conexi�
 
 ## Si tu número hoy está en Zenvia
 
-[Zenvia explica](https://zenvia.com/es-mx/whatsapp/) que un número que pasa a su API deja de funcionar en la app y queda solo en la API. Atende se vincula escaneando un QR desde el teléfono, así que primero tenés que resolver cómo liberar ese número y qué pasa con tus plantillas e historial. Ese paso no lo probamos con cada proveedor. Atende no importa conversaciones, y una vez vinculado le contesta a todos tus contactos: probalo desde otro número; usa créditos.
+[Zenvia explica](https://zenvia.com/es-mx/whatsapp/) que un número que pasa a su API deja de funcionar en la app y queda solo en la API. Desde ahí hay dos caminos. Quedarte en la API oficial de Meta, y cómo pasar el número lo vemos con vos en la demo. O ir al QR, que se escanea desde el teléfono: ahí primero tenés que resolver cómo liberar ese número y qué pasa con tus plantillas e historial. Ese paso no lo probamos con cada proveedor. Atende no importa conversaciones, y una vez conectado le contesta a todos tus contactos: probalo desde otro número; usa créditos.
 
-Sumá los límites de Atende a la decisión. No podemos prometer que WhatsApp no restrinja un número. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Hay un número por espacio, no hay campañas y todavía no tenemos reseñas públicas. Si con eso te cierra, lo podés ver en una [demo](/demo).
+Sumá los límites de Atende a la decisión. En ninguno de los dos caminos podemos prometer que WhatsApp no restrinja un número. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Hay un número por espacio, no hay campañas y todavía no tenemos reseñas públicas. Si con eso te cierra, lo podés ver en una [demo](/demo).

@@ -6,7 +6,6 @@ import { CtaFinal } from '@/components/landing/CtaFinal';
 import { EstadoHoy } from '@/components/landing/EstadoHoy';
 import { Faq } from '@/components/landing/Faq';
 import { Hero } from '@/components/landing/Hero';
-import { Limites } from '@/components/landing/Limites';
 import { TareasPorRubro } from '@/components/landing/TareasPorRubro';
 import { faq } from '@/content/faq';
 import { pages } from '@/content/pages';
@@ -23,7 +22,6 @@ export default function HomePage() {
       <EstadoHoy />
       <ComoSeConecta />
       <ControlEquipo />
-      <Limites />
       <BlogTeaser />
       <Faq />
       <CtaFinal context="Hola, vi atende.com.ar y quiero saber qué tarea puede terminar Atende en mi negocio" />

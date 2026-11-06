@@ -96,7 +96,7 @@ Decidí esto antes de vincular el número:
 2. Si no tenés, indicá adónde derivás y decilo sin vueltas: "A esta hora no hay nadie en la veterinaria".
 3. Pedile que ante cualquier síntoma no haga preguntas para medir la gravedad y pase el dato en su primera respuesta.
 
-La foto de la herida, el video del perro rengueando y la nota de voz de un dueño desesperado se quedan en el teléfono de la veterinaria, junto con el texto que acompañe a la foto. A Atende no llegan, y para el asistente no pasó nada. Quien manda nada más que una imagen recibe silencio. Por eso el teléfono de guardia también tiene que estar en el perfil de WhatsApp del negocio.
+La foto de la herida, el video del perro rengueando y la nota de voz de un dueño desesperado no llegan a Atende, ni el texto que acompañe a la foto, y para el asistente no pasó nada. Quien manda nada más que una imagen recibe silencio. Por eso el teléfono de guardia también tiene que estar en el perfil de WhatsApp del negocio.
 
 Un posoperatorio que el veterinario sigue por este número va en "Necesita humano", porque responderle al dueño no frena al asistente. Y esa marca no llega al control del día siguiente: con 12 horas sin mensajes del dueño el chat se cierra, y su próxima pregunta la toma el asistente.
 

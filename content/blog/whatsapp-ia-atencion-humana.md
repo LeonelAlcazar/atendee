@@ -149,7 +149,7 @@ Ves toda la conversación de texto, con lo que preguntó el cliente y lo que le 
 
 | Lo que podrías esperar | Qué pasa hoy |
 | --- | --- |
-| Audios, fotos, videos, documentos, stickers o ubicaciones del cliente | No llegan a Atende, ni al asistente ni a la bandeja. Una foto pierde también su texto. Quedan en el WhatsApp del teléfono. |
+| Audios, fotos, videos, documentos, stickers o ubicaciones del cliente | No llegan a Atende, ni al asistente ni a la bandeja. Una foto pierde también su texto. Si conectaste por QR, quedan en el WhatsApp del teléfono. |
 | Saber quién mandó cada respuesta | Todavía no. La del asistente, la de un compañero y la que salió del teléfono se ven igual. Está planeado. |
 | Ver qué acción ejecutó el asistente | Tampoco. La bandeja muestra el texto de la respuesta; para comprobar la acción, mirá tu agenda o tu sistema. |
 | Un resumen automático del caso | No se genera. Por eso sirve la nota interna. |

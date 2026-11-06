@@ -38,9 +38,10 @@ faq:
       de la estadounidense Engageware.
   - q: ¿Conviene un chatbot por QR o por la API oficial?
     a: >-
-      Si tu empresa exige la API, elegí un proveedor que la ofrezca. Por QR conectás el
-      número que ya usás, pero no es la API oficial de Meta. Chatsell, Whaticket y Atende
-      listan QR; varias herramientas ofrecen además Coexistence.
+      Depende de lo que vayas a hacer. Por la API, Meta cobra por mensaje y fuera de las
+      24 horas solo van plantillas. Por QR sumás un dispositivo vinculado al número que
+      ya usás. Chatsell, Whaticket y Atende dan a elegir entre las dos; varias
+      herramientas ofrecen además Coexistence.
   - q: ¿Atende aparece primero porque publica esta nota?
     a: >-
       No. Los grupos van de la necesidad más simple a la más compleja, las herramientas
@@ -121,6 +122,12 @@ sources:
   - title: 'Zenvia: precios'
     url: 'https://zenvia.com/es/precios/'
     checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Política de mensajes'
+    url: 'https://whatsappbusiness.com/es-la/policy/'
+    checkedAt: '2026-11-06'
+  - title: 'Meta: precios de la Plataforma de WhatsApp Business'
+    url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing'
+    checkedAt: '2026-11-06'
 ---
 Si buscás cuál es el mejor chatbot de WhatsApp para tu negocio en Argentina, la respuesta honesta arranca con otra pregunta: ¿qué tarea tiene que quedar terminada cuando el cliente deje de escribir? Reservar un turno, registrar un pedido y contestar el horario piden herramientas distintas, y la que le sirve a una clínica puede ser demasiado para un kiosco.
 
@@ -157,9 +164,9 @@ Los [criterios editoriales](/blog/editorial) cuentan el resto. Los precios cambi
 | Whaticket | CRM multiagente | [QR o API](https://whaticket.com/precios) | [Desde US$ 49 por mes, mínimo 3 usuarios](https://whaticket.com/precios) |
 | Yo Facturo | Gestión y facturación, con bot aparte | No indicada | [Bot aparte, sin monto](https://yo-facturo.com/blog/bot-whatsapp-argentina-ia/) |
 | [Zenvia](/blog/mejor-alternativa-a-zenvia) | Nube de clientes con SMS, email y WhatsApp | BSP oficial | [USD 0 a USD 845 de software, más canales](https://zenvia.com/es/precios/) |
-| Atende (publica esta nota) | Asistente en tu número, con la conexión a pedido | QR. No es la API oficial de Meta | Sin importes en este sitio: [los planes se ven en la app](/precios). La conexión a pedido no tiene precio publicado |
+| Atende (publica esta nota) | Asistente en tu número, con la conexión a pedido | API oficial de Meta o QR, a elección | Sin importes en este sitio: [los planes se ven en la app](/precios). La conexión a pedido no tiene precio publicado |
 
-Casi todos los precios sobre la API van sin los cargos de Meta. La cuenta completa está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
+Casi todos los precios sobre la API van sin los cargos de Meta. En Atende, cómo quedan esos cargos si elegís la API lo vemos con vos en la demo. La cuenta completa está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
 
 ## Respondés preguntas y atendés solo o con una persona
 
@@ -185,7 +192,7 @@ Acá conviven varias opciones, y conviene comparar lo mismo en todas: con tu sis
 - **Cliengo:** agente con acciones y plan publicado. Según su guía, conecta lo que tenga API.
 - **Vozia:** se implementa a medida sobre tu operación, según [su comparativa](https://duotach.com/blog/mejores-chatbots-whatsapp-argentina). Publica su propio costo de implementación.
 - **Yo Facturo:** si ya facturás con ellos, [su bot](https://yo-facturo.com/blog/bot-whatsapp-argentina-ia/) responde con inventario, precios y pedidos de tu gestión.
-- **Atende:** no te damos un armador de flujos, armamos la conexión con tu sistema. Se conecta por QR al número que ya usás.
+- **Atende:** no te damos un armador de flujos, armamos la conexión con tu sistema. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR.
 
 Ejemplo ilustrativo con Atende, conectado a la agenda de una clínica veterinaria:
 
@@ -199,7 +206,7 @@ Ejemplo ilustrativo con Atende, conectado a la agenda de una clínica veterinari
 
 Conectado a tu agenda, Atende reserva el turno, y esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Lo que hoy podemos mostrar funcionando es una demo para una concesionaria de motos, con stock, financiación y registro del interesado en Google Sheets; es una demo, no un cliente.
 
-**Límites de Atende, para que compares bien:** solo WhatsApp, solo mensajes de texto, un número por espacio, sin campañas, sin permisos por rol y sin reseñas públicas todavía. Cada conexión se arma a pedido, sin catálogo. Si necesitás la API oficial, multicanal o un armador propio, elegí otra. Qué está incluido y qué es a pedido, acción por acción, está en [qué es Atende](/que-es-atende) y en [integraciones](/integraciones). Por rubro, en [casos de uso](/casos-de-uso).
+**Límites de Atende, para que compares bien:** solo WhatsApp, solo mensajes de texto, un número por espacio, sin campañas, sin permisos por rol y sin reseñas públicas todavía. Cada conexión se arma a pedido, sin catálogo. Si necesitás multicanal o un armador propio, elegí otra. Qué está incluido y qué es a pedido, acción por acción, está en [qué es Atende](/que-es-atende) y en [integraciones](/integraciones). Por rubro, en [casos de uso](/casos-de-uso).
 
 ## Tu rubro tiene una herramienta propia
 
@@ -213,7 +220,7 @@ Mirá primero lo específico. **WeSpeak** es [una plataforma para hoteles](https
 
 **¿Quién la mantiene?** Una herramienta para armar agentes necesita a alguien el mes que viene, no solo el día de la instalación.
 
-**¿QR, Coexistence o API?** La API y Coexistence pasan por Meta y tienen requisitos y cargos. Por QR conectás el número tal como está, no es la API oficial y nadie te puede prometer que WhatsApp no restrinja ese número; nosotros tampoco. No es algo exclusivo de Atende: Whaticket y Chatsell también lo listan. Si tu empresa exige la API, la decisión ya está tomada.
+**¿QR, Coexistence o API?** La API y Coexistence pasan por Meta y tienen requisitos y cargos: [se cobra por mensaje](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) y [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo van plantillas. Por QR conectás el número tal como está, como un dispositivo vinculado, y según nuestra lectura Meta no cobra por mensaje. Por ninguna vía te pueden prometer que WhatsApp no restrinja un número; nosotros tampoco. Chatsell, Whaticket y Atende dejan elegir, así que decidí por tu uso: si vas a escribir primero y en volumen, conviene evaluar la API oficial.
 
 **¿Qué pasa cuando falla?** Pedí a cada proveedor que te muestre un turno que ya se ocupó, un pedido sin stock y una consulta que no sabe resolver. Lo que hace en esos tres casos dice más que cualquier tabla, incluida esta.
 

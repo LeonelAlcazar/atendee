@@ -49,9 +49,9 @@ faq:
   - q: ¿Un bot conectado por QR usa la API oficial de WhatsApp?
     a: >-
       El QR por sí solo no te dice qué tecnología hay detrás, así que preguntalo.
-      En el caso de Atende, no: se conecta por QR y no es la API oficial de Meta.
-      Si tu empresa necesita WhatsApp Business Platform, confirmá esa
-      arquitectura con el proveedor antes de contratar.
+      En Atende elegís cómo conectar tu número: con la API oficial de Meta o con
+      un QR, y por QR no se usa la API. Si tu empresa necesita WhatsApp Business
+      Platform, confirmá esa ruta con el proveedor antes de contratar.
   - q: ¿Un bot puede atender sin intervención humana?
     a: >-
       Puede responder mensajes de texto dentro del alcance configurado, a
@@ -70,6 +70,9 @@ sources:
     checkedAt: '2026-11-06'
   - title: 'Ayuda de WhatsApp: cómo configurar Meta Business Agent'
     url: 'https://faq.whatsapp.com/1153795669452207'
+    checkedAt: '2026-11-06'
+  - title: 'WhatsApp Business: Política de mensajes (última actualización 23 de septiembre de 2026)'
+    url: 'https://whatsappbusiness.com/es-la/policy/'
     checkedAt: '2026-11-06'
 ---
 Un **bot de WhatsApp** es un programa que atiende mensajes automáticamente: contesta preguntas, pide los datos que faltan y reconoce cuándo tiene que seguir una persona. Si además está conectado a los sistemas del negocio, puede reservar el turno o registrar el pedido ahí mismo, en la charla. “Chatbot de WhatsApp” nombra lo mismo, y ninguno de los dos nombres te dice si usa inteligencia artificial ni si puede tocar otro sistema.
@@ -142,7 +145,7 @@ Meta también tiene **Meta Business Agent**, un agente con IA dentro de la app. 
 
 **WhatsApp Business Platform** ofrece APIs para conectar software con la mensajería comercial. Se implementa directamente o con un proveedor. Es una vía de integración: el alcance del bot y la atención del equipo dependen de lo que se construya o se contrate. Por esa vía Meta cobra por mensaje entregado, y los números están en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). [Descripción oficial de Business Platform](https://whatsappbusiness.com/products/business-platform/).
 
-**El QR es un mecanismo de vinculación.** Mirándolo no podés saber qué tecnología usa un proveedor, así que preguntalo. En Atende la respuesta es esta: se conecta por QR, desde dispositivos vinculados, con el número que ya usás. No es la API oficial de Meta. Por eso no le aplican las tarifas que Meta publica para la Plataforma, y también por eso nadie puede prometerte que WhatsApp no va a restringir un número. Si tu empresa exige la API oficial, Atende hoy no es la opción, y conviene que lo sepas antes de contratar.
+**El QR es un mecanismo de vinculación.** Mirándolo no podés saber qué tecnología usa un proveedor, así que preguntalo. En Atende la respuesta depende de vos. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por la API corren las tarifas por mensaje y, fuera de la ventana de 24 horas, [las plantillas aprobadas](https://whatsappbusiness.com/es-la/policy/). Por QR, desde dispositivos vinculados, seguís con el número que ya usás y, según nuestra lectura, esas tarifas no corren. Por ninguna de las dos te pueden prometer que WhatsApp no va a restringir un número. Si tu empresa exige la API oficial, decilo en la [demo](/demo) y lo vemos con vos.
 
 También conviene confirmar qué pasa con el número, con las herramientas que ya lo usan y con el historial previo. No des por hecha una migración completa porque se haya podido establecer la conexión.
 

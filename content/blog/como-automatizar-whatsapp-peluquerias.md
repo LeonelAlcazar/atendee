@@ -31,9 +31,9 @@ faq:
       agenda: reserva sobre lo que ella dice que está libre.
   - q: ¿Qué pasa si una clienta manda una foto del color que quiere?
     a: >-
-      La foto no llega a Atende, y lo que escriba junto a ella tampoco. Queda
-      en el teléfono del salón. Por eso conviene que alguien lo mire, y que el
-      asistente pida describir el color con palabras.
+      La foto no llega a Atende, y lo que escriba junto a ella tampoco. Por eso
+      conviene que el asistente pida describir el color con palabras y traer la
+      foto el día del turno.
   - q: ¿El asistente puede cobrar o verificar una seña?
     a: >-
       Puede pasar el alias y explicar tu regla si la cargaste. No ve el
@@ -79,7 +79,7 @@ Otro límite real: cada espacio lleva un solo número. Si cada peluquera recibe 
 
 "¿Cuánto sale un balayage?" no tiene una sola respuesta, porque depende del largo, de cuánto pelo hay y de lo que traiga de antes. Si publicás un "desde", cargalo en "Preguntas frecuentes" y aclaralo como referencia. Si no, el asistente dice que el valor se define al ver el pelo y ofrece el turno de evaluación o lo pasa a alguien del salón.
 
-Después viene la foto de referencia, la clásica "quiero este color". Esa foto la ves en el teléfono del salón y en ningún otro lado: a Atende entra solo texto, y lo que la clienta haya escrito al pie se va con la imagen. Igual con la nota de voz de quien pide turno mientras maneja. Pedile al asistente que, cuando hable de color, sugiera describir el tono con palabras y traer la foto el día del turno.
+Después viene la foto de referencia, la clásica "quiero este color". Esa foto no llega a Atende, que recibe solo texto, y lo que la clienta haya escrito al pie se va con la imagen. Igual con la nota de voz de quien pide turno mientras maneja. Pedile al asistente que, cuando hable de color, sugiera describir el tono con palabras y traer la foto el día del turno.
 
 En sentido contrario sí funciona. Subí a tu biblioteca fotos y videos de tus trabajos, y el asistente los manda cuando le preguntan cómo queda un balayage o qué cortes hacés.
 

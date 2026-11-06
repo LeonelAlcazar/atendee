@@ -9,8 +9,9 @@ summary: >-
   teléfono, y un equipo grande tiene que seguir cada caso en un solo hilo. Mirá
   alternativas si casi todo entra por WhatsApp y lo que falta es tomar la reserva
   sin que alguien la cargue. Atende hace eso conectado a tu sistema, con la conexión
-  armada a pedido, pero tiene un solo canal, un número por espacio y conexión por
-  QR. Si necesitás multicanal o API oficial, Atende no es la opción.
+  armada a pedido, pero tiene un solo canal y un número por espacio, que conectás
+  con la API oficial de Meta o con un QR. Si necesitás multicanal, ruteo automático
+  o llamadas en el mismo hilo, Atende no es la opción.
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-06'
 category: alternativas
@@ -33,8 +34,9 @@ faq:
   - q: ¿respond.io usa la API oficial de WhatsApp?
     a: >-
       Sí. Se presenta como proveedor oficial de WhatsApp Business y soporta
-      Coexistence, para usar la API y la app en el mismo número. Atende no ofrece eso:
-      se conecta por QR y no es la API oficial de Meta.
+      Coexistence, para usar la API y la app en el mismo número. En Atende elegís el
+      camino, API oficial de Meta o QR, y si querés sumar la app a la API lo vemos con
+      vos en la demo.
   - q: ¿Atende atiende Instagram o email?
     a: >-
       No. Atende trabaja solo en WhatsApp, con un número por espacio. Si esos canales
@@ -97,7 +99,7 @@ Por el lado de Meta, [desde el 1 de octubre de 2026](https://developers.facebook
 | Criterio | respond.io | Atende |
 | --- | --- | --- |
 | Canales | WhatsApp, Instagram, TikTok, Messenger, email, VoIP | Solo WhatsApp, un número por espacio |
-| Tipo de conexión | Proveedor oficial de la API, con Coexistence | Se conecta por QR. No es la API oficial de Meta |
+| Tipo de conexión | Proveedor oficial de la API, con Coexistence | API oficial de Meta o QR, a elección |
 | Llamadas | Sí, en el mismo hilo | No |
 | Acciones en la conversación | Agentes con reservas y CRM, con lo que configures | Conectado a tu sistema, a pedido |
 | Quién arma | Tu equipo, desde plantillas o a medida | Vos cargás el contexto y nosotros armamos la conexión |
@@ -112,7 +114,6 @@ Atende no es la opción si:
 - Tu equipo es grande y necesitás ruteo automático y métricas por agente.
 - Hacés o recibís llamadas y querés todo en un hilo.
 - Usás HubSpot o Salesforce y querés una conexión ya hecha.
-- Tu empresa pide proveedor oficial de la API.
 
 ## Cuando todo entra por WhatsApp
 
@@ -132,6 +133,6 @@ Fijate que la seña queda en manos del equipo: cobrar es otra conexión, y hay q
 
 ## Por qué un canal también tiene costo
 
-Elegir Atende es renunciar a Instagram y al email dentro de la misma herramienta, y eso tiene un precio: esas consultas siguen en otro lado. También renunciás a la API oficial, y no podemos prometer que WhatsApp no restrinja un número.
+Elegir Atende es renunciar a Instagram y al email dentro de la misma herramienta, y eso tiene un precio: esas consultas siguen en otro lado. También renunciás al ruteo automático, porque en Atende la asignación es manual. La conexión de WhatsApp queda afuera de esa cuenta: ahí elegís vos, API oficial de Meta o QR.
 
 Responde mensajes de texto, así que audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Y no tenemos reseñas públicas todavía, mientras que respond.io muestra las suyas. Si el ejercicio de las cien consultas te dio mayoría de WhatsApp, llevá esas consultas a una [demo](/demo).

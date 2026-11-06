@@ -17,19 +17,15 @@ export const faqGroups: FaqGroup[] = [
     items: [
       {
         q: '¿Atende funciona con el número que ya tengo?',
-        a: 'Sí. Conectás el número que ya usás con un QR y tus clientes te siguen escribiendo al mismo WhatsApp. Cada espacio conecta un número.',
+        a: 'Sí. Conectás el número que ya usás y tus clientes te siguen escribiendo al mismo WhatsApp. Cada espacio conecta un número.',
       },
       {
-        q: '¿Atende usa la API oficial de Meta?',
-        a: 'No. Se conecta por QR. No es la API oficial de Meta y no tiene aprobación de Meta. Queda como un dispositivo vinculado a tu WhatsApp.',
-      },
-      {
-        q: '¿Hay riesgo de que WhatsApp restrinja mi número?',
-        a: 'Puede pasar, y no podemos prometer que no pase. Mandar mensajes que la gente no pidió aumenta el riesgo. Si tu negocio no puede aceptarlo, conviene una opción con la API oficial de Meta.',
+        q: '¿Atende usa la API oficial de Meta o un QR?',
+        a: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. La API tiene las tarifas por mensaje que publica Meta y, fuera de la ventana de 24 horas, usa plantillas aprobadas. El QR queda como un dispositivo vinculado en el número que ya usás y, según nuestra lectura, Meta no cobra por mensaje en esa ruta. Si vas a escribir primero, por ejemplo con recordatorios, conviene evaluar la API. Cómo es el alta, quién paga esas tarifas y qué pasa con la app en ese número lo vemos con vos en la demo.',
       },
       {
         q: '¿Qué pasos hay que seguir para empezar?',
-        a: 'Creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el QR.',
+        a: 'Creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y conectás tu número, con la API oficial de Meta o con un QR.',
       },
       {
         q: '¿Qué necesito para escanear el QR?',
@@ -37,7 +33,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Apenas conecto ya les responde a mis clientes?',
-        a: 'Sí. No hay modo de prueba: una vez vinculado, el asistente le responde a cada contacto. Probalo desde otro número; usa créditos.',
+        a: 'Sí. No hay modo de prueba: una vez conectado, el asistente le responde a cada contacto. Probalo desde otro número; usa créditos.',
       },
       {
         q: '¿Qué pasa si se desconecta mi WhatsApp?',
@@ -113,7 +109,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Se puede usar desde el celular?',
-        a: 'Sí. La bandeja funciona en el celu: leés, respondés y asignás desde el navegador. No hay una app nativa, y para conectar WhatsApp necesitás otra pantalla que muestre el QR.',
+        a: 'Sí. La bandeja funciona en el celu: leés, respondés y asignás desde el navegador. No hay una app nativa, y para conectar por QR necesitás otra pantalla que lo muestre.',
       },
     ],
   },
@@ -143,7 +139,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Puede mandar recordatorios o seguimientos?',
-        a: 'A pedido. Atende no empieza conversaciones por su cuenta. Si los necesitás, los armamos para tu negocio. Los mensajes que la gente no pidió, en un número conectado por QR, aumentan el riesgo de restricción.',
+        a: 'A pedido. Atende no empieza conversaciones por su cuenta. Si los necesitás, los armamos para tu negocio. Para esos envíos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
       },
       {
         q: '¿Tienen alguna conexión funcionando?',

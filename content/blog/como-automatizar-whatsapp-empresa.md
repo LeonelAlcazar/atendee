@@ -8,8 +8,8 @@ summary: >-
   Para automatizar WhatsApp Business en tu empresa, elegí una tarea repetida y
   llevala hasta el final: reservar el turno, tomar la reserva o registrar el
   pedido. Prepará los datos, definí qué confirma una persona y probá desde otro
-  número. Atende conecta tu número por QR, contesta mensajes de texto y deriva a
-  tu equipo. Conectado a tu agenda o tu sistema, termina la tarea en la charla, y
+  número. Atende conecta tu número, con la API oficial de Meta o con un QR a tu
+  elección, contesta mensajes de texto y deriva a tu equipo. Conectado a tu agenda o tu sistema, termina la tarea en la charla, y
   esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el
   pedido y tu equipo lo confirma.
 publishedAt: '2026-09-10'
@@ -31,7 +31,8 @@ faq:
       Una tarea inicial, información comercial vigente, una persona que la
       mantenga al día y un proceso para las excepciones. En Atende, además, creás
       tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás
-      créditos o un plan y escaneás el QR.
+      créditos o un plan y conectás tu número, con la API oficial de Meta o con
+      un QR.
   - q: ¿Necesito un CRM para empezar con WhatsApp automático?
     a: >-
       No. Podés empezar con respuestas configuradas y una bandeja compartida. Si
@@ -144,7 +145,7 @@ Dos cosas que hay que saber antes de armar el circuito. Derivar marca el chat co
 
 ## 4. Configurá Atende y conectá el número
 
-Son cinco pasos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el QR. Se conecta por QR. No es la API oficial de Meta, y nadie puede prometerte que WhatsApp no va a restringir un número. Tus clientes te siguen escribiendo al mismo WhatsApp.
+Son cinco pasos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y conectás WhatsApp. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por QR escaneás el código desde el teléfono del negocio, y tus clientes te siguen escribiendo al mismo WhatsApp. Por la API corren [las tarifas de Meta](/blog/cuanto-cuesta-automatizar-whatsapp), y los pasos los vemos con vos en la [demo](/demo).
 
 Definí quién revisa que la conexión siga activa, quién corrige la información y quién toma las derivaciones. Pueden ser las mismas personas, pero tiene que estar claro. Para el detalle, usá la plantilla de [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp).
 

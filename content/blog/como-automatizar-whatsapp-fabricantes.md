@@ -29,9 +29,9 @@ related:
 faq:
   - q: ¿Puedo recibir planos por WhatsApp con Atende?
     a: >-
-      No. PDF, DWG, STEP y fotos nunca llegan a Atende: quedan en el WhatsApp del
-      teléfono vinculado y el asistente no se entera. Definí una casilla de
-      correo para planos y dejá escrito que el asistente la indique.
+      No. PDF, DWG, STEP y fotos nunca llegan a Atende y el asistente no se
+      entera. Definí una casilla de correo para planos y dejá escrito que el
+      asistente la indique.
   - q: ¿El asistente puede prometer un plazo de fabricación?
     a: >-
       No debería. Registra la fecha que pide el comprador y aclara que ventas la
@@ -82,7 +82,7 @@ Si pide menos que la cantidad mínima, el asistente informa el mínimo que carga
 
 ## El plano no entra por este chat
 
-Un PDF, un DWG, un STEP o una foto de la pieza al lado de un calibre nunca llegan a Atende. Quedan en el WhatsApp del teléfono vinculado, pero ni el asistente ni la bandeja los ven, y el comprador no recibe respuesta. Mucha gente de compras manda el plano primero y escribe después, así que sin una salida prevista el pedido se queda sin plano y nadie se entera.
+Un PDF, un DWG, un STEP o una foto de la pieza al lado de un calibre nunca llegan a Atende: ni el asistente ni la bandeja los ven, y el comprador no recibe respuesta. Mucha gente de compras manda el plano primero y escribe después, así que sin una salida prevista el pedido se queda sin plano y nadie se entera.
 
 La salida es simple:
 
@@ -127,6 +127,6 @@ En la venta industrial hay situaciones que el asistente no tiene que resolver so
 
 Empezá por lo que no necesita conexión: familias de producto, mínimos publicados, zonas de entrega, la casilla de planos y la lista del pedido técnico. Con eso ventas ya recibe pedidos completos. Después mirá qué se repite: si la mayoría son repeticiones de catálogo, conectar stock y pedidos es el paso que más trabajo saca.
 
-Apenas escaneás el QR, el asistente responde a todos tus contactos, también a compradores de hace años. Si tenés dos o tres cuentas grandes que hablan siempre con el mismo vendedor, avisales antes o pensá bien qué número vinculás. Las pruebas van desde otro celular y consumen créditos: mandá un "lo de siempre" y un plano, a ver qué contesta.
+Apenas conectás el número, el asistente responde a todos tus contactos, también a compradores de hace años. Si tenés dos o tres cuentas grandes que hablan siempre con el mismo vendedor, avisales antes o pensá bien qué número vinculás. Las pruebas van desde otro celular y consumen créditos: mandá un "lo de siempre" y un plano, a ver qué contesta.
 
 Si vendés por volumen a través de distribuidores, mirá la [guía de toma de pedidos mayoristas](/blog/como-automatizar-whatsapp-distribuidoras). Si despachás con transporte propio o tercerizado, la [guía de logística](/blog/como-automatizar-whatsapp-logistica) sigue el pedido desde el retiro hasta el reclamo.

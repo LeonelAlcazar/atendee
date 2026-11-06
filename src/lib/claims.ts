@@ -60,13 +60,14 @@ export const claimRules: ClaimRule[] = [
     id: 'aval-de-meta',
     pattern:
       /\b(verificad|aprobad|certificad|autorizad|avalad|homologad)[oa]s? por (meta|whatsapp|facebook)\b/,
-    fix: 'Decí "Se conecta por QR. No es la API oficial de Meta."',
+    fix: 'Usar la API oficial no es un estatus. Decí "Elegís cómo conectar tu número: con la API oficial de Meta o con un QR."',
   },
   {
     id: 'partner-de-meta',
-    pattern: /\b(partner|socio|proveedor)( oficial)? de (meta|whatsapp)\b/,
-    requires: /\batende\b/,
-    fix: 'Atende no tiene aprobación de Meta.',
+    pattern:
+      /\b(partner|socio|proveedor|tech provider|bsp)( oficial)? de (meta|whatsapp)\b|\b(atende|somos)\b(?:(?!\b(no|ni)\b).){0,30}\b(tech provider|bsp|business solution provider)\b/,
+    requires: /\batende\b|\bsomos\b/,
+    fix: 'Usar la API oficial no es un estatus: nada de partner, Tech Provider, BSP ni aprobación de Meta.',
   },
   {
     id: 'sin-bloqueo',
@@ -77,15 +78,24 @@ export const claimRules: ClaimRule[] = [
   {
     id: 'promesa-de-whatsapp',
     pattern:
-      /\b(nunca|no) te va(n)? a (bloquear|banear|restringir|suspender)\b|\bwhatsapp (nunca|no) (te )?(bloquea|banea|restringe|suspende)\b/,
+      /\b(nunca|no) te va(n)? a (bloquear|banear|restringir|suspender)\b|\b(nunca|no) te (bloquean|banean|restringen|suspenden)\b|\bwhatsapp (nunca|no) (te )?(bloquea|banea|restringe|suspende)\b/,
     except: /\bpromet|\bgarantiz|\bnadie\b/,
-    fix: 'Nunca prometas que WhatsApp no va a restringir un número.',
+    fix: 'Nunca prometas que WhatsApp no va a restringir un número, por ninguna de las dos rutas.',
   },
   {
-    id: 'atende-api-oficial',
-    pattern: /\batende\b[^,]{0,50}\bapi oficial\b/,
-    except: /\batende\b.{0,50}\b(no|sin|ni)\b.{0,40}\bapi oficial\b/,
-    fix: 'Atende se conecta por QR. No es la API oficial de Meta.',
+    // The customer chooses the route, so denying the API is now the false claim.
+    // A sentence about the QR route itself ("el QR no es la API") stays fine.
+    id: 'niega-la-api',
+    pattern:
+      /\batende\b.{0,40}\bno (es|usa|tiene|ofrece|pasa por|trabaja con)( la)? api\b|^\s*no (es|usa|tiene)( la)? api oficial\b|\bcomo no (es|usa|tiene)( la)? api\b|\bapi oficial\b.{0,60}\bno (conviene|es para vos|es la opcion)\b|\bno (conviene|es para vos|es la opcion)\b.{0,50}\bapi oficial\b/,
+    fix: 'Decí "Elegís cómo conectar tu número: con la API oficial de Meta o con un QR."',
+  },
+  {
+    id: 'solo-qr',
+    pattern:
+      /\batende\b.{0,20}\bse conecta (solo |solamente |unicamente )?(por|con) (un )?qr\b|^\s*se conecta (solo |solamente |unicamente )?(por|con) (un )?qr\b/,
+    except: /\bapi\b|\beleg|\belig/,
+    fix: 'Decí "Elegís cómo conectar tu número: con la API oficial de Meta o con un QR."',
   },
   {
     id: 'tiempo-de-instalacion',

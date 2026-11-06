@@ -41,7 +41,7 @@ faq:
   - q: ¿Se pueden enviar recordatorios antes del ingreso?
     a: >-
       Atende no arranca conversaciones por su cuenta. Se pueden armar a pedido para
-      tu hotel. Considerá que el número se vincula por QR, y que los mensajes que el
+      tu hotel. Si el número está vinculado por QR, considerá que los mensajes que el
       huésped no espera aumentan el riesgo de que WhatsApp lo restrinja.
   - q: ¿Qué pasa con una urgencia de un huésped a la noche?
     a: >-
@@ -80,7 +80,7 @@ Ejemplo ilustrativo, con el hotel conectado a su sistema de reservas.
 >
 > **Asistente:** Te bloqueé la matrimonial del 14 al 16 de febrero a nombre de Elena, reserva 5406. Queda firme con la seña antes de mañana a las 12.
 
-La seña tiene su propia regla. Los huéspedes mandan la captura de la transferencia, y esa imagen no entra a Atende: recepción la ve en el celular del hotel, coteja la cuenta y recién ahí da la reserva por firme. La política de cancelación se escribe tal como la aplicás, y el asistente la repite sin negociar. Para el resto de las cotizaciones, sirve la [guía de presupuestos por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas), y si tu hotel tiene restaurante, la [guía para restaurantes](/blog/como-automatizar-whatsapp-restaurantes) cubre las mesas.
+La seña tiene su propia regla. Los huéspedes mandan la captura de la transferencia, y esa imagen no entra a Atende: recepción coteja la cuenta y recién ahí da la reserva por firme. La política de cancelación se escribe tal como la aplicás, y el asistente la repite sin negociar. Para el resto de las cotizaciones, sirve la [guía de presupuestos por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas), y si tu hotel tiene restaurante, la [guía para restaurantes](/blog/como-automatizar-whatsapp-restaurantes) cubre las mesas.
 
 ## Quien reservó por otro canal
 
@@ -109,6 +109,6 @@ El asistente contesta a cualquier hora, siempre que el servicio y la línea del 
 
 ## Mensajes antes de la llegada: a pedido y con cuidado
 
-Mandarle a cada huésped las instrucciones el día anterior suena simple, pero Atende no arranca conversaciones por su cuenta. Se puede armar a pedido. Antes de pedirlo, tené en cuenta esto: se conecta por QR y no es la API oficial de Meta, y un mensaje que el huésped no espera suma riesgo de restricción para la línea.
+Mandarle a cada huésped las instrucciones el día anterior suena simple, pero Atende no arranca conversaciones por su cuenta. Se puede armar a pedido. Antes de pedirlo, mirá cómo conectás la línea: por QR, un mensaje que el huésped no espera suma riesgo de restricción, y para avisos de todos los días conviene evaluar la API oficial de Meta.
 
 Hay una alternativa más simple: en la confirmación de la reserva, invitá al huésped a escribir antes de salir. Cuando lo haga, el asistente le responde cómo llegar, el horario y la cochera con lo que cargaste.

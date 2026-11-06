@@ -10,9 +10,10 @@ summary: >-
   turno se mueve solo. Necesita cinco cosas: agenda conectada, un disparador que
   lo mande, consentimiento, un texto claro y un plan para cada respuesta. Atende
   no manda recordatorios por su cuenta: se arman a pedido para cada negocio.
-  Escribir primero desde un número vinculado por QR tiene riesgo de restricción,
-  sobre todo sin consentimiento o en volumen. Con muchos turnos, o si tu sistema
-  de turnos ya los manda, puede convenirte otra vía.
+  Para escribir primero conviene evaluar la API oficial de Meta, con plantillas
+  aprobadas y tarifa por mensaje. Desde un número vinculado por QR hay riesgo de
+  restricción, sobre todo sin consentimiento o en volumen. Si tu sistema de
+  turnos ya los manda, usá eso.
 publishedAt: '2026-11-06'
 updatedAt: '2026-11-06'
 category: guias
@@ -35,16 +36,17 @@ faq:
       disparador propio. Sin ese armado, tu equipo los manda a mano.
   - q: ¿Pueden bloquear mi número por mandar recordatorios?
     a: >-
-      Hay riesgo. WhatsApp pide que cuentes con el permiso de cada persona, y puede
-      limitar o suspender cuentas que reciben quejas o mandan mensajes no
-      solicitados. En un número vinculado por QR nadie te puede garantizar que no
-      lo restrinja.
+      Hay riesgo, por cualquier ruta. WhatsApp pide que cuentes con el permiso de
+      cada persona, y puede limitar o suspender cuentas que reciben quejas o mandan
+      mensajes no solicitados. Nadie te puede garantizar que no restrinja un número,
+      y escribir primero desde un número vinculado por QR suma riesgo.
   - q: ¿Necesito la API oficial para mandar recordatorios?
     a: >-
       No siempre, pero es la vía pensada para que una empresa escriba primero: fuera
       de la ventana de 24 horas usa plantillas aprobadas y Meta cobra por mensaje.
-      Conviene mirarla si mandás muchos recordatorios o no podés arriesgar el
-      número. Atende no ofrece esa vía.
+      Conviene evaluarla si mandás muchos recordatorios. En Atende elegís cómo
+      conectar tu número, y cómo se arma el recordatorio lo vemos con vos en la
+      demo.
   - q: ¿Qué dato no debería ir en un recordatorio de un consultorio?
     a: >-
       Lo que revele información de salud: diagnóstico, tratamiento o una
@@ -71,7 +73,7 @@ sources:
 
 El martes a la tarde, una paciente recibe el recordatorio de su turno del miércoles. Contesta "no llego", el asistente le ofrece otro horario y el turno queda movido. El miércoles a las 10:30 queda libre para otra persona. Un recordatorio de turnos por WhatsApp vale eso: el aviso importa, y lo que pasa cuando la persona contesta importa más.
 
-Vamos de entrada con lo que hay. **Atende no manda recordatorios por su cuenta.** Responde cuando entra un mensaje. Los recordatorios se arman a pedido para cada negocio, conectados a su agenda, y escribir primero tiene un riesgo que conviene mirar antes de decidir.
+Vamos de entrada con lo que hay. **Atende no manda recordatorios por su cuenta.** Responde cuando entra un mensaje. Los recordatorios se arman a pedido para cada negocio, conectados a su agenda, y para escribir primero importa cómo esté conectado tu número.
 
 Ejemplo ilustrativo, con la agenda conectada y el recordatorio armado para ese consultorio:
 
@@ -128,14 +130,14 @@ El segundo tiene dos problemas. Expone un dato de salud en una pantalla de bloqu
 | "Cancelá" | Liberar el turno y avisar a la lista de espera si tenés | Escribir en la agenda |
 | "No me escriban más" | Dejar de mandarle y anotarlo | La política de WhatsApp pide [respetar esas solicitudes](https://whatsappbusiness.com/es-la/policy/) |
 | Una duda clínica | Pasarla a una persona | Regla en el contexto del asistente y estado **Necesita humano** |
-| Un audio o una foto | Nada: no le llega a Atende | Alguien que mire el teléfono. Avisalo en el texto: "respondé por escrito" |
+| Un audio o una foto | Nada: no le llega a Atende | Por QR, alguien que mire el teléfono. Avisalo en el texto: "respondé por escrito" |
 | Nada | Definir si se insiste o se llama | Tu criterio. Insistir por WhatsApp suma riesgo |
 
 La respuesta entra como cualquier otro mensaje de texto, así que de ahí en adelante el asistente trabaja igual que siempre. Si la agenda está conectada, puede mover el turno. Si no, junta el pedido y lo deja para tu equipo. En [turnos y reservas](/servicios/turnos-whatsapp) está cómo funciona esa parte.
 
-## El riesgo de escribir primero desde un número vinculado por QR
+## Escribir primero: qué cambia entre la API oficial y el QR
 
-Cuando un contacto te escribe y el asistente responde, la conversación la empezó esa persona. Con un recordatorio la empezás vos, y eso cambia las cosas. Atende se conecta por QR y no es la API oficial de Meta. Mandar mensajes no solicitados desde un número vinculado por QR puede hacer que WhatsApp restrinja ese número, y nadie te puede prometer que no va a pasar.
+Cuando un contacto te escribe y el asistente responde, la conversación la empezó esa persona. Con un recordatorio la empezás vos, y eso cambia las cosas. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Para escribir primero conviene evaluar la API oficial, que es la vía pensada para eso. Mandar mensajes no solicitados desde un número vinculado por QR puede hacer que WhatsApp restrinja ese número, y por ninguna de las dos rutas te pueden prometer que no va a pasar.
 
 La [política de WhatsApp](https://whatsappbusiness.com/es-la/policy/) dice que las personas pueden bloquear o reportar empresas, que sus sistemas pueden limitar los mensajes según esos comentarios y que WhatsApp puede limitar tu acceso si recibís demasiados comentarios negativos. Meta no publica un número de mensajes seguro.
 
@@ -147,18 +149,16 @@ Para bajar el riesgo, sin eliminarlo:
 - Sacá de la lista a quien pida no recibir más mensajes.
 - Arrancá con una parte de la agenda y mirá cómo responde la gente.
 
-Si tu número es el único canal de tu negocio, pensá qué pasaría si mañana no funciona.
-
-## Cuándo otra vía te conviene más
+## Qué vía mirar según tu agenda
 
 | Tu situación | Qué mirar |
 | --- | --- |
 | Tu sistema de turnos ya manda recordatorios | Usá eso. No sumes otro aviso para el mismo turno |
 | Pocos turnos por día y personas que ya te escriben | Mandalos a mano, o pedí un armado para tu agenda |
-| Muchos turnos por día, o gente que nunca te escribió | Mirá la API oficial de WhatsApp, con un proveedor |
-| Ese número no puede quedar fuera de servicio | Mirá la API oficial, o separá los avisos en otro canal |
+| Muchos turnos por día, o gente que nunca te escribió | Evaluá la API oficial de Meta, con plantillas |
+| Ese número no puede quedar fuera de servicio | Evaluá la API oficial, o separá los avisos en otro canal |
 
-La API oficial está pensada para que una empresa escriba primero. Según la [política](https://whatsappbusiness.com/es-la/policy/), fuera de las 24 horas desde el último mensaje de la persona solo podés usar plantillas aprobadas. Un recordatorio sin promoción, por un turno que la persona pidió, encaja en la descripción de [plantilla de utilidad](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization), aunque esa categoría la define Meta: los contenidos mixtos cuentan como marketing. Meta [cobra esos mensajes](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) según el país, y hoy Atende no ofrece esa vía. Si es la que te conviene, buscá un proveedor de la API.
+La API oficial está pensada para que una empresa escriba primero. Según la [política](https://whatsappbusiness.com/es-la/policy/), fuera de las 24 horas desde el último mensaje de la persona solo podés usar plantillas aprobadas. Un recordatorio sin promoción, por un turno que la persona pidió, encaja en la descripción de [plantilla de utilidad](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization), aunque esa categoría la define Meta: los contenidos mixtos cuentan como marketing. Meta [cobra esos mensajes](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) según el país, y eso es parte de lo que mirás al elegir. Si es la que te conviene, podés conectar tu número a Atende por esa vía. Los recordatorios también se arman a pedido: lo vemos con vos en la [demo](/demo).
 
 ## Si hoy no tenés nada armado
 

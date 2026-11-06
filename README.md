@@ -53,7 +53,7 @@ Solution pages, rubro pages, `/integraciones`, `/precios` and `/demo` support th
 
 The [October 2026 Search Console analysis](docs/search-console-2026-10-28.md) documents all seven exports, their limitations, the content priorities and the follow-up measurement plan.
 
-Keep product claims aligned with the working app. Connected actions are built on request for each business, so write them as conditional: "conectado a tu agenda, Atende reserva el turno". The current connection flow uses the QR experience shown in `app.atende.com.ar`; do not describe it as a Meta Business API approval flow. `AGENTS.md` at the workspace root holds the full rules, and `npm run check:claims` enforces the phrases that have gone wrong before.
+Keep product claims aligned with the working app. Connected actions are built on request for each business, so write them as conditional: "conectado a tu agenda, Atende reserva el turno". The customer chooses how to connect the number, Meta's official API or QR, and any page that explains the connection says so once: "Elegís cómo conectar tu número: con la API oficial de Meta o con un QR." Using the API is not a status, so never write partner, Tech Provider, BSP, verified or approved by Meta, and never promise that a number will not be restricted on either route. `AGENTS.md` at the workspace root holds the full rules, except that this owner decision of 2026-11-06 replaces its QR-only note, and `npm run check:claims` enforces the phrases that have gone wrong before.
 
 ## After a deploy
 

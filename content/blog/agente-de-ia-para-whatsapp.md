@@ -128,7 +128,7 @@ Los casos raros definen si vas a confiar en el agente:
 
 - **La herramienta da error.** El asistente no debería confirmar nada. Avisa que no pudo y deriva si hace falta.
 - **La conexión no carga.** La conversación sigue sin esa herramienta. Hoy el panel no te avisa, así que revisá lo que entra, sobre todo la primera semana.
-- **El contacto manda un audio.** No le llega a Atende, igual que fotos, documentos, ubicaciones y mensajes de grupos. Esos mensajes se ven solo en el teléfono.
+- **El contacto manda un audio.** No le llega a Atende, igual que fotos, documentos, ubicaciones y mensajes de grupos. Si conectaste por QR, esos mensajes se ven solo en el teléfono.
 - **Hay que seguir a mano.** Marcá la conversación como **Necesita humano** y el asistente deja de responder en ese chat. Responder o asignarte no lo frena. Te lo contamos en detalle en [atender entre varios](/blog/whatsapp-varios-usuarios).
 
 Tu equipo ve toda la conversación en la bandeja, con lo que el asistente le dijo al contacto. Lo que todavía no muestra es qué herramienta usó en cada paso: lo tenemos planeado.
@@ -139,7 +139,7 @@ Tu equipo ve toda la conversación en la bandeja, con lo que el asistente le dij
 2. ¿Me mostrás una reserva o un pedido terminado en un sistema real, sin un paso manual en el medio?
 3. ¿Qué le dice el asistente al cliente si la acción falla?
 4. ¿Quién arma la conexión, quién la mantiene y qué pasa si cambio de sistema?
-5. ¿Cómo se conecta a WhatsApp? Atende se conecta por QR y no es la API oficial de Meta, y otros proveedores trabajan distinto.
+5. ¿Cómo se conecta a WhatsApp? En Atende elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Otros proveedores trabajan distinto.
 
 ## Cuándo te alcanza con un chatbot
 
