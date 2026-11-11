@@ -86,6 +86,32 @@ export function DemoForm() {
         Con el nombre de tu negocio y una tarea alcanza. Revisás y enviás el
         mensaje desde WhatsApp o email. Los campos con * son obligatorios.
       </p>
+      <noscript>
+        <div className="mt-5 leading-relaxed">
+          <p>
+            Si el formulario no se activa, escribinos directo por WhatsApp o
+            email.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-x-6">
+            <a
+              href={buildWaLink(
+                'Hola, quiero pedir una demo de Atende para mi negocio',
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 min-w-11 items-center font-semibold underline underline-offset-4"
+            >
+              WhatsApp ↗
+            </a>
+            <a
+              href={`mailto:${site.email}`}
+              className="inline-flex min-h-11 min-w-11 items-center font-semibold underline underline-offset-4"
+            >
+              Email
+            </a>
+          </div>
+        </div>
+      </noscript>
       <form onSubmit={openDraft} className="mt-6" onChange={() => setMessage('')}>
         <fieldset
           disabled={!ready}
@@ -207,12 +233,6 @@ export function DemoForm() {
           </button>
         </fieldset>
       </form>
-      <noscript>
-        <p className="mt-5 leading-relaxed">
-          Para armar el mensaje con este formulario necesitás JavaScript. También
-          podés usar los enlaces de WhatsApp y email de esta página.
-        </p>
-      </noscript>
       {message && (
         <div
           ref={preview}
