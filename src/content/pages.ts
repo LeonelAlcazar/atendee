@@ -40,7 +40,7 @@ export const pages = {
     title: 'Precios y planes del bot de WhatsApp con IA',
     description:
       'Cómo se cobra Atende: respuestas del asistente por plan, Plan CRM manual y conexiones a pedido. Los precios vigentes se ven en la app antes de pagar.',
-    updated: '2026-11-06',
+    updated: '2026-11-11',
   },
   faq: {
     path: '/preguntas-frecuentes',

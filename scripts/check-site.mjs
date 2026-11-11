@@ -366,6 +366,24 @@ try {
     );
   }
   const home = documents.get('/');
+  const appOrigin = 'https://app.atende.com.ar';
+  assert.equal(
+    documents.get('/precios')('a[data-cta="pricing-plans"]').attr('href'),
+    `${appOrigin}/planes`,
+    'Pricing must preserve the fixed app-owned plan entry without plan or return parameters',
+  );
+  assert.equal(
+    home('a[data-cta="hero-signup"]').attr('href'),
+    appOrigin,
+    'Generic account creation must keep its neutral app entry',
+  );
+  for (const [path, $] of documents) {
+    assert.equal(
+      $('a[data-cta="footer-signup"]').attr('href'),
+      appOrigin,
+      `${path}: generic footer account creation must keep its neutral app entry`,
+    );
+  }
   for (const placement of ['hero-demo', 'final-demo']) {
     assert.equal(
       home(`a[data-cta="${placement}"]`).attr('href'),

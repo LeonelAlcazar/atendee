@@ -17,6 +17,7 @@ import { FactRows } from '@/components/servicios/FactRows';
 import { StepCards } from '@/components/servicios/StepCards';
 
 export const metadata = createPageMetadata(pages.pricing);
+const appPlansUrl = new URL('/planes', site.appUrl).toString();
 const breadcrumbs = [
   { name: 'Inicio', path: '/' },
   { name: 'Precios', path: '/precios' },
@@ -67,7 +68,7 @@ const credits = [
   },
   {
     label: 'Créditos de bienvenida',
-    text: '100 de bienvenida, una vez. Se activan desde la app, sin tarjeta, y te sirven para probar desde otro número.',
+    text: 'Si tenés créditos de bienvenida disponibles, podés activarlos desde la app sin tarjeta. La cantidad y las condiciones se muestran en Suscripción.',
   },
 ];
 
@@ -97,7 +98,7 @@ const checklist = [
   },
   {
     label: 'Tu equipo',
-    text: 'Quién mira la bandeja, quién toma las conversaciones marcadas y quién revisa la pantalla Plan.',
+    text: 'Quién mira la bandeja, quién toma las conversaciones marcadas y quién revisa la pantalla Suscripción.',
   },
 ];
 
@@ -120,7 +121,7 @@ export default function PricingPage() {
               sub="Depende de dos cosas: el plan, que define cuántas respuestas da el asistente por mes, y las conexiones con tu sistema, que se cotizan para cada negocio. Los planes vigentes se ven en la app antes de pagar."
             />
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href={site.appUrl} data-cta="pricing-plans" size="lg">
+              <Button href={appPlansUrl} data-cta="pricing-plans" size="lg">
                 Ver planes en la app →
               </Button>
               <Button
@@ -133,7 +134,8 @@ export default function PricingPage() {
               </Button>
             </div>
             <p className="mt-4 text-sm text-mute">
-              Para ver los planes, primero creá tu espacio o entrá a tu cuenta.
+              Entrá a tu cuenta para ver los planes de tu espacio. Si todavía no
+              tenés uno, crealo con el nombre de tu negocio.
             </p>
           </div>
           <ChatMockup
@@ -234,8 +236,8 @@ export default function PricingPage() {
               </h3>
               <p className="mt-3 leading-relaxed">
                 Atende no manda una alerta cuando quedan pocas respuestas. Mirá
-                la pantalla Plan de la app, donde ves tu plan, cuándo renueva y
-                tus créditos disponibles.
+                la pantalla Suscripción de la app, donde ves tu plan, cuándo
+                renueva y tus créditos disponibles.
               </p>
             </div>
             <div className="rounded-lg border-2 border-ink bg-bg p-6 shadow-[var(--shadow-brut-sm)]">
@@ -243,9 +245,10 @@ export default function PricingPage() {
                 Sin plan y sin créditos
               </h3>
               <p className="mt-3 leading-relaxed text-mute">
-                El panel se bloquea, salvo Plan e Integraciones, y los mensajes
-                nuevos dejan de entrar a Atende. Siguen llegando a tu WhatsApp,
-                pero no quedan en la bandeja.
+                La bandeja queda bloqueada. Podés seguir entrando a Suscripción,
+                Ajustes y Aplicaciones conectadas. Los mensajes nuevos dejan de
+                entrar a Atende. Siguen llegando a tu WhatsApp, pero no quedan en
+                la bandeja.
               </p>
             </div>
           </div>

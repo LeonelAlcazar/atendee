@@ -7,11 +7,11 @@ export const pricingFaq: FaqItem[] = [
   },
   {
     q: '¿Dónde veo el precio de los planes?',
-    a: 'Creá tu espacio y entrá a Plan en la app. Ahí ves los planes habilitados, sus límites y su precio antes de pagar. También podés preguntarnos por WhatsApp o email.',
+    a: 'Abrí «Ver planes en la app» y entrá a tu cuenta. Si todavía no tenés un espacio, crealo con el nombre de tu negocio. En Suscripción ves sus planes, precios y límites. También podés preguntarnos por WhatsApp o email.',
   },
   {
     q: '¿Qué es un crédito?',
-    a: 'Un crédito es una respuesta del asistente. Se usan después de la cantidad de respuestas del plan. Cada espacio tiene 100 créditos de bienvenida, una vez, que se activan sin tarjeta.',
+    a: 'Un crédito es una respuesta del asistente. Se usan después de la cantidad de respuestas del plan. En Suscripción ves si tenés créditos de bienvenida disponibles, su cantidad y cómo activarlos sin tarjeta.',
   },
   {
     q: '¿Una conversación cuenta como una sola respuesta?',
@@ -19,7 +19,7 @@ export const pricingFaq: FaqItem[] = [
   },
   {
     q: '¿Qué pasa si se terminan las respuestas?',
-    a: 'El asistente deja de responder y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja para que tu equipo conteste a mano. Por eso conviene mirar la pantalla Plan de la app.',
+    a: 'El asistente deja de responder y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja para que tu equipo conteste a mano. Por eso conviene mirar la pantalla Suscripción de la app.',
   },
   {
     q: '¿Las conexiones con mi sistema vienen en el plan?',
