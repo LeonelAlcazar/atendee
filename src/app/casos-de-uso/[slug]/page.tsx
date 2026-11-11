@@ -11,6 +11,7 @@ import { ChatMockup } from '@/components/ui/ChatMockup';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { rubros } from '@/content/rubros';
 import { createPageMetadata } from '@/lib/metadata';
+import { buildDemoLink } from '@/lib/leads';
 import { pageGraph } from '@/lib/structured-data';
 
 export const dynamicParams = false;
@@ -68,7 +69,7 @@ export default async function RubroPage({ params }: Props) {
               <RichText text={rubro.supervision} />
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/demo" data-cta={`rubro-${rubro.slug}-hero-demo`} size="lg">
+              <Button href={buildDemoLink(rubro.slug)} data-cta={`rubro-${rubro.slug}-hero-demo`} size="lg">
                 {rubro.cta.demoLabel}{'\u00a0'}→
               </Button>
             </div>
