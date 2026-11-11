@@ -4,6 +4,7 @@ import { pricingFaq } from '@/content/pricing';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
 import { buildDemoLink } from '@/lib/leads';
+import { getPublicPlans } from '@/lib/public-plans';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -17,6 +18,7 @@ import { FactRows } from '@/components/servicios/FactRows';
 import { StepCards } from '@/components/servicios/StepCards';
 
 export const metadata = createPageMetadata(pages.pricing);
+export const dynamic = 'force-dynamic';
 const appPlansUrl = new URL('/planes', site.appUrl).toString();
 const breadcrumbs = [
   { name: 'Inicio', path: '/' },
@@ -25,24 +27,6 @@ const breadcrumbs = [
 
 const heading =
   'font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl';
-
-const options = [
-  {
-    name: 'Plan CRM',
-    tag: 'Manual, sin asistente',
-    text: 'Bandeja compartida, etiquetas, notas internas y WhatsApp MCP. Tu equipo contesta a mano. No tiene asistente, así que no responde solo aunque tengas créditos.',
-  },
-  {
-    name: 'Planes con IA',
-    tag: 'Starter, Pro y Business',
-    text: 'Todo lo anterior más el asistente: responde mensajes de texto, deriva, cierra conversaciones, recuerda datos y manda fotos y videos. Cambia la cantidad de respuestas por mes.',
-  },
-  {
-    name: 'Conexiones',
-    tag: 'A pedido',
-    text: 'Para que reserve turnos, registre pedidos o cotice en tu sistema. Se arman y se cotizan para cada negocio, y se usan sobre un plan con IA.',
-  },
-];
 
 const comparison: [string, string, string][] = [
   ['Bandeja compartida, etiquetas y notas', 'Sí', 'Sí'],
@@ -60,7 +44,7 @@ const credits = [
   },
   {
     label: 'Límite del plan',
-    text: 'Cada plan con IA trae una cantidad de respuestas por mes. La ves en la app antes de pagar.',
+    text: 'Cada plan con IA trae una cantidad de respuestas por mes. La cantidad figura en su catálogo.',
   },
   {
     label: 'Crédito',
@@ -102,7 +86,8 @@ const checklist = [
   },
 ];
 
-export default function PricingPage() {
+export default async function PricingPage() {
+  const plans = await getPublicPlans();
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
@@ -118,11 +103,11 @@ export default function PricingPage() {
                   <span className="text-coral">que reserva, cotiza y toma pedidos?</span>
                 </>
               }
-              sub="Depende de dos cosas: el plan, que define cuántas respuestas da el asistente por mes, y las conexiones con tu sistema, que se cotizan para cada negocio. Los planes vigentes se ven en la app antes de pagar."
+              sub="El costo depende del plan y de las conexiones con tu sistema, que se cotizan para cada negocio. Acá podés consultar los planes generales sin crear una cuenta."
             />
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href={appPlansUrl} data-cta="pricing-plans" size="lg">
-                Ver planes en la app →
+                Continuar en la app →
               </Button>
               <Button
                 href={buildDemoLink('precios')}
@@ -133,10 +118,6 @@ export default function PricingPage() {
                 Pedí una demo
               </Button>
             </div>
-            <p className="mt-4 text-sm text-mute">
-              Entrá a tu cuenta para ver los planes de tu espacio. Si todavía no
-              tenés uno, crealo con el nombre de tu negocio.
-            </p>
           </div>
           <ChatMockup
             caption="Ejemplo ilustrativo, con la agenda conectada"
@@ -156,21 +137,56 @@ export default function PricingPage() {
 
       <section className="border-b-2 border-ink bg-surface py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className={heading}>Tres opciones, y qué trae cada una</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {options.map((option) => (
-              <article
-                key={option.name}
-                className="flex flex-col items-start rounded-lg border-2 border-ink bg-bg p-6 shadow-[var(--shadow-brut-sm)]"
-              >
-                <Tag>{option.tag}</Tag>
-                <h3 className="mt-4 font-display text-2xl font-semibold tracking-[-0.02em]">
-                  {option.name}
-                </h3>
-                <p className="mt-3 leading-relaxed text-mute">{option.text}</p>
-              </article>
-            ))}
-          </div>
+          <h2 className={heading}>Planes generales</h2>
+          {plans === null ? (
+            <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+              No pudimos cargar los planes. Podés ver los de tu espacio en la
+              app o consultarnos por WhatsApp o email.
+            </p>
+          ) : plans.length === 0 ? (
+            <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+              No hay planes publicados en este momento. Podés consultarnos por
+              WhatsApp o email.
+            </p>
+          ) : (
+            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {plans.map((plan, index) => (
+                <article
+                  key={`${plan.name}-${index}`}
+                  data-public-plan
+                  className="flex min-w-0 flex-col items-start rounded-lg border-2 border-ink bg-bg p-6 break-words shadow-[var(--shadow-brut-sm)]"
+                >
+                  {plan.recommended && <Tag>Recomendado</Tag>}
+                  <h3 className="mt-4 max-w-full font-display text-2xl font-semibold tracking-[-0.02em]">
+                    {plan.name}
+                  </h3>
+                  <p className="mt-3 max-w-full font-display text-2xl font-semibold">
+                    {plan.priceLabel}
+                  </p>
+                  {plan.bestFor && (
+                    <p className="mt-3 max-w-full leading-relaxed text-mute">
+                      {plan.bestFor}
+                    </p>
+                  )}
+                  <p className="mt-4 max-w-full leading-relaxed text-mute">
+                    {!plan.automationAllowed
+                      ? 'Atención manual, sin asistente.'
+                      : plan.monthlyAgentResponseLimit === 0
+                        ? 'Sin respuestas mensuales incluidas.'
+                        : `Hasta ${plan.monthlyAgentResponseLimit.toLocaleString('es-AR')} respuestas del asistente por mes.`}
+                  </p>
+                </article>
+              ))}
+            </div>
+          )}
+          <p className="mt-4 text-sm text-mute">
+            En tu espacio ves los planes que tenés disponibles.
+          </p>
+          <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+            Las conexiones para reservar turnos, registrar pedidos o cotizar en
+            tu sistema se arman y se cotizan para cada negocio. Se usan sobre un
+            plan con IA.
+          </p>
           <div className="mt-8 overflow-hidden rounded-lg border-2 border-ink bg-bg shadow-[var(--shadow-brut)]">
             <table className="w-full table-fixed border-collapse text-left text-sm md:text-base">
               <caption className="sr-only">

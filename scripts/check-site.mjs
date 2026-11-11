@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
+import { createServer as createHttpServer } from 'node:http';
 import { once } from 'node:events';
 import { loadPosts, parsePost } from '../src/lib/blog-content.ts';
 import { toSchemaDate } from '../src/lib/dates.ts';
@@ -27,9 +28,52 @@ await new Promise((resolve, reject) =>
 );
 const root = new URL('../', import.meta.url);
 const base = `http://127.0.0.1:${port}`;
+let catalogStatus = 200;
+let catalogData = [
+  {
+    name: 'Plan público de prueba',
+    priceLabel: 'Importe de prueba no numérico',
+    bestFor: 'Negocio de prueba',
+    monthlyAgentResponseLimit: 1234,
+    automationAllowed: true,
+    recommended: true,
+  },
+  {
+    name: 'Plan manual de prueba',
+    priceLabel: 'Precio manual de prueba',
+    bestFor: null,
+    monthlyAgentResponseLimit: 0,
+    automationAllowed: false,
+    recommended: false,
+  },
+  {
+    name: 'Plan sin cupo de prueba',
+    priceLabel: 'Precio sin cupo de prueba',
+    bestFor: null,
+    monthlyAgentResponseLimit: 0,
+    automationAllowed: true,
+    recommended: false,
+  },
+];
+const catalogRequests = [];
+const catalog = createHttpServer((request, response) => {
+  catalogRequests.push({ path: request.url, headers: request.headers });
+  response.writeHead(catalogStatus, {
+    'content-type': 'application/json',
+    'cache-control': 'no-store',
+  });
+  response.end(JSON.stringify(catalogData));
+});
+catalog.listen(0, '127.0.0.1');
+await once(catalog, 'listening');
 const child = spawn(process.execPath, ['.next/standalone/server.js'], {
   cwd: root,
-  env: { ...process.env, PORT: String(port), HOSTNAME: '127.0.0.1' },
+  env: {
+    ...process.env,
+    PORT: String(port),
+    HOSTNAME: '127.0.0.1',
+    ATENDE_PUBLIC_PLANS_URL: `http://127.0.0.1:${catalog.address().port}/api/public/plans`,
+  },
   stdio: ['ignore', 'pipe', 'pipe'],
 });
 let serverOutput = '';
@@ -372,6 +416,112 @@ try {
     `${appOrigin}/planes`,
     'Pricing must preserve the fixed app-owned plan entry without plan or return parameters',
   );
+  const pricing = documents.get('/precios');
+  const cards = pricing('[data-public-plan]');
+  assert.equal(
+    cards.length,
+    3,
+    'Public plans must render in the initial HTTP HTML',
+  );
+  assert.deepEqual(
+    cards.map((_, card) => pricing(card).find('h3').text()).get(),
+    catalogData.map((plan) => plan.name),
+  );
+  for (const plan of catalogData)
+    assert.ok(pricing('main').text().includes(plan.priceLabel));
+  assert.equal(
+    cards.find('a, button, form').length,
+    0,
+    'Public plan cards are read-only',
+  );
+  assert.ok(
+    cards.text().includes('Hasta 1.234 respuestas del asistente por mes.'),
+  );
+  assert.ok(cards.text().includes('Atención manual, sin asistente.'));
+  assert.ok(cards.text().includes('Sin respuestas mensuales incluidas.'));
+  assert.equal(
+    cards.filter((_, card) => pricing(card).text().includes('Recomendado'))
+      .length,
+    1,
+  );
+  assert.equal(
+    pricing('a[data-cta="pricing-plans"]').text().trim(),
+    'Continuar en la app →',
+  );
+
+  catalogData = [
+    {
+      ...catalogData[0],
+      name: 'Plan actualizado de prueba',
+      priceLabel: 'Importe actualizado de prueba',
+      monthlyAgentResponseLimit: 567,
+    },
+  ];
+  const refreshedPricing = load(await read('/precios'));
+  assert.equal(refreshedPricing('[data-public-plan]').length, 1);
+  assert.ok(
+    refreshedPricing('[data-public-plan]')
+      .text()
+      .includes('Importe actualizado de prueba'),
+  );
+  assert.ok(
+    refreshedPricing('[data-public-plan]')
+      .text()
+      .includes('Hasta 567 respuestas'),
+  );
+  assert.ok(
+    !refreshedPricing('main').text().includes('Importe de prueba no numérico'),
+  );
+  catalogData = [];
+  const emptyPricing = load(await read('/precios'));
+  assert.equal(emptyPricing('[data-public-plan]').length, 0);
+  assert.ok(
+    emptyPricing('main')
+      .text()
+      .includes('No hay planes publicados en este momento.'),
+  );
+  assert.ok(
+    !emptyPricing('main').text().includes('Importe actualizado de prueba'),
+  );
+  catalogStatus = 503;
+  catalogData = [{ name: 'UPSTREAM_PRIVATE_CANARY' }];
+  const unavailablePricing = load(await read('/precios'));
+  assert.equal(unavailablePricing('[data-public-plan]').length, 0);
+  assert.ok(
+    unavailablePricing('main').text().includes('No pudimos cargar los planes.'),
+  );
+  assert.ok(
+    !unavailablePricing('main').text().includes('UPSTREAM_PRIVATE_CANARY'),
+  );
+  catalogStatus = 200;
+  catalogData = [
+    {
+      name: 'PRIVATE_PLAN_CANARY',
+      priceLabel: 'PRIVATE_PRICE_CANARY',
+      bestFor: null,
+      monthlyAgentResponseLimit: 1,
+      automationAllowed: true,
+      recommended: false,
+      tenantId: 'PRIVATE_TENANT_CANARY',
+    },
+  ];
+  const invalidPricing = load(await read('/precios'));
+  assert.equal(invalidPricing('[data-public-plan]').length, 0);
+  assert.ok(
+    invalidPricing('main').text().includes('No pudimos cargar los planes.'),
+  );
+  assert.ok(!invalidPricing('main').text().includes('PRIVATE_PLAN_CANARY'));
+  assert.ok(!invalidPricing('main').text().includes('PRIVATE_PRICE_CANARY'));
+  assert.ok(
+    catalogRequests.length >= 5,
+    'Pricing must reload the uncached catalog',
+  );
+  for (const request of catalogRequests) {
+    assert.equal(request.path, '/api/public/plans');
+    assert.equal(request.headers.authorization, undefined);
+    assert.equal(request.headers.cookie, undefined);
+    assert.equal(request.headers['x-tenant-id'], undefined);
+  }
   assert.equal(
     home('a[data-cta="hero-signup"]').attr('href'),
     appOrigin,
@@ -596,11 +746,17 @@ try {
     `Verified ${documents.size} HTTP pages and ${posts.length} articles: metadata, canonicals, social cards, crawlability, visible structured data, sitemap, links, anchors, sales CTAs, redirects, llms.txt, IndexNow key and ISR.`,
   );
 } finally {
-  if (child.exitCode === null) {
-    const stopped = once(child, 'exit');
-    child.kill('SIGTERM');
-    const killTimer = setTimeout(() => child.kill('SIGKILL'), 5000);
-    await stopped;
-    clearTimeout(killTimer);
+  try {
+    if (child.exitCode === null) {
+      const stopped = once(child, 'exit');
+      child.kill('SIGTERM');
+      const killTimer = setTimeout(() => child.kill('SIGKILL'), 5000);
+      await stopped;
+      clearTimeout(killTimer);
+    }
+  } finally {
+    await new Promise((resolve, reject) =>
+      catalog.close((error) => (error ? reject(error) : resolve())),
+    );
   }
 }
