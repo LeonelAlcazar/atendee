@@ -91,7 +91,7 @@ describe('site entities', () => {
       address: { addressLocality: 'Córdoba', addressCountry: 'AR' },
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+543512901337',
+        telephone: '+543518764951',
         email: 'hola@atende.com.ar',
         availableLanguage: 'es',
       },
