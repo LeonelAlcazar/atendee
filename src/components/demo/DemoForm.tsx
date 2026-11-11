@@ -12,6 +12,7 @@ import {
 } from '@/lib/leads';
 import { buildWaLink } from '@/lib/wa';
 import { trackConversion } from '@/lib/conversions';
+import { recordDemoStarted, recordPreparedDemo } from '@/lib/metrics';
 import { Button } from '@/components/ui/Button';
 
 const field =
@@ -59,6 +60,7 @@ export function DemoForm() {
       submitter instanceof HTMLButtonElement && submitter.value === 'email'
         ? 'email'
         : 'whatsapp';
+    recordPreparedDemo(destination);
     trackConversion({
       event: 'atende_demo_prepared',
       page: '/demo',
@@ -112,7 +114,20 @@ export function DemoForm() {
           </div>
         </div>
       </noscript>
-      <form onSubmit={openDraft} className="mt-6" onChange={() => setMessage('')}>
+      <form
+        onSubmit={openDraft}
+        className="mt-6"
+        onChange={(event) => {
+          setMessage('');
+          const input = event.target;
+          if (
+            event.nativeEvent.isTrusted &&
+            ((input instanceof HTMLInputElement && input.name === 'company') ||
+              (input instanceof HTMLSelectElement && input.name === 'task'))
+          )
+            recordDemoStarted();
+        }}
+      >
         <fieldset
           disabled={!ready}
           className="grid min-w-0 gap-5 disabled:opacity-60"

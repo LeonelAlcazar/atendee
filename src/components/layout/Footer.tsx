@@ -109,7 +109,7 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href={`mailto:${site.email}`} className={linkClass}>
+              <a href={`mailto:${site.email}`} data-cta="footer-email" className={linkClass}>
                 {site.email}
               </a>
             </li>

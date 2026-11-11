@@ -85,6 +85,7 @@ export default function DemoPage() {
               </a>
               <a
                 href={`mailto:${site.email}`}
+                data-cta="demo-direct-email"
                 className="flex min-h-11 items-center font-semibold underline underline-offset-4"
               >
                 {site.email}
