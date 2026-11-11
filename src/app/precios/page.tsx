@@ -3,6 +3,7 @@ import { pages } from '@/content/pages';
 import { pricingFaq } from '@/content/pricing';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
+import { buildDemoLink } from '@/lib/leads';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -123,7 +124,7 @@ export default function PricingPage() {
                 Ver planes en la app →
               </Button>
               <Button
-                href="/demo"
+                href={buildDemoLink('precios')}
                 data-cta="pricing-demo"
                 variant="outline"
                 size="lg"
@@ -307,7 +308,10 @@ export default function PricingPage() {
       </section>
 
       <Faq items={pricingFaq} />
-      <CtaFinal context="Hola, quiero saber cuánto me saldría Atende para mi negocio" />
+      <CtaFinal
+        context="Hola, quiero saber cuánto me saldría Atende para mi negocio"
+        demoSource="precios"
+      />
       <JsonLd
         value={pageGraph({ ...pages.pricing, breadcrumbs, faq: pricingFaq })}
       />

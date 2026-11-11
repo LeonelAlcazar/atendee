@@ -9,25 +9,77 @@ export const demoTasks = [
   'Todavía no lo sé',
 ] as const;
 
-const demoTasksByRubro: Record<string, (typeof demoTasks)[number]> = {
-  'clinicas-y-consultorios': demoTasks[0],
-  'peluquerias-y-estetica': demoTasks[0],
-  'restaurantes-y-hoteles': demoTasks[1],
-  'comercios-y-distribuidoras': demoTasks[2],
-  'concesionarias-e-inmobiliarias': demoTasks[3],
-  'servicios-profesionales': demoTasks[4],
+type DemoSource = {
+  path: string;
+  task?: (typeof demoTasks)[number];
 };
 
-export function demoTaskForRubro(rubro: string | null): string | undefined {
-  return rubro && Object.hasOwn(demoTasksByRubro, rubro)
-    ? demoTasksByRubro[rubro]
+const demoSources: Record<string, DemoSource> = {
+  'clinicas-y-consultorios': {
+    path: '/casos-de-uso/clinicas-y-consultorios',
+    task: demoTasks[0],
+  },
+  'peluquerias-y-estetica': {
+    path: '/casos-de-uso/peluquerias-y-estetica',
+    task: demoTasks[0],
+  },
+  'restaurantes-y-hoteles': {
+    path: '/casos-de-uso/restaurantes-y-hoteles',
+    task: demoTasks[1],
+  },
+  'comercios-y-distribuidoras': {
+    path: '/casos-de-uso/comercios-y-distribuidoras',
+    task: demoTasks[2],
+  },
+  'concesionarias-e-inmobiliarias': {
+    path: '/casos-de-uso/concesionarias-e-inmobiliarias',
+    task: demoTasks[3],
+  },
+  'servicios-profesionales': {
+    path: '/casos-de-uso/servicios-profesionales',
+    task: demoTasks[4],
+  },
+  'turnos-whatsapp': {
+    path: '/servicios/turnos-whatsapp',
+    task: demoTasks[0],
+  },
+  'ventas-whatsapp': {
+    path: '/servicios/ventas-whatsapp',
+    task: demoTasks[2],
+  },
+  'atencion-automatica-whatsapp': {
+    path: '/servicios/atencion-automatica-whatsapp',
+    task: demoTasks[5],
+  },
+  integraciones: { path: '/integraciones' },
+  precios: { path: '/precios' },
+};
+
+function knownDemoSource(source?: string | null): DemoSource | undefined {
+  return source && Object.hasOwn(demoSources, source)
+    ? demoSources[source]
     : undefined;
 }
 
-export function buildDemoLink(rubro: string): string {
-  return demoTaskForRubro(rubro)
-    ? `/demo?rubro=${encodeURIComponent(rubro)}`
-    : '/demo';
+export function getDemoContext(
+  search: URLSearchParams,
+): (DemoSource & { source: string }) | undefined {
+  const parameter = search.has('desde') ? 'desde' : 'rubro';
+  if (search.getAll(parameter).length !== 1) return undefined;
+  const source = search.get(parameter);
+  const context = knownDemoSource(source);
+  if (!source || !context) return undefined;
+  if (parameter === 'rubro' && !context.path.startsWith('/casos-de-uso/')) {
+    return undefined;
+  }
+  return { source, ...context };
+}
+
+export function buildDemoLink(source?: string): string {
+  const context = knownDemoSource(source);
+  if (!source || !context) return '/demo';
+  const parameter = context.path.startsWith('/casos-de-uso/') ? 'rubro' : 'desde';
+  return `/demo?${parameter}=${encodeURIComponent(source)}`;
 }
 
 export const demoSystems = [
@@ -53,7 +105,7 @@ export type LeadDetails = {
   system?: string;
   volume?: string;
   notes?: string;
-  rubro?: string;
+  source?: string;
 };
 
 export function buildLeadMessage({
@@ -62,8 +114,9 @@ export function buildLeadMessage({
   system,
   volume,
   notes,
-  rubro,
+  source,
 }: LeadDetails): string {
+  const context = knownDemoSource(source);
   return [
     'Hola, quiero pedir una demo de Atende para mi negocio.',
     `Negocio: ${company.trim().slice(0, 100)}`,
@@ -73,8 +126,8 @@ export function buildLeadMessage({
       ? [`Consultas por WhatsApp al mes: ${volume.trim()}`]
       : []),
     ...(notes?.trim() ? [`Contexto: ${notes.trim().slice(0, 600)}`] : []),
-    ...(rubro && demoTaskForRubro(rubro)
-      ? [`Caso de uso: atende.com.ar/casos-de-uso/${rubro}`]
+    ...(context
+      ? [`Referencia: atende.com.ar${context.path}`]
       : []),
     'Origen: atende.com.ar/demo',
   ].join('\n');

@@ -6,9 +6,9 @@ import { site } from '@/content/site';
 import {
   buildLeadMessage,
   demoSystems,
-  demoTaskForRubro,
   demoTasks,
   demoVolumes,
+  getDemoContext,
 } from '@/lib/leads';
 import { buildWaLink } from '@/lib/wa';
 import { trackConversion } from '@/lib/conversions';
@@ -23,13 +23,12 @@ export function DemoForm() {
   const [task, setTask] = useState('');
   const preview = useRef<HTMLDivElement>(null);
   const taskEdited = useRef(false);
-  const sourceRubro = useRef<string | undefined>(undefined);
+  const source = useRef<string | undefined>(undefined);
   useEffect(() => {
-    const rubro = new URLSearchParams(window.location.search).get('rubro');
-    const presetTask = demoTaskForRubro(rubro);
-    if (rubro && presetTask) {
-      sourceRubro.current = rubro;
-      if (!taskEdited.current) setTask(presetTask);
+    const context = getDemoContext(new URLSearchParams(window.location.search));
+    if (context) {
+      source.current = context.source;
+      if (context.task && !taskEdited.current) setTask(context.task);
     }
     setReady(true);
   }, []);
@@ -52,7 +51,7 @@ export function DemoForm() {
       system: String(form.get('system') ?? ''),
       volume: String(form.get('volume') ?? ''),
       notes: String(form.get('notes') ?? ''),
-      rubro: sourceRubro.current,
+      source: source.current,
     });
     setMessage(draft);
     const submitter = (event.nativeEvent as SubmitEvent).submitter;

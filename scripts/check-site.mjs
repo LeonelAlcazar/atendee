@@ -349,6 +349,31 @@ try {
     );
   }
 
+  for (const { path, source, count } of [
+    ...servicios.map((service) => ({
+      path: `/servicios/${service.slug}`,
+      source: service.slug,
+      count: 2,
+    })),
+    { path: '/integraciones', source: 'integraciones', count: 3 },
+    { path: '/precios', source: 'precios', count: 2 },
+  ]) {
+    const $ = documents.get(path);
+    assert.equal(
+      $(`a[href="/demo?desde=${encodeURIComponent(source)}"]`, 'main').length,
+      count,
+      `${path}: demo CTAs preserve the known source`,
+    );
+  }
+  const home = documents.get('/');
+  for (const placement of ['hero-demo', 'final-demo']) {
+    assert.equal(
+      home(`a[data-cta="${placement}"]`).attr('href'),
+      '/demo',
+      'Homepage demo CTAs must leave the task choice open',
+    );
+  }
+
   for (const path of [
     '/does-not-exist',
     '/servicios/does-not-exist',

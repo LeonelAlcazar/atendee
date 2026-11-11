@@ -3,9 +3,9 @@ import {
   buildDemoLink,
   buildLeadMessage,
   demoSystems,
-  demoTaskForRubro,
   demoTasks,
   demoVolumes,
+  getDemoContext,
 } from './leads';
 import { rubros } from '@/content/rubros';
 import { buildWaLink } from './wa';
@@ -77,48 +77,115 @@ describe('qualified sales inquiry', () => {
   });
 });
 
-describe('rubro demo context', () => {
-  it('offers an editable task preset for every published rubro', () => {
+describe('demo source context', () => {
+  it('preserves legacy links and task presets for every published rubro', () => {
     for (const rubro of rubros) {
       const url = new URL(buildDemoLink(rubro.slug), 'https://www.atende.com.ar');
       expect(url.pathname).toBe('/demo');
       expect(url.searchParams.get('rubro')).toBe(rubro.slug);
-      expect(demoTasks).toContain(demoTaskForRubro(rubro.slug));
+      const context = getDemoContext(url.searchParams);
+      expect(context?.path).toBe(`/casos-de-uso/${rubro.slug}`);
+      expect(demoTasks).toContain(context?.task);
     }
-    expect(demoTaskForRubro('restaurantes-y-hoteles')).toBe('Tomar reservas');
-    expect(demoTaskForRubro('clinicas-y-consultorios')).toBe(demoTasks[0]);
-    expect(demoTaskForRubro('comercios-y-distribuidoras')).toBe(demoTasks[2]);
-    expect(demoTaskForRubro('concesionarias-e-inmobiliarias')).toBe(demoTasks[3]);
-    expect(demoTaskForRubro('servicios-profesionales')).toBe(demoTasks[4]);
+    expect(
+      getDemoContext(new URLSearchParams('rubro=restaurantes-y-hoteles'))?.task,
+    ).toBe('Tomar reservas');
   });
 
-  it('includes only catalogued source pages and keeps the task the visitor chose', () => {
+  it.each([
+    ['turnos-whatsapp', 'Reservar, reprogramar o cancelar turnos'],
+    ['ventas-whatsapp', 'Consultar stock y registrar pedidos'],
+    ['atencion-automatica-whatsapp', 'Responder consultas y derivar a mi equipo'],
+  ])('preserves the existing service task for %s', (source, task) => {
+    const url = new URL(buildDemoLink(source), 'https://www.atende.com.ar');
+    expect(url.searchParams.get('desde')).toBe(source);
+    expect(getDemoContext(url.searchParams)).toEqual({
+      source,
+      path: `/servicios/${source}`,
+      task,
+    });
+  });
+
+  it('preserves integrations and pricing sources without guessing a task, and leaves generic entry neutral', () => {
+    for (const source of ['integraciones', 'precios']) {
+      const url = new URL(buildDemoLink(source), 'https://www.atende.com.ar');
+      expect(getDemoContext(url.searchParams)).toEqual({
+        source,
+        path: `/${source}`,
+      });
+    }
+    expect(buildDemoLink()).toBe('/demo');
+    expect(getDemoContext(new URLSearchParams())).toBeUndefined();
+  });
+
+  it('includes only the catalogued public page and keeps the task the visitor chose', () => {
     const message = buildLeadMessage({
       company: 'Mi hotel',
       task: demoTasks[5],
-      rubro: 'restaurantes-y-hoteles',
+      source: 'restaurantes-y-hoteles',
     });
     expect(message).toContain(
       `Tarea que quiero sacarme de encima: ${demoTasks[5]}`,
     );
     expect(message).toContain(
-      'Caso de uso: atende.com.ar/casos-de-uso/restaurantes-y-hoteles',
+      'Referencia: atende.com.ar/casos-de-uso/restaurantes-y-hoteles',
     );
   });
 
   it('ignores unknown and inherited query values instead of copying them into drafts', () => {
-    for (const rubro of [
+    for (const source of [
       'otra-cosa',
       '__proto__',
       'constructor',
       'https://example.com/?email=persona@example.com',
     ]) {
-      expect(demoTaskForRubro(rubro)).toBeUndefined();
-      expect(buildDemoLink(rubro)).toBe('/demo');
       expect(
-        buildLeadMessage({ company: 'Mi negocio', task: demoTasks[7], rubro }),
-      ).not.toContain('Caso de uso:');
+        getDemoContext(new URLSearchParams({ desde: source })),
+      ).toBeUndefined();
+      expect(
+        getDemoContext(new URLSearchParams({ rubro: source })),
+      ).toBeUndefined();
+      expect(buildDemoLink(source)).toBe('/demo');
+      expect(
+        buildLeadMessage({ company: 'Mi negocio', task: demoTasks[7], source }),
+      ).not.toContain('Referencia:');
     }
-    expect(demoTaskForRubro(null)).toBeUndefined();
+  });
+
+  it('reads only known source context instead of arbitrary task, identity or note query values', () => {
+    expect(
+      getDemoContext(
+        new URLSearchParams({
+          desde: 'ventas-whatsapp',
+          task: 'Texto arbitrario',
+          company: 'No debe prellenarse',
+          notes: 'Datos privados de prueba',
+          url: 'https://example.com/?email=persona@example.com',
+        }),
+      ),
+    ).toEqual({
+      source: 'ventas-whatsapp',
+      path: '/servicios/ventas-whatsapp',
+      task: 'Consultar stock y registrar pedidos',
+    });
+    expect(
+      getDemoContext(new URLSearchParams({ task: demoTasks[2] })),
+    ).toBeUndefined();
+  });
+
+  it('rejects duplicate and invalid selected sources rather than mixing conflicting context', () => {
+    for (const query of [
+      'desde=ventas-whatsapp&desde=precios',
+      'rubro=restaurantes-y-hoteles&rubro=servicios-profesionales',
+      'rubro=ventas-whatsapp',
+      'desde=desconocido&rubro=restaurantes-y-hoteles',
+    ]) {
+      expect(getDemoContext(new URLSearchParams(query))).toBeUndefined();
+    }
+    expect(
+      getDemoContext(
+        new URLSearchParams('desde=precios&rubro=restaurantes-y-hoteles'),
+      ),
+    ).toEqual({ source: 'precios', path: '/precios' });
   });
 });

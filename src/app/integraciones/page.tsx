@@ -10,6 +10,7 @@ import {
   steps,
 } from '@/content/integraciones';
 import { createPageMetadata } from '@/lib/metadata';
+import { buildDemoLink } from '@/lib/leads';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -51,7 +52,11 @@ export default function IntegracionesPage() {
               sub="Conectado a tu agenda, tu stock o tu CRM, Atende reserva el turno, consulta si hay y registra el pedido en la conversación. No te damos un armador de flujos: armamos la conexión con tu sistema, para tu negocio y con tus reglas."
             />
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/demo" data-cta="integrations-demo" size="lg">
+              <Button
+                href={buildDemoLink('integraciones')}
+                data-cta="integrations-demo"
+                size="lg"
+              >
                 Contanos qué sistema usás →
               </Button>
               <Button href="#servidor-mcp" variant="outline" size="lg">
@@ -177,7 +182,7 @@ export default function IntegracionesPage() {
               duplicados.
             </p>
             <Link
-              href="/demo"
+              href={buildDemoLink('integraciones')}
               className="mt-4 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
             >
               Contanos qué querés conectar →
@@ -304,7 +309,10 @@ export default function IntegracionesPage() {
         </div>
       </section>
 
-      <CtaFinal context="Hola, quiero que armen la conexión de Atende con mi sistema" />
+      <CtaFinal
+        context="Hola, quiero que armen la conexión de Atende con mi sistema"
+        demoSource="integraciones"
+      />
       <JsonLd value={pageGraph({ ...pages.integrations, breadcrumbs })} />
     </>
   );

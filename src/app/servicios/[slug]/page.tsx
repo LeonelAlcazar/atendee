@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { servicios } from '@/content/servicios';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
+import { buildDemoLink } from '@/lib/leads';
 import { organizationId, pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -55,7 +56,7 @@ export default async function ServicePage({ params }: Props) {
             />
             <div className="mt-8 flex flex-wrap gap-3">
               <Button
-                href="/demo"
+                href={buildDemoLink(service.slug)}
                 data-cta={`solution-${service.id}-demo`}
                 size="lg"
               >
@@ -274,7 +275,7 @@ export default async function ServicePage({ params }: Props) {
             ))}
         </ul>
       </nav>
-      <CtaFinal context={service.ctaContext} />
+      <CtaFinal context={service.ctaContext} demoSource={service.slug} />
       <JsonLd
         value={pageGraph({
           path,

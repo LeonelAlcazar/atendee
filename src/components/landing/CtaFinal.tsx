@@ -1,15 +1,18 @@
 import { Button } from '@/components/ui/Button';
 import { landing } from '@/content/landing';
 import { buildWaLink } from '@/lib/wa';
+import { buildDemoLink } from '@/lib/leads';
 
 type Props = {
   context: string;
   reassurance?: string;
+  demoSource?: string;
 };
 
 export function CtaFinal({
   context,
   reassurance = landing.finalCta.reassurance,
+  demoSource,
 }: Props) {
   return (
     <section className="px-5 py-16 md:px-8 md:py-24">
@@ -28,7 +31,7 @@ export function CtaFinal({
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
-              href="/demo"
+              href={buildDemoLink(demoSource)}
               data-cta="final-demo"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border-2 border-ink bg-forest px-6 py-3.5 font-display text-base font-semibold !text-bg shadow-[var(--shadow-brut-sm)] transition-[transform,box-shadow] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[var(--shadow-brut-lg)]"
             >
