@@ -61,7 +61,7 @@ export const pages = {
     title: 'Pedí una demo de Atende para tu negocio',
     description:
       'Contanos qué tarea querés sacarte de encima en WhatsApp, como turnos, pedidos o presupuestos, y vemos qué conexión necesita tu negocio antes de contratar.',
-    updated: '2026-11-06',
+    updated: '2026-11-11',
   },
 } as const;
 

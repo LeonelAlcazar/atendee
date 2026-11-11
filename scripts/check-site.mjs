@@ -334,7 +334,11 @@ try {
     const path = `/casos-de-uso/${rubro.slug}`;
     const $ = documents.get(path);
     assert.ok(!/^c[oó]mo\b/i.test($('title').text()), `${path}: title is a guide`);
-    assert.ok($('a[href="/demo"]', 'main').length, `${path}: demo is the next step`);
+    assert.equal(
+      $(`a[href="/demo?rubro=${encodeURIComponent(rubro.slug)}"]`, 'main').length,
+      2,
+      `${path}: both demo CTAs preserve the rubro context`,
+    );
     assert.ok(
       normalize($('main').text()).includes('Ejemplo ilustrativo'),
       `${path}: unlabeled example`,

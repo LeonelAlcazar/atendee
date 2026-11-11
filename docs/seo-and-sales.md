@@ -115,14 +115,16 @@ Local release verification on 2026-11-04 passed `npm run verify`: 14 tests, Type
 
 ## Conversion flow and measurement
 
-`/demo` prepares a message containing the company, approximate monthly inquiry volume, priority and optional context. The visitor reviews it and chooses WhatsApp or email. Preparing a message is **not** a submitted lead or a confirmed booking. No inquiry is stored or transmitted by the site; sending takes place through the selected channel. Direct contact links remain available without JavaScript.
+`/demo` asks only for the business name and priority task. System, approximate monthly inquiry volume and notes are optional under “Sumar contexto”. The visitor chooses WhatsApp or the quieter email fallback; valid details open a draft directly in that channel, where the visitor reviews and sends it. Preparing or opening a draft is **not** a submitted lead or a confirmed booking. No inquiry is stored or transmitted by the site. Direct contact links remain available without JavaScript, and a prepared-message fallback remains visible if the channel does not open.
+
+The six rubro pages pass an allowlisted `rubro` query value to the demo form. It preselects the matching task, which the visitor can change, and includes the known use-case page in the draft. Unknown query values are ignored. Prefill is read in the browser so `/demo` stays statically rendered; analytics hooks receive neither the query nor the form values.
 
 The site emits `atende:conversion` browser events and forwards them to `window.dataLayer` only if an analytics integration already supplies it:
 
 | Event | Meaning | Fields |
 | --- | --- | --- |
-| `atende_cta_click` | Visitor clicks a demo, app, WhatsApp or email link | `page`, `destination`, `placement` |
-| `atende_demo_prepared` | Visitor prepares a valid inquiry for review | `page`, `placement` |
+| `atende_cta_click` | Visitor chooses a demo, app, WhatsApp or email action | `page`, `destination`, `placement` |
+| `atende_demo_prepared` | Valid form details produce a draft for review in WhatsApp or email | `page`, `placement` |
 
 These hooks make no network requests and set no cookies or browser storage. They contain no company name, inquiry text, full outbound URL or query parameters. No analytics account or collector is configured in this repository. Wire a chosen collector to these events to measure visits-to-contact clicks; record actual qualified leads and sales in the sales system. Do not count a contact click as a sale.
 
@@ -130,6 +132,6 @@ These hooks make no network requests and set no cookies or browser storage. They
 
 Run `npm run verify` to execute unit tests, TypeScript, the claims check, the production build and the HTTP audit. `npm run check:seo` starts the built standalone server and checks every public page, including the Markdown catalog, for canonical and social metadata, sitemap completeness, visible schema content, internal links and fragments, crawl rules and sales CTAs. It also verifies ISR, RSS, `llms.txt`, redirects, the IndexNow key file and real 404 responses. `npm run check:claims` fails on claims the product cannot back; [blog publishing](blog.md#banned-claims) explains its rules and exceptions.
 
-For browser checks, run the production server with `npm start` and verify desktop, mobile and tablet navigation; native required-field validation; inquiry preview; both outbound URLs; FAQ disclosures; and the no-JavaScript contact fallback. Browser and Lighthouse artifacts belong in ignored `output/playwright/`.
+For browser checks, run the production server with `npm start` and verify desktop, mobile and tablet navigation; native required-field validation with only business and task completed; optional context disclosure; rubro task prefill and editing; both outbound drafts; the prepared-message fallback; FAQ disclosures; and the no-JavaScript contact fallback. Browser and Lighthouse artifacts belong in ignored `output/playwright/`.
 
 After deployment, check the live sitemap and new routes, submit `https://www.atende.com.ar/sitemap.xml` in the site's verified Search Console property, and run [IndexNow](#indexnow). No Search Console credentials or analytics property are present in this repository. Monitor indexing, query relevance, demo inquiries and qualified opportunities over time, following the [measurement plan](geo-offsite-plan.md#medición). Keep prices in sync with checkout if public numeric pricing is introduced later.

@@ -1,8 +1,41 @@
 import { describe, expect, it } from 'vitest';
-import { buildLeadMessage, demoSystems, demoTasks, demoVolumes } from './leads';
+import {
+  buildDemoLink,
+  buildLeadMessage,
+  demoSystems,
+  demoTaskForRubro,
+  demoTasks,
+  demoVolumes,
+} from './leads';
+import { rubros } from '@/content/rubros';
 import { buildWaLink } from './wa';
 
 describe('qualified sales inquiry', () => {
+  it('prepares an honest draft with only the business and task', () => {
+    expect(
+      buildLeadMessage({ company: '  Mi comercio  ', task: demoTasks[2] }),
+    ).toBe(
+      [
+        'Hola, quiero pedir una demo de Atende para mi negocio.',
+        'Negocio: Mi comercio',
+        `Tarea que quiero sacarme de encima: ${demoTasks[2]}`,
+        'Origen: atende.com.ar/demo',
+      ].join('\n'),
+    );
+  });
+
+  it('leaves unanswered optional questions out of the draft', () => {
+    const message = buildLeadMessage({
+      company: 'Mi comercio',
+      task: demoTasks[2],
+      system: '  ',
+      volume: '',
+      notes: '\n ',
+    });
+    expect(message).not.toMatch(/Hoy la llevo|Consultas por WhatsApp|Contexto:/);
+    expect(message).not.toMatch(/undefined|null/);
+  });
+
   it('preserves Spanish text, business context and line breaks through WhatsApp encoding', () => {
     const message = buildLeadMessage({
       company: '  Muñoz & Hijos  ',
@@ -41,5 +74,51 @@ describe('qualified sales inquiry', () => {
     expect(demoTasks).toContain('Todavía no lo sé');
     expect(demoVolumes).toContain('Todavía no lo sé');
     expect(demoSystems).toContain('Papel o de memoria');
+  });
+});
+
+describe('rubro demo context', () => {
+  it('offers an editable task preset for every published rubro', () => {
+    for (const rubro of rubros) {
+      const url = new URL(buildDemoLink(rubro.slug), 'https://www.atende.com.ar');
+      expect(url.pathname).toBe('/demo');
+      expect(url.searchParams.get('rubro')).toBe(rubro.slug);
+      expect(demoTasks).toContain(demoTaskForRubro(rubro.slug));
+    }
+    expect(demoTaskForRubro('restaurantes-y-hoteles')).toBe('Tomar reservas');
+    expect(demoTaskForRubro('clinicas-y-consultorios')).toBe(demoTasks[0]);
+    expect(demoTaskForRubro('comercios-y-distribuidoras')).toBe(demoTasks[2]);
+    expect(demoTaskForRubro('concesionarias-e-inmobiliarias')).toBe(demoTasks[3]);
+    expect(demoTaskForRubro('servicios-profesionales')).toBe(demoTasks[4]);
+  });
+
+  it('includes only catalogued source pages and keeps the task the visitor chose', () => {
+    const message = buildLeadMessage({
+      company: 'Mi hotel',
+      task: demoTasks[5],
+      rubro: 'restaurantes-y-hoteles',
+    });
+    expect(message).toContain(
+      `Tarea que quiero sacarme de encima: ${demoTasks[5]}`,
+    );
+    expect(message).toContain(
+      'Caso de uso: atende.com.ar/casos-de-uso/restaurantes-y-hoteles',
+    );
+  });
+
+  it('ignores unknown and inherited query values instead of copying them into drafts', () => {
+    for (const rubro of [
+      'otra-cosa',
+      '__proto__',
+      'constructor',
+      'https://example.com/?email=persona@example.com',
+    ]) {
+      expect(demoTaskForRubro(rubro)).toBeUndefined();
+      expect(buildDemoLink(rubro)).toBe('/demo');
+      expect(
+        buildLeadMessage({ company: 'Mi negocio', task: demoTasks[7], rubro }),
+      ).not.toContain('Caso de uso:');
+    }
+    expect(demoTaskForRubro(null)).toBeUndefined();
   });
 });

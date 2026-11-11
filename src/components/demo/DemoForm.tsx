@@ -6,6 +6,7 @@ import { site } from '@/content/site';
 import {
   buildLeadMessage,
   demoSystems,
+  demoTaskForRubro,
   demoTasks,
   demoVolumes,
 } from '@/lib/leads';
@@ -19,13 +20,24 @@ const field =
 export function DemoForm() {
   const [ready, setReady] = useState(false);
   const [message, setMessage] = useState('');
+  const [task, setTask] = useState('');
   const preview = useRef<HTMLDivElement>(null);
-  useEffect(() => setReady(true), []);
+  const taskEdited = useRef(false);
+  const sourceRubro = useRef<string | undefined>(undefined);
+  useEffect(() => {
+    const rubro = new URLSearchParams(window.location.search).get('rubro');
+    const presetTask = demoTaskForRubro(rubro);
+    if (rubro && presetTask) {
+      sourceRubro.current = rubro;
+      if (!taskEdited.current) setTask(presetTask);
+    }
+    setReady(true);
+  }, []);
   useEffect(() => {
     if (message) preview.current?.focus();
   }, [message]);
 
-  function prepare(event: FormEvent<HTMLFormElement>) {
+  function openDraft(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const company = String(form.get('company') ?? '').trim();
@@ -34,20 +46,36 @@ export function DemoForm() {
     ) as HTMLInputElement;
     input.setCustomValidity(company ? '' : 'Ingresá el nombre de tu negocio.');
     if (!event.currentTarget.reportValidity()) return;
-    setMessage(
-      buildLeadMessage({
-        company,
-        task: String(form.get('task')),
-        system: String(form.get('system')),
-        volume: String(form.get('volume')),
-        notes: String(form.get('notes') ?? ''),
-      }),
-    );
+    const draft = buildLeadMessage({
+      company,
+      task: String(form.get('task') ?? ''),
+      system: String(form.get('system') ?? ''),
+      volume: String(form.get('volume') ?? ''),
+      notes: String(form.get('notes') ?? ''),
+      rubro: sourceRubro.current,
+    });
+    setMessage(draft);
+    const submitter = (event.nativeEvent as SubmitEvent).submitter;
+    const destination =
+      submitter instanceof HTMLButtonElement && submitter.value === 'email'
+        ? 'email'
+        : 'whatsapp';
     trackConversion({
       event: 'atende_demo_prepared',
       page: '/demo',
       placement: 'demo-form',
     });
+    trackConversion({
+      event: 'atende_cta_click',
+      page: '/demo',
+      destination,
+      placement: `demo-${destination}`,
+    });
+    window.location.assign(
+      destination === 'whatsapp'
+        ? buildWaLink(draft)
+        : `mailto:${site.email}?subject=${encodeURIComponent('Demo de Atende para mi negocio')}&body=${encodeURIComponent(draft)}`,
+    );
   }
 
   return (
@@ -56,10 +84,10 @@ export function DemoForm() {
         Contanos qué querés sacarte de encima
       </h2>
       <p className="mt-3 leading-relaxed text-mute">
-        Armá tu mensaje y mandalo por WhatsApp o email. Los campos con * son
-        obligatorios.
+        Con el nombre de tu negocio y una tarea alcanza. Revisás y enviás el
+        mensaje desde WhatsApp o email. Los campos con * son obligatorios.
       </p>
-      <form onSubmit={prepare} className="mt-6" onChange={() => setMessage('')}>
+      <form onSubmit={openDraft} className="mt-6" onChange={() => setMessage('')}>
         <fieldset
           disabled={!ready}
           className="grid min-w-0 gap-5 disabled:opacity-60"
@@ -83,7 +111,11 @@ export function DemoForm() {
               id="task"
               name="task"
               required
-              defaultValue=""
+              value={task}
+              onChange={(event) => {
+                taskEdited.current = true;
+                setTask(event.currentTarget.value);
+              }}
               className={field}
             >
               <option value="" disabled>
@@ -94,62 +126,62 @@ export function DemoForm() {
               ))}
             </select>
           </label>
-          <label className="font-semibold" htmlFor="system">
-            ¿Dónde llevás esa tarea hoy? *
-            <select
-              id="system"
-              name="system"
-              required
-              defaultValue=""
-              className={field}
-            >
-              <option value="" disabled>
-                Elegí una opción
-              </option>
-              {demoSystems.map((item) => (
-                <option key={item}>{item}</option>
-              ))}
-            </select>
-          </label>
-          <label className="font-semibold" htmlFor="volume">
-            Consultas por WhatsApp al mes *
-            <select
-              id="volume"
-              name="volume"
-              required
-              defaultValue=""
-              className={field}
-            >
-              <option value="" disabled>
-                Elegí un rango aproximado
-              </option>
-              {demoVolumes.map((item) => (
-                <option key={item}>{item}</option>
-              ))}
-            </select>
-          </label>
-          <label className="font-semibold" htmlFor="notes">
-            Algo más que debamos saber{' '}
-            <span className="font-normal text-mute">(opcional)</span>
-            <textarea
-              id="notes"
-              name="notes"
-              rows={3}
-              maxLength={600}
-              className={field}
-              aria-describedby="notes-help"
-            />
-            <span
-              id="notes-help"
-              className="mt-2 block text-sm font-normal text-mute"
-            >
-              Por ejemplo tu rubro, cómo se llama tu sistema o cuántas personas
-              atienden. Hasta 600 caracteres.
-            </span>
-          </label>
+          <details className="rounded-md border-2 border-ink/25 bg-surface/50 px-4">
+            <summary className="min-h-12 cursor-pointer py-3 font-semibold">
+              Sumar contexto (opcional)
+            </summary>
+            <div className="grid gap-5 pb-4 pt-2">
+              <label className="font-semibold" htmlFor="system">
+                ¿Dónde llevás esa tarea hoy?
+                <select
+                  id="system"
+                  name="system"
+                  defaultValue=""
+                  className={field}
+                >
+                  <option value="">Lo vemos juntos</option>
+                  {demoSystems.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="font-semibold" htmlFor="volume">
+                Consultas por WhatsApp al mes
+                <select
+                  id="volume"
+                  name="volume"
+                  defaultValue=""
+                  className={field}
+                >
+                  <option value="">No lo sé</option>
+                  {demoVolumes.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="font-semibold" htmlFor="notes">
+                Algo más que debamos saber
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows={3}
+                  maxLength={600}
+                  className={field}
+                  aria-describedby="notes-help"
+                />
+                <span
+                  id="notes-help"
+                  className="mt-2 block text-sm font-normal text-mute"
+                >
+                  Por ejemplo tu rubro, cómo se llama tu sistema o cuántas
+                  personas atienden. Hasta 600 caracteres.
+                </span>
+              </label>
+            </div>
+          </details>
           <p className="text-sm leading-relaxed text-mute">
-            Los datos se preparan en tu navegador y se comparten cuando elegís
-            enviarlos por WhatsApp o email.{' '}
+            El mensaje se arma en tu navegador. Abrir el borrador no lo envía:
+            vos decidís cuándo mandarlo desde WhatsApp o email.{' '}
             <Link
               href="/politica-de-privacidad"
               className="underline underline-offset-4"
@@ -160,9 +192,19 @@ export function DemoForm() {
           </p>
           <button
             type="submit"
+            name="channel"
+            value="whatsapp"
             className="min-h-12 rounded-md border-2 border-ink bg-coral px-5 py-3 font-display text-lg font-semibold shadow-[var(--shadow-brut-sm)] hover:bg-coral-soft"
           >
-            Armar mi mensaje →
+            Revisar en WhatsApp ↗
+          </button>
+          <button
+            type="submit"
+            name="channel"
+            value="email"
+            className="min-h-11 justify-self-center rounded-sm px-3 text-sm font-semibold underline underline-offset-4"
+          >
+            Prefiero usar email
           </button>
         </fieldset>
       </form>
@@ -182,7 +224,8 @@ export function DemoForm() {
             Tu mensaje está listo para enviar
           </h3>
           <p className="mt-2 text-sm">
-            Abrí el canal que prefieras y mandanos el mensaje.
+            Si el borrador no se abrió, usá uno de estos enlaces. Revisá el
+            mensaje y envialo desde el canal que elijas.
           </p>
           <p className="mt-4 whitespace-pre-wrap break-words text-sm leading-relaxed">
             {message}
@@ -194,14 +237,14 @@ export function DemoForm() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Abrir WhatsApp ↗
+              Volver a abrir WhatsApp ↗
             </Button>
             <Button
               href={`mailto:${site.email}?subject=${encodeURIComponent('Demo de Atende para mi negocio')}&body=${encodeURIComponent(message)}`}
               data-cta="demo-email"
               variant="outline"
             >
-              Enviar por email
+              Preparar email
             </Button>
           </div>
         </div>

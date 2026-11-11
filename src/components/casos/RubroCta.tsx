@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/Button';
 import type { Rubro } from '@/content/rubros';
 import { buildWaLink } from '@/lib/wa';
+import { buildDemoLink } from '@/lib/leads';
 
 export function RubroCta({ rubro }: { rubro: Rubro }) {
   return (
@@ -12,7 +13,7 @@ export function RubroCta({ rubro }: { rubro: Rubro }) {
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink">{rubro.cta.text}</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
-            href="/demo"
+            href={buildDemoLink(rubro.slug)}
             data-cta={`rubro-${rubro.slug}-demo`}
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border-2 border-ink bg-forest px-6 py-3.5 text-center font-display text-base font-semibold !text-bg shadow-[var(--shadow-brut-sm)] transition-[transform,box-shadow] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[var(--shadow-brut-lg)]"
           >
