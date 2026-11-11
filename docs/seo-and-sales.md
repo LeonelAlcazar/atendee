@@ -123,14 +123,30 @@ One allowlisted source catalog preserves context into the demo form. The six rub
 
 Unknown or inherited source keys and duplicate values are ignored. If `desde` is present, it takes precedence over legacy `rubro`; an invalid `desde` does not fall back to another source. Arbitrary task, company, notes, URLs and other query values never prefill the form or appear in the draft. Prefill is read in the browser so `/demo` stays statically rendered; analytics hooks receive neither the source query nor the form values. A prepared draft remains an inquiry to review and send, not a submitted lead or a confirmed appointment.
 
-The site emits `atende:conversion` browser events and forwards them to `window.dataLayer` only if an analytics integration already supplies it:
+The aggregate measurement client in `src/lib/metrics.ts` covers only `/`, `/precios` and `/demo`. It runs only on `https://www.atende.com.ar` and posts to the fixed app endpoint `https://app.atende.com.ar/api/public/metrics`. Each payload contains exactly `{ v: 1, page, metric }`; `page` is an enum, not the browser pathname. The allowed combinations are:
+
+| Page | Metrics |
+| --- | --- |
+| `home` | `view`, `to_pricing`, `to_demo`, `to_signup`, `direct_whatsapp`, `direct_email` |
+| `pricing` | `view`, `to_demo`, `to_plans`, `to_signup`, `direct_whatsapp`, `direct_email` |
+| `demo` | `view`, `to_pricing`, `to_signup`, `demo_started`, `draft_whatsapp`, `draft_email`, `direct_whatsapp`, `direct_email`, `reopen_whatsapp`, `reopen_email` |
+
+A `view` records one visible page activation: initial load, navigation to a different pathname or restoration from the browser's back-forward cache. Rerenders, query/hash changes and hiding/showing the same tab do not add views. Server rendering and prefetching do not count. `demo_started` records the first change to a required field once per activation; a valid submit also ensures that stage is recorded when browser autofill produced no change event. Prefill alone does not count. Each valid submit records one `draft_<channel>`; direct contact and reopening an existing draft are separate actions. `to_signup` measures explicit “Crear mi espacio” links, not “Entrar”.
+
+The payload includes no form values, full URLs, search parameters, referrer, free-form placement or visitor identifiers. The client uses no cookies or browser storage, omits credentials and referrer, and neither waits for delivery nor retries. A request failure never blocks navigation or opening the contact channel. This describes the measurement payload and client; it does not assert that hosting or security infrastructure keeps no access logs or IP addresses.
+
+**Publication gate:** do not publish this client or its privacy description until the app collector, versioned database migration and durable aggregate queries have been verified. The backend must validate the same closed contract and store atomic counts by server-derived Argentina date, page and metric. Complete the platform-admin-only `/admin/metrics` report with 7/28-day windows and a CSV export of the same aggregates; show the collection start, mark today as partial, and distinguish no recorded events from unavailable or unconfigured storage. Verify concurrent increments and persistence across fresh database connections before activation. This is not a claim that the collector or report is already live.
+
+These are recorded views and actions, not people, sessions, messages received, qualified leads or sales. Repeated actions can count again; JavaScript-disabled visits, blockers, network failures and reception limits can omit events. Do not sum form stages or call their ratios a conversion rate for people. There is no measurement of other site pages, no history before collection starts and no claimed increase in leads. Actual inquiries and sales remain facts to verify in their receiving systems.
+
+The existing `atende:conversion` browser hooks remain independent and forward to `window.dataLayer` only if an integration already supplies it:
 
 | Event | Meaning | Fields |
 | --- | --- | --- |
 | `atende_cta_click` | Visitor chooses a demo, app, WhatsApp or email action | `page`, `destination`, `placement` |
 | `atende_demo_prepared` | Valid form details produce a draft for review in WhatsApp or email | `page`, `placement` |
 
-These hooks make no network requests and set no cookies or browser storage. They contain no company name, inquiry text, full outbound URL or query parameters. No analytics account or collector is configured in this repository. Wire a chosen collector to these events to measure visits-to-contact clicks; record actual qualified leads and sales in the sales system. Do not count a contact click as a sale.
+These legacy hooks make no network requests and set no cookies or browser storage. The aggregate client consumes neither those events nor `dataLayer`, so the two legacy hooks emitted by a valid submit do not produce a second durable draft count. Do not connect both paths to the same counters.
 
 ## Verification and ongoing operation
 

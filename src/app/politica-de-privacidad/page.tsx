@@ -3,7 +3,7 @@ import { LegalDocument } from '@/components/legal/LegalDocument';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
 
-const lastUpdated = '26 de junio de 2026';
+const lastUpdated = '11 de noviembre de 2026';
 const linkClass = 'underline underline-offset-4 hover:text-coral';
 
 export const metadata: Metadata = createPageMetadata({
@@ -208,6 +208,11 @@ const sections = [
     title: '9. Cookies y tecnologías similares',
     body: (
       <>
+        <p>
+          En Inicio, Precios y Demo contamos vistas y acciones de forma agregada.
+          Esta medición no usa cookies ni identificadores y no incluye datos del
+          formulario, URLs completas ni parámetros de búsqueda.
+        </p>
         <p>
           El sitio puede usar tecnologías técnicas necesarias para funcionar,
           mantener seguridad, cargar contenido y medir rendimiento. Si en el

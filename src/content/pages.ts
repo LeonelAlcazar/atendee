@@ -67,5 +67,5 @@ export const pages = {
 
 export const legalPages = [
   { path: '/terminos-y-condiciones', updated: '2026-06-26' },
-  { path: '/politica-de-privacidad', updated: '2026-06-26' },
+  { path: '/politica-de-privacidad', updated: '2026-11-11' },
 ] as const;
