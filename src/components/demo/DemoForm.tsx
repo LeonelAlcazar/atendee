@@ -153,7 +153,7 @@ export function DemoForm() {
                   defaultValue=""
                   className={field}
                 >
-                  <option value="">No lo sé</option>
+                  <option value="">Elegí un rango (opcional)</option>
                   {demoVolumes.map((item) => (
                     <option key={item}>{item}</option>
                   ))}
