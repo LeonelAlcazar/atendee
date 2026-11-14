@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Instrument_Sans, Inter_Tight, IBM_Plex_Mono } from 'next/font/google';
+import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { site } from '@/content/site';
@@ -82,6 +83,18 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
       <body>
+        <Script id="google-tag-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `}
+        </Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-TR42C4SG"
+          strategy="afterInteractive"
+        />
         <JsonLd />
         <ConversionEvents />
         <a
