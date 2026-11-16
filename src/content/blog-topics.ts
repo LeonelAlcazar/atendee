@@ -62,7 +62,7 @@ export const blogTopics = [
     description:
       'Consultar stock y registrar el pedido por WhatsApp en tiendas online, ropa, ferreterías, mueblerías y mayoristas: qué conectar y cómo resolver retiro y envío.',
     intro:
-      'Primero preguntan si hay y a cuánto; después llega la lista con cantidades, presentación y retiro o envío. Conectado a tu stock y tu lista de precios, Atende consulta disponibilidad y registra el pedido; esa conexión se arma a pedido para tu negocio, y sin ella arma la solicitud para que ventas la confirme. Mirá [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras) y [pedidos y ventas por WhatsApp](/servicios/ventas-whatsapp).',
+      'Primero preguntan si hay y a cuánto; después llega la lista con cantidades, presentación y retiro o envío. Conectado a tu stock y tu lista de precios, Atende consulta disponibilidad y registra el pedido; esa conexión se arma a pedido para tu negocio, y sin ella arma la solicitud para que ventas la confirme. Empezá por [toma de pedidos por WhatsApp para distribuidores](/blog/toma-de-pedidos-por-whatsapp-para-distribuidores), o mirá [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras) y [pedidos y ventas por WhatsApp](/servicios/ventas-whatsapp).',
   },
   {
     slug: 'gastronomia-y-turismo',

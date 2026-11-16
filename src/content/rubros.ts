@@ -651,7 +651,7 @@ const comercios: Rubro = {
   title: 'Stock y pedidos por WhatsApp para comercios y distribuidoras',
   description:
     'Conectado a tu stock y tu lista de precios, Atende consulta disponibilidad y registra el pedido por WhatsApp, con mínimos y zonas. Hay arranque sin ERP.',
-  updated: '2026-11-06',
+  updated: '2026-11-16',
   h1: {
     before: 'WhatsApp para distribuidoras que',
     accent: 'consulta el stock y registra el pedido.',
@@ -825,7 +825,7 @@ const comercios: Rubro = {
     },
     {
       q: '¿Qué pasa si un cliente manda el pedido por audio o en una foto?',
-      a: 'No llega a Atende y el asistente no responde. El mensaje queda en el WhatsApp del teléfono del negocio. Para que el pedido entre solo, tiene que venir escrito.',
+      a: 'Si el audio tiene una transcripción disponible, Atende trabaja con ese texto y pide aclaraciones cuando hacen falta. Las fotos se reciben como adjuntos, pero el asistente no ve su contenido: pedí los renglones por escrito o pasá la conversación a una persona.',
     },
     {
       q: '¿Atende cobra o factura el pedido?',
@@ -833,7 +833,8 @@ const comercios: Rubro = {
     },
   ],
   guides: [
-    { slug: 'como-automatizar-whatsapp-distribuidoras', label: 'Guía para distribuidoras' },
+    { slug: 'toma-de-pedidos-por-whatsapp-para-distribuidores', label: 'Toma de pedidos por WhatsApp para distribuidores' },
+    { slug: 'como-automatizar-whatsapp-distribuidoras', label: 'Organizar vendedores, zonas y excepciones' },
     { slug: 'como-automatizar-whatsapp-ferreterias', label: 'Guía para ferreterías' },
     { slug: 'como-automatizar-whatsapp-indumentaria', label: 'Guía para indumentaria' },
     { slug: 'como-automatizar-whatsapp-mueblerias', label: 'Guía para mueblerías' },

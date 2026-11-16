@@ -4,6 +4,37 @@
 
 The public audience is Spanish-speaking businesses and PyMEs in Argentina. The main conversion is a qualified demo inquiry; self-service account creation remains available. The homepage links to the solution pages, the six rubro pages through the use-case hub, pricing guidance and the demo request.
 
+## Distributor order cluster — 2026-11-16
+
+The owner reports position 50 for “toma de pedidos por whatsapp para distribuidores”. This is an unverified baseline, not a Search Console measurement from this task. Ten new articles address separate buying and operating decisions; the existing distributor guide remains at its URL and focuses its title on the team, territories and exceptions. It links to the new central guide, as do the commerce topic and the distributor use-case page.
+
+| New `/blog/` slug | Reader's decision or usable artifact |
+| --- | --- |
+| `toma-de-pedidos-por-whatsapp-para-distribuidores` | End-to-end order workflow and entry point to the cluster |
+| `plantilla-pedidos-mayoristas-whatsapp` | Copyable order template and units |
+| `software-pedidos-whatsapp-distribuidores` | Buying criteria and a demo evaluation |
+| `consultar-stock-tomar-pedidos-whatsapp` | Shortages, substitutions and current availability |
+| `listas-precios-clientes-mayoristas-whatsapp` | Account identity and applicable price list |
+| `integrar-pedidos-whatsapp-sistema-gestion` | Integration scope and acceptance cases |
+| `evitar-pedidos-duplicados-whatsapp` | Order identity, retries and amendments |
+| `repetir-pedidos-mayoristas-whatsapp` | Reordering with fresh prices and stock |
+| `pedidos-por-audio-whatsapp-distribuidores` | Transcription ambiguities and file fallback |
+| `pedidos-whatsapp-horarios-corte-reparto` | Cutoff, territory and delivery confirmation |
+
+Each starts with a two-to-three-sentence `salesIntro`, then demo and app buttons, followed by a self-contained short answer, original operational detail, an illustrative connected example and visible FAQs. Connections for orders are scoped per business. Receiving a request, registering an order, reserving inventory and confirming delivery are separate outcomes. No customer results, prices, rankings or ready-made ERP connector are invented.
+
+The approach follows [Google's guidance for AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide): useful distinct content and a crawlable technical structure, rather than a page for each wording variant. This does not guarantee indexing, rank gains or citations. Existing canonical, BlogPosting, FAQ, sitemap, RSS and `llms.txt` generation remains in use; no new schema type is added.
+
+After an authorized deployment, verify the new URLs on the public domain and inspect indexing in Search Console. Export a dated 28-day baseline filtered to Argentina and the distributor query group, keeping the exact query separate from variants. Compare the next 28 days and review again after 8–12 weeks: impressions, clicks, CTR, average position, queries and landing pages. Check whether the old and new guides compete for the same query; consolidate overlapping material if the data supports it. Configure the analytics consumer to count `atende_cta_click` by the per-article placement (`blog-<slug>-sales-demo` and `blog-<slug>-sales-app`) and qualified demo inquiries separately from rank. No deployment or Search Console submission is part of this local content change.
+
+Product evidence checked in this workspace: agent prompts require successful tool results before reporting completion; the motorcycle demo exposes stock, prices, financing and lead creation, not distributor order creation. The WhatsApp bridge's `attachmentText` consumes available audio transcripts and labels images/documents as not visible to the assistant. The current conversation-service checkout lacks the newer transcription implementation described in the supplied AGENTS.md, so the articles explicitly handle absent or ambiguous transcripts and make no claim of successful recognition for every audio.
+
+Verification recorded locally on 2026-11-16: three writing agents drafted the ten articles, two performed cross-review, and another re-edited the findings; both reviewers verified closure. `npm run verify` passed 247 tests, TypeScript, claims, content, build and the 103-page HTTP audit (69 total articles). After shortening the central H1 and compacting the sales opening on phones, build and the HTTP audit passed again. Playwright checked all ten posts at 360 and 1440 px: no document overflow, one H1, three opening paragraphs, correct demo/app links, 56/60 px button heights and functioning FAQ disclosure. The central demo button begins at 655 px on the 360 px viewport, versus 839 px before the adjustment. A real click on the opening demo button reached `/demo` (HTTP 200) without submitting the form. Screenshots and the 20-render audit are in ignored `output/playwright/distribuidores/`. Five superseded drafts from an interrupted attempt are preserved in ignored `output/distributor-drafts-2026-11-16/`, outside the published catalog.
+
+The local type check initially inherited unrelated Bun globals from an ancestor's `node_modules`. Explicit Node/React ambient types in `tsconfig.json` keep the Next.js Node runtime and fetch mocks independent of those packages; no runtime behavior changed. Previously uncommitted WhatsApp lead support and the Meta article were preserved. At that local verification checkpoint, no commit, push, deployment, real demo submission or search-index submission had been made.
+
+Publication candidate verified on 2026-11-16 after the owner requested publishing: a clean snapshot excludes the unrelated Meta article and its pending WhatsApp lead feature. A fresh install and `npm run verify` passed 246 tests, TypeScript, claims, content, build and 102 HTTP pages (68 articles). Only the ten distributor posts and their supporting content/UI changes are included in this release.
+
 ## November 2026 rebuild
 
 The evidence collected for this rebuild says on-page technique explains little and third-party mentions matter most, so the site does five things and no more:

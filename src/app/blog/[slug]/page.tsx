@@ -5,6 +5,7 @@ import { formatBlogDate } from '@/lib/blog-content';
 import { postBreadcrumbs, postGraph, postMetadata } from '@/lib/blog-seo';
 import { getBlogTopic, rubroByTopic } from '@/content/blog-topics';
 import { rubros } from '@/content/rubros';
+import { site } from '@/content/site';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { JsonLd } from '@/components/jsonld';
 import { Button } from '@/components/ui/Button';
@@ -43,12 +44,36 @@ export default async function PostPage({ params }: Props) {
           >
             {getBlogTopic(post.category)!.name}
           </Link>
-          <h1 className="mt-6 break-words font-display text-4xl font-semibold leading-[1.07] tracking-[-0.035em] md:text-6xl">
+          <h1 className={`mt-6 break-words font-display ${post.salesIntro ? 'text-3xl sm:text-4xl' : 'text-4xl'} font-semibold leading-[1.07] tracking-[-0.035em] md:text-6xl`}>
             {post.title}
           </h1>
-          <p className="mt-5 max-w-3xl text-xl leading-relaxed text-mute">
-            {post.description}
-          </p>
+          {post.salesIntro ? (
+            <>
+              <div
+                className="mt-5 max-w-4xl space-y-2 text-lg leading-relaxed text-mute md:text-xl"
+                data-sales-intro
+              >
+                {post.salesIntro.map((line) => <p key={line}>{line}</p>)}
+              </div>
+              <div className="mt-7 flex flex-wrap items-center gap-3">
+                <Button href="/demo" data-cta={`blog-${post.slug}-sales-demo`} size="lg">
+                  Pedí una demo →
+                </Button>
+                <Button
+                  href={site.appUrl}
+                  data-cta={`blog-${post.slug}-sales-app`}
+                  variant="outline"
+                  size="lg"
+                >
+                  Empezá en la app
+                </Button>
+              </div>
+            </>
+          ) : (
+            <p className="mt-5 max-w-3xl text-xl leading-relaxed text-mute">
+              {post.description}
+            </p>
+          )}
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-mute">
             <Link
               href="/blog/editorial"

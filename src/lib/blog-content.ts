@@ -33,6 +33,8 @@ const schema = z
     tags: z.array(z.string().min(2)).min(2).max(6),
     related: z.array(slug).min(2).max(4),
     draft: z.boolean().default(false),
+    // Keep the sales opening separate from search metadata and the short answer.
+    salesIntro: z.array(z.string().trim().min(15).max(220)).min(2).max(3).optional(),
     faq: z
       .array(
         z.object({ q: z.string().min(10), a: z.string().min(30) }).strict(),

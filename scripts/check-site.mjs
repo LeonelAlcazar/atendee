@@ -585,6 +585,29 @@ try {
       `${path}: visible summary`,
     );
     assert.equal($('h1').text(), post.title);
+    if (post.salesIntro) {
+      const intro = $('article header [data-sales-intro]');
+      assert.deepEqual(
+        intro.children('p').map((_, el) => $(el).text()).get(),
+        post.salesIntro,
+        `${path}: complete sales opening in initial HTML`,
+      );
+      const buttons = intro.next();
+      assert.equal(
+        buttons.find(`a[data-cta="blog-${post.slug}-sales-demo"]`).attr('href'),
+        '/demo',
+        `${path}: demo CTA immediately after pitch`,
+      );
+      assert.equal(
+        buttons.find(`a[data-cta="blog-${post.slug}-sales-app"]`).attr('href'),
+        'https://app.atende.com.ar',
+        `${path}: app CTA immediately after pitch`,
+      );
+      assert.ok(
+        buttons.next().find('a[rel="author"]').length,
+        `${path}: byline follows sales CTAs`,
+      );
+    }
     assert.equal($('meta[property="og:type"]').attr('content'), 'article');
     const dates = normalize($('article header').first().text());
     assert.ok(

@@ -1,9 +1,9 @@
 ---
-title: 'WhatsApp para distribuidores: cómo tomar pedidos con lista por cliente, mínimos y reparto'
-seoTitle: 'WhatsApp para distribuidores: toma de pedidos paso a paso'
+title: 'Organizá el WhatsApp de tu distribuidora: vendedores, zonas y excepciones'
+seoTitle: 'WhatsApp en distribuidoras: equipo, zonas y excepciones'
 description: >-
-  Toma de pedidos por WhatsApp para distribuidores: lista por cliente, mínimos,
-  zonas de reparto y pedido repetido. Con ejemplo mayorista y plantilla.
+  Organizá vendedores, zonas y excepciones en el WhatsApp de tu distribuidora.
+  Reglas para el equipo, pedidos conectados y atención de insumos del agro.
 summary: >-
   Para tomar pedidos por WhatsApp en una distribuidora, identificá al comercio,
   pedí producto, presentación y cantidad, y controlá mínimo, zona y día de
@@ -12,7 +12,7 @@ summary: >-
   asistente junta los renglones y ventas confirma desde la bandeja. Sirve también
   para insumos del agro, con dosis y receta siempre a cargo de una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-16'
 category: comercio
 sector: Distribuidoras y mayoristas
 tags:
@@ -22,7 +22,7 @@ tags:
   - pedidos mayoristas
   - insumos agropecuarios
 related:
-  - cotizaciones-por-whatsapp-automaticas
+  - toma-de-pedidos-por-whatsapp-para-distribuidores
   - como-automatizar-whatsapp-ferreterias
   - como-automatizar-whatsapp-logistica
   - como-automatizar-whatsapp-fabricantes
@@ -56,6 +56,8 @@ faq:
       datos de la máquina si es un repuesto. Dosis, mezclas, recomendaciones de uso
       y compatibilidad de piezas van siempre a una persona.
 ---
+Para diseñar el circuito completo, empezá por [toma de pedidos por WhatsApp para distribuidores](/blog/toma-de-pedidos-por-whatsapp-para-distribuidores). Esta guía se concentra en organizar al equipo, las zonas y las excepciones, incluidos los insumos del agro.
+
 La toma de pedidos por WhatsApp para distribuidores funciona cuando el pedido sale del chat listo para preparar: comercio identificado, renglones con presentación y cantidad, mínimo controlado y día de reparto asignado. Conectado a tu sistema de gestión, Atende hace ese recorrido y registra el pedido con la lista de cada cliente mientras tus vendedores están en la calle. Esa conexión la armamos a pedido para tu distribuidora. Sin ella, el asistente junta los renglones, aplica las reglas que le escribiste y ventas confirma desde la bandeja.
 
 Esta guía sirve para mayoristas de alimentos, bebidas, limpieza o [ferretería](/blog/como-automatizar-whatsapp-ferreterias), y también para quien vende insumos y repuestos al campo, que tiene su sección más abajo. Habla de los pedidos que te hacen tus clientes. Reponer mercadería con tus proveedores es otro circuito, con otras autorizaciones.
@@ -68,7 +70,7 @@ Esta guía sirve para mayoristas de alimentos, bebidas, limpieza o [ferretería]
 4. **Repetir el pedido.** El asistente lo lee renglón por renglón y espera el OK del comercio. Ahí se corrige el seis por el cuatro y la caja por el bulto.
 5. **Registrarlo.** Conectado, queda cargado en tu sistema y el comercio recibe el número de pedido. Sin conexión, la conversación queda marcada para que ventas lo cargue y le confirme.
 
-Cuando alguien manda la lista en varios mensajes seguidos, Atende espera un momento y los toma como uno solo. Con la foto de un pedido escrito a mano o un audio pasa lo contrario: no llegan, porque Atende recibe mensajes de texto. Si viene solo la foto, el asistente no contesta, porque para él no llegó nada. Dejale escrito que, si alguien avisa que mandó una foto o un audio, pida los renglones en texto.
+Cuando alguien manda la lista en varios mensajes seguidos, Atende espera un momento y los reúne para responder. Si hay una transcripción disponible de un audio, el asistente trabaja con ese texto y debe aclarar cantidades ambiguas. Las imágenes y documentos se reciben como adjuntos, pero el asistente no ve su contenido: pedí los renglones en texto o pasá el chat al equipo. El procedimiento está en [pedidos por audio](/blog/pedidos-por-audio-whatsapp-distribuidores).
 
 ## Cada comercio con su lista
 
@@ -97,7 +99,7 @@ Si un comercio nuevo manda su ubicación por WhatsApp, Atende no se entera: las 
 
 ## “Mandame lo de siempre”: el pedido repetido
 
-Es la frase más común del rubro y la que más cuidado pide. El asistente tiene en cuenta la conversación en curso, no tus pedidos anteriores. Cada chat se cierra 12 horas después del último mensaje del cliente y el siguiente arranca de cero. Puede guardar notas breves sobre un contacto, pero una nota no reemplaza el historial de ventas.
+Es la frase más común del rubro y la que más cuidado pide. El asistente tiene en cuenta la conversación en curso, no tus pedidos anteriores. Puede guardar notas breves sobre un contacto, pero una nota no reemplaza el historial de ventas.
 
 Sin conexión, lo correcto es pedirle los renglones al comercio o pasarlo a su vendedor. Dejalo escrito así en el contexto, para que nunca arme de memoria un pedido que no existe.
 
@@ -117,11 +119,15 @@ Ejemplo ilustrativo, con la distribuidora conectada a su sistema de gestión.
 >
 > **Comercio:** 2 cajas de la de 5
 >
-> **Asistente:** Registrado: pedido 7741 con tu lista. Superás el mínimo y entra en el reparto del jueves a Villa Allende.
+> **Asistente:** Quedan 10 cajas de P12, 6 de A7, 2 bultos de B20 y 2 cajas de lavandina de 5 litros. Te mostré los precios vigentes de tu cuenta. ¿Confirmás este pedido?
+>
+> **Comercio:** Sí, confirmo.
+>
+> **Asistente:** Listo, registré el pedido 7741 con esos renglones y precios. La entrega queda pendiente de coordinación.
 
-Ese cierre necesita tres cosas: que el sistema devuelva el pedido anterior, que aplique la lista del comercio y que confirme la carga. Atende informa un pedido como registrado solo cuando tu sistema lo confirmó.
+Ese cierre necesita que la integración, armada a pedido, consulte el pedido anterior y los precios actuales, muestre las condiciones al comercio y reciba su aceptación antes de cargarlo. Atende informa un pedido como registrado solo cuando tu sistema lo confirmó.
 
-Al armar la conexión también se define qué pasa si algo se corta a mitad de camino, para que un reintento no cargue dos veces el mismo pedido. Y un dato para tu rutina: si la conexión se cae, la conversación sigue sin esa herramienta y nadie recibe un aviso. Conviene comparar los pedidos del día con el sistema antes de armar el reparto.
+Al armar la conexión también se define qué pasa si algo se corta a mitad de camino, para que un reintento no cargue dos veces el mismo pedido. Si la conexión no está disponible, no hay un registro confirmado: el equipo debe revisar el sistema antes de repetir la carga. Conviene comparar las solicitudes del día con los pedidos registrados antes de armar el reparto.
 
 ## Si todavía no tenés sistema de gestión
 
@@ -150,7 +156,7 @@ Quien vende insumos, repuestos o equipamiento al campo usa la misma mecánica, c
 - **Repuestos.** Marca, modelo, versión de la máquina y código de la pieza. Dos sembradoras de la misma marca pueden no llevar el mismo repuesto, y un código reemplazado lo revisa alguien que conozca el equipo.
 - **Retiro en campo.** En un camino rural lo primero que mandan es la ubicación, y esa ubicación no llega. Pedí establecimiento, ruta, kilómetro y localidad escritos, y quién recibe la carga.
 
-Pago a cosecha, canje u otra condición especial quedan con una persona. Los audios desde la camioneta y las consultas en grupos de productores tampoco entran: Atende recibe mensajes de texto de chats individuales.
+Pago a cosecha, canje u otra condición especial quedan con una persona. En los audios desde la camioneta, revisá la transcripción y aclaraciones antes de aceptar códigos o cantidades. Las consultas en grupos de productores quedan fuera del flujo; trabajá en chats individuales.
 
 ## Un número para toda la calle
 
@@ -158,8 +164,8 @@ Cada espacio de Atende se vincula con un número. Si hoy cada vendedor recibe pe
 
 Antes de empezar, tené presente esto:
 
-- **Contestar no frena al asistente.** Tampoco tocar “Asignarme”. Para quedarse con un chat hay que marcarlo como Necesita humano, y eso vale hasta que la conversación se cierra, a las 12 horas del último mensaje del comercio. Si vuelve a escribir después, contesta el asistente.
-- **Derivar marca el chat, no avisa.** Nadie recibe una alerta. Definí quién mira los pendientes antes de cada hora de corte.
-- **La lista nueva no se manda a toda la cartera.** Si el número de pedidos está vinculado por QR, un envío masivo que nadie pidió aumenta el riesgo de que WhatsApp lo restrinja. Un recordatorio del tipo “hoy cierra el pedido del jueves” se puede armar a pedido, y si vas a escribirle seguido a la cartera, mirá también la API oficial de Meta, que es la otra forma de conectar el número.
+- **Contestar no frena al asistente.** Tampoco tocar “Asignarme”. Para quedarse con un chat hay que marcarlo como Necesita humano. Mientras está en ese estado, el asistente no responde. Revisá el estado si el comercio retoma la conversación.
+- **Definí quién revisa las excepciones.** Dejá un responsable de revisar los chats que necesitan una persona antes de cada hora de corte; derivar una conversación no equivale a resolverla.
+- **Separá recepción de pedidos y avisos.** Un recordatorio de cierre necesita una regla configurada por el equipo o un envío iniciado por el sistema del negocio. El asistente no decide empezar seguimientos por su cuenta. El mensaje de aviso tampoco confirma un pedido ni un lugar en el reparto.
 
 Para evaluarlo, traé a una [demo](/demo) tu lista, tus reglas de reparto y dos excepciones habituales. También podés ver [cómo registra pedidos Atende](/servicios/ventas-whatsapp), el caso completo de [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras) y la [guía de cotizaciones](/blog/cotizaciones-por-whatsapp-automaticas) si vendés con presupuesto previo.
