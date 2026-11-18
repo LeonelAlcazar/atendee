@@ -22,8 +22,8 @@ export const connectionRows: { label: string; text: string }[] = [
     text: 'Registra al interesado con lo que pidió.',
   },
   {
-    label: 'Tus turnos y tus contactos',
-    text: 'Manda recordatorios y seguimientos armados para tu negocio, a quienes aceptaron recibirlos. Para esos envíos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
+    label: 'Un cambio en tu sistema',
+    text: 'Cuando marcás un pedido como listo, tu sistema puede iniciar un aviso de retiro por WhatsApp. La conexión se habilita a pedido. Tu equipo ve el mensaje y la respuesta en la bandeja.',
   },
 ];
 
@@ -57,7 +57,7 @@ export const steps: { title: string; text: string }[] = [
   },
   {
     title: 'La armamos y probamos',
-    text: 'Probamos casos reales con vos, desde otro número. Las pruebas usan créditos.',
+    text: 'Acordamos un caso de prueba y revisamos el resultado en tu sistema. Una prueba por WhatsApp desde otro número consume respuestas.',
   },
   {
     title: 'Queda en tu espacio',

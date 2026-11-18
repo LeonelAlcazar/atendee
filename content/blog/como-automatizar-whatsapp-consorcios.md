@@ -12,7 +12,7 @@ summary: >-
   Para una filtración de noche hace falta un número de guardia, porque Atende no
   llama a nadie.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: inmuebles-y-hogar
 sector: Administraciones de consorcios
 tags:
@@ -76,7 +76,7 @@ Para que un reclamo sirva, tiene que traer:
 - Desde cuándo pasa.
 - Quién escribe: propietario, inquilino o encargado.
 
-La foto de la mancha es lo primero que manda cualquiera, y es justo lo que Atende no recibe. Imágenes, audios y videos nunca llegan: ni el asistente ni tu equipo los encuentran en la bandeja, y el texto que acompañe la imagen desaparece también. Pedí la descripción por texto. Si la imagen hace falta, acordá con tu equipo otra vía para recibirla.
+Cuando llega una foto de una mancha de humedad, administración puede abrirla en la bandeja. El asistente recibe el texto al pie. Pedile que identifique edificio, unidad y lugar del reclamo para que quien revise la imagen sepa a qué caso pertenece.
 
 ## Expensas: qué se le contesta a cualquiera
 
@@ -92,15 +92,15 @@ La tabla deja afuera esto:
 
 **El número no prueba quién escribe.** Un WhatsApp puede ser del inquilino, de un hijo o del anterior dueño. Si conectás saldos, la regla de identificación la pone el administrador.
 
-**Los comprobantes de pago no llegan.** Una foto de la transferencia es una imagen, y un PDF del banco también queda afuera. Si tu asistente no dice adónde se mandan, vas a tener vecinos convencidos de que informaron un pago que nadie recibió en Atende.
+**Comprobantes de pago.** Un vecino puede mandar la captura o el PDF del banco. Quedan en la bandeja para que administración coteje el importe con la cuenta antes de imputarlo a una unidad.
 
 **Cada edificio tiene su vencimiento.** Con varios consorcios, el asistente tiene que preguntar el edificio antes de contestar, porque una respuesta cargada para uno es falsa para otro. La liquidación en PDF tampoco la puede adjuntar. Sí puede mandar el link donde la publicás.
 
 ## Encargados, proveedores y el grupo del edificio
 
-Apenas escaneás el QR, el asistente le contesta a cualquiera que escriba a ese número: el vecino, el encargado, el ascensorista que avisa que terminó y el contador. No hay modo de prueba: probalo desde otro número, que usa créditos, con un reclamo sin edificio y una pregunta por la deuda del vecino.
+Probá un reclamo sin edificio y una pregunta por la deuda de otro vecino. Si lo hacés desde tu número real de WhatsApp, las respuestas consumen saldo. Revisá el resultado en la bandeja antes de indicarle a todo el consorcio que use ese canal.
 
-Con los proveedores conviene una instrucción simple: preguntar de qué edificio y qué trabajo se trata, y derivar. Una factura en PDF o un presupuesto en foto no van a entrar, así que el asistente tiene que dar el mail de la administración. No debería confirmar un trabajo, una fecha de pago ni una autorización. La guía de [servicios técnicos](/blog/como-automatizar-whatsapp-servicios-tecnicos) muestra cómo trabaja del otro lado quien te repara el ascensor.
+A los proveedores pediles edificio y trabajo, y derivá la consulta a administración. Una factura adjunta puede abrirla tu equipo. La autorización del trabajo y la fecha de pago siguen con una persona. La [guía de servicios técnicos](/blog/como-automatizar-whatsapp-servicios-tecnicos) muestra cómo se organiza quien repara el ascensor.
 
 Y el grupo de vecinos queda afuera. Los mensajes de grupos nunca llegan a Atende, así que un reclamo que se discute ahí no existe para el asistente. Si en tus edificios todo pasa por el grupo, vale la pena avisar por ahí cuál es el número para reclamos.
 
@@ -121,4 +121,4 @@ Hay temas que siempre van a una persona, y conviene escribirlos como lista en el
 - Peleas entre vecinos por ruidos, mascotas o cocheras.
 - Multas, intimaciones y cualquier deuda que esté en manos de un abogado.
 
-¿Y avisar un corte de agua a todo el edificio? Atende no hace difusiones masivas. Un recordatorio puntual, como el vencimiento para quien lo pidió, se puede armar a pedido, pero mandar mensajes que nadie pidió a una lista de propietarios desde un número vinculado por QR puede traer restricciones. El cartel y el grupo siguen siendo mejores para eso.
+Si cada mes querés avisar que está disponible la liquidación, podés programar un texto recurrente por etiqueta de edificio en Contactos. Revisá quién aceptó el aviso. Para un vencimiento que cambia según la unidad y el saldo real, tu sistema tiene que disparar el texto por una integración a pedido.

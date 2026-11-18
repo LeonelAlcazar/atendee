@@ -5,15 +5,14 @@ description: >-
   Automatizá WhatsApp gratis con 100 créditos de bienvenida de Atende, sin
   tarjeta: juntá tus primeros pedidos y mirá qué pasa al agotarlos.
 summary: >-
-  Entrá a app.atende.com.ar, creá tu espacio, contale qué hace tu negocio,
-  invitá a tu equipo y activá “100 créditos gratis”, sin tarjeta ni suscripción.
-  Después conectá tu número: el asistente empieza a contestar a todos tus contactos
-  y a juntar pedidos para que tu equipo los confirme. Cada crédito es una
-  respuesta, no una conversación. Los 100 se activan una sola vez por espacio y
-  no se renuevan. Cuando se terminan, el asistente deja de contestar y, sin un
-  plan, la app se bloquea y los mensajes nuevos no entran a la bandeja.
+  Con los créditos de bienvenida podés probar cómo el asistente reúne un
+  pedido por WhatsApp para que tu equipo lo confirme. Activá el beneficio
+  disponible en la app y vinculá tu número por QR. Cada respuesta automática
+  usa saldo. Para registrar la compra directamente en tu sistema, hace falta
+  una conexión armada a pedido. Revisá las condiciones vigentes en Plan antes
+  de depender de la prueba para atender clientes.
 publishedAt: '2026-11-02'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - WhatsApp
@@ -42,16 +41,16 @@ faq:
       en la app antes de pagar.
   - q: ¿Las pruebas desde otro número consumen créditos?
     a: >-
-      Sí. Cada respuesta del asistente usa un crédito, sea para un cliente o para
-      una prueba tuya. No hay modo de prueba: apenas vinculás el número, contesta
-      a todos tus contactos. Prepará una lista corta de casos y repetí solo los
-      que corregiste.
+      En un chat real de WhatsApp, cada respuesta del asistente consume saldo.
+      Si administración habilita el chat de prueba de tu espacio, podés
+      ensayar sin enviar mensajes por WhatsApp ni gastar créditos. Las
+      herramientas conectadas pueden ejecutar acciones reales.
   - q: ¿El asistente puede reservar turnos o consultar stock durante la prueba gratis?
     a: >-
-      Sin conexión, no: responde con lo que cargaste, junta el pedido y tu equipo
-      lo confirma. Conectado a tu sistema, reserva el turno o registra el pedido,
-      pero esa conexión se arma a pedido para tu negocio y no sale de los
-      créditos. Lo mismo vale para recordatorios y seguimientos.
+      Para registrar el pedido o reservar un turno, Atende necesita una
+      conexión armada a pedido con tu sistema. Sin ella reúne los datos y el
+      equipo confirma. Para presupuestarlo, separá el consumo de respuestas
+      del trabajo de integración.
 sources: []
 ---
 Con los 100 créditos de bienvenida podés ver gratis a un asistente tomando pedidos en tu WhatsApp: pregunta lo que falta, junta los datos y le deja la solicitud lista a tu equipo. Para automatizar WhatsApp gratis con Atende, entrá a [app.atende.com.ar](https://app.atende.com.ar), creá tu espacio, contale qué hace tu negocio y activá los créditos. Después conectás tu número; esta guía sigue el camino del QR, con el número que ya usás. No necesitás tarjeta ni suscripción.
@@ -74,7 +73,7 @@ Mientras tu espacio tenga créditos, podés usar la app y el asistente contesta 
 
 ## Cómo activar los créditos y conectar tu WhatsApp
 
-Estos son los pasos por QR; si preferís la API oficial, lo vemos con vos en la [demo](/demo). El orden importa, porque apenas escaneás el QR el asistente empieza a contestar.
+Estos pasos son para vincular el número por QR. Si preferís la API oficial, lo vemos con vos en la [demo](/demo). Al activar el asistente con saldo disponible, ya puede responder en los chats individuales habilitados.
 
 1. **Creá tu espacio.** Entrá a [app.atende.com.ar](https://app.atende.com.ar) y seguí el recorrido inicial. Primero te pide el nombre de tu equipo y un link corto.
 2. **Contale qué hace tu negocio.** Cargá la información en ese paso o después desde Asistente. Hacelo antes de conectar el número.
@@ -85,7 +84,7 @@ Estos son los pasos por QR; si preferís la API oficial, lo vemos con vos en la 
 
 Sin créditos ni plan no se puede vincular WhatsApp. Si la bienvenida ya se activó, la app te avisa. Y revisá que el número siga conectado: el asistente contesta mientras la conexión y el servicio estén activos.
 
-**No hay modo de prueba.** Una vez vinculado el número, el asistente contesta a todos los contactos que escriban, no solo a vos. Si querés elegir el momento, antes de escanear pasá el interruptor de arriba a “Modo CRM” y volvé a “Asistente activo” cuando estés listo.
+**Elegí dónde probar.** Si administración habilitó el chat de prueba, podés ensayar sin gastar créditos ni escribir a un contacto. Las conexiones pueden tocar sistemas reales, así que usá datos de prueba al ensayar una acción. Si preferís comprobar la entrega por WhatsApp, escribí desde otro número. Ese recorrido sí consume saldo.
 
 ## Cómo escribir las instrucciones de tu negocio
 
@@ -128,7 +127,7 @@ Con los créditos ves el pedido bien tomado. Para verlo terminado hace falta con
 >
 > **Asistente:** Listo, registré tu pedido para retirar el sábado.
 
-Conectado a tu sistema, Atende registra el pedido; esa conexión se arma a pedido para tu negocio. Vale lo mismo para reservar turnos, consultar stock y registrar interesados en tu CRM. Los recordatorios y seguimientos también se arman a pedido: Atende no inicia mensajes por su cuenta, y mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Mirá [qué sistemas se pueden conectar](/integraciones), y la [guía para automatizar WhatsApp Business](/blog/como-automatizar-whatsapp-empresa) te ayuda a elegir por dónde empezar.
+Conectado a tu sistema, Atende registra el pedido. Lo mismo vale para reservar turnos, consultar stock y registrar interesados en tu CRM. Las conexiones se arman a pedido. Tu equipo también puede programar avisos recurrentes desde Contactos. Si un aviso depende de la fecha real del turno o del estado del pedido, hace falta que lo dispare tu sistema. Mirá [qué sistemas se pueden conectar](/integraciones).
 
 ## Pruebas que conviene hacer desde otro número
 

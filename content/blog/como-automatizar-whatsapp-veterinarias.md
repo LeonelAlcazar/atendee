@@ -11,7 +11,7 @@ summary: >-
   equipo confirma. Síntomas, dosis y fotos de heridas quedan afuera: las
   urgencias necesitan un teléfono de guardia escrito de antemano.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: salud
 sector: Veterinarias
 tags:
@@ -32,8 +32,8 @@ faq:
   - q: ¿Puede decirme cuándo le toca la próxima vacuna a un animal?
     a: >-
       Solo si tu sistema de pacientes está conectado y esa consulta se incluyó
-      al armar la conexión. Sin eso, el dato lo da tu equipo mirando la ficha.
-      La foto de la libreta sanitaria no llega a Atende.
+      al armar la conexión. En otro caso el equipo revisa la ficha. Si llega
+      una foto de la libreta, la revisa una persona.
   - q: ¿Atende reserva turnos de peluquería canina aparte de los de consultorio?
     a: >-
       Sí, si las dos agendas están conectadas; esa conexión se arma a pedido
@@ -96,13 +96,13 @@ Decidí esto antes de vincular el número:
 2. Si no tenés, indicá adónde derivás y decilo sin vueltas: "A esta hora no hay nadie en la veterinaria".
 3. Pedile que ante cualquier síntoma no haga preguntas para medir la gravedad y pase el dato en su primera respuesta.
 
-La foto de la herida, el video del perro rengueando y la nota de voz de un dueño desesperado no llegan a Atende, ni el texto que acompañe a la foto, y para el asistente no pasó nada. Quien manda nada más que una imagen recibe silencio. Por eso el teléfono de guardia también tiene que estar en el perfil de WhatsApp del negocio.
+Si llega una foto de una herida, queda en la bandeja para el equipo. El asistente recibe el texto que la acompaña y puede indicar el teléfono de guardia que configuraste. Las palabras de una nota de voz transcripta tampoco habilitan al asistente a evaluar una urgencia. Publicá el teléfono de guardia en el perfil del negocio.
 
 Un posoperatorio que el veterinario sigue por este número va en "Necesita humano", porque responderle al dueño no frena al asistente. Y esa marca no llega al control del día siguiente: con 12 horas sin mensajes del dueño el chat se cierra, y su próxima pregunta la toma el asistente.
 
 ## ¿Cuándo le toca la antirrábica? Vacunas y libreta sanitaria
 
-Cuánto sale una vacuna o qué días se vacuna es información administrativa: cargala en "Preguntas frecuentes". Las preguntas de al lado no lo son. "¿Se la puedo dar a un cachorro de dos meses?" o "¿le toca refuerzo?" dependen del animal, y las contesta una persona con la ficha adelante. La foto de la libreta no reemplaza esa ficha, y tampoco llega.
+Precio y horario de vacunación son datos administrativos que podés cargar en las preguntas frecuentes. El profesional revisa la ficha para indicar si corresponde una dosis o un refuerzo. El asistente deriva esa consulta aunque venga acompañada de una foto de la libreta.
 
 Avisar que se viene el refuerzo implica que la veterinaria le escriba primero al dueño, algo que Atende hace solo si se arma a pedido. Para eso hacen falta tus fechas de vacunación y el acuerdo del dueño. Y hay un riesgo: lo que manda una línea vinculada por QR sin que nadie lo espere puede terminar en una restricción. La [nota sobre recordatorios](/blog/recordatorios-de-turnos-por-whatsapp) lo detalla.
 

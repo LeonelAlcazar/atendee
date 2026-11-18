@@ -13,7 +13,7 @@ summary: >-
   con la API oficial de Meta o con un QR. Si necesitás multicanal, ruteo automático
   o llamadas en el mismo hilo, Atende no es la opción.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - respond.io
@@ -135,4 +135,4 @@ Fijate que la seña queda en manos del equipo: cobrar es otra conexión, y hay q
 
 Elegir Atende es renunciar a Instagram y al email dentro de la misma herramienta, y eso tiene un precio: esas consultas siguen en otro lado. También renunciás al ruteo automático, porque en Atende la asignación es manual. La conexión de WhatsApp queda afuera de esa cuenta: ahí elegís vos, API oficial de Meta o QR.
 
-Responde mensajes de texto, así que audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Y no tenemos reseñas públicas todavía, mientras que respond.io muestra las suyas. Si el ejercicio de las cien consultas te dio mayoría de WhatsApp, llevá esas consultas a una [demo](/demo).
+Si tus consultas suelen incluir comprobantes o grabaciones, probá ambos recorridos en WhatsApp. La foto la revisa alguien de tu equipo desde la bandeja. Para la nota de voz, el asistente activo puede responder a partir de la transcripción. Llevá un ejemplo de tu operación a la [demo](/demo).

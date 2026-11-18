@@ -7,14 +7,16 @@ export const site = {
   description:
     'Atende automatiza WhatsApp para empresas y PyMEs argentinas: conectado a tus sistemas, reserva turnos, toma pedidos y cotiza, y responde mensajes de texto a cualquier hora, con tu equipo al tanto.',
   whatsapp: {
-    number: '543518764951',
-    display: '+54 351 876 4951',
+    number: '543512901337',
+    display: '+54 351 290 1337',
   },
+  // Dedicated number for the account-creation assistant, separate from the sales team.
+  onboardingWhatsApp: '543518764951',
   email: 'hola@atende.com.ar',
   location: 'Córdoba, Argentina',
   legalName: 'atende',
   trustStrip: [
-    'API oficial de Meta o QR, a elección',
+    'Vinculá WhatsApp desde tu panel con un QR',
     'Tu número sigue siendo el mismo',
     'Conexiones a pedido para tu negocio',
     'Hablás con el equipo por WhatsApp o email',

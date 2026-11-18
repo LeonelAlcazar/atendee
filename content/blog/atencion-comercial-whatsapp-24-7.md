@@ -11,7 +11,7 @@ summary: >-
   a tu sistema, reservar o registrar la tarea. Reclamos, excepciones y precios
   especiales esperan a una persona. No hay guardia humana ni garantía de servicio.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - WhatsApp
@@ -46,9 +46,10 @@ faq:
       revisión de la mañana tiene que mirar también ese filtro.
   - q: ¿El asistente retoma solo las conversaciones al día siguiente?
     a: >-
-      No. Atende no manda mensajes por su cuenta. Los seguimientos se arman a
-      pedido, y escribirle a quien no lo pidió desde un número vinculado por QR
-      tiene riesgo de restricción. Tu equipo retoma desde la bandeja.
+      El asistente responde cuando alguien le escribe. Si un pedido quedó a
+      medias, el equipo decide cuándo retomarlo. Podés programar textos
+      recurrentes desde Contactos o pedir una integración para un aviso
+      disparado por tu sistema.
 sources: []
 ---
 Una noche cualquiera en el WhatsApp de una gomería. Ejemplo ilustrativo:
@@ -58,7 +59,7 @@ Una noche cualquiera en el WhatsApp de una gomería. Ejemplo ilustrativo:
 | 20:10 | "¿Hasta qué hora abren mañana?" | Se responde y listo |
 | 22:35 | "¿Tienen 4 cubiertas 175/65 R14? Las quiero para el sábado" | Conectado a tu sistema, consulta stock y registra el pedido. Sin conexión, junta los datos y tu equipo confirma |
 | 23:50 | "Me cobraron dos veces" | Reclamo: queda marcado para una persona |
-| 01:15 | Audio de dos minutos | No llega a Atende. Nadie contesta |
+| 01:15 | Audio de dos minutos | Aparece en la bandeja. Con el asistente activo, puede responder a partir de la transcripción disponible |
 | 07:30 | "¿Me hacen precio si llevo ocho?" | Espera al vendedor |
 
 Eso es, en concreto, lo que se puede esperar de una atención comercial "24/7": [algunas tareas se terminan solas](/servicios/atencion-automatica-whatsapp), otras quedan listas para la mañana y una se pierde si no la previste.
@@ -112,11 +113,11 @@ Derivar marca la conversación como Necesita humano y a nadie le suena nada. Si 
 | --- | --- | --- |
 | Se desconectó tu WhatsApp | Sin respuesta | En la pantalla WhatsApp del panel |
 | Se agotaron las respuestas y los créditos | Sin respuesta | Nadie avisa. Los mensajes siguen entrando a la bandeja. Plan muestra los créditos disponibles, no lo que queda del mes |
-| Mandó audio, foto, video, documento o ubicación | Sin respuesta | No llega a Atende ni aparece en la bandeja |
+| Mandó una foto de la lista | El asistente conoce el texto al pie y puede pedir los renglones | La lista la ve una persona en la bandeja |
 | La conversación está en Necesita humano | Sin respuesta del asistente | Figura entre los pendientes |
 | Quedó activo Modo CRM | Sin respuesta | El interruptor del encabezado |
 
-Atende no te avisa que el asistente dejó de responder, así que conviene no descubrirlo el lunes. Si el contacto insiste por escrito después de un audio, el asistente puede explicar que por este chat solo recibe texto, siempre que se lo hayas dejado escrito.
+Antes de cerrar el local, revisá la conexión y el saldo. Dejá una instrucción para cuando el cliente mande una foto sin detalle. Por ejemplo, que pida los códigos por escrito y derive al mostrador las piezas que necesitan identificación visual.
 
 ## La revisión de la mañana no termina en los pendientes
 
@@ -125,14 +126,14 @@ Una conversación se cierra sola 12 horas después del último mensaje del conta
 1. **Mirá la conexión y los créditos.** Pantalla WhatsApp y Plan. Si la conexión está bien y hay mensajes de texto que el asistente no contestó, puede que se hayan agotado las respuestas del mes.
 2. **Abrí los pendientes de respuesta.** Ahí están las conversaciones derivadas que siguen abiertas.
 3. **Filtrá Finalizadas.** Recorré lo que se cerró durante la noche y buscá reclamos o pedidos sin terminar. Para contestar en una de esas, primero hay que reabrirla.
-4. **Si conectaste por QR, mirá el teléfono del negocio.** Los audios y las fotos de la noche están ahí y en ningún otro lado.
+4. **Revisá los adjuntos de la noche.** Una transferencia en foto o un reclamo en video pueden necesitar a una persona aunque el asistente ya haya contestado.
 5. **Marcá lo que vas a seguir vos.** Responder o tocar "Asignarme" no frena al asistente. Si querés seguir a mano, poné esa conversación en Necesita humano.
 
 Tené presente el otro lado del cierre automático: si el contacto vuelve a escribir después, la conversación se reabre y responde el asistente, aunque la tuviera una persona.
 
 ## Nadie retoma solo: seguimientos, feriados y vacaciones
 
-El asistente no vuelve a escribirle a nadie a la mañana. Atende no manda mensajes por su cuenta, así que el que dejó un pedido a medias queda esperando hasta que tu equipo lo retome. Los seguimientos y recordatorios se arman a pedido para tu negocio. Antes de pedirlos, fijate cómo está conectado el número: por QR, escribirle a gente que no lo pidió tiene riesgo de restricción, y para seguimientos frecuentes vale la pena comparar con la API oficial de Meta, la otra forma de conectarlo.
+Cuando alguien deja un pedido a medias, tu equipo decide si corresponde retomar la conversación. También puede programar un aviso recurrente a contactos que lo aceptaron. Si el envío tiene que salir justo cuando el pedido pasa a “listo”, ese evento debe venir de tu sistema mediante una [integración a pedido](/integraciones).
 
 Tampoco se entera del calendario si no se lo contás. Si cerrás un feriado puente o en enero, actualizá el contexto antes de irte y volvé a cambiarlo al abrir. Si no, va a seguir diciendo que el equipo atiende el lunes. Escribí los días y las horas tal como son, con hora de Argentina si te escriben de otros países, y evitá "mañana": en un viernes a la noche esa palabra promete un sábado que quizás no trabajás.
 

@@ -1,3 +1,5 @@
+import { buildDemoLink } from '../lib/leads';
+
 export const blogTopics = [
   {
     slug: 'bot-de-whatsapp',
@@ -99,6 +101,20 @@ export const blogTopics = [
 ] as const;
 
 export type BlogTopicSlug = (typeof blogTopics)[number]['slug'];
+export const buyerLinkByTopic: Record<BlogTopicSlug, { href: string; label: string }> = {
+  'bot-de-whatsapp': { href: '/servicios', label: 'Ver qué tareas puede terminar Atende' },
+  guias: { href: '/precios#calculadora', label: 'Estimar las respuestas de mi negocio' },
+  alternativas: { href: '/precios', label: 'Comparar los planes de Atende' },
+  automotor: { href: '/casos-de-uso/concesionarias-e-inmobiliarias#demo', label: 'Ver cómo la demo calcula cuotas y registra al interesado' },
+  salud: { href: buildDemoLink('clinicas-y-consultorios'), label: 'Pedir una demo de turnos para mi consultorio' },
+  'belleza-y-bienestar': { href: buildDemoLink('peluquerias-y-estetica'), label: 'Pedir una demo para mi agenda de turnos' },
+  'inmuebles-y-hogar': { href: '/servicios/turnos-whatsapp', label: 'Ver cómo se coordina una visita con la agenda conectada' },
+  comercio: { href: buildDemoLink('comercios-y-distribuidoras'), label: 'Pedir una demo de stock y pedidos' },
+  'gastronomia-y-turismo': { href: buildDemoLink('restaurantes-y-hoteles'), label: 'Pedir una demo de reservas por WhatsApp' },
+  educacion: { href: '/servicios/turnos-whatsapp', label: 'Ver qué requiere reservar una clase' },
+  'servicios-profesionales': { href: buildDemoLink('servicios-profesionales'), label: 'Pedir una demo para registrar consultas de mi estudio' },
+  'industria-y-logistica': { href: '/servicios/ventas-whatsapp', label: 'Ver qué conectar para cotizar y registrar un pedido' },
+};
 export function getBlogTopic(slug: string) {
   return blogTopics.find((topic) => topic.slug === slug);
 }

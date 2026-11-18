@@ -24,10 +24,7 @@ export function ServiceBlock({
           }`}
         >
           <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-4">
-              <span className="font-display text-7xl font-semibold leading-none text-coral">
-                {servicio.number}
-              </span>
+            <div>
               <Tag>{servicio.title}</Tag>
             </div>
             <h2 className="font-display text-4xl font-semibold leading-[0.95] tracking-[-0.025em] md:text-5xl">
@@ -57,6 +54,7 @@ export function ServiceBlock({
             <div>
               <Button
                 href={buildWaLink(servicio.ctaContext)}
+                data-cta={`solutions-hub-${servicio.id}-whatsapp`}
                 variant="primary"
                 size="lg"
                 target="_blank"

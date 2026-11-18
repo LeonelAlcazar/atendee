@@ -60,7 +60,7 @@ export default async function ServicePage({ params }: Props) {
                 data-cta={`solution-${service.id}-demo`}
                 size="lg"
               >
-                Pedí una demo →
+                {service.demoLabel} →
               </Button>
               <Button href="/precios" variant="outline" size="lg">
                 Ver cómo se cobra

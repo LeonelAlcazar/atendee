@@ -10,31 +10,31 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Sirve como chatbot para WhatsApp Business?',
-    a: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. El QR se escanea desde dispositivos vinculados, una función que también tienen las cuentas de WhatsApp Business, y tus clientes te siguen escribiendo al mismo número. Si tu número está en la app WhatsApp Business, contanos en la demo y vemos qué ruta te conviene.',
+    a: 'Sí. En la app vinculás el número que ya usa tu negocio escaneando un QR desde Dispositivos vinculados. Tus clientes te siguen escribiendo al mismo WhatsApp.',
   },
   {
     q: '¿Atende usa la API oficial de WhatsApp o un QR?',
-    a: 'Las dos rutas, y elegís vos. La API oficial tiene las tarifas por mensaje que publica Meta y, fuera de la ventana de 24 horas, usa plantillas aprobadas. El QR queda como un dispositivo vinculado en el número que ya usás y, según nuestra lectura, Meta no cobra por mensaje en esa ruta. Si vas a escribir primero, por ejemplo con recordatorios, conviene evaluar la API. Quién paga esas tarifas y cómo es el alta lo vemos con vos en la demo.',
+    a: 'La conexión que hacés desde la app usa un QR y queda como un dispositivo vinculado. Si tu operación requiere la API oficial de Meta, revisamos el alta, los requisitos y los costos en la demo.',
   },
   {
     q: '¿Cómo pido una conexión con mi agenda, mi stock o mi CRM?',
     a: 'Pedís una demo y nos contás qué sistema usás y qué tarea querés que Atende termine. Vemos qué hace falta y armamos la conexión para tu negocio. Hoy no hay conectores genéricos para activar por tu cuenta: cada conexión se arma a pedido, y el alcance lo definimos con vos antes de contratar.',
   },
   {
-    q: '¿Qué hace Atende sin una conexión?',
+    q: '¿Qué hace Atende sin conectar mi agenda o mi sistema?',
     a: 'Responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados, deriva a una persona, cierra la conversación, manda fotos y videos de tu biblioteca y recuerda datos del contacto y del negocio. Para un turno o un pedido, junta los datos y tu equipo lo confirma.',
   },
   {
     q: '¿Qué mensajes entiende?',
-    a: 'Mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan a Atende, así que ni el asistente ni la bandeja los ven. Los seguís viendo en tu WhatsApp.',
+    a: 'La bandeja recibe texto, audios, fotos, videos, documentos y stickers en chats individuales. Con el asistente activo, una nota de voz se transcribe y el asistente puede responder a partir de esa transcripción. Tu equipo puede abrir las fotos y los documentos en la bandeja. El asistente recibe el texto que acompaña al archivo.',
   },
   {
     q: '¿Cómo freno al asistente en un chat?',
-    a: 'Marcá la conversación como Necesita humano y el asistente deja de responder ahí. Responder desde la bandeja o tocar Asignarme no lo frena. El chat se cierra 12 horas después del último mensaje del contacto, y si vuelve a escribir, responde el asistente. Para apagarlo en todo el espacio, pasá a Modo CRM.',
+    a: 'Marcá la conversación como Necesita humano para que la siga una persona. Si solo respondés desde la bandeja o tocás Asignarme, el asistente sigue activo. Para apagarlo en todo el espacio, pasá a Modo CRM.',
   },
   {
     q: '¿Puedo probarlo antes de que les responda a mis clientes?',
-    a: 'No hay modo de prueba. Apenas conectás el número, Atende les responde a todos tus contactos. Cargá antes qué hace tu negocio y tus preguntas frecuentes, y después probalo desde otro número; usa créditos.',
+    a: 'Sí, si Atende habilitó el chat de prueba para tu espacio. Desde el panel podés ensayar una consulta sin gastar respuestas. Las herramientas conectadas pueden realizar acciones reales, así que elegí datos de prueba. Si probás desde otro teléfono por WhatsApp, la respuesta consume saldo.',
   },
   {
     q: '¿Tengo que cambiar de número?',
@@ -42,6 +42,6 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Cuánto cuesta?',
-    a: 'Los planes vigentes y sus respuestas del asistente se ven en la app antes de pagar, y empezás con créditos de bienvenida, sin tarjeta. Las conexiones a pedido las vemos con vos en la demo.',
+    a: 'En la página de precios podés ver los planes generales sin crear una cuenta y estimar cuántas respuestas usarías al mes. Si querés que reserve turnos o registre pedidos en tu sistema, la conexión se cotiza por separado para tu negocio.',
   },
 ];

@@ -143,6 +143,8 @@ describe('known link intentions', () => {
       );
     }
     expect(linkMetric('home', wa, 'faq-whatsapp')).toBe('direct_whatsapp');
+    expect(linkMetric('pricing', wa, 'pricing-estimate-whatsapp')).toBe('direct_whatsapp');
+    expect(linkMetric('demo', wa, 'pricing-estimate-whatsapp')).toBeNull();
     expect(linkMetric('pricing', wa, 'final-whatsapp')).toBe('direct_whatsapp');
     expect(linkMetric('demo', wa, 'demo-direct-whatsapp')).toBe(
       'direct_whatsapp',
@@ -168,7 +170,7 @@ describe('known link intentions', () => {
     ['https://another.test/demo', 'hero-demo'],
     ['https://app.atende.com.ar.evil.test/', 'hero-signup'],
     ['https://user:PRIVATE-CANARY@app.atende.com.ar/', 'hero-signup'],
-    ['http://wa.me/543518764951', 'footer-whatsapp'],
+    ['http://wa.me/543512901337', 'footer-whatsapp'],
     ['https://wa.me/12345', 'footer-whatsapp'],
     [wa, 'PRIVATE-CANARY'],
     ['mailto:another@example.test', 'footer-email'],

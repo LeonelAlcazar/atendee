@@ -13,7 +13,7 @@ summary: >-
   precios y planes no pudimos abrirlos el 6 de noviembre de 2026, así que
   confirmalos con el proveedor.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - ManyChat
@@ -38,9 +38,10 @@ faq:
       confirmalo con ManyChat antes de contratar.
   - q: ¿Atende hace campañas o responde comentarios de Instagram?
     a: >-
-      No. Atende trabaja solo en WhatsApp, responde mensajes de texto que le escriben
-      y no hace difusiones. Si tu operación vive de campañas o comentarios, seguí
-      con una herramienta de marketing.
+      Atende trabaja en WhatsApp. Tu equipo puede programar mensajes
+      recurrentes para contactos o etiquetas. Si necesitás responder
+      comentarios de Instagram y armar campañas en ese canal, revisá una
+      herramienta que los incluya.
   - q: ¿Atende puede tomar una reserva en WhatsApp?
     a: >-
       Conectado a tu sistema, sí, y esa conexión se arma a pedido para tu negocio.
@@ -131,6 +132,6 @@ Otras salidas: si tu volumen está en WhatsApp y anuncios, [Cliengo](/blog/alter
 
 ## Lo que Atende no te va a resolver
 
-Atende no hace difusiones, y los recordatorios y seguimientos se arman a pedido. Si pensás escribirle a mucha gente, pesa cómo conectes el número, y eso lo elegís vos: por la API oficial de Meta, [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo van plantillas; por QR, los envíos masivos suman riesgo de restricción.
+En Atende el equipo elige destinatarios, texto y frecuencia en Contactos. Un aviso que depende de un evento de tu tienda requiere que lo inicie tu sistema. Para elegir la conexión, revisá las [condiciones de WhatsApp](https://whatsappbusiness.com/es-la/policy/) y qué mensajes aceptó cada persona.
 
-Responde mensajes de texto. Una foto de un comprobante, un audio o una ubicación no llegan. Tiene un solo canal, un número por espacio, y todavía no tenemos reseñas públicas. Si con todo eso sigue encajando, [pedí una demo](/demo) con una semana real de reservas.
+En el número de WhatsApp de tu espacio, un comprobante enviado por foto puede revisarlo el equipo y una nota de voz puede convertirse en una consulta a partir de su transcripción. Para evaluar tu flujo, [pedí una demo](/demo) con una reserva habitual, una cancelación y una seña.

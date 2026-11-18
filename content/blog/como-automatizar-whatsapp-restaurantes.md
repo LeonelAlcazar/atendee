@@ -13,7 +13,7 @@ summary: >-
   de reservas: no tiene plano de mesas ni lista de espera. Grupos grandes, señas y
   alergias pasan a una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: gastronomia-y-turismo
 sector: Restaurantes y gastronomía
 tags:
@@ -99,7 +99,7 @@ A partir de cierta cantidad, una reserva deja de ser una mesa: hay que juntar me
 
 - **La carta.** Cargala como foto en tu biblioteca, porque un PDF no sale. Para el menú del día, actualizá el contexto desde el celu antes del servicio.
 - **Gustos y variantes.** “Mitad y mitad”, “sin cebolla”, “la grande”. El asistente repite el pedido completo antes de cerrarlo.
-- **La dirección.** Las ubicaciones compartidas no llegan a Atende, y un audio con el pedido tampoco. Pedí calle, altura, entre calles y piso por escrito. Si mandan solo el audio, no hay respuesta.
+- **La dirección.** Las ubicaciones compartidas quedan fuera del circuito. Pedí calle, altura, entre calles y piso. Si viene dictada en un audio, el asistente puede leer su transcripción y pedir que confirmen el número antes de mandar a reparto.
 - **La demora.** El asistente no ve la cocina. “¿Cuánto tarda?” se contesta con el rango que cargaste, y en hora pico conviene ampliarlo o derivar.
 
 Conectado a tu caja, Atende registra el pedido y responde con el número. Sin conexión lo junta y caja lo confirma. Hay más detalle sobre [tomar pedidos por WhatsApp](/servicios/ventas-whatsapp).

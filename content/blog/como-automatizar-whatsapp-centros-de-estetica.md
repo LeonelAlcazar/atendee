@@ -10,8 +10,11 @@ summary: >-
   la próxima sesión del pack; sin conexión junta el pedido y tu equipo confirma.
   Embarazo, medicación, piel y resultados esperables no se contestan por chat:
   esas consultas van a la profesional.
+salesIntro:
+  - "Reservá la evaluación por WhatsApp mientras estás en cabina. Con una conexión a pedido a tu agenda, Atende busca un turno que respete profesional, duración y equipo."
+  - "Tu equipo revisa señas y consultas que necesitan evaluación. Sin la agenda conectada, recibe la solicitud para confirmar el horario."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: belleza-y-bienestar
 sector: Centros de estética
 tags:
@@ -36,9 +39,9 @@ faq:
       el asistente deriva y alguien de tu equipo responde.
   - q: ¿Atende verifica la seña de una evaluación?
     a: >-
-      No. Puede pasar tu alias y explicar la regla que cargaste, pero el
-      comprobante es una imagen o un PDF y nunca llega a Atende. Una persona
-      del centro verifica la transferencia y confirma.
+      Puede pasar el alias y explicar tu política de señas. Si llega un
+      comprobante en foto o PDF, el equipo lo revisa en la bandeja y verifica
+      la acreditación en la cuenta.
   - q: ¿Se pueden mandar fotos de antes y después por WhatsApp?
     a: >-
       Sí, desde tu biblioteca de fotos y videos, y solo las que tengas
@@ -101,17 +104,17 @@ Para la próxima sesión, la agenda conectada tiene que respetar tres datos de t
 - **Equipo y cabina.** Con un solo láser, dos profesionales no pueden trabajar a la vez aunque tengan la agenda libre.
 - **Vencimiento.** Si tus packs vencen, decidí qué se le dice a la clienta a la que se le terminó el plazo. Esa conversación es de una persona.
 
-Avisarle a una clienta que le toca la próxima sesión significa escribirle vos primero. Se puede armar a pedido; sin eso, Atende se limita a contestar. Hacelo solo con clientas que aceptaron recibirlo, porque en una línea enlazada por QR lo no solicitado puede traer restricciones. Tenés más en [recordatorios por WhatsApp](/blog/recordatorios-de-turnos-por-whatsapp).
+Para avisar sobre la fecha real de la próxima sesión, tu agenda tiene que iniciar el envío mediante una integración a pedido. Para un texto que se repite con la misma frecuencia, el equipo puede elegir sus destinatarias y programarlo desde Contactos. Usá esta diferencia al armar tus [recordatorios por WhatsApp](/blog/recordatorios-de-turnos-por-whatsapp).
 
 ## La seña y lo que el chat no puede comprobar
 
 Una evaluación con aparato reservado y cabina bloqueada cuesta plata si nadie viene. Si pedís seña, cargá el alias y la regla de cancelación, y el asistente los pasa igual a todas. Sumá en qué casos se devuelve y cuánto antes hay que avisar, porque "se me complicó" va a aparecer.
 
-Lo que el asistente no puede es dar la seña por recibida. El comprobante llega como imagen o PDF, formatos que nunca entran a Atende. Mientras alguien no mire la cuenta, ese turno sigue pendiente. Por eso conviene acordar quién revisa las transferencias y en qué momento del día, y que el asistente lo diga: "cuando se acredite, te confirmamos por acá".
+La captura de la seña llega a tu bandeja. Alguien de tu centro coteja la transferencia con la cuenta antes de confirmar el turno. El asistente puede explicar cuándo se hace esa revisión.
 
 ## Fotos de antes y después
 
-Tu biblioteca de fotos y videos puede ayudar mucho: subís casos, equipos y la cabina, y el asistente los manda cuando le preguntan. Usá solo imágenes que tengas autorizadas por la clienta y aclará que cada piel responde distinto. En sentido contrario no hay nada que hacer: la foto de una mancha o de una zona que alguien te manda por WhatsApp nunca llega a Atende, y está bien que sea así, porque esa consulta es para la evaluación.
+Subí a la biblioteca fotos de la cabina y muestras de tu trabajo para compartir en consultas. Usá imágenes autorizadas por la clienta. Si llega una foto de una mancha, el equipo puede verla en la bandeja. El asistente deriva esa consulta a la profesional que hace la evaluación.
 
 ## Cuando la profesional sigue la charla
 

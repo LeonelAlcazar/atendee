@@ -49,7 +49,9 @@ describe('llms.txt', () => {
   it('publishes the full status table and the real limits', () => {
     for (const row of actionStatus)
       expect(text).toContain(`${row.action}: ${row.label}.`);
-    expect(text).toContain('con la API oficial de Meta o con un QR');
+    expect(text).toContain('escanea un QR desde el panel');
+    expect(text).toContain('la transcripción disponible');
+    expect(text).toContain('programar textos recurrentes');
     expect(text).not.toContain('No es la API oficial');
     expect(text).toContain('Es una demo, no un cliente.');
   });

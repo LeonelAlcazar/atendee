@@ -36,22 +36,23 @@ export default function ServiciosPage() {
             level="h1"
             title={
               <>
-                Automatizá WhatsApp por tarea:{' '}
-                <span className="text-coral">turnos, pedidos y atención.</span>
+                Reservá turnos, tomá pedidos y{' '}
+                <span className="text-coral">resolvé consultas por WhatsApp.</span>
               </>
             }
-            sub="Automatizar el WhatsApp de tu empresa rinde cuando el chat termina en algo hecho: el turno reservado, el pedido registrado, la consulta resuelta. Elegí la tarea que más te ocupa. Atende la termina en el número que ya usás, con tu equipo al tanto."
+            sub="Elegí la tarea que más tiempo le lleva a tu equipo. Para reservar un turno o cargar un pedido en tu sistema, armamos una conexión a pedido. Las respuestas a preguntas frecuentes y la derivación a una persona vienen con los planes con IA."
           />
           <nav aria-label="Tareas" className="mt-8">
-            <ul className="flex flex-wrap gap-3">
+            <ul className="grid gap-3 md:grid-cols-3">
               {servicios.map((s) => (
                 <li key={s.id}>
-                  <a
-                    href={`#${s.id}`}
-                    className="inline-flex min-h-11 items-center rounded-md border-2 border-ink bg-surface px-4 font-display text-sm font-semibold shadow-[var(--shadow-brut-xs)] hover:bg-coral-soft"
+                  <Link
+                    href={`/servicios/${s.slug}`}
+                    className="flex h-full flex-col gap-2 rounded-md border-2 border-ink bg-surface p-4 shadow-[var(--shadow-brut-xs)] transition-colors hover:bg-mint/60"
                   >
-                    {s.title}
-                  </a>
+                    <span className="font-display text-lg font-semibold">{s.title} →</span>
+                    <span className="leading-snug text-mute">{s.buyingQuestion}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -67,15 +68,15 @@ export default function ServiciosPage() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 md:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
           <div>
             <h2 className="max-w-3xl font-display text-4xl font-semibold leading-[0.98] tracking-[-0.035em] text-balance md:text-5xl">
-              No te damos un armador de flujos: armamos la conexión con tu
-              sistema.
+              ¿Qué sistema hace falta conectar?
             </h2>
           </div>
           <div className="flex flex-col items-start gap-4">
             <p className="text-lg leading-relaxed text-bg/80">
-              Conectado a tu agenda o a tu sistema, Atende termina la tarea. Esa
-              conexión se arma a pedido para tu negocio. Sin conexión, el
-              asistente junta el pedido y tu equipo lo confirma.
+              Para reservar, tu agenda tiene que permitir consultar horarios libres
+              y guardar el turno. Para vender, importa de dónde sale el precio y
+              dónde tiene que quedar el pedido. Podemos revisar esos dos puntos
+              con el sistema o la planilla que ya usás.
             </p>
             <Link
               href="/integraciones"

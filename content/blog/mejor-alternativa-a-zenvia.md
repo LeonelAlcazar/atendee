@@ -12,8 +12,11 @@ summary: >-
   eso conectado a tu sistema, con la conexión armada a pedido, solo en WhatsApp, con
   tu número por la API oficial de Meta o por QR, como elijas. Sirena hoy redirige a
   Zenvia: si la buscás, estás buscando Zenvia.
+salesIntro:
+  - "Registrá una consulta de ventas en tu CRM desde WhatsApp. Atende puede hacerlo con una conexión a pedido a tu sistema, bajo la supervisión del equipo comercial."
+  - "Si estás evaluando cambiar Zenvia, compará ese recorrido junto con los canales, los costos y el trabajo de migración que realmente necesitás."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Zenvia
@@ -43,8 +46,9 @@ faq:
       proveedores sin presencia en el país.
   - q: ¿Atende manda SMS o campañas como Zenvia?
     a: >-
-      No. Atende responde mensajes de texto en WhatsApp y no hace campañas ni SMS. Si
-      tu operación depende de eso, Zenvia es mejor elección.
+      Atende trabaja en WhatsApp. Tu equipo puede programar textos recurrentes por
+      contacto o etiqueta. Para campañas por SMS o por email, mirá una herramienta
+      que incluya esos canales.
 sources:
   - title: 'Zenvia: inicio'
     url: 'https://zenvia.com/es/'
@@ -112,7 +116,7 @@ Los planes de Atende [se ven en la app](/precios).
 | Pensada para | Marketing, ventas y atención en varias áreas | Un negocio con un número de WhatsApp |
 | Canales | WhatsApp, SMS, email, Instagram, Messenger, webchat | Solo WhatsApp, mensajes de texto |
 | Conexión con WhatsApp | BSP oficial. Pide registro empresarial y cuenta comercial verificada en Meta | API oficial de Meta o QR, a elección |
-| Campañas | Sí, con segmentación | No |
+| Campañas | Sí, con segmentación | Textos recurrentes en WhatsApp por contacto o etiqueta |
 | Datos de clientes | CDP propio y perfil unificado | Nombre, número, etiquetas y notas |
 | Quién arma | Tu equipo, sin código. Hay acompañamiento según el caso | Vos cargás el contexto y nosotros armamos la conexión |
 | Terminar una tarea | Agentes y conectores a CRM y ERP | Conectado a tu sistema, a pedido |
@@ -143,6 +147,6 @@ Conectado a tu sistema, Atende califica la consulta y la registra, y esa conexi�
 
 ## Si tu número hoy está en Zenvia
 
-[Zenvia explica](https://zenvia.com/es-mx/whatsapp/) que un número que pasa a su API deja de funcionar en la app y queda solo en la API. Desde ahí hay dos caminos. Quedarte en la API oficial de Meta, y cómo pasar el número lo vemos con vos en la demo. O ir al QR, que se escanea desde el teléfono: ahí primero tenés que resolver cómo liberar ese número y qué pasa con tus plantillas e historial. Ese paso no lo probamos con cada proveedor. Atende no importa conversaciones, y una vez conectado le contesta a todos tus contactos: probalo desde otro número; usa créditos.
+[Zenvia explica](https://zenvia.com/es-mx/whatsapp/) que un número que pasa a su API deja de funcionar en la app y queda solo en la API. Desde ahí hay dos caminos. Quedarte en la API oficial de Meta, y cómo pasar el número lo vemos con vos en la demo. O ir al QR, que se escanea desde el teléfono: ahí primero tenés que resolver cómo liberar ese número y qué pasa con tus plantillas e historial. Ese paso no lo probamos con cada proveedor. Atende no importa tus conversaciones anteriores. Con el número vinculado, el asistente activo y saldo de respuestas, probá desde otro teléfono una consulta comercial. Comprobá en la bandeja cuándo queda en manos de tu equipo.
 
-Sumá los límites de Atende a la decisión. En ninguno de los dos caminos podemos prometer que WhatsApp no restrinja un número. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Hay un número por espacio, no hay campañas y todavía no tenemos reseñas públicas. Si con eso te cierra, lo podés ver en una [demo](/demo).
+Atende reúne los chats individuales de un número por espacio. Un profesional puede abrir fotos y PDF desde la bandeja, y el asistente activo puede responder a una nota de voz a partir de su transcripción. Si necesitás registrar el interesado en una planilla, [pedí una demo de ese recorrido](/demo).

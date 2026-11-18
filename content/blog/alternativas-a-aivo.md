@@ -14,7 +14,7 @@ summary: >-
   tiene un solo canal y no tiene permisos por rol, así que no sirve para un entorno
   regulado.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Aivo
@@ -129,7 +129,7 @@ Si alguien pregunta si atienden tal obra social, el asistente responde con lo qu
 
 ## Lo que no vas a encontrar si venís de una suite grande
 
-- **Sin voz, campañas ni chat web.** Solo WhatsApp, con mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan.
+- **Consultas por voz.** Una nota de voz de WhatsApp llega a la bandeja y el asistente activo puede usar su transcripción. La atención telefónica o por chat web queda fuera de este circuito.
 - **Sin permisos por rol.** Cualquier integrante del espacio puede cambiar el estado de una conversación.
 - **Una línea por espacio.** Si tenés varias sucursales con números distintos, cada una es un espacio.
 - **Conexiones a pedido.** No hay un catálogo de integraciones para activar.

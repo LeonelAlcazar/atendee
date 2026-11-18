@@ -82,7 +82,7 @@ export function DemoForm() {
   return (
     <div className="rounded-lg border-2 border-ink bg-bg p-5 shadow-[var(--shadow-brut)] sm:p-8">
       <h2 className="font-display text-2xl font-semibold">
-        Contanos qué querés sacarte de encima
+        Pedí una demo para tu negocio
       </h2>
       <p className="mt-3 leading-relaxed text-mute">
         Con el nombre de tu negocio y una tarea alcanza. Revisás y enviás el
@@ -146,7 +146,7 @@ export function DemoForm() {
             />
           </label>
           <label className="font-semibold" htmlFor="task">
-            ¿Qué tarea querés sacarte de encima primero? *
+            ¿Qué querés automatizar primero? *
             <select
               id="task"
               name="task"
@@ -220,8 +220,7 @@ export function DemoForm() {
             </div>
           </details>
           <p className="text-sm leading-relaxed text-mute">
-            El mensaje se arma en tu navegador. Abrir el borrador no lo envía:
-            vos decidís cuándo mandarlo desde WhatsApp o email.{' '}
+            Revisá el borrador y envialo desde tu WhatsApp o email para que te contactemos.{' '}
             <Link
               href="/politica-de-privacidad"
               className="underline underline-offset-4"

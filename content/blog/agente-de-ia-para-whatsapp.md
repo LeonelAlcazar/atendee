@@ -13,7 +13,7 @@ summary: >-
   en los planes con IA; las acciones sobre tu sistema se arman a pedido para tu
   negocio. Sin conexión, el asistente junta el pedido y tu equipo lo confirma.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: bot-de-whatsapp
 tags:
   - agente de IA
@@ -106,7 +106,7 @@ El paso 5 es el que separa un agente serio de uno que inventa. Atende está arma
 | Registrar pedidos y consultar stock o precios | Stock y precios al día en un sistema o planilla, y un lugar donde cargar el pedido | A pedido, conectado a tu sistema |
 | Cotizar y calcular financiación | Lista de precios, planes de cuotas y costos que el cálculo pueda leer | A pedido, conectado a tu sistema |
 | Registrar interesados en tu CRM o planilla | Un CRM o planilla con los campos definidos y permiso para escribir | A pedido, conectado a tu sistema |
-| Recordatorios y seguimientos | La agenda o el sistema, un proceso que dispare el mensaje y el consentimiento de cada contacto | A pedido, armados para tu negocio |
+| Mandar un aviso | Una regla por contacto o etiqueta para el envío periódico. Un evento en tu sistema para un pedido listo | Los textos recurrentes se programan en Contactos. El envío desde tu sistema se arma a pedido |
 
 "A cualquier hora" vale mientras el servicio y tu WhatsApp estén conectados. "A pedido" significa que cada conexión se arma para un negocio: hoy no hay un conector genérico que prendas desde el panel. No te damos un armador de flujos: armamos la conexión con tu sistema. El detalle está en [cómo pedir una conexión](/integraciones), y los [recordatorios](/blog/recordatorios-de-turnos-por-whatsapp) tienen su propia nota porque suman un riesgo que las demás filas no tienen.
 
@@ -128,7 +128,7 @@ Los casos raros definen si vas a confiar en el agente:
 
 - **La herramienta da error.** El asistente no debería confirmar nada. Avisa que no pudo y deriva si hace falta.
 - **La conexión no carga.** La conversación sigue sin esa herramienta. Hoy el panel no te avisa, así que revisá lo que entra, sobre todo la primera semana.
-- **El contacto manda un audio.** No le llega a Atende, igual que fotos, documentos, ubicaciones y mensajes de grupos. Si conectaste por QR, esos mensajes se ven solo en el teléfono.
+- **El contacto manda un audio.** Con el asistente activo, puede contestar a partir de la transcripción de la nota de voz. Si el contacto manda una foto en el mismo chat, tu equipo la abre en la bandeja y el asistente recibe el texto que la acompaña. Los grupos quedan fuera.
 - **Hay que seguir a mano.** Marcá la conversación como **Necesita humano** y el asistente deja de responder en ese chat. Responder o asignarte no lo frena. Te lo contamos en detalle en [atender entre varios](/blog/whatsapp-varios-usuarios).
 
 Tu equipo ve toda la conversación en la bandeja, con lo que el asistente le dijo al contacto. Lo que todavía no muestra es qué herramienta usó en cada paso: lo tenemos planeado.
@@ -139,7 +139,7 @@ Tu equipo ve toda la conversación en la bandeja, con lo que el asistente le dij
 2. ¿Me mostrás una reserva o un pedido terminado en un sistema real, sin un paso manual en el medio?
 3. ¿Qué le dice el asistente al cliente si la acción falla?
 4. ¿Quién arma la conexión, quién la mantiene y qué pasa si cambio de sistema?
-5. ¿Cómo se conecta a WhatsApp? En Atende elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Otros proveedores trabajan distinto.
+5. ¿Cómo se conecta a WhatsApp? En Atende podés vincular tu número por QR desde la app. Para usar la API oficial de Meta, coordiná la conexión en la [demo](/demo).
 
 ## Cuándo te alcanza con un chatbot
 

@@ -2,32 +2,31 @@
 // connection built on request for each business (see SPEC section 3).
 export const landing = {
   hero: {
-    eyebrow: 'Atende · WhatsApp para empresas y PyMEs',
+    eyebrow: 'WhatsApp para PyMEs argentinas',
     titleBefore: 'Bot de WhatsApp que',
-    titleAccent: 'reserva, cotiza y toma pedidos',
+    titleAccent: 'reserva turnos y registra pedidos',
     titleAfter: 'mientras vos atendés.',
     description:
-      'Atende es un bot de WhatsApp para empresas y PyMEs argentinas. Conectado a tu agenda o a tu sistema, termina la tarea en la conversación, en el número que ya usás y con tu equipo al tanto. Esa conexión la armamos a pedido para tu negocio.',
+      'Conectado a tu agenda, Atende reserva el turno. Conectado a tu stock, consulta si hay mercadería y registra el pedido. Armamos la conexión para tu negocio y tu equipo sigue cada conversación desde la bandeja.',
     primaryCta: 'Pedí una demo',
-    secondaryCta: 'Crear mi espacio',
-    aboutLink: 'Qué es Atende y qué no hace',
-    reassurance: 'Antes de contratar vemos tu caso y qué conexión necesita.',
+    secondaryCta: 'Ver planes y precios',
+    signupLink: 'Crear mi espacio',
   },
   preview: {
     contact: 'Lucía M.',
     status: 'Esperando usuario',
     messages: [
-      { from: 'them', text: 'Quiero un turno para corte el jueves a la tarde' },
-      { from: 'us', text: 'Tengo jueves 16:00 o 17:30. ¿Cuál te queda mejor?' },
-      { from: 'them', text: 'A las 16' },
-      { from: 'us', text: 'Listo, te reservé el jueves a las 16:00.' },
+      { from: 'them', text: '¿Tenés una 110 en rojo?' },
+      { from: 'us', text: 'Sí, hay una 110 roja en stock. ¿Querés que registre tu interés para ventas?' },
+      { from: 'them', text: 'Sí, soy Lucía. Me interesa la roja.' },
+      { from: 'us', text: 'Listo, Lucía. Registré tu consulta por la 110 roja.' },
     ],
     result: {
-      label: 'Turno reservado',
-      detail: 'Jueves 16:00 · conectado a tu agenda',
+      label: 'Consulta registrada',
+      detail: '110 roja · interés guardado en la planilla',
     },
     caption:
-      'Ejemplo ilustrativo, con la agenda conectada. Sin conexión, el asistente junta el pedido y tu equipo lo confirma.',
+      'Ejemplo ilustrativo de la demo de motos de Atende, con el stock y los interesados en Google Sheets.',
     inbox: [
       { name: 'Lucía M.', line: 'Esperando usuario', active: true },
       { name: 'Martín R.', line: 'Necesita humano', active: false },
@@ -98,15 +97,15 @@ export const landing = {
     eyebrow: 'Qué funciona hoy',
     title: 'Qué viene incluido y qué armamos a pedido.',
     description:
-      'Esta tabla es pública a propósito. Antes de hablar con nosotros tenés que saber qué hace Atende hoy y qué hay que armar para tu negocio.',
+      'Para contestar un audio alcanza con tener el asistente activo. Para confirmar un turno, hace falta que Atende pueda consultar y escribir en tu agenda.',
     link: 'Cómo armamos cada integración',
     demoLabel: 'Una demo que ya funciona',
     demoText:
-      'Para una concesionaria de motos, el asistente consulta stock y precios, calcula la financiación y registra al interesado en Google Sheets. Es una demo nuestra, no un cliente.',
+      'En nuestra demo de concesionaria podés ver cómo se consulta el stock, se calcula una financiación y se guarda al interesado en Google Sheets.',
   },
   connect: {
     eyebrow: 'Cómo se conecta',
-    title: 'No te damos un armador de flujos: armamos la conexión con tu sistema.',
+    title: 'Cómo conectar tu WhatsApp y la herramienta que usás.',
     selfLabel: 'Lo hacés vos, en la app',
     steps: [
       {
@@ -132,7 +131,7 @@ export const landing = {
       {
         number: '05',
         title: 'Conectás tu número',
-        text: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. El QR lo escaneás con el teléfono del negocio, desde dispositivos vinculados, con el código abierto en otra pantalla. La API la vemos con vos en la demo.',
+        text: 'Para vincular tu número desde la app, abrí Dispositivos vinculados en el teléfono y escaneá el QR que ves en otra pantalla. Si tu negocio requiere la API oficial de Meta, consultá el alta y el alcance en la demo.',
       },
     ],
     requestLabel: 'Lo armamos nosotros, a pedido',
@@ -141,12 +140,12 @@ export const landing = {
       'Nos contás qué sistema usás y qué tarea querés sacarte de encima. Armamos la conexión para tu negocio y el asistente la usa en la conversación.',
     nodes: [
       { name: 'Tu WhatsApp', text: 'El número que ya usás', link: '' },
-      { name: 'Atende', text: 'Entiende el pedido y usa la conexión', link: 'API oficial o QR' },
+      { name: 'Atende', text: 'Entiende el pedido y usa la conexión', link: 'Vincular el número' },
       { name: 'Tu sistema', text: 'Agenda, stock o CRM', link: 'A pedido' },
     ],
     requestCta: 'Contanos qué sistema usás',
     integrationsLink: 'Ver integraciones',
-    note: 'Apenas conectás tu número, Atende les responde a todos tus contactos. No hay modo de prueba: probalo desde otro número; usa créditos.',
+    note: 'Si tu espacio tiene habilitado el chat de prueba, podés probar el asistente en el panel sin gastar respuestas. Las acciones sobre herramientas conectadas pueden ser reales. Si le escribís desde otro teléfono por WhatsApp, se consumen respuestas.',
   },
   team: {
     eyebrow: 'Tu equipo al tanto',
@@ -158,7 +157,7 @@ export const landing = {
       label: 'Estado de la conversación',
       value: 'Necesita humano',
       title: 'Marcás ese chat y el asistente deja de responder ahí.',
-      text: 'Responder desde la bandeja o tocar Asignarme no lo frena. El chat se cierra 12 horas después del último mensaje del contacto, y si vuelve a escribir, responde el asistente.',
+      text: 'Si seguís la conversación vos, marcá Necesita humano. Responder desde la bandeja o tocar Asignarme deja al asistente activo.',
     },
     off: {
       on: 'Asistente activo',
@@ -177,7 +176,7 @@ export const landing = {
       sample: 'Anoté tu pedido de turno para el jueves. Te lo confirma el equipo.',
       sampleCaption: 'Ejemplo ilustrativo',
       title: 'Sin conexión, el asistente junta el pedido y tu equipo lo confirma.',
-      text: 'Si hace falta una persona, el asistente avisa y la conversación queda marcada en la bandeja. Esa marca no le manda un aviso aparte a nadie.',
+      text: 'Cuando hace falta una persona, la conversación queda marcada en la bandeja para que tu equipo la retome.',
     },
   },
   faq: {

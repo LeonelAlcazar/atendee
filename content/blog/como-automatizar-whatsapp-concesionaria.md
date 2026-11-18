@@ -12,7 +12,7 @@ summary: >-
   un crédito siguen en manos de personas. Sin conexión, el asistente junta los
   datos y el vendedor confirma.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: automotor
 sector: Concesionarias de autos
 tags:
@@ -41,8 +41,9 @@ faq:
       con el contrato adelante.
   - q: ¿Qué pasa con las fotos del auto que manda el cliente?
     a: >-
-      Nunca llegan a Atende, igual que los audios y las capturas de un aviso,
-      así que los datos para la toma se piden por texto.
+      Tu equipo las puede abrir en la bandeja. El asistente recibe el texto
+      que acompaña la foto y puede pedir marca, modelo y año. La tasación del
+      usado queda con una persona.
 ---
 Conectado a tu stock y a la agenda de ventas, Atende confirma que el auto del aviso sigue disponible y agenda el test drive del sábado mientras el vendedor está sentado con otro cliente. Para llegar ahí, primero separá lo que entra al WhatsApp de una concesionaria, porque cinco conversaciones distintas suelen arrancar con media frase.
 
@@ -62,7 +63,7 @@ Sin conexión, el asistente no sabe qué salió ayer del salón. Si cargás las 
 
 Un truco barato: poné un código corto en cada aviso. La gente pregunta por “el gris”, y con cuatro grises en el salón eso no alcanza. Con el código, vendedor y asistente hablan de la misma unidad.
 
-Quien manda una captura del aviso manda una imagen, y las imágenes no llegan a Atende: la persona queda esperando, porque el asistente no contesta. Para el pedido inverso, el clásico “pasame más fotos”, subí fotos y videos de las unidades a tu biblioteca y el asistente los manda en el chat. Esa parte funciona sin conectar nada.
+Si alguien manda la captura del aviso, el vendedor la ve en la bandeja. Para ubicar esa unidad, el asistente pide el modelo o el código que figura en la publicación. A la inversa, podés cargar fotos y videos de tus unidades en la biblioteca para que los mande cuando le pidan más imágenes.
 
 ## Toma de usado: juntar datos sin poner precio
 
@@ -76,7 +77,7 @@ El vendedor que recibe una toma quiere saber lo mismo cada vez, y todo eso se es
 
 El asistente anota y frena ahí. Ni un valor, ni un “más o menos”: el tasador necesita ver chapa, cubiertas e historial de service, y cualquier número dicho antes se le vuelve en contra en la mesa. Tampoco hace falta pedir la cédula ni el título para una primera consulta.
 
-Lo que sí va a pasar es que el cliente mande seis fotos del tablero y un audio contando que está impecable. Eso no llega a Atende ni entra a la bandeja. Si en tu salón las tomas se resuelven mirando fotos, definí quién las recibe y por qué canal.
+Si el cliente manda fotos del tablero, el vendedor puede revisarlas en la bandeja. Un audio con el kilometraje sirve para completar la consulta cuando hay transcripción. La tasación la hace quien toma los usados.
 
 ## Plan de ahorro: la consulta que más cuidado pide
 
@@ -90,7 +91,7 @@ Si tu concesionaria no vende planes, decilo también en ese texto. Te ahorrás u
 
 Con tu lógica conectada, Atende calcula. La [demo para venta de motos](/blog/como-automatizar-whatsapp-venta-de-motos) ya lo hace en una versión simple, con interés, patente y gastos. En un auto la cuenta tiene más piezas: anticipo, usado como parte de pago, gastos de transferencia o de patentamiento, y la tasa de cada banco o financiera. Por eso no se copia la demo: se arma con tu forma de vender.
 
-Igual queda una simulación. La aprobación de un prendario no pasa por el chat, y el asistente lo tiene que aclarar. Tampoco debería pedir recibo de sueldo ni DNI para mostrar una cuota; además, un PDF o una foto del documento no le llegarían.
+La simulación de cuotas sirve para comparar opciones. La aprobación del prendario queda con el equipo. Para mostrar una cuota alcanzan los datos de la simulación, sin pedir recibo de sueldo ni DNI.
 
 ## Del aviso al test drive del sábado
 

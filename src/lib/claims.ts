@@ -20,7 +20,7 @@ export const claimRules: ClaimRule[] = [
   {
     id: 'todos-los-mensajes',
     pattern: /\btodos (los|tus) mensajes\b/,
-    fix: 'Decí "mensajes de texto": audios, fotos y grupos no llegan.',
+    fix: 'Precisá los tipos de mensaje. Los chats de grupo quedan afuera.',
   },
   {
     id: 'todas-las-conversaciones',
@@ -38,8 +38,14 @@ export const claimRules: ClaimRule[] = [
   {
     id: 'entiende-medios',
     pattern:
-      /\b(entiende|escucha|transcribe|interpreta|lee|responde|contesta|procesa)\s+(a\s+)?(los\s+|las\s+|tus\s+)?(audios?|fotos?|imagenes|videos?|stickers?)\b/,
-    fix: 'Solo llegan mensajes de texto.',
+      /\b(entiende|escucha|transcribe|interpreta|lee|responde|contesta|procesa)\s+(a\s+)?(los\s+|las\s+|tus\s+)?(fotos?|imagenes|videos?|documentos?|stickers?)\b/,
+    fix: 'El equipo ve los adjuntos. La IA usa la transcripción del audio y el texto que acompañe al archivo.',
+  },
+  {
+    id: 'niega-adjuntos',
+    pattern:
+      /\batende (no recibe|no admite) (los |las )?(audios|fotos|documentos|notas de voz)\b|\b(audios|fotos|documentos|notas de voz)(,? (y |ni )?(las? |los? )?(fotos|audios|videos|imagenes|documentos|stickers|ubicaciones|grupos))* (no llegan|no entran) (a atende|a la bandeja)\b/,
+    fix: 'La bandeja admite adjuntos en chats individuales. La IA usa la transcripción disponible de una nota de voz.',
   },
   {
     id: 'velocidad',
@@ -143,14 +149,14 @@ export const claimRules: ClaimRule[] = [
     pattern:
       /\b(recordatorios?|seguimientos?)( de \w+)? automatic\w*\b|\bautomatic\w*\b.{0,20}\b(recordatorios?|seguimientos?)\b/,
     requires: /\batende\b|\basistente\b/,
-    except: /\ba pedido\b|\barmad[oa]s?\b/,
-    fix: 'Recordatorios y seguimientos son "a pedido", nunca incluidos.',
+    except: /\ba pedido\b|\barmad[oa]s?\b|\b(program|agend)\w*|\breglas?\b/,
+    fix: 'El equipo programa mensajes recurrentes y el sistema del negocio puede iniciar avisos con una conexión a pedido.',
   },
   {
     id: 'atribucion-en-bandeja',
     pattern:
       /\bquien respondio\b|\bves si respondio\b|\bves (cada|que) accion\b|\bsi respondio el bot\b/,
-    fix: 'La bandeja todavía no lo muestra. Decí "ves toda la conversación".',
+    fix: 'La bandeja muestra el nombre disponible o Equipo en respuestas manuales. Evitá atribuir todos los mensajes y acciones.',
   },
   {
     id: 'tomar-conversacion',
@@ -162,7 +168,7 @@ export const claimRules: ClaimRule[] = [
     id: 'pausa-indefinida',
     pattern:
       /\bpausad[oa]s? hasta que\b|\bhasta que vos quieras\b|\bel bot se frena\b/,
-    fix: 'La pausa dura hasta que el chat se cierra: 12 horas después del último mensaje del contacto.',
+    fix: 'El asistente guarda silencio mientras el chat esté marcado como Necesita humano.',
   },
   {
     id: 'responder-pausa',
@@ -175,7 +181,7 @@ export const claimRules: ClaimRule[] = [
     id: 'modo-de-prueba',
     pattern:
       /\bantes de que lo vean tus clientes\b|\bantes de usarlo con clientes\b|\bsin que lo vean tus clientes\b/,
-    fix: 'Decí "Probalo desde otro número; usa créditos."',
+    fix: 'Distinguí el chat de prueba habilitado para un espacio de una prueba por WhatsApp desde otro número.',
   },
   {
     id: 'buscar-en-mensajes',
@@ -185,7 +191,7 @@ export const claimRules: ClaimRule[] = [
   {
     id: 'permisos-por-rol',
     pattern: /\bpermisos por rol\b/,
-    fix: 'No hay permisos por rol.',
+    fix: 'Describí permisos comprobados, como invitar personas y crear equipos si administrás el espacio.',
   },
   {
     id: 'aviso-sin-respuestas',

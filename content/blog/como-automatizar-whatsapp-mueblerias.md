@@ -6,14 +6,13 @@ description: >-
   reserva la visita por WhatsApp. Qué preguntar en muebles de línea, a medida y
   flete.
 summary: >-
-  Para automatizar el WhatsApp de una mueblería, separá primero el mueble de línea
-  del mueble a medida. Conectado a tu stock y tus fletes, Atende confirma
-  disponibilidad y registra el pedido; conectado a tu agenda, reserva la visita
-  para medir. Esas conexiones se arman a pedido. Sin ellas, el asistente manda
-  fotos, junta medidas y localidad, y ventas confirma plazo y precio. La foto del
-  ambiente y el plano no le llegan.
+  En una mueblería, Atende puede registrar el pedido con tu stock y tus fletes
+  conectados, o reservar la visita para medir con acceso a tu agenda. Esas
+  conexiones se arman a pedido. Sin ellas, el asistente junta medidas y
+  localidad para ventas. Tu equipo puede revisar fotos del ambiente y planos
+  en la bandeja.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: comercio
 sector: Mueblerías
 tags:
@@ -29,10 +28,9 @@ related:
 faq:
   - q: ¿El asistente puede decir si un mueble entra en un ambiente?
     a: >-
-      Puede comparar las medidas que le pasen con las del mueble y avisar si no
-      dan. Que entre de verdad depende también de escaleras, puertas y ascensor, y
-      eso lo confirma ventas. La foto del ambiente no le llega: necesita los
-      números por escrito.
+      Puede comparar las medidas que le pasan con las de la ficha. Ventas
+      verifica puertas, escaleras y ascensor. Si llega una foto, tu equipo la
+      ve en la bandeja y el asistente pide las medidas que faltan.
   - q: ¿Puede presupuestar un mueble a medida?
     a: >-
       Junta lo que hace falta: medidas, material, terminación, localidad y fecha
@@ -73,7 +71,7 @@ Pedile al asistente que junte esto por escrito:
 3. Si en el recorrido hay un giro angosto o un descanso chico.
 4. Para un mueble a medida, qué condiciona la pared: zócalos, enchufes, caños, una columna.
 
-La gente manda la foto de la pared, el plano en PDF o un audio largo explicando la idea, y nada de eso llega a Atende, que recibe mensajes de texto. Si solo mandan la foto, no hay respuesta, así que quien tome la venta tiene que acordar con el cliente cómo verla.
+Si el cliente manda una foto de la pared o un plano en PDF, tu equipo puede abrirlos en la bandeja. Para avanzar con el tamaño del mueble, el asistente pregunta ancho, alto y profundidad. Una nota de voz con medidas también sirve si hay transcripción y el cliente confirma los números.
 
 Con los números escritos, el asistente puede avisar que la pieza mide más que el hueco. Que “entra” lo confirma ventas, porque depende de cosas que un chat no muestra.
 
@@ -116,7 +114,7 @@ Esas conexiones se arman a pedido para cada mueblería; [acá explicamos qué ne
 
 Contá en el contexto cómo cobrás: seña, saldo contra entrega, cuotas. El asistente repite eso, no negocia. Hay una pregunta que conviene responder por escrito antes de que aparezca: ¿la seña congela el precio? Si tu respuesta depende del plazo de fabricación, escribila así.
 
-La constancia de pago que manda el cliente es una imagen, y esa imagen no entra a Atende. Hasta que alguien vea la transferencia en la cuenta, el pedido no está señado. En el ejemplo de arriba, por eso, dice “cuando entre la seña”.
+El equipo recibe la constancia de pago en la bandeja. Para dar el pedido por señado, tiene que cotejar la acreditación en la cuenta.
 
 ## Postventa: “¿cuándo llega lo mío?” seis semanas después
 
@@ -124,4 +122,4 @@ Entre la seña y la entrega pasa mucho tiempo, y la consulta vuelve cuando el ch
 
 Conectado a tu sistema de pedidos, busca por el teléfono e informa el estado. Sin conexión, pide nombre y número de pedido y deriva, y tu equipo mira el historial de ese contacto en la bandeja.
 
-Los reclamos van por otro lado. “Vino rayado”, “falta un herraje”, “la puerta no cierra” van siempre a una persona. El asistente toma el pedido y el problema, y la foto del golpe, que a Atende no llega, la pide quien sigue el reclamo. Una etiqueta como “Reclamo” ayuda a filtrarlos y a que no se pierdan entre las consultas de venta.
+Derivá a posventa los reclamos por herrajes, rayas o puertas. El asistente pide el número de pedido y el motivo. Una persona revisa la foto del golpe en la bandeja. La etiqueta “Reclamo” ayuda a distinguirlo de una consulta nueva.

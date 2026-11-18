@@ -80,8 +80,8 @@ export default function NosotrosPage() {
                 label: 'Decimos los límites',
                 text: (
                   <>
-                    Solo mensajes de texto, sin modo de prueba, y el resto está
-                    en{' '}
+                    Para tomar un pedido por audio, el asistente usa su transcripción.
+                    Las fotos las revisa una persona. Podés consultar los detalles en{' '}
                     <Link href="/que-es-atende" className={link}>
                       qué es Atende
                     </Link>

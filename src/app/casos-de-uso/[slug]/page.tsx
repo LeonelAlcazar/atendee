@@ -72,6 +72,9 @@ export default async function RubroPage({ params }: Props) {
               <Button href={buildDemoLink(rubro.slug)} data-cta={`rubro-${rubro.slug}-hero-demo`} size="lg">
                 {rubro.cta.demoLabel}{'\u00a0'}→
               </Button>
+              <Link href="#prueba" className="inline-flex min-h-11 items-center px-1 font-semibold underline underline-offset-4">
+                Qué probar en la demo
+              </Link>
             </div>
           </div>
           <div className="flex w-full flex-col gap-5 lg:justify-self-end">

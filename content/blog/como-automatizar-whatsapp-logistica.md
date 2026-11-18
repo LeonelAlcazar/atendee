@@ -5,14 +5,13 @@ description: >-
   Conectado a tu sistema, Atende cotiza por WhatsApp con origen, destino y bultos,
   informa el seguimiento y registra reclamos sin prometer una fecha de entrega.
 summary: >-
-  Una empresa de logística puede automatizar WhatsApp en tres frentes: cotizar con
-  origen, destino y bultos, informar el estado con el número de guía y registrar
-  reclamos. Conectado a tu sistema, el asistente calcula el flete y lee el estado;
-  sin conexión, junta los datos y operaciones responde. No promete horarios que
-  el sistema no informó, y las fotos del remito o de la rotura nunca llegan a
-  Atende.
+  Para cotizar un flete por WhatsApp, pedí origen, destino y bultos. Con tu
+  sistema conectado, Atende calcula el flete y consulta el estado de la guía.
+  Sin conexión reúne los datos para operaciones. Si hay un reclamo, tu equipo
+  puede abrir la foto del remito en la bandeja y revisar el caso antes de
+  comprometer una entrega.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: industria-y-logistica
 sector: Empresas de logística y transporte
 tags:
@@ -43,9 +42,10 @@ faq:
       restricción, así que conviene limitarlo a quienes lo solicitaron.
   - q: ¿Los choferes pueden usar el mismo número que los clientes?
     a: >-
-      No conviene. El asistente responde a todos los contactos y no hay excepción
-      por persona, así que también les contestaría a ellos. Además, los grupos y
-      las ubicaciones compartidas no llegan a Atende.
+      Si la flota escribe por chat individual al mismo número comercial, el
+      asistente activo puede contestar mientras haya saldo disponible. Para
+      coordinar los viajes del día conviene usar un canal separado. Las
+      ubicaciones compartidas y los grupos quedan fuera del circuito.
 sources: []
 ---
 Ejemplo ilustrativo: son las 18:40, operaciones ya cerró y un destinatario escribe por su envío.
@@ -96,13 +96,13 @@ El estado también tiene su letra chica. Si los choferes marcan las entregas al 
 
 Un reclamo necesita una persona, pero llega mejor armado si antes alguien juntó los datos. El asistente pide guía, qué pasó, cuándo y quién reclama, y deriva. No pide disculpas en nombre de la empresa por algo que nadie revisó, no dice que el seguro responde y no habla de reintegros.
 
-Las fotos de la caja rota, el remito firmado o el video del pallet nunca llegan a Atende. El asistente no se entera y el contacto se queda esperando, así que dejale escrito qué decir: "Las fotos no llegan por este chat. Mandalas a [mail de reclamos] con el número de guía." Si tus condiciones fijan un plazo para reclamar, cargalo tal como figura y dejá la interpretación para una persona.
+Si llega una foto de la caja rota, del remito o un video del pallet, tu equipo puede revisarlo desde la bandeja. El asistente pide el número de guía para ubicar el reclamo y deriva el chat a operaciones. La evaluación del daño y la interpretación de las condiciones quedan con una persona.
 
 La derivación pone el chat en Necesita humano y no alerta a nadie: alguien de operaciones tiene que mirar la bandeja. Un reclamo de la noche, además, se cierra solo a las 12 horas de lo último que escribió el contacto, así que la [revisión de pendientes de cada mañana](/blog/atencion-comercial-whatsapp-24-7) tiene que incluir Finalizadas.
 
 ## Choferes, grupos y ubicaciones: lo que queda afuera
 
-Si tus choferes le escriben al mismo número que tus clientes, el asistente les va a contestar a ellos también, porque responde a todos los contactos y no hay excepción por persona. Conviene que la flota use otro número. Cada espacio tiene un solo número, y eso también pesa si cada sucursal atiende el suyo.
+Si tus choferes escriben al número comercial, sus consultas individuales pueden llegar al asistente mientras esté activo y haya saldo. Separar la coordinación de la flota evita que un parte de reparto se confunda con una consulta comercial.
 
 Los grupos de WhatsApp no llegan a Atende, así que la coordinación con fleteros sigue por donde va hoy. Las ubicaciones compartidas tampoco: si un destinatario manda un pin en vez de la dirección, el asistente no lo ve. Pedile siempre la dirección escrita.
 

@@ -13,7 +13,7 @@ summary: >-
   nombra a ChatGPT, Codex y Claude, pero la compatibilidad con cada uno no está
   confirmada, así que probala con el tuyo.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - MCP
@@ -74,7 +74,7 @@ Dos aclaraciones antes de seguir. Esto no le suma ninguna acción al asistente q
 | Pedido | ¿Se puede? | El detalle |
 | --- | --- | --- |
 | Ver contactos | Sí | Solo los que tienen una conversación en tu espacio. No es la agenda de tu teléfono |
-| Leer mensajes | Sí | Texto de la conversación actual o de las anteriores. Audios, fotos y archivos no llegan a Atende. No dice si una respuesta la escribió el asistente o una persona |
+| Leer mensajes | Sí | Devuelve el texto de las conversaciones. Un marcador de archivo en el historial no equivale a leer el contenido de una imagen o un PDF. Para ver los adjuntos, abrí la bandeja |
 | Ver el estado de cada chat | Sí | Por ejemplo, cuáles están en Necesita humano |
 | Ver si tu WhatsApp está conectado | Sí | Solo lectura. No toca el QR ni la sesión |
 | Mandar texto en un chat abierto | Sí, con tu permiso | Hasta 4.096 caracteres, 30 envíos por minuto |

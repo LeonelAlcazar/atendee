@@ -3,11 +3,15 @@ import type { FaqItem } from './faq';
 export const pricingFaq: FaqItem[] = [
   {
     q: '¿Cuánto cuesta un bot de WhatsApp con Atende?',
-    a: 'Depende del plan y de las conexiones que sumes. Cada plan con IA trae una cantidad de respuestas del asistente por mes, y las conexiones con tu sistema se cotizan para cada negocio. Los planes generales se muestran en esta página. En tu espacio ves los que tenés disponibles. Si elegís la API oficial de Meta, tiene sus propias tarifas por mensaje: lo vemos con vos en la demo.',
+    a: 'Depende del plan y de las conexiones que sumes. Cada plan con IA trae una cantidad de respuestas del asistente por mes, y las conexiones con tu sistema se cotizan para cada negocio. Los planes generales se muestran en esta página. En tu espacio ves los que tenés disponibles. Si necesitás la API oficial de Meta, consultá sus requisitos y tarifas en la demo.',
   },
   {
     q: '¿Dónde veo el precio de los planes?',
     a: 'En esta página podés consultar los planes generales sin crear una cuenta. Para ver los disponibles para tu espacio, abrí «Continuar en la app». Si todavía no tenés un espacio, crealo con el nombre de tu negocio. También podés preguntarnos por WhatsApp o email.',
+  },
+  {
+    q: '¿Qué plan necesito para mi volumen de WhatsApp?',
+    a: 'Multiplicá los chats que atendería el asistente en un mes por sus respuestas en un chat típico. Compará ese total con las respuestas incluidas en cada plan con IA. La calculadora de esta página hace esa cuenta con los planes publicados. Si todo lo responde tu equipo a mano, podés elegir Plan CRM.',
   },
   {
     q: '¿Qué es un crédito?',

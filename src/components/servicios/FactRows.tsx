@@ -10,7 +10,6 @@ export type FactRow = {
 const statusStyle: Record<DetailStatus, string> = {
   Incluido: 'bg-mint',
   'A pedido': 'bg-sun',
-  'No llega': 'bg-coral-soft',
 };
 
 export function FactRows({

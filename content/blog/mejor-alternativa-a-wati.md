@@ -13,7 +13,7 @@ summary: >-
   sistema, con la conexión armada a pedido, solo en WhatsApp. El número lo conectás
   con la API oficial de Meta o con un QR, como prefieras.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Wati
@@ -163,6 +163,6 @@ Conectado a tu agenda, Atende reserva el lugar. Esa conexión se arma a pedido p
 
 ## Lo que Atende no te da
 
-Sin campañas: los recordatorios se arman a pedido. Para mensajes que salen de tu lado conviene evaluar la API oficial: [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo se envían plantillas, y por QR escribirle a quien no lo pidió suma riesgo de restricción. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Un número por espacio y sin reseñas públicas todavía.
+En Atende podés programar textos por contacto o etiqueta. Un aviso por un evento del negocio, como un pedido listo, necesita que tu sistema lo dispare mediante una integración a pedido. Los archivos entrantes se revisan en la bandeja. Si vas a escribir primero, considerá las [condiciones de WhatsApp](https://whatsappbusiness.com/es-la/policy/) y el permiso para ese aviso.
 
-Si tu número está en la API de Wati y querés pasarlo al QR, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y el QR se escanea desde la app. Preguntá primero cómo hacerlo; ese paso no lo probamos con cada proveedor. Si preferís seguir por la API oficial, cómo mudar el número lo vemos con vos en una [demo](/demo). Al conectarlo el asistente le contesta a todos, así que probalo desde otro número; usa créditos.
+Si tu número está en la API de Wati y querés pasarlo al QR, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y el QR se escanea desde la app. Preguntá primero cómo hacerlo; ese paso no lo probamos con cada proveedor. Si preferís seguir por la API oficial, cómo mudar el número lo vemos con vos en una [demo](/demo). Si querés comprobar la entrega por WhatsApp, probá desde otro número con el asistente activo y saldo de respuestas. Tu equipo puede continuar el chat en “Necesita humano”.

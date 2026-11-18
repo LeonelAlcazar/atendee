@@ -13,7 +13,7 @@ summary: >-
   tu sistema, con la conexión armada a pedido, y elegís cómo conectar tu número:
   con la API oficial de Meta o con un QR.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - WhatsApp Business
@@ -160,6 +160,6 @@ Para trabajar entre varios, [WhatsApp para varios usuarios](/blog/whatsapp-vario
 
 Frente a la app, el punto más fuerte en contra es que sumás a un tercero entre tu negocio y WhatsApp, por cualquier camino. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por la API, [Meta cobra por mensaje](https://developers.facebook.com/docs/whatsapp/pricing) y [fuera de las 24 horas](https://whatsappbusiness.com/es-la/policy/) solo van plantillas. Por QR, Atende queda como un dispositivo vinculado a tu número, y según nuestra lectura esas tarifas no corren porque Meta las publica para la Plataforma. En ninguno de los dos podemos prometer que WhatsApp no restrinja un número.
 
-Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Es un número por espacio y todavía no tenemos reseñas públicas. Una vez conectado le contesta a todos tus contactos, así que probalo desde otro número; usa créditos.
+Cada espacio atiende un número. Tu equipo recibe audios, fotos y documentos de chats individuales en la bandeja. Con el asistente activo, una transcripción puede servir para entender el modelo o el horario que pide el cliente. Probá con un pedido incompleto y comprobá qué aclara antes de avanzar.
 
 Si tenés el agente de Meta prendido, apagalo antes de conectar: con los dos activos, un contacto puede recibir dos respuestas. Para decidir con tu caso concreto, [pedí una demo](/demo).

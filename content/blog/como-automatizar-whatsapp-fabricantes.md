@@ -6,14 +6,13 @@ description: >-
   pieza, revisión de plano, cantidad mínima y fecha, con ventas y producción
   al tanto.
 summary: >-
-  Una empresa industrial puede automatizar WhatsApp para consultar stock de lo
-  que ya fabrica y registrar pedidos con código, revisión, cantidad y fecha.
-  Conectado a tu sistema, el pedido queda cargado; sin conexión, el asistente lo
-  reúne y ventas lo confirma. Un plano en PDF o una foto de la pieza nunca llegan
-  a Atende, y la fecha que pide el comprador no es plazo de fabricación: ese
-  compromiso lo da producción.
+  Con el catálogo y el registro de pedidos conectados, Atende consulta stock y
+  carga el pedido industrial con código, revisión, cantidad y fecha
+  solicitada. Sin conexión, reúne los datos para ventas. Los planos adjuntos
+  quedan disponibles para ingeniería. Producción confirma el plazo de
+  fabricación.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: industria-y-logistica
 sector: Fabricantes y proveedores industriales
 tags:
@@ -29,9 +28,10 @@ related:
 faq:
   - q: ¿Puedo recibir planos por WhatsApp con Atende?
     a: >-
-      No. PDF, DWG, STEP y fotos nunca llegan a Atende y el asistente no se
-      entera. Definí una casilla de correo para planos y dejá escrito que el
-      asistente la indique.
+      La oficina técnica puede abrir un documento adjunto y controlar cuál es
+      la revisión válida. El asistente puede pedir el número de plano y
+      asociarlo a la consulta. La interpretación de las dimensiones requiere
+      una persona.
   - q: ¿El asistente puede prometer un plazo de fabricación?
     a: >-
       No debería. Registra la fecha que pide el comprador y aclara que ventas la
@@ -80,14 +80,14 @@ Cargá esta lista en "Contexto del asistente" y pedile dos cosas. Que conserve l
 
 Si pide menos que la cantidad mínima, el asistente informa el mínimo que cargaste, registra lo que pidió y lo deja a ventas, sin negociar. Cuando el mínimo depende de la pieza o del lote de materia prima, no lo cargues como regla general. Mismo criterio con matriz o herramental: si una pieza nueva lleva ese costo, lo explica ventas, con el presupuesto en la mano.
 
-## El plano no entra por este chat
+## Cómo asociar el plano al pedido correcto
 
-Un PDF, un DWG, un STEP o una foto de la pieza al lado de un calibre nunca llegan a Atende: ni el asistente ni la bandeja los ven, y el comprador no recibe respuesta. Mucha gente de compras manda el plano primero y escribe después, así que sin una salida prevista el pedido se queda sin plano y nadie se entera.
+El comprador suele mandar primero el plano o una foto de la pieza junto al calibre. La bandeja recibe el archivo. Pedile al asistente que pregunte número y revisión antes de avanzar. Ingeniería interpreta el plano y decide si alcanza para cotizar.
 
 La salida es simple:
 
 1. Definí una casilla de correo para planos y cargala en el contexto.
-2. Apenas aparece la palabra plano, el asistente la da: "Los planos no llegan por este chat. Mandalos a [mail de ingeniería]."
+2. Cuando la consulta requiera un plano, indicá por dónde recibe ingeniería la versión controlada y quién confirma la recepción.
 3. Registrá número de plano y revisión en texto, para que el archivo se pueda cruzar con el pedido.
 4. Pedí que el asunto del mail lleve la empresa y la pieza.
 
@@ -120,13 +120,13 @@ El precio se complica cuando la lista se mueve con el dólar o el acero, o cuand
 En la venta industrial hay situaciones que el asistente no tiene que resolver solo:
 
 - **Precios por cuenta.** Un teléfono no identifica a la empresa: el comprador cambia, y quien escribe hoy puede no estar autorizado. Sin una conexión que lo resuelva, el asistente no pasa condiciones de una cuenta.
-- **No conformidades.** Un lote rechazado o una medida fuera de tolerancia va directo a una persona, sin discutir responsabilidades en el chat. Las fotos del defecto tampoco llegan a Atende, así que indicá adónde mandarlas.
+- **No conformidades.** Derivá el reclamo con el código de pieza y lote. Ingeniería puede abrir la foto del defecto en la bandeja y pedir otras medidas antes de responder.
 - **Grupos.** Si coordinás con un cliente grande en un grupo de WhatsApp, esos mensajes no llegan a Atende. Ese canal sigue a mano.
 
 ## Por dónde empezar en planta
 
 Empezá por lo que no necesita conexión: familias de producto, mínimos publicados, zonas de entrega, la casilla de planos y la lista del pedido técnico. Con eso ventas ya recibe pedidos completos. Después mirá qué se repite: si la mayoría son repeticiones de catálogo, conectar stock y pedidos es el paso que más trabajo saca.
 
-Apenas conectás el número, el asistente responde a todos tus contactos, también a compradores de hace años. Si tenés dos o tres cuentas grandes que hablan siempre con el mismo vendedor, avisales antes o pensá bien qué número vinculás. Las pruebas van desde otro celular y consumen créditos: mandá un "lo de siempre" y un plano, a ver qué contesta.
+Un comprador habitual puede esperar que le responda su vendedor. Antes de activar el asistente, acordá quién atiende esas cuentas. En los chats individuales habilitados, las respuestas automáticas consumen saldo. Probá un pedido que diga “lo de siempre” y verificá qué datos pide antes de avanzar.
 
 Si vendés por volumen a través de distribuidores, mirá la [guía de toma de pedidos mayoristas](/blog/como-automatizar-whatsapp-distribuidoras). Si despachás con transporte propio o tercerizado, la [guía de logística](/blog/como-automatizar-whatsapp-logistica) sigue el pedido desde el retiro hasta el reclamo.

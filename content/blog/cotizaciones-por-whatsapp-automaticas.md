@@ -11,7 +11,7 @@ summary: >-
   conversación y la registra; esa conexión se arma a pedido para tu negocio. Sin
   conexión, el asistente junta el pedido y tu equipo pasa el presupuesto.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - WhatsApp
@@ -37,9 +37,10 @@ faq:
       mueve la cuenta, conviene no preguntarlo.
   - q: ¿El asistente puede mandar un presupuesto en PDF?
     a: >-
-      Hoy no. El asistente y la bandeja adjuntan solo fotos y videos de tu
-      biblioteca, así que la cotización sale en texto y el documento formal va por
-      el canal que ya usás. Tampoco llegan a Atende listas en foto ni audios.
+      La cotización puede salir como texto. El asistente puede mandar fotos y
+      videos de la biblioteca. Si necesitás un PDF formal, usá tu canal
+      habitual o definí cómo devolver su enlace desde el sistema de
+      presupuestos.
   - q: ¿Un presupuesto enviado reserva el stock?
     a: >-
       Solo si tu sistema lo hace y la conexión lo informa. Si no, el asistente
@@ -129,7 +130,7 @@ Lo que no conviene es dejarlo calcular por su cuenta. Que sepa multiplicar no si
 
 ## Listas en foto, audios y PDF
 
-Mucha gente pide presupuesto con la foto de la lista del albañil o con un audio de dos minutos. Nada de eso llega a Atende: el asistente no se entera y no contesta. Dejale escrito qué responder si alguien avisa que mandó algo: "Por acá no me llegan fotos ni audios. Escribime los productos y las cantidades."
+Un cliente puede dictar la lista de materiales. Si hay transcripción, el asistente puede ordenar los renglones y confirmar cantidades y unidades. Si llega una foto de la lista, tu equipo puede abrirla en la bandeja. El asistente conoce el texto al pie, necesita los renglones escritos o la ayuda de una persona para cotizar.
 
 En sentido contrario, el asistente y la bandeja adjuntan solo fotos y videos de tu biblioteca. La cotización sale en texto. Si necesitás un documento en PDF, va por el canal que ya usás, y si tu sistema lo genera, en la conexión se puede definir que devuelva el número o un enlace.
 

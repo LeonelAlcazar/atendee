@@ -4,6 +4,20 @@
 
 The public audience is Spanish-speaking businesses and PyMEs in Argentina. The main conversion is a qualified demo inquiry; self-service account creation remains available. The homepage links to the solution pages, the six rubro pages through the use-case hub, pricing guidance and the demo request.
 
+## Search and sales audit, November 18, 2026
+
+The production sitemap contained 102 pages, including 68 published articles. An HTTP crawl found one main heading, a matching canonical and structured data on every page. The historical Search Console export for September 9–October 26 recorded 10 clicks and 341 impressions across the property. Brand questions, Zenvia alternatives and distributor orders were among the visible queries. That sample helped select buyer journeys. It does not measure November traffic or sales.
+
+Three findings drove the release.
+
+- The product sheet, FAQs and several industry guides said that voice notes and attachments never reached the inbox. These answers disagreed with both the current software and the distributor audio guide. The visible answers, FAQ structured data and product summary now distinguish a voice transcript available to the active assistant from an attachment a person reviews.
+- A visitor comparing plans could see the live allowances but had to calculate the number of assistant replies separately. The calculator uses the current catalog, counts replies and includes the estimate in a WhatsApp inquiry. The demo and signup links remain available.
+- Buyers landing on an industry guide often had to translate a generic demo request into a use case themselves. This release revises 52 articles and the paths from all twelve blog topics. The six industry pages now give them a task to try, an expected result to check in their own system and a prefilled contact path. The blog index and topic pages also link to the next decision, including plans, a relevant workflow or a demo.
+
+The public team contact follows the supplied business guide. The separate WhatsApp account-creation assistant is linked explicitly from the product sheet. A QR link in the dashboard and an official API setup discussed with the sales team are described separately.
+
+For measurement, compare the 28 days before the release (October 21–November 17) with the first 28 full days afterward (November 19–December 16), using the same country, query groups and landing pages. Compare organic clicks and impressions with demo drafts, contact clicks and qualified inquiries actually received. Record paid customers from sales or billing. The `atende_cta_click` event identifies the page, destination and placement, including links into pricing and the estimator’s WhatsApp action. Prepared drafts and opened links are distinct from received inquiries and sales.
+
 ## Distributor order cluster — 2026-11-16
 
 The owner reports position 50 for “toma de pedidos por whatsapp para distribuidores”. This is an unverified baseline, not a Search Console measurement from this task. Ten new articles address separate buying and operating decisions; the existing distributor guide remains at its URL and focuses its title on the team, territories and exceptions. It links to the new central guide, as do the commerce topic and the distributor use-case page.

@@ -2,6 +2,8 @@
 
 import * as React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { buildDemoLink } from '@/lib/leads';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { site } from '@/content/site';
@@ -15,6 +17,9 @@ const secondary = [
 ];
 
 export function MobileMenu({ nav }: { nav: Nav }) {
+  const pathname = usePathname();
+  const source = /^\/(?:servicios\/|casos-de-uso\/)?([^/]+)$/.exec(pathname)?.[1];
+  const demoHref = buildDemoLink(source);
   const [open, setOpen] = React.useState(false);
   const triggerRef = React.useRef<HTMLButtonElement>(null);
   const closeRef = React.useRef<HTMLButtonElement>(null);
@@ -66,17 +71,24 @@ export function MobileMenu({ nav }: { nav: Nav }) {
   }, [close, open]);
 
   return (
-    <div className="flex items-center gap-2 lg:hidden">
-      <a
-        href={site.appUrl}
-        className="inline-flex min-h-11 items-center rounded-md border border-ink bg-surface px-3 text-sm font-semibold md:hidden"
-      >
-        Entrar
-      </a>
+    <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 lg:hidden">
+      {pathname === '/demo' ? (
+        <a href={site.appUrl} className="inline-flex min-h-11 items-center px-3 font-semibold md:hidden">
+          Entrar
+        </a>
+      ) : (
+        <Link
+          href={demoHref}
+          data-cta="mobile-header-demo"
+          className="inline-flex min-h-11 items-center whitespace-nowrap rounded-md border-2 border-ink bg-coral px-2.5 font-display text-sm font-semibold shadow-[var(--shadow-brut-xs)] md:hidden"
+        >
+          Pedí una demo
+        </Link>
+      )}
       <button
         ref={triggerRef}
         type="button"
-        className="grid size-11 place-items-center rounded-md border-2 border-ink bg-coral shadow-[var(--shadow-brut-xs)] active:translate-x-px active:translate-y-px active:shadow-none"
+        className="grid size-11 shrink-0 place-items-center rounded-md border-2 border-ink bg-surface shadow-[var(--shadow-brut-xs)] active:translate-x-px active:translate-y-px active:shadow-none"
         aria-label="Abrir menú"
         aria-expanded={open}
         aria-controls="mobile-navigation"
@@ -106,7 +118,7 @@ export function MobileMenu({ nav }: { nav: Nav }) {
             <button
               ref={closeRef}
               type="button"
-              className="grid size-11 place-items-center rounded-md border-2 border-ink bg-surface shadow-[var(--shadow-brut-xs)]"
+              className="grid size-11 shrink-0 place-items-center rounded-md border-2 border-ink bg-surface shadow-[var(--shadow-brut-xs)]"
               aria-label="Cerrar menú"
               onClick={close}
             >
@@ -129,6 +141,9 @@ export function MobileMenu({ nav }: { nav: Nav }) {
               </Link>
             ))}
             <div className="mt-3 flex flex-wrap gap-x-6">
+              <a href={site.appUrl} className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4">
+                Entrar a mi espacio
+              </a>
               {secondary.map((item) => (
                 <Link
                   key={item.href}
@@ -144,7 +159,7 @@ export function MobileMenu({ nav }: { nav: Nav }) {
 
           <div className="border-t-2 border-ink bg-coral-soft p-5">
             <div className="grid gap-3">
-              <Button href="/demo" data-cta="mobile-demo" onClick={close} variant="primary" size="lg" className="w-full">
+              <Button href={demoHref} data-cta="mobile-demo" onClick={close} variant="primary" size="lg" className="w-full">
                 Pedí una demo <span aria-hidden="true">→</span>
               </Button>
               <a

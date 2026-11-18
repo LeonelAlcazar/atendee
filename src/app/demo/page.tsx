@@ -26,11 +26,11 @@ export default function DemoPage() {
             eyebrow="Pedí una demo"
             title={
               <>
-                ¿Qué tarea querés{' '}
-                <span className="text-coral">sacarte de encima?</span>
+                ¿Qué querés reservar, cotizar o registrar{' '}
+                <span className="text-coral">por WhatsApp?</span>
               </>
             }
-            sub="Reservar turnos, registrar pedidos, pasar presupuestos, contestar lo mismo todo el día. Contanos qué se repite en tu WhatsApp y vemos qué puede terminar Atende en la conversación y qué conexión necesita tu negocio."
+            sub="Traé una consulta que se repita en tu negocio. Revisamos dónde tiene que quedar el turno, el pedido o el presupuesto, qué sistema habría que conectar y cómo supervisa la tarea tu equipo."
           />
           <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <DemoForm />
@@ -56,10 +56,7 @@ export default function DemoPage() {
               ))}
             </ul>
             <p className="mt-6 rounded-lg border-2 border-ink bg-mint p-5 leading-relaxed">
-              Como referencia, tenemos una demo para una concesionaria de motos:
-              consulta stock y precios, calcula
-              financiación y registra al interesado en Google Sheets. Sin
-              conexión, el asistente junta el pedido y tu equipo lo confirma.{' '}
+              En nuestra demo de motos, Atende consulta stock, calcula cuotas y registra al interesado en Google Sheets. Ejemplo ilustrativo de lo que queda guardado al terminar el chat: el modelo que pidió, su nombre y su teléfono.{' '}
               <Link
                 href="/integraciones"
                 className="font-semibold underline underline-offset-4"
@@ -92,8 +89,9 @@ export default function DemoPage() {
               </a>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-mute">
-              Pedir una demo no te obliga a contratar y no reserva un horario:
-              coordinamos los próximos pasos por el canal que elijas.
+              Después de que nos escribas, coordinamos la demo por el canal que elijas. Podés{' '}
+              <Link href="/precios" className="font-semibold underline underline-offset-4">ver los planes y precios</Link>
+              {' '}antes de hablar con el equipo.
             </p>
           </div>
         </div>

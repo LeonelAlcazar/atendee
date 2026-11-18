@@ -11,7 +11,7 @@ summary: >-
   ella, el asistente junta fecha, tipo de evento e invitados, y tu equipo
   confirma. El presupuesto final, la seña y el contrato quedan con una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: gastronomia-y-turismo
 sector: Salones y proveedores de eventos
 tags:
@@ -36,9 +36,9 @@ faq:
       lo revisa una persona, porque depende de invitados, menú y adicionales.
   - q: ¿Se puede señar o firmar el contrato por WhatsApp?
     a: >-
-      Con Atende no. El comprobante de la seña y el contrato son imágenes o PDF, que
-      no llegan al asistente, y desde la bandeja no salen documentos. Esa parte se
-      hace por el teléfono del salón, por mail o en persona.
+      El salón puede recibir el comprobante como imagen o PDF en la bandeja.
+      Una persona coteja la transferencia con la cuenta y gestiona la firma
+      del contrato por el canal habitual.
   - q: ¿Sirve para catering, DJ o ambientación?
     a: >-
       Sí, con otro orden: importan la fecha, el salón donde se hace, la zona y la
@@ -96,7 +96,7 @@ Sin conexión, Carla recibe otra respuesta: le dicen que la fecha hay que cheque
 
 El tramo final es de una persona. La visita ordena la venta, la degustación tiene sus reglas (cuándo, para quién, con qué costo) y la fecha queda vendida cuando la seña está acreditada y el contrato firmado. Hasta ahí, el asistente no dice “confirmada”.
 
-La transferencia de la seña suele venir con una captura, y esa captura nunca entra a Atende: alguien del salón coteja la seña con la cuenta. Y el contrato no sale desde la bandeja, que manda texto y archivos de tu biblioteca de fotos y videos. Mandalo por mail o por el WhatsApp del celular.
+Si la familia manda una captura de la seña, el equipo del salón puede abrirla en la bandeja y cotejarla con la cuenta. El asistente comparte las condiciones que cargaste. La firma del contrato sigue por el canal que usa el salón.
 
 Las fotos y videos del salón, en cambio, juegan a favor: cargalos una vez, separados por ambiente o por tipo de fiesta, y el asistente elige cuáles mostrar.
 
@@ -106,7 +106,7 @@ Entre la primera consulta y la seña pueden pasar semanas, y varias personas opi
 
 - **Cada vuelta es una charla nueva.** Pasadas 12 horas desde que el contacto escribió por última vez, el chat se cierra. Al volver, el asistente arranca con la conversación en curso y lo poco que anotó, y puede repreguntar un dato. El historial lo abre tu equipo.
 - **Las notas internas no le llegan al asistente.** “Le prometí el DJ sin cargo” en una nota no cambia sus respuestas. Si la promesa vale para todos, va en el contexto.
-- **La mamá, la quinceañera y la organizadora son tres chats.** Cada número es un contacto, y el grupo de la familia no llega a Atende. Los audios con ideas para la ambientación tampoco, ni las fotos de referencia.
+- **Familia y organizadora.** Cada número tiene su propio chat. Las ideas dictadas por audio y las fotos de referencia llegan a la bandeja si las mandan en un chat individual. Los mensajes del grupo familiar quedan fuera.
 - **La bandeja busca por contacto o teléfono.** Si buscás “14 de agosto”, no aparece. Poné una etiqueta con la fecha o el mes de la fiesta y filtrá por ahí.
 - **El seguimiento no sale solo.** Un “¿pudiste ver el presupuesto?” tiene que mandarlo alguien de tu equipo, o armarse a pedido. Pensalo bien: si tu línea está vinculada por QR, insistirle a una familia que no lo espera aumenta el riesgo de restricción.
 

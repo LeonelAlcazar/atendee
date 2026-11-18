@@ -58,9 +58,16 @@ export default function PreguntasFrecuentesPage() {
           }`}
         >
           <div className="mx-auto grid max-w-7xl gap-6 px-5 md:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
-            <h2 className="font-display text-3xl font-semibold leading-tight tracking-[-0.025em] text-balance md:text-4xl lg:sticky lg:top-28 lg:self-start">
-              {group.title}
-            </h2>
+            <div className="lg:sticky lg:top-28 lg:self-start">
+              <h2 className="font-display text-3xl font-semibold leading-tight tracking-[-0.025em] text-balance md:text-4xl">
+                {group.title}
+              </h2>
+              {group.next && (
+                <Link href={group.next.href} className="mt-3 inline-flex min-h-11 items-center font-semibold underline underline-offset-4">
+                  {group.next.label} →
+                </Link>
+              )}
+            </div>
             <div className="flex flex-col gap-3">
               {group.items.map((item) => (
                 <details

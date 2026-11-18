@@ -103,7 +103,13 @@ export type Rubro = {
   faq: FaqItem[];
   guides: { slug: string; label: string }[];
   service: { href: string; label: string };
-  cta: { title: string; text: string; demoLabel: string; context: string };
+  cta: {
+    title: string;
+    text: string;
+    checks: [string, string];
+    demoLabel: string;
+    context: string;
+  };
   hub: { tag: string; task: string; scene: string; needs: string; tone: string };
 };
 
@@ -113,13 +119,13 @@ const clinicas: Rubro = {
   title: 'WhatsApp para clínicas, consultorios y veterinarias: turnos',
   description:
     'Conectado a tu agenda, Atende reserva y reprograma turnos por WhatsApp según obra social y tipo de consulta. Lo clínico siempre pasa a una persona.',
-  updated: '2026-11-06',
+  updated: '2026-11-18',
   h1: {
     before: 'WhatsApp para clínicas y veterinarias que',
     accent: 'reserva y reprograma turnos.',
   },
   lede:
-    'Con gente en el mostrador y el teléfono sonando, el WhatsApp de recepción queda para después. Conectado a tu agenda, Atende pregunta si es primera vez o control, si viene por obra social o particular, ofrece los horarios libres y reserva o mueve el turno en la conversación. Esa conexión se arma a pedido para tu consultorio.',
+    'Atende consulta los horarios de tu agenda y reserva o cambia el turno por WhatsApp. Armamos la conexión a pedido según la duración de cada consulta, el profesional y las sedes que atiende.',
   supervision:
     'Se configura para hacer solo tareas administrativas. Síntomas, medicación, resultados y recetas pasan a una persona, y recepción ve toda la conversación en la bandeja.',
   chat: {
@@ -179,7 +185,7 @@ const clinicas: Rubro = {
       title: 'Veterinarias: la urgencia de las dos de la mañana',
       paragraphs: [
         'El asistente [contesta a cualquier hora](/servicios/atencion-automatica-whatsapp), mientras el servicio y tu WhatsApp estén conectados. En una veterinaria eso también es un riesgo: alguien desesperado escribe de madrugada, recibe una respuesta y cree que hay un veterinario del otro lado. Si no tenés guardia, la respuesta lo tiene que decir en la primera línea y dar adónde ir.',
-        'Derivar marca la conversación como Necesita humano, pero no le suena a nadie en el teléfono. Por eso el número de guardia va en el mensaje al dueño: esa persona no puede depender de que alguien de tu equipo abra la bandeja.',
+        'Derivar deja la conversación en Necesita humano. Incluí en la respuesta el teléfono de la guardia que designó tu equipo para que el dueño pueda llamar aunque la recepción esté cerrada.',
       ],
       caption: 'Ejemplo ilustrativo de una derivación, sin conexión',
       messages: [
@@ -210,7 +216,7 @@ const clinicas: Rubro = {
           items: [
             'Dónde vive tu agenda. Si está en un sistema, vemos si deja leer y escribir. Si está en un cuaderno, todavía no hay qué conectar: arrancás con el asistente juntando pedidos.',
             'El número de guardia o el texto exacto para una urgencia.',
-            'Quién mira la bandeja en cada turno de recepción. La derivación marca el chat, nadie recibe una alerta.',
+            'Quién revisa las conversaciones marcadas para recepción en cada turno.',
           ],
         },
       ],
@@ -222,24 +228,24 @@ const clinicas: Rubro = {
       title: 'Lo que un consultorio tiene que saber antes',
       items: [
         {
-          title: 'Audios de pacientes mayores',
-          text: 'Un audio nunca llega a Atende. El paciente no recibe respuesta del asistente y el mensaje queda en el WhatsApp del teléfono del negocio, así que alguien tiene que mirarlo.',
+          title: 'Cambios de turno por nota de voz',
+          text: 'Recepción puede escuchar la nota de voz en la bandeja. Con el asistente activo y una transcripción disponible, puede tramitar un cambio de horario. Una consulta clínica pasa al equipo.',
         },
         {
           title: 'Órdenes y credenciales',
-          text: 'Las fotos de una orden, de la credencial o de un estudio tampoco llegan. Si recepción pide esos papeles por WhatsApp, ese circuito sigue en el teléfono.',
+          text: 'Si alguien adjunta una foto o un documento, recepción puede verlo en la bandeja. El asistente sabe que llegó un archivo y no interpreta su contenido. Definí con recepción el canal para documentación clínica.',
         },
         {
           title: 'Datos de salud',
-          text: 'El asistente se configura para no pedir diagnósticos ni historia clínica. Es una instrucción, no un candado: si un paciente cuenta sus síntomas, ese texto queda en la conversación. Probalo desde otro número con las frases que te llegan de verdad; usa créditos.',
+          text: 'El asistente se configura para no pedir diagnósticos ni historia clínica. Es una instrucción, no un candado: si un paciente cuenta sus síntomas, ese texto queda en la conversación. Probá las instrucciones con consultas ficticias y sin datos de pacientes.',
         },
         {
           title: 'Recordatorio del día anterior',
-          text: 'No sale solo, porque Atende no empieza conversaciones por su cuenta. Se [arma a pedido](/blog/recordatorios-de-turnos-por-whatsapp), y para esos avisos conviene evaluar la API oficial de Meta.',
+          text: 'Tu agenda puede iniciar un aviso de texto cuando se acerca un turno si se conecta a Atende a pedido. Definí el horario y cómo verificar que el turno siga vigente. [Cómo preparar los recordatorios](/blog/recordatorios-de-turnos-por-whatsapp).',
         },
         {
           title: 'Cuando recepción quiere seguir',
-          text: 'Contestar desde la bandeja no frena al asistente. Hay que marcar el chat como Necesita humano. Ese chat se cierra 12 horas después del último mensaje del paciente y, si vuelve a escribir, responde el asistente.',
+          text: 'Contestar desde la bandeja no frena al asistente. Hay que marcar el chat como Necesita humano. Ese chat se cierra después de un período sin mensajes y, si vuelve a escribir, responde el asistente.',
         },
       ],
     },
@@ -251,7 +257,7 @@ const clinicas: Rubro = {
     },
     {
       q: '¿Qué pasa si un paciente pregunta por síntomas o medicación?',
-      a: 'Se configura para no responder consultas clínicas: las pasa a una persona y la conversación queda marcada como Necesita humano. Si es una urgencia, da el número de guardia o emergencias que definiste, porque la marca no le avisa a nadie por teléfono.',
+      a: 'Se configura para no responder consultas clínicas: las pasa a una persona y la conversación queda marcada como Necesita humano. Si es una urgencia, da el número de guardia o emergencias que definiste, para que la persona tenga un canal de atención directa.',
     },
     {
       q: '¿Sirve para un consultorio con varios profesionales o sedes?',
@@ -259,7 +265,7 @@ const clinicas: Rubro = {
     },
     {
       q: '¿Atende guarda datos de los pacientes?',
-      a: 'El asistente se configura para quedarse en lo administrativo y no pedir datos clínicos. Sí se guardan los mensajes de texto, el nombre de WhatsApp y el número. Si un paciente escribe información de salud por su cuenta, ese texto queda en la conversación. Tu consultorio responde por los datos de sus pacientes.',
+      a: 'El asistente se configura para quedarse en lo administrativo y no pedir datos clínicos. En la bandeja quedan los mensajes y los archivos recibidos, junto con el nombre de WhatsApp y el número. Si un paciente escribe información de salud por su cuenta, ese texto queda en la conversación. Tu consultorio responde por los datos de sus pacientes.',
     },
   ],
   guides: [
@@ -269,10 +275,14 @@ const clinicas: Rubro = {
   ],
   service: { href: '/servicios/turnos-whatsapp', label: 'Turnos y reservas por WhatsApp' },
   cta: {
-    title: 'Mirá cómo quedaría con tu agenda.',
-    text: 'Contanos cómo das turnos hoy, qué coberturas tomás y dónde está tu agenda. Vemos juntos qué se puede conectar y qué sigue en recepción.',
+    title: 'Reprogramá un turno sin perder el anterior.',
+    text: 'Para la demo alcanza con dos horarios ficticios, la duración del turno y el nombre de tu sistema. Podés usar un consultorio y un paciente inventados.',
+    checks: [
+      'Si la agenda acepta el cambio, el horario nuevo queda asignado y el anterior vuelve a estar disponible.',
+      'Si otra persona ya tomó el horario nuevo, el paciente conserva su turno hasta que elija otra opción.',
+    ],
     demoLabel: 'Pedir una demo para mi consultorio',
-    context: 'Hola, tengo un consultorio y quiero ver cómo Atende reserva y reprograma turnos por WhatsApp',
+    context: 'Hola, quiero consultar si pueden conectar mi agenda para reprogramar turnos sin perder el anterior cuando el nuevo horario se ocupa.',
   },
   hub: {
     tag: 'Turnos',
@@ -289,13 +299,13 @@ const peluquerias: Rubro = {
   title: 'WhatsApp para peluquerías, estética y gimnasios: turnos y cupos',
   description:
     'Conectado a tu agenda, Atende reserva el lugar según duración del servicio y profesional, o el cupo de la clase. La seña la confirma tu equipo.',
-  updated: '2026-11-06',
+  updated: '2026-11-18',
   h1: {
     before: 'WhatsApp para peluquerías y gimnasios que',
     accent: 'reserva el lugar en la agenda.',
   },
   lede:
-    'Con las manos en un color no hay quien conteste, y a la noche el celular tiene una pila de chats sin responder. Conectado a tu agenda, Atende pregunta qué servicio quiere la clienta, ofrece los horarios que alcanzan para ese servicio con la profesional que pidió y deja el lugar reservado. Esa conexión se arma a pedido para tu salón.',
+    'Atende reserva corte y color con la profesional que pidió tu clienta. Para ofrecerle un horario que alcance para ambos servicios, conectamos a pedido la agenda donde organizás tu salón.',
   supervision:
     'Si vendés clases, hace lo mismo con los cupos. Vos ves toda la conversación desde el celular, en la bandeja de tu equipo.',
   chat: {
@@ -350,7 +360,7 @@ const peluquerias: Rubro = {
       steps: [
         { title: 'Reserva con seña pendiente', text: 'Con la agenda conectada, el lugar queda tomado y marcado como pendiente, si tu agenda maneja ese estado.' },
         { title: 'Pasa el alias y el monto', text: 'Manda los datos que cargaste. Si la seña cambia según el servicio, eso va en el contexto del asistente.' },
-        { title: 'La clienta manda el comprobante', text: 'Si lo manda como imagen, no llega a Atende. Queda en el WhatsApp del teléfono y el asistente no se entera.' },
+        { title: 'La clienta manda el comprobante', text: 'Si lo manda como foto o PDF, tu equipo lo recibe en la bandeja. La acreditación se comprueba en la cuenta del salón.' },
         { title: 'Tu equipo confirma', text: 'Alguien mira la cuenta y da el OK. Si la seña no entra, liberar el lugar es decisión tuya: Atende no le escribe a la clienta para reclamarla.' },
       ],
     },
@@ -361,7 +371,7 @@ const peluquerias: Rubro = {
       paragraphs: [
         'En un gimnasio o un estudio de pilates el horario es fijo y lo que se termina son los lugares. Conectado a donde llevás la grilla, Atende mira cuántos quedan en la clase y anota a quien escribe.',
         'Antes hay que decidir tres cosas: si puede reservar alguien que debe la cuota, hasta cuándo se cancela sin perder la clase y cómo se descuenta de un abono. Sin esas reglas escritas, el asistente no debería anotar a nadie.',
-        'Una lista de espera necesita avisar cuando se libera un lugar, y ese es un mensaje que empieza Atende: se arma a pedido. Las preguntas sobre lesiones o apto físico pasan a una persona.',
+        'Para avisarle a la lista de espera, tu sistema de cupos tiene que iniciar el mensaje cuando se libera un lugar. Esa conexión se arma a pedido. Las preguntas sobre lesiones o apto físico pasan a una persona.',
       ],
       caption: 'Ejemplo ilustrativo, con la grilla de clases conectada',
       messages: [
@@ -402,19 +412,19 @@ const peluquerias: Rubro = {
     {
       kind: 'notes',
       id: 'limites',
-      title: 'Lo que no llega y lo que no sale solo',
+      title: 'Fotos de referencia, audios y avisos del salón',
       items: [
         {
           title: 'La foto del color que quiere',
-          text: 'La clienta manda una foto de referencia y esa imagen no llega a Atende, así que el asistente no se entera. Podés pedirle en el contexto que pregunte por escrito qué color busca. La foto la mira alguien en el teléfono.',
+          text: 'La colorista puede ver la foto en la bandeja. El asistente recibe el texto que la acompaña. Si solo hay una foto, puede preguntar qué servicio busca.',
         },
         {
           title: 'El audio desde el auto',
-          text: 'Un audio tampoco llega y no recibe respuesta. Si tus clientas escriben mucho así, alguien tiene que revisar el teléfono del negocio.',
+          text: 'El asistente activo usa la transcripción disponible para entender el pedido de turno. Si el día o el nombre de la profesional se entiende mal, conviene repetirlo antes de reservar.',
         },
         {
           title: 'El aviso del día anterior',
-          text: 'Se arma a pedido; Atende no lo manda por su cuenta. Para esos avisos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
+          text: 'Tu agenda puede iniciar un mensaje con el horario cuando se acerca el turno. La conexión se arma a pedido y conviene comprobar que una cancelación también detenga el aviso.',
         },
         {
           title: 'La clienta enojada',
@@ -426,7 +436,7 @@ const peluquerias: Rubro = {
   faq: [
     {
       q: '¿Atende puede cobrar la seña?',
-      a: 'No. Pasa el alias y el monto que cargaste y, con la agenda conectada, deja el turno con seña pendiente. El comprobante, si lo mandan como imagen, no llega a Atende: lo revisa tu equipo y confirma.',
+      a: 'No. Pasa el alias y el monto que cargaste y, con la agenda conectada, deja el turno con seña pendiente. Tu equipo recibe el comprobante en la bandeja y verifica la transferencia en la cuenta del salón.',
     },
     {
       q: '¿Cada profesional puede tener su propia agenda?',
@@ -434,7 +444,7 @@ const peluquerias: Rubro = {
     },
     {
       q: '¿Puede mandar fotos de trabajos anteriores?',
-      a: 'Sí, y eso no necesita conexión: subís fotos y videos a la biblioteca una vez y el asistente los manda cuando hacen falta. Al revés no funciona: las fotos que manda la clienta no llegan a Atende.',
+      a: 'Sí, y eso no necesita conexión: subís fotos y videos a la biblioteca una vez y el asistente los manda cuando hacen falta. La clienta también puede mandar una referencia para que tu equipo la vea en la bandeja. El asistente no analiza la imagen.',
     },
     {
       q: '¿Sirve para un gimnasio con clases y cupos?',
@@ -442,7 +452,7 @@ const peluquerias: Rubro = {
     },
     {
       q: '¿Manda recordatorios para que no falten?',
-      a: 'No por su cuenta. Los recordatorios se arman a pedido para tu negocio. Para esos avisos conviene evaluar la API oficial de Meta.',
+      a: 'Para recordar un turno puntual, tu agenda tiene que iniciar el aviso con una conexión a pedido. Para un texto en un día fijo, como el recordatorio semanal de una clase, tu equipo puede programar un mensaje recurrente a los contactos que elija.',
     },
   ],
   guides: [
@@ -452,10 +462,14 @@ const peluquerias: Rubro = {
   ],
   service: { href: '/servicios/turnos-whatsapp', label: 'Turnos y reservas por WhatsApp' },
   cta: {
-    title: 'Traé tu lista de servicios y la vemos.',
-    text: 'Contanos qué servicios das, quién hace cada uno y dónde anotás hoy los turnos. Te decimos qué haría falta conectar y cómo arrancar mientras tanto.',
+    title: '¿Entra corte y color en ese hueco?',
+    text: 'Elegí un servicio largo, una profesional y un hueco que solo alcance para corte. Con esos datos podemos revisar cómo tendría que responder el salón.',
+    checks: [
+      'La agenda descarta el hueco corto y ofrece un horario que alcanza para los dos servicios.',
+      'Al elegirlo, el turno ocupa todo el bloque de esa profesional. Si requiere seña, el equipo verifica la transferencia.',
+    ],
     demoLabel: 'Pedir una demo para mi salón',
-    context: 'Hola, tengo una peluquería y quiero ver cómo Atende reserva turnos según el servicio y la seña',
+    context: 'Hola, quiero consultar si Atende puede reservar según la duración del servicio y la agenda de cada profesional de mi salón.',
   },
   hub: {
     tag: 'Agenda',
@@ -472,13 +486,13 @@ const restaurantes: Rubro = {
   title: 'Chatbot para restaurantes y hoteles: reservas por WhatsApp',
   description:
     'Conectado a tu sistema de reservas, Atende toma la mesa o la habitación por WhatsApp: personas, turno, fechas. No lo reemplaza, y los grupos pasan a tu equipo.',
-  updated: '2026-11-06',
+  updated: '2026-11-18',
   h1: {
     before: 'Chatbot para restaurantes y hoteles que',
     accent: 'toma la reserva.',
   },
   lede:
-    'Viernes a las nueve, con el salón lleno, nadie mira el WhatsApp. Conectado a tu sistema de reservas, Atende pregunta cuántos son, para qué día y qué turno, se fija si hay lugar y toma la reserva en la conversación. Esa conexión se arma a pedido para tu negocio.',
+    'Atende reserva una mesa para el segundo turno o una habitación para dos noches. Lee la disponibilidad en tu sistema de reservas y confirma por WhatsApp cuando la reserva queda cargada. Armamos esa conexión a pedido.',
   supervision:
     'Los grupos, las alergias y los reclamos pasan a tu equipo, que ve toda la conversación en la bandeja.',
   chat: {
@@ -555,7 +569,7 @@ const restaurantes: Rubro = {
         ['Soy celíaca, ¿puedo comer tranquila?', 'Una respuesta equivocada es un problema de salud.', 'Decir lo que cargaste de la carta y pasar a una persona. Nunca asegurar que no hay contaminación cruzada.'],
         ['Mesa para ya, llegamos en 20', 'El salón cambia minuto a minuto.', 'Si tu sistema no lo tiene al día, decirlo y dar el teléfono del local.'],
         ['Al final somos 6, no 4', 'La mesa puede no alcanzar.', 'Conectado, volver a consultar lugar antes de cambiar la reserva.'],
-        ['Ya te mandé el comprobante', 'La imagen no llega a Atende.', 'Decir que lo revisa el equipo. Nunca dar la seña por acreditada.'],
+        ['Ya te mandé el comprobante', 'El equipo recibe la imagen en la bandeja y verifica la transferencia en su cuenta.', 'Decir que lo revisa el equipo. Nunca dar la seña por acreditada.'],
         ['Llegamos a las 2 de la mañana', 'Quizás nadie abre a esa hora.', 'Responder tu política de ingreso tarde. Si no la cargaste, pasar a una persona.'],
       ],
     },
@@ -595,9 +609,9 @@ const restaurantes: Rubro = {
       items: [
         { title: 'La carta en PDF', text: 'El asistente manda fotos y videos de la biblioteca, no documentos. Si querés que mande la carta, subila como imagen.' },
         { title: 'Ubicaciones', text: 'Si un huésped te manda su ubicación, no llega. Al revés sí: el asistente pasa tu dirección y cómo llegar como texto, si lo cargaste.' },
-        { title: '“Llegamos tarde” por audio', text: 'Un audio nunca llega a Atende. Si tu salón depende de esos avisos, alguien tiene que mirar el teléfono del negocio durante el servicio.' },
+        { title: '“Llegamos tarde” por audio', text: 'La nota de voz aparece en la bandeja. Si hay transcripción y el asistente está activo, puede pedir el horario de llegada y derivar al encargado si la demora supera la tolerancia que definiste.' },
         { title: 'Cobrar', text: 'Atende no cobra ni confirma transferencias. Pasa los datos que cargaste y la seña la acredita tu equipo.' },
-        { title: 'Un reclamo durante la estadía', text: 'Marcá el chat como Necesita humano, porque responder desde la bandeja no frena al asistente. Se cierra 12 horas después del último mensaje del huésped y, si vuelve a escribir, contesta el asistente.' },
+        { title: 'Un reclamo durante la estadía', text: 'Marcá el chat como Necesita humano, porque responder desde la bandeja no frena al asistente. Se cierra después de un período sin mensajes y, si vuelve a escribir, contesta el asistente.' },
       ],
     },
   ],
@@ -620,7 +634,7 @@ const restaurantes: Rubro = {
     },
     {
       q: '¿Contesta cuando el local está cerrado?',
-      a: 'Sí, responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Eso no significa que haya alguien de tu equipo mirando: lo que pasa a una persona queda marcado, y ese chat se cierra solo 12 horas después del último mensaje del contacto. Al abrir, mirá también las Finalizadas.',
+      a: 'Sí, responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Eso no significa que haya alguien de tu equipo mirando: lo que pasa a una persona queda marcado, y ese chat se cierra solo después de un período sin mensajes. Al abrir, mirá también las Finalizadas.',
     },
   ],
   guides: [
@@ -631,10 +645,14 @@ const restaurantes: Rubro = {
   ],
   service: { href: '/servicios/turnos-whatsapp', label: 'Turnos y reservas por WhatsApp' },
   cta: {
-    title: 'Contanos dónde anotás hoy tus reservas.',
-    text: 'Con eso vemos si hay un sistema para conectar o si conviene arrancar con el asistente juntando reservas y tu equipo cerrándolas.',
+    title: 'Pedí dos mesas cuando queda una.',
+    text: 'Tomá como ejemplo la última mesa del sábado. Si tenés un hotel, hacé la misma prueba con la última doble disponible durante dos noches.',
+    checks: [
+      'La primera reserva aceptada queda en el sistema con su turno de cena o sus fechas de estadía.',
+      'Cuando llega la segunda consulta, se revisa la disponibilidad y se ofrece otra opción si el lugar se ocupó.',
+    ],
     demoLabel: 'Pedir una demo para mi local',
-    context: 'Hola, tengo un restaurante u hotel y quiero ver cómo Atende toma reservas junto a mi sistema',
+    context: 'Hola, quiero consultar cómo conectar mi sistema de reservas para ofrecer otro horario o fecha cuando se ocupa la última plaza.',
   },
   hub: {
     tag: 'Reservas',
@@ -651,13 +669,13 @@ const comercios: Rubro = {
   title: 'Stock y pedidos por WhatsApp para comercios y distribuidoras',
   description:
     'Conectado a tu stock y tu lista de precios, Atende consulta disponibilidad y registra el pedido por WhatsApp, con mínimos y zonas. Hay arranque sin ERP.',
-  updated: '2026-11-16',
+  updated: '2026-11-18',
   h1: {
     before: 'WhatsApp para distribuidoras que',
     accent: 'consulta el stock y registra el pedido.',
   },
   lede:
-    'El lunes a primera hora entran las listas: “lo mismo de siempre, pero sumame dos cajas de aceite”. Conectado a tu stock y a tu lista de precios, Atende se fija qué hay, aplica el precio de ese cliente, avisa si no llega al mínimo y registra el pedido en la conversación. Esa conexión se arma a pedido para tu negocio.',
+    'Con una conexión a pedido a tu sistema de gestión, Atende consulta el stock, aplica la lista mayorista de cada cliente y registra el pedido que entra por WhatsApp. Tu depósito recibe productos y cantidades en el sistema que ya usa.',
   supervision:
     'Tu equipo ve toda la conversación en la bandeja, y si no tenés ERP hay un [arranque sin sistema](#sin-erp).',
   chat: {
@@ -749,8 +767,8 @@ const comercios: Rubro = {
       id: 'riesgos',
       title: 'Dónde se rompe un pedido por WhatsApp',
       items: [
-        { title: 'El pedido por audio', text: 'Leer la lista en un audio mientras maneja es costumbre en muchos clientes, y un audio nunca llega a Atende. Es el límite que más pesa en este rubro: esos clientes van a tener que escribir, o los sigue atendiendo alguien desde el teléfono.' },
-        { title: 'La foto de la lista', text: 'Lo mismo con la foto del papel escrito a mano o una orden de compra en PDF. No llegan, y el asistente no sabe que existen.' },
+        { title: 'El pedido por audio', text: 'Con el asistente activo, la transcripción disponible permite tomar el pedido por voz. Si se entiende “dos de aceite”, hacé que pregunte si son cajas o botellas antes de registrar el pedido en el sistema conectado.' },
+        { title: 'La foto de la lista', text: 'La foto de la lista y la orden en PDF quedan en la bandeja. Un vendedor puede abrirlas. Para registrar el pedido, el asistente necesita los renglones en texto o una nota de voz que se pueda transcribir.' },
         { title: 'El empleado que pide desde otro número', text: 'Si ese número no está en tu sistema, el asistente no sabe qué lista le toca. Conviene cargar los números autorizados de cada cuenta.' },
         { title: 'Caja, bulto, pack', text: 'Cada cliente dice distinto. Si “aceite” puede ser tres productos, el asistente pregunta cuál, y las equivalencias tienen que venir en la conexión.' },
         { title: 'La lista de la semana pasada', text: 'Si tus precios cambian seguido, no los cargues en las preguntas frecuentes: el asistente repetiría el valor viejo. Los precios que se mueven se leen del sistema.' },
@@ -844,10 +862,14 @@ const comercios: Rubro = {
   ],
   service: { href: '/servicios/ventas-whatsapp', label: 'Pedidos y ventas por WhatsApp' },
   cta: {
-    title: 'Traé un pedido real y lo armamos.',
-    text: 'Mandanos cómo te llega un pedido típico y dónde tenés el stock y los precios. Vemos si conviene conectar ya o arrancar sin sistema.',
+    title: 'Probá un pedido con un faltante.',
+    text: 'Elegí dos productos de ejemplo, la unidad de venta y una lista mayorista. Definí qué reemplazo podría ofrecer el vendedor si falta uno de los productos.',
+    checks: [
+      'El cliente ve el reemplazo y el precio de su lista antes de aceptar el cambio.',
+      'El pedido aceptado figura una sola vez en el sistema, con las unidades acordadas y una referencia que el depósito pueda buscar.',
+    ],
     demoLabel: 'Pedir una demo para mi negocio',
-    context: 'Hola, tengo una distribuidora y quiero ver cómo Atende registra pedidos con stock y lista de precios',
+    context: 'Hola, quiero consultar cómo conectar mi sistema para que un pedido con faltantes quede registrado una sola vez, con la lista de mi cliente.',
   },
   hub: {
     tag: 'Pedidos',
@@ -864,13 +886,13 @@ const concesionarias: Rubro = {
   title: 'Chatbot de WhatsApp para concesionarias e inmobiliarias',
   description:
     'Conectado a tu stock y tu agenda, Atende cotiza, calcula cuotas, registra al interesado y reserva la visita. Mirá la demo de motos y qué se arma a pedido.',
-  updated: '2026-11-06',
+  updated: '2026-11-18',
   h1: {
     before: 'WhatsApp para concesionarias e inmobiliarias que',
     accent: 'cotiza y registra al interesado.',
   },
   lede:
-    'Un domingo a la noche alguien pregunta por la 110 en rojo y cuánto le queda la cuota. Conectado a tu stock y a tus formas de pago, Atende busca la unidad, calcula la financiación, anota al interesado y, con tu agenda conectada, deja la visita reservada. Para tu negocio, esa conexión se arma a pedido.',
+    'Conectado a tu stock y a tus planes, Atende busca la unidad, calcula la cuota y anota al interesado. Para reservar una visita a una propiedad hace falta conectar también la agenda del corredor. Definimos el alcance con tu negocio.',
   supervision:
     'Tenemos una demo de concesionaria de motos que hace hoy las tres primeras tareas. Es una demo, no un cliente. El vendedor ve toda la conversación en la bandeja y cierra la operación.',
   chat: {
@@ -919,7 +941,7 @@ const concesionarias: Rubro = {
       rows: [
         ['0 km', 'Stock por color y versión, y precio de lista vigente.', 'Una fecha de entrega que tu sistema no informe.'],
         ['Usado', 'Año, kilómetros, estado y precio, unidad por unidad.', 'Que la unidad siga disponible cuando llegue el interesado, salvo que la conexión la reserve.'],
-        ['“Te dejo el mío”', 'Marca, modelo, año y kilómetros, por escrito. Las fotos no llegan.', 'Un valor de toma. Lo define una persona que lo ve.'],
+        ['“Te dejo el mío”', 'Marca, modelo, año y kilómetros para el vendedor, que también puede abrir las fotos en la bandeja.', 'Un valor de toma. Lo define una persona que lo ve.'],
         ['Plan de ahorro', 'Tu explicación de cuota pura, suscripción y adjudicación.', 'Adjudicación ni fecha de entrega. Tampoco lo presenta como un crédito.'],
         ['Cuotas o crédito prendario', 'Planes vigentes, anticipo y costos.', 'Que el crédito esté aprobado. La cuota es estimada hasta que alguien la confirma.'],
       ],
@@ -1007,7 +1029,7 @@ const concesionarias: Rubro = {
         { title: 'Una propiedad que ya se alquiló', text: 'Si tu ficha no se actualiza, el asistente va a decir que sigue disponible. La respuesta es tan buena como tu cartera.' },
         { title: 'Precios que cambian', text: 'Una lista vieja en las preguntas frecuentes te compromete. Lo que cambia seguido se lee del sistema, y la cuota siempre se presenta como estimada.' },
         { title: 'Fotos del stock o de la cartera', text: 'Subís fotos y videos a la biblioteca y el asistente los manda; eso no necesita conexión. La biblioteca tiene un tope por espacio, así que alcanza para lo que más se consulta, no para toda la cartera. Fichas en PDF no manda.' },
-        { title: 'El usado por foto y la ubicación', text: 'Las fotos del auto que mandan a tasar, los audios y las ubicaciones no llegan a Atende. Tu vendedor los ve en el teléfono del negocio.' },
+        { title: 'El usado por foto y la ubicación', text: 'Tu vendedor ve las fotos del usado en la bandeja y se ocupa de la tasación. El asistente puede usar la transcripción disponible de una nota de voz. Pedí una dirección escrita si necesitás ubicar la unidad.' },
         { title: 'Cuando el vendedor quiere seguir', text: 'Responder desde la bandeja no frena al asistente. Hay que marcar el chat como Necesita humano, sobre todo si está negociando.' },
       ],
     },
@@ -1042,10 +1064,14 @@ const concesionarias: Rubro = {
   ],
   service: { href: '/servicios/ventas-whatsapp', label: 'Pedidos y ventas por WhatsApp' },
   cta: {
-    title: 'Contanos cómo vendés y lo vemos.',
-    text: 'Contanos dónde tenés el stock o la cartera, tus planes y tu agenda. Con lo que hace la demo de motos como referencia, vemos qué haría falta en tu negocio.',
+    title: 'De la pregunta por una moto al interesado en la planilla.',
+    text: 'Podés pedir que te muestren la demo de motos con una unidad, un anticipo y un plazo. Si vendés propiedades, contanos cómo identificás cada inmueble y quién coordina la visita.',
+    checks: [
+      'La cotización usa el stock y los planes de la demo. El vendedor puede cotejar la cuota estimada con esos datos.',
+      'Cuando la persona manifiesta interés, su consulta figura en la planilla con el modelo que buscó. Agendar una visita requiere otra conexión.',
+    ],
     demoLabel: 'Pedir una demo para mi negocio',
-    context: 'Hola, tengo una concesionaria o inmobiliaria y quiero ver qué haría falta para que Atende cotice y registre interesados',
+    context: 'Hola, quiero ver la demo de motos con una cotización y el registro del interesado, y revisar qué conexión necesitaría mi negocio.',
   },
   hub: {
     tag: 'Cotizaciones',
@@ -1062,13 +1088,13 @@ const profesionales: Rubro = {
   title: 'WhatsApp para abogados y contadores que filtra consultas',
   description:
     'Conectado a tu CRM, Atende filtra cada consulta por tema y urgencia y la registra para el profesional. Se configura para no asesorar: eso queda en tu estudio.',
-  updated: '2026-11-06',
+  updated: '2026-11-18',
   h1: {
     before: 'WhatsApp para abogados y contadores que',
     accent: 'filtra la consulta y la registra.',
   },
   lede:
-    'Un estudio pierde la tarde en consultas que no son de su materia y a veces se entera tarde de la que tenía un plazo corriendo. Conectado a tu CRM, Atende pregunta el tema, si hay un vencimiento y cómo prefiere que lo contacten, y registra la consulta para el profesional que corresponde. Esa conexión se arma a pedido para tu estudio.',
+    'Conectado a tu CRM, Atende registra la materia de la consulta, el plazo que informa quien escribe y cuándo prefiere que lo contacten. La conexión se arma a pedido según los campos que usa tu estudio.',
   supervision:
     'Se configura para no asesorar: ordena la consulta y tu equipo la toma desde la bandeja, donde ve toda la conversación.',
   chat: {
@@ -1147,7 +1173,7 @@ const profesionales: Rubro = {
       title: 'Confidencialidad: lo que tenés que saber antes de activarlo',
       paragraphs: [
         'Vos seguís respondiendo por tu secreto profesional. Por eso el asistente se configura para no pedir el relato del caso: con el tema y el plazo alcanza para derivar. Si alguien lo cuenta igual, ese texto queda guardado en la conversación.',
-        'Todas las personas de tu espacio ven todas las conversaciones. No hay permisos por rol ni chats reservados para un profesional. Si tu estudio necesita separar lo que ve cada socio, hoy Atende no lo resuelve.',
+        'La bandeja es compartida. Asignar una consulta a un profesional permite organizar la atención. Antes de recibir documentación sensible, revisá con tu estudio quién puede acceder al espacio y por qué canal se comparte el material.',
         'Para generar cada respuesta, el texto pasa por proveedores externos. Leé la [Política de privacidad](/politica-de-privacidad) antes de decidir, y definí qué temas preferís que no entren nunca por este canal.',
       ],
     },
@@ -1156,11 +1182,11 @@ const profesionales: Rubro = {
       id: 'limites',
       title: 'Situaciones que hay que resolver antes de que pasen',
       items: [
-        { title: 'Viernes a las 20, plazo corriendo', text: 'El asistente registra y marca la consulta, pero no le suena a nadie el teléfono, y el chat se cierra solo 12 horas después del último mensaje. Si atendés urgencias, el teléfono de guardia va en el mensaje. Si no, que lo diga con claridad.' },
-        { title: 'La carta documento en PDF', text: 'Documentos, fotos y audios no llegan a Atende. La cédula que el contacto saca con el celular queda en el WhatsApp del teléfono del negocio, y el asistente no sabe que existe.' },
+        { title: 'Viernes a las 20, plazo corriendo', text: 'La derivación queda marcada para quien esté de turno. Definí el horario de atención y, si atendés urgencias, incluí el número de guardia en la respuesta.' },
+        { title: 'La carta documento en PDF', text: 'El documento queda disponible en la bandeja para el profesional. El asistente no interpreta el escrito ni deduce plazos de una foto. Acordá por dónde recibir documentación confidencial.' },
         { title: '“¿Cuánto me cobrás?”', text: 'El asistente dice solo lo que decidiste publicar: el valor de la consulta, que la primera no tiene costo, o que los honorarios los habla el profesional. Nunca estima el costo de un caso.' },
         { title: 'Vencimientos que cambian', text: 'Un estudio contable recibe la misma pregunta en cada vencimiento. Si cargás fechas en las preguntas frecuentes, alguien tiene que actualizarlas cada mes; si no, mejor que pase a una persona.' },
-        { title: 'Cuando el profesional toma el caso', text: 'Contestar desde la bandeja no frena al asistente. Marcá el chat como Necesita humano. Se cierra 12 horas después del último mensaje del contacto y, si vuelve a escribir, responde el asistente.' },
+        { title: 'Cuando el profesional toma el caso', text: 'Contestar desde la bandeja no frena al asistente. Marcá el chat como Necesita humano. Se cierra después de un período sin mensajes y, si vuelve a escribir, responde el asistente.' },
       ],
     },
     {
@@ -1197,15 +1223,15 @@ const profesionales: Rubro = {
     },
     {
       q: '¿Se mantiene la confidencialidad de la consulta?',
-      a: 'El asistente se configura para no pedir el relato del caso, pero lo que el contacto escriba queda en la conversación, que ven todas las personas de tu espacio. No hay permisos por rol. El secreto profesional sigue siendo tu responsabilidad, y la Política de privacidad explica cómo se tratan los datos.',
+      a: 'Podés configurar el asistente para pedir solo el tema y la forma de contacto. Los mensajes y adjuntos recibidos quedan en la bandeja compartida. Revisá los accesos de tu estudio y la Política de privacidad antes de usar el canal para una consulta confidencial.',
     },
     {
       q: '¿Qué pasa con una consulta urgente fuera de horario?',
-      a: 'El asistente responde a cualquier hora, mientras el servicio y tu WhatsApp estén conectados, y deja la consulta marcada. Nadie recibe una alerta, y el chat se cierra solo 12 horas después del último mensaje del contacto. Si atendés urgencias, tu teléfono de guardia tiene que estar en la respuesta.',
+      a: 'El asistente responde a cualquier hora, mientras el servicio y tu WhatsApp estén conectados, y deja la consulta marcada. Para consultas que requieren atención en el momento, definí quién cubre la guardia y qué número va en la respuesta.',
     },
     {
       q: '¿Puede recibir escritos, telegramas o comprobantes?',
-      a: 'No. Las fotos y los documentos no llegan a Atende. Quedan en el WhatsApp del teléfono del negocio. El asistente trabaja solo con mensajes de texto.',
+      a: 'Sí. El profesional puede abrir fotos y documentos recibidos en la bandeja. El asistente sabe que llegó el adjunto, pero no lee el telegrama ni interpreta el comprobante.',
     },
     {
       q: '¿Sirve sin CRM?',
@@ -1220,10 +1246,14 @@ const profesionales: Rubro = {
   ],
   service: { href: '/servicios/atencion-automatica-whatsapp', label: 'Atención al cliente por WhatsApp con IA' },
   cta: {
-    title: 'Contanos qué consultas querés dejar de atender vos.',
-    text: 'Con tus materias, tu criterio de urgencia y lo que hoy usás para registrar consultas vemos qué conviene conectar y qué conviene que no entre por este canal.',
+    title: 'Seguí una consulta urgente hasta su registro.',
+    text: 'Planteá un caso ficticio con una materia y un vencimiento. Mostranos qué campos usa el estudio para decidir a quién derivarlo.',
+    checks: [
+      'La consulta se registra en el CRM con la materia y el plazo que informó el contacto, sin interpretar documentos.',
+      'El profesional encuentra la referencia para devolver el llamado. La decisión sobre el caso queda en manos del estudio.',
+    ],
     demoLabel: 'Pedir una demo para mi estudio',
-    context: 'Hola, tengo un estudio y quiero ver cómo Atende filtra y registra consultas por WhatsApp',
+    context: 'Hola, quiero consultar cómo registrar en mi CRM una consulta con vencimiento y pasarla al profesional que corresponde.',
   },
   hub: {
     tag: 'Consultas',

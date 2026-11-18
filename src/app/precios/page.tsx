@@ -14,6 +14,7 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Tag } from '@/components/ui/Tag';
 import { CtaFinal } from '@/components/landing/CtaFinal';
 import { Faq } from '@/components/landing/Faq';
+import { ResponseEstimator } from '@/components/pricing/ResponseEstimator';
 import { FactRows } from '@/components/servicios/FactRows';
 import { StepCards } from '@/components/servicios/StepCards';
 
@@ -31,10 +32,10 @@ const heading =
 const comparison: [string, string, string][] = [
   ['Bandeja compartida, etiquetas y notas', 'Sí', 'Sí'],
   ['WhatsApp MCP', 'Sí', 'Sí'],
-  ['Responder mensajes de texto', 'No', 'Sí'],
+  ['Responder consultas de texto y notas de voz', 'Atiende tu equipo', 'Con el asistente activo'],
   ['Derivar, cerrar, mandar fotos y videos', 'No', 'Sí'],
   ['Reservar, registrar pedidos, cotizar', 'No', 'A pedido, con una conexión'],
-  ['Recordatorios y seguimientos', 'No', 'A pedido'],
+  ['Programar textos recurrentes desde Contactos', 'Sí', 'Sí'],
 ];
 
 const credits = [
@@ -103,11 +104,11 @@ export default async function PricingPage() {
                   <span className="text-coral">que reserva, cotiza y toma pedidos?</span>
                 </>
               }
-              sub="El costo depende del plan y de las conexiones con tu sistema, que se cotizan para cada negocio. Acá podés consultar los planes generales sin crear una cuenta."
+              sub="Para reservar turnos o registrar pedidos, sumá el plan con IA y la conexión con tu sistema, que se cotiza por separado. Compará los precios publicados y calculá cuántas respuestas usaría tu negocio."
             />
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href={appPlansUrl} data-cta="pricing-plans" size="lg">
-                Continuar en la app →
+              <Button href="#planes" size="lg">
+                Ver planes y precios ↓
               </Button>
               <Button
                 href={buildDemoLink('precios')}
@@ -115,9 +116,12 @@ export default async function PricingPage() {
                 variant="outline"
                 size="lg"
               >
-                Pedí una demo
+                Cotizar mi conexión
               </Button>
             </div>
+            <a href="#calculadora" className="mt-2 inline-flex min-h-11 items-center font-semibold underline underline-offset-4">
+              Calcular mis respuestas por mes ↓
+            </a>
           </div>
           <ChatMockup
             caption="Ejemplo ilustrativo, con la agenda conectada"
@@ -135,7 +139,7 @@ export default async function PricingPage() {
         </div>
       </section>
 
-      <section className="border-b-2 border-ink bg-surface py-14 md:py-20">
+      <section id="planes" className="scroll-mt-24 border-b-2 border-ink bg-surface py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <h2 className={heading}>Planes generales</h2>
           {plans === null ? (
@@ -149,7 +153,7 @@ export default async function PricingPage() {
               WhatsApp o email.
             </p>
           ) : (
-            <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
               {plans.map((plan, index) => (
                 <article
                   key={`${plan.name}-${index}`}
@@ -179,9 +183,12 @@ export default async function PricingPage() {
               ))}
             </div>
           )}
-          <p className="mt-4 text-sm text-mute">
-            En tu espacio ves los planes que tenés disponibles.
-          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+            <Button href={appPlansUrl} data-cta="pricing-plans">
+              Continuar en la app →
+            </Button>
+            <p className="text-sm text-mute">En tu espacio ves los planes disponibles para contratar.</p>
+          </div>
           <p className="mt-6 max-w-3xl leading-relaxed text-mute">
             Las conexiones para reservar turnos, registrar pedidos o cotizar en
             tu sistema se arman y se cotizan para cada negocio. Se usan sobre un
@@ -230,6 +237,8 @@ export default async function PricingPage() {
           </p>
         </div>
       </section>
+
+      <ResponseEstimator plans={(plans ?? []).map(({ name, monthlyAgentResponseLimit, automationAllowed }) => ({ name, monthlyAgentResponseLimit, automationAllowed }))} />
 
       <section className="border-b-2 border-ink py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">

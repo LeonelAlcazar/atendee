@@ -16,7 +16,7 @@ const groups: {
   {
     status: 'included',
     name: 'Incluido',
-    note: 'Viene con los planes con IA.',
+    note: 'La bandeja la maneja tu equipo. Para las respuestas automáticas necesitás el asistente activo.',
     band: 'bg-mint',
     marker: 'bg-mint-strong',
   },

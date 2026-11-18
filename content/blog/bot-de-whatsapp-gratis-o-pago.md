@@ -14,7 +14,7 @@ summary: >-
   octubre de 2026 los mensajes de servicio después de los primeros 1.000 por
   número y por mes.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -118,7 +118,7 @@ Una prueba no necesita cubrir toda tu actividad mensual para ser útil. Sí nece
 
 Atende da **100 créditos de bienvenida por espacio, una sola vez, sin tarjeta ni suscripción**. Se activan desde Plan y cada crédito es una respuesta del asistente. No se renuevan.
 
-Antes de usarlos, dos cosas. [No hay modo de prueba](/preguntas-frecuentes): apenas conectás el número, el asistente contesta a todos tus contactos, así que probalo desde otro número; usa créditos. Y lo que vas a ver es el camino sin conexión: el asistente junta el pedido y tu equipo lo confirma.
+En WhatsApp real, cada respuesta del asistente consume saldo. Si administración habilita el chat de prueba, podés ensayar sin enviar mensajes ni gastar créditos. Las herramientas conectadas pueden modificar sistemas reales. Para estimar el consumo de tu operación usá la [calculadora de respuestas](/precios#calculadora).
 
 Lo que termina la tarea es la conexión, y eso no sale de los créditos:
 

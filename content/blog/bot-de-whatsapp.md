@@ -13,7 +13,7 @@ summary: >-
   sale cada dato y cuándo entra tu equipo. WhatsApp Business, la API y el QR son
   cosas distintas: tener un bot no prueba una integración ni una conexión oficial.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -161,11 +161,11 @@ Un buen primer uso tiene información disponible y un siguiente paso reconocible
 | Reservar, reprogramar o cancelar turnos | A pedido, conectado a tu agenda |
 | Registrar pedidos y consultar stock o precios | A pedido, conectado a tu sistema |
 | Cotizar y calcular financiación | A pedido, conectado a tu sistema |
-| Recordatorios y seguimientos | A pedido, armados para tu negocio |
+| Enviar avisos periódicos o por un cambio de estado | Tu equipo programa los periódicos desde Contactos. El aviso por un cambio en tu sistema requiere una integración a pedido |
 
-“A cualquier hora” vale mientras el servicio y tu WhatsApp estén conectados. Atende no inicia mensajes por su cuenta, y mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Lo que hay hoy como prueba de una acción es una demo para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente. La lista completa está en [integraciones](/integraciones), y el producto entero en [qué es Atende](/que-es-atende).
+El asistente contesta a cualquier hora mientras el servicio y tu WhatsApp estén conectados. Tu equipo elige qué textos recurrentes programa y a quién. En nuestra demo para una concesionaria de motos, el asistente consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Mirá [qué se puede conectar](/integraciones) y [qué es Atende](/que-es-atende).
 
-Un límite que conviene tener a la vista: el asistente trabaja con mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan a Atende, ni al asistente ni a la bandeja.
+En los chats individuales, la bandeja recibe fotos, videos, audios, documentos y stickers. El asistente puede usar la transcripción disponible de una nota de voz. Para identificar una imagen necesita el texto que la acompaña o la ayuda de tu equipo.
 
 ## Cómo elegir un bot para tu negocio
 

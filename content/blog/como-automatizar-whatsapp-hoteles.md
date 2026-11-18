@@ -13,7 +13,7 @@ summary: >-
   fechas y ocupación, y recepción confirma. Es atención administrativa: una
   urgencia del huésped va siempre por teléfono a recepción.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: gastronomia-y-turismo
 sector: Hoteles y alojamientos
 tags:
@@ -80,7 +80,7 @@ Ejemplo ilustrativo, con el hotel conectado a su sistema de reservas.
 >
 > **Asistente:** Te bloqueé la matrimonial del 14 al 16 de febrero a nombre de Elena, reserva 5406. Queda firme con la seña antes de mañana a las 12.
 
-La seña tiene su propia regla. Los huéspedes mandan la captura de la transferencia, y esa imagen no entra a Atende: recepción coteja la cuenta y recién ahí da la reserva por firme. La política de cancelación se escribe tal como la aplicás, y el asistente la repite sin negociar. Para el resto de las cotizaciones, sirve la [guía de presupuestos por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas), y si tu hotel tiene restaurante, la [guía para restaurantes](/blog/como-automatizar-whatsapp-restaurantes) cubre las mesas.
+Recepción puede abrir la captura de una transferencia en la bandeja. Coteja la acreditación con la cuenta y confirma la reserva según tu política de señas. Para el resto de las consultas, mirá la [guía de presupuestos por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas) y, si trabajás con mesas, la [guía para restaurantes](/blog/como-automatizar-whatsapp-restaurantes).
 
 ## Quien reservó por otro canal
 
@@ -92,7 +92,7 @@ Cargá horario de ingreso y salida, qué pasa con una llegada tarde, guarda de e
 
 “¿Puedo entrar antes?” depende de la ocupación de ese día. El asistente no lo concede: toma la hora estimada y recepción decide. Lo mismo con la salida tarde.
 
-La foto del DNI tampoco llega, y conviene que sea así: no pidas documentos por este canal. El registro se hace en recepción.
+Informá qué tiene que presentar el huésped en recepción. Evitá pedir fotos del DNI por el chat de reservas.
 
 Para mostrar el hotel, cargá en tu biblioteca imágenes y videos de cada tipo de habitación: mucha gente decide viendo la cama y el baño, y el asistente puede mostrarlos sin que recepción busque nada.
 

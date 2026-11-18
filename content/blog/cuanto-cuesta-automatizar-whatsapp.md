@@ -13,8 +13,11 @@ summary: >-
   por mes. En Atende elegís cómo conectar tu número, con la API oficial de Meta
   o con un QR: por la API corren esas tarifas y por QR, según nuestra lectura,
   no, así que son parte de lo que mirás al elegir.
+salesIntro:
+  - "Poné precio a una tarea concreta, como registrar un pedido de WhatsApp en tu sistema. En Atende esa conexión se arma a pedido y el equipo supervisa cada conversación."
+  - "Para comparar propuestas, separá la cantidad de respuestas que vas a usar, el trabajo de conexión y las horas que sigue poniendo tu equipo."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - WhatsApp
@@ -194,7 +197,7 @@ Multiplicalo por lo que te cuesta una hora de esa persona y sumalo al resto. Us�
 | Conexión | A pedido, para tu negocio. |
 | Equipo | El mismo trabajo de revisión que con cualquier herramienta. |
 
-Un dato para el presupuesto: cuando se terminan las respuestas del mes y los créditos, el asistente deja de contestar y no avisa ni al cliente ni a tu equipo. Los mensajes de texto siguen entrando a la bandeja. El Plan CRM es otra cosa: bandeja manual, sin asistente.
+Si se agotan las respuestas del mes y los créditos, el asistente deja de responder. Estimá cuántas respuestas necesitás según tus consultas y la cantidad de intercambios por consulta en la [calculadora de Atende](/precios#calculadora). El Plan CRM permite trabajar desde la bandeja de forma manual.
 
 Para probar sin gastar, cada espacio puede activar [100 créditos de bienvenida](/blog/automatizar-whatsapp-gratis), una sola vez y sin tarjeta.
 

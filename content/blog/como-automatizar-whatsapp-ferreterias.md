@@ -6,14 +6,13 @@ description: >-
   medidas y registra el presupuesto por WhatsApp. Qué sigue pasando por el
   mostrador.
 summary: >-
-  Para automatizar el WhatsApp de una ferretería, enseñale al asistente los
-  nombres que usa tu clientela y hacé que pida medida, material y cantidad antes
-  de cotizar. Conectado a tu stock y tus precios, Atende busca cada renglón y
-  registra el presupuesto; esa conexión la armamos a pedido. Sin ella, junta la
-  lista y el mostrador la cotiza. La foto de la pieza y el audio desde la obra no
-  le llegan, y la compatibilidad la confirma una persona.
+  Para cotizar por WhatsApp en una ferretería, pedí medida, material y
+  cantidad. Con tu stock y tus precios conectados, Atende consulta cada
+  renglón y registra el presupuesto. Esa conexión se arma a pedido. Sin ella,
+  el mostrador cotiza la lista. Tu equipo ve la foto de la pieza y confirma la
+  compatibilidad.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: comercio
 sector: Ferreterías
 tags:
@@ -39,9 +38,9 @@ faq:
       reemplazos los define una persona.
   - q: ¿Qué pasa si un cliente manda un audio o la foto de la pieza?
     a: >-
-      No llegan a Atende: solo entran mensajes de texto. Si la foto vino sola, el
-      asistente no contesta porque no se entera. Si alguien avisa que la mandó, pide
-      los renglones escritos.
+      El audio llega a la bandeja. Con el asistente activo, puede usar su
+      transcripción para pedir cantidades o medidas faltantes. La foto también
+      llega, pero reconocer la pieza en la imagen requiere una persona.
   - q: ¿Puede decir si una pieza es compatible?
     a: >-
       No debería. Compatibilidad, sección de cable, cargas y todo lo que sea gas
@@ -80,10 +79,10 @@ Medidas y unidades son donde un pedido por chat sale mal.
 
 Quien arma la lista recorriendo la obra la manda de a renglones. Atende espera un momento antes de contestar y toma los mensajes seguidos como uno solo, así no responde cinco veces y consume una sola respuesta.
 
-La foto del papel, la foto de la pieza rota y el audio grabado arriba del andamio son otra historia: no llegan. Atende recibe mensajes de texto, así que una foto sola no genera respuesta y tampoco aparece en la bandeja. En una ferretería eso pasa todos los días, así que organizalo:
+Una foto de una pieza rota le sirve a quien atiende el mostrador. El asistente sabe que hay una imagen y recibe su texto al pie, sin reconocer la pieza. Una nota de voz puede aportar las medidas si hay transcripción. Organizá así el pedido:
 
-1. En el contexto, indicale que si alguien avisa “te mandé una foto” o “escuchá el audio”, explique que no le llegan y pida los renglones escritos.
-2. Si el número está vinculado por QR, que alguien del mostrador mire el teléfono del local entre cliente y cliente: esas fotos quedan ahí.
+1. Pedile que aclare unidades, material y cantidad antes de cotizar. Si una transcripción dice “media”, confirmá si se refiere a media pulgada o media caja.
+2. Una persona del mostrador revisa la foto en la bandeja cuando hay que distinguir dos piezas parecidas.
 3. Para un envío a obra, pedí calle, altura y entre calles. Una ubicación compartida tampoco entra.
 
 ## Un presupuesto de obra, renglón por renglón

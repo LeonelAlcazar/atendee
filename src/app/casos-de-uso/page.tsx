@@ -37,10 +37,10 @@ export default function CasosDeUsoPage() {
             level="h1"
             title={
               <>
-                Qué tarea termina Atende <span className="text-coral">en tu rubro.</span>
+                Reservá, cotizá o registrá pedidos <span className="text-coral">según tu rubro.</span>
               </>
             }
-            sub="En una clínica es reservar el turno, en un restaurante tomar la mesa y en una distribuidora registrar el pedido. Cada tarea se hace conectada a tu sistema, con una conexión que se arma a pedido para tu negocio. Sin conexión, el asistente junta el pedido y tu equipo lo confirma."
+            sub="Elegí tu negocio para ver qué puede terminar Atende por WhatsApp, dónde queda registrado y qué conviene probar en una demo. Tu equipo supervisa la conversación. Para guardar un turno, una reserva o un pedido, conectamos tu sistema a pedido."
           />
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function CasosDeUsoPage() {
       <section className="border-b-2 border-ink bg-surface py-14 md:py-16">
         <div className="mx-auto grid max-w-7xl gap-6 px-5 md:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <h2 className="font-display text-3xl font-semibold leading-[1.02] tracking-[-0.03em] text-balance md:text-4xl">
-            Cómo leer estos ejemplos
+            ¿Qué podés ver funcionando en una demo?
           </h2>
           <div className="space-y-4 text-lg leading-relaxed text-ink/80">
             <p>

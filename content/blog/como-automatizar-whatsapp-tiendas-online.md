@@ -13,7 +13,7 @@ summary: >-
   y cambios, junta número de pedido y motivo, y tu equipo resuelve desde la
   bandeja.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: comercio
 sector: Tiendas online
 tags:
@@ -39,9 +39,9 @@ faq:
       arrepentimiento y derive la conversación.
   - q: ¿Qué pasa si el cliente manda el comprobante de la transferencia?
     a: >-
-      La imagen o el PDF no llegan a Atende. El asistente no los ve, así que no
-      puede dar un pago por recibido: pide titular, monto y hora por escrito y
-      deriva para que alguien lo busque en la cuenta.
+      La imagen o el PDF aparecen en la bandeja. El asistente pide el número
+      de pedido y pasa la consulta a la persona que coteja la transferencia.
+      El pago se confirma después de verificar la acreditación.
   - q: ¿Atende puede escribirles a quienes dejaron el carrito abandonado?
     a: >-
       Por su cuenta, no: contesta cuando le escriben. Un seguimiento de ese tipo se
@@ -114,9 +114,9 @@ En el ejemplo, el “registré” depende de tu sistema. Atende está armado par
 
 ## Comprobantes, fotos del paquete y audios
 
-Todos los días le llegan a una tienda cosas que Atende nunca recibe: la captura de la transferencia, la foto del producto golpeado y el audio de quien prefiere explicarlo hablando. A Atende entran mensajes de texto. Imágenes, audios, documentos y ubicaciones se descartan antes, con el texto que traigan al pie, así que no aparecen ni para el asistente ni en la bandeja.
+Una captura de transferencia, una foto del producto golpeado y la nota de voz del cliente llegan a la bandeja en un chat individual. La persona de posventa puede revisar el adjunto. El asistente recibe el texto al pie o, si es una nota de voz, la transcripción disponible.
 
-Si alguien manda solo el comprobante, el asistente no contesta, porque no se enteró. Y si escribe “ahí te mandé la transferencia”, no puede darla por vista. Indicale en el contexto que explique que las imágenes no le llegan, pida titular, monto y hora por escrito y derive para que alguien lo busque en la cuenta. Con un producto roto, igual: deriva, y tu equipo define cómo recibir la foto.
+Para una transferencia, pedile al asistente que ubique el pedido y lo derive a quien coteja la cuenta. Para un reclamo por rotura, el equipo puede abrir la foto y revisar las condiciones antes de proponer un cambio.
 
 ## Antes de un Hot Sale
 
@@ -129,7 +129,7 @@ En los picos de venta es cuando más rinde el asistente y también cuando más s
 
 ## La primera semana, antes de conectar nada
 
-Creás tu espacio, le contás qué vendés y cómo son tus envíos y cambios, invitás a quien atiende la postventa, activás créditos o un plan y conectás el número de la tienda, eligiendo entre la API oficial de Meta y un QR. Desde ese momento responde a cualquiera que escriba. Probalo desde otro número, que usa créditos, con tres casos: un pedido sin número, “quiero devolverlo” y una pregunta que tu política no cubra.
+Configurá qué vendés y cómo son tus envíos y cambios. Invitá a quien atiende posventa. El QR se vincula desde la app y la API oficial se coordina en la [demo](/demo). Con el asistente activo y respuestas disponibles, probá desde otro número un pedido sin referencia, una devolución y una pregunta que tu política no cubra.
 
 Con unos días de chats vas a ver qué pesa más. Si es “dónde está mi pedido”, la primera conexión es la consulta de estado; si son cambios, el registro del cambio. Tu equipo sigue encima: ve toda la conversación en la bandeja y, para seguir con un cliente, marca el chat como Necesita humano, porque contestar o tocar “Asignarme” no frena al asistente.
 

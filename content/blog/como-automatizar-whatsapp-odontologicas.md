@@ -10,8 +10,11 @@ summary: >-
   conectado a tu agenda. Sin conexión toma el pedido y recepción confirma. No
   evalúa dolor ni arma presupuestos de tratamiento: ante un dolor da el camino
   que definiste y ante "¿cuánto sale?" ofrece la evaluación.
+salesIntro:
+  - "Reprogramá una sesión por WhatsApp sin perder el tiempo de sillón que necesita. Con una conexión a pedido a tu agenda, Atende puede dejar el cambio registrado."
+  - "Recepción supervisa los cambios. Sin conexión, confirma el horario a mano. Las consultas clínicas pasan a un profesional."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: salud
 sector: Consultorios odontológicos
 tags:
@@ -41,9 +44,9 @@ faq:
       toma el pedido y recepción hace el cambio.
   - q: ¿Atende recibe las radiografías que mandan los pacientes?
     a: >-
-      No. Imágenes, PDF y notas de voz nunca llegan a Atende, ni el texto que
-      venga con la imagen. Lo más simple es pedir que la placa se traiga a la
-      consulta.
+      La recepción puede abrir un archivo que le envíen al chat. El asistente
+      se ocupa del turno y deriva las consultas clínicas. Indicá dónde se
+      presenta la placa y evitá pedir estudios en el chat administrativo.
 ---
 Un paciente avisa que no llega el jueves y, con tu agenda conectada, Atende le pasa la sesión al lunes, con la misma odontóloga y el mismo tiempo de sillón, sin que recepción levante el teléfono. En un consultorio eso pesa, porque los turnos vienen encadenados y perder uno atrasa un tratamiento entero.
 
@@ -74,7 +77,7 @@ Un presupuesto de tratamiento no se arma por chat, porque depende de lo que vea 
 | Implante o prótesis | Que requiere evaluación y cuánto sale esa consulta | Presupuesto completo y cuotas |
 | Cobertura | Qué obras sociales tomás y para qué prácticas | Si esa práctica entra en ese plan |
 
-Mucha gente manda la foto de la muela o la panorámica esperando un número, y esa imagen no llega a Atende: solo entra texto, así que ni el asistente ni la bandeja se enteran. Dejá escrito en el contexto que, cuando se hable de presupuesto, aclare que las placas se traen a la consulta.
+Si alguien manda una panorámica o una foto, el archivo queda en la bandeja para tu equipo. El asistente se limita a la coordinación administrativa. Indicá cómo pedir una evaluación profesional, sin pedir placas ni interpretar síntomas por WhatsApp.
 
 El camino inverso tampoco existe: Atende manda fotos y videos de tu biblioteca, no documentos. El presupuesto en PDF lo entregás en la consulta o lo manda recepción desde el teléfono.
 

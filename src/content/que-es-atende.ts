@@ -2,7 +2,7 @@ import { site } from './site';
 
 // Canonical fact sheet. Keep it dense and plain: people and assistants quote it.
 export const definition =
-  'Atende es un asistente de WhatsApp para negocios argentinos: conectado a los sistemas de cada negocio, reserva turnos, toma pedidos y cotiza dentro de la conversación, y responde mensajes de texto a cualquier hora, con el equipo al tanto desde una bandeja compartida.';
+  'Atende es un asistente de WhatsApp para PyMEs argentinas. Con una conexión a medida, reserva un turno en tu agenda, registra un pedido en tu sistema o guarda una consulta en tu CRM. Tu equipo supervisa la conversación desde una bandeja compartida.';
 
 export const positioning =
   'Atende termina la tarea en la conversación: reserva, cotiza, registra pedidos. Lo hace en el número que tu negocio ya usa, conectado a tu sistema con una conexión que armamos a pedido, y con tu equipo al tanto.';
@@ -19,9 +19,9 @@ export const facts: { label: string; text: string }[] = [
   { label: 'Dónde se hace', text: 'Córdoba, Argentina.' },
   {
     label: 'Cómo se conecta',
-    text: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Sigue siendo el número que tu negocio ya usa.',
+    text: 'Escaneás el QR del panel con el teléfono de tu negocio. Si necesitás la API oficial de Meta, consultá el alta en la demo.',
   },
-  { label: 'Qué recibe', text: 'Mensajes de texto de WhatsApp.' },
+  { label: 'Qué recibe', text: 'Textos, notas de voz, fotos, videos, documentos y stickers de chats individuales.' },
   {
     label: 'Cuándo responde',
     text: 'A cualquier hora, mientras el servicio y tu WhatsApp estén conectados. No es una garantía de disponibilidad, y tampoco significa que haya alguien de tu equipo atendiendo.',
@@ -38,6 +38,8 @@ export const facts: { label: string; text: string }[] = [
 
 export const included: string[] = [
   'Responde mensajes de texto con lo que le contaste de tu negocio y con tus preguntas frecuentes.',
+  'Si tu espacio tiene habilitado el chat de prueba, podés probar el asistente en el panel sin gastar créditos. Sus herramientas pueden ejecutar acciones reales.',
+  'Cuando un cliente manda una nota de voz, usa la transcripción disponible para responder.',
   'Manda fotos y videos de tu biblioteca.',
   'Recuerda datos del contacto y del negocio.',
   'Deriva a una persona: avisa y deja la conversación marcada para tu equipo.',
@@ -45,7 +47,7 @@ export const included: string[] = [
 ];
 
 export const inbox =
-  'Todo tu equipo trabaja sobre las mismas conversaciones. Asignás responsable, ponés etiquetas y dejás notas que tu cliente no ve. Buscás por contacto o teléfono y filtrás por estado, etiqueta o responsable.';
+  'Todo tu equipo trabaja sobre las mismas conversaciones. Asignás la consulta a un equipo o a una persona, ponés etiquetas y dejás notas que tu cliente no ve. Buscás por contacto o teléfono y filtrás por estado, etiqueta o responsable.';
 
 export const connected: string[] = [
   'Reserva, reprograma o cancela turnos, conectado a tu agenda.',
@@ -53,17 +55,16 @@ export const connected: string[] = [
   'Consulta stock y precios, y registra pedidos.',
   'Cotiza y calcula financiación.',
   'Registra interesados en tu CRM o planilla.',
-  'Manda recordatorios y seguimientos, armados a pedido para tu negocio.',
+  'Envía un aviso de retiro cuando tu sistema informa que el pedido está listo, con una integración a pedido.',
 ];
 
 export const notDone: string[] = [
-  'No recibe audios, imágenes, videos, documentos, stickers ni ubicaciones, y tampoco mensajes de grupos. No los ve el asistente ni aparecen en la bandeja.',
-  'No empieza conversaciones por su cuenta. Recordatorios y seguimientos son a pedido.',
+  'Los mensajes de grupos quedan fuera de la bandeja. En los chats individuales, una persona revisa el contenido de imágenes y documentos. El asistente solo recibe el texto que acompaña al archivo.',
+  'El asistente responde cuando le escriben. Tu equipo puede programar mensajes recurrentes desde Contactos.',
   'No trae conexiones listas para activar: cada una se arma para un negocio.',
-  'No tiene modo de prueba. Una vez conectado, le responde a cada contacto. Probalo desde otro número; usa créditos.',
   'No lee todo el historial. Tiene en cuenta la conversación en curso y las notas que guardó.',
   'No se frena porque alguien del equipo responda. Para seguir vos, marcá la conversación como Necesita humano.',
-  'No alerta a tu equipo cuando deriva ni cuando se terminan las respuestas. Hay que mirar la bandeja y la pantalla Plan.',
+  'Las derivaciones se identifican en la bandeja por el estado Necesita humano. En Suscripción podés consultar el saldo de respuestas.',
   'No cobra pagos ni señas.',
   'No es para consultas clínicas: dejá escrito en Contexto del asistente que van a una persona.',
   'No funciona en Instagram, Messenger ni otros canales. Solo en WhatsApp.',

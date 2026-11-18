@@ -13,7 +13,7 @@ summary: >-
   el asistente, tiene que marcar el chat como “Necesita humano”: responder no
   alcanza. Los seguimientos automáticos se arman a pedido.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -48,10 +48,10 @@ faq:
       y una persona la carga: el chat no es un registro en otro sistema.
   - q: ¿El bot hace seguimiento si un posible cliente deja de responder?
     a: >-
-      No por su cuenta. Atende contesta cuando el cliente escribe. Los
-      recordatorios y seguimientos se arman a pedido para cada negocio, y mandar
-      mensajes que nadie pidió desde un número vinculado por QR suma riesgo de
-      restricción. Mientras tanto, tu equipo los retoma desde la bandeja.
+      El asistente no decide retomar una venta por su cuenta. El vendedor
+      puede seguir desde la bandeja, programar un texto recurrente para
+      contactos que lo aceptaron o pedir un aviso que salga cuando cambia el
+      estado en su sistema.
   - q: ¿Cómo sé si el bot ayuda al equipo de ventas?
     a: >-
       Medí consultas con datos suficientes, información repetida, correcciones
@@ -179,7 +179,7 @@ Un cuidado más: la pausa no es eterna. El chat se cierra solo 12 horas después
 
 ## Qué pasa con el seguimiento
 
-Muchos presupuestos se pierden porque nadie vuelve a escribir. Atende contesta cuando el cliente escribe: no inicia mensajes por su cuenta. Los seguimientos se arman a pedido para tu negocio. Ese trabajo tiene un cuidado propio: mandar mensajes que el contacto no pidió, desde un número vinculado por QR, suma riesgo de restricción, y para escribir primero conviene evaluar la API oficial de Meta, la otra forma de conectar tu número.
+Si un presupuesto quedó sin respuesta, definí qué persona de ventas lo retoma. Para una invitación periódica podés programar un texto en Contactos, con destinatarios y frecuencia elegidos por el equipo. Para un aviso cuando vence esa cotización en particular, hace falta que el sistema de presupuestos dispare el envío por una [integración a pedido](/integraciones).
 
 Mientras tanto, lo más simple funciona: una etiqueta como “presupuesto enviado”, un responsable y un rato por semana para retomar esos chats desde la bandeja.
 

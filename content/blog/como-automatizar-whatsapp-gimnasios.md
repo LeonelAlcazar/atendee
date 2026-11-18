@@ -11,7 +11,7 @@ summary: >-
   Altas y clases de prueba siguen la misma lógica. Congelar la cuota necesita
   una regla escrita, y las indicaciones de entrenamiento van al profe.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: belleza-y-bienestar
 sector: Gimnasios y estudios deportivos
 tags:
@@ -26,19 +26,21 @@ related:
 faq:
   - q: ¿Atende puede avisar cuando se libera un lugar en una clase llena?
     a: >-
-      De fábrica no, porque Atende no escribe primero. Se puede armar a pedido
-      para tu gimnasio. Sin eso, la lista de espera queda anotada y alguien del
-      mostrador avisa.
+      Para avisar apenas se libera un lugar, tu sistema de reservas tiene que
+      detectar el cambio e iniciar el mensaje. Esa conexión se arma a pedido.
+      Sin ella, alguien del mostrador revisa la lista y contacta al siguiente
+      socio.
   - q: ¿Se puede congelar la cuota por WhatsApp?
     a: >-
-      El asistente explica tu regla y toma las fechas. Quién aprueba y si hace
-      falta certificado lo definís vos. Un certificado en foto no llega a
-      Atende, así que se presenta en el mostrador.
+      El asistente explica tu regla y toma las fechas. Vos definís quién
+      aprueba el cambio. Si necesitás un certificado, indicá cómo presentarlo
+      en el mostrador y dejá la revisión con una persona.
   - q: ¿Puede mandar un aviso a todos los socios cuando se suspende una clase?
     a: >-
-      No. Atende no hace difusiones, y un envío masivo desde un número vinculado
-      por QR tiene riesgo de restricción. Sí podés actualizar el contexto para
-      que quien pregunte reciba la respuesta correcta.
+      Si los socios aceptaron avisos y tienen la etiqueta de esa clase, el
+      equipo puede enviar una regla activa desde Contactos. Revisá sus
+      destinatarios y su frecuencia. Si el aviso debe salir al cancelarse la
+      clase en la agenda, pedí esa integración.
   - q: ¿El asistente contesta en el grupo de WhatsApp de una clase?
     a: >-
       No. Los mensajes de grupos nunca llegan a Atende. Funciona solo en
@@ -92,7 +94,7 @@ Después del "dale, quiero probar" viene lo que importa: reservar la clase de pr
 
 - Si la clase de prueba tiene costo y cuántas veces se puede usar.
 - Qué se paga para darse de alta y de qué forma, escrito tal cual lo cobrás.
-- Si pedís apto físico, decilo antes de la primera clase. El certificado en foto no llega a Atende, así que se presenta en el mostrador.
+- Si pedís apto físico, explicá de antemano cuándo y dónde se presenta. La revisión del certificado queda con el equipo.
 
 Las promesas de resultado quedan afuera. A "quiero bajar diez kilos para diciembre" el asistente contesta con las clases que hay y ofrece la prueba, y la conversación sobre objetivos la tiene un profe.
 
@@ -109,15 +111,15 @@ Con eso, el asistente explica las condiciones y toma las fechas, y una persona a
 
 ## Comprobantes, audios y el grupo de la clase
 
-Esto pasa todos los días en un gimnasio y no llega a Atende:
+Así puede resolver administración tres situaciones frecuentes:
 
-- **El comprobante de la cuota.** Imagen o PDF, nunca entra. Si el socio lo manda, el asistente no contesta. Definí otra forma de registrar pagos.
-- **La nota de voz.** Quien sale transpirado y manda un audio no recibe respuesta, porque el asistente trabaja con mensajes de texto.
+- **Comprobante de cuota.** La captura o el PDF llegan a la bandeja para que administración coteje el pago con la cuenta.
+- **Nota de voz.** Si alguien dicta el horario que busca, el asistente activo puede usar la transcripción disponible para consultar por la clase correcta.
 - **El grupo de WhatsApp.** Los mensajes de grupos nunca llegan. Lo que pregunten en el grupo de funcional queda ahí; Atende atiende los chats individuales.
 
 ## Se suspende la clase: lo que Atende no avisa solo
 
-Feriado, corte de luz, profe enfermo. Mandarles a todos "hoy no hay clase" es un mensaje masivo, y Atende no hace difusiones. Tampoco conviene improvisarlas: en un número vinculado por QR, los envíos que la gente no espera tienen riesgo de restricción. Los recordatorios a pedido se arman para casos puntuales, con el acuerdo de quien los recibe; la [nota sobre recordatorios](/blog/recordatorios-de-turnos-por-whatsapp) cuenta qué hace falta.
+Si necesitás avisar un cambio a un grupo de socios, en Contactos podés programar textos recurrentes por etiqueta y enviar una regla activa en el momento. Revisá quién aceptó esos avisos y cuándo le tocaría el próximo envío. Un aviso por el vencimiento individual de una cuota requiere que lo inicie tu sistema. Tenés más en la [guía de recordatorios](/blog/recordatorios-de-turnos-por-whatsapp).
 
 Lo que sí podés hacer en un momento desde el celular es editar el contexto: "Hoy no hay clases a la noche por corte de luz". Quien pregunte recibe la respuesta correcta, y si tenés grupo de socios, ahí lo avisás vos.
 

@@ -5,14 +5,13 @@ description: >-
   Conectado a tu sistema, Atende registra pedidos por WhatsApp en la carpeta de
   cada cliente del estudio, sin dar asesoramiento impositivo ni pedir clave fiscal.
 summary: >-
-  Un estudio contable puede automatizar WhatsApp para distinguir si escribe un
-  cliente por carpeta o una consulta nueva, registrar el pedido y dejarlo a quien
-  corresponde. Conectado a tu sistema, lo carga en la carpeta; sin conexión, lo
-  reúne y el equipo confirma. El asistente no da asesoramiento impositivo, no
-  pide la clave fiscal y no recibe fotos de facturas: esa documentación va a una
-  persona por otro canal.
+  Un estudio contable puede registrar por WhatsApp un pedido de carpeta y
+  separar las consultas de potenciales clientes. Con tu sistema conectado, el
+  asistente carga el pedido. Sin conexión, reúne los datos para que el estudio
+  lo confirme. Una persona revisa facturas y documentación sensible. El
+  asesoramiento impositivo queda con el profesional.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: servicios-profesionales
 sector: Estudios contables
 tags:
@@ -33,15 +32,16 @@ faq:
       responsable. Esa regla se escribe en el contexto del asistente.
   - q: ¿Qué pasa con las fotos de facturas que mandan los clientes?
     a: >-
-      Fotos, PDF y audios nunca llegan a Atende, así que el asistente no se
-      entera. Definí un mail o una carpeta compartida y dejá escrito que el
-      asistente lo indique.
+      Tu equipo puede abrir fotos y PDF en la bandeja. El asistente conoce el
+      texto al pie, y para las notas de voz usa la transcripción disponible.
+      El estudio se encarga de controlar cada comprobante y asociarlo a la
+      carpeta correcta.
   - q: ¿Atende puede avisar los vencimientos a todos los clientes?
     a: >-
-      Atende no manda mensajes por su cuenta. Los recordatorios se arman a
-      pedido, necesitan los datos de cada cliente y solo conviene enviarlos a
-      quienes los aceptaron, porque mandar mensajes no pedidos desde un número
-      vinculado por QR tiene riesgo de restricción.
+      Para una invitación periódica, programá un texto desde Contactos para
+      quienes lo aceptaron. Para avisar la fecha y el trámite que le
+      corresponden a cada cliente, tu sistema tiene que disparar el envío. Esa
+      integración se arma a pedido.
   - q: ¿Cómo sabe el asistente a qué carpeta va cada pedido?
     a: >-
       Conectado al sistema del estudio, usa el teléfono para ubicar la carpeta y
@@ -61,7 +61,7 @@ Automatizar WhatsApp en un estudio contable significa que el asistente identifiq
 | "Necesito una certificación de ingresos" | Pregunta a nombre de quién y para cuándo, y lo registra | El contador que firma |
 | "¿Cuánto cobran por llevar una SRL?" | Pregunta actividad, empleados y provincia, y lo registra | El socio que define honorarios |
 | "¿Me conviene pasar a responsable inscripto?" | No opina. Deriva | El contador de la carpeta |
-| Diez fotos de facturas | Nada: no llegan a Atende | Alguien del estudio, por otro canal |
+| Diez fotos de facturas | Detecta los adjuntos y pregunta el período si hace falta | Una persona del estudio revisa y archiva las facturas |
 
 ## ¿Cliente por carpeta o consulta nueva?
 
@@ -97,20 +97,20 @@ La clave fiscal merece una línea propia en el contexto: que el asistente no la 
 
 ## Fotos de facturas, PDF y audios: por dónde entran
 
-Todos los meses alguien manda la foto del ticket, el PDF de la boleta y un audio explicando todo. Nada de eso llega a Atende. Ni el asistente ni la bandeja lo ven, y la persona no recibe respuesta porque, para el asistente, no pasó nada.
+El cliente puede mandar una foto del ticket, el PDF de la boleta y una nota de voz. Todo eso llega al chat individual. El asistente puede usar la transcripción disponible del audio para identificar el trámite. La persona que lleva la carpeta abre los archivos y comprueba qué corresponde registrar.
 
 Lo ordenan estas decisiones:
 
 - **Un solo canal para la documentación.** Un mail o una carpeta compartida, con una persona que lo mira.
-- **El asistente lo dice cuando aparece el tema.** "Por acá no me llegan fotos ni PDF. Mandalos a [mail del estudio]." Nunca "recibido".
-- **Si conectaste por QR, alguien revisa el teléfono.** Los clientes de siempre van a seguir mandando fotos, y ahí quedan.
+- **Aclará dónde queda el original.** Si tu estudio archiva en otra carpeta, indicá cómo subir el archivo y quién va a revisarlo.
+- **Revisá los adjuntos en la bandeja.** Comprobá período y cliente antes de marcarlos como recibidos en el sistema del estudio.
 
 ## Avisos de vencimiento: por qué no conviene mandarlos a todos
 
-Es lo primero que pide un contador: que cada cliente reciba su aviso. Atende no manda mensajes por su cuenta. Los recordatorios se arman a pedido para tu estudio y necesitan saber qué le vence a cada uno, un dato que vive en tu sistema.
+Un recordatorio mensual de entrega de comprobantes puede programarlo tu equipo en Contactos por etiqueta. Si cada cliente tiene un vencimiento distinto, el aviso debe venir de tu sistema según la fecha real. Para elegir, mirá [cómo programar el seguimiento de tu estudio por WhatsApp](/blog/automatizar-seguimiento-clientes-estudios-profesionales).
 
 Antes de pedirlo, pensá en cómo conectás el número, porque el estudio puede elegir entre un QR y la API oficial de Meta. Por QR, salir a escribirle a toda la cartera la semana del vencimiento, sin que nadie lo haya pedido, es el tipo de envío que puede terminar en una restricción. Si lo armás, que sea para quienes aceptaron el aviso y con tandas chicas. Cuál te conviene para tu cartera lo vemos en la [demo](/demo).
 
 ## Cómo arranca un estudio contable
 
-Desde que escaneás el QR les contesta a todos, clientes de años incluidos, así que avisales antes. Probalo desde otro número, que usa créditos, con un "¿cuánto pago este mes?", y fijate que no dé importes. Y elegí una semana tranquila: estrenarlo cuando vence todo es la manera segura de aprender con clientes enojados.
+Con el asistente activo y saldo, una consulta individual de un cliente de años también puede entrar al circuito automático. Probá por WhatsApp desde otro número con “¿cuánto pago este mes?”. Comprobá que lo derive a un profesional antes de habilitarlo en una semana de vencimientos.

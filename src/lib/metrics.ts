@@ -150,6 +150,7 @@ export function linkMetric(
       placement === 'mobile-whatsapp' ||
       (page !== 'demo' &&
         (placement === 'faq-whatsapp' || placement === 'final-whatsapp')) ||
+      (page === 'pricing' && placement === 'pricing-estimate-whatsapp') ||
       (page === 'demo' && placement === 'demo-direct-whatsapp')
     )
       metric = 'direct_whatsapp';

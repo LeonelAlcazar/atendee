@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { blogTopics, getBlogTopic } from '@/content/blog-topics';
+import { blogTopics, buyerLinkByTopic, getBlogTopic } from '@/content/blog-topics';
 import { getPosts } from '@/lib/blog';
 import { latestUpdate } from '@/lib/blog-content';
 import { createPageMetadata } from '@/lib/metadata';
@@ -9,6 +9,7 @@ import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { RichText } from '@/components/casos/RichText';
 import { PostCard } from '@/components/blog/PostCard';
+import { Button } from '@/components/ui/Button';
 
 export const revalidate = 3600;
 // A topic whose first post is scheduled after the build has no static param yet.
@@ -39,6 +40,7 @@ export async function generateMetadata({ params }: Props) {
 }
 export default async function TopicPage({ params }: Props) {
   const topic = topicPage((await params).slug);
+  const buyerLink = buyerLinkByTopic[topic.slug];
   const posts = getPosts().filter((post) => post.category === topic.slug);
   const breadcrumbs = [
     { name: 'Inicio', path: '/' },
@@ -63,6 +65,14 @@ export default async function TopicPage({ params }: Props) {
             <RichText text={topic.intro} />
           </p>
         )}
+        <Button
+          href={buyerLink.href}
+          variant="outline"
+          className="mt-5"
+          data-cta={`blog-topic-${topic.slug}`}
+        >
+          {buyerLink.label} <span aria-hidden="true">→</span>
+        </Button>
         <h2 className="sr-only">Guías y comparativas de {topic.name}</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (

@@ -5,13 +5,13 @@ description: >-
   Conectado a tu agenda, Atende reserva corte o color por WhatsApp con la
   duración y la profesional correctas. Qué pasa con señas y fotos de referencia.
 summary: >-
-  Para automatizar WhatsApp en una peluquería, Atende reserva el turno conectado
-  a tu agenda, con la duración de cada servicio y la profesional que pide la
-  clienta. Sin conexión junta servicio, profesional y día, y alguien del salón
-  confirma. Los cambios grandes de color pasan a una persona, y las fotos de
-  referencia y los comprobantes de seña no llegan a Atende.
+  Con tu agenda conectada, Atende reserva el turno de peluquería según la
+  duración del servicio y la profesional. Sin esa conexión junta servicio,
+  profesional y día para que el salón confirme. La colorista puede mirar la
+  foto de referencia en la bandeja y acordar una evaluación. Alguien del
+  equipo coteja las señas.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: belleza-y-bienestar
 sector: Peluquerías
 tags:
@@ -31,14 +31,13 @@ faq:
       agenda: reserva sobre lo que ella dice que está libre.
   - q: ¿Qué pasa si una clienta manda una foto del color que quiere?
     a: >-
-      La foto no llega a Atende, y lo que escriba junto a ella tampoco. Por eso
-      conviene que el asistente pida describir el color con palabras y traer la
-      foto el día del turno.
+      La colorista puede abrir la foto en la bandeja. El asistente recibe el
+      texto que la acompaña y puede preguntar qué cambio busca la clienta. La
+      profesional evalúa el tono y define si hace falta una consulta previa.
   - q: ¿El asistente puede cobrar o verificar una seña?
     a: >-
-      Puede pasar el alias y explicar tu regla si la cargaste. No ve el
-      comprobante, porque imágenes y PDF no llegan a Atende, así que el turno
-      queda pendiente hasta que alguien del salón verifique la transferencia.
+      Puede pasar el alias y explicar la regla de tu salón. El equipo recibe
+      el comprobante y revisa la cuenta antes de dar el turno por señado.
   - q: ¿Puede atender el WhatsApp personal de cada peluquera?
     a: >-
       Cada espacio lleva un solo número. Atende trabaja sobre el número que
@@ -75,11 +74,11 @@ En el "Contexto del asistente" dejá claro:
 
 Otro límite real: cada espacio lleva un solo número. Si cada peluquera recibe turnos en su celular personal, esos mensajes no pasan por Atende.
 
-## Cuánto sale un color y la foto que nunca llega
+## Cómo cotizar color cuando llega una foto de referencia
 
 "¿Cuánto sale un balayage?" no tiene una sola respuesta, porque depende del largo, de cuánto pelo hay y de lo que traiga de antes. Si publicás un "desde", cargalo en "Preguntas frecuentes" y aclaralo como referencia. Si no, el asistente dice que el valor se define al ver el pelo y ofrece el turno de evaluación o lo pasa a alguien del salón.
 
-Después viene la foto de referencia, la clásica "quiero este color". Esa foto no llega a Atende, que recibe solo texto, y lo que la clienta haya escrito al pie se va con la imagen. Igual con la nota de voz de quien pide turno mientras maneja. Pedile al asistente que, cuando hable de color, sugiera describir el tono con palabras y traer la foto el día del turno.
+“Quiero este color” suele llegar al pie de una foto. Tu colorista puede abrir la foto en la bandeja. El asistente ve esas palabras, pregunta qué servicio busca la clienta y deriva a la profesional si el cambio necesita diagnóstico de color. Un pedido de turno por voz puede avanzar usando la transcripción disponible.
 
 En sentido contrario sí funciona. Subí a tu biblioteca fotos y videos de tus trabajos, y el asistente los manda cuando le preguntan cómo queda un balayage o qué cortes hacés.
 
@@ -87,7 +86,7 @@ En sentido contrario sí funciona. Subí a tu biblioteca fotos y videos de tus t
 
 Un color que falta sin avisar deja a una colorista con media tarde vacía, y por eso muchos salones piden seña en los servicios largos. Si es tu caso, escribí la regla con todas las letras: qué servicios la llevan, cuánto, a qué alias, hasta cuándo se puede cancelar y qué pasa con la plata si la clienta no viene.
 
-Con eso el asistente la explica siempre igual, sin regateo. El punto débil es el comprobante. Es una imagen o un PDF, y no llega a Atende. El asistente no puede decir "recibí tu seña", así que el turno queda pendiente hasta que alguien mire la cuenta y lo confirme desde la bandeja.
+El asistente explica la política de señas. Si la clienta manda una captura o un PDF, tu equipo puede abrirlo en la bandeja y cotejar la acreditación en la cuenta. Recién ahí corresponde dar la seña por recibida.
 
 ## Raíz y corte con Caro, reservado desde el chat
 

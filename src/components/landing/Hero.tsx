@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { ProductPreview } from '@/components/ui/ProductPreview';
 import { Tag } from '@/components/ui/Tag';
@@ -45,8 +44,8 @@ export function Hero() {
                 </span>
               </Button>
               <Button
-                href={site.appUrl}
-                data-cta="hero-signup"
+                href="/precios"
+                data-cta="hero-pricing"
                 variant="outline"
                 size="lg"
               >
@@ -55,13 +54,14 @@ export function Hero() {
             </div>
 
             <p className="text-sm leading-snug text-mute">
-              {hero.reassurance}{' '}
-              <Link
-                href="/que-es-atende"
+              ¿Preferís empezar en la app?{' '}
+              <a
+                href={site.appUrl}
+                data-cta="hero-signup"
                 className="inline-flex min-h-11 items-center font-semibold text-ink underline underline-offset-4 hover:text-coral-strong"
               >
-                {hero.aboutLink}
-              </Link>
+                {hero.signupLink}
+              </a>
             </p>
           </div>
         </div>

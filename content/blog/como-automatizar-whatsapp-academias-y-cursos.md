@@ -11,7 +11,7 @@ summary: >-
   nivel lo define la prueba, el cupo lo define tu sistema, y nadie está inscripto
   hasta que se cumplen tus pasos de matrícula y pago.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: educacion
 sector: Academias y centros de formación
 tags:
@@ -31,9 +31,10 @@ faq:
       lo define tu equipo docente.
   - q: ¿Puede tomar la parte oral de una prueba de nivel por audio?
     a: >-
-      No. Las notas de voz nunca llegan a Atende, así que el asistente no las
-      escucha ni las ve tu equipo en la bandeja. La parte oral se hace con una
-      persona.
+      No. Tu equipo puede escuchar la nota de voz desde la bandeja. El
+      asistente puede trabajar con la transcripción disponible, que no alcanza
+      para calificar pronunciación. La evaluación oral queda en manos del
+      docente.
   - q: ¿Atende puede mandar el temario en PDF?
     a: >-
       No directamente: el asistente manda fotos y videos de tu biblioteca, no
@@ -85,7 +86,7 @@ Ejemplo ilustrativo, con el sistema del instituto conectado:
 >
 > Asistente: Te reservé la prueba del lunes a las 18:00, online. Con el resultado te proponemos comisión.
 
-Si tu prueba es escrita y online, el asistente pasa el link que cargaste. Lo que no puede hacer es tomarla por chat ni corregirla. Y la parte oral queda fuera sí o sí: una nota de voz nunca llega a Atende, así que pedirle a alguien que grabe un audio para evaluar su pronunciación no funciona por este canal. Esa instancia se hace con una persona, por videollamada o en la sede.
+Si la prueba es escrita y online, el asistente pasa el enlace que cargaste. En una prueba oral, el docente necesita oír la pronunciación. Puede escuchar la grabación en la bandeja o tomar la prueba en la sede. Una transcripción sirve para entender qué curso pide la persona, pero no para puntuar cómo habla.
 
 Para quien pide cambiar de nivel después de empezar, aplica lo mismo: lo decide un docente.
 
@@ -93,7 +94,7 @@ Para quien pide cambiar de nivel después de empezar, aplica lo mismo: lo decide
 
 Pedir información no es inscribirse, y reservar la prueba tampoco. Escribí en el "Contexto del asistente" qué cuenta como inscripción en tu institución: formulario, matrícula, primera cuota, lo que sea. Con eso, el asistente deja claro en qué paso está cada persona y no dice "ya estás adentro" antes de tiempo.
 
-Si cobrás por transferencia, el comprobante no le sirve al asistente: es una imagen o un PDF, y a Atende solo entra texto. Alguien de secretaría verifica el pago y confirma. Lo mismo con el DNI en foto o el certificado de estudios que mandan para la admisión: se presentan por otro camino, y el asistente lo tiene que avisar antes de que la persona los mande y se quede esperando.
+Un comprobante en foto o PDF llega a la bandeja. Secretaría verifica el pago antes de confirmar la inscripción. Si hacen falta documentos para la admisión, indicá el canal de entrega que usa tu instituto y quién los revisa.
 
 ## Menores: escribe la mamá, cursa el hijo
 

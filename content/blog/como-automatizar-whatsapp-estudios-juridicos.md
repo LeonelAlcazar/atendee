@@ -11,8 +11,11 @@ summary: >-
   estudio, la deja cargada; sin conexión, la reúne en la conversación y el
   equipo la carga. No asesora, no cuenta plazos y no implica que el estudio haya
   tomado el caso.
+salesIntro:
+  - "Registrá una nueva consulta jurídica desde WhatsApp con el motivo y el área que necesita atenderla. Para cargarla en tu sistema, Atende requiere una conexión a pedido."
+  - "Sin esa conexión deja los datos reunidos en el chat. El equipo del estudio supervisa la derivación y el asesoramiento queda con el profesional."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: servicios-profesionales
 sector: Estudios jurídicos
 tags:
@@ -38,9 +41,10 @@ faq:
       conflictos de intereses y de hablar con la persona.
   - q: ¿Qué pasa si alguien manda una cédula en foto o un audio?
     a: >-
-      Fotos, PDF y audios nunca llegan a Atende, así que el asistente no se
-      entera y no contesta. Conviene dejar escrito adónde va la documentación
-      para que lo diga apenas aparece el tema.
+      Tu equipo puede abrir la foto y escuchar el audio en la bandeja. El
+      asistente puede usar la transcripción disponible para derivar el motivo
+      de contacto. La lectura de la cédula y la evaluación del caso quedan con
+      un profesional.
   - q: ¿Atende se conecta con el sistema de gestión del estudio?
     a: >-
       Conectado a tu sistema, Atende deja la consulta cargada ahí. Esa conexión
@@ -114,13 +118,13 @@ Pedí poco, porque lo que se escribe queda. El texto se guarda en Atende y pasa 
 
 Dentro de tu espacio no hay permisos por rol: cualquiera que invites ve todas las conversaciones. Pensalo antes de sumar pasantes o colaboradores externos.
 
-Un telegrama escaneado, la foto de una cédula o un audio contando lo que pasó nunca llegan a Atende. El asistente ni se entera de que los mandaron, así que dejale escrita la respuesta: "Por este chat no recibimos fotos, PDF ni audios. La documentación va a [mail del estudio] o se trae a la entrevista." Si alguien pregunta si llegó, nunca debería contestar "recibido".
+Si llega una cédula escaneada o un telegrama, el asistente reconoce que hay un adjunto y tu equipo puede abrirlo. Definí quién revisa la documentación y por qué vía se recibe formalmente. Un audio puede orientar la derivación a partir de su transcripción, pero cualquier interpretación o cómputo de plazos queda con el profesional.
 
 ## Clientes actuales, por otro camino
 
 Quien ya es cliente pregunta otra cosa: "¿salió algo en mi expediente?". El asistente no lo sabe, y conviene que siga sin saberlo. Un número de WhatsApp no prueba quién escribe: puede ser un familiar o un socio en conflicto. Lo correcto es derivar al responsable sin confirmar siquiera que exista un expediente. Si algún día el estudio quiere informar estados por este canal, es una decisión aparte, con reglas escritas por un abogado.
 
-También hay que saber que el asistente les contesta a todos desde que escaneás el QR, tus clientes incluidos: no hay modo de prueba ni excepción por contacto. Probalo desde otro número, que usa créditos, con una consulta de un área que no tomás y un "¿llego con el plazo?". Si un asunto delicado pide que siga una persona, marcá esa conversación como Necesita humano, porque contestar desde la bandeja no alcanza para frenarlo. Para apagarlo en todo el espacio está Modo CRM. [Cómo pasar de la IA a una persona](/blog/whatsapp-ia-atencion-humana) cubre ese traspaso.
+Probá con una consulta de un área que el estudio no toma y con una pregunta por un vencimiento. La respuesta debe derivar al profesional. Marcá el chat “Necesita humano” si vas a seguir vos. El paso a paso está en [cómo pasar de la IA a una persona](/blog/whatsapp-ia-atencion-humana).
 
 Si el estudio va a depender de esta línea, decidí con calma cómo conectarla: con la API oficial de Meta o con un QR, según lo que necesites. Por ninguno de los dos caminos se puede prometer que WhatsApp no restrinja un número.
 

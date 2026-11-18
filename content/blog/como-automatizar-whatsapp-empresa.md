@@ -13,7 +13,7 @@ summary: >-
   esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el
   pedido y tu equipo lo confirma.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - WhatsApp Business
@@ -104,9 +104,9 @@ Antes de planificar, mirá el estado real. No todo lo que se puede imaginar exis
 | Registrar pedidos y consultar stock o precios | A pedido, conectado a tu sistema |
 | Cotizar y calcular financiación | A pedido, conectado a tu sistema |
 | Registrar interesados en tu CRM o planilla | A pedido, conectado a tu sistema |
-| Recordatorios y seguimientos | A pedido, armados para tu negocio |
+| Enviar textos periódicos o avisar que un pedido está listo | Tu equipo programa los periódicos desde Contactos. El aviso por pedido requiere que lo inicie tu sistema mediante una integración a pedido |
 
-“A cualquier hora” vale mientras el servicio y tu WhatsApp estén conectados. Hay demo de lo conectado para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Contamos aparte [cómo se arma cada conexión](/integraciones). Los límites importan tanto como la lista: el asistente trabaja con mensajes de texto, y audios, imágenes, documentos y grupos no llegan a Atende.
+La atención fuera de horario requiere que el servicio y tu WhatsApp estén conectados. En nuestra demo de concesionaria, el asistente consulta stock y precios, calcula la financiación y registra al interesado en Google Sheets. Para un negocio real, [la conexión se arma a pedido](/integraciones). Los audios y otros adjuntos de chats individuales llegan a la bandeja. El asistente usa la transcripción disponible del audio y el texto que acompaña una imagen.
 
 ## 1. Elegí una consulta frecuente con un siguiente paso claro
 
@@ -151,7 +151,7 @@ Definí quién revisa que la conexión siga activa, quién corrige la informaci�
 
 ## 5. Probá las excepciones, no solo la respuesta esperada
 
-No hay modo de prueba: una vez vinculado el número, el asistente contesta a todos tus contactos. Probalo desde otro número; usa créditos. Una pregunta bien escrita con todos los datos es solo una parte del uso real:
+Podés usar el chat de prueba si administración lo habilita. Ahí las respuestas no salen por WhatsApp ni consumen créditos, aunque las herramientas conectadas pueden actuar sobre tu sistema. Para comprobar la entrega real, escribí desde otro número. Probá también estos casos:
 
 | Prueba | Comportamiento que conviene verificar |
 | --- | --- |
@@ -170,7 +170,7 @@ Guardá qué pasó y qué debería haber pasado. Corregí y repetí los casos af
 
 Una conexión tiene que contemplar fallas: dato inexistente, acceso vencido, sistema sin respuesta o un mensaje repetido. Si no pudo confirmar la operación, el asistente tiene que decir qué quedó pendiente y pasar el caso al equipo.
 
-No te damos un armador de flujos: armamos la conexión con tu sistema. Los recordatorios y seguimientos también se arman a pedido, y con un cuidado propio, porque mandar mensajes que nadie pidió desde un número vinculado por QR suma riesgo de restricción. Si tu objetivo es presupuestar, la [guía de cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas) separa reunir datos, calcular y emitir.
+El trabajo de conexión depende de la tarea que querés terminar en tu sistema. Además, tu equipo puede programar textos recurrentes por contacto o etiqueta. Un aviso por un pedido listo necesita que lo dispare tu sistema. Para presupuestar por el chat, la [guía de cotizaciones](/blog/cotizaciones-por-whatsapp-automaticas) separa reunir datos, calcular y emitir.
 
 ## 7. Medí lo que corresponde a ese alcance
 

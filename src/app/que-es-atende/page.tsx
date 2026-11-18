@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { site } from '@/content/site';
+import { Button } from '@/components/ui/Button';
 import { pages } from '@/content/pages';
 import {
   audiences,
@@ -55,10 +57,12 @@ export default function QueEsAtendePage() {
             <p className="mt-6 max-w-3xl border-l-4 border-coral pl-5 font-display text-2xl font-medium leading-snug tracking-[-0.015em] md:text-3xl">
               {definition}
             </p>
-            <p className="mt-6 max-w-3xl leading-relaxed text-mute">
-              Esta página reúne lo que Atende hace, lo que no hace y cómo se
-              conecta. Podés citarla: la mantenemos al día con el producto.
-            </p>
+            <div className="mt-6 flex flex-wrap items-center gap-4">
+              <Button href="/demo" data-cta="product-demo">Ver cómo funcionaría en mi negocio</Button>
+              <Link href="/precios" className={sourceLink + ' inline-flex min-h-11 items-center'}>
+                Consultar planes
+              </Link>
+            </div>
           </div>
           <ChatMockup
             caption="Ejemplo ilustrativo, con la agenda conectada"
@@ -110,10 +114,10 @@ export default function QueEsAtendePage() {
               stock y precios, calcula financiación y registra al interesado en
               Google Sheets. Es una demo, no un cliente.{' '}
               <Link
-                href="/integraciones"
+                href="/integraciones#demo"
                 className="font-semibold text-ink underline underline-offset-4"
               >
-                Cómo armamos cada conexión
+                Ver cómo se registra el interesado
               </Link>
               .
             </p>
@@ -143,49 +147,17 @@ export default function QueEsAtendePage() {
           <div>
             <h2 className={heading}>Cómo se conecta</h2>
             <p className="mt-4 font-display text-xl font-semibold leading-snug">
-              Elegís cómo conectar tu número: con la API oficial de Meta o con un
-              QR.
+              Desde el panel, vinculás el WhatsApp que ya usa tu negocio.
             </p>
             <p className="mt-3 leading-relaxed text-mute">
-              Por QR, abrís el código en otra pantalla y lo escaneás con el
-              teléfono del negocio. Queda como un dispositivo vinculado en el
-              número que ya usás y, según{' '}
-              <a
-                href="https://whatsappbusiness.com/es-la/products/business-app-meta-one/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={sourceLink}
-              >
-                nuestra lectura
-              </a>
-              , Meta no cobra por mensaje en esa ruta.
+              Abrí el QR del panel en otra pantalla. En tu teléfono, entrá a
+              Dispositivos vinculados y escanealo. Tus clientes siguen
+              escribiendo al mismo número.
             </p>
             <p className="mt-3 leading-relaxed text-mute">
-              La API oficial tiene las{' '}
-              <a
-                href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={sourceLink}
-              >
-                tarifas por mensaje de Meta
-              </a>{' '}
-              y, fuera de la ventana de 24 horas, usa{' '}
-              <a
-                href="https://whatsappbusiness.com/es-la/policy/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={sourceLink}
-              >
-                plantillas aprobadas
-              </a>
-              . Si vas a escribir primero, por ejemplo con recordatorios,
-              conviene evaluarla.
-            </p>
-            <p className="mt-3 leading-relaxed text-mute">
-              Cómo es el alta de la API, quién paga esas tarifas y qué pasa con
-              la app en ese número lo vemos con vos en la demo. Cada espacio
-              conecta un número.
+              Si necesitás la API oficial de Meta, consultá el alta y las
+              condiciones de esa ruta en la demo. Vincular un dispositivo por QR
+              es una conexión distinta.
             </p>
           </div>
           <div>
@@ -198,7 +170,7 @@ export default function QueEsAtendePage() {
                 'Le contás qué hace tu negocio.',
                 'Invitás a tu equipo.',
                 'Activás créditos o un plan.',
-                'Conectás tu número, con la API oficial o con un QR.',
+                'Vinculás tu número de WhatsApp.',
               ].map((step, index) => (
                 <li key={step} className="flex items-start gap-3">
                   <span className="font-mono text-sm text-coral-strong">
@@ -208,6 +180,15 @@ export default function QueEsAtendePage() {
                 </li>
               ))}
             </ol>
+            <a
+              href={`https://wa.me/${site.onboardingWhatsApp}?text=Quiero%20crear%20mi%20espacio%20en%20Atende`}
+              data-cta="product-whatsapp-onboarding"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={sourceLink + ' mt-4 inline-flex min-h-11 items-center'}
+            >
+              Crear mi espacio por WhatsApp
+            </a>
           </div>
         </div>
       </section>
@@ -230,8 +211,8 @@ export default function QueEsAtendePage() {
             }))}
           />
           <p className="mt-6 max-w-3xl leading-relaxed text-mute">
-            No conviene si necesitás campañas de difusión masivas, atender
-            audios y fotos con el asistente o varios canales además de WhatsApp.
+            No conviene si necesitás campañas de difusión masivas, interpretar el contenido de
+            imágenes o documentos sin intervención de tu equipo o varios canales además de WhatsApp.
           </p>
           <p className="mt-4 max-w-3xl rounded-md border-2 border-ink bg-bg p-4 leading-relaxed">
             <strong className="font-semibold">No confundir:</strong> Atende

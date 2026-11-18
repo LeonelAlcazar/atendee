@@ -2,8 +2,8 @@
 title: Cómo automatizar WhatsApp en clínicas y consultorios para dar y mover turnos
 seoTitle: 'Cómo automatizar WhatsApp en clínicas y consultorios: turnos'
 description: >-
-  Conectado a tu agenda, Atende da y mueve turnos por WhatsApp. Qué contesta
-  sobre obras sociales, qué queda en recepción y qué nunca entra al chat.
+  Conectado a tu agenda, Atende reserva y reprograma turnos por WhatsApp. Cómo
+  orientar consultas de obra social y cuándo tiene que seguir recepción.
 summary: >-
   Para automatizar el WhatsApp de una clínica, empezá por el turno: conectado a
   tu agenda, Atende ofrece horarios, reserva o reprograma y lo confirma en la
@@ -11,7 +11,7 @@ summary: >-
   recepción confirma. Sobre coberturas contesta con lo que cargaste; síntomas,
   resultados y órdenes siguen en manos de una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: salud
 sector: Clínicas y consultorios
 tags:
@@ -31,10 +31,9 @@ faq:
       ella, el asistente junta el pedido y recepción confirma el turno.
   - q: ¿Qué pasa si un paciente manda la foto de la orden por WhatsApp?
     a: >-
-      La foto no llega a Atende, y el texto que la acompaña tampoco. El
-      asistente no contesta y la bandeja no la muestra; queda solo en el
-      teléfono de la clínica. Por eso conviene pedir que la orden se presente
-      en el mostrador.
+      La foto llega a la bandeja. El asistente recibe el texto al pie y sabe
+      que llegó una imagen. La clínica define cómo se presenta la orden. Si
+      hace falta revisar documentación o hablar de salud, sigue una persona.
   - q: ¿El asistente puede confirmar si una obra social cubre una práctica?
     a: >-
       Puede decir qué coberturas toma cada especialidad, según lo que cargaste.
@@ -86,11 +85,11 @@ El límite es la autorización. Puede decir que cardiología atiende por una obr
 
 Los convenios cambian, y una cartilla vieja en el chat produce la peor escena del mostrador: alguien que viene confiado y se entera ahí de que tiene que pagar particular. Poné a una persona con nombre y apellido a cargo de actualizarla.
 
-## La foto de la orden no llega a Atende
+## Cómo orienta recepción si llega una orden
 
-Atende trabaja con mensajes de texto. La foto de una orden, el PDF de un estudio y la nota de voz de una paciente mayor nunca llegan: el asistente no los recibe, no contesta y la bandeja no los muestra. Si la foto trae un texto al pie, se pierde con ella. Con el número vinculado por QR, esos archivos siguen entrando al teléfono de la clínica, y alguien tiene que seguir mirándolo.
+Si alguien envía una foto de una orden o un PDF, recepción puede abrir el adjunto en la bandeja. El asistente conoce el texto que lo acompaña y puede explicar dónde presentar la documentación. La revisión del contenido queda con una persona.
 
-Conviene anticiparlo. Pedile al asistente que, al confirmar cada turno, aclare que la orden se presenta en el mostrador, y dejá escrito en el perfil de WhatsApp de la clínica que ese canal atiende mensajes de texto.
+Al confirmar el turno, indicá qué hay que llevar al mostrador. Reservá el chat para coordinar horario y sede. Las consultas clínicas pasan al equipo y el asistente evita pedir estudios o datos de salud.
 
 ## Nada de síntomas ni estudios en la conversación
 

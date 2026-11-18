@@ -5,13 +5,13 @@ description: >-
   Cómo pasar de “¿a cuánto está el metro?” a una visita técnica agendada por
   WhatsApp: datos de obra, cómputo, presupuesto y plazos, sin prometer de más.
 summary: >-
-  Para automatizar el WhatsApp de una constructora, hacé que el asistente filtre
-  tipo de obra, zona y etapa del proyecto y, conectado a tu agenda, deje agendada
-  la visita técnica. El cómputo, el presupuesto y los plazos salen de tu equipo.
-  Planos en PDF, fotos del terreno y audios no llegan a Atende. Sin conexión, el
-  asistente junta los datos y tu equipo coordina la visita.
+  Para agendar una visita técnica por WhatsApp, el asistente pide tipo de
+  obra, zona y etapa del proyecto. Con tu agenda conectada, registra la fecha
+  confirmada. Sin esa conexión, tu equipo coordina la visita. Los planos y
+  fotos llegan a la bandeja para que la oficina técnica revise el cómputo, el
+  presupuesto y los plazos.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: inmuebles-y-hogar
 sector: Constructoras y reformas
 tags:
@@ -30,8 +30,9 @@ faq:
       rango si tu cálculo está conectado.
   - q: ¿Puedo recibir planos por WhatsApp con Atende?
     a: >-
-      No. Los PDF, las fotos y los archivos de planos nunca llegan a Atende. Que
-      el asistente dé el mail donde los recibe tu oficina técnica.
+      Tu equipo puede abrir el plano adjunto. El asistente conoce el texto que
+      acompaña el archivo, pero la interpretación del dibujo y el cómputo
+      quedan con la oficina técnica.
   - q: ¿Atende puede agendar una visita técnica?
     a: >-
       Sí, conectado a tu agenda de obra, y esa conexión se arma a pedido. Sin
@@ -39,9 +40,10 @@ faq:
       equipo coordina la visita.
   - q: ¿También le va a contestar a capataces y proveedores?
     a: >-
-      Sí. Una vez vinculado el número, el asistente responde a cualquiera que
-      escriba. Si la obra se maneja por ese mismo WhatsApp, pensá primero qué
-      número vas a conectar.
+      Sí, si escriben por chat individual al mismo número y ese chat tiene el
+      asistente activo y saldo disponible. Separá la línea comercial de la
+      coordinación con proveedores para mantener cada conversación en su
+      circuito.
 ---
 Ir de balde a ver una obra sale caro. Con tu agenda de obra conectada, Atende deja la visita técnica agendada con lo que hace falta: dirección, tipo de obra, metros aproximados y en qué etapa está el proyecto. El camino hasta ahí casi siempre arranca igual, con una pregunta que nadie puede contestar bien en un renglón.
 
@@ -69,9 +71,9 @@ Antes de todo eso, la zona. Si no trabajás en esa localidad, que el asistente l
 
 ## El cómputo no pasa por el chat
 
-Para computar hacen falta planos, y en WhatsApp los planos viajan como PDF o como foto de un papel doblado. Ninguno llega a Atende. Las fotos del terreno, el video de la grieta y el audio de dos minutos explicando la obra tampoco: el asistente no los ve, tu bandeja no los muestra, y lo que el cliente escribió abajo de una foto se pierde junto con ella.
+Los planos suelen llegar como PDF o como foto de un croquis. Tu oficina técnica puede abrirlos en la bandeja y cotejar la revisión antes de hacer el cómputo. El asistente sabe que llegaron y recibe el texto que los acompaña. Si el cliente dicta una explicación, puede usar la transcripción disponible.
 
-Se arregla con una instrucción concreta en tu configuración: pedir los datos por texto y dar el mail donde tu oficina técnica recibe planos. En sentido contrario pasa algo parecido. El presupuesto en PDF no sale desde la bandeja, que manda texto y fotos o videos de tu biblioteca. Sí podés subir fotos de obras terminadas y que el asistente las mande cuando alguien pregunta qué hacés.
+Indicá en el chat el número de obra y el canal donde guardan la versión vigente del plano. Al responder una consulta comercial, el asistente también puede mandar fotos de obras terminadas que cargaste en tu biblioteca.
 
 ## La visita técnica agendada
 
@@ -103,7 +105,7 @@ Los clientes con obra en marcha son otro caso. “¿Cuándo vienen los yeseros?�
 
 ## Capataces, el corralón y el resto del WhatsApp
 
-Muchas constructoras usan un solo número para todo. Una vez vinculado, el asistente le contesta a cualquiera: al capataz que pide cemento, al corralón que avisa una demora, al yesero que cobra los viernes. No hay lista de excepciones en tu panel ni modo de prueba, así que pensá qué número conectás. Si la obra se maneja por el celular del dueño, quizás convenga vincular sólo la línea comercial. Cada espacio trabaja con un número.
+Si el capataz y el yesero escriben al mismo número que un posible cliente, sus consultas pueden entrar al circuito comercial. Para que el asistente responda hacen falta un chat individual habilitado y saldo. Al elegir qué número vincular, fijate si conviene separar la atención comercial de la coordinación de obra.
 
 Probalo desde otro número, que usa créditos, haciéndote pasar por el capataz: si le contesta como a un cliente, sumá esa instrucción a la descripción de tu negocio.
 

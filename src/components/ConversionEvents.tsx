@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { site } from '@/content/site';
-import { trackConversion } from '@/lib/conversions';
+import { trackConversion, type ConversionDestination } from '@/lib/conversions';
 import { observeMetricsPage, recordMetricLink } from '@/lib/metrics';
 
 export function ConversionEvents() {
@@ -20,16 +20,17 @@ export function ConversionEvents() {
       if (!(anchor instanceof HTMLAnchorElement)) return;
       recordMetricLink(pathname, anchor.href, anchor.dataset.cta);
       const url = new URL(anchor.href);
-      const destination =
-        url.origin === window.location.origin && url.pathname === '/demo'
-          ? 'demo'
-          : url.origin === site.appUrl
-            ? 'app'
-            : url.hostname === 'wa.me'
-              ? 'whatsapp'
-              : url.protocol === 'mailto:'
-                ? 'email'
-                : undefined;
+      let destination: ConversionDestination | undefined;
+      if (url.origin === window.location.origin) {
+        if (url.pathname === '/demo') destination = 'demo';
+        if (url.pathname === '/precios' && pathname !== '/precios') destination = 'pricing';
+      } else if (url.origin === site.appUrl) {
+        destination = 'app';
+      } else if (url.hostname === 'wa.me') {
+        destination = 'whatsapp';
+      } else if (url.protocol === 'mailto:') {
+        destination = 'email';
+      }
       if (!destination) return;
       trackConversion({
         event: 'atende_cta_click',

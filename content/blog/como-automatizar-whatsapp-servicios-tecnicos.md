@@ -5,14 +5,13 @@ description: >-
   Cómo pasar de “no enfría” a una visita o un turno de taller agendado por
   WhatsApp: equipo y falla, presupuesto, retiro a domicilio y repuestos.
 summary: >-
-  Para automatizar el WhatsApp de un servicio técnico o un taller, hacé que el
-  asistente junte equipo o vehículo, falla, zona y franja horaria, y que agende
-  la visita o el turno si está conectado a tu agenda. El diagnóstico, el
-  presupuesto final y la compatibilidad de un repuesto los define el técnico.
-  Sin conexión, el asistente deja el pedido armado y tu equipo confirma. Fotos y
-  audios no llegan a Atende.
+  Para agendar una visita técnica por WhatsApp, el asistente pide equipo,
+  falla, zona y franja horaria. Con la agenda conectada, registra la visita.
+  Sin conexión deja la solicitud lista para que tu equipo confirme. El técnico
+  puede mirar la foto de la etiqueta en la bandeja y verificar modelo y
+  repuesto antes de presupuestar.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: inmuebles-y-hogar
 sector: Servicios técnicos a domicilio
 tags:
@@ -36,9 +35,10 @@ faq:
       el día.
   - q: ¿Qué pasa si el cliente manda una foto del equipo o un audio?
     a: >-
-      Nunca llegan a Atende, y el texto escrito abajo de una foto se pierde con
-      ella. Si fue lo único que mandó, el asistente no contesta. Se ve sólo en
-      el teléfono del local.
+      El técnico puede abrir la foto o escuchar el audio en la bandeja. El
+      asistente usa el texto que acompaña la foto y la transcripción
+      disponible de una nota de voz. Pedile que pregunte el modelo antes de
+      registrar la visita.
   - q: ¿Puede decirle a un cliente si su auto ya está listo?
     a: >-
       Sólo si está conectado a tu sistema de órdenes. Sin esa conexión pide
@@ -64,12 +64,12 @@ Si trabajás con garantías de fábrica, sumá esa pregunta antes de agendar: qu
 
 ## La foto de la etiqueta y el audio del ruido
 
-Si estuviste en un mostrador de service, sabés que medio mundo contesta con una foto. La etiqueta, el video del lavarropas saltando, el audio del compresor. Nada de eso llega a Atende: audios, imágenes y videos se descartan antes de entrar, y lo que el cliente escribió abajo de la foto se va con ella. Para el asistente ese mensaje no existió, así que no contesta, y en la bandeja tampoco aparece.
+Una foto de la etiqueta puede mostrar dos códigos distintos. El asistente puede pedirle al cliente que copie el que dice “modelo”. Si manda un video del lavarropas o un audio del compresor, el técnico puede revisarlos en la bandeja. Una transcripción sirve para las palabras de la persona, sin diagnosticar un ruido de motor.
 
 Para que nadie quede colgado:
 
-- Escribí en la descripción de tu negocio que el asistente pida los datos por texto y avise que no puede ver fotos ni escuchar audios.
-- Decidí quién recibe las fotos durante el día y por qué canal, porque al asistente no le llegan.
+- Escribí en la descripción de tu negocio qué datos del equipo hacen falta para cotizar una visita.
+- Definí quién revisa las fotos que requieren identificar un repuesto y en qué momento le responde al cliente.
 - Si hay que ver el equipo para avanzar, que el asistente derive en lugar de insistir.
 
 ## Presupuesto: lo que se puede decir sin ver el equipo

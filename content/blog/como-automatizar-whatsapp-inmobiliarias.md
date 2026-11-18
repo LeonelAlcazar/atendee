@@ -12,7 +12,7 @@ summary: >-
   conexión, el asistente junta código, día y nombre, y tu equipo confirma la
   visita.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: inmuebles-y-hogar
 sector: Inmobiliarias
 tags:
@@ -36,9 +36,9 @@ faq:
       la persona pueda escribir.
   - q: ¿El asistente puede evaluar una garantía o un recibo de sueldo?
     a: >-
-      No. Cuenta qué requisitos pedís, pero los documentos en PDF y las fotos
-      nunca llegan a Atende, y la evaluación es del corredor. Indicá en tu
-      configuración adónde se mandan.
+      El asistente puede explicar los requisitos que cargó la inmobiliaria. Un
+      corredor revisa la documentación y evalúa la garantía. Definí en qué
+      etapa y por qué vía se presentan los papeles.
   - q: ¿Puede mandar fotos y videos de las propiedades?
     a: >-
       Sí, y viene en los planes con IA sin conectar nada. Subís las fotos y los
@@ -88,7 +88,7 @@ Las fotos y los videos van aparte y funcionan hoy, sin conectar nada. Subís el 
 
 Contar qué pedís es útil y ahorra visitas que no iban a ningún lado. Escribilo con tus palabras: qué garantías aceptás, cuántos recibos, si la propiedad admite mascotas. Si cada propietario pide algo distinto, aclaralo por ficha.
 
-Evaluar es otra cosa. El asistente no dice si un recibo alcanza ni si una garantía sirve. Además, la gente manda el recibo en PDF y la foto del DNI apenas le dicen “requisitos”, y esos archivos nunca llegan a Atende. Dejá escrito adónde se mandan y en qué momento, y que el asistente no pida documentación en el primer contacto. Con datos de terceros, como los de un garante, mejor que el trámite pase por una persona.
+Explicar los requisitos es distinto de evaluar si un recibo alcanza. Definí cuándo interviene el corredor y evitá pedir documentación de terceros en el primer contacto. Si alguien envía un archivo, llega a la bandeja para que una persona gestione esa consulta.
 
 ## Lo que llega de los portales
 
@@ -97,7 +97,7 @@ Zonaprop, Argenprop y Mercado Libre son de donde viene buena parte de la gente, 
 Por eso:
 
 - Poné un código corto y visible en cada aviso. “El departamento del centro” puede ser cualquiera de ocho, y el código evita mandar la ficha equivocada.
-- Una captura del aviso es una imagen y no llega, igual que el audio de quien prefiere contar qué busca. Si alguien manda sólo eso, el asistente no contesta y la bandeja no lo muestra.
+- Si llega una captura del aviso, el corredor puede verla en la bandeja. El asistente usa el texto al pie o pregunta el código para recuperar la ficha correcta. Si lo dictan en una nota de voz, puede usar la transcripción disponible.
 
 ## Las llaves, el inquilino y otras reglas de la visita
 

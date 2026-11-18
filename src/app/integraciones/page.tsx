@@ -45,11 +45,11 @@ export default function IntegracionesPage() {
               eyebrow="Integraciones a pedido"
               title={
                 <>
-                  Armamos la conexión de WhatsApp{' '}
-                  <span className="text-coral">con tu sistema, a pedido.</span>
+                  Reservá turnos y registrá pedidos{' '}
+                  <span className="text-coral">en tu sistema desde WhatsApp.</span>
                 </>
               }
-              sub="Conectado a tu agenda, tu stock o tu CRM, Atende reserva el turno, consulta si hay y registra el pedido en la conversación. No te damos un armador de flujos: armamos la conexión con tu sistema, para tu negocio y con tus reglas."
+              sub="Conectamos Atende a tu agenda, stock o CRM a pedido. El asistente consulta disponibilidad, registra lo que pidió tu cliente y le confirma el resultado que devuelve tu sistema. Tu equipo sigue el chat desde la bandeja."
             />
             <div className="mt-8 flex flex-wrap gap-3">
               <Button
@@ -108,13 +108,13 @@ export default function IntegracionesPage() {
             ))}
           </div>
           <p className="mt-8 max-w-3xl leading-relaxed text-mute">
-            Tu WhatsApp va por separado de esta conexión. Elegís cómo conectar tu
-            número: con la API oficial de Meta o con un QR.{' '}
+            Vincular tu número con el QR del panel habilita el canal de WhatsApp.
+            Para registrar un pedido también hace falta conectar tu sistema.{' '}
             <Link
               href="/que-es-atende#conexion"
               className="font-semibold text-ink underline underline-offset-4"
             >
-              Qué cambia entre una ruta y la otra
+              Cómo se vincula el número
             </Link>
             .
           </p>
@@ -142,8 +142,7 @@ export default function IntegracionesPage() {
               “listo”. Es un diseño, no una garantía.
             </p>
             <p className="mt-3 leading-relaxed">
-              En la bandeja ves toda la conversación. Ver ahí mismo qué acción
-              corrió llega próximamente.
+              Tu equipo puede cotejar la confirmación del chat con el registro que quedó en tu sistema.
             </p>
           </article>
           <article className="rounded-lg border-2 border-ink bg-coral-soft p-6 shadow-[var(--shadow-brut-sm)] md:p-8">

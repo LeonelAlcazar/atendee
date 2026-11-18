@@ -13,7 +13,7 @@ summary: >-
   la conexión armada a pedido, solo en WhatsApp. Cómo conectar el número lo decidís
   vos: API oficial de Meta o QR.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Kommo
@@ -140,4 +140,4 @@ Es otra comparación frecuente. [Whaticket](https://whaticket.com/precios) se ve
 
 Una conversación guardada no es una oportunidad en el embudo. Anotá qué campos, etapas y tareas usa ventas y dónde van a vivir después. Atende no tiene embudos, campos a medida ni exportación de contactos, y su bandeja busca por contacto o teléfono, no por el texto de los mensajes.
 
-Sumá estos límites a tu decisión: responde mensajes de texto, así que audios, fotos, documentos, ubicaciones y grupos no llegan. Y no tenemos reseñas públicas todavía. El "Plan CRM" de Atende, pese al nombre, es la bandeja manual sin asistente, no un CRM de ventas. Si tu caso pasa ese filtro, llevalo a una [demo](/demo).
+Probá la bandeja con una consulta típica de tu equipo, por ejemplo un cliente que dicta un modelo y manda la foto de su usado. El asistente activo puede usar la transcripción del audio y el vendedor revisa la foto. El Plan CRM de Atende permite atender a mano. Para ver qué haría falta para registrar la oportunidad en tu sistema, [pedí una demo](/demo).

@@ -13,7 +13,7 @@ summary: >-
   En Atende, asignarte un chat no frena al asistente: para eso marcás Necesita
   humano. Es un número por espacio y no hay permisos por rol.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - whatsapp multiusuario
@@ -45,9 +45,10 @@ faq:
       mensaje nuevo trae de vuelta al asistente.
   - q: ¿Mi equipo ve audios y fotos en la bandeja de Atende?
     a: >-
-      No. Atende recibe mensajes de texto. Audios, fotos, videos, documentos,
-      stickers, ubicaciones y grupos no llegan a la bandeja. Si conectaste por
-      QR, esos mensajes se ven solo en el teléfono.
+      Sí. En los chats individuales tu equipo puede abrir fotos, videos,
+      documentos y stickers y escuchar notas de voz. Con el asistente activo,
+      puede responder usando la transcripción disponible. Con Plan CRM el
+      audio llega sin transcripción.
 sources:
   - title: 'WhatsApp, centro de ayuda: dispositivos vinculados'
     url: 'https://faq.whatsapp.com/378279804439436'
@@ -79,7 +80,7 @@ Se puede llegar a eso por cuatro caminos, y no todos los negocios necesitan el m
 | --- | --- | --- | --- |
 | [Dispositivos vinculados](https://faq.whatsapp.com/378279804439436) | Cuatro dispositivos más el teléfono principal | Todos ven lo mismo | Se cierran si no usás el teléfono por más de 14 días. No crean ni ven listas de difusión |
 | [Varios agentes en WhatsApp Business](https://faq.whatsapp.com/395911122612120) | Cuatro, o 10 según tu suscripción a Meta Verified o Meta One | "Asignar chat" y filtro "Asignados a ti" | "Es posible que la versión premium de esta función no esté disponible para ti" |
-| Bandeja compartida con asistente, como Atende | Cada persona con su cuenta | Responsable, etiquetas, notas internas, estados | Solo texto. Conexión: API oficial de Meta o QR, a elección. Por la API corren las [tarifas de Meta](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) |
+| Bandeja compartida con asistente, como Atende | Cada persona con su cuenta | Responsable, etiquetas, notas internas, estados y archivos recibidos | El QR se vincula desde la app. Consultá en la demo por la API oficial y sus [tarifas de Meta](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) |
 | Bandeja de otro proveedor sobre la API oficial | Según el proveedor | Según el proveedor | Pagás al proveedor y a [Meta por mensaje](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing). Conectás el número a la Plataforma |
 
 Un dato de la [ayuda de WhatsApp](https://faq.whatsapp.com/291930066973116) que conviene tener a mano: si activás el agente de IA de Meta, se desconectan todos los dispositivos vinculados. Después podés volver a vincular la mayoría.
@@ -135,8 +136,8 @@ Tené en cuenta el reloj. Las conversaciones se cierran solas 12 horas después 
 
 - **No hay permisos por rol.** Todos los miembros ven las mismas conversaciones y pueden cambiar lo mismo. La única diferencia es quién invita. Si necesitás que un vendedor vea solo sus chats, hoy no se puede. Tampoco hay una pantalla para dar de baja a alguien del equipo: si pasa, escribinos.
 - **Más de un número por espacio.** Es un número por espacio. Dos sucursales con dos números son dos espacios.
-- **Autor de cada mensaje.** Ves toda la conversación, pero hoy la bandeja no distingue si un mensaje lo mandó el asistente, un compañero o alguien desde el teléfono. Lo tenemos planeado.
-- **Audios, fotos y archivos del contacto.** Solo llegan mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no entran a la bandeja. Si conectaste por QR, se ven en el teléfono, y si tus clientes mandan muchos audios, alguien va a seguir mirando el celular.
+- **Autor de la respuesta.** Cuando alguien responde desde la bandeja, el mensaje muestra su nombre si está disponible, o “Equipo”. Para repartir los pendientes, usá el responsable del chat.
+- **Audios y archivos del contacto.** El equipo los abre desde la bandeja. Para una nota de voz, el asistente activo puede usar la transcripción disponible. Para una foto, el detalle de la imagen lo revisa una persona.
 - **Avisos de derivación.** Cuando el asistente deriva, marca el chat. [No llama ni le escribe a nadie](/preguntas-frecuentes).
 
 ## Qué opción te conviene según tu equipo

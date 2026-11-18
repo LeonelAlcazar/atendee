@@ -13,7 +13,7 @@ summary: >-
   negocio. Tu número va por la API oficial de Meta o por QR, a elección. Si
   necesitás multicanal o un armador propio, Atende no es la opción.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Botmaker
@@ -146,7 +146,7 @@ Si buscás algo intermedio, [Cliengo](/blog/alternativas-a-cliengo) vende un age
 ## Lo que resignás si elegís Atende
 
 - No armás agentes ni lógica propia. Si cambia un proceso que pasa por tu sistema, hay que tocar la conexión.
-- Responde mensajes de texto. Audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan.
+- Tu equipo recibe audios y adjuntos en conversaciones individuales. Ante una foto de un pedido, el asistente pide los renglones o deriva a ventas. Si el cliente los dicta, puede usar la transcripción disponible.
 - Un solo canal y un número por espacio.
 - No hay catálogo de integraciones para activar por tu cuenta: cada conexión se hace a pedido.
 - Todavía no tenemos reseñas públicas en directorios de software.
@@ -157,4 +157,4 @@ Antes de tocar nada, escribí por cada agente qué lo dispara, qué sistema cons
 
 Después resolvé el número. Elegís cómo conectarlo: con la API oficial de Meta o con un QR. Si querés seguir por la API, cómo pasarlo lo vemos con vos en la demo. Si preferís el QR, se escanea desde el teléfono, así que el número tiene que estar activo en la app, y [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que un número registrado en la Cloud API no se puede usar en la app hasta darlo de baja de esa API. Preguntale a Botmaker cómo hacerlo y qué pasa con el historial antes de mover nada. Ese paso no lo probamos con cada proveedor. Ninguna de las dos rutas trae la promesa de que WhatsApp no restrinja el número.
 
-Una vez conectado, el asistente le contesta a todos tus contactos: no hay modo de prueba. Probalo desde otro número; usa créditos. Si querés ver esto con tu caso, llevá a la [demo](/demo) un proceso que hoy corra en Botmaker y otro que hoy nadie resuelva.
+Para comparar, llevá a la [demo](/demo) dos casos: un proceso que hoy corre en Botmaker y otro que tu equipo todavía resuelve a mano. Si probás por tu número real de WhatsApp, cada respuesta del asistente consume saldo.

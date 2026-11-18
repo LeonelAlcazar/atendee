@@ -6,16 +6,14 @@ description: >-
   consentimiento y respuesta prevista. Cómo se arma a pedido y cuándo usar la
   API.
 summary: >-
-  Un recordatorio de turno por WhatsApp sirve si la persona puede responder y el
-  turno se mueve solo. Necesita cinco cosas: agenda conectada, un disparador que
-  lo mande, consentimiento, un texto claro y un plan para cada respuesta. Atende
-  no manda recordatorios por su cuenta: se arman a pedido para cada negocio.
-  Para escribir primero conviene evaluar la API oficial de Meta, con plantillas
-  aprobadas y tarifa por mensaje. Desde un número vinculado por QR hay riesgo de
-  restricción, sobre todo sin consentimiento o en volumen. Si tu sistema de
-  turnos ya los manda, usá eso.
+  Para enviar recordatorios de turnos por WhatsApp, tu agenda tiene que
+  detectar cada turno vigente y disparar el aviso con permiso de la persona.
+  En Atende ese envío desde tu sistema se habilita a pedido. Reprogramar desde
+  el chat requiere otra acción que escriba el cambio en la agenda. Si solo
+  necesitás mandar el mismo aviso cada semana o mes, tu equipo puede
+  programarlo desde Contactos.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - recordatorios
@@ -31,9 +29,10 @@ related:
 faq:
   - q: ¿Atende manda recordatorios de turnos?
     a: >-
-      No por su cuenta. Atende responde cuando entra un mensaje. Los recordatorios
-      se arman a pedido para cada negocio, conectados a su agenda y con un
-      disparador propio. Sin ese armado, tu equipo los manda a mano.
+      Sí, si tu agenda dispara el envío con la fecha de cada turno mediante
+      una integración a pedido. Para moverlo en el chat, hace falta además que
+      la agenda acepte cambios. Para avisos periódicos sin consultar turnos,
+      tu equipo puede programar textos desde Contactos.
   - q: ¿Pueden bloquear mi número por mandar recordatorios?
     a: >-
       Hay riesgo, por cualquier ruta. WhatsApp pide que cuentes con el permiso de
@@ -73,7 +72,7 @@ sources:
 
 El martes a la tarde, una paciente recibe el recordatorio de su turno del miércoles. Contesta "no llego", el asistente le ofrece otro horario y el turno queda movido. El miércoles a las 10:30 queda libre para otra persona. Un recordatorio de turnos por WhatsApp vale eso: el aviso importa, y lo que pasa cuando la persona contesta importa más.
 
-Vamos de entrada con lo que hay. **Atende no manda recordatorios por su cuenta.** Responde cuando entra un mensaje. Los recordatorios se arman a pedido para cada negocio, conectados a su agenda, y para escribir primero importa cómo esté conectado tu número.
+Para un aviso con fecha y hora reales, tu sistema de turnos detecta la cita e inicia el envío mediante una integración que se arma a pedido. Un mensaje que se repite cada semana puede programarlo tu equipo en Contactos. Esa regla sigue el calendario que vos elegís y no consulta si una cita cambió.
 
 Ejemplo ilustrativo, con la agenda conectada y el recordatorio armado para ese consultorio:
 
@@ -93,7 +92,7 @@ Esa última línea sale solo si la agenda confirmó el cambio. Esa conexión se 
 
 **1. Una agenda conectada.** El recordatorio tiene que salir de la agenda real. Si recepción canceló un turno a las 9 y el mensaje sale a las 10, le recordás a alguien un turno que ya no existe. Por eso esta conexión lee los turnos del día siguiente y escribe los cambios.
 
-**2. Un disparador.** Alguien tiene que decidir cuándo sale cada mensaje. El asistente de Atende trabaja cuando entra un mensaje, así que un recordatorio necesita un proceso aparte que mire la agenda y mande a una hora definida. Esa parte es la que se arma a pedido. Ojo con los feriados, los turnos dados hace cinco minutos y los que ya se confirmaron por otra vía.
+**2. El momento de envío.** Tu agenda decide cuándo corresponde avisar y le pide a Atende que envíe el texto. Probá qué pasa si hay feriados, si recién se reservó el turno o si se canceló antes del aviso.
 
 **3. Consentimiento.** La [política de WhatsApp](https://whatsappbusiness.com/es-la/policy/) dice que solo podés contactar a alguien si te dio su número y tenés su permiso para mandarle mensajes. Pedilo al dar el turno, en palabras simples: "¿Te avisamos por WhatsApp el día antes?". [Meta pide](https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in) que quede claro quién va a escribir y que la persona acepte recibir esos mensajes.
 
@@ -130,7 +129,7 @@ El segundo tiene dos problemas. Expone un dato de salud en una pantalla de bloqu
 | "Cancelá" | Liberar el turno y avisar a la lista de espera si tenés | Escribir en la agenda |
 | "No me escriban más" | Dejar de mandarle y anotarlo | La política de WhatsApp pide [respetar esas solicitudes](https://whatsappbusiness.com/es-la/policy/) |
 | Una duda clínica | Pasarla a una persona | Regla en el contexto del asistente y estado **Necesita humano** |
-| Un audio o una foto | Nada: no le llega a Atende | Por QR, alguien que mire el teléfono. Avisalo en el texto: "respondé por escrito" |
+| Un audio o una foto | El asistente usa la transcripción disponible o pide aclaración. La foto la revisa tu equipo | Consultas clínicas y documentación sensible van a una persona |
 | Nada | Definir si se insiste o se llama | Tu criterio. Insistir por WhatsApp suma riesgo |
 
 La respuesta entra como cualquier otro mensaje de texto, así que de ahí en adelante el asistente trabaja igual que siempre. Si la agenda está conectada, puede mover el turno. Si no, junta el pedido y lo deja para tu equipo. En [turnos y reservas](/servicios/turnos-whatsapp) está cómo funciona esa parte.

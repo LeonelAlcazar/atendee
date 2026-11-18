@@ -6,14 +6,13 @@ description: >-
   WhatsApp. Capturas de Instagram, tablas de medidas y cambios en
   indumentaria.
 summary: >-
-  Para automatizar el WhatsApp de una tienda de ropa, ordená tres datos: prenda,
-  talle y color. Conectado a tu stock, Atende confirma qué queda en cada local y
-  aparta la prenda hasta la fecha que definas; esa conexión se arma a pedido. Sin
-  ella, manda fotos de tu biblioteca, pasa la tabla de medidas, explica los
-  cambios y una vendedora confirma la disponibilidad. Las capturas de Instagram
-  no le llegan al asistente.
+  Una tienda de ropa puede consultar stock por WhatsApp con tres datos:
+  prenda, talle y color. Con tu stock y el registro de apartados conectados,
+  Atende aparta la prenda hasta la fecha que definas. Sin esa integración,
+  manda fotos de tu biblioteca y una vendedora confirma disponibilidad. Ella
+  también puede abrir una captura de Instagram que mande la clienta.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: comercio
 sector: Tiendas de indumentaria
 tags:
@@ -45,9 +44,9 @@ faq:
       lo confirme.
   - q: ¿Qué pasa cuando mandan una captura de Instagram?
     a: >-
-      La imagen no llega a Atende y lo que venga escrito al pie tampoco. Queda en el
-      WhatsApp del teléfono del local. Por eso conviene publicar el nombre de cada
-      prenda, para que la clienta lo pueda escribir.
+      La captura llega a la bandeja para tu equipo. El asistente sabe que hay
+      una imagen y recibe el texto al pie. Publicá el nombre o código de la
+      prenda para que pueda pedirlo y ubicarla en el catálogo.
 sources:
   - title: 'Ley simple: Ley de talles (SUNITI)'
     url: https://www.argentina.gob.ar/justicia/derechofacil/leysimple/consumo-economia/ley-de-talles-suniti
@@ -59,7 +58,7 @@ Antes hay que resolver un problema que no aparece en ningún manual: casi nunca 
 
 ## “¿Lo tenés en M?” y una captura de la historia
 
-El mensaje típico trae una captura de Instagram y cuatro palabras. A Atende entran mensajes de texto: la imagen se descarta antes, y con ella lo que hayan escrito al pie. El asistente recibe “¿lo tenés en M?” sin saber de qué prenda hablan, o no recibe nada si todo vino dentro de la foto. La captura tampoco aparece en la bandeja. Con los audios pasa lo mismo.
+El mensaje típico trae una captura de Instagram y cuatro palabras. La vendedora puede abrir la imagen desde la bandeja. El asistente recibe “¿lo tenés en M?” si viene al pie, pero necesita saber de qué prenda se trata. Pedile que pregunte el código o color. Si la clienta lo dicta, puede usar la transcripción disponible del audio.
 
 Lo resolvés bastante con esto:
 

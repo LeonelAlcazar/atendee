@@ -1,7 +1,7 @@
 import { landing } from '@/content/landing';
 import { TaskTicket } from './TaskTicket';
 
-const nav = ['Bandeja', 'Assets', 'Equipo', 'WhatsApp', 'Asistente', 'Plan'];
+const nav = ['Bandeja', 'Biblioteca', 'Equipo', 'WhatsApp', 'Asistente', 'Plan'];
 
 export function ProductPreview() {
   const { preview } = landing;

@@ -12,7 +12,7 @@ summary: >-
   siniestro corta el flujo de venta y va a una persona: el asistente no toma la
   denuncia ante la aseguradora ni confirma cobertura.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: servicios-profesionales
 sector: Productores y agencias de seguros
 tags:
@@ -124,7 +124,7 @@ Dejale escrito que tampoco recomiende compañías ni compare planes. Puede pedir
 
 ## Fotos de inspección, cédula verde y DNI
 
-La foto del auto para la inspección, la cédula verde, el DNI, las fotos del choque y la denuncia policial de un robo nunca llegan a Atende. El asistente no se entera de que las mandaron, no contesta, y el asegurado cree que ya cumplió. Dejale escrito qué responder apenas aparece el tema: "Las fotos del auto no llegan por este chat. Mandalas a [mail de la agencia]."
+Una foto de la inspección o un archivo de la denuncia llegan a la bandeja de tu agencia. El asistente sabe que llegó el adjunto y recibe su texto al pie. El productor comprueba si la documentación alcanza y si hay que presentarla por el canal de la aseguradora. Indicá al asegurado quién revisará el caso.
 
 Al revés pasa lo mismo: ni el asistente ni la bandeja adjuntan un PDF, así que la póliza o el certificado de cobertura salen por el canal que ya usás.
 

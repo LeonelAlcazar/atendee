@@ -4,6 +4,7 @@ import { site } from './site';
 export type FaqGroup = {
   id: string;
   title: string;
+  next?: { href: string; label: string };
   items: FaqItem[];
 };
 
@@ -21,11 +22,11 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Atende usa la API oficial de Meta o un QR?',
-        a: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. La API tiene las tarifas por mensaje que publica Meta y, fuera de la ventana de 24 horas, usa plantillas aprobadas. El QR queda como un dispositivo vinculado en el número que ya usás y, según nuestra lectura, Meta no cobra por mensaje en esa ruta. Si vas a escribir primero, por ejemplo con recordatorios, conviene evaluar la API. Cómo es el alta, quién paga esas tarifas y qué pasa con la app en ese número lo vemos con vos en la demo.',
+        a: 'Para vincular tu número desde el panel, escaneás un QR desde Dispositivos vinculados. Si tu negocio necesita la API oficial de Meta, pedí una demo para revisar con el equipo el alta y las condiciones de esa ruta.',
       },
       {
         q: '¿Qué pasos hay que seguir para empezar?',
-        a: 'Creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y conectás tu número, con la API oficial de Meta o con un QR.',
+        a: 'Creás tu espacio, configurás qué puede resolver el asistente, invitás a tu equipo y activás créditos o un plan. Para vincular WhatsApp desde el panel, escaneás el QR con tu teléfono.',
       },
       {
         q: '¿Qué necesito para escanear el QR?',
@@ -33,7 +34,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Apenas conecto ya les responde a mis clientes?',
-        a: 'Sí. No hay modo de prueba: una vez conectado, el asistente le responde a cada contacto. Probalo desde otro número; usa créditos.',
+        a: 'Con WhatsApp vinculado, IA activa y saldo disponible, el asistente puede responder a los contactos que escriban. Si tu espacio tiene habilitado el chat de prueba, podés probar respuestas en el panel sin gastar créditos. Las herramientas que uses en esa prueba pueden realizar acciones reales.',
       },
       {
         q: '¿Qué pasa si se desconecta mi WhatsApp?',
@@ -43,15 +44,16 @@ export const faqGroups: FaqGroup[] = [
   },
   {
     id: 'mensajes',
+    next: { href: '/blog/pedidos-por-audio-whatsapp-distribuidores', label: 'Ver cómo tomar un pedido por audio' },
     title: 'Qué entiende y qué no',
     items: [
       {
         q: '¿Qué mensajes entiende Atende?',
-        a: 'Mensajes de texto. Audios, imágenes, videos, documentos, stickers, ubicaciones y mensajes de grupos no llegan a Atende.',
+        a: 'En un chat individual, el asistente usa el texto y, con la IA activa, la transcripción disponible de una nota de voz. Si te mandan una foto o un documento, la bandeja muestra el archivo a tu equipo. El asistente recibe el texto que lo acompaña y no interpreta su contenido.',
       },
       {
         q: '¿Qué pasa si un cliente manda un audio o una foto?',
-        a: 'El asistente no lo ve y no contesta, y tampoco aparece en la bandeja. Queda en tu WhatsApp, así que alguien tiene que revisarlo en el teléfono.',
+        a: 'El audio aparece en la bandeja. Con el asistente activo, la transcripción disponible figura debajo del audio y puede servir para tomar el pedido. En Plan CRM o con el asistente apagado, tu equipo escucha la nota de voz. Si es una foto, puede abrirla y seguir el chat.',
       },
       {
         q: '¿Responde a cualquier hora?',
@@ -85,19 +87,19 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Hasta cuándo queda frenado el asistente en ese chat?',
-        a: 'La conversación se cierra sola 12 horas después del último mensaje del contacto, aunque esté en Necesita humano. Si el contacto escribe de nuevo, responde el asistente. Para devolverlo antes, elegí En conversación.',
+        a: 'Mientras figure Necesita humano, responde tu equipo. Podés reactivar el asistente desde la conversación. Si el chat se cierra por inactividad y el contacto vuelve a escribir, empieza un nuevo ciclo.',
       },
       {
         q: '¿Cómo apago el asistente para todos los chats?',
-        a: 'Con el botón del encabezado pasás a Modo CRM y tu equipo responde a mano. Vale para todo el espacio, no hay un interruptor por contacto, y cualquier persona del equipo puede hacerlo.',
+        a: 'Podés apagar el asistente en la configuración de tu espacio. Para seguir un solo caso a mano, marcá esa conversación como Necesita humano.',
       },
       {
         q: '¿Me avisan cuando el asistente deriva una conversación?',
-        a: 'No hay una alerta especial. El asistente le avisa al contacto y la conversación queda marcada como Necesita humano, entre los pendientes de la bandeja. Alguien de tu equipo tiene que mirarla: si nadie la toma, se cierra sola 12 horas después del último mensaje del contacto.',
+        a: 'La conversación queda marcada como Necesita humano en la bandeja. Tu equipo puede asignarla a la persona que la va a seguir.',
       },
       {
         q: '¿Veo si respondió el asistente o una persona?',
-        a: 'Todavía no. Ves toda la conversación, pero los mensajes no muestran quién los escribió. Mostrarlo llega próximamente.',
+        a: 'Los mensajes enviados desde la bandeja muestran el nombre de la persona cuando está disponible, o la etiqueta Equipo. Los envíos programados aparecen como Mensaje recurrente.',
       },
       {
         q: '¿Cómo busco una conversación?',
@@ -105,7 +107,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Hay permisos por persona?',
-        a: 'No. Quienes entran al espacio trabajan sobre las mismas conversaciones y pueden hacer lo mismo. Lo único que cambia es quién puede invitar a más personas.',
+        a: 'Cada persona entra con su cuenta. Un administrador del espacio puede invitar personas y armar equipos para distribuir la atención.',
       },
       {
         q: '¿Se puede usar desde el celular?',
@@ -115,6 +117,7 @@ export const faqGroups: FaqGroup[] = [
   },
   {
     id: 'conexiones',
+    next: { href: '/integraciones#demo', label: 'Ver cómo se registra una consulta en la demo de motos' },
     title: 'Conexiones a pedido',
     items: [
       {
@@ -131,7 +134,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Cómo sé que la reserva se hizo de verdad?',
-        a: 'El asistente está armado para informar solo lo que tu sistema confirmó. Si tu sistema da error, la instrucción es no decir que quedó hecho. Igual conviene que tu equipo revise la agenda o los pedidos.',
+        a: 'Ejemplo ilustrativo con una agenda conectada. El cliente elige el jueves a las 16, la agenda guarda el turno y recién entonces Atende le escribe “Listo, te reservé el jueves a las 16”. Tu equipo puede comprobarlo en la agenda. Si falla la reserva, queda pendiente.',
       },
       {
         q: '¿Qué pasa si la conexión falla?',
@@ -139,7 +142,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Puede mandar recordatorios o seguimientos?',
-        a: 'A pedido. Atende no empieza conversaciones por su cuenta. Si los necesitás, los armamos para tu negocio. Para esos envíos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
+        a: 'Tu equipo puede programar mensajes diarios, semanales o mensuales desde Contactos para una lista o una etiqueta. Para avisar que un pedido está listo o recordar un turno en su fecha exacta, el aviso lo inicia tu sistema mediante una conexión que habilitamos a pedido. El asistente no elige por su cuenta a quién volver a escribirle.',
       },
       {
         q: '¿Tienen alguna conexión funcionando?',
@@ -153,15 +156,16 @@ export const faqGroups: FaqGroup[] = [
   },
   {
     id: 'planes',
+    next: { href: '/precios#calculadora', label: 'Calcular cuántas respuestas necesita mi negocio' },
     title: 'Planes y créditos',
     items: [
       {
         q: '¿Dónde veo los precios?',
-        a: 'En la app, en Plan, antes de pagar. Para entrar primero creás tu espacio.',
+        a: 'Podés consultar los planes generales en la página Precios, sin crear una cuenta. En Suscripción ves las opciones disponibles para tu espacio antes de pagar. Las conexiones con tu sistema se cotizan por separado.',
       },
       {
         q: '¿Puedo empezar sin tarjeta?',
-        a: 'Sí. Empezás con 100 créditos de bienvenida, una vez, sin tarjeta. Un crédito es una respuesta del asistente.',
+        a: 'Sí, si tenés créditos de bienvenida disponibles. En Suscripción ves la cantidad y las condiciones antes de activarlos. Cada respuesta del asistente consume una unidad.',
       },
       {
         q: '¿Qué diferencia hay entre Plan CRM y los planes con IA?',
@@ -169,25 +173,26 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Qué pasa si se terminan las respuestas y los créditos?',
-        a: 'El asistente deja de responder. El contacto no recibe nada y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja. Sin plan y sin créditos, dejan de entrar a Atende y el panel se bloquea, salvo Plan e Integraciones.',
+        a: 'El asistente deja de responder. El contacto no recibe nada y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja. Sin plan y sin créditos, dejan de entrar a Atende y el panel se bloquea, salvo Suscripción, Ajustes y Aplicaciones conectadas.',
       },
       {
         q: '¿Me avisan antes de quedarme sin respuestas?',
-        a: 'No. Mirá la pantalla Plan de la app, donde ves tu plan, cuándo renueva y tus créditos disponibles.',
+        a: 'No. Mirá la pantalla Suscripción de la app, donde ves tu plan, cuándo renueva y tus créditos disponibles.',
       },
     ],
   },
   {
     id: 'datos',
+    next: { href: '/politica-de-privacidad', label: 'Leer la política de privacidad' },
     title: 'Datos y privacidad',
     items: [
       {
         q: '¿Qué datos guarda Atende?',
-        a: 'Los mensajes de texto, el nombre de WhatsApp y el número del contacto, el estado de la conversación, las etiquetas, las notas de tu equipo, las notas del asistente, tu configuración y los archivos de tu biblioteca.',
+        a: 'La bandeja guarda mensajes, adjuntos disponibles de chats individuales, datos del contacto, estados, etiquetas y notas del equipo. También se guarda la configuración de tu espacio y de la biblioteca de archivos.',
       },
       {
         q: '¿Guarda los audios y las fotos que mandan mis clientes?',
-        a: 'No. Los audios, imágenes, videos, documentos y stickers que entran nunca llegan a Atende.',
+        a: 'Sí. Los audios, fotos, videos, documentos y stickers disponibles quedan en la bandeja. Los archivos de visualización única no se guardan. Si el asistente está apagado, el audio llega sin transcripción.',
       },
       {
         q: '¿Otro negocio puede ver mis conversaciones?',

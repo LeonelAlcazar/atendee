@@ -14,18 +14,18 @@ const nav = [
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b-2 border-ink bg-bg">
-      <div className="mx-auto flex h-[4.75rem] max-w-7xl items-center justify-between gap-5 px-5 md:px-8">
+      <div className="mx-auto flex h-[4.75rem] max-w-7xl items-center justify-between gap-1.5 px-3 sm:gap-5 sm:px-5 md:px-8">
         <Link
           href="/"
-          className="group flex min-h-11 items-center gap-2.5 rounded-sm"
+          className="group flex min-h-11 items-center gap-2 rounded-sm sm:gap-2.5"
         >
           <span
-            className="grid size-9 place-items-center rounded-md border-2 border-ink bg-coral font-display text-base font-bold shadow-[var(--shadow-brut-xs)] transition-transform group-hover:-rotate-3"
+            className="grid size-8 shrink-0 place-items-center sm:size-9 rounded-md border-2 border-ink bg-coral font-display text-base font-bold shadow-[var(--shadow-brut-xs)] transition-transform group-hover:-rotate-3"
             aria-hidden="true"
           >
             A
           </span>
-          <span className="font-display text-2xl font-semibold tracking-[-0.035em]">
+          <span className="font-display text-[1.375rem] font-semibold tracking-[-0.035em] sm:text-2xl">
             atende<span className="text-coral">.</span>
           </span>
           <span className="sr-only">Inicio</span>

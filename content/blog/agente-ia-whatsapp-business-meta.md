@@ -13,7 +13,7 @@ summary: >-
   Se pausa o se elimina desde el celular. Si vendés por catálogo y atendés vos,
   puede alcanzarte sin sumar otra herramienta.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: bot-de-whatsapp
 tags:
   - agente de IA
@@ -212,9 +212,9 @@ Sin esa conexión, el asistente junta el pedido y tu equipo lo confirma. Mirá [
 
 | | Agente de Meta | Atende |
 | --- | --- | --- |
-| Dónde vive | Adentro de la app WhatsApp Business | En un panel aparte. Conexión: API oficial de Meta o QR, a elección |
+| Dónde vive | Adentro de la app WhatsApp Business | En el panel de Atende. Vinculás el QR desde la app o coordinás la API oficial en una demo |
 | Cómo accedés | Por cuenta, con lista de espera | Creás tu [espacio](/que-es-atende) y activás créditos o un plan |
 | Acciones | Las que tu cuenta tenga habilitadas | Las conectadas a tu sistema, a pedido |
 | Si respondés a mano | La IA se frena en ese chat | El asistente sigue. Para frenarlo, marcás **Necesita humano** |
 
-Una aclaración que hacemos siempre: Atende lee mensajes de texto. Audios, fotos, videos, documentos y grupos no le llegan. Y si lo conectaste por QR y activás el agente de Meta, contá con que se corte la vinculación y haya que volver a escanear el QR, así que elegí uno por número.
+Con Atende, una nota de voz puede servir para pedir un turno si hay una transcripción disponible. Las fotos llegan a la bandeja para que tu equipo las revise. Si vinculaste el número por QR, comprobá la vinculación antes de cambiar el asistente que lo atiende.

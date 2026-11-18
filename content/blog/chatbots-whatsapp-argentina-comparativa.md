@@ -12,7 +12,7 @@ summary: >-
   hechos sin armar nada, Chatsell, Cliengo, Vozia o Atende. Atende publica esta
   comparativa, no es un ranking y cada grupo explica cuándo otra opción te conviene.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - comparativas
@@ -206,7 +206,7 @@ Ejemplo ilustrativo con Atende, conectado a la agenda de una clínica veterinari
 
 Conectado a tu agenda, Atende reserva el turno, y esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el pedido y tu equipo lo confirma. Lo que hoy podemos mostrar funcionando es una demo para una concesionaria de motos, con stock, financiación y registro del interesado en Google Sheets; es una demo, no un cliente.
 
-**Límites de Atende, para que compares bien:** solo WhatsApp, solo mensajes de texto, un número por espacio, sin campañas, sin permisos por rol y sin reseñas públicas todavía. Cada conexión se arma a pedido, sin catálogo. Si necesitás multicanal o un armador propio, elegí otra. Qué está incluido y qué es a pedido, acción por acción, está en [qué es Atende](/que-es-atende) y en [integraciones](/integraciones). Por rubro, en [casos de uso](/casos-de-uso).
+**Qué podés probar en Atende.** Usá un chat individual del número del espacio. Mandá un audio con un pedido y revisá qué hace con la transcripción disponible. Después mandá una foto de una lista para comprobar cómo la recibe el equipo y cómo pide el asistente los renglones. Si el pedido tiene que escribirse en tu sistema, consultá el alcance de esa conexión en [integraciones](/integraciones). Para elegir un ejemplo de tu actividad, entrá por [casos de uso](/casos-de-uso).
 
 ## Tu rubro tiene una herramienta propia
 

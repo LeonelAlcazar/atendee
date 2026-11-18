@@ -13,7 +13,7 @@ summary: >-
   CRM”. Cuando el asistente deriva, el chat queda marcado, pero nadie recibe un
   aviso especial: tu equipo tiene que mirar los pendientes.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: guias
 tags:
   - WhatsApp
@@ -149,13 +149,13 @@ Ves toda la conversación de texto, con lo que preguntó el cliente y lo que le 
 
 | Lo que podrías esperar | Qué pasa hoy |
 | --- | --- |
-| Audios, fotos, videos, documentos, stickers o ubicaciones del cliente | No llegan a Atende, ni al asistente ni a la bandeja. Una foto pierde también su texto. Si conectaste por QR, quedan en el WhatsApp del teléfono. |
-| Saber quién mandó cada respuesta | Todavía no. La del asistente, la de un compañero y la que salió del teléfono se ven igual. Está planeado. |
+| Audios, fotos, videos, documentos y stickers del cliente | Aparecen en la bandeja en chats individuales. El asistente activo puede usar el texto al pie de una foto y la transcripción disponible de una nota de voz |
+| Saber si contestó tu equipo | Una respuesta enviada desde la bandeja muestra el nombre disponible o la etiqueta “Equipo” |
 | Ver qué acción ejecutó el asistente | Tampoco. La bandeja muestra el texto de la respuesta; para comprobar la acción, mirá tu agenda o tu sistema. |
 | Un resumen automático del caso | No se genera. Por eso sirve la nota interna. |
 | Buscar por algo que se dijo | La búsqueda es por contacto o teléfono. Los filtros son por estado, etiqueta y responsable. |
 
-Lo del audio es el caso más común en el mostrador. Un cliente manda un audio largo con el reclamo: el asistente no lo recibe, así que no contesta, y en la bandeja no aparece nada. Si tu negocio recibe muchos, alguien tiene que mirar también el teléfono.
+Si un cliente dicta un reclamo, la persona que lo toma puede escuchar la grabación en la bandeja antes de contestar. Con el asistente apagado o con el Plan CRM, el equipo recibe el audio sin transcripción.
 
 ## Modo CRM y las conversaciones restringidas
 
@@ -170,14 +170,14 @@ Con esto alcanza para que no se pierdan casos, sin montar nada complicado:
 1. Mirá “pendientes de respuesta” y filtrá por “Necesita humano”.
 2. Mirá “Finalizadas” de la noche: ahí caen las derivaciones que pasaron las 12 horas.
 3. Repartí con “Responsable”. Si alguien está de franco, decidan quién cubre sus chats.
-4. Dale una mirada al teléfono por si entraron audios o fotos.
+4. Abrí las fotos o notas de voz que hayan quedado pendientes de revisión en la bandeja.
 5. Revisá “Restringidas”, por si quedó marcado alguien que no debía.
 
 Una vez por semana, leé algunas derivaciones enteras. Si el asistente pasa siempre la misma pregunta, falta un dato en “Preguntas frecuentes”. Si tu equipo corrige siempre lo mismo, ajustá el contexto. Una derivación no está resuelta hasta que alguien atendió el motivo, así que contá esas dos cosas por separado.
 
 ## Cómo probarlo antes de depender de esto
 
-No hay modo de prueba: una vez vinculado el número, el asistente contesta a todos tus contactos. Probalo desde otro número; usa créditos. Tres pruebas valen más que veinte preguntas:
+Si tu espacio tiene el chat de prueba habilitado por administración, podés ensayar una derivación sin enviar nada por WhatsApp. Para probar con entrega real, escribí desde otro número y contemplá el consumo de respuestas. Empezá por estas tres situaciones:
 
 - Pedí hablar con una persona y comprobá que el chat quede marcado.
 - Respondé desde la bandeja sin marcar nada y escribí de nuevo desde el otro número: vas a ver contestar al asistente, y es bueno que todo el equipo lo vea una vez.

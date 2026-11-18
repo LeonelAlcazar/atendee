@@ -13,7 +13,7 @@ summary: >-
   oficial de Meta o por QR, a tu elección. Si necesitás campañas, anuncios integrados
   o casos de clientes a la vista, Cliengo te conviene más.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Cliengo
@@ -118,7 +118,7 @@ Acá se juega casi toda la comparación. Cliengo describe [cuatro formas de agen
 | Quién la arma | Acompañamiento en español. Integraciones a medida en Corporate | Nosotros, a pedido |
 | Conexión con WhatsApp | Coexistence y API, sobre la Cloud API | API oficial de Meta o QR, a elección |
 | Canales | Web, WhatsApp, Instagram, Messenger | Solo WhatsApp, un número por espacio |
-| Campañas | Sí | No |
+| Campañas | Sí | Textos recurrentes en WhatsApp por contacto o etiqueta |
 | Plazos | Publica plazos | No damos plazos: depende de tu sistema |
 | Opiniones de terceros | Muestra testimonios en su sitio. Capterra nos bloqueó, así que no citamos puntajes | Todavía no tenemos reseñas públicas |
 
@@ -154,7 +154,7 @@ Lo que hoy podemos mostrar funcionando es una demo para una concesionaria de mot
 
 ## Lo que perdés frente a Cliengo
 
-Sin web, Instagram ni Messenger. Solo mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan. Sin campañas: los recordatorios se arman a pedido. Un número por espacio. Sin plazos publicados ni reseñas públicas.
+Atende concentra la atención en un número de WhatsApp por espacio. Tu equipo ve las imágenes y documentos que recibe y puede escuchar las notas de voz. Con la IA activa, el asistente usa la transcripción disponible. Desde Contactos podés programar textos recurrentes para contactos o etiquetas.
 
 La API oficial no entra en esta lista: en Atende conectás tu número por ahí o por QR, a elección. Si vas por la API, hacé la misma pregunta que le harías a Cliengo, cómo llegan los [costos de Meta](https://developers.facebook.com/docs/whatsapp/pricing) a tu factura, y lo vemos con vos en la demo.
 

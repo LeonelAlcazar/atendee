@@ -1,7 +1,9 @@
+export type ConversionDestination = 'demo' | 'pricing' | 'app' | 'whatsapp' | 'email';
+
 type Conversion = {
   event: 'atende_cta_click' | 'atende_demo_prepared';
   page: string;
-  destination?: 'demo' | 'app' | 'whatsapp' | 'email';
+  destination?: ConversionDestination;
   placement?: string;
 };
 

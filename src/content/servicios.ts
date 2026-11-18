@@ -2,7 +2,7 @@ import type { FaqItem } from './faq';
 
 export type ChatMessage = { from: 'them' | 'us'; text: string };
 
-export type DetailStatus = 'Incluido' | 'A pedido' | 'No llega';
+export type DetailStatus = 'Incluido' | 'A pedido';
 
 export type DetailRow = {
   label: string;
@@ -22,7 +22,6 @@ export type Servicio = {
   id: 'atencion' | 'turnos' | 'ventas';
   slug: string;
   updated: string;
-  number: string;
   /** Short name: navigation, breadcrumbs and the Service schema. */
   title: string;
   /** The page H1. Always names an action. */
@@ -38,6 +37,8 @@ export type Servicio = {
   caption: string;
   result: { label: string; detail: string };
   ctaContext: string;
+  demoLabel: string;
+  buyingQuestion: string;
   fit: string;
   detail: { title: string; intro: string; rows: DetailRow[] };
   workflowTitle: string;
@@ -56,15 +57,14 @@ export const servicios: Servicio[] = [
   {
     id: 'turnos',
     slug: 'turnos-whatsapp',
-    updated: '2026-11-06',
-    number: '01',
+    updated: '2026-11-18',
     title: 'Turnos y reservas por WhatsApp',
     headline: 'Conectado a tu agenda, Atende reserva el turno por WhatsApp.',
     seoTitle: 'Sistema de turnos por WhatsApp: reservas en tu agenda',
     short:
       'Conectado a tu agenda, Atende reserva, reprograma y cancela turnos por WhatsApp, y toma reservas. La conexión se arma a pedido y tu equipo supervisa.',
     description:
-      'Un sistema de turnos por WhatsApp que trabaja sobre la agenda de tu negocio: Atende mira los horarios libres, ofrece opciones y deja el turno o la reserva anotados en la misma conversación. También reprograma y cancela. Esa conexión se arma a pedido para tu negocio, y tu equipo ve toda la conversación desde la bandeja.',
+      'Atende consulta tu agenda, ofrece los horarios libres y confirma por WhatsApp cuando el turno queda reservado. Armamos la conexión a pedido para tu negocio. Recepción supervisa las reservas, los cambios y las cancelaciones desde la bandeja.',
     doneTitle: 'Qué deja hecho en el chat',
     bullets: [
       'Ofrece los horarios libres de tu agenda',
@@ -89,6 +89,8 @@ export const servicios: Servicio[] = [
     },
     ctaContext:
       'Hola, quiero que Atende reserve turnos por WhatsApp en la agenda de mi negocio',
+    demoLabel: 'Consultar por mi agenda',
+    buyingQuestion: '¿Mi agenda puede reservar un horario y liberarlo si lo cambian?',
     fit: 'Para clínicas, consultorios, veterinarias, peluquerías, centros de estética, gimnasios, restaurantes y hoteles donde la recepción atiende el mostrador, el teléfono y el WhatsApp al mismo tiempo, y los turnos se pasan a mano a la agenda cuando hay un rato.',
     detail: {
       title: 'Las reglas de tu agenda que hay que definir',
@@ -138,7 +140,7 @@ export const servicios: Servicio[] = [
     ],
     human: {
       title: 'Dónde entra recepción',
-      text: 'La agenda sigue siendo de recepción. Lo que se sale de las reglas pasa a una persona: el asistente avisa, la conversación queda marcada como Necesita humano y recepción la toma desde la bandeja. No suena ninguna alarma, así que alguien tiene que mirarla.',
+      text: 'Recepción mantiene el control de la agenda. Si una consulta se sale de las reglas, el asistente marca la conversación como Necesita humano. El equipo puede seguir el chat desde la bandeja.',
       items: [
         'Un sobreturno, una urgencia o un pedido que no está en tus reglas.',
         'Las consultas clínicas: dejá escrito en Contexto del asistente que van a una persona y que se queda en lo administrativo.',
@@ -148,7 +150,7 @@ export const servicios: Servicio[] = [
     notes: [
       {
         title: 'Recordatorios de turno, a pedido',
-        text: 'Atende no empieza conversaciones por su cuenta. Si querés recordar turnos o avisar que se liberó un lugar, lo armamos a pedido para tu negocio: necesita los datos del turno y que el contacto haya aceptado recibir esos mensajes. Para esos avisos conviene evaluar la API oficial de Meta, que usa plantillas aprobadas fuera de la ventana de 24 horas.',
+        text: 'Para recordar la cita del jueves, tu agenda tiene que saber que el turno sigue vigente e iniciar el envío de texto. Esa conexión se arma a pedido. Si lo que querés es avisar a la misma clase todos los lunes, tu equipo puede programar el texto desde Contactos.',
         link: {
           href: '/blog/recordatorios-de-turnos-por-whatsapp',
           label: 'Cómo funcionan los recordatorios a pedido',
@@ -182,7 +184,7 @@ export const servicios: Servicio[] = [
       },
       {
         q: '¿Manda recordatorios de turnos?',
-        a: 'A pedido. Atende no inicia conversaciones por su cuenta. Si los necesitás, los armamos para tu negocio, con el consentimiento de tus contactos. Para esos envíos conviene evaluar la API oficial de Meta.',
+        a: 'Sí, cuando tu agenda está preparada para iniciar el aviso de texto. Armamos esa conexión a pedido. Para acordar el alcance vemos de dónde salen la fecha y el número, y qué pasa si el contacto ya canceló o cambió su turno.',
       },
       {
         q: '¿Sirve para clínicas y consultorios?',
@@ -229,15 +231,14 @@ export const servicios: Servicio[] = [
   {
     id: 'ventas',
     slug: 'ventas-whatsapp',
-    updated: '2026-11-06',
-    number: '02',
+    updated: '2026-11-18',
     title: 'Pedidos y ventas por WhatsApp',
     headline: 'Atende consulta el stock y registra el pedido por WhatsApp.',
     seoTitle: 'App para recibir pedidos por WhatsApp: ventas y presupuestos',
     short:
       'Conectado a tu sistema, Atende consulta stock, arma el presupuesto y registra el pedido por WhatsApp. Tus clientes no instalan nada y tu equipo supervisa.',
     description:
-      'Si buscás una app para recibir pedidos por WhatsApp, Atende trabaja en el número que ya usás y tus clientes no instalan nada. Conectado a tu sistema, consulta si hay stock, pasa el precio vigente, arma el presupuesto y registra el pedido en la misma conversación. Esa conexión se arma a pedido para tu negocio, y tu equipo ve cada conversación de texto desde la bandeja.',
+      'Atende toma pedidos por WhatsApp, consulta stock y precios y guarda el pedido cuando tu sistema lo acepta. Armamos la conexión a pedido según tus listas, unidades de venta y forma de entrega. Tu cliente escribe al número de siempre y tu vendedor supervisa desde la bandeja.',
     doneTitle: 'Qué deja hecho antes de que entre un vendedor',
     bullets: [
       'Consulta stock y precio vigente de lo que te piden',
@@ -262,6 +263,8 @@ export const servicios: Servicio[] = [
     },
     ctaContext:
       'Hola, quiero que Atende tome pedidos por WhatsApp y los registre en mi sistema',
+    demoLabel: 'Consultar por mis pedidos',
+    buyingQuestion: '¿Puede usar mi lista de precios y guardar el pedido donde prepara el depósito?',
     fit: 'Para comercios, distribuidoras y mayoristas que hoy reciben pedidos por WhatsApp y después los pasan a mano al sistema o a una planilla. También para concesionarias e inmobiliarias, donde la venta arranca con una cotización y hay que anotar al interesado antes de que se enfríe.',
     detail: {
       title: 'Qué queda registrado en cada pedido',
@@ -311,7 +314,7 @@ export const servicios: Servicio[] = [
     ],
     human: {
       title: 'Dónde sigue tu vendedor',
-      text: 'El asistente se ocupa de lo que se repite. Cuando hay que negociar, avisa y la conversación queda marcada como Necesita humano, para que tu vendedor la tome desde la bandeja con toda la conversación a la vista. Nada te avisa por afuera: la bandeja la tiene que mirar alguien.',
+      text: 'Si alguien pide un descuento especial o quiere negociar una entrega, el asistente marca el chat como Necesita humano. Tu vendedor ve lo que ya se habló y sigue desde la bandeja.',
       items: [
         'Un precio especial o un descuento fuera de tus reglas.',
         'Un cliente con cuenta corriente, deuda o condiciones propias.',
@@ -326,7 +329,7 @@ export const servicios: Servicio[] = [
       },
       {
         title: 'Si te mandan la lista en audio o en foto',
-        text: 'Esos pedidos no llegan a Atende. Audios, imágenes y documentos no los ve el asistente ni aparecen en la bandeja, y el cliente no recibe respuesta. Quedan en tu WhatsApp, así que alguien tiene que revisarlos en el teléfono. Si en tu negocio son muchos, avisales a tus clientes que el pedido tiene que venir escrito.',
+        text: 'Si el asistente está activo y la nota de voz se transcribe, puede pedir que aclaren la cantidad o la presentación y tomar el pedido con tu sistema conectado. Las fotos y los PDF llegan a la bandeja para el vendedor. El asistente no lee los renglones de una lista fotografiada.',
       },
       {
         title: 'Una demo que ya funciona',
@@ -361,7 +364,7 @@ export const servicios: Servicio[] = [
       },
       {
         q: '¿Hace seguimiento de los que dejaron de responder?',
-        a: 'A pedido. Atende no inicia conversaciones por su cuenta, y tu equipo puede retomarlas desde la bandeja. Si querés seguimientos, los armamos para tu negocio. Para esos envíos conviene evaluar la API oficial de Meta.',
+        a: 'El vendedor puede retomar el chat desde la bandeja. Para avisar que el pedido está listo, tu sistema puede iniciar un texto con una conexión a pedido. El asistente no decide por su cuenta volver a escribirle a un interesado.',
       },
       {
         q: '¿Cómo trabaja mi equipo de ventas con Atende?',
@@ -408,8 +411,7 @@ export const servicios: Servicio[] = [
   {
     id: 'atencion',
     slug: 'atencion-automatica-whatsapp',
-    updated: '2026-11-06',
-    number: '03',
+    updated: '2026-11-18',
     title: 'Atención al cliente por WhatsApp con IA',
     headline:
       'Conectado a tu sistema, Atende busca el pedido y le contesta a tu cliente.',
@@ -417,7 +419,7 @@ export const servicios: Servicio[] = [
     short:
       'Conectado a tu sistema, Atende busca el pedido y le contesta a tu cliente en el chat. Además responde mensajes de texto a cualquier hora y deriva a tu equipo.',
     description:
-      'IA para atención al cliente por WhatsApp que trabaja con lo que le contás de tu negocio. Atende responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados, manda fotos y videos de tu biblioteca y deja la conversación marcada para tu equipo cuando hace falta una persona. Conectado a tu sistema, además busca el pedido y le contesta al cliente ahí mismo. Esa conexión se arma a pedido para tu negocio.',
+      'Atende busca el pedido en tu sistema y contesta con el estado registrado. Esa consulta requiere una conexión a pedido. Con un plan con IA también responde preguntas frecuentes y deriva reclamos al equipo que atiende la bandeja.',
     doneTitle: 'Qué resuelve sin que nadie toque el teléfono',
     bullets: [
       'Contesta horarios, zonas de envío, medios de pago y condiciones',
@@ -443,11 +445,13 @@ export const servicios: Servicio[] = [
     },
     ctaContext:
       'Hola, quiero que Atende resuelva la atención al cliente de mi negocio por WhatsApp',
+    demoLabel: 'Consultar por mi atención al cliente',
+    buyingQuestion: '¿Qué puede resolver el asistente y cuándo interviene mi equipo?',
     fit: 'Para negocios que contestan las mismas preguntas todo el día, que reciben mensajes cuando ya cerraron o que reparten el WhatsApp entre varias personas. Rinde más cuando la consulta se resuelve con un dato que ya tenés: un horario, una zona de envío, una condición, el estado de un pedido.',
     detail: {
       title: 'Qué hace Atende con cada mensaje',
       intro:
-        'Cinco mensajes que le llegan a cualquier negocio, y lo que pasa con cada uno.',
+        'Qué recibe el equipo en la bandeja y con qué información puede trabajar el asistente.',
       rows: [
         {
           label: '“¿Hasta qué hora están?”',
@@ -470,9 +474,14 @@ export const servicios: Servicio[] = [
           status: 'Incluido',
         },
         {
-          label: 'Un audio, una foto, un PDF',
-          text: 'No llegan a Atende: el asistente no contesta y tampoco aparecen en la bandeja. Se miran en el teléfono.',
-          status: 'No llega',
+          label: 'Una nota de voz',
+          text: 'Con el asistente activo y una transcripción disponible, puede atender la consulta a partir de ese texto. Tu equipo puede escuchar el audio en la bandeja.',
+          status: 'Incluido',
+        },
+        {
+          label: 'Una foto o un PDF',
+          text: 'Llega como adjunto a la bandeja. Tu equipo lo abre. El asistente solo recibe el tipo de archivo y el texto que lo acompaña.',
+          status: 'Incluido',
         },
       ],
     },
@@ -484,25 +493,25 @@ export const servicios: Servicio[] = [
       },
       {
         title: 'Conectá el número',
-        text: 'Invitás a tu equipo y activás créditos o un plan. Cargás tus preguntas frecuentes, fotos y videos. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Tus clientes te siguen escribiendo al mismo WhatsApp.',
+        text: 'Invitás a tu equipo y activás créditos o un plan con IA. Cargás tus preguntas frecuentes, fotos y videos. Podés vincular tu número escaneando un QR. Si necesitás la API oficial de Meta, consultá el alcance en la demo.',
       },
       {
-        title: 'Probalo desde otro número',
-        text: 'Apenas conectás, Atende responde. Probalo desde otro número; usa créditos. Cuando cambien tus horarios o condiciones, actualizá el contexto.',
+        title: 'Probá dos consultas',
+        text: 'Antes de atender clientes, probá una consulta de horario y otra que deba tomar una persona. Si tu espacio tiene habilitado el chat de prueba, podés hacerlo en el panel. Las herramientas conectadas ejecutan acciones reales incluso en ese chat.',
       },
     ],
     human: {
       title: 'Cuando hace falta una persona',
-      text: 'El asistente avisa y la conversación queda marcada como Necesita humano. Ves toda la conversación y seguís desde la bandeja. No suena ninguna alarma: alguien de tu equipo tiene que mirarla.',
+      text: 'El asistente marca el chat como Necesita humano. Tu equipo ve por qué se derivó, revisa lo que ya dijo el cliente y sigue desde la bandeja.',
       items: [
         'Para seguir vos en otro chat, marcalo como Necesita humano. Responder o tocar Asignarme no frena al asistente.',
-        'La conversación se cierra sola 12 horas después del último mensaje del contacto. Si vuelve a escribir, responde el asistente.',
+        'La conversación se cierra sola después de un período sin mensajes. Si vuelve a escribir, responde el asistente.',
         'Para apagarlo en todo el espacio, pasá a Modo CRM y tu equipo contesta a mano.',
       ],
     },
     notes: [],
     requirements: [
-      'El número del negocio y, si elegís el QR, el teléfono a mano para escanearlo y otra pantalla que lo muestre.',
+      'Para vincular el número con QR, el teléfono del negocio y otra pantalla donde abrir el código.',
       'Tus horarios, zonas, condiciones y preguntas frecuentes al día.',
       'Una persona que mire la bandeja y tome las conversaciones marcadas.',
       'Si querés que busque pedidos: qué sistema usás y qué dato puede leer.',
@@ -524,11 +533,11 @@ export const servicios: Servicio[] = [
       },
       {
         q: '¿Responde fuera de horario?',
-        a: 'Sí. Responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Eso no significa que haya alguien de tu equipo disponible: si deriva a la noche, la conversación queda marcada y se cierra sola 12 horas después del último mensaje del contacto, aunque nadie la haya tomado.',
+        a: 'Sí. Responde mensajes de texto a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Eso no significa que haya alguien de tu equipo disponible: si deriva a la noche, la conversación queda marcada y se cierra sola después de un período sin mensajes, aunque nadie la haya tomado.',
       },
       {
         q: '¿Entiende audios y fotos?',
-        a: 'No. Solo mensajes de texto. Audios, imágenes, videos, documentos, stickers, ubicaciones y mensajes de grupos no llegan a Atende.',
+        a: 'Con el asistente activo, Atende puede responder usando la transcripción disponible de la nota de voz. Tu equipo puede escucharla aunque el asistente esté apagado. Las fotos, videos y documentos se reciben en la bandeja para que los revise una persona. El asistente puede usar el texto que los acompaña.',
       },
       {
         q: '¿Se acuerda de lo que hablamos antes?',

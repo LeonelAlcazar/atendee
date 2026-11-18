@@ -22,6 +22,12 @@ const breadcrumbs = [
   { name: 'Inicio', path: '/' },
   { name: 'Blog', path: '/blog' },
 ];
+const buyerQuestions = [
+  { label: '¿Qué hace un bot de WhatsApp?', href: '/blog/bot-de-whatsapp' },
+  { label: '¿Puede tomar pedidos por audio?', href: '/blog/pedidos-por-audio-whatsapp-distribuidores' },
+  { label: '¿Cómo reprograma un turno?', href: '/servicios/turnos-whatsapp' },
+  { label: '¿Cuántas respuestas necesito por mes?', href: '/precios#calculadora' },
+];
 export default function BlogPage() {
   const posts = getPosts();
   const topics = blogTopics.filter((topic) =>
@@ -37,14 +43,14 @@ export default function BlogPage() {
               El blog de Atende · {posts.length} guías y comparativas
             </p>
             <h1 className="mt-5 break-words font-display text-[clamp(2.25rem,10.5vw,3rem)] font-semibold leading-[1.02] tracking-[-0.04em] md:text-7xl">
-              Turnos, pedidos y presupuestos,
+              Reservá turnos y tomá pedidos{' '}
               <br />
-              <span className="text-coral">resueltos por WhatsApp.</span>
+              <span className="text-coral">por WhatsApp.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-mute">
-              Guías para que un bot de WhatsApp reserve, cotice o registre el
-              pedido en tu negocio: qué hay que conectar, qué hace tu equipo
-              mientras tanto, cuánto cuesta y con qué compararlo.
+              Guías para negocios argentinos. Mirá qué hace falta para que un
+              turno quede en la agenda o un pedido en tu sistema, qué revisa tu
+              equipo y cómo calcular el costo.
             </p>
             <Link
               href="/blog/editorial"
@@ -54,24 +60,18 @@ export default function BlogPage() {
             </Link>
           </div>
           <aside className="self-center rounded-lg border-2 border-ink bg-sun/70 p-7 shadow-[var(--shadow-brut)]">
-            <p className="font-mono text-xs uppercase tracking-wide">
-              Para empezar
-            </p>
-            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight">
-              ¿Qué es un bot de WhatsApp?
+            <h2 className="font-display text-3xl font-semibold tracking-tight">
+              ¿Qué querés resolver?
             </h2>
-            <p className="mt-4 leading-relaxed">
-              Es un programa que contesta mensajes por vos. Si además lo
-              conectás a tu agenda o a tu sistema, puede reservar el turno o
-              registrar el pedido en la misma conversación, con tu equipo al
-              tanto.
-            </p>
-            <Link
-              href="/blog/bot-de-whatsapp"
-              className="mt-5 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-            >
-              Entender los tipos de bot y cómo elegir →
-            </Link>
+            <ul className="mt-4 divide-y divide-ink/20">
+              {buyerQuestions.map(({ label, href }) => (
+                <li key={href}>
+                  <Link href={href} className="flex min-h-11 items-center justify-between gap-4 py-3 font-semibold underline-offset-4 hover:underline">
+                    {label}<span aria-hidden="true">→</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </aside>
         </div>
       </header>

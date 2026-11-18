@@ -13,7 +13,7 @@ summary: >-
   texto. El número va por la API oficial de Meta o por QR, según elijas. Si
   necesitás multicanal o campañas, Atende no es la opción.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: alternativas
 tags:
   - Callbell
@@ -88,7 +88,7 @@ Acá se ve la diferencia entre comprar una bandeja y comprar un asistente que tr
 | Pasás a "Modo CRM" | El asistente se apaga para todo el espacio |
 | Buscás una conversación | Por contacto o teléfono, no por el texto. Filtrás por estado, etiqueta y responsable |
 
-Cuando el asistente deriva, el chat queda marcado para tu equipo, pero nadie recibe un aviso especial. Alguien tiene que mirar la bandeja. Tampoco hay permisos por rol, y hoy la bandeja no distingue qué mensaje escribió el asistente y cuál una persona; eso está planeado. El paso a paso está en [cómo combinar IA y atención humana](/blog/whatsapp-ia-atencion-humana).
+Al derivar, el chat queda en “Necesita humano”. El equipo puede filtrar los pendientes y ver el nombre disponible de quien contestó desde la bandeja, o “Equipo”. El paso a paso está en [cómo combinar IA y atención humana](/blog/whatsapp-ia-atencion-humana).
 
 Pedile a Callbell que te muestre esa misma tabla con sus bots y agentes de IA encendidos. Es la prueba que más información da.
 
@@ -113,7 +113,7 @@ Los planes de Atende se ven [en la app](/precios) antes de pagar.
 ## Callbell gana en estos casos
 
 - Tu equipo atiende por Instagram, Telegram o TikTok además de WhatsApp.
-- Mandás campañas de WhatsApp. Atende no hace difusiones.
+- Tus campañas requieren herramientas de difusión. Comparalas con los textos recurrentes que tu equipo puede programar en Atende para contactos o etiquetas.
 - Querés armar tus propios flujos sin depender de nadie.
 - Tu volumen lo llevan personas y lo que falta es orden, no automatización.
 
@@ -139,6 +139,6 @@ Conectado a tu agenda, Atende reserva el turno mientras vos estás con la tijera
 
 ## Lo que te conviene saber antes de mover el número
 
-Atende responde mensajes de texto: audios, fotos, videos, documentos, stickers, ubicaciones y grupos no llegan ni al asistente ni a la bandeja, algo que un equipo acostumbrado a recibir comprobantes por foto tiene que pensar dos veces. Trabaja con un número por espacio y todavía no tenemos reseñas públicas.
+Si recibís comprobantes por foto, tu equipo puede abrirlos en la bandeja de Atende y cotejarlos con la cuenta. El asistente recibe el texto al pie de la imagen y puede responder a partir de la transcripción de un audio. Trabaja con un número por espacio.
 
-Para el número tenés dos caminos. Por la API oficial de Meta, cómo pasarlo lo vemos con vos en la demo. Por QR, si hoy vive solo en la API de Callbell, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y el QR se escanea desde la app. Con Coexistence, [la desconexión se hace](https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/) desde la app. Preguntale a Callbell por tu caso y por el historial; ese paso no lo probamos con cada proveedor. Por cualquiera de los dos, no podemos prometer que WhatsApp no restrinja un número. Al conectarlo, el asistente le contesta a todos: probalo desde otro número; usa créditos. Si querés verlo con tu equipo, pedí una [demo](/demo).
+Para el número tenés dos caminos. Por la API oficial de Meta, cómo pasarlo lo vemos con vos en la demo. Por QR, si hoy vive solo en la API de Callbell, [Meta avisa](https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/migrate-existing-whatsapp-number-to-a-business-account) que no se puede usar en la app hasta darlo de baja de esa API, y el QR se escanea desde la app. Con Coexistence, [la desconexión se hace](https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/) desde la app. Preguntale a Callbell por tu caso y por el historial; ese paso no lo probamos con cada proveedor. Por cualquiera de los dos, no podemos prometer que WhatsApp no restrinja un número. Para probar la entrega real, escribí desde otro número. Necesitás el asistente activo, una conversación individual habilitada y saldo de respuestas. Si querés verlo con tu equipo, pedí una [demo](/demo).

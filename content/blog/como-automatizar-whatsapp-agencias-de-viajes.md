@@ -13,7 +13,7 @@ summary: >-
   asistente junta esos datos y un asesor cotiza. Visas, pasaportes y requisitos de
   salud van siempre a una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-18'
 category: gastronomia-y-turismo
 sector: Agencias de viajes
 tags:
@@ -105,7 +105,7 @@ Sin conexión, el asistente junta lo mismo, aclara que no hay lugares apartados 
 - Coberturas del seguro de viaje.
 - El nombre exacto de cada pasajero. Lo copia un asesor del documento, no de un chat.
 
-La foto del pasaporte y el PDF de una reserva nunca entran a Atende, porque toma mensajes de texto. Si tu proceso pide esa documentación, definí por qué canal se manda y quién la recibe, sin pasar por el asistente.
+Si llega una foto del pasaporte o un PDF de una reserva al chat, tu equipo puede revisarlo en la bandeja. El asistente sabe que llegó el adjunto y recibe el texto que lo acompaña. Definí por qué canal corresponde entregar documentación para el viaje y quién la valida.
 
 Al revés tampoco hay camino. Un voucher, un itinerario o una factura no se adjuntan desde la bandeja, que manda texto y material de tu biblioteca: salen por mail o desde ese mismo celular.
 
