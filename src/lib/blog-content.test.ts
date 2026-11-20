@@ -110,6 +110,20 @@ describe('Markdown publication boundary', () => {
     ).toThrow();
     expect(() => renderMarkdown('# Another H1')).toThrow();
   });
+  it('accepts an opt-in lead button and rejects a malformed one', () => {
+    const lead = {
+      label: 'Contanos tu caso por WhatsApp',
+      message: 'Hola, quiero que Atende reserve turnos en mi WhatsApp.',
+    };
+    expect(parsePost(example, 'example.md').lead).toBeUndefined();
+    expect(parsePost(fixture({ lead }), 'example.md').lead).toEqual(lead);
+    expect(() =>
+      parsePost(fixture({ lead: { label: lead.label } }), 'example.md'),
+    ).toThrow();
+    expect(() =>
+      parsePost(fixture({ lead: { ...lead, href: 'https://x.y' } }), 'example.md'),
+    ).toThrow();
+  });
   it('excludes drafts and scheduled posts from listing and RSS, rejecting dangling published relations', () => {
     const dir = tempBlog();
     writeFileSync(join(dir, 'draft.md'), fixture({ draft: true }));

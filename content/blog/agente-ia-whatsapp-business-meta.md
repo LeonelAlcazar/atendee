@@ -13,7 +13,7 @@ summary: >-
   Se pausa o se elimina desde el celular. Si vendés por catálogo y atendés vos,
   puede alcanzarte sin sumar otra herramienta.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-20'
 category: bot-de-whatsapp
 tags:
   - agente de IA
@@ -22,10 +22,10 @@ tags:
   - inteligencia artificial
   - pymes
 related:
+  - como-desactivar-meta-business-agent
+  - alternativas-a-meta-business-agent
   - agente-de-ia-para-whatsapp
   - mejor-alternativa-a-whatsapp-business
-  - bot-de-whatsapp
-  - cuanto-cuesta-automatizar-whatsapp
 faq:
   - q: ¿El agente de IA de WhatsApp Business es gratis?
     a: >-

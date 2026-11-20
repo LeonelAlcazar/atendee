@@ -35,6 +35,15 @@ const schema = z
     draft: z.boolean().default(false),
     // Keep the sales opening separate from search metadata and the short answer.
     salesIntro: z.array(z.string().trim().min(15).max(220)).min(2).max(3).optional(),
+    // Opt-in contact button under the description, for a post whose opening
+    // has to start a conversation. The message pre-fills the WhatsApp chat.
+    lead: z
+      .object({
+        label: z.string().min(10).max(48),
+        message: z.string().min(30).max(280),
+      })
+      .strict()
+      .optional(),
     faq: z
       .array(
         z.object({ q: z.string().min(10), a: z.string().min(30) }).strict(),

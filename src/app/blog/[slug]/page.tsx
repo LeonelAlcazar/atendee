@@ -6,6 +6,7 @@ import { postBreadcrumbs, postGraph, postMetadata } from '@/lib/blog-seo';
 import { getBlogTopic, rubroByTopic } from '@/content/blog-topics';
 import { rubros } from '@/content/rubros';
 import { site } from '@/content/site';
+import { buildWaLink } from '@/lib/wa';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { JsonLd } from '@/components/jsonld';
 import { Button } from '@/components/ui/Button';
@@ -33,6 +34,16 @@ export default async function PostPage({ params }: Props) {
     (slug) => getPosts().find((item) => item.slug === slug)!,
   );
   const rubro = rubros.find((item) => item.slug === rubroByTopic[post.category]);
+  const rubroLink = rubro && (
+    <p className="mt-5">
+      <Link
+        href={`/casos-de-uso/${rubro.slug}`}
+        className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+      >
+        {rubro.title} →
+      </Link>
+    </p>
+  );
   return (
     <>
       <Breadcrumbs items={postBreadcrumbs(post)} />
@@ -48,31 +59,50 @@ export default async function PostPage({ params }: Props) {
             {post.title}
           </h1>
           {post.salesIntro ? (
-            <>
-              <div
-                className="mt-5 max-w-4xl space-y-2 text-lg leading-relaxed text-mute md:text-xl"
-                data-sales-intro
-              >
-                {post.salesIntro.map((line) => <p key={line}>{line}</p>)}
-              </div>
-              <div className="mt-7 flex flex-wrap items-center gap-3">
-                <Button href="/demo" data-cta={`blog-${post.slug}-sales-demo`} size="lg">
-                  Pedí una demo →
-                </Button>
-                <Button
-                  href={site.appUrl}
-                  data-cta={`blog-${post.slug}-sales-app`}
-                  variant="outline"
-                  size="lg"
-                >
-                  Empezá en la app
-                </Button>
-              </div>
-            </>
+            <div
+              className="mt-5 max-w-4xl space-y-2 text-lg leading-relaxed text-mute md:text-xl"
+              data-sales-intro
+            >
+              {post.salesIntro.map((line) => <p key={line}>{line}</p>)}
+            </div>
           ) : (
             <p className="mt-5 max-w-3xl text-xl leading-relaxed text-mute">
               {post.description}
             </p>
+          )}
+          {post.lead ? (
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <Button
+                href={buildWaLink(post.lead.message)}
+                data-cta={`blog-${post.slug}-lead-whatsapp`}
+                aria-label={`${post.lead.label} (abre WhatsApp)`}
+                size="lg"
+              >
+                {post.lead.label} →
+              </Button>
+              <Button
+                href="/demo"
+                data-cta={`blog-${post.slug}-lead-demo`}
+                variant="outline"
+                size="lg"
+              >
+                Pedí una demo
+              </Button>
+            </div>
+          ) : post.salesIntro && (
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <Button href="/demo" data-cta={`blog-${post.slug}-sales-demo`} size="lg">
+                Pedí una demo →
+              </Button>
+              <Button
+                href={site.appUrl}
+                data-cta={`blog-${post.slug}-sales-app`}
+                variant="outline"
+                size="lg"
+              >
+                Empezá en la app
+              </Button>
+            </div>
           )}
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-mute">
             <Link
@@ -214,31 +244,24 @@ export default async function PostPage({ params }: Props) {
                 )}
               </section>
             )}
-            <section className="mt-12 rounded-lg border-2 border-ink bg-sun/60 p-7">
-              <h2 className="font-display text-3xl font-semibold tracking-tight">
-                Dejá que Atende termine esa tarea en tu WhatsApp.
-              </h2>
-              <p className="mt-4 leading-relaxed">
-                Contanos qué tarea se repite y qué sistema usás. Conectado a tu
-                agenda o a tu sistema, Atende reserva, cotiza o registra el
-                pedido en la conversación, con tu equipo al tanto. Esa conexión
-                se arma a pedido para tu negocio; sin ella, el asistente junta
-                los datos y tu equipo confirma.
-              </p>
-              <Button href="/demo" data-cta="blog-demo" className="mt-6">
-                Pedí una demo →
-              </Button>
-              {rubro && (
-                <p className="mt-5">
-                  <Link
-                    href={`/casos-de-uso/${rubro.slug}`}
-                    className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-                  >
-                    {rubro.title} →
-                  </Link>
+            {post.lead && post.salesIntro ? rubroLink : (
+              <section className="mt-12 rounded-lg border-2 border-ink bg-sun/60 p-7">
+                <h2 className="font-display text-3xl font-semibold tracking-tight">
+                  Dejá que Atende termine esa tarea en tu WhatsApp.
+                </h2>
+                <p className="mt-4 leading-relaxed">
+                  Contanos qué tarea se repite y qué sistema usás. Conectado a tu
+                  agenda o a tu sistema, Atende reserva, cotiza o registra el
+                  pedido en la conversación, con tu equipo al tanto. Esa conexión
+                  se arma a pedido para tu negocio; sin ella, el asistente junta
+                  los datos y tu equipo confirma.
                 </p>
-              )}
-            </section>
+                <Button href="/demo" data-cta="blog-demo" className="mt-6">
+                  Pedí una demo →
+                </Button>
+                {rubroLink}
+              </section>
+            )}
           </div>
         </div>
       </article>

@@ -10,6 +10,7 @@ import { pages, legalPages } from '../src/content/pages.ts';
 import { rubros } from '../src/content/rubros.ts';
 import { servicios } from '../src/content/servicios.ts';
 import { actionStatus } from '../src/content/status.ts';
+import { site } from '../src/content/site.ts';
 import {
   blogTopics,
   editorialPage,
@@ -592,19 +593,29 @@ try {
         post.salesIntro,
         `${path}: complete sales opening in initial HTML`,
       );
-      const buttons = intro.next();
-      assert.equal(
-        buttons.find(`a[data-cta="blog-${post.slug}-sales-demo"]`).attr('href'),
-        '/demo',
-        `${path}: demo CTA immediately after pitch`,
+    }
+    if (post.salesIntro || post.lead) {
+      const opening = $('article header > [data-sales-intro], article header > p');
+      const buttons = opening.next().children('a');
+      const destinations = post.lead
+        ? [`https://wa.me/${site.whatsapp.number}?text=${encodeURIComponent(post.lead.message)}`, '/demo']
+        : ['/demo', site.appUrl];
+      assert.deepEqual(
+        buttons.map((_, el) => $(el).attr('href')).get(),
+        destinations,
+        `${path}: primary and secondary CTAs immediately after opening`,
       );
-      assert.equal(
-        buttons.find(`a[data-cta="blog-${post.slug}-sales-app"]`).attr('href'),
-        'https://app.atende.com.ar',
-        `${path}: app CTA immediately after pitch`,
+      const placements = post.lead ? ['lead-whatsapp', 'lead-demo'] : ['sales-demo', 'sales-app'];
+      assert.deepEqual(
+        buttons.map((_, el) => $(el).attr('data-cta')).get(),
+        placements.map((placement) => `blog-${post.slug}-${placement}`),
+        `${path}: CTA placements identify the article and destination`,
       );
+      if (post.lead) {
+        assert.equal(buttons.first().text().trim(), `${post.lead.label} →`);
+      }
       assert.ok(
-        buttons.next().find('a[rel="author"]').length,
+        opening.next().next().find('a[rel="author"]').length,
         `${path}: byline follows sales CTAs`,
       );
     }
