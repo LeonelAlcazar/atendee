@@ -2,73 +2,65 @@ import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { faq, type FaqItem } from '@/content/faq';
 import { landing } from '@/content/landing';
-import { site } from '@/content/site';
 import { buildWaLink } from '@/lib/wa';
-import { Tag } from '@/components/ui/Tag';
 
+// Shared with the secondary pages, so it pads itself above and below. One
+// native <details> per item and no other <details> here: the site audit counts
+// them against the FAQ schema.
 export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
   const copy = landing.faq;
 
   return (
-    <section id="faq" className="scroll-mt-20 border-b-2 border-ink bg-surface py-20 md:py-28">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 md:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
-        <div className="flex flex-col items-start lg:sticky lg:top-28 lg:self-start">
-          <Tag>{copy.eyebrow}</Tag>
-          <h2 className="mt-5 max-w-lg font-display text-4xl font-semibold leading-[0.94] tracking-[-0.04em] text-balance md:text-6xl">
-            {copy.titleBefore}{' '}
-            <span className="text-coral">{copy.titleAccent}</span>
-          </h2>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-mute">
-            {copy.description}
-          </p>
+    <section id="faq" className="scroll-mt-20 py-24 md:py-32">
+      <div className="mx-auto max-w-3xl px-5 md:px-8">
+        <h2 className="text-center text-headline">{copy.title}</h2>
+
+        <div className="mt-8 rounded-4xl bg-surface px-5 shadow-card sm:px-8 md:mt-12">
+          {items.map((item) => (
+            <details key={item.q} className="group border-b border-line last:border-b-0">
+              <summary className="flex min-h-16 items-center justify-between gap-5 rounded-xl py-5">
+                <span className="text-lg font-semibold leading-snug tracking-[-0.015em] md:text-xl">
+                  {item.q}
+                </span>
+                <span
+                  className="grid size-9 shrink-0 place-items-center rounded-full bg-bg transition-colors duration-200 group-open:bg-ink group-open:text-white"
+                  aria-hidden="true"
+                >
+                  <Plus
+                    size={18}
+                    strokeWidth={2}
+                    className="transition-transform duration-300 ease-smooth group-open:rotate-45"
+                  />
+                </span>
+              </summary>
+              <p className="max-w-2xl pb-6 pr-10 leading-relaxed text-muted md:text-lg">
+                {item.a}
+              </p>
+            </details>
+          ))}
+        </div>
+
+        <p className="mt-6 flex flex-col items-center justify-center gap-x-2 text-center text-muted sm:flex-row">
+          {copy.whatsappLead}
           <a
             href={buildWaLink('Hola, tengo una pregunta sobre Atende')}
             target="_blank"
             rel="noopener noreferrer"
             data-cta="faq-whatsapp"
-            className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold underline underline-offset-4 hover:text-coral-strong"
+            className="inline-flex min-h-11 items-center font-semibold text-coral-strong underline-offset-4 hover:underline"
           >
-            Escribir al {site.whatsapp.display}{' '}
-            <span aria-hidden="true">↗</span>
+            {copy.whatsappLink}
           </a>
+          <span className="hidden sm:inline" aria-hidden="true">
+            ·
+          </span>
           <Link
             href="/preguntas-frecuentes"
-            className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4 hover:text-coral-strong"
+            className="inline-flex min-h-11 items-center font-semibold text-ink underline-offset-4 hover:underline"
           >
             {copy.allLink}
           </Link>
-        </div>
-
-        <div className="flex flex-col gap-3">
-          {items.map((item, index) => (
-            <details
-              key={item.q}
-              className="group rounded-lg border-2 border-ink bg-bg shadow-[var(--shadow-brut-xs)] open:bg-coral-soft/45"
-            >
-              <summary className="flex min-h-16 items-center justify-between gap-5 px-5 py-5 md:px-6">
-                <span className="flex items-start gap-4">
-                  <span className="mt-1.5 font-mono text-[11px] text-coral-strong">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-                  <span className="font-display text-lg font-semibold leading-snug tracking-[-0.02em] md:text-xl">
-                    {item.q}
-                  </span>
-                </span>
-                <span className="grid size-9 shrink-0 place-items-center rounded-full border border-ink bg-surface transition-colors group-open:bg-coral">
-                  <Plus
-                    size={18}
-                    strokeWidth={2.2}
-                    className="transition-transform duration-200 group-open:rotate-45"
-                    aria-hidden="true"
-                  />
-                </span>
-              </summary>
-              <div className="border-t border-ink/20 px-5 py-5 pl-12 text-base leading-relaxed text-ink/75 md:px-6 md:pl-16 md:text-lg">
-                {item.a}
-              </div>
-            </details>
-          ))}
-        </div>
+        </p>
       </div>
     </section>
   );

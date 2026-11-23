@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-type Variant = 'primary' | 'outline';
+// primary: the one coral action per view. outline: the quiet second choice on
+// light surfaces. dark: a neutral solid. glass: the second choice on forest.
+type Variant = 'primary' | 'outline' | 'dark' | 'glass';
 type Size = 'md' | 'lg';
 
 type CommonProps = {
@@ -16,23 +18,23 @@ type AnchorProps = CommonProps &
   };
 
 const base =
-  'inline-flex min-h-11 items-center justify-center gap-2 rounded-md border-2 border-ink ' +
-  'font-display font-semibold tracking-[-0.015em] transition-[transform,box-shadow,background-color,color] duration-150 ' +
-  'shadow-[var(--shadow-brut-sm)] active:translate-x-[2px] active:translate-y-[2px] ' +
-  'active:shadow-none';
+  'inline-flex items-center justify-center gap-2 rounded-full text-center font-semibold leading-tight ' +
+  'tracking-[-0.01em] transition-[transform,background-color,box-shadow,color] duration-200 ease-smooth ' +
+  'active:scale-[0.97]';
 
+// White on coral-fill is 4.6:1. Brand coral would fail under small white text.
 const variants: Record<Variant, string> = {
-  primary:
-    'bg-coral !text-ink hover:translate-x-[-2px] hover:translate-y-[-2px] ' +
-    'hover:bg-coral-soft hover:shadow-[var(--shadow-brut)]',
+  primary: 'bg-coral-fill !text-white shadow-cta hover:bg-coral-strong',
   outline:
-    'bg-surface text-ink hover:translate-x-[-2px] hover:translate-y-[-2px] ' +
-    'hover:bg-forest hover:text-bg hover:shadow-[var(--shadow-brut-coral)]',
+    'bg-surface text-ink ring-1 ring-inset ring-line-strong hover:ring-ink/40',
+  dark: 'bg-ink !text-white hover:bg-black',
+  glass:
+    'bg-white/10 !text-white ring-1 ring-inset ring-white/25 hover:bg-white/20',
 };
 
 const sizes: Record<Size, string> = {
-  md: 'px-5 py-2.5 text-sm md:text-base',
-  lg: 'px-6 py-3.5 text-base md:px-7 md:text-lg',
+  md: 'min-h-11 px-5 py-2 text-[0.9375rem]',
+  lg: 'min-h-13 px-7 py-3 text-[1.0625rem]',
 };
 
 export function Button({

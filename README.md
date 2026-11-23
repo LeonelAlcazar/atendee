@@ -8,8 +8,8 @@ The public site lives at `https://www.atende.com.ar`. Account entry and guided o
 
 - Next.js 15 App Router with `output: 'standalone'`; the blog is prerendered and regenerated hourly (ISR)
 - React 19 and strict TypeScript
-- Tailwind CSS v4 with a hand-built component system
-- `next/font` for self-hosted Instrument Sans, Inter Tight, and IBM Plex Mono
+- Tailwind CSS v4 with a hand-built component system; [the design system guide](docs/design-system.md) implements the owner's `DESIGN_SYSTEM.md` (workspace root)
+- `next/font` for self-hosted Instrument Sans, the only typeface
 - Lucide React for the small number of interface icons
 - Vitest for content, contact and structured-data tests; Cheerio for auditing production HTTP responses
 
@@ -38,13 +38,13 @@ The blog holds Spanish sector guides, tool comparisons and practical guides. `np
 
 Spanish marketing copy and shared product facts live in `src/content/`:
 
-- `site.ts` — public domain, app domain, contact details, tagline, trust statements and confirmed social profiles
+- `site.ts` — public domain, app domain, contact details, tagline and confirmed social profiles
 - `status.ts` — the public status of each action: included or on request
-- `landing.ts` — landing-page positioning, features, setup steps, control story, and CTA copy
+- `landing.ts` — the home: hero scene, message flood, rubro showcase, extras, team control and first steps, plus the copy of the shared FAQ and closing CTA blocks
 - `servicios.ts` — detailed service examples and conversations
 - `rubros.ts` — the six `/casos-de-uso/[slug]` pages
 - `casos.ts` — the use-case hub
-- `faq.ts` — landing-page questions and answers
+- `faq.ts` — the five questions on the home; the full list lives in `faq-page.ts`
 - `pages.ts` — commercial page metadata and sitemap modification dates
 - `pricing.ts` — buying and pricing questions
 - `blog-topics.ts` — blog topics, their matching rubro, and blog page metadata
@@ -68,7 +68,8 @@ See [SEO and sales notes](docs/seo-and-sales.md#indexnow).
 
 ## Social assets
 
-- `public/icon.svg` is the source favicon mark
-- `public/favicon.ico` contains common browser icon sizes
-- `public/og-source.svg` is the editable 1200×630 social-card source
-- `public/og.png` is the exported social card used by page metadata
+- `public/icon.svg` is the source favicon mark: "a." with the coral dot, on the brand gray
+- `public/favicon.ico` contains 16, 32, 48 and 64 px renders of `icon.svg`
+- `public/atende-instagram-logo.png` is the 1080×1080 mark used as the Organization logo in structured data
+- `public/og-source.svg` is the 1200×630 social-card source. Its Instrument Sans text is outlined to paths, so it renders the same anywhere but has to be regenerated to change the wording
+- `public/og.png` is the social card used by page metadata, exported from `og-source.svg` at 1200×630

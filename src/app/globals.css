@@ -1,28 +1,60 @@
 @import 'tailwindcss';
 
+/* Atende design system. Usage guide: docs/design-system.md */
 @theme {
-  --color-bg: #f8f5ef;
-  --color-surface: #fffdf8;
-  --color-ink: #141414;
-  --color-forest: #0f3d2e;
-  --color-coral: #e6482c;
-  --color-coral-strong: #c9361c;
-  --color-coral-soft: #ffe1d8;
-  --color-mute: #68615a;
-  --color-mint: #cdeee5;
-  --color-mint-strong: #0f7066;
-  --color-sky: #cfe4ff;
-  --color-sun: #ffd166;
+  /* Color. Text contrast notes are against --color-bg. */
+  --color-bg: #f0f0f0; /* page canvas */
+  --color-surface: #ffffff; /* cards and sheets */
+  --color-ink: #202020; /* text */
+  --color-muted: #636363; /* secondary text, 5.3:1 */
+  --color-faint: #868686; /* second tone of a display heading only, 3.2:1 */
+  --color-line: #2020201a; /* hairlines */
+  --color-line-strong: #20202029;
+  --color-forest: #0f3d2e; /* deep, immersive panels */
+  --color-forest-deep: #0a2a20;
+  --color-forest-tint: #e2ebe7;
+  --color-coral: #e6482c; /* brand accent: the dot, display type, graphics */
+  --color-coral-fill: #d83d22; /* button fill: the coral that carries small white text, 4.6:1 */
+  --color-coral-strong: #c9361c; /* small coral text on light, 4.6:1 */
+  --color-coral-tint: #fdf0ec; /* coral-strong text on it keeps 4.7:1 */
 
-  --font-display: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-body: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+  /* One typeface: Instrument Sans. */
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 
-  --shadow-brut-xs: 2px 2px 0 0 var(--color-ink);
-  --shadow-brut-sm: 4px 4px 0 0 var(--color-ink);
-  --shadow-brut: 6px 6px 0 0 var(--color-ink);
-  --shadow-brut-lg: 10px 10px 0 0 var(--color-ink);
-  --shadow-brut-coral: 6px 6px 0 0 var(--color-coral);
+  /* Type scale. Each token sets size, line height, tracking and weight. */
+  --text-display: clamp(2.375rem, 1.5rem + 4.15vw, 5.5rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.04em;
+  --text-display--font-weight: 600;
+  --text-headline: clamp(2rem, 1.417rem + 2.6vw, 4rem);
+  --text-headline--line-height: 1.05;
+  --text-headline--letter-spacing: -0.036em;
+  --text-headline--font-weight: 600;
+  --text-title: clamp(1.375rem, 1.25rem + 0.55vw, 1.75rem);
+  --text-title--line-height: 1.15;
+  --text-title--letter-spacing: -0.022em;
+  --text-title--font-weight: 600;
+  --text-lead: clamp(1.0625rem, 0.98rem + 0.37vw, 1.3125rem);
+  --text-lead--line-height: 1.45;
+  --text-lead--letter-spacing: -0.012em;
+
+  /* Soft, large radii. */
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-4xl: 2.5rem;
+
+  /* Light depth. */
+  --shadow-card: 0 1px 2px rgb(32 32 32 / 0.04), 0 10px 30px -12px rgb(32 32 32 / 0.1);
+  --shadow-float: 0 2px 6px rgb(32 32 32 / 0.05), 0 28px 60px -20px rgb(32 32 32 / 0.22);
+  --shadow-cta: 0 10px 24px -10px rgb(216 61 34 / 0.6);
+
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.45, 0.64, 1);
 }
 
 /* Element defaults live in the base layer: unlayered rules would beat every
@@ -30,99 +62,230 @@
 @layer base {
   * {
     box-sizing: border-box;
-    border-color: var(--color-ink);
+    border-color: var(--color-line);
   }
 
   a {
     color: inherit;
   }
-}
 
-html {
-  overflow-x: clip;
-  scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
-  background: var(--color-bg);
-  color: var(--color-ink);
-  font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+  }
 
-body {
-  min-height: 100vh;
-  margin: 0;
-  background: var(--color-bg);
-}
+  body {
+    min-height: 100svh;
+    margin: 0;
+    background: var(--color-bg);
+  }
 
-button,
-summary {
-  -webkit-tap-highlight-color: transparent;
+  button,
+  summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
 }
 
 ::selection {
-  background: var(--color-coral);
-  color: var(--color-ink);
+  background: rgb(230 72 44 / 0.22);
+  color: inherit;
 }
 
+/* Two rings, so focus shows on the canvas, on white and on forest. */
 :focus-visible {
-  outline: 3px solid var(--color-ink);
-  outline-offset: 3px;
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
   box-shadow: 0 0 0 6px var(--color-surface);
 }
 
-summary {
-  list-style: none;
-  cursor: pointer;
+/* Motion. Every scene is finished by default: the keyframes only describe how
+   it arrives, so no JS, print and reduced motion all show the done task. */
+
+/* A step that lands in order. Set --at (milliseconds) inline. */
+.seq {
+  animation: seq-in 560ms var(--ease-smooth) both;
+  animation-delay: calc(var(--at, 0) * 1ms);
 }
 
-summary::-webkit-details-marker {
-  display: none;
+/* The finished-task moment: a firmer landing. */
+.seq-pop {
+  animation: seq-pop 620ms var(--ease-spring) both;
+  animation-delay: calc(var(--at, 0) * 1ms);
 }
 
-.hero-grid {
-  background-image:
-    linear-gradient(rgba(20, 20, 20, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 20, 20, 0.035) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(to bottom, black 0%, transparent 88%);
+/* Typing dots: they show for --for milliseconds, then leave for the reply. */
+.seq-typing {
+  animation: seq-typing calc(var(--for, 800) * 1ms) linear both;
+  animation-delay: calc(var(--at, 0) * 1ms);
 }
 
-.jitter {
-  filter: url('#jitter');
+.seq-typing > span {
+  animation: typing-dot 900ms ease-in-out 3;
 }
 
-/* Hero conversation: bubbles land in order, then the finished task. The copy is
-   not animated, so the H1 paints immediately. Transform and opacity only. */
-.chat-step {
-  animation: chat-in 340ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: calc(var(--step, 0) * 420ms + 180ms);
+.seq-typing > span:nth-child(2) {
+  animation-delay: 150ms;
 }
 
-.ticket-land {
-  animation: ticket-land 380ms cubic-bezier(0.2, 1.3, 0.4, 1) both;
-  animation-delay: calc(var(--step, 0) * 420ms + 260ms);
+.seq-typing > span:nth-child(3) {
+  animation-delay: 300ms;
 }
 
-@keyframes chat-in {
+/* A dot that crosses its line once. --from and --to are percentages of the
+   line. It is hidden before and after. */
+.seq-travel {
+  animation: seq-travel 450ms ease-in-out both;
+  animation-delay: calc(var(--at, 0) * 1ms);
+}
+
+/* Inside a showcase, steps play only for the open panel, and replay each time
+   it opens. */
+[data-showcase] .seq,
+[data-showcase] .seq-pop {
+  animation: none;
+}
+
+[data-showcase][data-play='true'] [data-active='true'] .seq {
+  animation: seq-in 560ms var(--ease-smooth) both;
+  animation-delay: calc(var(--at, 0) * 1ms);
+}
+
+[data-showcase][data-play='true'] [data-active='true'] .seq-pop {
+  animation: seq-pop 620ms var(--ease-spring) both;
+  animation-delay: calc(var(--at, 0) * 1ms);
+}
+
+/* The mobile menu sheet. */
+.menu-sheet {
+  animation: sheet-in 220ms var(--ease-smooth) both;
+}
+
+@keyframes sheet-in {
   from {
     opacity: 0;
-    transform: translateY(8px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-@keyframes ticket-land {
+@keyframes seq-in {
   from {
     opacity: 0;
-    transform: translateY(-10px) scale(1.08) rotate(4deg);
+    transform: translateY(10px) scale(0.98);
   }
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes seq-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes seq-travel {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(var(--from, 0) * 1%));
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(var(--to, 100) * 1%));
+  }
+}
+
+@keyframes seq-typing {
+  0% {
+    opacity: 0;
+  }
+  18%,
+  82% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing-dot {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  40% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(var(--drift-from, 0%), 0, 0);
+  }
+  to {
+    transform: translate3d(var(--drift-to, -10%), 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* The showcase timer. It only exists when motion is welcome, and the
+     component advances on animationend. */
+  [data-autoplay='true'] .tab-progress {
+    animation: progress var(--tab-ms, 6000ms) linear both;
+  }
+
+  [data-autoplay='true'][data-paused='true'] .tab-progress {
+    animation-play-state: paused;
+  }
+
+  /* Rows that slide with the scroll. The reader drives them, so nothing moves
+     on its own. Browsers without scroll timelines show the rows still. */
+  @supports (animation-timeline: view()) {
+    .drift {
+      animation: drift 1ms linear both;
+      animation-timeline: view();
+      animation-range: entry 0% exit 100%;
+    }
   }
 }
 
@@ -142,29 +305,199 @@ summary::-webkit-details-marker {
   }
 }
 
-/* Markdown articles: server-rendered semantic HTML, including scrollable tables. */
-.blog-prose { font-size: 1.125rem; line-height: 1.8; overflow-wrap: anywhere; }
-.blog-prose > * + * { margin-top: 1.25rem; }
-.blog-prose h2, .blog-prose h3, .blog-prose h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.2; letter-spacing: -0.025em; scroll-margin-top: 6rem; }
-.blog-prose h2 { margin-top: 3rem; font-size: clamp(1.65rem, 3vw, 2.1rem); }
-.blog-prose h3 { margin-top: 2rem; font-size: 1.4rem; }
-.blog-prose a { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
-.blog-prose a:hover { color: var(--color-coral-strong); }
-.blog-prose ul, .blog-prose ol { padding-left: 1.5rem; }
-.blog-prose ul { list-style: disc; }
-.blog-prose ol { list-style: decimal; }
-.blog-prose li + li { margin-top: .6rem; }
-.blog-prose blockquote { border-left: 4px solid var(--color-coral); padding: 1.2rem 1.5rem; background: var(--color-surface); }
-.blog-prose blockquote p + p { margin-top: 1rem; }
-.blog-prose pre { overflow-x: auto; border: 1px solid; padding: 1rem; font-size: .9rem; }
-.blog-table { max-width: 100%; overflow-x: auto; border: 1px solid var(--color-ink); border-radius: .5rem; }
-.blog-prose table { width: 100%; border-collapse: collapse; font-size: 1rem; line-height: 1.6; }
-.blog-prose th, .blog-prose td { min-width: 140px; padding: 1rem; text-align: left; vertical-align: top; border-bottom: 1px solid #14141430; }
-.blog-prose th { background: var(--color-mint); font-weight: 600; }
-.blog-prose tbody tr:last-child td { border-bottom: 0; }
-@media (max-width: 640px) {
-  .blog-prose { font-size: 1.0625rem; }
+/* Blog prose */
+/* Markdown articles and the editorial page, rendered as plain semantic HTML.
+   Text keeps a reading measure of 36rem, about 65 characters a line at 18px
+   (CSS 68ch would be 815px, ~98 characters: Instrument Sans has wide
+   digits). Tables may use the whole column, up to the 48rem the article
+   gives them. Headings are large and plain, tables quiet, and coral is only
+   an accent: the link underline.
+   These rules are unlayered, so they beat utilities on the same elements:
+   style the .blog-prose wrapper from markup, not its children. .blog-heading
+   gives the page's own H2s (FAQ, sources, related) the Markdown H2 look. */
+.blog-prose {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+.blog-prose > * {
+  max-width: 36rem;
+}
+.blog-prose > .blog-table {
+  max-width: 100%;
+}
+.blog-prose > * + * {
+  margin-top: 1.25em;
+}
+.blog-prose > :first-child {
+  margin-top: 0;
+}
+.blog-prose p,
+.blog-prose li {
+  text-wrap: pretty;
+}
+.blog-prose h2,
+.blog-prose h3,
+.blog-prose h4,
+.blog-heading {
+  font-weight: 600;
+  text-wrap: balance;
+  scroll-margin-top: 6rem;
+}
+.blog-prose h2,
+.blog-heading {
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+.blog-prose h3,
+.blog-prose h4 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+.blog-prose > h2 {
+  margin-top: 3.5rem;
+}
+.blog-prose > h3,
+.blog-prose > h4 {
+  margin-top: 2.25rem;
+}
+.blog-prose > :is(h2, h3, h4) + * {
+  margin-top: 0.875rem;
+}
+.blog-prose strong {
+  font-weight: 600;
+}
+.blog-prose a {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-coral);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.22em;
+  transition: color 200ms var(--ease-smooth);
+}
+.blog-prose a:hover {
+  color: var(--color-coral-strong);
+}
+.blog-prose ul,
+.blog-prose ol {
+  padding-left: 1.375em;
+}
+.blog-prose ul {
+  list-style: disc;
+}
+.blog-prose ol {
+  list-style: decimal;
+}
+.blog-prose li {
+  padding-left: 0.25em;
+}
+.blog-prose li + li,
+.blog-prose li > :is(ul, ol) {
+  margin-top: 0.5em;
+}
+.blog-prose li::marker {
+  color: var(--color-muted);
+}
+.blog-prose ol > li::marker {
+  font-weight: 600;
+}
+/* Chat transcripts and quotes: a white sheet on the canvas. */
+.blog-prose blockquote,
+.blog-prose pre {
+  border-radius: var(--radius-2xl);
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.blog-prose blockquote > * + * {
+  margin-top: 0.75rem;
+}
+/* The fenced blocks are fill-in templates, not code: same typeface, and a
+   long line wraps on a phone instead of scrolling sideways. */
+.blog-prose pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+.blog-prose code {
+  font-family: inherit;
+  font-size: 0.9375em;
+}
+.blog-prose :not(pre) > code {
+  border-radius: var(--radius-xs);
+  padding: 0.1em 0.35em;
+  background: var(--color-surface);
+  box-shadow: inset 0 0 0 1px var(--color-line);
+}
+.blog-prose hr {
+  margin-block: 3rem;
+  border: 0;
+  border-top: 1px solid var(--color-line-strong);
+}
+/* Tables: quiet rows on a white card that scrolls sideways when it must. The
+   wrapper is a focusable region (see renderMarkdown). */
+.blog-table {
+  overflow-x: auto;
+  border-radius: var(--radius-3xl);
+  background: var(--color-surface);
+  box-shadow: 0 0 0 1px var(--color-line), var(--shadow-card);
+}
+.blog-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+.blog-prose th,
+.blog-prose td {
+  min-width: 9rem;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--color-line);
+  text-align: left;
+  vertical-align: top;
+}
+/* Opaque, so the sticky first cell hides the text scrolling under it. */
+.blog-prose th {
+  background: color-mix(in srgb, var(--color-bg) 60%, var(--color-surface));
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.blog-prose td:first-child {
+  font-weight: 500;
+}
+.blog-prose tbody tr:last-child td {
+  border-bottom: 0;
+}
+@media (min-width: 40rem) {
+  .blog-prose {
+    font-size: 1.125rem;
+  }
+  .blog-prose table {
+    font-size: 1rem;
+  }
+  /* Six columns still fit the 48rem column without scrolling. */
+  .blog-prose th,
+  .blog-prose td {
+    min-width: 6rem;
+    padding-inline: 1.25rem;
+  }
+}
+@media (max-width: 39.99rem) {
   /* A wide table scrolls sideways: keep each row's label in view. */
-  .blog-prose th:first-child, .blog-prose td:first-child { position: sticky; left: 0; min-width: 112px; padding-inline: .75rem; overflow-wrap: normal; background: var(--color-bg); box-shadow: 1px 0 0 #14141430; }
-  .blog-prose th:first-child { background: var(--color-mint); }
+  .blog-prose th:first-child,
+  .blog-prose td:first-child {
+    position: sticky;
+    left: 0;
+    min-width: 7rem;
+    padding-inline: 0.875rem;
+    overflow-wrap: normal;
+    background: var(--color-surface);
+    box-shadow: 1px 0 0 var(--color-line);
+  }
+  .blog-prose th:first-child {
+    background: color-mix(in srgb, var(--color-bg) 60%, var(--color-surface));
+  }
 }

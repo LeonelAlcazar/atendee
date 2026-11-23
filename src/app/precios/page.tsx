@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import {
+  BellOff,
+  Check,
+  Link2,
+  Lock,
+  Minus,
+} from 'lucide-react';
 import { pages } from '@/content/pages';
 import { pricingFaq } from '@/content/pricing';
 import { site } from '@/content/site';
@@ -26,8 +33,9 @@ const breadcrumbs = [
   { name: 'Precios', path: '/precios' },
 ];
 
-const heading =
-  'font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl';
+const container = 'mx-auto max-w-7xl px-5 md:px-8';
+const textLink =
+  'inline-flex min-h-11 items-center gap-1.5 font-semibold text-coral-strong underline-offset-4 hover:underline';
 
 const comparison: [string, string, string][] = [
   ['Bandeja compartida, etiquetas y notas', 'Sí', 'Sí'],
@@ -87,92 +95,144 @@ const checklist = [
   },
 ];
 
+// The catalog decides how many plans there are: they share one row on wide
+// screens, whatever the count.
+function planGrid(count: number) {
+  if (count === 1) return 'max-w-md';
+  if (count === 2) return 'sm:grid-cols-2 lg:max-w-4xl';
+  if (count === 3) return 'sm:grid-cols-2 lg:grid-cols-3';
+  return 'sm:grid-cols-2 xl:grid-cols-4';
+}
+
+// "Sí" and "No" get a mark so the table reads at a glance; the word stays.
+function Availability({ value }: { value: string }) {
+  if (value === 'Sí')
+    return (
+      <span className="inline-flex items-center gap-2 font-medium text-ink">
+        <span
+          className="grid size-5 shrink-0 place-items-center rounded-full bg-forest text-white"
+          aria-hidden="true"
+        >
+          <Check size={12} strokeWidth={3} />
+        </span>
+        {value}
+      </span>
+    );
+  if (value === 'No')
+    return (
+      <span className="inline-flex items-center gap-2">
+        <span
+          className="grid size-5 shrink-0 place-items-center rounded-full bg-bg text-muted"
+          aria-hidden="true"
+        >
+          <Minus size={12} strokeWidth={3} />
+        </span>
+        {value}
+      </span>
+    );
+  return <>{value}</>;
+}
+
 export default async function PricingPage() {
   const plans = await getPublicPlans();
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <section className="border-b-2 border-ink py-12 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-start gap-12 px-5 md:px-8 lg:grid-cols-[1.3fr_0.7fr]">
+      <section className="pb-16 pt-8 md:pb-24 md:pt-14">
+        <div
+          className={`${container} grid items-center gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-16`}
+        >
           <div>
             <SectionHeader
               level="h1"
               eyebrow="Precios y planes"
               title={
                 <>
-                  ¿Cuánto cuesta un bot de WhatsApp{' '}
-                  <span className="text-coral">que reserva, cotiza y toma pedidos?</span>
+                  <span className="block">¿Cuánto cuesta un bot de WhatsApp</span>{' '}
+                  <span className="block text-faint">que reserva, cotiza y toma pedidos?</span>
                 </>
               }
               sub="Para reservar turnos o registrar pedidos, sumá el plan con IA y la conexión con tu sistema, que se cotiza por separado. Compará los precios publicados y calculá cuántas respuestas usaría tu negocio."
             />
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="#planes" size="lg">
-                Ver planes y precios ↓
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button href="#planes" size="lg" className="w-full sm:w-auto">
+                Ver planes y precios
               </Button>
               <Button
                 href={buildDemoLink('precios')}
                 data-cta="pricing-demo"
                 variant="outline"
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 Cotizar mi conexión
               </Button>
             </div>
-            <a href="#calculadora" className="mt-2 inline-flex min-h-11 items-center font-semibold underline underline-offset-4">
+            <a href="#calculadora" className={`${textLink} mt-3`}>
               Calcular mis respuestas por mes ↓
             </a>
           </div>
-          <ChatMockup
-            caption="Ejemplo ilustrativo, con la agenda conectada"
-            messages={[
-              { from: 'them', text: 'Necesito turno para el sábado a la mañana' },
-              { from: 'us', text: 'Tengo sábado 9:30 u 11:00. ¿Cuál preferís?' },
-              { from: 'them', text: 'A las 9:30' },
-              { from: 'us', text: 'Listo, te reservé el sábado a las 9:30.' },
-            ]}
-            result={{
-              label: 'Turno reservado con 2 respuestas',
-              detail: 'Se cuentan las respuestas del asistente. Reservar necesita la conexión con tu agenda.',
-            }}
-          />
+
+          <div className="mx-auto w-full max-w-sm lg:mr-0">
+            <p className="mb-3 flex items-center gap-2 px-1 text-sm font-medium text-muted">
+              <Link2 size={16} aria-hidden="true" />
+              Con la agenda conectada
+            </p>
+            <ChatMockup
+              className="w-full"
+              messages={[
+                { from: 'them', text: 'Necesito turno para el sábado a la mañana' },
+                { from: 'us', text: 'Tengo sábado 9:30 u 11:00. ¿Cuál preferís?' },
+                { from: 'them', text: 'A las 9:30' },
+                { from: 'us', text: 'Listo, te reservé el sábado a las 9:30.' },
+              ]}
+              result={{
+                label: 'Turno reservado con 2 respuestas',
+                detail: 'Se cuentan las respuestas del asistente. Reservar necesita la conexión con tu agenda.',
+              }}
+            />
+          </div>
         </div>
       </section>
 
-      <section id="planes" className="scroll-mt-24 border-b-2 border-ink bg-surface py-14 md:py-20">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className={heading}>Planes generales</h2>
+      <section id="planes" className="scroll-mt-20 pb-16 md:pb-24">
+        <div className={container}>
+          <SectionHeader title="Planes generales" />
           {plans === null ? (
-            <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+            <p className="mt-8 max-w-3xl rounded-3xl bg-surface p-7 leading-relaxed text-muted shadow-card md:mt-12 md:p-9">
               No pudimos cargar los planes. Podés ver los de tu espacio en la
               app o consultarnos por WhatsApp o email.
             </p>
           ) : plans.length === 0 ? (
-            <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+            <p className="mt-8 max-w-3xl rounded-3xl bg-surface p-7 leading-relaxed text-muted shadow-card md:mt-12 md:p-9">
               No hay planes publicados en este momento. Podés consultarnos por
               WhatsApp o email.
             </p>
           ) : (
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+            <div className={`mt-8 grid gap-4 md:mt-12 md:gap-5 ${planGrid(plans.length)}`}>
               {plans.map((plan, index) => (
                 <article
                   key={`${plan.name}-${index}`}
                   data-public-plan
-                  className="flex min-w-0 flex-col items-start rounded-lg border-2 border-ink bg-bg p-6 break-words shadow-[var(--shadow-brut-sm)]"
+                  className={`flex min-w-0 flex-col break-words rounded-3xl bg-surface p-6 md:p-7 ${
+                    plan.recommended ? 'shadow-float ring-1 ring-coral' : 'shadow-card'
+                  }`}
                 >
-                  {plan.recommended && <Tag>Recomendado</Tag>}
-                  <h3 className="mt-4 max-w-full font-display text-2xl font-semibold tracking-[-0.02em]">
-                    {plan.name}
-                  </h3>
-                  <p className="mt-3 max-w-full font-display text-2xl font-semibold">
-                    {plan.priceLabel}
-                  </p>
-                  {plan.bestFor && (
-                    <p className="mt-3 max-w-full leading-relaxed text-mute">
-                      {plan.bestFor}
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+                      <h3 className="max-w-full text-title">{plan.name}</h3>
+                      {plan.recommended && <Tag filled>Recomendado</Tag>}
+                    </div>
+                    <p className="mt-4 max-w-full text-[2rem] font-semibold leading-tight tracking-[-0.035em]">
+                      {plan.priceLabel}
                     </p>
-                  )}
-                  <p className="mt-4 max-w-full leading-relaxed text-mute">
+                    {plan.bestFor && (
+                      <p className="mt-3 max-w-full leading-relaxed text-muted">
+                        {plan.bestFor}
+                      </p>
+                    )}
+                  </div>
+                  <p className="mt-6 max-w-full border-t border-line pt-5 text-[0.9375rem] font-medium leading-snug">
                     {!plan.automationAllowed
                       ? 'Atención manual, sin asistente.'
                       : plan.monthlyAgentResponseLimit === 0
@@ -183,53 +243,74 @@ export default async function PricingPage() {
               ))}
             </div>
           )}
-          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
-            <Button href={appPlansUrl} data-cta="pricing-plans">
+          <div className="mt-8 flex flex-col gap-x-5 gap-y-3 sm:flex-row sm:items-center">
+            <Button
+              href={appPlansUrl}
+              data-cta="pricing-plans"
+              size="lg"
+              className="w-full sm:w-auto"
+            >
               Continuar en la app →
             </Button>
-            <p className="text-sm text-mute">En tu espacio ves los planes disponibles para contratar.</p>
+            <p className="text-sm text-muted">En tu espacio ves los planes disponibles para contratar.</p>
           </div>
-          <p className="mt-6 max-w-3xl leading-relaxed text-mute">
-            Las conexiones para reservar turnos, registrar pedidos o cotizar en
-            tu sistema se arman y se cotizan para cada negocio. Se usan sobre un
-            plan con IA.
+          <p className="mt-10 flex max-w-3xl gap-4 leading-relaxed text-muted md:mt-12">
+            <span
+              className="grid size-11 shrink-0 place-items-center rounded-full bg-surface text-ink shadow-card"
+              aria-hidden="true"
+            >
+              <Link2 size={20} strokeWidth={1.75} />
+            </span>
+            <span className="self-center">
+              Las conexiones para reservar turnos, registrar pedidos o cotizar en
+              tu sistema se arman y se cotizan para cada negocio. Se usan sobre un
+              plan con IA.
+            </span>
           </p>
-          <div className="mt-8 overflow-hidden rounded-lg border-2 border-ink bg-bg shadow-[var(--shadow-brut)]">
-            <table className="w-full table-fixed border-collapse text-left text-sm md:text-base">
-              <caption className="sr-only">
+
+          <div className="mt-12 overflow-x-auto rounded-3xl bg-surface shadow-card ring-1 ring-line md:mt-16">
+            <table className="w-full table-fixed border-collapse text-left">
+              <caption className="border-b border-line px-3 py-5 text-left text-title sm:px-7 sm:py-6">
                 Qué incluye Plan CRM y qué incluyen los planes con IA
               </caption>
-              <thead className="bg-forest text-bg">
-                <tr>
-                  <th scope="col" className="w-[46%] p-3 font-semibold md:p-4">
+              <thead className="bg-bg/60">
+                <tr className="border-b border-line">
+                  <th scope="col" className="w-[48%] px-3 py-3 text-sm font-semibold text-muted sm:w-[46%] sm:px-7">
                     Qué podés hacer
                   </th>
-                  <th scope="col" className="p-3 font-semibold md:p-4">
+                  <th scope="col" className="px-2.5 py-3 text-sm font-semibold text-muted sm:px-7">
                     Plan CRM
                   </th>
-                  <th scope="col" className="p-3 font-semibold md:p-4">
+                  <th scope="col" className="px-2.5 py-3 text-sm font-semibold text-muted sm:px-7">
                     Planes con IA
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {comparison.map(([label, crm, ai]) => (
-                  <tr key={label} className="border-t border-ink/20 align-top">
-                    <th scope="row" className="p-3 font-semibold md:p-4">
+                  <tr key={label} className="border-b border-line align-top last:border-b-0">
+                    <th
+                      scope="row"
+                      className="px-3 py-3.5 text-[0.9375rem] font-medium leading-snug sm:px-7 sm:text-base"
+                    >
                       {label}
                     </th>
-                    <td className="p-3 text-mute md:p-4">{crm}</td>
-                    <td className="p-3 text-mute md:p-4">{ai}</td>
+                    <td className="px-2.5 py-3.5 text-sm leading-snug text-muted sm:px-7 sm:text-[0.9375rem]">
+                      <Availability value={crm} />
+                    </td>
+                    <td className="px-2.5 py-3.5 text-sm leading-snug text-muted sm:px-7 sm:text-[0.9375rem]">
+                      <Availability value={ai} />
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="mt-6 max-w-3xl leading-relaxed text-mute">
+          <p className="mt-6 max-w-3xl leading-relaxed text-muted">
             Sin conexión, el asistente junta el pedido y tu equipo lo confirma.{' '}
             <Link
               href="/integraciones"
-              className="font-semibold text-ink underline underline-offset-4"
+              className="font-semibold text-coral-strong underline-offset-4 hover:underline"
             >
               Cómo armamos y cotizamos cada conexión
             </Link>
@@ -240,97 +321,127 @@ export default async function PricingPage() {
 
       <ResponseEstimator plans={(plans ?? []).map(({ name, monthlyAgentResponseLimit, automationAllowed }) => ({ name, monthlyAgentResponseLimit, automationAllowed }))} />
 
-      <section className="border-b-2 border-ink py-14 md:py-20">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className={heading}>Cómo se cuentan las respuestas</h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-mute">
-            Atende cuenta respuestas del asistente, no conversaciones.
-          </p>
-          <FactRows rows={credits} className="mt-8" />
+      <section className="py-16 md:py-24">
+        <div className={container}>
+          <SectionHeader
+            title="Cómo se cuentan las respuestas"
+            sub="Atende cuenta respuestas del asistente, no conversaciones."
+          />
+          <FactRows rows={credits} className="mt-8 md:mt-12" />
         </div>
       </section>
 
-      <section id="sin-respuestas" className="scroll-mt-24 border-b-2 border-ink bg-surface py-14 md:py-20">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className={heading}>Qué pasa cuando se terminan las respuestas</h2>
-          <StepCards steps={runningOut} className="mt-8" />
-          <div className="mt-6 grid gap-5 lg:grid-cols-2">
-            <div className="rounded-lg border-2 border-ink bg-coral-soft p-6 shadow-[var(--shadow-brut-sm)]">
-              <h3 className="font-display text-xl font-semibold">
-                Nadie te avisa antes
-              </h3>
-              <p className="mt-3 leading-relaxed">
-                Atende no manda una alerta cuando quedan pocas respuestas. Mirá
-                la pantalla Suscripción de la app, donde ves tu plan, cuándo
-                renueva y tus créditos disponibles.
-              </p>
+      <section id="sin-respuestas" className="scroll-mt-20 pb-16 md:pb-24">
+        <div className={container}>
+          <SectionHeader
+            title={
+              <>
+                <span className="block">Qué pasa cuando</span>{' '}
+                <span className="block text-faint">se terminan las respuestas</span>
+              </>
+            }
+          />
+          <StepCards steps={runningOut} className="mt-8 md:mt-12" />
+          <div className="mt-10 grid gap-4 md:mt-14 md:gap-5 lg:grid-cols-2">
+            <div className="flex flex-col gap-4 rounded-3xl bg-surface p-6 shadow-card sm:flex-row sm:gap-5 md:p-9">
+              <span
+                className="grid size-11 shrink-0 place-items-center rounded-full bg-coral-tint text-coral-strong"
+                aria-hidden="true"
+              >
+                <BellOff size={20} strokeWidth={1.75} />
+              </span>
+              <div className="min-w-0">
+                <h3 className="text-title">Nadie te avisa antes</h3>
+                <p className="mt-2 leading-relaxed text-muted">
+                  Atende no manda una alerta cuando quedan pocas respuestas. Mirá
+                  la pantalla Suscripción de la app, donde ves tu plan, cuándo
+                  renueva y tus créditos disponibles.
+                </p>
+              </div>
             </div>
-            <div className="rounded-lg border-2 border-ink bg-bg p-6 shadow-[var(--shadow-brut-sm)]">
-              <h3 className="font-display text-xl font-semibold">
-                Sin plan y sin créditos
-              </h3>
-              <p className="mt-3 leading-relaxed text-mute">
-                La bandeja queda bloqueada. Podés seguir entrando a Suscripción,
-                Ajustes y Aplicaciones conectadas. Los mensajes nuevos dejan de
-                entrar a Atende. Siguen llegando a tu WhatsApp, pero no quedan en
-                la bandeja.
-              </p>
+            <div className="flex flex-col gap-4 rounded-3xl bg-surface p-6 shadow-card sm:flex-row sm:gap-5 md:p-9">
+              <span
+                className="grid size-11 shrink-0 place-items-center rounded-full bg-bg text-ink"
+                aria-hidden="true"
+              >
+                <Lock size={20} strokeWidth={1.75} />
+              </span>
+              <div className="min-w-0">
+                <h3 className="text-title">Sin plan y sin créditos</h3>
+                <p className="mt-2 leading-relaxed text-muted">
+                  La bandeja queda bloqueada. Podés seguir entrando a Suscripción,
+                  Ajustes y Aplicaciones conectadas. Los mensajes nuevos dejan de
+                  entrar a Atende. Siguen llegando a tu WhatsApp, pero no quedan en
+                  la bandeja.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-b-2 border-ink py-14 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-16">
+      {/* The FAQ that follows brings its own top padding. */}
+      <section>
+        <div
+          className={`${container} grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16`}
+        >
           <div>
-            <h2 className={heading}>Antes de pagar, confirmá esto</h2>
-            <FactRows rows={checklist} className="mt-6" />
-            <p className="mt-5 leading-relaxed text-mute">
+            <h2 className="text-balance text-headline">
+              <span className="block">Antes de pagar,</span>{' '}
+              <span className="block text-faint">confirmá esto</span>
+            </h2>
+            <FactRows rows={checklist} className="mt-8 md:mt-12" />
+            <p className="mt-5 leading-relaxed text-muted">
               Las condiciones que te aplican se ven en la pantalla de pago o en
               la propuesta que aceptes.{' '}
               <Link
                 href="/terminos-y-condiciones"
-                className="underline underline-offset-4"
+                className="font-semibold text-ink underline underline-offset-4 hover:text-coral-strong"
               >
                 Términos y condiciones
               </Link>
               .
             </p>
           </div>
-          <div>
-            <h2 className={heading}>WhatsApp MCP, en todos los planes</h2>
-            <p className="mt-4 leading-relaxed text-mute">
-              Deja que una aplicación de IA que vos autorizás lea tus
-              conversaciones y mande mensajes de texto. Viene en todos los
-              planes, incluido Plan CRM, y no suma acciones al asistente.
-            </p>
-            <Link
-              href="/integraciones#whatsapp-mcp"
-              className="mt-2 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-            >
-              La diferencia con Herramientas conectadas&nbsp;→
-            </Link>
-            <h2 className="mt-8 font-display text-2xl font-semibold tracking-[-0.02em]">
-              Si todavía estás comparando
-            </h2>
-            <ul className="mt-2">
-              <li>
-                <Link
-                  href="/blog/cuanto-cuesta-automatizar-whatsapp"
-                  className="inline-flex min-h-11 items-center underline underline-offset-4"
-                >
-                  Cuánto cuesta automatizar WhatsApp →
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog/bot-de-whatsapp-gratis-o-pago"
-                  className="inline-flex min-h-11 items-center underline underline-offset-4"
-                >
-                  Cuándo elegir un bot gratis o pago →
-                </Link>
-              </li>
-            </ul>
+          <div className="flex flex-col gap-4 md:gap-5 lg:justify-end">
+            <div className="rounded-3xl bg-surface p-7 shadow-card md:p-9">
+              <h2 className="text-balance text-title">WhatsApp MCP, en todos los planes</h2>
+              <p className="mt-3 leading-relaxed text-muted">
+                Deja que una aplicación de IA que vos autorizás lea tus
+                conversaciones y mande mensajes de texto. Viene en todos los
+                planes, incluido Plan CRM, y no suma acciones al asistente.
+              </p>
+              <Link href="/integraciones#whatsapp-mcp" className={`${textLink} mt-2`}>
+                La diferencia con Herramientas conectadas&nbsp;→
+              </Link>
+            </div>
+            <div className="rounded-3xl bg-surface px-7 pb-3 pt-7 shadow-card md:px-9 md:pt-9">
+              <h2 className="text-balance text-title">Si todavía estás comparando</h2>
+              <ul className="mt-3 divide-y divide-line">
+                <li>
+                  <Link
+                    href="/blog/cuanto-cuesta-automatizar-whatsapp"
+                    className="group flex min-h-14 items-center justify-between gap-4 font-semibold transition-colors hover:text-coral-strong"
+                  >
+                    Cuánto cuesta automatizar WhatsApp{' '}
+                    <span className="shrink-0 text-lg text-muted transition-[transform,color] duration-200 ease-smooth group-hover:translate-x-0.5 group-hover:text-coral-strong">
+                      →
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog/bot-de-whatsapp-gratis-o-pago"
+                    className="group flex min-h-14 items-center justify-between gap-4 font-semibold transition-colors hover:text-coral-strong"
+                  >
+                    Cuándo elegir un bot gratis o pago{' '}
+                    <span className="shrink-0 text-lg text-muted transition-[transform,color] duration-200 ease-smooth group-hover:translate-x-0.5 group-hover:text-coral-strong">
+                      →
+                    </span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

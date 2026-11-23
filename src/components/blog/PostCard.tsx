@@ -1,35 +1,44 @@
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import { formatBlogDate, type BlogPost } from '@/lib/blog-content';
 import { getBlogTopic } from '@/content/blog-topics';
 
+// A white tile that opens the guide anywhere you tap: the title link stretches
+// over the card. No <header> in here: the post audit reads the first
+// `article header` on the page, and this card is an <article> too.
 export function PostCard({ post }: { post: BlogPost }) {
   return (
-    <article className="flex h-full flex-col rounded-lg border-2 border-ink bg-surface p-6 shadow-[var(--shadow-brut-sm)]">
-      <p className="font-mono text-[11px] uppercase tracking-wider text-mute">
+    <article className="group relative flex h-full flex-col rounded-3xl bg-surface p-6 shadow-card transition-[transform,box-shadow] duration-300 ease-smooth hover:-translate-y-1 hover:shadow-float sm:p-7">
+      <p className="text-sm text-muted">
         {post.sector || getBlogTopic(post.category)!.name} ·{' '}
         {post.readingMinutes} min
       </p>
-      <h3 className="mt-5 break-words font-display text-2xl font-semibold leading-tight tracking-tight">
+      <h3 className="mt-3 text-balance text-xl font-semibold leading-snug tracking-[-0.02em]">
         <Link
           href={`/blog/${post.slug}`}
-          className="decoration-coral decoration-2 underline-offset-4 hover:underline"
+          className="after:absolute after:inset-0 after:rounded-3xl"
         >
           {post.title}
         </Link>
       </h3>
-      <p className="mt-4 flex-1 leading-relaxed text-mute">
+      <p className="mt-3 flex-1 text-[0.9375rem] leading-relaxed text-muted">
         {post.description}
       </p>
-      <p className="mt-4 text-xs text-mute">
+      <p className="mt-5 text-[0.8125rem] text-muted">
         Actualizado el{' '}
         <time dateTime={post.updatedAt}>{formatBlogDate(post.updatedAt)}</time>
       </p>
       <Link
         href={`/blog/${post.slug}`}
         aria-label={`Leer: ${post.title}`}
-        className="mt-4 inline-flex min-h-11 w-fit items-center text-sm font-semibold underline underline-offset-4"
+        className="relative mt-2 inline-flex min-h-11 w-fit items-center gap-1.5 text-[0.9375rem] font-semibold text-coral-strong underline-offset-4 hover:underline"
       >
-        Leer guía <span aria-hidden="true">→</span>
+        Leer guía
+        <ArrowRight
+          size={16}
+          aria-hidden="true"
+          className="transition-transform duration-200 ease-smooth group-hover:translate-x-0.5"
+        />
       </Link>
     </article>
   );

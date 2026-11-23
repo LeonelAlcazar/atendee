@@ -21,7 +21,7 @@ Sin esto hay acciones que no se pueden hacer bien. Está ordenado por lo que má
 | --- | --- | --- |
 | Razón social, CUIT y domicilio legal | Registrarse en directorios, y la identidad verificable que hoy falta. `site.legalName` todavía dice "atende", que es la marca | `/nosotros`, datos de la organización, términos |
 | Perfiles sociales reales con su URL | Separar a Atende de nombres parecidos como Atendio, AutoAtende y AtiendeApp. Puede haber Instagram y página de Meta, pero no encontré las URL | `site.sameAs` en `src/content/site.ts` |
-| Videos reales de demo | Uno por rubro, que termine con la tarea hecha. Hoy solo es real el de la concesionaria de motos. Rotulalo "Ejemplo ilustrativo" y nombrá la conexión | YouTube, y embebido en cada rubro |
+| Videos reales de demo | Uno por rubro, que termine con la tarea hecha. Hoy solo es real el de la concesionaria de motos. Nombrá la conexión, sin rótulos como "Ejemplo ilustrativo" (`DESIGN_SYSTEM.md`, 2026-11-23) | YouTube, y embebido en cada rubro |
 | Clientes reales dispuestos a opinar | Reseñas y notas de prensa. Sin esto no hay casos ni métricas para publicar | Capterra, G2, prensa |
 | Un revisor con nombre, si querés | Opcional. Una persona real que firme mejora un poco la confianza y casi nada las citas. La firma "Equipo Atende" es válida | `/blog/editorial`, `/nosotros` |
 | Visto bueno para `whatsapp-qr-o-api-oficial` | Ese artículo queda en borrador hasta que apruebes cómo habla del QR y de las restricciones | `content/blog/` |

@@ -1,199 +1,234 @@
-// Copy for the home. Every connected action stays conditional: it needs a
-// connection built on request for each business (see SPEC section 3).
+// Copy for the home and for the two shared closers (Faq, CtaFinal). Headlines
+// carry the message: body copy is a line or two. Every connected action names
+// its connection once and is built on request for each business.
 export const landing = {
   hero: {
-    eyebrow: 'WhatsApp para PyMEs argentinas',
-    titleBefore: 'Bot de WhatsApp que',
-    titleAccent: 'reserva turnos y registra pedidos',
-    titleAfter: 'mientras vos atendés.',
+    titleLead: 'Tu WhatsApp reserva el turno.',
+    titleRest: 'Vos seguís trabajando.',
     description:
-      'Conectado a tu agenda, Atende reserva el turno. Conectado a tu stock, consulta si hay mercadería y registra el pedido. Armamos la conexión para tu negocio y tu equipo sigue cada conversación desde la bandeja.',
+      'Atende es el bot de WhatsApp que, conectado a tu agenda o a tu sistema, responde a cualquier hora y termina la tarea en el chat: reserva, toma el pedido, cotiza.',
     primaryCta: 'Pedí una demo',
-    secondaryCta: 'Ver planes y precios',
-    signupLink: 'Crear mi espacio',
-  },
-  preview: {
-    contact: 'Lucía M.',
-    status: 'Esperando usuario',
-    messages: [
-      { from: 'them', text: '¿Tenés una 110 en rojo?' },
-      { from: 'us', text: 'Sí, hay una 110 roja en stock. ¿Querés que registre tu interés para ventas?' },
-      { from: 'them', text: 'Sí, soy Lucía. Me interesa la roja.' },
-      { from: 'us', text: 'Listo, Lucía. Registré tu consulta por la 110 roja.' },
-    ],
-    result: {
-      label: 'Consulta registrada',
-      detail: '110 roja · interés guardado en la planilla',
+    secondaryCta: 'Crear mi espacio',
+    scene: {
+      label:
+        'Una clienta pide un turno por WhatsApp. Atende le ofrece horarios, lo reserva en la agenda y se lo confirma.',
+      clock: '23:47',
+      contact: 'Lucía',
+      contactStatus: 'Responde Atende',
+      messages: [
+        { from: 'them', text: '¿Tenés turno para corte el jueves a la tarde?' },
+        { from: 'us', text: 'Tengo jueves 16:00 o 17:30. ¿Cuál te queda mejor?' },
+        { from: 'them', text: 'A las 16' },
+        { from: 'us', text: 'Listo, te reservé el jueves a las 16:00.' },
+      ],
+      agenda: {
+        title: 'Tu agenda',
+        day: 'Jueves',
+        freeLabel: 'Libre',
+        slots: [
+          { time: '15:00', label: 'Ocupado', state: 'busy' },
+          { time: '16:00', label: 'Lucía', detail: 'Corte', state: 'booked' },
+          { time: '17:30', label: 'Libre', state: 'free' },
+        ],
+      },
+      connection: 'Conectado a tu agenda',
+      done: { label: 'Turno reservado', detail: 'Jueves 16:00, en tu agenda' },
     },
-    caption:
-      'Ejemplo ilustrativo de la demo de motos de Atende, con el stock y los interesados en Google Sheets.',
-    inbox: [
-      { name: 'Lucía M.', line: 'Esperando usuario', active: true },
-      { name: 'Martín R.', line: 'Necesita humano', active: false },
-      { name: 'Sofía P.', line: 'En conversación', active: false },
+  },
+  flood: {
+    titleLead: 'Tu trabajo no es contestar mensajes.',
+    titleRest: 'El de Atende, sí.',
+    description:
+      'Precios, horarios, turnos, pedidos. Atende responde y deja la tarea hecha, para que vos te dediques a lo tuyo.',
+    rows: [
+      [
+        '¿Precio?',
+        '¿Tenés turno el jueves?',
+        'Hola',
+        '¿Dónde está mi pedido?',
+        '¿Hacen envíos?',
+        '??',
+        '¿Hasta qué hora abren?',
+        '¿Me pasás la lista?',
+      ],
+      [
+        'Quiero cambiar el turno',
+        '¿Tienen stock?',
+        'Hola, ¿están?',
+        '¿Aceptan tarjeta?',
+        '¿Cuánto sale?',
+        'Te mandé un audio',
+        '¿Hay lugar para hoy?',
+        'Buenas',
+      ],
+      [
+        '¿Me cotizás?',
+        '¿Dónde quedan?',
+        '¿Llegó lo mío?',
+        'Mesa para cuatro',
+        '¿Siguen abiertos?',
+        '¿Me confirmás?',
+        '¿En cuotas se puede?',
+        'Holaaa',
+      ],
     ],
   },
-  tasks: {
-    eyebrow: 'Tareas terminadas, por rubro',
-    titleBefore: 'Tu cliente escribe.',
-    titleAccent: 'La tarea queda hecha.',
-    description:
-      'Cada rubro tiene una tarea que se repite todo el día. Elegí la tuya y mirá qué hace Atende, qué conexión necesita y hasta dónde llega.',
-    columns: ['Rubro', 'Tu cliente escribe', 'Queda hecho'],
+  showcase: {
+    titleLead: 'Tu cliente escribe.',
+    titleRest: 'La tarea queda hecha.',
+    tablistLabel: 'Elegí tu rubro',
+    pause: 'Pausar',
+    play: 'Reproducir',
     items: [
       {
         slug: 'clinicas-y-consultorios',
-        trade: 'Clínicas, consultorios y veterinarias',
-        message: 'Necesito pasar el turno del martes para el jueves',
+        short: 'Clínicas',
+        name: 'Clínicas y consultorios',
+        message: '¿Me pasás el turno del martes al jueves, a la misma hora?',
+        reply: 'Listo, pasé tu turno al jueves a las 10:30. El del martes quedó liberado.',
         result: 'Turno reprogramado',
         connection: 'Conectado a tu agenda',
       },
       {
         slug: 'peluquerias-y-estetica',
-        trade: 'Peluquerías, estética y gimnasios',
-        message: '¿Tenés lugar el sábado a la mañana para color?',
-        result: 'Lugar reservado',
+        short: 'Peluquerías',
+        name: 'Peluquerías y estética',
+        message: '¿Tenés lugar el sábado a las 10 para color?',
+        reply: 'Sí, hay lugar. Listo, te reservé el sábado a las 10:00.',
+        result: 'Turno reservado',
         connection: 'Conectado a tu agenda',
       },
       {
         slug: 'restaurantes-y-hoteles',
-        trade: 'Restaurantes y hoteles',
-        message: 'Mesa para seis el viernes a las 21',
+        short: 'Restaurantes',
+        name: 'Restaurantes y hoteles',
+        message: 'Mesa para seis el viernes a las 21, a nombre de Paula',
+        reply: 'Listo Paula, mesa para seis el viernes a las 21:00.',
         result: 'Reserva tomada',
         connection: 'Conectado a tu sistema de reservas',
       },
       {
         slug: 'comercios-y-distribuidoras',
-        trade: 'Comercios y distribuidoras',
-        message: '¿Tenés 20 cajas para retirar mañana?',
-        result: 'Stock consultado y pedido registrado',
-        connection: 'Conectado a tu sistema',
+        short: 'Comercios',
+        name: 'Comercios y distribuidoras',
+        message: '¿Tenés 20 cajas de yerba para retirar mañana?',
+        reply: 'Sí, hay stock. Listo, registré tu pedido: 20 cajas para retirar mañana.',
+        result: 'Pedido registrado',
+        connection: 'Conectado a tu stock',
       },
       {
         slug: 'concesionarias-e-inmobiliarias',
-        trade: 'Concesionarias e inmobiliarias',
-        message: '¿Cómo me queda en 12 cuotas? El sábado puedo ir a verla',
-        result: 'Cuota calculada, interesado registrado y visita agendada',
+        short: 'Concesionarias',
+        name: 'Concesionarias e inmobiliarias',
+        message: '¿Cómo queda la 110 roja en 12 cuotas? El sábado puedo ir a verla',
+        reply: 'Ahí te mandé el plan en 12 cuotas. Listo, tu visita quedó para el sábado a las 11:00.',
+        result: 'Cuota calculada y visita agendada',
         connection: 'Conectado a tu sistema',
       },
       {
         slug: 'servicios-profesionales',
-        trade: 'Servicios profesionales',
-        message: 'Me despidieron ayer y quiero saber qué me corresponde',
+        short: 'Profesionales',
+        name: 'Servicios profesionales',
+        message: 'Me despidieron y me llegó un telegrama. Necesito un abogado',
+        reply: 'Listo, registré tu consulta laboral como urgente, con pedido de llamado para hoy.',
         result: 'Consulta calificada y registrada',
         connection: 'Conectado a tu CRM',
       },
     ],
-    note: 'Ejemplos ilustrativos. Cada acción funciona con la conexión armada para tu negocio.',
-    allLink: 'Ver los seis rubros',
-    byTaskLabel: 'O elegí por tarea:',
-    byTask: [
-      { slug: 'turnos-whatsapp', label: 'turnos y reservas' },
-      { slug: 'ventas-whatsapp', label: 'pedidos y ventas' },
-      { slug: 'atencion-automatica-whatsapp', label: 'atención automática' },
+    linkPrefix: 'Ver',
+  },
+  extras: {
+    titleLead: 'Y lo que viene después,',
+    titleRest: 'también.',
+    recurring: {
+      title: 'Recordatorios y seguimientos',
+      text: 'Los programás una vez. Salen cada día, semana o mes, a los contactos que elijas.',
+      rule: 'Cada mes · día 1 · 10:00',
+      audience: 'Etiqueta: Clientes',
+      sample: 'Hola Sofi, ¿te reservo el turno de este mes?',
+    },
+    ready: {
+      title: 'Avisos de pedido listo',
+      text: 'Tu sistema avisa y Atende manda el WhatsApp. Lo conectamos a pedido, para tu negocio.',
+      source: 'Tu sistema',
+      event: 'pedido listo',
+      sample: 'Hola Martín, tu pedido ya está listo. Podés pasar a retirarlo.',
+    },
+    voice: {
+      title: 'Notas de voz',
+      text: 'Tu cliente manda un audio. Atende lo entiende y le responde.',
+      length: '0:14',
+      sample: 'Abrimos de 9 a 18. Los sábados, hasta las 13.',
+    },
+  },
+  control: {
+    titleLead: 'Atende trabaja.',
+    titleRest: 'Tu equipo manda.',
+    description:
+      'Tu equipo sigue las conversaciones desde una bandeja compartida y decide cuándo entra una persona.',
+    points: [
+      {
+        title: 'Necesita humano',
+        text: 'Marcás el chat y el asistente deja de responder ahí.',
+      },
+      {
+        title: 'Modo CRM',
+        text: 'Apagás el asistente en todo el espacio y responde tu equipo.',
+      },
     ],
   },
-  status: {
-    eyebrow: 'Qué funciona hoy',
-    title: 'Qué viene incluido y qué armamos a pedido.',
-    description:
-      'Para contestar un audio alcanza con tener el asistente activo. Para confirmar un turno, hace falta que Atende pueda consultar y escribir en tu agenda.',
-    link: 'Cómo armamos cada integración',
-    demoLabel: 'Una demo que ya funciona',
-    demoText:
-      'En nuestra demo de concesionaria podés ver cómo se consulta el stock, se calcula una financiación y se guarda al interesado en Google Sheets.',
+  // The inbox scene of the control section (ProductPreview).
+  preview: {
+    label:
+      'La bandeja de Atende: un cliente pide hablar con una persona, la conversación queda en Necesita humano y responde el equipo.',
+    nav: ['Bandeja', 'Biblioteca', 'Equipo', 'Asistente'],
+    search: 'Buscar contacto o teléfono',
+    contact: 'Martín R.',
+    status: 'Necesita humano',
+    statusNote: 'El asistente no responde en este chat',
+    teamLabel: 'Equipo',
+    inbox: [
+      { name: 'Lucía M.', line: 'Esperando usuario', active: false },
+      { name: 'Martín R.', line: 'Necesita humano', active: true },
+      { name: 'Sofía P.', line: 'En conversación', active: false },
+    ],
+    messages: [
+      { from: 'them', text: 'Necesito precio por 40 cajas. ¿Puedo hablar con alguien?' },
+      { from: 'us', text: 'Sí, te paso con una persona del equipo.' },
+      { from: 'team', text: 'Hola Martín, soy Caro. Ya te armo el precio por las 40.' },
+    ],
   },
-  connect: {
-    eyebrow: 'Cómo se conecta',
-    title: 'Cómo conectar tu WhatsApp y la herramienta que usás.',
-    selfLabel: 'Lo hacés vos, en la app',
+  start: {
+    titleLead: 'Empezás con el número',
+    titleRest: 'que ya tenés.',
     steps: [
       {
-        number: '01',
-        title: 'Creás tu espacio',
-        text: 'Entrás a la app y le ponés el nombre de tu negocio.',
-      },
-      {
-        number: '02',
-        title: 'Le contás qué hace tu negocio',
-        text: 'Qué vendés, qué puede resolver y qué tono usar.',
-      },
-      {
-        number: '03',
-        title: 'Invitás a tu equipo',
-        text: 'Cada persona entra con su cuenta y ve las mismas conversaciones.',
-      },
-      {
-        number: '04',
-        title: 'Activás créditos o un plan',
-        text: 'Empezás con créditos de bienvenida, sin tarjeta, o elegís un plan. Un crédito es una respuesta del asistente. Con eso se abre el panel, donde sumás tus preguntas frecuentes, fotos y videos.',
-      },
-      {
-        number: '05',
         title: 'Conectás tu número',
-        text: 'Para vincular tu número desde la app, abrí Dispositivos vinculados en el teléfono y escaneá el QR que ves en otra pantalla. Si tu negocio requiere la API oficial de Meta, consultá el alta y el alcance en la demo.',
+        text: 'Elegís cómo conectar tu número: con la API oficial de Meta o con un QR.',
+      },
+      {
+        title: 'Le contás cómo trabajás',
+        text: 'Qué vendés, tus horarios y cómo querés que responda.',
+      },
+      {
+        title: 'Conectamos tu sistema',
+        text: 'Tu agenda, tu stock o tu CRM. Lo armamos a pedido, para tu negocio.',
       },
     ],
-    requestLabel: 'Lo armamos nosotros, a pedido',
-    requestTitle: 'La conexión que termina la tarea',
-    requestText:
-      'Nos contás qué sistema usás y qué tarea querés sacarte de encima. Armamos la conexión para tu negocio y el asistente la usa en la conversación.',
-    nodes: [
-      { name: 'Tu WhatsApp', text: 'El número que ya usás', link: '' },
-      { name: 'Atende', text: 'Entiende el pedido y usa la conexión', link: 'Vincular el número' },
-      { name: 'Tu sistema', text: 'Agenda, stock o CRM', link: 'A pedido' },
-    ],
-    requestCta: 'Contanos qué sistema usás',
-    integrationsLink: 'Ver integraciones',
-    note: 'Si tu espacio tiene habilitado el chat de prueba, podés probar el asistente en el panel sin gastar respuestas. Las acciones sobre herramientas conectadas pueden ser reales. Si le escribís desde otro teléfono por WhatsApp, se consumen respuestas.',
   },
-  team: {
-    eyebrow: 'Tu equipo al tanto',
-    titleBefore: 'Frenás un chat',
-    titleAccent: 'o apagás todo.',
-    description:
-      'Las acciones corren con tu equipo supervisando. Todos ven las mismas conversaciones y deciden cuándo sigue una persona.',
-    pause: {
-      label: 'Estado de la conversación',
-      value: 'Necesita humano',
-      title: 'Marcás ese chat y el asistente deja de responder ahí.',
-      text: 'Si seguís la conversación vos, marcá Necesita humano. Responder desde la bandeja o tocar Asignarme deja al asistente activo.',
-    },
-    off: {
-      on: 'Asistente activo',
-      off: 'Modo CRM',
-      title: 'Lo apagás para todo el espacio.',
-      text: 'Con un botón pasás a Modo CRM y tu equipo responde a mano.',
-    },
-    inbox: {
-      label: 'Bandeja',
-      title: 'Todos sobre las mismas conversaciones.',
-      text: 'Asignás responsable, ponés etiquetas y dejás notas que tu cliente no ve. Buscás por contacto o teléfono.',
-      tags: ['Responsable', 'Etiqueta', 'Notas internas'],
-    },
-    fallback: {
-      label: 'Sin conexión',
-      sample: 'Anoté tu pedido de turno para el jueves. Te lo confirma el equipo.',
-      sampleCaption: 'Ejemplo ilustrativo',
-      title: 'Sin conexión, el asistente junta el pedido y tu equipo lo confirma.',
-      text: 'Cuando hace falta una persona, la conversación queda marcada en la bandeja para que tu equipo la retome.',
-    },
-  },
+  // Shared with the secondary pages: keep both blocks generic.
   faq: {
-    eyebrow: 'Preguntas frecuentes',
-    titleBefore: 'Antes de conectar,',
-    titleAccent: 'preguntá todo.',
-    description: 'Si tu pregunta no está acá, escribinos por WhatsApp.',
+    title: 'Preguntas frecuentes',
+    whatsappLead: '¿Te quedó una duda?',
+    whatsappLink: 'Escribinos por WhatsApp',
     allLink: 'Ver todas las preguntas',
   },
   finalCta: {
-    eyebrow: 'Empezá por una tarea',
-    titleBefore: 'Decinos qué tarea',
-    titleAccent: 'querés sacarte de encima.',
+    title: '¿Qué mensaje no querés volver a contestar?',
     description:
-      'Turnos, pedidos, presupuestos: contanos cuál te come más tiempo y qué sistema usás. Vemos qué conexión necesita tu negocio antes de contratar.',
+      'Contanos qué tarea te come más tiempo. Te mostramos cómo la resuelve Atende en tu negocio.',
     primaryCta: 'Pedí una demo',
-    secondaryCta: 'Consultar por WhatsApp',
+    secondaryCta: 'Escribinos por WhatsApp',
     reassurance: 'Vemos el alcance y los planes antes de contratar.',
   },
 } as const;

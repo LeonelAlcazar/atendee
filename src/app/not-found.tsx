@@ -22,32 +22,37 @@ const links = [
 
 export default function NotFound() {
   return (
-    <section className="grid min-h-[70vh] place-items-center px-5 py-20 md:px-8">
-      <div className="flex max-w-2xl flex-col items-center gap-6 text-center">
-        <span className="font-mono text-xs uppercase tracking-[0.08em] text-mute">
-          Error 404
-        </span>
-        <h1 className="font-display text-[3.25rem] font-semibold leading-[0.9] tracking-[-0.025em] sm:text-7xl md:text-9xl">
-          No <span className="text-coral">atendemos</span> esto.
+    <section className="grid min-h-[70svh] place-items-center px-5 py-20 md:px-8 md:py-28">
+      <div className="flex w-full max-w-3xl flex-col items-center text-center">
+        <p className="text-sm font-semibold text-coral-strong">Error 404</p>
+        <h1 className="mt-4 text-balance text-headline">
+          <span className="block">No atendemos</span>{' '}
+          <span className="block text-faint">esto.</span>
         </h1>
-        <p className="max-w-md font-body text-lg text-mute">
+        <p className="mt-5 max-w-md text-pretty text-lead text-muted md:mt-6">
           La página que buscás no existe o cambió de lugar. Volvé al inicio o
           seguí por acá.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button href="/" variant="primary" size="md">
+        <div className="mt-8 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
+          <Button href="/" variant="primary" size="lg" className="w-full sm:w-auto">
             Volver al inicio
           </Button>
-          <Button href="/demo" data-cta="404-demo" variant="outline" size="md">
+          <Button
+            href="/demo"
+            data-cta="404-demo"
+            variant="outline"
+            size="lg"
+            className="w-full sm:w-auto"
+          >
             Pedí una demo
           </Button>
         </div>
-        <ul className="flex flex-wrap justify-center gap-x-6">
+        <ul className="mt-8 flex flex-col items-center gap-x-6 sm:flex-row sm:flex-wrap sm:justify-center">
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4 hover:text-coral-strong"
+                className="inline-flex min-h-11 items-center font-semibold underline decoration-ink/30 underline-offset-4 transition-colors duration-200 hover:decoration-ink"
               >
                 {link.label}
               </Link>

@@ -9,46 +9,54 @@ type Props = {
   demoSource?: string;
 };
 
+// The closing band of every page. It renders exactly one demo link and one
+// WhatsApp link: the site audit counts the demo links of each page.
 export function CtaFinal({
   context,
   reassurance = landing.finalCta.reassurance,
   demoSource,
 }: Props) {
-  return (
-    <section className="px-5 py-16 md:px-8 md:py-24">
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-xl border-2 border-ink bg-coral px-6 py-14 shadow-[var(--shadow-brut-lg)] sm:px-10 md:py-20 lg:px-16">
-        <div className="relative max-w-4xl">
-          <p className="font-mono text-[11px] font-medium uppercase tracking-[0.1em] text-ink">
-            {landing.finalCta.eyebrow}
-          </p>
-          <h2 className="mt-5 font-display text-[2.75rem] font-semibold leading-[0.96] tracking-[-0.045em] text-balance sm:text-6xl md:text-7xl lg:text-[5rem]">
-            {landing.finalCta.titleBefore}{' '}
-            <span className="text-surface sm:block">{landing.finalCta.titleAccent}</span>
-          </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink md:text-xl">
-            {landing.finalCta.description}
-          </p>
+  const copy = landing.finalCta;
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a
+  return (
+    <section className="p-3 md:p-6">
+      <div className="relative mx-auto max-w-[90rem] overflow-hidden rounded-4xl bg-forest px-6 py-20 text-center text-white md:py-28 lg:py-32">
+        <div
+          className="absolute inset-0 bg-[radial-gradient(90%_70%_at_50%_-10%,rgb(255_255_255/0.1),transparent_65%)]"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-x-0 bottom-0 h-2/3 bg-[radial-gradient(45%_100%_at_50%_100%,rgb(230_72_44/0.28),transparent_70%)]"
+          aria-hidden="true"
+        />
+        <div className="relative">
+          <h2 className="mx-auto max-w-4xl text-balance text-headline">{copy.title}</h2>
+          <p className="mx-auto mt-5 max-w-xl text-pretty text-lead text-white/75">
+            {copy.description}
+          </p>
+          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Button
               href={buildDemoLink(demoSource)}
               data-cta="final-demo"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border-2 border-ink bg-forest px-6 py-3.5 font-display text-base font-semibold !text-bg shadow-[var(--shadow-brut-sm)] transition-[transform,box-shadow] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[var(--shadow-brut-lg)]"
+              variant="primary"
+              size="lg"
+              className="w-full sm:w-auto"
             >
-              {landing.finalCta.primaryCta} <span aria-hidden="true">→</span>
-            </a>
+              {copy.primaryCta}
+            </Button>
             <Button
               href={buildWaLink(context)}
               data-cta="final-whatsapp"
-              variant="outline"
+              variant="glass"
               size="lg"
+              className="w-full sm:w-auto"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {landing.finalCta.secondaryCta}
+              {copy.secondaryCta}
             </Button>
           </div>
-          <p className="mt-5 text-sm font-medium text-ink">{reassurance}</p>
+          <p className="mt-6 text-sm text-white/70">{reassurance}</p>
         </div>
       </div>
     </section>

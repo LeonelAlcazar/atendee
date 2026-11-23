@@ -385,10 +385,6 @@ try {
       `${path}: both demo CTAs preserve the rubro context`,
     );
     assert.ok(
-      normalize($('main').text()).includes('Ejemplo ilustrativo'),
-      `${path}: unlabeled example`,
-    );
-    assert.ok(
       $('a[href^="/blog/"]', 'main').length,
       `${path}: must link to its guides`,
     );

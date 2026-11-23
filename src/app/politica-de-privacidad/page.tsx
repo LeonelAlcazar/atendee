@@ -4,7 +4,8 @@ import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
 
 const lastUpdated = '11 de noviembre de 2026';
-const linkClass = 'underline underline-offset-4 hover:text-coral';
+const linkClass =
+  'font-medium text-ink underline decoration-ink/30 underline-offset-4 transition-colors duration-200 hover:decoration-ink';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Política de privacidad',

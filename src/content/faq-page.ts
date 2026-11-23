@@ -134,7 +134,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Cómo sé que la reserva se hizo de verdad?',
-        a: 'Ejemplo ilustrativo con una agenda conectada. El cliente elige el jueves a las 16, la agenda guarda el turno y recién entonces Atende le escribe “Listo, te reservé el jueves a las 16”. Tu equipo puede comprobarlo en la agenda. Si falla la reserva, queda pendiente.',
+        a: 'Con una agenda conectada, el cliente elige el jueves a las 16, la agenda guarda el turno y recién entonces Atende le escribe “Listo, te reservé el jueves a las 16”. Tu equipo puede comprobarlo en la agenda. Si falla la reserva, queda pendiente.',
       },
       {
         q: '¿Qué pasa si la conexión falla?',

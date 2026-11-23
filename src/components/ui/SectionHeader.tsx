@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Tag } from './Tag';
 
 type SectionHeaderProps = {
   eyebrow?: string;
@@ -11,6 +10,9 @@ type SectionHeaderProps = {
   className?: string;
 };
 
+// The heading carries the message: a short eyebrow, one big line, one or two
+// lines of body at most. Wrap part of the title in text-faint (or text-white/55
+// on forest) for the second tone.
 export function SectionHeader({
   eyebrow,
   title,
@@ -20,16 +22,23 @@ export function SectionHeader({
   inverse = false,
   className = '',
 }: SectionHeaderProps) {
-  const alignment = align === 'center' ? 'text-center items-center' : 'text-left items-start';
+  const alignment =
+    align === 'center' ? 'items-center text-center' : 'items-start text-left';
   const Heading = level;
   return (
-    <header className={`flex flex-col gap-4 ${alignment} ${className}`}>
-      {eyebrow && <Tag inverse={inverse}>{eyebrow}</Tag>}
-      <Heading className="max-w-4xl font-display text-4xl font-semibold leading-[0.94] tracking-[-0.04em] text-balance md:text-6xl">
-        {title}
-      </Heading>
+    <header className={`flex flex-col gap-4 md:gap-5 ${alignment} ${className}`}>
+      {eyebrow && (
+        <p
+          className={`text-sm font-semibold ${inverse ? 'text-white/70' : 'text-coral-strong'}`}
+        >
+          {eyebrow}
+        </p>
+      )}
+      <Heading className="max-w-4xl text-balance text-headline">{title}</Heading>
       {sub && (
-        <p className={`max-w-2xl font-body text-lg leading-relaxed md:text-xl ${inverse ? 'text-bg/70' : 'text-mute'}`}>
+        <p
+          className={`max-w-2xl text-pretty text-lead ${inverse ? 'text-white/70' : 'text-muted'}`}
+        >
           {sub}
         </p>
       )}

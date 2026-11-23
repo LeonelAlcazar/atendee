@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Tag } from '@/components/ui/Tag';
 import type { DetailStatus } from '@/content/servicios';
 
 export type FactRow = {
@@ -7,11 +8,16 @@ export type FactRow = {
   status?: DetailStatus;
 };
 
-const statusStyle: Record<DetailStatus, string> = {
-  Incluido: 'bg-mint',
-  'A pedido': 'bg-sun',
+// The same dots as the status table: forest is included, coral is built to order.
+const statusDot: Record<DetailStatus, string> = {
+  Incluido: 'bg-forest',
+  'A pedido': 'bg-coral',
 };
 
+// A label and its fact, one per row, on a white sheet: the quiet table of the
+// design system. /precios, /nosotros and /que-es-atende render it too, so the
+// props stay as they are. The rows split into two columns by the width of the
+// sheet, not the screen, so it also fits a half-width column.
 export function FactRows({
   rows,
   className = '',
@@ -21,22 +27,26 @@ export function FactRows({
 }) {
   return (
     <dl
-      className={`overflow-hidden rounded-lg border-2 border-ink bg-surface shadow-[var(--shadow-brut)] ${className}`}
+      className={`@container overflow-hidden rounded-3xl bg-surface shadow-card ring-1 ring-line ${className}`}
     >
       {rows.map((row, index) => (
         <div
           key={index}
-          className="grid gap-1.5 border-b border-ink/20 px-4 py-4 last:border-b-0 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-8 md:px-6 md:py-5"
+          className="grid gap-1.5 border-b border-line px-5 py-5 last:border-b-0 sm:px-7 @lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] @lg:gap-8 @3xl:gap-12 @3xl:py-6"
         >
-          <dt className="font-display text-lg font-semibold leading-snug tracking-[-0.015em]">
+          <dt className="text-[1.0625rem] font-semibold leading-[1.625rem] tracking-[-0.015em]">
             {row.label}
           </dt>
-          <dd className="m-0 leading-relaxed text-mute">
+          <dd className="m-0 max-w-2xl leading-relaxed text-muted">
             {row.status && (
-              <span
-                className={`mb-2 mr-2 inline-flex items-center rounded-full border border-ink px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-ink ${statusStyle[row.status]}`}
-              >
-                {row.status}
+              <span className="mb-2.5 flex">
+                <Tag>
+                  <span
+                    className={`size-2 shrink-0 rounded-full ${statusDot[row.status]}`}
+                    aria-hidden="true"
+                  />
+                  {row.status}
+                </Tag>
               </span>
             )}
             {row.text}

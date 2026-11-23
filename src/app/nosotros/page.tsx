@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowUpRight, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { pages } from '@/content/pages';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
@@ -16,21 +17,26 @@ const breadcrumbs = [
   { name: 'Nosotros', path: '/nosotros' },
 ];
 
-const link = 'font-semibold text-ink underline underline-offset-4';
+const link =
+  'font-semibold text-ink underline decoration-ink/30 underline-offset-4 transition-colors duration-200 hover:decoration-ink';
+const contactIcon =
+  'grid size-11 shrink-0 place-items-center rounded-full bg-surface shadow-card';
+const contactLink =
+  'inline-flex min-h-11 items-center text-lg font-semibold tracking-[-0.015em] underline-offset-4 hover:underline';
 
 export default function NosotrosPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <section className="border-b-2 border-ink py-12 md:py-20">
+      <section className="pb-16 pt-8 md:pb-24 md:pt-14">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
           <SectionHeader
             level="h1"
             eyebrow="Nosotros"
             title={
               <>
-                Hacemos Atende en Córdoba,{' '}
-                <span className="text-coral">para que tu WhatsApp termine tareas.</span>
+                <span className="block">Hacemos Atende en Córdoba,</span>{' '}
+                <span className="block text-faint">para que tu WhatsApp termine tareas.</span>
               </>
             }
             sub="Atende se hace en Córdoba, Argentina. Es un asistente para el WhatsApp de negocios argentinos: conectado a tu sistema, reserva el turno, registra el pedido o cotiza en la conversación, con tu equipo al tanto."
@@ -38,13 +44,11 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <section className="border-b-2 border-ink bg-surface py-14 md:py-20">
+      <section className="pb-16 md:pb-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl">
-            Cómo trabajamos
-          </h2>
+          <h2 className="text-balance text-headline">Cómo trabajamos</h2>
           <FactRows
-            className="mt-8"
+            className="mt-8 md:mt-12"
             rows={[
               {
                 label: 'Publicamos qué funciona hoy',
@@ -73,8 +77,8 @@ export default function NosotrosPage() {
                 ),
               },
               {
-                label: 'Marcamos los ejemplos',
-                text: 'Las conversaciones del sitio dicen “Ejemplo ilustrativo”. No son clientes ni testimonios, y la demo se presenta como demo.',
+                label: 'No inventamos clientes',
+                text: 'Las conversaciones del sitio muestran cómo trabaja Atende. No son clientes ni testimonios, y la demo se presenta como demo.',
               },
               {
                 label: 'Decimos los límites',
@@ -106,32 +110,47 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <section className="border-b-2 border-ink py-14 md:py-20">
+      <section className="pb-16 md:pb-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl">
-            Cómo contactarnos
-          </h2>
-          <ul className="mt-6 flex flex-col text-lg">
-            <li>
+          <h2 className="text-balance text-headline">Cómo contactarnos</h2>
+          <ul className="mt-8 flex flex-col gap-4 md:mt-12 lg:flex-row lg:gap-12">
+            <li className="flex items-center gap-4">
+              <span className={contactIcon} aria-hidden="true">
+                <MessageCircle size={20} strokeWidth={1.75} />
+              </span>
               <a
                 href={buildWaLink('Hola, quiero hablar con el equipo de Atende')}
                 data-cta="about-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+                className={contactLink}
               >
-                WhatsApp · {site.whatsapp.display} ↗
+                <span>
+                  WhatsApp ·{' '}
+                  {/* The number and its icon never break apart. */}
+                  <span className="whitespace-nowrap">
+                    {site.whatsapp.display}
+                    <ArrowUpRight
+                      size={18}
+                      className="ml-1 inline-block align-[-0.15em] text-muted"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </span>
               </a>
             </li>
-            <li>
-              <a
-                href={`mailto:${site.email}`}
-                className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-              >
+            <li className="flex items-center gap-4">
+              <span className={contactIcon} aria-hidden="true">
+                <Mail size={20} strokeWidth={1.75} />
+              </span>
+              <a href={`mailto:${site.email}`} className={contactLink}>
                 {site.email}
               </a>
             </li>
-            <li className="flex min-h-11 items-center text-mute">
+            <li className="flex min-h-11 items-center gap-4 text-lg text-muted">
+              <span className={contactIcon} aria-hidden="true">
+                <MapPin size={20} strokeWidth={1.75} className="text-ink" />
+              </span>
               {site.location}
             </li>
           </ul>

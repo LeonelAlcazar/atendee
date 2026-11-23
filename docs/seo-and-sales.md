@@ -82,7 +82,7 @@ Product claims were checked against the sibling repositories on 2026-09-10:
 - `atende-agent/src/infrastructure/features/faq/faq.feature.ts` and `lifecycle/lifecycle.feature.ts`: configured answers and human escalation.
 - `atende-dashboard/src/lib/billing/plans.ts`: monthly agent-response limits and plans filtered by deployment configuration. Public pricing points to the actual enabled checkout plans rather than duplicating potentially unavailable prices.
 
-Calendar reservations, reminders, live stock and CRM operations are built on request for each business. Examples are explicitly illustrative. Do not add invented customer counts, testimonials, ratings, conversion uplifts, guaranteed availability, implementation deadlines or free-trial terms.
+Calendar reservations, reminders, live stock and CRM operations are built on request for each business. Since the 2026-11-23 redesign, the owner's `DESIGN_SYSTEM.md` bans disclaimers such as "Ejemplo ilustrativo" on commercial pages: examples keep naming the connection an action depends on ("Con la agenda conectada"), and blog posts keep their own labels. Do not add invented customer counts, testimonials, ratings, conversion uplifts, guaranteed availability, implementation deadlines or free-trial terms.
 
 The existing Plan CRM and WhatsApp MCP pricing statements were rechecked against the current sibling repositories on 2026-10-28:
 

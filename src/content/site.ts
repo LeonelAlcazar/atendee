@@ -15,12 +15,6 @@ export const site = {
   email: 'hola@atende.com.ar',
   location: 'Córdoba, Argentina',
   legalName: 'atende',
-  trustStrip: [
-    'Vinculá WhatsApp desde tu panel con un QR',
-    'Tu número sigue siendo el mismo',
-    'Conexiones a pedido para tu negocio',
-    'Hablás con el equipo por WhatsApp o email',
-  ] as const,
   // Only real, owner-confirmed public profiles. Consumed by Organization.sameAs.
   sameAs: [] as readonly string[],
 } as const;

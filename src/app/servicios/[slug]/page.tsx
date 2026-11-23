@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import { servicios } from '@/content/servicios';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
@@ -9,11 +8,17 @@ import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
-import { ChatMockup } from '@/components/ui/ChatMockup';
 import { Faq } from '@/components/landing/Faq';
 import { CtaFinal } from '@/components/landing/CtaFinal';
 import { FactRows } from '@/components/servicios/FactRows';
 import { StepCards } from '@/components/servicios/StepCards';
+import {
+  ArrowLink,
+  ChatScene,
+  DoneList,
+  LinkRows,
+  TileLink,
+} from '@/components/servicios/ServiceBlock';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -45,8 +50,8 @@ export default async function ServicePage({ params }: Props) {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <section className="border-b-2 border-ink py-12 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-start gap-12 px-5 md:px-8 lg:grid-cols-[1.3fr_0.7fr]">
+      <section className="pb-12 pt-8 md:pb-18 md:pt-14">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:px-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16">
           <div>
             <SectionHeader
               level="h1"
@@ -54,108 +59,105 @@ export default async function ServicePage({ params }: Props) {
               title={service.headline}
               sub={service.description}
             />
-            <div className="mt-8 flex flex-wrap gap-3">
+            {/* On phones the longest label ("Consultar por mi atención al
+                cliente") needs a little less padding to stay on one line. */}
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
                 href={buildDemoLink(service.slug)}
                 data-cta={`solution-${service.id}-demo`}
                 size="lg"
+                className="w-full max-sm:px-5! max-sm:text-[1rem]! sm:w-auto"
               >
-                {service.demoLabel} →
+                {service.demoLabel}
               </Button>
-              <Button href="/precios" variant="outline" size="lg">
+              <Button
+                href="/precios"
+                variant="outline"
+                size="lg"
+                className="w-full max-sm:px-5! max-sm:text-[1rem]! sm:w-auto"
+              >
                 Ver cómo se cobra
               </Button>
             </div>
           </div>
-          <ChatMockup
+          <ChatScene
             messages={service.conversation}
-            caption={service.caption}
             result={service.result}
+            connection={service.caption}
           />
         </div>
       </section>
 
-      <section className="border-b-2 border-ink bg-surface py-14 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-2 md:px-8">
+      <section className="py-12 md:py-18">
+        <div className="mx-auto grid max-w-7xl items-start gap-12 px-5 md:px-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16">
           <div>
-            <h2 className="font-display text-3xl font-semibold tracking-[-0.025em]">
+            <h2 className="max-w-2xl text-balance text-headline">
               {service.doneTitle}
             </h2>
-            <ul className="mt-5 flex flex-col gap-3 text-lg">
-              {service.bullets.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    className="mt-2.5 size-2 shrink-0 bg-coral"
-                    aria-hidden="true"
-                  />
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <DoneList items={service.bullets} className="mt-8 md:mt-10" />
           </div>
-          <div>
-            <h2 className="font-display text-3xl font-semibold tracking-[-0.025em]">
+          <div className="rounded-3xl bg-surface p-7 shadow-card md:p-9">
+            <h2 className="text-title">
               Para quién es
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-mute">
+            <p className="mt-3 leading-relaxed text-muted">
               {service.fit}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="border-b-2 border-ink py-14 md:py-20">
+      <section className="py-12 md:py-18">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="max-w-4xl font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl">
+          <h2 className="max-w-4xl text-balance text-headline">
             {service.detail.title}
           </h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-mute">
+          <p className="mt-5 max-w-2xl text-pretty text-lead text-muted">
             {service.detail.intro}
           </p>
-          <FactRows rows={service.detail.rows} className="mt-8" />
+          <FactRows rows={service.detail.rows} className="mt-8 md:mt-12" />
         </div>
       </section>
 
-      <section className="border-b-2 border-ink bg-surface py-14 md:py-20">
+      <section className="py-12 md:py-18">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl">
+          <h2 className="max-w-4xl text-balance text-headline">
             {service.workflowTitle}
           </h2>
-          <StepCards steps={service.workflow} className="mt-8" />
+          <StepCards steps={service.workflow} className="mt-8 md:mt-14" />
         </div>
       </section>
 
-      <section className="border-b-2 border-ink py-14 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-16">
+      <section className="py-12 md:py-18">
+        <div className="mx-auto grid max-w-7xl items-start gap-12 px-5 md:px-8 lg:grid-cols-2 lg:gap-16">
           <div>
-            <h2 className="font-display text-3xl font-semibold tracking-[-0.025em] md:text-4xl">
+            <h2 className="text-balance text-headline">
               {service.human.title}
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-mute">
+            <p className="mt-5 text-pretty text-lead text-muted">
               {service.human.text}
             </p>
-            <ul className="mt-5 flex flex-col gap-3">
+            <ul className="mt-8 border-t border-line-strong">
               {service.human.items.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    className="mt-2 size-2 shrink-0 bg-ink"
-                    aria-hidden="true"
-                  />
+                <li
+                  key={item}
+                  className="border-b border-line py-4 leading-relaxed"
+                >
                   {item}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex flex-col gap-6">
-            <div>
-              <h2 className="font-display text-2xl font-semibold tracking-[-0.02em]">
+          <div className="flex flex-col gap-4 md:gap-5">
+            <div className="rounded-3xl bg-surface p-7 shadow-card md:p-9">
+              <h2 className="text-title">
                 Qué necesitamos de tu negocio
               </h2>
-              <ul className="mt-4 flex flex-col gap-3 leading-relaxed text-mute">
+              <ul className="mt-5 flex flex-col gap-3 leading-relaxed text-muted">
                 {service.requirements.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span
-                      className="mt-2 size-2 shrink-0 bg-ink"
+                      className="mt-[0.7em] size-1.5 shrink-0 rounded-full bg-ink/40"
                       aria-hidden="true"
                     />
                     {item}
@@ -163,47 +165,43 @@ export default async function ServicePage({ params }: Props) {
                 ))}
               </ul>
             </div>
-            <div className="rounded-lg border-2 border-ink bg-coral-soft p-6 shadow-[var(--shadow-brut-sm)]">
-              <h2 className="font-display text-2xl font-semibold tracking-[-0.02em]">
+            <div className="rounded-3xl bg-surface p-7 shadow-card md:p-9">
+              <h2 className="text-title">
                 Si todavía no hay conexión
               </h2>
-              <p className="mt-3 leading-relaxed">{service.scope}</p>
-              <Link
-                href="/integraciones"
-                className="mt-3 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-              >
-                Cómo se arma la conexión →
-              </Link>
+              <p className="mt-3 leading-relaxed text-muted">{service.scope}</p>
+              <ArrowLink href="/integraciones" className="mt-2">
+                Cómo se arma la conexión
+              </ArrowLink>
             </div>
           </div>
         </div>
       </section>
 
       {service.notes.length > 0 && (
-        <section className="border-b-2 border-ink bg-surface py-14 md:py-20">
+        <section className="py-12 md:py-18">
           <div
-            className={`mx-auto grid max-w-7xl gap-5 px-5 md:px-8 ${
+            className={`mx-auto grid max-w-7xl gap-4 px-5 md:gap-5 md:px-8 ${
               service.notes.length > 1 ? 'lg:grid-cols-3' : ''
             }`}
           >
             {service.notes.map((note) => (
               <article
                 key={note.title}
-                className="flex flex-col items-start rounded-lg border-2 border-ink bg-bg p-6 shadow-[var(--shadow-brut-sm)]"
+                className={`flex flex-col items-start rounded-3xl bg-surface p-7 shadow-card md:p-9 ${
+                  service.notes.length > 1 ? '' : 'max-w-4xl'
+                }`}
               >
-                <h2 className="font-display text-2xl font-semibold leading-tight tracking-[-0.02em]">
+                <h2 className="text-balance text-title">
                   {note.title}
                 </h2>
-                <p className="mt-3 max-w-3xl leading-relaxed text-mute">
+                <p className="mt-3 max-w-3xl leading-relaxed text-muted">
                   {note.text}
                 </p>
                 {note.link && (
-                  <Link
-                    href={note.link.href}
-                    className="mt-3 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-                  >
-                    {note.link.label}&nbsp;→
-                  </Link>
+                  <ArrowLink href={note.link.href} className="mt-auto">
+                    {note.link.label}
+                  </ArrowLink>
                 )}
               </article>
             ))}
@@ -213,68 +211,53 @@ export default async function ServicePage({ params }: Props) {
 
       <nav
         aria-label="Rubros y guías de esta solución"
-        className="border-b-2 border-ink bg-mint/35 py-12"
+        className="pt-12 md:pt-18"
       >
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-16">
           <div>
-            <h2 className="font-display text-2xl font-semibold">
+            <h2 className="text-title">
               Por rubro
             </h2>
-            <ul className="mt-3 flex flex-col gap-1">
-              {service.rubros.map((rubro) => (
-                <li key={rubro.slug}>
-                  <Link
-                    href={`/casos-de-uso/${rubro.slug}`}
-                    className="inline-flex min-h-11 items-center underline underline-offset-4"
-                  >
-                    {rubro.label}&nbsp;→
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <LinkRows
+              className="mt-5"
+              links={service.rubros.map((rubro) => ({
+                href: `/casos-de-uso/${rubro.slug}`,
+                label: rubro.label,
+              }))}
+            />
           </div>
           <div>
-            <h2 className="font-display text-2xl font-semibold">Guías</h2>
-            <ul className="mt-3 flex flex-col gap-1">
-              {service.guides.map((guide) => (
-                <li key={guide.slug}>
-                  <Link
-                    href={`/blog/${guide.slug}`}
-                    className="inline-flex min-h-11 items-center underline underline-offset-4"
-                  >
-                    {guide.label}&nbsp;→
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <h2 className="text-title">Guías</h2>
+            <LinkRows
+              className="mt-5"
+              links={service.guides.map((guide) => ({
+                href: `/blog/${guide.slug}`,
+                label: guide.label,
+              }))}
+            />
           </div>
         </div>
       </nav>
 
-      <Faq items={service.faq} />
-
       <nav
         aria-label="Otras soluciones"
-        className="mx-auto max-w-7xl px-5 pt-10 md:px-8"
+        className="mx-auto max-w-7xl px-5 pt-12 md:px-8 md:pt-18"
       >
-        <p className="font-display text-xl font-semibold">
+        <p className="text-title">
           También podés resolver
         </p>
-        <ul className="mt-3 flex flex-wrap gap-x-6">
+        <ul className="mt-5 grid gap-3 md:grid-cols-2 md:gap-4">
           {servicios
             .filter((item) => item.id !== service.id)
             .map((item) => (
               <li key={item.id}>
-                <Link
-                  href={`/servicios/${item.slug}`}
-                  className="inline-flex min-h-11 items-center underline underline-offset-4"
-                >
-                  {item.title}&nbsp;→
-                </Link>
+                <TileLink href={`/servicios/${item.slug}`} title={item.title} />
               </li>
             ))}
         </ul>
       </nav>
+
+      <Faq items={service.faq} />
       <CtaFinal context={service.ctaContext} demoSource={service.slug} />
       <JsonLd
         value={pageGraph({

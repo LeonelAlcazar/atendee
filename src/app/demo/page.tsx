@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Check, Mail, MessageCircle } from 'lucide-react';
 import { pages } from '@/content/pages';
 import { site } from '@/content/site';
 import { buildWaLink } from '@/lib/wa';
@@ -15,83 +16,113 @@ const breadcrumbs = [
   { name: 'Pedí una demo', path: '/demo' },
 ];
 
+const contactLink =
+  'group inline-flex min-h-11 items-center gap-3 font-semibold text-ink';
+const contactIcon =
+  'grid size-11 shrink-0 place-items-center rounded-full bg-surface shadow-card transition-colors duration-200 group-hover:bg-ink group-hover:text-white';
+
+// The most focused page of the site: the ask, then the form, with the direct
+// channels right under it. What we look at together follows on phones and sits
+// beside the form on wide screens.
 export default function DemoPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <section className="py-12 md:py-20">
-        <div className="mx-auto grid max-w-7xl items-start gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-x-12">
+      <section className="pb-16 pt-8 md:pb-24 md:pt-14">
+        <div className="mx-auto grid max-w-7xl items-start gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12">
           <SectionHeader
             level="h1"
             eyebrow="Pedí una demo"
             title={
               <>
-                ¿Qué querés reservar, cotizar o registrar{' '}
-                <span className="text-coral">por WhatsApp?</span>
+                <span className="block">¿Qué querés reservar, cotizar o registrar</span>{' '}
+                <span className="block text-faint">por WhatsApp?</span>
               </>
             }
             sub="Traé una consulta que se repita en tu negocio. Revisamos dónde tiene que quedar el turno, el pedido o el presupuesto, qué sistema habría que conectar y cómo supervisa la tarea tu equipo."
           />
-          <div className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+          <div className="flex flex-col gap-10 lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <DemoForm />
+            <div className="px-1 md:px-2">
+              <h2 className="text-lg font-semibold tracking-[-0.015em]">
+                También podés escribirnos directo
+              </h2>
+              <div className="mt-4 flex flex-col gap-3">
+                <a
+                  href={buildWaLink(
+                    'Hola, quiero pedir una demo de Atende para mi negocio',
+                  )}
+                  data-cta="demo-direct-whatsapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={contactLink}
+                >
+                  <span className={contactIcon} aria-hidden="true">
+                    <MessageCircle size={20} strokeWidth={1.75} />
+                  </span>
+                  <span className="underline-offset-4 group-hover:underline">
+                    WhatsApp · {site.whatsapp.display} ↗
+                  </span>
+                </a>
+                <a
+                  href={`mailto:${site.email}`}
+                  data-cta="demo-direct-email"
+                  className={contactLink}
+                >
+                  <span className={contactIcon} aria-hidden="true">
+                    <Mail size={20} strokeWidth={1.75} />
+                  </span>
+                  <span className="underline-offset-4 group-hover:underline">
+                    {site.email}
+                  </span>
+                </a>
+              </div>
+              <p className="mt-6 text-sm leading-relaxed text-muted">
+                Después de que nos escribas, coordinamos la demo por el canal que elijas. Podés{' '}
+                <Link
+                  href="/precios"
+                  className="font-semibold text-ink underline underline-offset-4 hover:text-coral-strong"
+                >
+                  ver los planes y precios
+                </Link>
+                {' '}antes de hablar con el equipo.
+              </p>
+            </div>
           </div>
-          <div>
-            <h2 className="font-display text-2xl font-semibold">
-              Qué miramos juntos
-            </h2>
-            <ul className="mt-4 flex flex-col gap-3 text-lg leading-relaxed text-mute">
-              {[
-                'La tarea, desde el primer mensaje hasta que queda hecha.',
-                'El sistema donde la llevás hoy y cómo se conecta. Esa conexión se arma a pedido para tu negocio.',
-                'Qué hace el asistente solo y qué queda para tu equipo.',
-                'Qué plan te sirve y cómo se cotiza la conexión.',
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    className="mt-2.5 size-2 shrink-0 bg-coral"
-                    aria-hidden="true"
-                  />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 rounded-lg border-2 border-ink bg-mint p-5 leading-relaxed">
-              En nuestra demo de motos, Atende consulta stock, calcula cuotas y registra al interesado en Google Sheets. Ejemplo ilustrativo de lo que queda guardado al terminar el chat: el modelo que pidió, su nombre y su teléfono.{' '}
+          <div className="flex flex-col gap-10 md:gap-12">
+            <div>
+              <h2 className="text-title">Qué miramos juntos</h2>
+              <ul className="mt-5 flex flex-col gap-4">
+                {[
+                  'La tarea, desde el primer mensaje hasta que queda hecha.',
+                  'El sistema donde la llevás hoy y cómo se conecta. Esa conexión se arma a pedido para tu negocio.',
+                  'Qué hace el asistente solo y qué queda para tu equipo.',
+                  'Qué plan te sirve y cómo se cotiza la conexión.',
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-3.5 leading-relaxed text-muted md:text-lg"
+                  >
+                    <span
+                      className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-forest-tint text-forest md:mt-1"
+                      aria-hidden="true"
+                    >
+                      <Check size={14} strokeWidth={2.75} />
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="rounded-3xl bg-surface p-6 leading-relaxed text-muted shadow-card md:p-7">
+              En nuestra demo de motos, Atende consulta stock, calcula cuotas y registra al interesado en Google Sheets. Al terminar el chat queda guardado el modelo que pidió, su nombre y su teléfono.{' '}
               <Link
                 href="/integraciones"
-                className="font-semibold underline underline-offset-4"
+                className="font-semibold text-coral-strong underline-offset-4 hover:underline"
               >
                 Cómo armamos cada conexión
               </Link>
               .
-            </p>
-            <div className="mt-6 rounded-lg border-2 border-ink bg-coral-soft p-6">
-              <h2 className="font-display text-xl font-semibold">
-                También podés escribirnos directo
-              </h2>
-              <a
-                href={buildWaLink(
-                  'Hola, quiero pedir una demo de Atende para mi negocio',
-                )}
-                data-cta="demo-direct-whatsapp"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 flex min-h-11 items-center font-semibold underline underline-offset-4"
-              >
-                WhatsApp · {site.whatsapp.display} ↗
-              </a>
-              <a
-                href={`mailto:${site.email}`}
-                data-cta="demo-direct-email"
-                className="flex min-h-11 items-center font-semibold underline underline-offset-4"
-              >
-                {site.email}
-              </a>
-            </div>
-            <p className="mt-6 text-sm leading-relaxed text-mute">
-              Después de que nos escribas, coordinamos la demo por el canal que elijas. Podés{' '}
-              <Link href="/precios" className="font-semibold underline underline-offset-4">ver los planes y precios</Link>
-              {' '}antes de hablar con el equipo.
             </p>
           </div>
         </div>

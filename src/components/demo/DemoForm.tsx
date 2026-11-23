@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Link from 'next/link';
+import { Check, ChevronDown, Plus } from 'lucide-react';
 import { site } from '@/content/site';
 import {
   buildLeadMessage,
@@ -15,13 +16,32 @@ import { trackConversion } from '@/lib/conversions';
 import { recordDemoStarted, recordPreparedDemo } from '@/lib/metrics';
 import { Button } from '@/components/ui/Button';
 
-const field =
-  'mt-2 min-h-12 w-full rounded-md border-2 border-ink bg-surface px-3 py-3 text-base';
+// Large, calm fields. Each label wraps its field, so the field resets the
+// label's weight. :user-invalid marks a field only after the visitor touched
+// it or tried to send; the browser still shows its own message.
+const label = 'block text-[0.9375rem] font-semibold';
+const control =
+  'w-full rounded-xl bg-surface px-4 text-base font-normal text-ink ring-1 ring-inset ring-line-strong ' +
+  'transition-shadow duration-200 placeholder:text-muted hover:ring-ink/30 ' +
+  'user-invalid:ring-2 user-invalid:ring-coral-strong';
+const field = `${control} mt-2 block h-14`;
+// The chevron replaces the native arrow. A required select still on its empty
+// choice reads as a placeholder.
+const select = `${control} block h-14 appearance-none pr-12 invalid:text-muted [&>option]:text-ink`;
+const chevron =
+  'pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-muted';
+const textLink =
+  'inline-flex min-h-11 min-w-11 items-center gap-1.5 font-semibold text-coral-strong underline-offset-4 hover:underline';
+// The draft's links keep one line on phones and grow to the large size above.
+const draftButton = 'sm:min-h-13 sm:px-7 sm:text-[1.0625rem]';
 
 export function DemoForm() {
   const [ready, setReady] = useState(false);
   const [message, setMessage] = useState('');
   const [task, setTask] = useState('');
+  // The optional questions start folded. Folded fields stay in the form, so
+  // whatever the visitor wrote is still sent.
+  const [moreOpen, setMoreOpen] = useState(false);
   const preview = useRef<HTMLDivElement>(null);
   const taskEdited = useRef(false);
   const source = useRef<string | undefined>(undefined);
@@ -80,35 +100,30 @@ export function DemoForm() {
   }
 
   return (
-    <div className="rounded-lg border-2 border-ink bg-bg p-5 shadow-[var(--shadow-brut)] sm:p-8">
-      <h2 className="font-display text-2xl font-semibold">
-        Pedí una demo para tu negocio
-      </h2>
-      <p className="mt-3 leading-relaxed text-mute">
+    <div className="rounded-4xl bg-surface p-6 shadow-float md:p-9">
+      <h2 className="text-title">Pedí una demo para tu negocio</h2>
+      <p className="mt-3 leading-relaxed text-muted">
         Con el nombre de tu negocio y una tarea alcanza. Revisás y enviás el
         mensaje desde WhatsApp o email. Los campos con * son obligatorios.
       </p>
       <noscript>
-        <div className="mt-5 leading-relaxed">
+        <div className="mt-5 rounded-2xl bg-bg p-4 leading-relaxed">
           <p>
             Si el formulario no se activa, escribinos directo por WhatsApp o
             email.
           </p>
-          <div className="mt-2 flex flex-wrap gap-x-6">
+          <div className="mt-1 flex flex-wrap gap-x-6">
             <a
               href={buildWaLink(
                 'Hola, quiero pedir una demo de Atende para mi negocio',
               )}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 min-w-11 items-center font-semibold underline underline-offset-4"
+              className={textLink}
             >
               WhatsApp ↗
             </a>
-            <a
-              href={`mailto:${site.email}`}
-              className="inline-flex min-h-11 min-w-11 items-center font-semibold underline underline-offset-4"
-            >
+            <a href={`mailto:${site.email}`} className={textLink}>
               Email
             </a>
           </div>
@@ -116,7 +131,7 @@ export function DemoForm() {
       </noscript>
       <form
         onSubmit={openDraft}
-        className="mt-6"
+        className="mt-7"
         onChange={(event) => {
           setMessage('');
           const input = event.target;
@@ -133,7 +148,7 @@ export function DemoForm() {
           className="grid min-w-0 gap-5 disabled:opacity-60"
         >
           <legend className="sr-only">Datos para pedir una demo</legend>
-          <label className="font-semibold" htmlFor="company">
+          <label className={label} htmlFor="company">
             Tu negocio *
             <input
               id="company"
@@ -145,122 +160,155 @@ export function DemoForm() {
               className={field}
             />
           </label>
-          <label className="font-semibold" htmlFor="task">
+          <label className={label} htmlFor="task">
             ¿Qué querés automatizar primero? *
-            <select
-              id="task"
-              name="task"
-              required
-              value={task}
-              onChange={(event) => {
-                taskEdited.current = true;
-                setTask(event.currentTarget.value);
-              }}
-              className={field}
-            >
-              <option value="" disabled>
-                Elegí una tarea
-              </option>
-              {demoTasks.map((item) => (
-                <option key={item}>{item}</option>
-              ))}
-            </select>
+            <span className="relative mt-2 block">
+              <select
+                id="task"
+                name="task"
+                required
+                value={task}
+                onChange={(event) => {
+                  taskEdited.current = true;
+                  setTask(event.currentTarget.value);
+                }}
+                className={select}
+              >
+                <option value="" disabled>
+                  Elegí una tarea
+                </option>
+                {demoTasks.map((item) => (
+                  <option key={item}>{item}</option>
+                ))}
+              </select>
+              <ChevronDown size={18} aria-hidden="true" className={chevron} />
+            </span>
           </label>
-          <details className="rounded-md border-2 border-ink/25 bg-surface/50 px-4">
-            <summary className="min-h-12 cursor-pointer py-3 font-semibold">
+          <div className="rounded-2xl bg-bg/70">
+            <button
+              type="button"
+              aria-expanded={moreOpen}
+              aria-controls="demo-contexto"
+              onClick={() => setMoreOpen((open) => !open)}
+              className="group flex min-h-14 w-full items-center justify-between gap-4 rounded-2xl px-4 text-left text-[0.9375rem] font-semibold"
+            >
               Sumar contexto (opcional)
-            </summary>
-            <div className="grid gap-5 pb-4 pt-2">
-              <label className="font-semibold" htmlFor="system">
+              <span
+                className="grid size-8 shrink-0 place-items-center rounded-full bg-surface shadow-card transition-[transform,background-color,color] duration-300 ease-smooth group-aria-expanded:rotate-45 group-aria-expanded:bg-ink group-aria-expanded:text-white"
+                aria-hidden="true"
+              >
+                <Plus size={16} strokeWidth={2} />
+              </span>
+            </button>
+            <div
+              id="demo-contexto"
+              hidden={!moreOpen}
+              className="grid gap-5 px-4 pb-5 pt-1"
+            >
+              <label className={label} htmlFor="system">
                 ¿Dónde llevás esa tarea hoy?
-                <select
-                  id="system"
-                  name="system"
-                  defaultValue=""
-                  className={field}
-                >
-                  <option value="">Lo vemos juntos</option>
-                  {demoSystems.map((item) => (
-                    <option key={item}>{item}</option>
-                  ))}
-                </select>
+                <span className="relative mt-2 block">
+                  <select
+                    id="system"
+                    name="system"
+                    defaultValue=""
+                    className={select}
+                  >
+                    <option value="">Lo vemos juntos</option>
+                    {demoSystems.map((item) => (
+                      <option key={item}>{item}</option>
+                    ))}
+                  </select>
+                  <ChevronDown size={18} aria-hidden="true" className={chevron} />
+                </span>
               </label>
-              <label className="font-semibold" htmlFor="volume">
+              <label className={label} htmlFor="volume">
                 Consultas por WhatsApp al mes
-                <select
-                  id="volume"
-                  name="volume"
-                  defaultValue=""
-                  className={field}
-                >
-                  <option value="">Elegí un rango (opcional)</option>
-                  {demoVolumes.map((item) => (
-                    <option key={item}>{item}</option>
-                  ))}
-                </select>
+                <span className="relative mt-2 block">
+                  <select
+                    id="volume"
+                    name="volume"
+                    defaultValue=""
+                    className={select}
+                  >
+                    <option value="">Elegí un rango (opcional)</option>
+                    {demoVolumes.map((item) => (
+                      <option key={item}>{item}</option>
+                    ))}
+                  </select>
+                  <ChevronDown size={18} aria-hidden="true" className={chevron} />
+                </span>
               </label>
-              <label className="font-semibold" htmlFor="notes">
+              <label className={label} htmlFor="notes">
                 Algo más que debamos saber
                 <textarea
                   id="notes"
                   name="notes"
                   rows={3}
                   maxLength={600}
-                  className={field}
+                  className={`${control} mt-2 block min-h-28 py-3 leading-relaxed`}
                   aria-describedby="notes-help"
                 />
                 <span
                   id="notes-help"
-                  className="mt-2 block text-sm font-normal text-mute"
+                  className="mt-2 block text-sm font-normal leading-relaxed text-muted"
                 >
                   Por ejemplo tu rubro, cómo se llama tu sistema o cuántas
                   personas atienden. Hasta 600 caracteres.
                 </span>
               </label>
             </div>
-          </details>
-          <p className="text-sm leading-relaxed text-mute">
+          </div>
+          <p className="text-sm leading-relaxed text-muted">
             Revisá el borrador y envialo desde tu WhatsApp o email para que te contactemos.{' '}
             <Link
               href="/politica-de-privacidad"
-              className="underline underline-offset-4"
+              className="font-medium text-ink underline underline-offset-4 hover:text-coral-strong"
             >
               Política de privacidad
             </Link>
             .
           </p>
-          <button
-            type="submit"
-            name="channel"
-            value="whatsapp"
-            className="min-h-12 rounded-md border-2 border-ink bg-coral px-5 py-3 font-display text-lg font-semibold shadow-[var(--shadow-brut-sm)] hover:bg-coral-soft"
-          >
-            Revisar en WhatsApp ↗
-          </button>
-          <button
-            type="submit"
-            name="channel"
-            value="email"
-            className="min-h-11 justify-self-center rounded-sm px-3 text-sm font-semibold underline underline-offset-4"
-          >
-            Prefiero usar email
-          </button>
+          <div className="grid gap-1">
+            <button
+              type="submit"
+              name="channel"
+              value="whatsapp"
+              className="inline-flex min-h-14 w-full items-center justify-center rounded-full bg-coral-fill px-7 py-3 text-center text-[1.0625rem] font-semibold leading-tight tracking-[-0.01em] text-white shadow-cta transition-[transform,background-color,box-shadow] duration-200 ease-smooth hover:bg-coral-strong active:scale-[0.97]"
+            >
+              Revisar en WhatsApp
+            </button>
+            <button
+              type="submit"
+              name="channel"
+              value="email"
+              className="min-h-11 justify-self-center rounded-full px-4 text-[0.9375rem] font-semibold text-ink underline decoration-line-strong underline-offset-4 transition-colors duration-200 hover:decoration-ink"
+            >
+              Prefiero usar email
+            </button>
+          </div>
         </fieldset>
       </form>
       {message && (
         <div
           ref={preview}
           tabIndex={-1}
-          className="mt-8 rounded-md border-2 border-ink bg-mint p-5"
+          className="mt-8 rounded-3xl bg-forest-tint p-4 sm:p-6"
         >
-          <h3 className="font-display text-xl font-semibold">
+          <h3 className="flex items-center gap-3 text-title">
+            <span
+              className="grid size-9 shrink-0 place-items-center rounded-full bg-coral text-white"
+              aria-hidden="true"
+            >
+              <Check size={18} strokeWidth={3} />
+            </span>
             Tu mensaje está listo para enviar
           </h3>
-          <p className="mt-2 text-sm">
+          <p className="mt-3 text-sm leading-relaxed text-ink/80">
             Si el borrador no se abrió, usá uno de estos enlaces. Revisá el
             mensaje y envialo desde el canal que elijas.
           </p>
-          <p className="mt-4 whitespace-pre-wrap break-words text-sm leading-relaxed">
+          <p className="mt-4 whitespace-pre-wrap break-words rounded-2xl bg-surface p-4 text-sm leading-relaxed">
             {message}
           </p>
           <div className="mt-5 flex flex-col gap-3">
@@ -269,13 +317,15 @@ export function DemoForm() {
               data-cta="demo-whatsapp"
               target="_blank"
               rel="noopener noreferrer"
+              className={draftButton}
             >
-              Volver a abrir WhatsApp ↗
+              Volver a abrir WhatsApp
             </Button>
             <Button
               href={`mailto:${site.email}?subject=${encodeURIComponent('Demo de Atende para mi negocio')}&body=${encodeURIComponent(message)}`}
               data-cta="demo-email"
               variant="outline"
+              className={draftButton}
             >
               Preparar email
             </Button>

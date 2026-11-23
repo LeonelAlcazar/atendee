@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { ArrowRight, Plus } from 'lucide-react';
 import { getPost, getPosts } from '@/lib/blog';
 import { formatBlogDate } from '@/lib/blog-content';
 import { postBreadcrumbs, postGraph, postMetadata } from '@/lib/blog-seo';
@@ -19,14 +20,39 @@ export const dynamicParams = true;
 export function generateStaticParams() {
   return getPosts().map((post) => ({ slug: post.slug }));
 }
+// A quiet rail on desktop; full-size rows on a phone.
 const tocLinkClass =
-  'flex min-h-11 items-center underline-offset-4 hover:underline lg:min-h-0';
+  '-ml-px flex min-h-11 items-center border-l border-transparent py-1.5 pl-4 transition-colors duration-200 hover:border-current hover:text-ink lg:min-h-0';
+// Related guides fill the row they have: two, three or a two-by-two grid.
+const relatedGrid: Record<number, string> = {
+  3: 'md:grid-cols-2 lg:grid-cols-3',
+};
+// The arrow stays on the last word when a long label wraps.
+function withArrow(label: string) {
+  const split = label.lastIndexOf(' ') + 1;
+  return (
+    <>
+      {label.slice(0, split)}
+      <span className="whitespace-nowrap">
+        {label.slice(split)}
+        <ArrowRight
+          size={16}
+          aria-hidden="true"
+          className="ml-1.5 inline-block align-[-0.125em] transition-transform duration-200 ease-smooth group-hover:translate-x-0.5"
+        />
+      </span>
+    </>
+  );
+}
 type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props) {
   const post = getPost((await params).slug);
   if (!post) notFound();
   return postMetadata(post);
 }
+// The site audit reads the header as a contract: one opening (the sales intro
+// or the description <p>, the only direct <p>), then the CTA row with its two
+// links as direct children, then the byline. Keep that order.
 export default async function PostPage({ params }: Props) {
   const post = getPost((await params).slug);
   if (!post) notFound();
@@ -34,49 +60,52 @@ export default async function PostPage({ params }: Props) {
     (slug) => getPosts().find((item) => item.slug === slug)!,
   );
   const rubro = rubros.find((item) => item.slug === rubroByTopic[post.category]);
-  const rubroLink = rubro && (
-    <p className="mt-5">
-      <Link
-        href={`/casos-de-uso/${rubro.slug}`}
-        className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-      >
-        {rubro.title} →
-      </Link>
-    </p>
-  );
+  // White on the forest panel, coral text on the canvas.
+  const rubroLink = (inverse: boolean) =>
+    rubro && (
+      <p className="mt-6">
+        <Link
+          href={`/casos-de-uso/${rubro.slug}`}
+          className={`group inline-block min-h-11 py-2.5 font-semibold underline-offset-4 hover:underline ${
+            inverse ? 'text-white' : 'text-coral-strong'
+          }`}
+        >
+          {withArrow(rubro.title)}
+        </Link>
+      </p>
+    );
   return (
     <>
       <Breadcrumbs items={postBreadcrumbs(post)} />
-      <article className="mx-auto max-w-7xl px-5 pb-14 pt-10 md:px-8 md:pt-16">
-        <header className="max-w-5xl">
+      <article className="mx-auto max-w-7xl px-5 pb-20 pt-8 md:px-8 md:pb-28 md:pt-14">
+        <header className="max-w-4xl">
           <Link
             href={`/blog/tema/${post.category}`}
-            className="inline-flex min-h-11 items-center rounded-full border border-ink bg-mint px-4 font-mono text-xs"
+            className="inline-flex min-h-11 items-center text-[0.9375rem] font-semibold text-coral-strong underline-offset-4 hover:underline"
           >
             {getBlogTopic(post.category)!.name}
           </Link>
-          <h1 className={`mt-6 break-words font-display ${post.salesIntro ? 'text-3xl sm:text-4xl' : 'text-4xl'} font-semibold leading-[1.07] tracking-[-0.035em] md:text-6xl`}>
-            {post.title}
-          </h1>
+          <h1 className="mt-1 text-balance text-headline">{post.title}</h1>
           {post.salesIntro ? (
             <div
-              className="mt-5 max-w-4xl space-y-2 text-lg leading-relaxed text-mute md:text-xl"
+              className="mt-6 max-w-3xl space-y-1 text-pretty text-lead text-muted"
               data-sales-intro
             >
               {post.salesIntro.map((line) => <p key={line}>{line}</p>)}
             </div>
           ) : (
-            <p className="mt-5 max-w-3xl text-xl leading-relaxed text-mute">
+            <p className="mt-6 max-w-3xl text-pretty text-lead text-muted">
               {post.description}
             </p>
           )}
           {post.lead ? (
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
                 href={buildWaLink(post.lead.message)}
                 data-cta={`blog-${post.slug}-lead-whatsapp`}
                 aria-label={`${post.lead.label} (abre WhatsApp)`}
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 {post.lead.label} →
               </Button>
@@ -85,30 +114,37 @@ export default async function PostPage({ params }: Props) {
                 data-cta={`blog-${post.slug}-lead-demo`}
                 variant="outline"
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 Pedí una demo
               </Button>
             </div>
           ) : post.salesIntro && (
-            <div className="mt-7 flex flex-wrap items-center gap-3">
-              <Button href="/demo" data-cta={`blog-${post.slug}-sales-demo`} size="lg">
-                Pedí una demo →
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Button
+                href="/demo"
+                data-cta={`blog-${post.slug}-sales-demo`}
+                size="lg"
+                className="w-full sm:w-auto"
+              >
+                Pedí una demo
               </Button>
               <Button
                 href={site.appUrl}
                 data-cta={`blog-${post.slug}-sales-app`}
                 variant="outline"
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 Empezá en la app
               </Button>
             </div>
           )}
-          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-mute">
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-muted">
             <Link
               href="/blog/editorial"
               rel="author"
-              className="inline-flex min-h-11 items-center underline underline-offset-4"
+              className="inline-flex min-h-11 items-center font-semibold text-ink underline-offset-4 hover:underline"
             >
               Equipo Atende
             </Link>
@@ -129,29 +165,26 @@ export default async function PostPage({ params }: Props) {
             <span>{post.readingMinutes} min de lectura</span>
           </div>
         </header>
-        <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-x-16">
+        <div className="mt-10 grid max-w-3xl gap-10 md:mt-14 lg:max-w-none lg:grid-cols-[minmax(0,48rem)_13rem] lg:gap-x-12 xl:grid-cols-[minmax(0,48rem)_15rem] xl:gap-x-24">
           {/* First in the DOM: on a phone the answer comes before the index. */}
           <section
             aria-labelledby="respuesta-breve"
-            className="min-w-0 rounded-lg border-2 border-ink bg-mint/60 p-6 shadow-[var(--shadow-brut-sm)] md:p-8 lg:col-start-1 lg:row-start-1"
+            className="min-w-0 max-w-xl rounded-3xl bg-surface p-6 shadow-card sm:p-8 lg:col-start-1 lg:row-start-1"
           >
-            <h2
-              id="respuesta-breve"
-              className="font-mono text-xs uppercase tracking-wider"
-            >
+            <h2 id="respuesta-breve" className="text-sm font-semibold">
               Respuesta breve
             </h2>
-            <p className="mt-4 text-lg leading-relaxed">{post.summary}</p>
+            <p className="mt-3 text-pretty text-lead">{post.summary}</p>
           </section>
           <aside className="lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            {/* Capped at the viewport, so a long index stays reachable on a
+                short laptop screen; the padding keeps focus rings unclipped. */}
             <nav
               aria-label="Índice del artículo"
-              className="rounded-lg border border-ink bg-surface p-6 lg:sticky lg:top-24"
+              className="lg:sticky lg:top-24 lg:-mx-2 lg:max-h-[calc(100svh-7rem)] lg:overflow-y-auto lg:overscroll-contain lg:px-2 lg:py-1"
             >
-              <p className="font-mono text-xs uppercase tracking-wider text-mute">
-                En esta guía
-              </p>
-              <ol className="mt-2 text-sm leading-snug lg:mt-4 lg:space-y-3 lg:leading-relaxed">
+              <p className="text-sm font-semibold">En esta guía</p>
+              <ol className="mt-3 border-l border-line-strong text-[0.9375rem] leading-snug text-muted lg:text-sm">
                 <li>
                   <a href="#respuesta-breve" className={tocLinkClass}>
                     Respuesta breve
@@ -186,46 +219,54 @@ export default async function PostPage({ params }: Props) {
               className="blog-prose"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-            <section
-              id="preguntas-frecuentes"
-              className="mt-12 border-t-2 border-ink pt-8"
-            >
-              <h2 className="font-display text-3xl font-semibold tracking-tight">
-                Preguntas frecuentes
-              </h2>
-              <div className="mt-6 space-y-3">
+            {/* The only <details> on the page: the audit matches them to the
+                FAQ schema. */}
+            <section id="preguntas-frecuentes" className="mt-16 max-w-xl md:mt-20">
+              <h2 className="blog-heading">Preguntas frecuentes</h2>
+              <div className="mt-6 rounded-3xl bg-surface px-5 shadow-card sm:px-8">
                 {post.faq.map((item) => (
                   <details
                     key={item.q}
-                    className="rounded-lg border border-ink bg-surface p-5 open:bg-mint/25"
+                    className="group border-b border-line last:border-b-0"
                   >
-                    <summary className="flex min-h-11 items-center justify-between gap-4 font-display text-lg font-semibold">
-                      {item.q}
-                      <span aria-hidden="true">+</span>
+                    <summary className="flex min-h-16 items-center justify-between gap-5 rounded-xl py-5">
+                      <span className="text-lg font-semibold leading-snug tracking-[-0.015em]">
+                        {item.q}
+                      </span>
+                      <span
+                        className="grid size-9 shrink-0 place-items-center rounded-full bg-bg transition-colors duration-200 group-open:bg-ink group-open:text-white"
+                        aria-hidden="true"
+                      >
+                        <Plus
+                          size={18}
+                          strokeWidth={2}
+                          className="transition-transform duration-300 ease-smooth group-open:rotate-45"
+                        />
+                      </span>
                     </summary>
-                    <p className="mt-4 leading-relaxed text-mute">{item.a}</p>
+                    <p className="pb-6 pr-10 leading-relaxed text-muted">
+                      {item.a}
+                    </p>
                   </details>
                 ))}
               </div>
             </section>
             {post.sources.length > 0 && (
-              <section
-                id="fuentes"
-                className="mt-10 border-t border-ink/25 pt-8"
-              >
-                <h2 className="break-words font-display text-2xl font-semibold">
-                  Fuentes y fecha de consulta
-                </h2>
-                <ul className="mt-4 space-y-3">
+              <section id="fuentes" className="mt-16 max-w-xl md:mt-20">
+                <h2 className="blog-heading">Fuentes y fecha de consulta</h2>
+                <ul className="mt-6 space-y-3">
                   {post.sources.map((source) => (
-                    <li key={source.url} className="text-sm leading-relaxed">
+                    <li
+                      key={source.url}
+                      className="text-[0.9375rem] leading-relaxed [overflow-wrap:anywhere]"
+                    >
                       <a
-                        className="underline underline-offset-4"
+                        className="underline decoration-coral decoration-[1.5px] underline-offset-4 transition-colors duration-200 hover:text-coral-strong"
                         href={source.url}
                       >
                         {source.title}
                       </a>
-                      <span className="text-mute">
+                      <span className="text-muted">
                         {' '}
                         · Consultado el{' '}
                         <time dateTime={source.checkedAt}>
@@ -236,7 +277,7 @@ export default async function PostPage({ params }: Props) {
                   ))}
                 </ul>
                 {post.category === 'alternativas' && (
-                  <p className="mt-4 text-sm leading-relaxed text-mute">
+                  <p className="mt-5 text-sm leading-relaxed text-muted">
                     Comparativa publicada por Atende. Las funciones y
                     condiciones de cada proveedor pueden cambiar; confirmá el
                     alcance durante la evaluación.
@@ -244,42 +285,53 @@ export default async function PostPage({ params }: Props) {
                 )}
               </section>
             )}
-            {post.lead && post.salesIntro ? rubroLink : (
-              <section className="mt-12 rounded-lg border-2 border-ink bg-sun/60 p-7">
-                <h2 className="font-display text-3xl font-semibold tracking-tight">
-                  Dejá que Atende termine esa tarea en tu WhatsApp.
-                </h2>
-                <p className="mt-4 leading-relaxed">
-                  Contanos qué tarea se repite y qué sistema usás. Conectado a tu
-                  agenda o a tu sistema, Atende reserva, cotiza o registra el
-                  pedido en la conversación, con tu equipo al tanto. Esa conexión
-                  se arma a pedido para tu negocio; sin ella, el asistente junta
-                  los datos y tu equipo confirma.
-                </p>
-                <Button href="/demo" data-cta="blog-demo" className="mt-6">
-                  Pedí una demo →
-                </Button>
-                {rubroLink}
+            {post.lead && post.salesIntro ? rubroLink(false) : (
+              <section className="relative mt-16 max-w-xl overflow-hidden rounded-4xl bg-forest px-6 py-10 text-white sm:px-10 sm:py-12 md:mt-20">
+                <div
+                  className="absolute inset-x-0 bottom-0 h-2/3 bg-[radial-gradient(60%_100%_at_30%_100%,rgb(230_72_44/0.22),transparent_70%)]"
+                  aria-hidden="true"
+                />
+                <div className="relative">
+                  <h2 className="blog-heading">
+                    Dejá que Atende termine esa tarea en tu WhatsApp.
+                  </h2>
+                  <p className="mt-4 leading-relaxed text-white/75">
+                    Contanos qué tarea se repite y qué sistema usás. Conectado a tu
+                    agenda o a tu sistema, Atende reserva, cotiza o registra el
+                    pedido en la conversación, con tu equipo al tanto. Esa conexión
+                    se arma a pedido para tu negocio; sin ella, el asistente junta
+                    los datos y tu equipo confirma.
+                  </p>
+                  <Button
+                    href="/demo"
+                    data-cta="blog-demo"
+                    size="lg"
+                    className="mt-8 w-full sm:w-auto"
+                  >
+                    Pedí una demo
+                  </Button>
+                  {rubroLink(true)}
+                </div>
               </section>
             )}
           </div>
         </div>
       </article>
-      <section className="border-t-2 border-ink bg-mint/25 py-14">
+      <section className="pb-24 md:pb-32">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <h2 className="font-display text-3xl font-semibold">
-            Seguí explorando
-          </h2>
-          <div className="mt-7 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <h2 className="blog-heading">Seguí explorando</h2>
+          <div
+            className={`mt-8 grid gap-4 md:gap-5 ${relatedGrid[related.length] ?? 'md:grid-cols-2'}`}
+          >
             {related.map((item) => (
               <PostCard key={item.slug} post={item} />
             ))}
           </div>
           <Link
             href="/blog"
-            className="mt-8 inline-flex min-h-11 items-center underline underline-offset-4"
+            className="group mt-6 inline-block min-h-11 py-2.5 font-semibold text-coral-strong underline-offset-4 hover:underline"
           >
-            Volver a todas las guías →
+            {withArrow('Volver a todas las guías')}
           </Link>
         </div>
       </section>

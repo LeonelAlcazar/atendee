@@ -110,7 +110,7 @@ export type Rubro = {
     demoLabel: string;
     context: string;
   };
-  hub: { tag: string; task: string; scene: string; needs: string; tone: string };
+  hub: { tag: string; task: string; scene: string; needs: string };
 };
 
 const clinicas: Rubro = {
@@ -129,7 +129,7 @@ const clinicas: Rubro = {
   supervision:
     'Se configura para hacer solo tareas administrativas. Síntomas, medicación, resultados y recetas pasan a una persona, y recepción ve toda la conversación en la bandeja.',
   chat: {
-    caption: 'Ejemplo ilustrativo, con la agenda conectada',
+    caption: 'Con la agenda conectada',
     messages: [
       { from: 'them', text: 'Hola, tengo turno el jueves a las 10 con la cardióloga y no voy a poder ir' },
       { from: 'us', text: 'Sin problema. La doctora tiene lugar el lunes 9:20 o el martes 11:40. ¿Te sirve alguno?' },
@@ -187,7 +187,7 @@ const clinicas: Rubro = {
         'El asistente [contesta a cualquier hora](/servicios/atencion-automatica-whatsapp), mientras el servicio y tu WhatsApp estén conectados. En una veterinaria eso también es un riesgo: alguien desesperado escribe de madrugada, recibe una respuesta y cree que hay un veterinario del otro lado. Si no tenés guardia, la respuesta lo tiene que decir en la primera línea y dar adónde ir.',
         'Derivar deja la conversación en Necesita humano. Incluí en la respuesta el teléfono de la guardia que designó tu equipo para que el dueño pueda llamar aunque la recepción esté cerrada.',
       ],
-      caption: 'Ejemplo ilustrativo de una derivación, sin conexión',
+      caption: 'Una derivación a una persona, sin conexión',
       messages: [
         { from: 'them', text: 'Mi perra comió veneno para ratas, ¿qué le doy?' },
         { from: 'us', text: 'Eso no te lo puedo responder por acá, lo tiene que ver un veterinario ahora.' },
@@ -289,7 +289,6 @@ const clinicas: Rubro = {
     task: 'Reservar o reprogramar el turno',
     scene: 'El paciente avisa que no llega el jueves y el turno pasa al martes, con el horario viejo liberado. Síntomas y medicación van a una persona.',
     needs: 'tu agenda',
-    tone: 'bg-sky',
   },
 };
 
@@ -309,7 +308,7 @@ const peluquerias: Rubro = {
   supervision:
     'Si vendés clases, hace lo mismo con los cupos. Vos ves toda la conversación desde el celular, en la bandeja de tu equipo.',
   chat: {
-    caption: 'Ejemplo ilustrativo, con la agenda conectada',
+    caption: 'Con la agenda conectada',
     messages: [
       { from: 'them', text: 'Hola, quiero corte y color con Caro el sábado' },
       { from: 'us', text: 'Corte y color con Caro lleva casi toda la mañana. Tengo sábado 9:00 o 13:30. ¿Cuál te queda mejor?' },
@@ -373,7 +372,7 @@ const peluquerias: Rubro = {
         'Antes hay que decidir tres cosas: si puede reservar alguien que debe la cuota, hasta cuándo se cancela sin perder la clase y cómo se descuenta de un abono. Sin esas reglas escritas, el asistente no debería anotar a nadie.',
         'Para avisarle a la lista de espera, tu sistema de cupos tiene que iniciar el mensaje cuando se libera un lugar. Esa conexión se arma a pedido. Las preguntas sobre lesiones o apto físico pasan a una persona.',
       ],
-      caption: 'Ejemplo ilustrativo, con la grilla de clases conectada',
+      caption: 'Con la grilla de clases conectada',
       messages: [
         { from: 'them', text: '¿Hay lugar en funcional hoy a las 19?' },
         { from: 'us', text: 'Sí, quedan 2 lugares en la de las 19. ¿Te anoto?' },
@@ -476,7 +475,6 @@ const peluquerias: Rubro = {
     task: 'Reservar el lugar en la agenda',
     scene: 'Corte y color con la profesional que pidió la clienta, con la agenda bloqueada el tiempo que lleva y la seña pendiente. En un gimnasio, el cupo de la clase.',
     needs: 'tu agenda o tu grilla de clases',
-    tone: 'bg-coral-soft',
   },
 };
 
@@ -496,7 +494,7 @@ const restaurantes: Rubro = {
   supervision:
     'Los grupos, las alergias y los reclamos pasan a tu equipo, que ve toda la conversación en la bandeja.',
   chat: {
-    caption: 'Ejemplo ilustrativo, con tu sistema de reservas conectado',
+    caption: 'Con tu sistema de reservas conectado',
     messages: [
       { from: 'them', text: 'Hola, ¿tienen mesa para 4 el sábado a la noche?' },
       { from: 'us', text: 'Para 4 el sábado tengo primer turno a las 20:30 o segundo a las 22:30. ¿Cuál preferís?' },
@@ -545,7 +543,7 @@ const restaurantes: Rubro = {
         '“El finde largo” no alcanza: un feriado puente cambia la tarifa y a veces el mínimo de noches. Conectado a tu sistema, el asistente consulta disponibilidad y tarifa para esas noches, y la respuesta sale de ahí, no de una pregunta frecuente que alguien cargó en marzo.',
         'Las fotos de las habitaciones no necesitan conexión. Las subís a la biblioteca y el asistente las manda cuando se las piden.',
       ],
-      caption: 'Ejemplo ilustrativo, con el sistema del hotel conectado',
+      caption: 'Con el sistema del hotel conectado',
       messages: [
         { from: 'them', text: 'Hola, ¿tienen habitación para dos del viernes al domingo?' },
         { from: 'us', text: 'Sí, tengo doble con desayuno para esas dos noches. Para reservarla pedimos una seña. ¿Te la dejo a tu nombre?' },
@@ -659,7 +657,6 @@ const restaurantes: Rubro = {
     task: 'Tomar la reserva',
     scene: 'Mesa para 4 en el segundo turno del sábado, o una doble de viernes a domingo con seña pendiente. Trabaja al lado de tu sistema de reservas.',
     needs: 'tu sistema de reservas',
-    tone: 'bg-mint',
   },
 };
 
@@ -679,7 +676,7 @@ const comercios: Rubro = {
   supervision:
     'Tu equipo ve toda la conversación en la bandeja, y si no tenés ERP hay un [arranque sin sistema](#sin-erp).',
   chat: {
-    caption: 'Ejemplo ilustrativo, con stock y lista de precios conectados',
+    caption: 'Con stock y lista de precios conectados',
     messages: [
       { from: 'them', text: 'Hola, lo mismo de la semana pasada pero sumame 2 cajas de aceite' },
       { from: 'us', text: 'Tu último pedido más 2 cajas de aceite. La yerba de 1 kg no tiene stock, hay de 500 g. ¿La cambio?' },
@@ -705,7 +702,7 @@ const comercios: Rubro = {
         'Atende no guarda pedidos anteriores por su cuenta. “Lo mismo de la semana pasada” funciona porque lo lee de tu sistema; sin conexión, el cliente tiene que escribirlo de nuevo.',
       ],
       ticket: {
-        label: 'Pedido de ejemplo. Ejemplo ilustrativo',
+        label: 'Pedido registrado',
         header: [
           { label: 'Cliente', value: 'Reconocido por su número' },
           { label: 'Lista', value: 'Mayorista B' },
@@ -876,7 +873,6 @@ const comercios: Rubro = {
     task: 'Consultar stock y registrar el pedido',
     scene: '“Lo mismo de la semana pasada, pero sumame 2 cajas”: mira el stock, aplica la lista de ese cliente y deja el pedido cargado. Hay arranque sin ERP.',
     needs: 'tu stock y tu lista de precios',
-    tone: 'bg-sun/65',
   },
 };
 
@@ -896,7 +892,7 @@ const concesionarias: Rubro = {
   supervision:
     'Tenemos una demo de concesionaria de motos que hace hoy las tres primeras tareas. Es una demo, no un cliente. El vendedor ve toda la conversación en la bandeja y cierra la operación.',
   chat: {
-    caption: 'Ejemplo ilustrativo, basado en nuestra demo de concesionaria de motos',
+    caption: 'Basado en nuestra demo de concesionaria de motos',
     messages: [
       { from: 'them', text: 'Hola, ¿tienen la 110 en rojo? ¿Cuánto queda en 12 cuotas?' },
       { from: 'us', text: 'Sí, hay en rojo. En 12 cuotas queda en [cuota según tu planilla], con patente y gastos. Es un valor estimado.' },
@@ -955,7 +951,7 @@ const concesionarias: Rubro = {
         'La consulta suele llegar desde un aviso en Zonaprop, Argenprop o Mercado Libre, con un link o una referencia. Atende no está integrado con esos portales y no abre el link. Reconoce la propiedad por la referencia o la dirección, si está en tu ficha.',
         'Conectado a tu cartera y a tu agenda, el asistente confirma que la propiedad sigue disponible, responde lo que figura en la ficha y reserva la visita con quien corresponda. La agenda de visitas se arma a pedido, igual que el resto.',
       ],
-      caption: 'Ejemplo ilustrativo, con cartera y agenda conectadas',
+      caption: 'Con cartera y agenda conectadas',
       messages: [
         { from: 'them', text: 'Hola, vi el 2 ambientes de Nueva Córdoba, ref. 1482. ¿Sigue disponible?' },
         { from: 'us', text: 'Sí, sigue en alquiler. Para coordinar la visita: ¿es para vos y cuándo te mudarías?' },
@@ -1078,7 +1074,6 @@ const concesionarias: Rubro = {
     task: 'Cotizar, calcular cuotas, registrar al interesado y agendar la visita',
     scene: 'Nuestra demo de motos busca la unidad, calcula la cuota y anota al interesado en una planilla. Es una demo, no un cliente. Para inmobiliarias: del aviso a la visita.',
     needs: 'tu stock o cartera, tus planes y tu agenda',
-    tone: 'bg-surface',
   },
 };
 
@@ -1098,7 +1093,7 @@ const profesionales: Rubro = {
   supervision:
     'Se configura para no asesorar: ordena la consulta y tu equipo la toma desde la bandeja, donde ve toda la conversación.',
   chat: {
-    caption: 'Ejemplo ilustrativo, con el CRM del estudio conectado',
+    caption: 'Con el CRM del estudio conectado',
     messages: [
       { from: 'them', text: 'Hola, me despidieron y me llegó un telegrama. Necesito un abogado' },
       { from: 'us', text: 'Soy el asistente del estudio y no puedo asesorarte. Paso tu consulta a un abogado. ¿El telegrama te da un plazo?' },
@@ -1260,7 +1255,6 @@ const profesionales: Rubro = {
     task: 'Calificar la consulta y registrarla',
     scene: 'Un despido con telegrama y 48 horas para responder queda cargado como urgente para el abogado laboral. Se configura para no asesorar.',
     needs: 'tu CRM o tu planilla',
-    tone: 'bg-sky',
   },
 };
 

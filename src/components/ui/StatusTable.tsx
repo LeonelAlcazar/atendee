@@ -10,22 +10,19 @@ const groups: {
   status: ActionStatus;
   name: string;
   note: string;
-  band: string;
   marker: string;
 }[] = [
   {
     status: 'included',
     name: 'Incluido',
     note: 'La bandeja la maneja tu equipo. Para las respuestas automáticas necesitás el asistente activo.',
-    band: 'bg-mint',
-    marker: 'bg-mint-strong',
+    marker: 'bg-forest',
   },
   {
     status: 'on-request',
     name: 'A pedido',
     note: 'Lo armamos para tu negocio.',
-    band: 'bg-sun',
-    marker: 'bg-surface',
+    marker: 'bg-coral',
   },
 ];
 
@@ -40,14 +37,12 @@ export function StatusTable({
 }: StatusTableProps) {
   return (
     <div
-      className={`overflow-hidden rounded-lg border-2 border-ink bg-surface shadow-[var(--shadow-brut)] ${className}`}
+      className={`overflow-hidden rounded-3xl bg-surface shadow-card ring-1 ring-line ${className}`}
     >
       <table className="w-full table-fixed border-collapse text-left">
-        <caption className="border-b-2 border-ink bg-surface px-3 py-3.5 text-left sm:px-5">
-          <span className="block font-display text-lg font-semibold leading-tight tracking-[-0.02em] sm:text-xl">
-            {caption}
-          </span>
-          <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.06em] text-mute">
+        <caption className="border-b border-line px-4 py-5 text-left sm:px-7">
+          <span className="block text-title">{caption}</span>
+          <span className="mt-1.5 block text-sm text-muted">
             Actualizado el{' '}
             <time dateTime={pages.integrations.updated}>{updatedLabel}</time>
           </span>
@@ -60,35 +55,35 @@ export function StatusTable({
         </thead>
         {groups.map((group) => (
           <tbody key={group.status}>
-            <tr className={`${group.band} border-b-2 border-ink`}>
+            <tr className="border-b border-line bg-bg/60">
               <th
                 scope="rowgroup"
                 colSpan={2}
-                className="px-3 py-2.5 text-left font-normal sm:px-5"
+                className="px-4 py-3 text-left font-normal sm:px-7"
               >
                 <span className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
-                  <span className="flex items-center gap-2 font-display text-base font-bold tracking-[-0.015em]">
+                  <span className="flex items-center gap-2 text-base font-semibold tracking-[-0.015em]">
                     <span
-                      className={`size-3 shrink-0 border-2 border-ink ${group.marker}`}
+                      className={`size-2.5 shrink-0 rounded-full ${group.marker}`}
                       aria-hidden="true"
                     />
                     {group.name}
                   </span>
-                  <span className="text-sm text-ink/75">{group.note}</span>
+                  <span className="text-sm text-muted">{group.note}</span>
                 </span>
               </th>
             </tr>
             {actionStatus
               .filter((row) => row.status === group.status)
               .map((row) => (
-                <tr key={row.action} className="border-b border-ink/20">
+                <tr key={row.action} className="border-b border-line [tbody:last-child>&:last-child]:border-b-0">
                   <th
                     scope="row"
-                    className="w-[56%] px-3 py-3 align-top text-[15px] font-medium leading-snug sm:w-[60%] sm:px-5 sm:text-base"
+                    className="w-[56%] px-4 py-3.5 align-top text-[0.9375rem] font-medium leading-snug sm:w-[60%] sm:px-7 sm:text-base"
                   >
                     {row.action}
                   </th>
-                  <td className="px-3 py-3 align-top text-sm leading-snug text-mute sm:px-5 sm:text-[15px]">
+                  <td className="px-4 py-3.5 align-top text-sm leading-snug text-muted sm:px-7 sm:text-[0.9375rem]">
                     {row.label}
                   </td>
                 </tr>

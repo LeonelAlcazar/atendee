@@ -5,7 +5,7 @@ export const pages = {
     title: 'Bot de WhatsApp para empresas en Argentina que reserva y toma pedidos',
     description:
       'Conectado a tu agenda o a tu sistema, Atende reserva turnos, registra pedidos y cotiza por WhatsApp. La conexión se arma a pedido y tu equipo supervisa.',
-    updated: '2026-11-18',
+    updated: '2026-11-23',
   },
   what: {
     path: '/que-es-atende',

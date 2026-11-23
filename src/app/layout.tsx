@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Instrument_Sans, Inter_Tight, IBM_Plex_Mono } from 'next/font/google';
+import { Instrument_Sans } from 'next/font/google';
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -9,24 +9,10 @@ import { pages } from '@/content/pages';
 import { ConversionEvents } from '@/components/ConversionEvents';
 import './globals.css';
 
-const display = Instrument_Sans({
+// The only typeface. A variable font, so every weight from 400 to 700 is one file.
+const instrument = Instrument_Sans({
   subsets: ['latin'],
-  variable: '--font-display',
-  weight: ['400', '500', '600', '700'],
-  display: 'swap',
-});
-
-const body = Inter_Tight({
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['400', '500', '600'],
-  display: 'swap',
-});
-
-const mono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
-  weight: ['400', '500'],
+  variable: '--font-instrument',
   display: 'swap',
 });
 
@@ -67,7 +53,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#F8F5EF',
+  themeColor: '#F0F0F0',
   width: 'device-width',
   initialScale: 1,
 };
@@ -78,10 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="es-AR"
-      className={`${display.variable} ${body.variable} ${mono.variable}`}
-    >
+    <html lang="es-AR" className={instrument.variable}>
       <body>
         <Script id="google-tag-init" strategy="beforeInteractive">
           {`
@@ -99,26 +82,10 @@ export default function RootLayout({
         <ConversionEvents />
         <a
           href="#contenido"
-          className="fixed left-4 top-3 z-[100] -translate-y-24 rounded-md border-2 border-ink bg-coral px-4 py-2 font-display font-semibold shadow-[var(--shadow-brut-sm)] transition-transform focus:translate-y-0"
+          className="fixed left-4 top-3 z-[100] inline-flex min-h-11 -translate-y-24 items-center rounded-full bg-ink px-5 text-sm font-semibold text-white shadow-float transition-transform duration-200 focus:translate-y-0"
         >
           Saltar al contenido
         </a>
-        <svg
-          aria-hidden="true"
-          width="0"
-          height="0"
-          style={{ position: 'absolute' }}
-        >
-          <filter id="jitter">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.02"
-              numOctaves="2"
-              seed="3"
-            />
-            <feDisplacementMap in="SourceGraphic" scale="2" />
-          </filter>
-        </svg>
         <Header />
         <main id="contenido">{children}</main>
         <Footer />

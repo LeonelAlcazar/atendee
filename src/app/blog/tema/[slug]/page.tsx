@@ -10,6 +10,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { RichText } from '@/components/casos/RichText';
 import { PostCard } from '@/components/blog/PostCard';
 import { Button } from '@/components/ui/Button';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 
 export const revalidate = 3600;
 // A topic whose first post is scheduled after the build has no static param yet.
@@ -50,34 +51,33 @@ export default async function TopicPage({ params }: Props) {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <section className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
-        <p className="font-mono text-xs uppercase tracking-wider text-coral-strong">
-          {posts.length} artículos · Blog de Atende
-        </p>
-        <h1 className="mt-5 max-w-4xl break-words font-display text-5xl font-semibold tracking-tight md:text-6xl">
-          {topic.name}
-        </h1>
-        <p className="mt-6 max-w-3xl text-xl leading-relaxed text-mute">
-          {topic.description}
-        </p>
-        {'intro' in topic && (
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-mute">
-            <RichText text={topic.intro} />
-          </p>
-        )}
-        <Button
-          href={buyerLink.href}
-          variant="outline"
-          className="mt-5"
-          data-cta={`blog-topic-${topic.slug}`}
-        >
-          {buyerLink.label} <span aria-hidden="true">→</span>
-        </Button>
-        <h2 className="sr-only">Guías y comparativas de {topic.name}</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <PostCard key={post.slug} post={post} />
-          ))}
+      <section className="pb-24 pt-8 md:pb-32 md:pt-14">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <SectionHeader
+            level="h1"
+            eyebrow={`${posts.length} artículos · Blog de Atende`}
+            title={topic.name}
+            sub={topic.description}
+          />
+          {'intro' in topic && (
+            <p className="mt-5 max-w-2xl text-pretty leading-relaxed text-muted md:text-lg">
+              <RichText text={topic.intro} />
+            </p>
+          )}
+          <Button
+            href={buyerLink.href}
+            size="lg"
+            className="mt-8 w-full sm:w-auto"
+            data-cta={`blog-topic-${topic.slug}`}
+          >
+            {buyerLink.label}
+          </Button>
+          <h2 className="sr-only">Guías y comparativas de {topic.name}</h2>
+          <div className="mt-14 grid gap-4 md:mt-20 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
+            {posts.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
         </div>
       </section>
       <JsonLd

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
+import { Wordmark } from '@/components/ui/Wordmark';
 import { MobileMenu } from './MobileMenu';
 import { site } from '@/content/site';
 
@@ -13,45 +14,43 @@ const nav = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b-2 border-ink bg-bg">
-      <div className="mx-auto flex h-[4.75rem] max-w-7xl items-center justify-between gap-1.5 px-3 sm:gap-5 sm:px-5 md:px-8">
-        <Link
-          href="/"
-          className="group flex min-h-11 items-center gap-2 rounded-sm sm:gap-2.5"
-        >
-          <span
-            className="grid size-8 shrink-0 place-items-center sm:size-9 rounded-md border-2 border-ink bg-coral font-display text-base font-bold shadow-[var(--shadow-brut-xs)] transition-transform group-hover:-rotate-3"
-            aria-hidden="true"
-          >
-            A
-          </span>
-          <span className="font-display text-[1.375rem] font-semibold tracking-[-0.035em] sm:text-2xl">
-            atende<span className="text-coral">.</span>
-          </span>
+    <header className="sticky top-0 z-40">
+      {/* The blur lives on its own layer. A filter on the header itself would
+          trap the fixed mobile menu inside it. */}
+      <div
+        className="absolute inset-0 border-b border-line bg-bg/80 backdrop-blur-xl backdrop-saturate-150"
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto flex h-14 max-w-7xl items-center justify-between gap-2 px-5 md:h-16 md:px-8">
+        <Link href="/" className="flex min-h-11 items-center rounded-lg">
+          <Wordmark className="text-[1.625rem] md:text-[1.75rem]" />
           <span className="sr-only">Inicio</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 font-body text-sm lg:flex" aria-label="Navegación principal">
+        <nav
+          className="hidden items-center gap-1 text-[0.9375rem] lg:flex"
+          aria-label="Navegación principal"
+        >
           {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm font-medium transition-colors hover:text-coral-strong"
+              className="inline-flex min-h-11 items-center rounded-full px-3.5 text-ink/75 transition-colors duration-200 hover:bg-ink/5 hover:text-ink"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-2 md:flex">
           <a
             href={site.appUrl}
-            className="inline-flex min-h-11 items-center rounded-sm px-2 text-sm font-semibold underline decoration-2 underline-offset-4 hover:text-coral-strong"
+            className="inline-flex min-h-11 items-center rounded-full px-3.5 text-[0.9375rem] font-medium text-ink/75 transition-colors duration-200 hover:bg-ink/5 hover:text-ink"
           >
             Entrar
           </a>
           <Button href="/demo" data-cta="header-demo" variant="primary" size="md">
-            Pedí una demo <span aria-hidden="true">→</span>
+            Pedí una demo
           </Button>
         </div>
 

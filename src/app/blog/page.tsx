@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import { blogPage, blogTopics } from '@/content/blog-topics';
 import { site } from '@/content/site';
 import { getPosts } from '@/lib/blog';
@@ -28,6 +29,25 @@ const buyerQuestions = [
   { label: '¿Cómo reprograma un turno?', href: '/servicios/turnos-whatsapp' },
   { label: '¿Cuántas respuestas necesito por mes?', href: '/precios#calculadora' },
 ];
+const textLink =
+  'group inline-block min-h-11 py-2.5 text-[0.9375rem] font-semibold text-coral-strong underline-offset-4 hover:underline';
+// The arrow stays on the last word when a long label wraps.
+function withArrow(label: string) {
+  const split = label.lastIndexOf(' ') + 1;
+  return (
+    <>
+      {label.slice(0, split)}
+      <span className="whitespace-nowrap">
+        {label.slice(split)}
+        <ArrowRight
+          size={16}
+          aria-hidden="true"
+          className="ml-1.5 inline-block align-[-0.125em] transition-transform duration-200 ease-smooth group-hover:translate-x-0.5"
+        />
+      </span>
+    </>
+  );
+}
 export default function BlogPage() {
   const posts = getPosts();
   const topics = blogTopics.filter((topic) =>
@@ -36,38 +56,43 @@ export default function BlogPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <header className="border-b-2 border-ink py-12 md:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-[1.5fr_1fr]">
+      <header className="pb-16 pt-8 md:pb-24 md:pt-14">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 md:px-8 lg:grid-cols-[minmax(0,1fr)_26rem] lg:items-end lg:gap-16">
           <div className="min-w-0">
-            <p className="font-mono text-xs uppercase tracking-wider text-coral-strong">
+            <p className="text-sm font-semibold text-coral-strong">
               El blog de Atende · {posts.length} guías y comparativas
             </p>
-            <h1 className="mt-5 break-words font-display text-[clamp(2.25rem,10.5vw,3rem)] font-semibold leading-[1.02] tracking-[-0.04em] md:text-7xl">
-              Reservá turnos y tomá pedidos{' '}
-              <br />
-              <span className="text-coral">por WhatsApp.</span>
+            <h1 className="mt-4 text-balance text-headline md:mt-5">
+              <span className="block">Reservá turnos y tomá pedidos</span>{' '}
+              <span className="block text-faint">por WhatsApp.</span>
             </h1>
-            <p className="mt-6 max-w-2xl text-xl leading-relaxed text-mute">
+            <p className="mt-5 max-w-2xl text-pretty text-lead text-muted">
               Guías para negocios argentinos. Mirá qué hace falta para que un
               turno quede en la agenda o un pedido en tu sistema, qué revisa tu
               equipo y cómo calcular el costo.
             </p>
             <Link
               href="/blog/editorial"
-              className="mt-5 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
+              className="mt-4 inline-flex min-h-11 items-center text-[0.9375rem] underline decoration-line-strong underline-offset-4 transition-colors duration-200 hover:decoration-ink"
             >
               Quién publica y cómo elaboramos las guías
             </Link>
           </div>
-          <aside className="self-center rounded-lg border-2 border-ink bg-sun/70 p-7 shadow-[var(--shadow-brut)]">
-            <h2 className="font-display text-3xl font-semibold tracking-tight">
-              ¿Qué querés resolver?
-            </h2>
-            <ul className="mt-4 divide-y divide-ink/20">
+          <aside className="rounded-3xl bg-surface p-6 shadow-card sm:p-8">
+            <h2 className="text-title">¿Qué querés resolver?</h2>
+            <ul className="mt-3">
               {buyerQuestions.map(({ label, href }) => (
-                <li key={href}>
-                  <Link href={href} className="flex min-h-11 items-center justify-between gap-4 py-3 font-semibold underline-offset-4 hover:underline">
-                    {label}<span aria-hidden="true">→</span>
+                <li key={href} className="border-b border-line last:border-b-0">
+                  <Link
+                    href={href}
+                    className="group flex min-h-14 items-center justify-between gap-4 py-3 font-semibold tracking-[-0.01em]"
+                  >
+                    {label}
+                    <ArrowRight
+                      size={18}
+                      aria-hidden="true"
+                      className="shrink-0 text-muted transition-[transform,color] duration-200 ease-smooth group-hover:translate-x-0.5 group-hover:text-ink"
+                    />
                   </Link>
                 </li>
               ))}
@@ -75,23 +100,18 @@ export default function BlogPage() {
           </aside>
         </div>
       </header>
-      <div className="mx-auto max-w-7xl px-5 py-12 md:px-8">
-        <nav
-          aria-label="Explorar el blog por tema"
-          className="rounded-lg border-2 border-ink bg-surface p-6"
-        >
-          <h2 className="font-display text-2xl font-semibold">
-            Encontrá tu rubro o tema
-          </h2>
-          <ul className="mt-5 flex flex-wrap gap-3">
+      <div className="mx-auto max-w-7xl px-5 pb-24 md:px-8 md:pb-32">
+        <nav aria-label="Explorar el blog por tema">
+          <h2 className="blog-heading">Encontrá tu rubro o tema</h2>
+          <ul className="mt-6 flex flex-wrap gap-2.5">
             {topics.map((topic) => (
               <li key={topic.slug}>
                 <Link
                   href={`/blog/tema/${topic.slug}`}
-                  className="inline-flex min-h-11 items-center gap-3 rounded-full border border-ink px-4 py-2 text-sm hover:bg-mint"
+                  className="inline-flex min-h-11 items-center gap-2.5 rounded-full bg-surface px-4 py-2 text-[0.9375rem] font-medium ring-1 ring-inset ring-line-strong transition-[box-shadow] duration-200 ease-smooth hover:ring-ink/40"
                 >
                   {topic.name}
-                  <span className="font-mono text-xs text-mute">
+                  <span className="text-sm tabular-nums text-muted">
                     {
                       posts.filter((post) => post.category === topic.slug)
                         .length
@@ -101,37 +121,28 @@ export default function BlogPage() {
               </li>
             ))}
           </ul>
-          <Link
-            href="/casos-de-uso"
-            className="mt-4 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
-          >
-            Ver qué tarea termina Atende en cada rubro →
+          <Link href="/casos-de-uso" className={`mt-3 ${textLink}`}>
+            {withArrow('Ver qué tarea termina Atende en cada rubro')}
           </Link>
         </nav>
         {topics.map((topic) => (
           <section
             key={topic.slug}
-            className="pt-14"
+            className="pt-20 md:pt-28"
             aria-labelledby={`tema-${topic.slug}`}
           >
-            <div className="flex flex-wrap items-baseline justify-between gap-3">
-              <h2
-                id={`tema-${topic.slug}`}
-                className="font-display text-3xl font-semibold tracking-tight"
-              >
+            <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-1">
+              <h2 id={`tema-${topic.slug}`} className="blog-heading">
                 {topic.name}
               </h2>
-              <Link
-                href={`/blog/tema/${topic.slug}`}
-                className="inline-flex min-h-11 items-center text-sm underline underline-offset-4"
-              >
-                Ver tema →
+              <Link href={`/blog/tema/${topic.slug}`} className={textLink}>
+                {withArrow('Ver tema')}
               </Link>
             </div>
-            <p className="mt-3 max-w-3xl leading-relaxed text-mute">
+            <p className="mt-3 max-w-3xl text-pretty leading-relaxed text-muted">
               {topic.description}
             </p>
-            <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-8 grid gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
               {posts
                 .filter((post) => post.category === topic.slug)
                 .map((post) => (
@@ -142,7 +153,7 @@ export default function BlogPage() {
         ))}
         <a
           href="/blog/feed.xml"
-          className="mt-12 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
+          className="mt-16 inline-flex min-h-11 items-center text-sm text-muted underline decoration-line-strong underline-offset-4 transition-colors duration-200 hover:text-ink hover:decoration-ink"
         >
           Seguir el blog por RSS
         </a>

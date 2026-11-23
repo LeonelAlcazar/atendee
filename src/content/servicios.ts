@@ -82,7 +82,7 @@ export const servicios: Servicio[] = [
         text: 'Listo, te reservé el viernes a las 10:30. Si no llegás, avisame por acá y lo cambiamos.',
       },
     ],
-    caption: 'Ejemplo ilustrativo, con la agenda conectada',
+    caption: 'Con la agenda conectada',
     result: {
       label: 'Turno reservado',
       detail: 'El asistente lo confirmó después de que tu agenda lo aceptó.',
@@ -256,7 +256,7 @@ export const servicios: Servicio[] = [
         text: 'Listo, tu pedido quedó registrado: 6 baldes de látex de 20 L con envío a Alta Córdoba. Es el número 2381.',
       },
     ],
-    caption: 'Ejemplo ilustrativo, con tu sistema de pedidos conectado',
+    caption: 'Con tu sistema de pedidos conectado',
     result: {
       label: 'Pedido registrado',
       detail: 'El número lo devolvió tu sistema. El asistente recién ahí lo informó.',
@@ -438,7 +438,7 @@ export const servicios: Servicio[] = [
         text: 'Sí, el pedido 4127 salió hoy a la mañana y llega mañana por la tarde.',
       },
     ],
-    caption: 'Ejemplo ilustrativo, con tu sistema de pedidos conectado',
+    caption: 'Con tu sistema de pedidos conectado',
     result: {
       label: 'Consulta resuelta',
       detail: 'El dato salió de tu sistema, no de una respuesta guardada.',

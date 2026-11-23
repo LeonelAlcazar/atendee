@@ -15,12 +15,14 @@ export default function EditorialPage() {
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
-      <article className="mx-auto max-w-3xl px-5 py-14 md:py-20">
-        <h1 className="break-words font-display text-4xl font-semibold tracking-tight md:text-5xl">
+      <article className="mx-auto max-w-7xl px-5 pb-24 pt-8 md:px-8 md:pb-32 md:pt-14">
+        <h1 className="max-w-4xl text-balance text-headline">
           Cómo elaboramos las guías de Atende
         </h1>
-        <div className="blog-prose mt-8">
-          <p>
+        {/* The reading column of the articles. The first paragraph reads as
+            the lead: who publishes and the commercial interest. */}
+        <div className="blog-prose mt-8 md:mt-10">
+          <p className="text-pretty text-lead text-muted">
             Este blog lo publica Atende desde Córdoba, Argentina. Atende
             automatiza WhatsApp para negocios: conectado a tus sistemas,
             reserva, cotiza y registra pedidos, y responde mensajes de texto.

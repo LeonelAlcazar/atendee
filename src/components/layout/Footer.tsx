@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Button } from '@/components/ui/Button';
+import { Wordmark } from '@/components/ui/Wordmark';
 import { rubros } from '@/content/rubros';
 import { servicios } from '@/content/servicios';
 import { site } from '@/content/site';
@@ -42,98 +44,107 @@ const columns: { title: string; links: FooterLink[] }[] = [
   },
 ];
 
+// 44px rows for fingers, tighter rows where there is a pointer.
 const linkClass =
-  'inline-flex min-h-11 items-center py-1 leading-snug hover:text-coral';
+  'inline-flex min-h-11 items-center py-1 leading-snug text-muted transition-colors duration-200 hover:text-ink lg:min-h-8';
+const titleClass = 'mb-1 text-sm font-semibold text-ink lg:mb-2';
 
 export function Footer() {
   return (
-    <footer className="border-t-2 border-ink bg-ink text-bg">
-      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-12 px-5 py-14 sm:grid-cols-2 md:px-8 md:py-16 lg:grid-cols-[1.25fr_1fr_1fr_0.85fr_0.95fr]">
-        <div className="flex flex-col items-start sm:col-span-2 lg:col-span-1">
-          <Link href="/" className="flex min-h-11 items-center gap-2.5">
-            <span
-              className="grid size-10 place-items-center rounded-md border-2 border-bg bg-coral font-display text-lg font-bold text-ink shadow-[3px_3px_0_var(--color-bg)]"
-              aria-hidden="true"
-            >
-              A
-            </span>
-            <span className="font-display text-3xl font-semibold tracking-[-0.04em]">
-              atende<span className="text-coral">.</span>
-            </span>
-            <span className="sr-only">Inicio</span>
-          </Link>
-          <p className="mt-5 max-w-sm text-base leading-relaxed text-bg/70">
-            Bot de WhatsApp para empresas y PyMEs argentinas. Conectado a tu
-            sistema, reserva, cotiza y registra pedidos, con tu equipo al tanto.
-          </p>
-          <a
+    <footer className="border-t border-line">
+      <div className="mx-auto max-w-7xl px-5 pb-6 pt-14 md:px-8 md:pt-20">
+        <div className="flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
+          <div>
+            <Link href="/" className="inline-flex min-h-11 items-center rounded-lg">
+              <Wordmark className="text-4xl" />
+              <span className="sr-only">Inicio</span>
+            </Link>
+            <p className="mt-3 max-w-md leading-relaxed text-muted">
+              El asistente de WhatsApp para negocios argentinos. Conectado a tu
+              sistema, reserva, cotiza y toma pedidos, con tu equipo al tanto.
+            </p>
+          </div>
+          <Button
             href="/demo"
             data-cta="footer-demo"
-            className="mt-6 inline-flex min-h-11 items-center rounded-md border-2 border-bg bg-coral px-5 font-display text-sm font-semibold !text-ink shadow-[3px_3px_0_var(--color-bg)] transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5"
+            variant="dark"
+            size="md"
+            className="self-start md:self-auto"
           >
-            Pedí una demo <span className="ml-2" aria-hidden="true">→</span>
-          </a>
+            Pedí una demo
+          </Button>
         </div>
 
-        {columns.map((column) => (
-          <nav key={column.title} aria-label={column.title} className="text-sm">
-            <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.08em] text-bg/65">
-              {column.title}
-            </p>
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 text-sm md:mt-16 lg:grid-cols-4">
+          {columns.map((column) => (
+            <nav key={column.title} aria-label={column.title}>
+              <p className={titleClass}>{column.title}</p>
+              <ul>
+                {column.links.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className={linkClass}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
+
+          <div>
+            <p className={titleClass}>Contacto</p>
             <ul>
-              {column.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className={linkClass}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <a
+                  href={buildWaLink('Hola, vi atende.com.ar y quiero hacer una consulta')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-cta="footer-whatsapp"
+                  className={linkClass}
+                >
+                  WhatsApp {site.whatsapp.display}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${site.email}`}
+                  data-cta="footer-email"
+                  className={`${linkClass} break-all`}
+                >
+                  {site.email}
+                </a>
+              </li>
+              <li>
+                <a href={site.appUrl} className={linkClass}>
+                  Entrar a la app
+                </a>
+              </li>
+              <li>
+                <a href={site.appUrl} data-cta="footer-signup" className={linkClass}>
+                  Crear mi espacio
+                </a>
+              </li>
             </ul>
-          </nav>
-        ))}
-
-        <div className="text-sm">
-          <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.08em] text-bg/65">
-            Contacto
-          </p>
-          <ul>
-            <li>
-              <a
-                href={buildWaLink('Hola, vi atende.com.ar y quiero hacer una consulta')}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-cta="footer-whatsapp"
-                className={linkClass}
-              >
-                WhatsApp {site.whatsapp.display}
-              </a>
-            </li>
-            <li>
-              <a href={`mailto:${site.email}`} data-cta="footer-email" className={linkClass}>
-                {site.email}
-              </a>
-            </li>
-            <li>
-              <a href={site.appUrl} className={linkClass}>
-                Entrar a la app
-              </a>
-            </li>
-            <li>
-              <a href={site.appUrl} data-cta="footer-signup" className={linkClass}>
-                Crear mi espacio
-              </a>
-            </li>
-            <li className="mt-1 py-1 leading-snug text-bg/65">{site.location}</li>
-          </ul>
+          </div>
         </div>
-      </div>
 
-      <div className="border-t border-bg/20">
-        <div className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4 font-mono text-[11px] uppercase tracking-[0.08em] text-bg/65 sm:flex-row sm:items-center sm:justify-between md:px-8">
-          <span>{site.legalName} · {site.location} · 2026</span>
+        <div className="mt-12 flex flex-col gap-x-6 gap-y-1 border-t border-line pt-4 text-[0.8125rem] text-muted sm:flex-row sm:items-center sm:justify-between md:mt-16">
+          <span>
+            {site.legalName} · {site.location} · 2026
+          </span>
           <div className="flex flex-wrap gap-x-6">
-            <Link href="/terminos-y-condiciones" className="inline-flex min-h-11 items-center hover:text-bg">Términos</Link>
-            <Link href="/politica-de-privacidad" className="inline-flex min-h-11 items-center hover:text-bg">Privacidad</Link>
+            <Link
+              href="/terminos-y-condiciones"
+              className="inline-flex min-h-11 items-center transition-colors duration-200 hover:text-ink"
+            >
+              Términos
+            </Link>
+            <Link
+              href="/politica-de-privacidad"
+              className="inline-flex min-h-11 items-center transition-colors duration-200 hover:text-ink"
+            >
+              Privacidad
+            </Link>
           </div>
         </div>
       </div>
