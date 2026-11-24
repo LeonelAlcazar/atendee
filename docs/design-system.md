@@ -162,11 +162,12 @@ text color, the dot in coral). There is no "A" badge anywhere.
   with an inline `--at` in milliseconds. The default state is the finished scene,
   so it is correct without JS and with reduced motion. A sequence plays once and
   ends in under five seconds.
-- `.drift` slides a row with the scroll. Nothing loops forever. Anything that
+- `.drift` slides a row with the scroll. Anything that
   advances on its own needs a visible pause button (`landing/RubroShowcase.tsx`).
-- The H1 never animates: it is the LCP. `prefers-reduced-motion` turns every
-  animation off through the global rule; do not add `opacity-0` that only an
-  animation undoes.
+- Paint the H1 immediately. The home headline cycles through its actions while
+  visible. Set the time between phrases with `hero.actionDurationMs` in
+  `src/content/landing.ts`. Reserve space for every phrase, offer a pause
+  control and keep the headline still with reduced motion.
 - Server components by default. A client component only for real interaction.
 
 ## Remove on sight

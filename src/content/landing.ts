@@ -3,8 +3,20 @@
 // its connection once and is built on request for each business.
 export const landing = {
   hero: {
-    titleLead: 'Tu WhatsApp reserva el turno.',
+    titleLead: 'Tu WhatsApp',
     titleRest: 'Vos seguís trabajando.',
+    actionDurationMs: 1500,
+    actions: [
+      'hace todo esto.',
+      'reserva el turno.',
+      'consulta stock.',
+      'resuelve dudas.',
+      'envía recordatorios.',
+      'toma pedidos.',
+      'calcula cuotas.',
+    ],
+    pause: 'Pausar las acciones del titular',
+    play: 'Reproducir las acciones del titular',
     description:
       'Atende es el bot de WhatsApp que, conectado a tu agenda o a tu sistema, responde a cualquier hora y termina la tarea en el chat: reserva, toma el pedido, cotiza.',
     primaryCta: 'Pedí una demo',
