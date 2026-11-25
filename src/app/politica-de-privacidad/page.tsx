@@ -3,7 +3,7 @@ import { LegalDocument } from '@/components/legal/LegalDocument';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
 
-const lastUpdated = '11 de noviembre de 2026';
+const lastUpdated = '24 de noviembre de 2026';
 const linkClass =
   'font-medium text-ink underline decoration-ink/30 underline-offset-4 transition-colors duration-200 hover:decoration-ink';
 
@@ -216,10 +216,16 @@ const sections = [
         </p>
         <p>
           El sitio puede usar tecnologías técnicas necesarias para funcionar,
-          mantener seguridad, cargar contenido y medir rendimiento. Si en el
-          futuro incorporamos cookies de analítica, publicidad o perfilado que
-          requieran información adicional, actualizaremos esta política o el
-          mecanismo de aviso correspondiente.
+          mantener seguridad, cargar contenido y medir rendimiento.
+        </p>
+        <p>
+          Si aceptás las cookies publicitarias, usamos el píxel de Meta para
+          medir visitas al sitio, clics para abrir WhatsApp y altas de cuentas
+          en la app. Usamos esos eventos para medir nuestros anuncios. Meta
+          recibe la dirección de la página, información del navegador y tu
+          dirección IP, y puede usar cookies para asociar la visita con un
+          anuncio. Podés cambiar tu elección en «Cookies publicitarias», al pie
+          de la página.
         </p>
         <p>
           Podés configurar tu navegador para bloquear o eliminar cookies, aunque

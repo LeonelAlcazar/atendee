@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Wordmark } from '@/components/ui/Wordmark';
+import { MetaPixelPreferences } from '@/components/MetaPixelPreferences';
 import { rubros } from '@/content/rubros';
 import { servicios } from '@/content/servicios';
 import { site } from '@/content/site';
@@ -145,6 +146,7 @@ export function Footer() {
             >
               Privacidad
             </Link>
+            <MetaPixelPreferences />
           </div>
         </div>
       </div>
