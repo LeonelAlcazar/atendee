@@ -73,6 +73,12 @@ export default function RootLayout({
             gtag('js', new Date());
           `}
         </Script>
+        {/* This container supplies the site's existing Google Analytics measurement. */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-TR42C4SG"
+          strategy="afterInteractive"
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtm.js?id=GTM-M8GR9F2K"
