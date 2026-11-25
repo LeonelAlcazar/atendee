@@ -73,6 +73,7 @@ export function MetaPixelPreferences() {
       const { detail } = event as CustomEvent<Conversion>;
       if (detail?.event === 'atende_cta_click' && detail.destination === 'whatsapp') {
         window.fbq?.('trackSingle', site.metaPixelId, 'Contact');
+        window.fbq?.('trackSingle', site.metaPixelId, 'Lead');
       }
     };
     window.addEventListener('atende:conversion', onConversion);

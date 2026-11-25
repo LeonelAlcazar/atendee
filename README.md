@@ -27,9 +27,9 @@ Open `http://localhost:3000`.
 The marketing site's Meta Pixel ID lives in `src/content/site.ts`. On the
 canonical public origin, visitors can accept or reject advertising cookies and
 revisit their choice in the footer. The pixel records a `PageView` on consent
-and on subsequent page navigation, and a `Contact` when a visitor opens
+and on subsequent page navigation, and both `Contact` and `Lead` when a visitor opens
 WhatsApp. The dashboard uses the shared advertising preference to record
-`CompleteRegistration` after a new account is created. Installing the same
+`CompleteRegistration` and `Lead` after a new account is created. Installing the same
 tag in GTM as well would double-count visits.
 
 ## Verify
