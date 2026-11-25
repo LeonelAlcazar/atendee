@@ -2,7 +2,7 @@ export const site = {
   name: 'Atende',
   domain: 'atende.com.ar',
   url: 'https://www.atende.com.ar',
-  metaPixelId: '1461755009359225',
+  metaPixelId: '5211765862383241',
   appUrl: 'https://app.atende.com.ar',
   tagline: 'Conectado a tu agenda, Atende reserva el turno mientras vos atendés.',
   description:
