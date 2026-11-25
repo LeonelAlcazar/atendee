@@ -75,7 +75,7 @@ export default function RootLayout({
         </Script>
         <Script
           async
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-TR42C4SG"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-M8GR9F2K"
           strategy="afterInteractive"
         />
         <JsonLd />
