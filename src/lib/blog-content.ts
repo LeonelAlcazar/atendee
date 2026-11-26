@@ -7,6 +7,9 @@ import { decodeHTML } from 'entities';
 import { z } from 'zod';
 import { blogTopics } from '../content/blog-topics';
 import { rubros } from '../content/rubros';
+
+/** Front-matter value for a guide that fits no rubro page. */
+export const NO_RUBRO = 'ninguno';
 import { argentinaToday } from './dates';
 
 export const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -32,7 +35,10 @@ const schema = z
     category: z.enum(blogTopics.map((topic) => topic.slug)),
     // The /casos-de-uso page this guide belongs to, when its topic's default
     // (rubroByTopic) is wrong or missing. Drives the rubro link and the demo CTAs.
-    rubro: z.enum(rubros.map((rubro) => rubro.slug)).optional(),
+    // `ninguno` opts out when no rubro fits: the post closes on a service or /demo.
+    rubro: z
+      .union([z.enum(rubros.map((rubro) => rubro.slug)), z.literal(NO_RUBRO)])
+      .optional(),
     sector: z.string().min(3).optional(),
     tags: z.array(z.string().min(2)).min(2).max(6),
     related: z.array(slug).min(2).max(4),

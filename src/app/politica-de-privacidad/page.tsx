@@ -3,7 +3,7 @@ import { LegalDocument } from '@/components/legal/LegalDocument';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
 
-const lastUpdated = '24 de noviembre de 2026';
+const lastUpdated = '26 de noviembre de 2026';
 const linkClass =
   'font-medium text-ink underline decoration-ink/30 underline-offset-4 transition-colors duration-200 hover:decoration-ink';
 
@@ -213,6 +213,13 @@ const sections = [
           En Inicio, Precios y Demo contamos vistas y acciones de forma agregada.
           Esta medición no usa cookies ni identificadores y no incluye datos del
           formulario, URLs completas ni parámetros de búsqueda.
+        </p>
+        <p>
+          Si llegaste desde un anuncio o un enlace con parámetros de campaña
+          (utm), los guardamos en tu navegador solo durante la visita. Si creás
+          tu espacio, los enviamos a la app junto con lo que escribiste para
+          armar tu asistente y el lugar del sitio desde el que empezaste, para
+          saber qué canal funciona.
         </p>
         <p>
           El sitio puede usar tecnologías técnicas necesarias para funcionar,

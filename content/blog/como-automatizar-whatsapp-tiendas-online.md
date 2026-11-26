@@ -13,7 +13,7 @@ summary: >-
   y cambios, junta número de pedido y motivo, y tu equipo resuelve desde la
   bandeja.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: comercio
 sector: Tiendas online
 tags:
@@ -122,7 +122,7 @@ Para una transferencia, pedile al asistente que ubique el pedido y lo derive a q
 
 En los picos de venta es cuando más rinde el asistente y también cuando más se notan sus límites.
 
-- **Calculá las respuestas con margen.** Cuando se terminan las del plan y los créditos, el asistente deja de contestar. El contacto no recibe nada y a vos no te llega ningún aviso. La pantalla Plan muestra los créditos disponibles, no cuántas respuestas del mes te quedan.
+- **Calculá las respuestas con margen.** Cuando se terminan las del plan y los créditos, el asistente deja de contestar. El contacto no recibe nada. La app te avisa cuando quedan pocas respuestas del mes.
 - **Actualizá los plazos.** Si esa semana el correo viene demorado, cambiá el texto del contexto. El asistente repite lo que le dijiste.
 - **No uses el número para difundir la promo.** Si lo conectaste por QR, un envío masivo a gente que no lo pidió aumenta el riesgo de que WhatsApp restrinja la línea.
 - **Pensá dos veces el carrito abandonado.** Atende contesta cuando le escriben. Un seguimiento de carrito se arma a pedido, y por QR carga con ese mismo riesgo.

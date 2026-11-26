@@ -11,7 +11,7 @@ summary: >-
   a tu sistema, reservar o registrar la tarea. Reclamos, excepciones y precios
   especiales esperan a una persona. No hay guardia humana ni garantía de servicio.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: guias
 tags:
   - WhatsApp
@@ -112,7 +112,7 @@ Derivar marca la conversación como Necesita humano y a nadie le suena nada. Si 
 | Qué pasó | Qué ve el contacto | Cómo te enterás |
 | --- | --- | --- |
 | Se desconectó tu WhatsApp | Sin respuesta | En la pantalla WhatsApp del panel |
-| Se agotaron las respuestas y los créditos | Sin respuesta | Nadie avisa. Los mensajes siguen entrando a la bandeja. Plan muestra los créditos disponibles, no lo que queda del mes |
+| Se agotaron las respuestas y los créditos | Sin respuesta | La app avisa cuando quedan pocas respuestas. Los mensajes siguen entrando a la bandeja |
 | Mandó una foto de la lista | El asistente conoce el texto al pie y puede pedir los renglones | La lista la ve una persona en la bandeja |
 | La conversación está en Necesita humano | Sin respuesta del asistente | Figura entre los pendientes |
 | Quedó activo Modo CRM | Sin respuesta | El interruptor del encabezado |

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {
-  BellOff,
+  Bell,
   Check,
   Link2,
   Lock,
@@ -75,7 +75,7 @@ const runningOut = [
   },
   {
     title: 'Se acaban los créditos',
-    text: 'El asistente deja de responder. Los mensajes siguen entrando a la bandeja, el contacto no recibe nada y nadie recibe un aviso.',
+    text: 'El asistente deja de responder. Los mensajes siguen entrando a la bandeja y el contacto no recibe nada. Antes, la app te avisa cuando quedan pocas respuestas.',
   },
   {
     title: 'Empieza el mes siguiente',
@@ -363,14 +363,14 @@ export default async function PricingPage() {
                 className="grid size-11 shrink-0 place-items-center rounded-full bg-coral-tint text-coral-strong"
                 aria-hidden="true"
               >
-                <BellOff size={20} strokeWidth={1.75} />
+                <Bell size={20} strokeWidth={1.75} />
               </span>
               <div className="min-w-0">
-                <h3 className="text-title">Nadie te avisa antes</h3>
+                <h3 className="text-title">Te avisamos antes</h3>
                 <p className="mt-2 leading-relaxed text-muted">
-                  Atende no manda una alerta cuando quedan pocas respuestas. Mirá
-                  la pantalla Suscripción de la app, donde ves tu plan, cuándo
-                  renueva y tus créditos disponibles.
+                  Cuando quedan pocas respuestas del mes, la app te lo muestra.
+                  En Suscripción ves tu plan, cuándo renueva y tus créditos
+                  disponibles.
                 </p>
               </div>
             </div>

@@ -193,7 +193,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Qué pasa si se terminan las respuestas y los créditos?',
-        a: 'El asistente deja de responder. El contacto no recibe nada y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja. Sin plan y sin créditos, dejan de entrar a Atende y el panel se bloquea, salvo Suscripción, Ajustes y Aplicaciones conectadas.',
+        a: 'El asistente deja de responder y el contacto no recibe nada. Antes, la app te avisa cuando quedan pocas respuestas del mes. Con un plan activo, los mensajes siguen entrando a la bandeja. Sin plan y sin créditos, dejan de entrar a Atende y el panel muestra solo Suscripción, Ajustes, Aplicaciones conectadas y el chat de prueba.',
       },
       {
         q: '¿Me avisan antes de quedarme sin respuestas?',

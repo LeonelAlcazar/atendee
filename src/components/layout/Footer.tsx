@@ -4,7 +4,7 @@ import { Wordmark } from '@/components/ui/Wordmark';
 import { MetaPixelPreferences } from '@/components/MetaPixelPreferences';
 import { SignupLink } from '@/components/links/SignupLink';
 import { WaLink } from '@/components/links/WaLink';
-import { definition } from '@/content/que-es-atende';
+import { shortDefinition } from '@/content/que-es-atende';
 import { rubros } from '@/content/rubros';
 import { servicios } from '@/content/servicios';
 import { site } from '@/content/site';
@@ -62,9 +62,9 @@ export function Footer() {
               <Wordmark className="text-4xl" />
               <span className="sr-only">Inicio</span>
             </Link>
-            {/* The one definition, word for word on every surface. */}
+            {/* The definition's first sentence, word for word. */}
             <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-muted">
-              {definition}
+              {shortDefinition}
             </p>
           </div>
           <Button

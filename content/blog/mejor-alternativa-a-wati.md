@@ -40,7 +40,8 @@ faq:
     a: >-
       Un crédito es una respuesta del asistente, y varios mensajes seguidos del
       contacto cuentan como una sola. Si se terminan el plan y los créditos, el
-      asistente deja de responder y nadie te avisa. Los planes vigentes están en
+      asistente deja de responder; antes, la app te avisa cuando quedan pocas
+      respuestas. Los planes vigentes están en
       la página de precios, sin crear una cuenta.
   - q: ¿Atende sirve si necesito la API oficial?
     a: >-

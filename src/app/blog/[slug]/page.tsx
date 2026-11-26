@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArrowRight, Plus } from 'lucide-react';
 import { getPost, getPosts } from '@/lib/blog';
-import { formatBlogDate } from '@/lib/blog-content';
+import { formatBlogDate, NO_RUBRO } from '@/lib/blog-content';
 import { postBreadcrumbs, postGraph, postMetadata } from '@/lib/blog-seo';
 import { getBlogTopic, rubroByTopic } from '@/content/blog-topics';
 import { rubros } from '@/content/rubros';
@@ -65,7 +65,8 @@ export default async function PostPage({ params }: Props) {
   );
   const path = `/blog/${post.slug}`;
   // A per-post rubro (front matter) wins over the topic's default.
-  const rubroSlug = post.rubro ?? rubroByTopic[post.category];
+  const rubroSlug =
+    post.rubro === NO_RUBRO ? undefined : (post.rubro ?? rubroByTopic[post.category]);
   const rubro = rubros.find((item) => item.slug === rubroSlug);
   // /demo?rubro=… when the rubro is known, so the form opens on that trade.
   const demoHref = buildDemoLink(rubro?.slug);

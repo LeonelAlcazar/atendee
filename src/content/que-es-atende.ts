@@ -6,6 +6,9 @@ import { site } from './site';
 export const definition =
   'Atende es un asistente de WhatsApp para PyMEs argentinas, hecho en Córdoba. Conectado a tu agenda o a tu sistema, reserva el turno, registra el pedido o cotiza en la conversación, y tu equipo supervisa todo desde una bandeja compartida. Esa conexión la armamos a pedido, para tu negocio; sin ella, el asistente junta los datos y tu equipo confirma.';
 
+// First sentence of the definition, for tight spaces such as the footer.
+export const shortDefinition = definition.slice(0, definition.indexOf('.') + 1);
+
 // Names an assistant can confuse with Atende. One list for every surface.
 export const namesakes = ['Atendium', 'Atendio', 'AtiendeApp'] as const;
 export const namesakeAnswer =

@@ -13,6 +13,7 @@ summary: >-
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-26'
 category: inmuebles-y-hogar
+rubro: ninguno
 sector: Servicios técnicos a domicilio
 tags:
   - WhatsApp

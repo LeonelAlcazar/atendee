@@ -766,7 +766,8 @@ try {
     );
     assert.equal($('h1').text(), post.title);
     // A per-post rubro wins over the topic default; demo CTAs keep it.
-    const rubroSlug = post.rubro ?? rubroByTopic[post.category];
+    const rubroSlug =
+      post.rubro === 'ninguno' ? undefined : (post.rubro ?? rubroByTopic[post.category]);
     const demoHref = buildDemoLink(rubroSlug);
     if (post.category === 'recordatorio-de-turnos') {
       assert.equal($('article header [data-sales-intro] p').length, 2, `${path}: two pitch lines`);

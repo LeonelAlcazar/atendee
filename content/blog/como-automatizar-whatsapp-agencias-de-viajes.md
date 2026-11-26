@@ -15,6 +15,7 @@ summary: >-
 publishedAt: '2026-09-10'
 updatedAt: '2026-11-18'
 category: gastronomia-y-turismo
+rubro: ninguno
 sector: Agencias de viajes
 tags:
   - WhatsApp

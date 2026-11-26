@@ -23,7 +23,7 @@ export const pricingFaq: FaqItem[] = [
   },
   {
     q: '¿Qué pasa si se terminan las respuestas?',
-    a: 'El asistente deja de responder y nadie recibe un aviso. Con un plan activo, los mensajes siguen entrando a la bandeja para que tu equipo conteste a mano. Por eso conviene mirar la pantalla Suscripción de la app.',
+    a: 'El asistente deja de responder. Antes de que pase, la app te muestra un aviso cuando quedan pocas respuestas del mes. Con un plan activo, los mensajes siguen entrando a la bandeja para que tu equipo conteste a mano.',
   },
   {
     q: '¿Las conexiones con mi sistema vienen en el plan?',

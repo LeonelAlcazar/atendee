@@ -11,7 +11,7 @@ summary: >-
   nivel lo define la prueba, el cupo lo define tu sistema, y nadie está inscripto
   hasta que se cumplen tus pasos de matrícula y pago.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: educacion
 sector: Academias y centros de formación
 tags:
@@ -115,4 +115,4 @@ En la bandeja, una etiqueta como "alumno" o "interesado" y un responsable por se
 
 ## La semana pico puede dejarte sin respuestas
 
-Justo cuando más consultas entran, un plan chico puede quedarse corto. Si se terminan las respuestas del plan y los créditos, el asistente deja de contestar, los mensajes siguen entrando a la bandeja y nadie te avisa. La pantalla "Plan" muestra tus créditos disponibles, no cuántas respuestas del mes te quedan, así que pensá esa semana con margen y dejá a alguien de secretaría mirando la bandeja.
+Justo cuando más consultas entran, un plan chico puede quedarse corto. Si se terminan las respuestas del plan y los créditos, el asistente deja de contestar y los mensajes siguen entrando a la bandeja. La app te avisa cuando quedan pocas respuestas del mes, pero pensá esa semana con margen y dejá a alguien de secretaría mirando la bandeja.
