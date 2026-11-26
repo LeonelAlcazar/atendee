@@ -11,6 +11,15 @@ export const blogTopics = [
       'Un bot que solo contesta deja la mitad del trabajo: alguien igual tiene que anotar el turno o cargar el pedido. Conectado a tu sistema, Atende lo deja hecho en el chat, y esa conexión se arma a pedido para tu negocio; sin ella junta los datos y tu equipo confirma. Mirá [las tareas que puede terminar](/servicios) y [qué pide cada conexión](/integraciones).',
   },
   {
+    slug: 'recordatorio-de-turnos',
+    name: 'Recordatorio de turnos',
+    seoTitle: 'Recordatorio de turnos por WhatsApp con ejemplos por rubro',
+    description:
+      'Elegí un texto para recordar la cita, decidí cuándo enviarlo y encontrá ejemplos para tu consultorio, tu peluquería o tus visitas a domicilio.',
+    intro:
+      'Si hoy avisás a mano, empezá por [los mensajes que podés copiar](/blog/mensajes-de-recordatorio-de-turnos). Para que el aviso salga desde tu agenda, mirá [cómo funciona el envío a pedido](/blog/recordatorios-de-turnos-por-whatsapp).',
+  },
+  {
     slug: 'guias',
     name: 'Guías de WhatsApp',
     description:
@@ -103,6 +112,7 @@ export const blogTopics = [
 export type BlogTopicSlug = (typeof blogTopics)[number]['slug'];
 export const buyerLinkByTopic: Record<BlogTopicSlug, { href: string; label: string }> = {
   'bot-de-whatsapp': { href: '/servicios', label: 'Ver qué tareas puede terminar Atende' },
+  'recordatorio-de-turnos': { href: '/demo', label: 'Pedí una demo de recordatorios' },
   guias: { href: '/precios#calculadora', label: 'Estimar las respuestas de mi negocio' },
   alternativas: { href: '/precios', label: 'Comparar los planes de Atende' },
   automotor: { href: '/casos-de-uso/concesionarias-e-inmobiliarias#demo', label: 'Ver cómo la demo calcula cuotas y registra al interesado' },

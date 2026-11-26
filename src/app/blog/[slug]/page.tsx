@@ -60,6 +60,7 @@ export default async function PostPage({ params }: Props) {
     (slug) => getPosts().find((item) => item.slug === slug)!,
   );
   const rubro = rubros.find((item) => item.slug === rubroByTopic[post.category]);
+  const pitchOnlyInHeader = post.salesIntro && (post.lead || post.category === 'recordatorio-de-turnos');
   // White on the forest panel, coral text on the canvas.
   const rubroLink = (inverse: boolean) =>
     rubro && (
@@ -285,7 +286,7 @@ export default async function PostPage({ params }: Props) {
                 )}
               </section>
             )}
-            {post.lead && post.salesIntro ? rubroLink(false) : (
+            {pitchOnlyInHeader ? rubroLink(false) : (
               <section className="relative mt-16 max-w-xl overflow-hidden rounded-4xl bg-forest px-6 py-10 text-white sm:px-10 sm:py-12 md:mt-20">
                 <div
                   className="absolute inset-x-0 bottom-0 h-2/3 bg-[radial-gradient(60%_100%_at_30%_100%,rgb(230_72_44/0.22),transparent_70%)]"

@@ -27,7 +27,7 @@ const pageLink = (page: { title: string; path: string; description: string }) =>
 // Everything except the limits below comes from the catalogs, so it cannot drift.
 export function createLlmsTxt(posts: BlogPost[]) {
   const guides = posts.filter(
-    (post) => post.category === 'guias' || post.category === 'bot-de-whatsapp',
+    (post) => ['guias', 'bot-de-whatsapp', 'recordatorio-de-turnos'].includes(post.category),
   );
   const comparisons = posts.filter((post) => post.category === 'alternativas');
   const sectorGuides = posts.filter(

@@ -582,6 +582,10 @@ try {
       `${path}: visible summary`,
     );
     assert.equal($('h1').text(), post.title);
+    if (post.category === 'recordatorio-de-turnos') {
+      assert.equal($('article header [data-sales-intro] p').length, 2, `${path}: two pitch lines`);
+      assert.equal($('article [data-cta="blog-demo"]').length, 0, `${path}: no second pitch after the guide`);
+    }
     if (post.salesIntro) {
       const intro = $('article header [data-sales-intro]');
       assert.deepEqual(

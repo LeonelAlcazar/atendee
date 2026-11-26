@@ -57,7 +57,7 @@ export const servicios: Servicio[] = [
   {
     id: 'turnos',
     slug: 'turnos-whatsapp',
-    updated: '2026-11-18',
+    updated: '2026-11-26',
     title: 'Turnos y reservas por WhatsApp',
     headline: 'Conectado a tu agenda, Atende reserva el turno por WhatsApp.',
     seoTitle: 'Sistema de turnos por WhatsApp: reservas en tu agenda',
@@ -152,8 +152,8 @@ export const servicios: Servicio[] = [
         title: 'Recordatorios de turno, a pedido',
         text: 'Para recordar la cita del jueves, tu agenda tiene que saber que el turno sigue vigente e iniciar el envío de texto. Esa conexión se arma a pedido. Si lo que querés es avisar a la misma clase todos los lunes, tu equipo puede programar el texto desde Contactos.',
         link: {
-          href: '/blog/recordatorios-de-turnos-por-whatsapp',
-          label: 'Cómo funcionan los recordatorios a pedido',
+          href: '/blog/tema/recordatorio-de-turnos',
+          label: 'Ver mensajes y guías de recordatorio de turnos',
         },
       },
     ],

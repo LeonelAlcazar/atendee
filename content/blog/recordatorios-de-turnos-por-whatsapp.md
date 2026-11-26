@@ -1,20 +1,22 @@
 ---
-title: 'Recordatorios de turnos por WhatsApp: qué necesitan, cómo se arman y qué riesgo tienen'
-seoTitle: 'Recordatorios de turnos por WhatsApp: qué necesitan y qué riesgo'
+title: 'Cómo enviar recordatorios de turnos por WhatsApp desde tu agenda'
+seoTitle: 'Cómo enviar recordatorios de turnos por WhatsApp desde tu agenda'
 description: >-
-  Un recordatorio de turno por WhatsApp necesita agenda conectada, disparador,
-  consentimiento y respuesta prevista. Cómo se arma a pedido y cuándo usar la
-  API.
+  Qué necesita tu agenda para mandar un recordatorio de turno por WhatsApp,
+  cómo pedir permiso y cuándo podés registrar una confirmación o mover la cita.
 summary: >-
-  Para enviar recordatorios de turnos por WhatsApp, tu agenda tiene que
-  detectar cada turno vigente y disparar el aviso con permiso de la persona.
-  En Atende ese envío desde tu sistema se habilita a pedido. Reprogramar desde
-  el chat requiere otra acción que escriba el cambio en la agenda. Si solo
-  necesitás mandar el mismo aviso cada semana o mes, tu equipo puede
-  programarlo desde Contactos.
+  Para enviar un recordatorio por cada cita, tu agenda verifica que el turno
+  siga vigente y le indica a Atende cuándo avisar a la persona que aceptó
+  recibirlo. El envío desde tu sistema se habilita a pedido. Para reprogramar
+  por chat, la agenda también tiene que aceptar cambios. Si llevás los turnos
+  en una planilla de Google Sheets conectada, podés programar una regla que
+  lea las filas que corresponde avisar.
+salesIntro:
+  - 'Desde tu agenda, Atende avisa.'
+  - 'Tu equipo supervisa los cambios.'
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-18'
-category: guias
+updatedAt: '2026-11-26'
+category: recordatorio-de-turnos
 tags:
   - recordatorios
   - turnos
@@ -29,10 +31,10 @@ related:
 faq:
   - q: ¿Atende manda recordatorios de turnos?
     a: >-
-      Sí, si tu agenda dispara el envío con la fecha de cada turno mediante
-      una integración a pedido. Para moverlo en el chat, hace falta además que
-      la agenda acepte cambios. Para avisos periódicos sin consultar turnos,
-      tu equipo puede programar textos desde Contactos.
+      Sí. Una agenda conectada a pedido puede indicar cuándo enviar cada aviso.
+      Si usás Google Sheets, una regla programada puede leer las filas de tu
+      planilla habilitada y mandar el texto con el horario. Para mover la cita
+      desde el chat, la agenda tiene que permitir ese cambio.
   - q: ¿Pueden bloquear mi número por mandar recordatorios?
     a: >-
       Hay riesgo, por cualquier ruta. WhatsApp pide que cuentes con el permiso de
@@ -41,11 +43,10 @@ faq:
       y escribir primero desde un número vinculado por QR suma riesgo.
   - q: ¿Necesito la API oficial para mandar recordatorios?
     a: >-
-      No siempre, pero es la vía pensada para que una empresa escriba primero: fuera
-      de la ventana de 24 horas usa plantillas aprobadas y Meta cobra por mensaje.
-      Conviene evaluarla si mandás muchos recordatorios. En Atende elegís cómo
-      conectar tu número, y cómo se arma el recordatorio lo vemos con vos en la
-      demo.
+      Si tu negocio va a iniciar conversaciones regularmente, evaluá la plataforma
+      oficial de WhatsApp. Fuera de las 24 horas desde el último mensaje de la
+      persona, esa plataforma exige una plantilla aprobada. Para un recordatorio
+      puntual, revisá con qué vía funciona la conexión de tu agenda.
   - q: ¿Qué dato no debería ir en un recordatorio de un consultorio?
     a: >-
       Lo que revele información de salud: diagnóstico, tratamiento o una
@@ -64,7 +65,7 @@ sources:
     checkedAt: '2026-11-06'
   - title: 'Meta for Developers: precios de la Plataforma de WhatsApp Business'
     url: 'https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing'
-    checkedAt: '2026-11-06'
+    checkedAt: '2026-11-26'
   - title: 'Ley 25.326 de Protección de los Datos Personales (texto actualizado)'
     url: 'https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm'
     checkedAt: '2026-11-06'
@@ -72,7 +73,7 @@ sources:
 
 El martes a la tarde, una paciente recibe el recordatorio de su turno del miércoles. Contesta "no llego", el asistente le ofrece otro horario y el turno queda movido. El miércoles a las 10:30 queda libre para otra persona. Un recordatorio de turnos por WhatsApp vale eso: el aviso importa, y lo que pasa cuando la persona contesta importa más.
 
-Para un aviso con fecha y hora reales, tu sistema de turnos detecta la cita e inicia el envío mediante una integración que se arma a pedido. Un mensaje que se repite cada semana puede programarlo tu equipo en Contactos. Esa regla sigue el calendario que vos elegís y no consulta si una cita cambió.
+Para avisar desde tu agenda, tu sistema de turnos verifica la cita e inicia el envío mediante una integración que se arma a pedido. Si recepción lleva los turnos en Google Sheets, también puede [programar la lectura de las citas vigentes desde una planilla](/blog/recordatorio-de-turnos-desde-una-planilla). En ese caso, la persona recibe los datos de la fila que cumple el filtro.
 
 Ejemplo ilustrativo, con la agenda conectada y el recordatorio armado para ese consultorio:
 
@@ -90,7 +91,7 @@ Esa última línea sale solo si la agenda confirmó el cambio. Esa conexión se 
 
 ## Las cinco piezas de un recordatorio que sirve
 
-**1. Una agenda conectada.** El recordatorio tiene que salir de la agenda real. Si recepción canceló un turno a las 9 y el mensaje sale a las 10, le recordás a alguien un turno que ya no existe. Por eso esta conexión lee los turnos del día siguiente y escribe los cambios.
+**1. Una agenda al día.** Si recepción canceló un turno a las 9 y el mensaje sale a las 10, le recordás a alguien un turno que ya no existe. Revisá la fecha y el estado al preparar el aviso. Solo hace falta permiso para escribir en la agenda si además querés registrar la respuesta o mover la cita.
 
 **2. El momento de envío.** Tu agenda decide cuándo corresponde avisar y le pide a Atende que envíe el texto. Probá qué pasa si hay feriados, si recién se reservó el turno o si se canceló antes del aviso.
 
@@ -99,6 +100,8 @@ Esa última línea sale solo si la agenda confirmó el cambio. Esa conexión se 
 **4. El texto.** Fecha, hora, lugar y qué hacer si no puede. Más abajo hay un ejemplo de qué dejar afuera.
 
 **5. Un plan para cada respuesta.** Sin esto, solo mandaste un mensaje y le sumaste trabajo a recepción.
+
+Si estás armando el primer aviso, podés elegir [un mensaje de recordatorio listo para adaptar](/blog/mensajes-de-recordatorio-de-turnos) y decidir [con cuánta anticipación mandarlo](/blog/cuando-enviar-recordatorio-de-turnos). Si ya recibís respuestas, fijate [cómo registrar un «sí, voy» en la agenda](/blog/confirmar-asistencia-a-un-turno-por-whatsapp).
 
 ## Por qué la gente falta, y qué arregla un recordatorio
 
@@ -109,7 +112,7 @@ No tenemos una cifra para prometerte. Cuánto baja el ausentismo depende de tu r
 - **Le faltaba algo.** La orden, la autorización de la obra social, los estudios previos. Sirve si el aviso lo menciona con tiempo, no la noche anterior.
 - **No le importa perder el lugar.** Un recordatorio no lo arregla. Ahí juegan la seña o la política de cancelación que tengas.
 
-Medí lo tuyo antes y después: turnos dados, ausentes y huecos que pudiste volver a ocupar, mes a mes. Una lista de espera vale tanto como el recordatorio: un turno que se libera el día anterior solo sirve si tenés a quién ofrecérselo.
+Compará los turnos que se mantuvieron hasta la hora de atención y contá cuántas personas faltaron. Anotá también qué lugares se liberaron con tiempo y cuántos volviste a ocupar. Podés seguir [el cálculo de ausentismo paso a paso](/blog/medir-ausentismo-con-recordatorios-de-turnos).
 
 ## Cómo escribir el recordatorio
 
@@ -126,7 +129,7 @@ El segundo tiene dos problemas. Expone un dato de salud en una pantalla de bloqu
 | --- | --- | --- |
 | "Sí, voy" | Marcar el turno como confirmado | Permiso para escribir en la agenda |
 | "No llego" o "cambiámelo" | Ofrecer horarios y mover el turno | Leer y escribir en la agenda |
-| "Cancelá" | Liberar el turno y avisar a la lista de espera si tenés | Escribir en la agenda |
+| "Cancelá" | Liberar el turno. Si tenés una lista de espera, recepción puede ofrecer el horario | Permiso para cancelar en la agenda |
 | "No me escriban más" | Dejar de mandarle y anotarlo | La política de WhatsApp pide [respetar esas solicitudes](https://whatsappbusiness.com/es-la/policy/) |
 | Una duda clínica | Pasarla a una persona | Regla en el contexto del asistente y estado **Necesita humano** |
 | Un audio o una foto | El asistente usa la transcripción disponible o pide aclaración. La foto la revisa tu equipo | Consultas clínicas y documentación sensible van a una persona |
@@ -157,10 +160,16 @@ Para bajar el riesgo, sin eliminarlo:
 | Muchos turnos por día, o gente que nunca te escribió | Evaluá la API oficial de Meta, con plantillas |
 | Ese número no puede quedar fuera de servicio | Evaluá la API oficial, o separá los avisos en otro canal |
 
-La API oficial está pensada para que una empresa escriba primero. Según la [política](https://whatsappbusiness.com/es-la/policy/), fuera de las 24 horas desde el último mensaje de la persona solo podés usar plantillas aprobadas. Un recordatorio sin promoción, por un turno que la persona pidió, encaja en la descripción de [plantilla de utilidad](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization), aunque esa categoría la define Meta: los contenidos mixtos cuentan como marketing. Meta [cobra esos mensajes](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing) según el país, y eso es parte de lo que mirás al elegir. Si es la que te conviene, podés conectar tu número a Atende por esa vía. Los recordatorios también se arman a pedido: lo vemos con vos en la [demo](/demo).
+En la plataforma oficial, si pasaron más de 24 horas desde el último mensaje de la persona, necesitás una plantilla aprobada. Un recordatorio sobre una cita que la persona pidió puede corresponder a la categoría de utilidad. Meta define la categoría y establece la tarifa según el tipo de mensaje entregado y el país del destinatario. [Política de mensajes](https://whatsappbusiness.com/es-la/policy/), [criterios para las plantillas](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization) y [tarifas vigentes](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing).
 
 ## Si hoy no tenés nada armado
 
 Tu equipo puede seguir mandando recordatorios a mano desde el teléfono, y es una buena forma de aprender qué responde la gente antes de automatizar. Desde la bandeja de Atende, una conversación Finalizada hay que reabrirla para escribir.
 
-Cuando la persona contesta, ahí sí el asistente toma la consulta. Eso funciona desde el primer día, sin conexión: junta el pedido y tu equipo confirma el cambio. Si tu negocio es de turnos, seguí por [clínicas y consultorios](/casos-de-uso/clinicas-y-consultorios) o [peluquerías y estética](/casos-de-uso/peluquerias-y-estetica). Acá está [qué se arma a pedido hoy](/integraciones).
+Cuando la persona contesta, el asistente activo puede tomar el pedido de cambio aunque la agenda todavía no esté conectada. Tu equipo revisa la reserva, hace el cambio y confirma el horario. [Qué acciones se pueden conectar a tu sistema](/integraciones).
+
+## Qué cambia según tu rubro
+
+- Si un teléfono familiar recibe varios avisos, identificá la cita por su horario. [Recordatorio de turnos odontológicos](/blog/recordatorio-de-turnos-odontologicos).
+- Si una clienta pide otro día para un color, buscá un bloque que alcance para todo el trabajo. [Recordatorios para peluquerías](/blog/recordatorio-de-turnos-para-peluquerias).
+- Si el técnico hace varias visitas, indicá el rango de llegada y comprobá que alguien pueda abrir. [Recordatorio de visitas a domicilio](/blog/recordatorio-de-turnos-para-servicio-tecnico-a-domicilio).

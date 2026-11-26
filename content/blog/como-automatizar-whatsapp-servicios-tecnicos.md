@@ -11,7 +11,7 @@ summary: >-
   puede mirar la foto de la etiqueta en la bandeja y verificar modelo y
   repuesto antes de presupuestar.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: inmuebles-y-hogar
 sector: Servicios técnicos a domicilio
 tags:
@@ -129,6 +129,6 @@ Tu gente no está mirando una pantalla. La bandeja funciona en el navegador del 
 
 El chat se cierra solo 12 horas después del último mensaje del cliente, así que el que vuelve a la semana por la misma heladera arranca otra vez con el asistente, que tiene en cuenta la conversación en curso y no la visita anterior. Si ese reclamo lo quiere seguir un técnico, tiene que pasar el chat a Necesita humano: mandar un mensaje desde la bandeja no lo frena.
 
-El aviso de “mañana pasa el técnico” sale de tu negocio y hoy Atende no lo manda solo. [Se arma a pedido, con sus riesgos](/blog/recordatorios-de-turnos-por-whatsapp).
+Con el envío a pedido habilitado, tu agenda le indica a Atende cuándo recordar la visita. Incluí la franja de llegada para que el cliente pueda organizarse y avisar si cambió el acceso. [Mensaje de recordatorio para una visita técnica a domicilio](/blog/recordatorio-de-turnos-para-servicio-tecnico-a-domicilio).
 
 Administraciones que te llaman por edificios tienen su propia lógica en la [guía de consorcios](/blog/como-automatizar-whatsapp-consorcios), y [turnos y reservas](/servicios/turnos-whatsapp) y los [casos de uso](/casos-de-uso) muestran la misma acción en otros rubros.

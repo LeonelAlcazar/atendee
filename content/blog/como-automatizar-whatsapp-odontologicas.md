@@ -14,7 +14,7 @@ salesIntro:
   - "Reprogramá una sesión por WhatsApp sin perder el tiempo de sillón que necesita. Con una conexión a pedido a tu agenda, Atende puede dejar el cambio registrado."
   - "Recepción supervisa los cambios. Sin conexión, confirma el horario a mano. Las consultas clínicas pasan a un profesional."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: salud
 sector: Consultorios odontológicos
 tags:
@@ -111,6 +111,8 @@ Cuando alguien de recepción quiera seguir uno de esos chats, tiene que cambiar 
 ## Presupuestos sin respuesta y controles que nadie retoma
 
 El paciente que pidió presupuesto y desapareció, y el que debía volver al control periódico, son dos seguimientos que todo consultorio deja pasar. De entrada, Atende solo contesta: no abre conversaciones. Esos dos avisos se pueden armar a pedido para tu consultorio, con el acuerdo del paciente, y tienen un costado delicado: si escribís en frío desde una línea enlazada por QR, WhatsApp puede restringirla. Antes de pedirlos, leé [cómo funcionan los recordatorios](/blog/recordatorios-de-turnos-por-whatsapp).
+
+Para una cita ya reservada, recepción puede avisar la fecha y la sede sin incluir el motivo de la visita. Si dos pacientes comparten el teléfono, verificá qué turno te están confirmando. [Modelo de recordatorio de turno odontológico](/blog/recordatorio-de-turnos-odontologicos).
 
 ## Qué dejar cargado en un consultorio odontológico
 

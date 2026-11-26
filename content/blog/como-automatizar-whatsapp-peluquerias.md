@@ -11,7 +11,7 @@ summary: >-
   foto de referencia en la bandeja y acordar una evaluación. Alguien del
   equipo coteja las señas.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: belleza-y-bienestar
 sector: Peluquerías
 tags:
@@ -122,6 +122,6 @@ Para seguir vos, marcá la conversación como "Necesita humano" y el asistente d
 - Qué hace cada profesional y qué días.
 - Dirección, cómo llegar y si atienden sin turno.
 
-"Mañana tenés turno" y "ya te toca la raíz" son mensajes que salen del salón, no respuestas. Se arman a pedido, porque de entrada Atende solo contesta lo que le escriben, y conviene mandarlos únicamente a clientas que los esperan: los envíos que nadie pidió desde un número conectado por QR pueden acabar en una restricción. Más en [recordatorios por WhatsApp](/blog/recordatorios-de-turnos-por-whatsapp).
+Para recordar el turno de mañana, la agenda del salón indica a Atende cuándo mandar el texto mediante la conexión a pedido. Escribile a la clienta que aceptó el aviso. Podés incluir quién la atiende y cuánto dura el trabajo. [Mensajes de recordatorio para corte y color](/blog/recordatorio-de-turnos-para-peluquerias).
 
 Si además hacés estética, la guía de [centros de estética](/blog/como-automatizar-whatsapp-centros-de-estetica) cubre evaluaciones y sesiones. Para ver el armado completo y pedir una demo, entrá a [WhatsApp para peluquerías y estética](/casos-de-uso/peluquerias-y-estetica).
