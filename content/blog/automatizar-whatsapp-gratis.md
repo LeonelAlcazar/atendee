@@ -1,24 +1,24 @@
 ---
-title: 'Cómo automatizar WhatsApp gratis con Atende'
-seoTitle: 'Automatizar WhatsApp gratis con 100 créditos de bienvenida'
+title: 'Cómo automatizar WhatsApp gratis: qué podés probar sin pagar en Atende'
+seoTitle: 'Automatizar WhatsApp gratis: probá el asistente antes de pagar'
 description: >-
-  Automatizá WhatsApp gratis con 100 créditos de bienvenida de Atende, sin
-  tarjeta: juntá tus primeros pedidos y mirá qué pasa al agotarlos.
+  Probá gratis cómo tu asistente de Atende toma un pedido en el chat de prueba,
+  antes de elegir un plan. Qué es gratis, qué se paga y qué necesita una conexión.
 summary: >-
-  Con los créditos de bienvenida podés probar cómo el asistente reúne un
-  pedido por WhatsApp para que tu equipo lo confirme. Activá el beneficio
-  disponible en la app y vinculá tu número por QR. Cada respuesta automática
-  usa saldo. Para registrar la compra directamente en tu sistema, hace falta
-  una conexión armada a pedido. Revisá las condiciones vigentes en Plan antes
-  de depender de la prueba para atender clientes.
+  Cada espacio de Atende puede probar su asistente gratis en el chat de prueba,
+  antes de elegir un plan y sin tarjeta. Ahí ves cómo pregunta lo que falta,
+  junta el pedido y lo deja listo para tu equipo, sin escribirle a ningún
+  cliente. Para que conteste en tu WhatsApp hace falta un plan con IA, y para
+  que registre el pedido en tu sistema, una conexión armada a pedido. Gratis del
+  todo, sin IA, quedan las herramientas de WhatsApp Business.
 publishedAt: '2026-11-02'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: guias
 tags:
   - WhatsApp
   - automatización
   - respuestas automáticas
-  - créditos gratis
+  - chat de prueba
   - pymes
 related:
   - cuanto-cuesta-automatizar-whatsapp
@@ -27,64 +27,63 @@ related:
   - como-automatizar-whatsapp-empresa
 draft: false
 faq:
-  - q: ¿Los 100 créditos gratis se renuevan todos los meses?
+  - q: ¿Atende se puede usar gratis?
     a: >-
-      No. Son créditos de bienvenida que se activan una sola vez por espacio de
-      trabajo y no son un plan mensual ni ilimitado. Después podés sumar hasta
-      100 más con las recompensas de X e Instagram, 50 cada una, que pasan por
-      revisión manual, o elegir un plan con automatización.
-  - q: ¿Necesito tarjeta o una suscripción para activarlos?
+      Podés probar el asistente gratis en el chat de prueba de tu espacio, antes
+      de elegir un plan y sin tarjeta. Para que les conteste a tus clientes en
+      WhatsApp necesitás un plan con IA. Los planes vigentes están en la página
+      de precios, sin crear una cuenta.
+  - q: ¿El chat de prueba les escribe a mis clientes?
     a: >-
-      No. Se activan con el botón “Activar 100 créditos gratis”, sin tarjeta. Si
-      la app te frena antes del primer uso, elegí “Probar gratis sin tarjeta”.
-      Contratar un plan pago es una decisión aparte; los planes vigentes se ven
-      en la app antes de pagar.
-  - q: ¿Las pruebas desde otro número consumen créditos?
+      No. Las respuestas quedan en el panel y no salen por WhatsApp. Si el
+      asistente tiene herramientas conectadas, como tu planilla de Google
+      Sheets, en la prueba pueden actuar sobre tus datos reales: usá datos de
+      prueba.
+  - q: ¿Cuántos mensajes puedo mandar en el chat de prueba?
     a: >-
-      En un chat real de WhatsApp, cada respuesta del asistente consume saldo.
-      Si administración habilita el chat de prueba de tu espacio, podés
-      ensayar sin enviar mensajes por WhatsApp ni gastar créditos. Las
-      herramientas conectadas pueden ejecutar acciones reales.
-  - q: ¿El asistente puede reservar turnos o consultar stock durante la prueba gratis?
+      Tiene un límite de mensajes, que se renueva con el tiempo. Llevá
+      preparadas las consultas que más recibís y las que tiene que tomar una
+      persona, y corregí las instrucciones entre una prueba y otra.
+  - q: ¿Atende sigue dando créditos de bienvenida?
+    a: >-
+      No. Atende ya no regala créditos al crear un espacio: la prueba gratis es
+      el chat de prueba. Si tu espacio ya tenía créditos, siguen disponibles en
+      Suscripción.
+  - q: ¿El asistente puede reservar turnos o consultar stock durante la prueba?
     a: >-
       Para registrar el pedido o reservar un turno, Atende necesita una
-      conexión armada a pedido con tu sistema. Sin ella reúne los datos y el
-      equipo confirma. Para presupuestarlo, separá el consumo de respuestas
-      del trabajo de integración.
+      conexión con tu sistema, que se arma a pedido. Sin ella, reúne los datos y
+      tu equipo confirma. Con tu planilla de Google Sheets conectada, ya en la
+      prueba puede consultarla y, si lo permitís, anotar una fila.
 sources: []
 ---
-Con los 100 créditos de bienvenida podés ver gratis a un asistente tomando pedidos en tu WhatsApp: pregunta lo que falta, junta los datos y le deja la solicitud lista a tu equipo. Para automatizar WhatsApp gratis con Atende, entrá a [app.atende.com.ar](https://app.atende.com.ar), creá tu espacio, contale qué hace tu negocio y activá los créditos. Después conectás tu número; esta guía sigue el camino del QR, con el número que ya usás. No necesitás tarjeta ni suscripción.
-
-Tené en cuenta la unidad: cada crédito es una respuesta del asistente, no un cliente ni una conversación completa.
+En el chat de prueba de Atende ves gratis a tu asistente tomando un pedido: pregunta lo que falta, junta los datos y le deja la solicitud lista a tu equipo. Cada espacio lo tiene antes de elegir un plan, sin tarjeta, y esas respuestas no salen por WhatsApp. Para que les conteste a tus clientes en tu número hace falta un plan con IA, y para que registre el pedido en tu sistema, una conexión que armamos a pedido.
 
 Si todavía estás decidiendo qué herramienta necesitás, compará [un bot de WhatsApp gratis con uno pago](/blog/bot-de-whatsapp-gratis-o-pago). Para escribir las instrucciones con más detalle, usá la [guía para crear y probar un bot](/blog/como-crear-un-bot-de-whatsapp).
 
-## Qué trae la prueba gratis de Atende
+## Qué es gratis y qué se paga
 
-Mientras tu espacio tenga créditos, podés usar la app y el asistente contesta mensajes de texto aunque no tengas una suscripción paga, a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Responde con lo que configuraste y todo tu equipo trabaja sobre las mismas conversaciones.
+Gratis del todo, sin IA, tenés las herramientas de la app de WhatsApp Business: [bienvenida, ausencia y respuestas rápidas](/blog/mensajes-automaticos-whatsapp-negocios). Con Atende, lo gratis es la prueba: ves cómo responde el asistente con los datos de tu negocio antes de pagar.
 
-| Concepto | Cómo funciona |
+| Qué | Cómo funciona |
 | --- | --- |
-| Créditos de bienvenida | 100, una sola vez por espacio de trabajo |
-| Activación | No es automática: la hacés vos con un clic |
-| Consumo | 1 crédito por cada respuesta del asistente |
-| Renovación | No se renuevan cada mes ni son ilimitados |
-| Conexión | Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Esta guía sigue el QR |
+| Chat de prueba | Gratis para cada espacio, antes de elegir un plan. Tiene un límite de mensajes |
+| Dónde responde en la prueba | En el panel. No le escribe a ningún cliente |
+| Tu WhatsApp | Con un plan con IA, que se mide en respuestas del asistente |
+| Planilla de Google Sheets | La conectás vos desde el panel. El asistente la consulta también en la prueba |
+| Conexión con tu agenda o tu sistema | A pedido, se cotiza para cada negocio |
+| Regalo de créditos | No hay. Los créditos que un espacio ya tenía siguen disponibles |
 
-## Cómo activar los créditos y conectar tu WhatsApp
+## Cómo probar tu asistente gratis
 
-Estos pasos son para vincular el número por QR. Si preferís la API oficial, lo vemos con vos en la [demo](/demo). Al activar el asistente con saldo disponible, ya puede responder en los chats individuales habilitados.
+1. **Creá tu espacio.** Entrá a [app.atende.com.ar/empezar](https://app.atende.com.ar/empezar?ref=blog-automatizar-whatsapp-gratis) y creá tu cuenta.
+2. **Contale qué hace tu negocio.** Qué vendés, horarios, zonas, condiciones y qué casos toma siempre una persona. Esa descripción es la base de lo que responde el asistente, y la ajustás cuando quieras.
+3. **Si usás Google Sheets, conectá tu planilla.** El asistente la consulta en la conversación y, si lo permitís, anota filas. Es opcional.
+4. **Abrí el chat de prueba y escribile como un cliente.** Las respuestas quedan en el panel.
+5. **Corregí y repetí.** Si una respuesta no cierra, ajustá las instrucciones y probá de nuevo ese caso.
+6. **Cuando te convence, elegí un plan y vinculá tu número.** Elegís cómo conectar tu número: con la API oficial de Meta, que vemos con vos en la [demo](/demo), o desde el panel, con un QR o con un código en tu mismo teléfono.
 
-1. **Creá tu espacio.** Entrá a [app.atende.com.ar](https://app.atende.com.ar) y seguí el recorrido inicial. Primero te pide el nombre de tu equipo y un link corto.
-2. **Contale qué hace tu negocio.** Cargá la información en ese paso o después desde Asistente. Hacelo antes de conectar el número.
-3. **Invitá a tu equipo.** Podés dejarlo para después.
-4. **Activá la bienvenida.** Elegí “Probar gratis sin tarjeta”. En la pantalla Plan, buscá “Créditos gratis para tu espacio” y, en “Créditos de bienvenida”, hacé clic en “Activar 100 créditos gratis”.
-5. **Escaneá el QR.** En la pantalla WhatsApp abrí el código y escanealo desde dispositivos vinculados, con el teléfono del negocio. Lo vas a tener que ver en otra pantalla.
-6. **Probá desde otro número,** como lo haría un cliente, y mirá la conversación en la app. Usa créditos.
-
-Sin créditos ni plan no se puede vincular WhatsApp. Si la bienvenida ya se activó, la app te avisa. Y revisá que el número siga conectado: el asistente contesta mientras la conexión y el servicio estén activos.
-
-**Elegí dónde probar.** Si administración habilitó el chat de prueba, podés ensayar sin gastar créditos ni escribir a un contacto. Las conexiones pueden tocar sistemas reales, así que usá datos de prueba al ensayar una acción. Si preferís comprobar la entrega por WhatsApp, escribí desde otro número. Ese recorrido sí consume saldo.
+Desde que vinculás el número, el asistente les contesta a los contactos que escriben, a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Revisá que el número siga conectado.
 
 ## Cómo escribir las instrucciones de tu negocio
 
@@ -99,7 +98,7 @@ El asistente responde con lo que le cargás. Incluí datos vigentes, lo que hay 
 
 Las líneas que dicen “pasá la conversación al equipo” hacen un trabajo concreto: marcan el chat como “Necesita humano” y lo suman a los pendientes. Sin ellas, el pedido queda como una conversación más y a las 12 horas del último mensaje del cliente el chat se cierra solo.
 
-Con esa configuración, una charla se ve así:
+Con esa configuración, una charla en el chat de prueba se ve así:
 
 > **Ejemplo ilustrativo, sin conexión**
 >
@@ -111,11 +110,11 @@ Con esa configuración, una charla se ve así:
 >
 > **Asistente:** Queda tu pedido: sábado, 20 porciones, chocolate con dulce de leche. El equipo te confirma precio y fecha por acá, de martes a sábado de 10 a 19.
 
-El asistente respondió dos veces y usó dos créditos. No inventó un precio ni prometió la fecha: sin conexión, junta el pedido y tu equipo lo confirma.
+El asistente no inventó un precio ni prometió la fecha: sin conexión, junta el pedido y tu equipo lo confirma.
 
 ## Hasta dónde llega la prueba y qué necesita una conexión
 
-Con los créditos ves el pedido bien tomado. Para verlo terminado hace falta conectar tu sistema, y eso no sale de los créditos:
+En la prueba ves el pedido bien tomado. Para verlo terminado hace falta conectar tu sistema:
 
 > **Ejemplo ilustrativo, con el sistema de pedidos conectado**
 >
@@ -127,18 +126,19 @@ Con los créditos ves el pedido bien tomado. Para verlo terminado hace falta con
 >
 > **Asistente:** Listo, registré tu pedido para retirar el sábado.
 
-Conectado a tu sistema, Atende registra el pedido. Lo mismo vale para reservar turnos, consultar stock y registrar interesados en tu CRM. Las conexiones se arman a pedido. Tu equipo también puede programar avisos recurrentes desde Contactos. Si un aviso depende de la fecha real del turno o del estado del pedido, hace falta que lo dispare tu sistema. Mirá [qué sistemas se pueden conectar](/integraciones).
+Conectado a tu sistema, Atende registra el pedido. Lo mismo vale para reservar turnos, consultar stock y registrar interesados en tu CRM, con conexiones que se arman a pedido. Si anotás los pedidos en una planilla de Google Sheets, la conectás vos desde el panel y el asistente puede sumar la fila, si lo permitís. Tu equipo también puede programar mensajes recurrentes desde Contactos. Si un aviso depende de la fecha real del turno o del estado del pedido, hace falta que lo dispare tu sistema. Mirá [qué sistemas se pueden conectar](/integraciones).
 
-## Pruebas que conviene hacer desde otro número
+## Pruebas que conviene hacer antes de vincular el número
 
-Cada respuesta de prueba usa un crédito, así que probá con un objetivo. Además de una consulta común, revisá estos casos:
+El chat de prueba tiene un límite de mensajes, así que probá con un objetivo. Además de una consulta común, revisá estos casos:
 
 - **Consulta incompleta:** “¿Cuánto sale?”, sin decir qué. El asistente tiene que pedir lo que falta en vez de adivinar.
 - **Algo que no ofrecés:** por ejemplo, un envío si solo hacés retiro. La respuesta tiene que aclararlo sin inventar alternativas.
-- **Reclamo o pedido de hablar con una persona:** el chat tiene que quedar como “Necesita humano” y el cliente tiene que saber en qué horario sigue el equipo.
-- **Respuesta manual:** contestá desde la app sin marcar nada y volvé a escribir desde el otro número. El asistente sigue contestando: responder no lo frena.
+- **Reclamo o pedido de hablar con una persona:** el asistente tiene que derivar y el cliente tiene que saber en qué horario sigue el equipo.
 
 Si algo falla, corregí las instrucciones y repetí solo los casos afectados.
+
+Cuando ya tengas el número vinculado, probá también desde otro número, como lo haría un cliente. Esas respuestas sí usan las de tu plan. Contestá desde la bandeja sin marcar nada y volvé a escribir: el asistente sigue contestando, porque responder no lo frena.
 
 ### Cómo organizar la atención humana
 
@@ -151,39 +151,22 @@ Para seguir vos en un chat, marcalo “Necesita humano”. Eso frena al asistent
 
 Los detalles están en [cómo pausar el bot y tomar el chat](/blog/whatsapp-ia-atencion-humana).
 
-## Cuánto rinden los 100 créditos de bienvenida
+## Cuántas respuestas usa una conversación
 
-Depende de cuántas veces contesta el asistente en cada conversación. Estos son escenarios de cálculo, no mediciones:
+Con un plan, cada vez que el asistente contesta usa una respuesta, no un cliente ni una conversación completa. Estos son escenarios de cálculo, no mediciones:
 
-| Respuestas del asistente por conversación | Conversaciones posibles con 100 créditos |
+| Respuestas del asistente por conversación | Respuestas para 100 conversaciones |
 | --- | --- |
-| 2 | 50 |
-| 4 | 25 |
-| 8 | 12, y sobran 4 créditos |
+| 2 | 200 |
+| 4 | 400 |
+| 8 | 800 |
 
-Contá también las pruebas: si usás 20 créditos probando, quedan 80, que con cuatro respuestas por conversación alcanzan para 20 conversaciones de clientes. Si un cliente manda varios mensajes seguidos, se agrupan y cuentan como una respuesta. Lo que escribe tu equipo a mano no consume créditos.
+Si un cliente manda varios mensajes seguidos, se agrupan y cuentan como una respuesta. Lo que escribe tu equipo a mano no consume. Para compararlo con los planes, usá la [calculadora de respuestas](/precios#calculadora). Para proyectar el gasto completo, mirá [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
 
-Para proyectar el gasto cuando termine la prueba, mirá [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
+## Cuándo pasar a un plan
 
-## Créditos extra opcionales por contar tu experiencia
+Pasá a un plan cuando la prueba ya resuelve las consultas que más recibís y tu equipo sabe qué casos toma. Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
-Si después de probar querés contar cómo te fue, en la pantalla Plan hay dos recompensas de 50 créditos cada una. Se obtienen una vez por espacio y pasan por revisión manual: no se suman en el momento ni están garantizadas.
+Si se terminan las respuestas del mes, el asistente deja de contestar y tu equipo sigue a mano desde la bandeja. Ojo con el Plan CRM: es para atender a mano y no trae respuestas del asistente.
 
-- **X, 50 créditos:** publicación original y pública con tu experiencia real. Incluí el enlace `https://www.atende.com.ar`, aclará con #ad que recibís créditos y activá la etiqueta de colaboración paga de X. Podés sumar #Publicidad.
-- **Instagram, 50 créditos:** publicación o reel original y público con tu experiencia real. Incluí el mismo enlace, aclará con #Publicidad o #ad que recibís créditos y activá la etiqueta de colaboración paga con Atende como socio.
-
-No hace falta una opinión positiva, sino honesta. Después de publicar, pegá el enlace directo a la publicación, no el de tu perfil, y hacé clic en “Enviar a revisión”. Si te lo rechazan, revisá los requisitos y mandá un enlace corregido. Solo si se aprueban las dos, el total con la bienvenida llega a 200 créditos.
-
-## Qué pasa cuando se terminan los créditos
-
-[La app no avisa cuando quedan pocos](/preguntas-frecuentes), así que miralos en Plan, en “Créditos disponibles”. Cuando llegan a cero:
-
-- **El asistente deja de contestar.** El cliente no recibe nada y tu equipo no recibe ninguna alerta.
-- **Si no tenés un plan, el panel se bloquea** salvo Plan e integraciones.
-- **Si no tenés un plan, los mensajes nuevos no entran a la bandeja** ni se guardan en Atende. Si conectaste por QR, siguen llegando al WhatsApp de tu teléfono.
-
-Conviene decidir antes de llegar a cero. Tenés dos caminos en la app: pedir las recompensas de X o Instagram, si todavía no lo hiciste, o elegir un plan pago con automatización. Los planes vigentes se ven en la app antes de pagar, y en [precios](/precios) está qué entra en cada uno.
-
-Ojo con el Plan CRM: es para atender a mano y no trae respuestas del asistente, aunque tengas créditos.
-
-Para empezar, tené a mano tus consultas frecuentes, entrá a [app.atende.com.ar](https://app.atende.com.ar) y creá tu espacio.
+Para empezar, tené a mano tus consultas frecuentes, entrá a [app.atende.com.ar/empezar](https://app.atende.com.ar/empezar?ref=blog-automatizar-whatsapp-gratis), creá tu espacio y probalo en el chat de prueba.

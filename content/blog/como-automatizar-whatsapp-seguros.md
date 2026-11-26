@@ -12,7 +12,7 @@ summary: >-
   siniestro corta el flujo de venta y va a una persona: el asistente no toma la
   denuncia ante la aseguradora ni confirma cobertura.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: servicios-profesionales
 sector: Productores y agencias de seguros
 tags:
@@ -136,4 +136,4 @@ Medí el riesgo antes de pedirlo. Si el número está vinculado por QR, un asegu
 
 ## Cómo queda en una agencia
 
-La secuencia es corta: el espacio de la agencia, los ramos que trabajás y lo que el asistente no contesta, la invitación a los productores, créditos o un plan y, al final, conectar la línea de la agencia, por la API oficial de Meta o con un QR, según prefieras. Desde ahí atiende a cualquiera que escriba, asegurados de años incluidos. Probalo desde otro número, que usa créditos, con un "me chocaron", a ver si corta lo comercial. Y antes de conectarla, dejá cargado el teléfono de asistencia de cada compañía: es la respuesta que más va a importar un domingo.
+La secuencia es corta: el espacio de la agencia, los ramos que trabajás y lo que el asistente no contesta, la invitación a los productores, una prueba en el chat del panel, el plan y, al final, conectar la línea de la agencia, por la API oficial de Meta o con un QR, según prefieras. En esa prueba escribile un "me chocaron", a ver si corta lo comercial. Desde que conectás la línea atiende a cualquiera que escriba, asegurados de años incluidos. Y antes de conectarla, dejá cargado el teléfono de asistencia de cada compañía: es la respuesta que más va a importar un domingo.

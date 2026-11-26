@@ -13,7 +13,7 @@ summary: >-
   oficial de Meta o por QR, a tu elección. Si necesitás campañas, anuncios integrados
   o casos de clientes a la vista, Cliengo te conviene más.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Cliengo
@@ -106,7 +106,7 @@ Lo que hay que sumar, según la misma página:
 - Con la API, los mensajes se cobran mediante créditos.
 - Hay 14 días de prueba sin tarjeta, y las suscripciones se renuevan cada mes.
 
-Desde el 1 de octubre de 2026 [Meta cobra](https://developers.facebook.com/docs/whatsapp/pricing) los mensajes de servicio a partir del 1.001 de cada mes, por número. Los planes de Atende [se ven en la app](/precios).
+Desde el 1 de octubre de 2026 [Meta cobra](https://developers.facebook.com/docs/whatsapp/pricing) los mensajes de servicio a partir del 1.001 de cada mes, por número. Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## La pregunta de la agenda
 

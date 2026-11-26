@@ -14,7 +14,7 @@ summary: >-
   para tu negocio, y tu equipo sigue cada conversación desde una bandeja
   compartida.
 publishedAt: '2026-11-10'
-updatedAt: '2026-11-10'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Meta Business Agent
@@ -90,7 +90,7 @@ sources:
     checkedAt: '2026-11-06'
 ---
 
-¿El agente de Meta les contesta a tus clientes, pero el turno lo seguís anotando vos? [Escribinos por WhatsApp](https://wa.me/543518764951?text=Hola%2C%20vengo%20de%20la%20nota%20del%20agente%20de%20Meta.%20Quiero%20que%20Atende%20reserve%20turnos%20o%20registre%20pedidos%20en%20mi%20WhatsApp.%20Mi%20negocio%20es%3A) y te mostramos cómo Atende, conectado a tu agenda, deja el turno reservado en el chat mientras vos atendés.
+¿El agente de Meta les contesta a tus clientes, pero el turno lo seguís anotando vos? [Escribinos por WhatsApp](https://wa.me/543512901337?text=Hola%2C%20vengo%20de%20la%20nota%20del%20agente%20de%20Meta.%20Quiero%20que%20Atende%20reserve%20turnos%20o%20registre%20pedidos%20en%20mi%20WhatsApp.%20Mi%20negocio%20es%3A) y te mostramos cómo Atende, conectado a tu agenda, deja el turno reservado en el chat mientras vos atendés.
 
 Abajo tenés cómo sacar el agente de Meta paso a paso, qué sigue pasando con tus chats aunque lo pauses y cuándo te conviene quedarte con él. Atende compite con este agente, así que también te decimos en qué casos no hace falta cambiar.
 
@@ -166,7 +166,7 @@ Hay acciones que vienen con los planes con IA, sin conectar nada. El asistente c
 | Dónde trabaja tu equipo | En la app, desde el teléfono y los dispositivos vinculados | En una bandeja compartida, todos sobre las mismas conversaciones |
 | Si contestás vos | Para en ese chat hasta que lo reactivás | Sigue. Para frenarlo, marcás **Necesita humano** |
 | Tu número | Ya está en la app | Sigue siendo el mismo. Elegís API oficial de Meta o QR |
-| Cuánto cuesta | [Gratis cada mes hasta una cantidad permitida](https://whatsappbusiness.com/es-la/products/business-app-meta-one/), con más respuestas en los planes de Meta One | Planes y créditos que ves en la app antes de pagar. Cada conexión se cotiza para tu negocio |
+| Cuánto cuesta | [Gratis cada mes hasta una cantidad permitida](https://whatsappbusiness.com/es-la/products/business-app-meta-one/), con más respuestas en los planes de Meta One | Planes vigentes en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio |
 
 Dos aclaraciones que hacemos siempre. Atende lee mensajes de texto: audios, fotos, videos, documentos y grupos no le llegan. Y si lo que te pesa es qué pasa con tus chats, leé las condiciones de cualquier herramienta antes de elegirla; las nuestras están en la [política de privacidad](/politica-de-privacidad).
 
@@ -183,10 +183,10 @@ La página del producto dice que podés elegir a quién le contesta y qué temas
 
 ## Cómo pasar de Meta a Atende, en orden
 
-1. **Contanos la tarea.** [Escribinos por WhatsApp](https://wa.me/543518764951?text=Hola%2C%20vengo%20de%20la%20nota%20del%20agente%20de%20Meta.%20Quiero%20que%20Atende%20reserve%20turnos%20o%20registre%20pedidos%20en%20mi%20WhatsApp.%20Mi%20negocio%20es%3A) o [pedí una demo](/demo): qué se repite, qué tiene que quedar hecho y en qué sistema lo llevás.
-2. **Creá tu espacio.** En [app.atende.com.ar](https://app.atende.com.ar) cargás qué hace tu negocio, cómo trabajás y tus preguntas frecuentes. Los créditos de bienvenida se activan sin tarjeta.
+1. **Contanos la tarea.** [Escribinos por WhatsApp](https://wa.me/543512901337?text=Hola%2C%20vengo%20de%20la%20nota%20del%20agente%20de%20Meta.%20Quiero%20que%20Atende%20reserve%20turnos%20o%20registre%20pedidos%20en%20mi%20WhatsApp.%20Mi%20negocio%20es%3A) o [pedí una demo](/demo): qué se repite, qué tiene que quedar hecho y en qué sistema lo llevás.
+2. **Creá tu espacio.** En [app.atende.com.ar/empezar](https://app.atende.com.ar/empezar?ref=blog-cansado-del-agente-de-meta-en-whatsapp) cargás qué hace tu negocio, cómo trabajás y tus preguntas frecuentes. Antes de elegir un plan, probás el asistente gratis en el chat de prueba.
 3. **Eliminá el agente de Meta.** Con los pasos de arriba, antes de conectar el número, para que tus clientes no reciban respuestas de dos asistentes.
 4. **Conectá tu número.** Elegís cómo: con la API oficial de Meta o con un QR. Por la API los mensajes cuestan más, así que esa ruta la vemos y la cotizamos con vos.
-5. **Probalo desde otro número.** Las pruebas usan créditos. Cuando la conexión a tu agenda o tu sistema esté lista, probamos casos reales con vos.
+5. **Probalo desde otro número.** Esas respuestas usan las de tu plan. Cuando la conexión a tu agenda o tu sistema esté lista, probamos casos reales con vos.
 
 ¿Qué tarea querés sacarte de encima? Contanos y te decimos qué puede dejar hecho Atende en tu WhatsApp y qué conexión necesita tu negocio.

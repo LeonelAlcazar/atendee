@@ -5,7 +5,7 @@ description: 'Un mensaje para confirmar cuándo puede pasar el técnico, cómo a
 summary: 'Para recordar una visita técnica a domicilio, identificá al servicio, el día, la franja de llegada y el barrio acordado. Preguntá si habrá alguien para recibir al técnico durante esa franja. Si el domicilio o el horario cambian, verificá primero qué recorrido puede atender el pedido.'
 salesIntro:
   - 'Tu cliente elige la franja por chat.'
-  - 'Con tu agenda, Atende la reserva.'
+  - 'Conectado a tu agenda, a pedido, Atende la reserva y tu equipo la ve en la agenda.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

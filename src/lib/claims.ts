@@ -178,10 +178,29 @@ export const claimRules: ClaimRule[] = [
     fix: 'Responder o "Asignarme" no pausa. Solo "Necesita humano".',
   },
   {
+    // Every espacio has the test chat now (2026-11-26), so the stale claims are
+    // "there is no test mode" and "only if someone enables it".
     id: 'modo-de-prueba',
     pattern:
-      /\bantes de que lo vean tus clientes\b|\bantes de usarlo con clientes\b|\bsin que lo vean tus clientes\b/,
-    fix: 'Distinguí el chat de prueba habilitado para un espacio de una prueba por WhatsApp desde otro número.',
+      /\bno hay (un |ningun )?(modo|chat|ensayo) (de prueba|aparte)\b|\bhabilitad[oa] (el |un )?chat de prueba\b|\bhabilit\w* (el |un )?chat de prueba\b|\bchat de prueba\b.{0,30}\bhabilit\w*/,
+    except: /\btodos los espacios\b|\bcada espacio\b/,
+    fix: 'Cada espacio puede probar su asistente gratis en el chat de prueba, antes de elegir un plan. No hace falta que nadie lo habilite.',
+  },
+  {
+    // Welcome and social-post credits were removed on 2026-11-26. Balances
+    // already granted stay, but no page may offer a grant.
+    id: 'creditos-de-regalo',
+    pattern:
+      /\bcreditos (de bienvenida|gratis|de regalo|de prueba)\b|\bactiv\w* (los )?\d+ creditos\b|\brecompensas? (de|por|en) (x|instagram|publicar|tu publicacion)\b|\b(x|instagram),? \d+ creditos\b|\bprobar gratis sin tarjeta\b/,
+    fix: 'Atende no regala créditos. La prueba gratis es el chat de prueba de cada espacio, antes de elegir un plan.',
+  },
+  {
+    // /precios shows the plans without an account; "only in the app" is stale.
+    id: 'precios-solo-en-la-app',
+    pattern:
+      /\bse (ven|ve|consultan|consulta|muestran|muestra)\b(?: \w+){0,3} en la app\b|\ben la app antes de pagar\b|\bsin importes en este sitio\b|\batende no publica (importes|precios)\b|\bcondiciones en la app\b/,
+    requires: /\bplan|\bprecio|\bimporte|\bcuesta|\bcobr|\bcondiciones\b|\bpagar\b|\bcredito/,
+    fix: 'Decí "Los planes vigentes están en la página de precios, sin crear una cuenta. La conexión a pedido se cotiza para cada negocio."',
   },
   {
     id: 'buscar-en-mensajes',
@@ -206,7 +225,7 @@ export const claimRules: ClaimRule[] = [
   {
     id: 'condiciones-sin-definir',
     pattern: /\bsin permanencia\b|\bcancelas cuando quieras\b/,
-    fix: 'Decí "los planes vigentes se ven en la app antes de pagar".',
+    fix: 'Decí "Los planes vigentes están en la página de precios, sin crear una cuenta. La conexión a pedido se cotiza para cada negocio."',
   },
   {
     id: 'soporte-sin-definir',
@@ -259,7 +278,7 @@ export const claimRules: ClaimRule[] = [
     id: 'precio-en-codigo',
     pattern: /(\$|\busd|\bars|\bu\$s)\s?\d|\b\d[\d.]*\s?(pesos|dolares)\b/,
     srcOnly: true,
-    fix: 'Los precios viven en la app y en el catálogo de planes.',
+    fix: 'Los precios viven en el catálogo de planes, que muestra la página de precios. Enlazá /precios.',
   },
   {
     id: 'voz-del-asistente',
@@ -417,11 +436,15 @@ function matchSegment(segment: Segment, file: string) {
       if (rule.exceptFile?.test(file)) continue;
       if (rule.requires && !rule.requires.test(sentence)) continue;
       if (rule.except?.test(sentence)) continue;
-      const match = rule.pattern.exec(sentence);
+      // A quoted or negated first match must not hide a later claim.
+      const global = new RegExp(rule.pattern.source, `${rule.pattern.flags}g`);
+      const match = [...sentence.matchAll(global)].find(
+        (candidate) =>
+          !isNegated(sentence.slice(0, candidate.index)) &&
+          !isQuoted(text.slice(0, offset + candidate.index)),
+      );
       if (!match) continue;
       const start = offset + match.index;
-      if (isNegated(sentence.slice(0, match.index))) continue;
-      if (isQuoted(text.slice(0, start))) continue;
       hits.push({
         line: segment.line,
         rule: rule.id,

@@ -36,7 +36,25 @@ describe('banned claims', () => {
     ['Respondés y el bot se frena', 'pausa-indefinida'],
     ['Queda pausado hasta que vos quieras', 'pausa-indefinida'],
     ['Cuando respondés, el asistente se pausa', 'responder-pausa'],
-    ['Probalo antes de que lo vean tus clientes', 'modo-de-prueba'],
+    ['No hay modo de prueba: una vez conectado el número, responde a todos.', 'modo-de-prueba'],
+    ['Atiende a cualquier paciente, porque no hay un ensayo aparte.', 'modo-de-prueba'],
+    ['Si tu espacio tiene habilitado el chat de prueba, probá ahí.', 'modo-de-prueba'],
+    ['Con el chat de prueba habilitado por administración, podés ensayar.', 'modo-de-prueba'],
+    ['Si administración habilitó un chat de prueba para tu espacio, ensayá.', 'modo-de-prueba'],
+    ['Podés usar el chat de prueba si administración lo habilita.', 'modo-de-prueba'],
+    ['Atende da 100 créditos de bienvenida por espacio.', 'creditos-de-regalo'],
+    ['Podés empezar con 100 créditos de bienvenida, sin tarjeta.', 'creditos-de-regalo'],
+    ['Hacé clic en Activar 100 créditos gratis.', 'creditos-de-regalo'],
+    ['Pedí las recompensas de X o Instagram.', 'creditos-de-regalo'],
+    ['Instagram, 50 créditos: publicación o reel original.', 'creditos-de-regalo'],
+    ['Elegí Probar gratis sin tarjeta y seguí.', 'creditos-de-regalo'],
+    ['Los planes de Atende se ven en la app.', 'precios-solo-en-la-app'],
+    ['Los planes vigentes se ven en la app antes de pagar.', 'precios-solo-en-la-app'],
+    ['Los planes vigentes de Atende se consultan en la app.', 'precios-solo-en-la-app'],
+    ['Lo de Atende se ve en la app, antes de pagar.', 'precios-solo-en-la-app'],
+    ['Planes y créditos que ves en la app antes de pagar.', 'precios-solo-en-la-app'],
+    ['Sin importes en este sitio, la conexión no tiene precio publicado.', 'precios-solo-en-la-app'],
+    ['Atende no publica importes acá.', 'precios-solo-en-la-app'],
     ['Se integra con Google Calendar y Tiendanube', 'producto-sin-conector'],
     ['Sin permanencia', 'condiciones-sin-definir'],
     ['Soporte prioritario', 'soporte-sin-definir'],
@@ -145,8 +163,23 @@ describe('copy that explains a limit is not a claim', () => {
     ['Audio when the assistant is on', 'Con el asistente activo, Atende transcribe audios y usa el texto disponible.'],
     ['Sending from the library', 'Atende manda fotos y videos de tu biblioteca.'],
     ['A rule of thumb on limits', 'No hay una lista de integraciones listas para activar.'],
+    ['Testing before clients see it', 'Probalo antes de que lo vean tus clientes.'],
+    ['The test chat for everyone', 'Cada espacio puede probar su asistente en el chat de prueba, antes de elegir un plan.'],
+    ['Credits that are gone', 'Atende ya no da créditos de bienvenida.'],
+    ['A rival sells credits', 'Con 5.000 créditos alcanzan para unas 550 conversaciones.'],
+    ['A rival meters AI credits', 'El plan trae Créditos de IA por usuario.'],
+    ['A rival trial without a card', 'Hay 14 días de prueba sin tarjeta.'],
+    ['Credits beyond the allowance', 'Un crédito es una respuesta del asistente, después de las del plan.'],
+    ['Plans on the public page', 'Los planes vigentes están en la página de precios, sin crear una cuenta.'],
+    ['A chat seen in the app', 'Mirá la conversación en la app.'],
+    ['Messages in the WhatsApp app', 'Los mensajes se ven en la app del teléfono.'],
   ])('%s', (_, text) => {
     expect(markdown(text)).toEqual([]);
+  });
+  it('treats a test chat that is open to every espacio as true', () => {
+    expect(
+      markdown('El chat de prueba está habilitado para todos los espacios.'),
+    ).toEqual([]);
   });
   it('keeps the negation inside its clause', () => {
     expect(markdown('Si no estás, Atende responde al instante.')).toContain(
@@ -161,6 +194,14 @@ describe('copy that explains a limit is not a claim', () => {
     ).toContain('velocidad');
     expect(markdown('No te preocupes: sin riesgo de bloqueo.')).toContain(
       'sin-bloqueo',
+    );
+  });
+  it('does not let a quoted first match hide a later claim', () => {
+    expect(
+      markdown('“Probar gratis sin tarjeta” te lleva a los créditos de bienvenida.'),
+    ).toContain('creditos-de-regalo');
+    expect(markdown('No responde al instante, pero contesta en segundos.')).toContain(
+      'velocidad',
     );
   });
   it('keeps a condition inside its sentence', () => {

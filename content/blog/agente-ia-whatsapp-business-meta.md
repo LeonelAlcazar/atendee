@@ -13,7 +13,7 @@ summary: >-
   Se pausa o se elimina desde el celular. Si vendés por catálogo y atendés vos,
   puede alcanzarte sin sumar otra herramienta.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-20'
+updatedAt: '2026-11-26'
 category: bot-de-whatsapp
 tags:
   - agente de IA
@@ -213,7 +213,7 @@ Sin esa conexión, el asistente junta el pedido y tu equipo lo confirma. Mirá [
 | | Agente de Meta | Atende |
 | --- | --- | --- |
 | Dónde vive | Adentro de la app WhatsApp Business | En el panel de Atende. Vinculás el QR desde la app o coordinás la API oficial en una demo |
-| Cómo accedés | Por cuenta, con lista de espera | Creás tu [espacio](/que-es-atende) y activás créditos o un plan |
+| Cómo accedés | Por cuenta, con lista de espera | Creás tu [espacio](/que-es-atende), lo probás gratis y elegís un plan |
 | Acciones | Las que tu cuenta tenga habilitadas | Las conectadas a tu sistema, a pedido |
 | Si respondés a mano | La IA se frena en ese chat | El asistente sigue. Para frenarlo, marcás **Necesita humano** |
 

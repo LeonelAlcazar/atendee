@@ -13,7 +13,7 @@ summary: >-
   negocio. Tu número va por la API oficial de Meta o por QR, a elección. Si
   necesitás multicanal o un armador propio, Atende no es la opción.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Botmaker
@@ -91,7 +91,7 @@ Acá no hay una herramienta que responde contra otra que actúa. Botmaker habla 
 | Qué puede terminar en el chat | Lo que conectes: CRM, calendario, base de datos, pagos | Conectado a tu sistema: turnos, reservas, pedidos, cotizaciones, interesados |
 | Conexión con WhatsApp | [API de WhatsApp Business](https://botmaker.com/es/canales/whatsapp/). Se presenta como BSP oficial de Meta | API oficial de Meta o QR, a elección |
 | Canales | WhatsApp, Instagram, Messenger, Mercado Libre, TikTok, webchat, Slack, Teams, email y voz, entre otros | Solo WhatsApp, un número por espacio |
-| Precio | Planes públicos en dólares | Sin importes en este sitio: los planes se ven en la app antes de pagar. La conexión a pedido no tiene precio publicado |
+| Precio | Planes públicos en dólares | Planes vigentes en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio |
 
 ## Botmaker precios en Argentina
 
@@ -112,7 +112,7 @@ Tres detalles para hacer la cuenta completa:
 
 Si leíste que Botmaker solo se vende con demo, que tiene mínimos altos o que cobra en pesos, esa página muestra otra cosa: planes públicos, en dólares y con autogestión.
 
-Sumá una pregunta para ventas. [Meta empezó a cobrar](https://developers.facebook.com/docs/whatsapp/pricing) el 1 de octubre de 2026 los mensajes de servicio a partir del 1.001 de cada mes, por número. Preguntá cómo llega ese cargo a tu factura. La cuenta completa está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). Los planes de Atende se ven en la app antes de pagar; [acá te contamos cómo](/precios).
+Sumá una pregunta para ventas. [Meta empezó a cobrar](https://developers.facebook.com/docs/whatsapp/pricing) el 1 de octubre de 2026 los mensajes de servicio a partir del 1.001 de cada mes, por número. Preguntá cómo llega ese cargo a tu factura. La cuenta completa está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Cuándo Botmaker es la mejor elección
 

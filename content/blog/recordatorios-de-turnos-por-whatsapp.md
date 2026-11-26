@@ -12,8 +12,8 @@ summary: >-
   en una planilla de Google Sheets conectada, podés programar una regla que
   lea las filas que corresponde avisar.
 salesIntro:
-  - 'Desde tu agenda, Atende avisa.'
-  - 'Tu equipo supervisa los cambios.'
+  - 'Conectado a tu agenda, a pedido, Atende avisa cada turno.'
+  - 'Si los turnos están en Google Sheets, tu equipo programa el aviso desde la planilla.'
 publishedAt: '2026-11-06'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

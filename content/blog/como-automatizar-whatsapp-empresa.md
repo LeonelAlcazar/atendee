@@ -13,7 +13,7 @@ summary: >-
   esa conexión se arma a pedido para tu negocio. Sin ella, el asistente junta el
   pedido y tu equipo lo confirma.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: guias
 tags:
   - WhatsApp Business
@@ -30,9 +30,9 @@ faq:
     a: >-
       Una tarea inicial, información comercial vigente, una persona que la
       mantenga al día y un proceso para las excepciones. En Atende, además, creás
-      tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás
-      créditos o un plan y conectás tu número, con la API oficial de Meta o con
-      un QR.
+      tu espacio, le contás qué hace tu negocio, lo probás gratis en el chat de
+      prueba, elegís un plan y conectás tu número, con la API oficial de Meta o
+      desde el panel, con un QR o con un código.
   - q: ¿Necesito un CRM para empezar con WhatsApp automático?
     a: >-
       No. Podés empezar con respuestas configuradas y una bandeja compartida. Si
@@ -145,13 +145,13 @@ Dos cosas que hay que saber antes de armar el circuito. Derivar marca el chat co
 
 ## 4. Configurá Atende y conectá el número
 
-Son cinco pasos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y conectás WhatsApp. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por QR escaneás el código desde el teléfono del negocio, y tus clientes te siguen escribiendo al mismo WhatsApp. Por la API corren [las tarifas de Meta](/blog/cuanto-cuesta-automatizar-whatsapp), y los pasos los vemos con vos en la [demo](/demo).
+Son cinco pasos: creás tu espacio, le contás qué hace tu negocio, lo probás en el chat de prueba, elegís un plan y conectás WhatsApp. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Por QR escaneás el código desde el teléfono del negocio; si hacés todo desde el celular, el panel te da un código para escribir en WhatsApp. Tus clientes te siguen escribiendo al mismo número. Por la API corren [las tarifas de Meta](/blog/cuanto-cuesta-automatizar-whatsapp), y los pasos los vemos con vos en la [demo](/demo).
 
 Definí quién revisa que la conexión siga activa, quién corrige la información y quién toma las derivaciones. Pueden ser las mismas personas, pero tiene que estar claro. Para el detalle, usá la plantilla de [cómo crear un bot de WhatsApp](/blog/como-crear-un-bot-de-whatsapp).
 
 ## 5. Probá las excepciones, no solo la respuesta esperada
 
-Podés usar el chat de prueba si administración lo habilita. Ahí las respuestas no salen por WhatsApp ni consumen créditos, aunque las herramientas conectadas pueden actuar sobre tu sistema. Para comprobar la entrega real, escribí desde otro número. Probá también estos casos:
+Cada espacio tiene el chat de prueba antes de elegir un plan. Ahí las respuestas no salen por WhatsApp ni gastan las de tu plan, aunque las herramientas conectadas pueden actuar sobre tu sistema. Para comprobar la entrega real, con el número ya vinculado, escribí desde otro número. Probá también estos casos:
 
 | Prueba | Comportamiento que conviene verificar |
 | --- | --- |
@@ -180,7 +180,7 @@ Compará consultas del mismo tipo antes y después. Mirá el tiempo hasta la res
 
 ## Otros caminos que seguramente estás mirando
 
-- **Gratis.** La app de WhatsApp Business tiene [mensajes automáticos](/blog/mensajes-automaticos-whatsapp-negocios), y Atende da [100 créditos de bienvenida](/blog/automatizar-whatsapp-gratis). Para decidir, mirá [gratis o pago](/blog/bot-de-whatsapp-gratis-o-pago).
+- **Gratis.** La app de WhatsApp Business tiene [mensajes automáticos](/blog/mensajes-automaticos-whatsapp-negocios), y en Atende [probás el asistente gratis](/blog/automatizar-whatsapp-gratis) antes de elegir un plan. Para decidir, mirá [gratis o pago](/blog/bot-de-whatsapp-gratis-o-pago).
 - **Con n8n, ChatGPT o Claude.** Se puede si tenés quien lo mantenga. La cuenta honesta está al final de [cómo crear un bot](/blog/como-crear-un-bot-de-whatsapp).
 - **Con el agente de Meta.** Si te aparece en la app, mirá [cuándo te alcanza](/blog/agente-ia-whatsapp-business-meta).
 - **Costos.** Desde octubre de 2026 cambiaron las tarifas de Meta; la cuenta por unidad está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).

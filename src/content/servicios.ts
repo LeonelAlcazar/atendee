@@ -492,12 +492,12 @@ export const servicios: Servicio[] = [
         text: 'Creás tu espacio y escribís qué vendés, qué consultas puede resolver y el tono. Después lo ajustás en Contexto del asistente.',
       },
       {
-        title: 'Conectá el número',
-        text: 'Invitás a tu equipo y activás créditos o un plan con IA. Cargás tus preguntas frecuentes, fotos y videos. Podés vincular tu número escaneando un QR. Si necesitás la API oficial de Meta, consultá el alcance en la demo.',
+        title: 'Probá dos consultas',
+        text: 'Cargás tus preguntas frecuentes, fotos y videos. Antes de atender clientes, probá en el chat de prueba una consulta de horario y otra que deba tomar una persona: cada espacio lo tiene gratis, antes de elegir un plan. Las herramientas conectadas ejecutan acciones reales incluso en ese chat.',
       },
       {
-        title: 'Probá dos consultas',
-        text: 'Antes de atender clientes, probá una consulta de horario y otra que deba tomar una persona. Si tu espacio tiene habilitado el chat de prueba, podés hacerlo en el panel. Las herramientas conectadas ejecutan acciones reales incluso en ese chat.',
+        title: 'Conectá el número',
+        text: 'Elegís un plan con IA y vinculás tu número con un QR o con un código en tu mismo teléfono. Si necesitás la API oficial de Meta, consultá el alcance en la demo. Invitás a tu equipo cuando quieras.',
       },
     ],
     human: {
@@ -511,7 +511,7 @@ export const servicios: Servicio[] = [
     },
     notes: [],
     requirements: [
-      'Para vincular el número con QR, el teléfono del negocio y otra pantalla donde abrir el código.',
+      'El teléfono del negocio, para vincular el número con un QR o con un código en ese mismo teléfono.',
       'Tus horarios, zonas, condiciones y preguntas frecuentes al día.',
       'Una persona que mire la bandeja y tome las conversaciones marcadas.',
       'Si querés que busque pedidos: qué sistema usás y qué dato puede leer.',

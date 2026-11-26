@@ -8,7 +8,7 @@ salesIntro:
   - 'Tu equipo sigue al mando de las condiciones comerciales y las excepciones.'
 summary: 'Para elegir software de pedidos por WhatsApp para distribuidores, verificá qué resultado deja en tu sistema: una conversación, una solicitud pendiente o un pedido registrado. Pedí una prueba con presentaciones, lista por cliente, correcciones y errores de conexión. Atende ofrece el registro mediante una integración definida para tu negocio; sin ella reúne la solicitud y tu equipo la carga y confirma. Evaluá plan, integración y mantenimiento por separado.'
 publishedAt: '2026-11-16'
-updatedAt: '2026-11-16'
+updatedAt: '2026-11-26'
 category: comercio
 tags: ['WhatsApp', 'software de pedidos', 'distribuidores', 'integraciones']
 related:
@@ -21,7 +21,7 @@ faq:
   - q: '¿Atende se conecta con cualquier ERP de distribución?'
     a: 'La compatibilidad se evalúa por negocio. Para registrar pedidos hay que revisar qué permite tu sistema, qué datos puede consultar la conexión y cómo confirma las operaciones. No se promete una integración genérica ni compatibilidad con una marca de ERP sin haberla verificado.'
   - q: '¿Qué costos tengo que pedir en una propuesta?'
-    a: 'Pedí por separado el plan de uso, el armado de la integración, las dependencias de tu sistema y el mantenimiento de la conexión. Confirmá cómo se cobra el consumo y quién se ocupa de un cambio de catálogo o de sistema. Los planes vigentes de Atende se consultan en la app.'
+    a: 'Pedí por separado el plan de uso, el armado de la integración, las dependencias de tu sistema y el mantenimiento de la conexión. Confirmá cómo se cobra el consumo y quién se ocupa de un cambio de catálogo o de sistema. Los planes vigentes están en la página de precios, sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.'
   - q: '¿Cuándo alcanza con recibir las solicitudes y cargarlas a mano?'
     a: 'Puede alcanzar si el volumen es manejable y cada operación necesita una revisión comercial extensa. Empezá por ordenar los datos y medir el trabajo real de carga; después evaluá si una integración reduce tareas repetidas sin trasladar errores al depósito.'
 ---
@@ -73,7 +73,7 @@ Pedí un desglose que permita entender qué pagás una vez y qué se repite. La 
 - **Dependencias del sistema de gestión.** Si tu proveedor debe habilitar alguna función o realizar cambios, quién los coordina.
 - **Mantenimiento.** Quién revisa una integración cuando cambian campos, códigos, presentaciones o reglas comerciales.
 
-Los planes vigentes de Atende se consultan en [la app](https://app.atende.com.ar). La [guía de costos de automatización](/blog/cuanto-cuesta-automatizar-whatsapp) sirve para preparar preguntas, sin reemplazar una propuesta para tu operación.
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio. La [guía de costos de automatización](/blog/cuanto-cuesta-automatizar-whatsapp) sirve para preparar preguntas, sin reemplazar una propuesta para tu operación.
 
 ## Cómo encaja Atende en la evaluación
 

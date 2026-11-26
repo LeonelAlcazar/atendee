@@ -13,7 +13,7 @@ summary: >-
   CRM”. Cuando el asistente deriva, el chat queda marcado, pero nadie recibe un
   aviso especial: tu equipo tiene que mirar los pendientes.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: guias
 tags:
   - WhatsApp
@@ -177,7 +177,7 @@ Una vez por semana, leé algunas derivaciones enteras. Si el asistente pasa siem
 
 ## Cómo probarlo antes de depender de esto
 
-Si tu espacio tiene el chat de prueba habilitado por administración, podés ensayar una derivación sin enviar nada por WhatsApp. Para probar con entrega real, escribí desde otro número y contemplá el consumo de respuestas. Empezá por estas tres situaciones:
+Cada espacio tiene un chat de prueba, gratis antes de elegir un plan: ahí podés ensayar una derivación sin enviar nada por WhatsApp. Para probar con entrega real, escribí desde otro número y contemplá el consumo de respuestas. Empezá por estas tres situaciones:
 
 - Pedí hablar con una persona y comprobá que el chat quede marcado.
 - Respondé desde la bandeja sin marcar nada y escribí de nuevo desde el otro número: vas a ver contestar al asistente, y es bueno que todo el equipo lo vea una vez.

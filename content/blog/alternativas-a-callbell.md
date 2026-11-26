@@ -13,7 +13,7 @@ summary: >-
   texto. El número va por la API oficial de Meta o por QR, según elijas. Si
   necesitás multicanal o campañas, Atende no es la opción.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Callbell
@@ -108,7 +108,7 @@ Pedile a Callbell que te muestre esa misma tabla con sus bots y agentes de IA en
 
 Con cinco personas en el plan base, un WhatsApp y el bot builder: 5 × 14 + 20 + 59 = 149 € por mes, antes de impuestos y de las tarifas de Meta, que la página aclara que van por separado. El selector de dólares aparece, pero no pudimos leer esos importes, así que confirmá moneda y facturación para Argentina.
 
-Los planes de Atende se ven [en la app](/precios) antes de pagar.
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Callbell gana en estos casos
 

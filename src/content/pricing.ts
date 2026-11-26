@@ -15,7 +15,7 @@ export const pricingFaq: FaqItem[] = [
   },
   {
     q: '¿Qué es un crédito?',
-    a: 'Un crédito es una respuesta del asistente. Se usan después de la cantidad de respuestas del plan. En Suscripción ves si tenés créditos de bienvenida disponibles, su cantidad y cómo activarlos sin tarjeta.',
+    a: 'Un crédito es una respuesta del asistente. Se usan después de la cantidad de respuestas del plan. En Suscripción ves los créditos disponibles de tu espacio. Para probar el asistente antes de elegir un plan, cada espacio tiene gratis el chat de prueba.',
   },
   {
     q: '¿Una conversación cuenta como una sola respuesta?',

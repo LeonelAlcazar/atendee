@@ -7,13 +7,13 @@ description: >-
 summary: >-
   Un asistente de WhatsApp puede anotar un interesado en una planilla si tiene
   una herramienta conectada: junta nombre, número, modelo y comentarios, escribe
-  la fila y recién ahí confirma. Atende tiene una demo real para una
-  concesionaria de motos que lo hace en Google Sheets. Es una demo, no un
-  conector que prendés desde el panel: cada conexión se arma a pedido para tu
-  negocio y necesita autenticación. Hoy, si un proceso se repite, puede agregar
-  una fila duplicada, así que una versión real tiene que controlarlo.
+  la fila y recién ahí confirma. En Atende conectás tu planilla de Google
+  Sheets desde el panel y elegís si el asistente solo la consulta o también
+  anota filas. Para reglas propias, como no repetir a una persona, la conexión
+  se arma a pedido. Nuestra demo para una concesionaria de motos muestra una
+  así, y también por qué puede duplicar filas.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-06'
+updatedAt: '2026-11-26'
 category: guias
 tags:
   - Google Sheets
@@ -28,9 +28,10 @@ related:
 faq:
   - q: ¿Atende se conecta con Google Sheets?
     a: >-
-      Tenemos una demo real para una concesionaria de motos que consulta stock y
-      financiación y registra interesados en Google Sheets. No es un conector
-      genérico: una conexión para tu planilla se arma a pedido para tu negocio.
+      Sí. Conectás tu planilla desde el panel y elegís si el asistente solo la
+      consulta o también anota filas, como un interesado. Para reglas propias,
+      como buscar antes de escribir o calcular una cuota, la conexión se arma a
+      pedido. Nuestra demo para una concesionaria de motos es un ejemplo.
   - q: ¿Qué datos anota el asistente en la planilla?
     a: >-
       En la demo escribe nombre, número, modelo de interés, estado y comentarios
@@ -56,7 +57,7 @@ sources:
 
 A las nueve de la noche alguien pregunta por una moto y deja su nombre. A la mañana, tu vendedor abre la planilla y ve una fila nueva: nombre, número, modelo, estado NO ATENDIDO y un comentario del asistente que resume lo que pidió. Nadie copió nada del celular.
 
-Eso hace nuestra demo para una concesionaria de motos, conectada a una planilla de Google Sheets. La usamos para mostrar cómo funciona una acción real. Es una demo, no un cliente, y tampoco es un conector que prendés desde el panel. Abajo te contamos cómo está hecha, qué le faltaría para usarla en tu negocio y qué falla todavía.
+Eso hace nuestra demo para una concesionaria de motos, conectada a una planilla de Google Sheets. La usamos para mostrar cómo funciona una acción real. Es una demo, no un cliente. Para anotar en tu propia planilla no hace falta armar nada: la conectás desde el panel y elegís si el asistente puede sumar filas. Abajo te contamos cómo está hecha la demo, qué suma una conexión a pedido y qué falla todavía.
 
 ## La fila que aparece en la planilla
 
@@ -100,6 +101,8 @@ El trabajo de una conexión está en lo que rechaza. La demo tiene estas reglas,
 
 ## Qué hace falta para una conexión así en tu negocio
 
+Si te alcanza con que el asistente consulte la planilla y sume una fila, conectala vos desde el panel. La lista de abajo es para una conexión a pedido, con reglas propias como las de la demo:
+
 1. **Una planilla con estructura fija.** Definís qué hojas y columnas existen, y quién las toca. Si tu equipo cambia encabezados cada semana, primero hay que ordenar eso.
 2. **Un acceso propio.** La demo usa una cuenta de servicio de Google con permiso de edición sobre esa planilla. No hace falta darle a nadie tu contraseña.
 3. **Un servidor que hable con la planilla.** Corre en un servidor y expone las herramientas que el asistente puede usar. Eso lo armamos nosotros.
@@ -123,4 +126,4 @@ Esa conexión se arma a pedido para tu negocio, con tus columnas y tus reglas. M
 
 Sin conexión no hay fila. El asistente junta nombre, modelo y consulta en la conversación, y tu equipo los pasa a mano desde la bandeja, con etiquetas para no perderlos. Si entran pocos interesados por semana, eso alcanza y no justifica armar nada.
 
-Vale la pena pedirla cuando alguien pasa un rato todos los días copiando del celular a la planilla, o cuando los interesados de la noche se pierden hasta que alguien los carga. Si vendés vehículos o propiedades, mirá [concesionarias e inmobiliarias](/casos-de-uso/concesionarias-e-inmobiliarias). Si querés ver cómo se relaciona esto con el resto de las acciones, seguí con [qué es un agente de IA para WhatsApp](/blog/agente-de-ia-para-whatsapp).
+Vale la pena conectarla cuando alguien pasa un rato todos los días copiando del celular a la planilla, o cuando los interesados de la noche se pierden hasta que alguien los carga. Si vendés vehículos o propiedades, mirá [concesionarias e inmobiliarias](/casos-de-uso/concesionarias-e-inmobiliarias). Si querés ver cómo se relaciona esto con el resto de las acciones, seguí con [qué es un agente de IA para WhatsApp](/blog/agente-de-ia-para-whatsapp).

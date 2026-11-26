@@ -13,7 +13,7 @@ summary: >-
   el asistente, tiene que marcar el chat como “Necesita humano”: responder no
   alcanza. Los seguimientos automáticos se arman a pedido.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -199,4 +199,4 @@ Si de 20 solicitudes revisadas 12 traen los datos acordados, anotá “12 de 20�
 
 Prepará tres consultas anonimizadas: una habitual, una con información incompleta y otra que pida una decisión comercial. Sumá los datos vigentes, el horario de tu equipo y qué debe quedar pendiente.
 
-Mirá las [ventas y pedidos por WhatsApp](/servicios/ventas-whatsapp) y probá el recorrido desde otro número, con la consulta, los datos reunidos, la lectura del historial y el pase al vendedor. Usa créditos. Si necesitás stock, cuotas o tu CRM, anotalos como conexiones a pedir, mirá [qué pide cada conexión](/integraciones) y llevá esos casos a una [demo](/demo).
+Mirá las [ventas y pedidos por WhatsApp](/servicios/ventas-whatsapp) y probá el recorrido desde otro número, con la consulta, los datos reunidos, la lectura del historial y el pase al vendedor. Esas respuestas usan las de tu plan; antes podés ensayarlo gratis en el chat de prueba. Si necesitás stock, cuotas o tu CRM, anotalos como conexiones a pedir, mirá [qué pide cada conexión](/integraciones) y llevá esos casos a una [demo](/demo).

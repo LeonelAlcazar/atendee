@@ -15,6 +15,7 @@ publishedAt: '2026-09-10'
 updatedAt: '2026-11-18'
 category: inmuebles-y-hogar
 sector: Administraciones de consorcios
+rubro: servicios-profesionales
 tags:
   - WhatsApp
   - Administraciones de consorcios

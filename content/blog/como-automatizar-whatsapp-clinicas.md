@@ -11,7 +11,7 @@ summary: >-
   recepción confirma. Sobre coberturas contesta con lo que cargaste; síntomas,
   resultados y órdenes siguen en manos de una persona.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: salud
 sector: Clínicas y consultorios
 tags:
@@ -123,7 +123,7 @@ Una autorización complicada suele llevar varios mensajes, y responderle al paci
 
 ## Antes de vincular el número de la clínica
 
-El asistente queda activo desde que el número se conecta y atiende a cualquier paciente, porque no hay un ensayo aparte. Por eso esta lista se completa antes de conectarlo. Las pruebas vienen después, desde otro celular y consumiendo créditos, con los pacientes ya escribiendo. La línea de la clínica puede entrar por la API oficial de Meta o por un QR, y esa decisión es tuya. Cada espacio lleva un solo número, así que si cada sede tiene su propio WhatsApp, cada una necesita su espacio.
+El asistente queda activo desde que el número se conecta y atiende a cualquier paciente. Por eso esta lista se completa antes de conectarlo, y se ensaya en el chat de prueba de tu espacio, que es gratis antes de elegir un plan y no le escribe a nadie. Una prueba desde otro celular, con los pacientes ya escribiendo, usa respuestas del plan. La línea de la clínica puede entrar por la API oficial de Meta o por un QR, y esa decisión es tuya. Cada espacio lleva un solo número, así que si cada sede tiene su propio WhatsApp, cada una necesita su espacio.
 
 Dejá listo esto:
 

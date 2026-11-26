@@ -13,7 +13,7 @@ summary: >-
   con la API oficial de Meta o con un QR. Si necesitás multicanal, ruteo automático
   o llamadas en el mismo hilo, Atende no es la opción.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - respond.io
@@ -92,7 +92,7 @@ Lo que se suma a esa tabla:
 
 La columna de contactos activos es la que más mueve la cuenta. Un Growth con 1.500 contactos activos en un mes paga US$ 60 más ese mes. Una temporada alta se nota. Y la FAQ nombra a Growth, Advanced y Enterprise como los planes con agentes de IA sin costo extra: si querés esos agentes, Starter puede no ser tu plan.
 
-Por el lado de Meta, [desde el 1 de octubre de 2026](https://developers.facebook.com/docs/whatsapp/pricing) los mensajes de servicio se cobran a partir del 1.001 de cada mes, por número. El detalle por rubro está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). Lo de Atende se ve [en la app](/precios), antes de pagar.
+Por el lado de Meta, [desde el 1 de octubre de 2026](https://developers.facebook.com/docs/whatsapp/pricing) los mensajes de servicio se cobran a partir del 1.001 de cada mes, por número. El detalle por rubro está en [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp). Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Multicanal frente a un canal resuelto
 

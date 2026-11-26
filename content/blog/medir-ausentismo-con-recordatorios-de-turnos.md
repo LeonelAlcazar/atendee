@@ -4,8 +4,8 @@ seoTitle: 'Cómo medir el ausentismo con recordatorios de turnos'
 description: 'Calculá la tasa de ausentismo de tu agenda con un ejemplo de 100 turnos. Separá faltas, cancelaciones y horarios que otra persona pudo aprovechar.'
 summary: 'Una forma de medir el ausentismo es dividir las faltas sin aviso por la suma de turnos atendidos y faltas sin aviso, y multiplicar por 100. Contá aparte las cancelaciones y los cambios hechos antes de la cita. Para evaluar un recordatorio de turnos, compará períodos semejantes, anotá a qué citas correspondía enviarles el aviso y revisá cuántos horarios liberados se volvieron a ocupar.'
 salesIntro:
-  - 'Con tu agenda conectada, Atende'
-  - 'libera el turno que te cancelan.'
+  - 'Conectado a tu agenda, a pedido, Atende libera el turno que te cancelan.'
+  - 'Tu equipo ve cada cancelación en la conversación.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

@@ -16,7 +16,7 @@ salesIntro:
   - "Registrá una consulta de ventas en tu CRM desde WhatsApp. Atende puede hacerlo con una conexión a pedido a tu sistema, bajo la supervisión del equipo comercial."
   - "Si estás evaluando cambiar Zenvia, compará ese recorrido junto con los canales, los costos y el trabajo de migración que realmente necesitás."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Zenvia
@@ -107,7 +107,7 @@ Tiene oficina en Grierson 255, CABA, y un plan Enterprise. Eso la separa de much
 
 Tres cosas para leer con cuidado. Los mensajes salen de un paquete de canales aparte: el más chico que muestra son USD 20 por mes, con hasta 1.088 SMS o 362 WhatsApp. La página aclara que son volúmenes de Brasil, y su FAQ dice 431 WhatsApp para ese mismo paquete. El título dice "desde $150 USD", mientras Starter suma USD 20. Y esa página muestra "¡SETUP GRATIS!" en los planes a los que la de WhatsApp les suma la activación. Pedí que te coticen el total para tu volumen, con la moneda en la que vas a pagar.
 
-Los planes de Atende [se ven en la app](/precios).
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Una nube de clientes o un asistente en tu número
 

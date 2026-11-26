@@ -9,11 +9,11 @@ summary: >-
   Para crear un bot de WhatsApp sin programar, elegí una tarea comprobable,
   como registrar una solicitud de alquiler. Definí qué datos pide, qué sistema
   tiene que confirmar el resultado y cuándo deriva a una persona. En Atende
-  configurás el espacio, el equipo y el asistente. El QR se vincula desde la
-  app, y la API oficial se coordina en la demo. Si administración habilita el
-  chat de prueba, podés ensayar antes de conectar WhatsApp.
+  configurás el espacio y el asistente, y lo probás gratis en el chat de prueba
+  antes de elegir un plan. El número se vincula desde la app, con un QR o con
+  un código en el mismo teléfono, y la API oficial se coordina en la demo.
 publishedAt: '2026-11-04'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: bot-de-whatsapp
 tags:
   - bot de WhatsApp
@@ -40,11 +40,11 @@ faq:
       Business Platform, lo vemos con vos en la demo.
   - q: ¿Puedo probar el bot sin que le conteste a mis clientes?
     a: >-
-      Con el chat de prueba habilitado por administración, podés ensayar sin
-      enviar por WhatsApp ni consumir créditos. Usá datos de prueba al
-      ejecutar acciones con herramientas conectadas. Si querés verificar que
-      llega al teléfono, probá por WhatsApp desde otro número. Ese recorrido
-      sí consume saldo.
+      Sí, en el chat de prueba de tu espacio, gratis y antes de elegir un plan:
+      las respuestas no salen por WhatsApp. Usá datos de prueba al ejecutar
+      acciones con herramientas conectadas. Si querés verificar que llega al
+      teléfono, probá por WhatsApp desde otro número, ya con el número
+      vinculado. Ese recorrido sí usa respuestas de tu plan.
   - q: ¿Qué información tengo que darle al bot?
     a: >-
       Servicios, horarios, cobertura y condiciones vigentes; los datos mínimos
@@ -117,21 +117,19 @@ Fijate en tres detalles. La plantilla evita que una solicitud se presente como r
 
 ## 4. Armá tu espacio y conectá tu número
 
-En [la app de Atende](https://app.atende.com.ar) son cinco pasos, en este orden:
+En [la app de Atende](https://app.atende.com.ar/empezar?ref=blog-como-crear-un-bot-de-whatsapp) son cinco pasos, en este orden:
 
-1. **Creá tu espacio.** Te pide el nombre de tu equipo y un link corto.
-2. **Contale qué hace tu negocio.** Pegá la plantilla. Podés saltear este paso y hacerlo después desde Asistente, pero el asistente sin contexto no sirve.
-3. **Invitá a tu equipo.** Cada persona entra con su cuenta. También se puede dejar para después.
-4. **Activá créditos o un plan.** “Probar gratis sin tarjeta” te lleva a los créditos de bienvenida y “Ver planes” a las opciones pagas. Sin una de las dos no se puede vincular WhatsApp. La guía para [automatizar WhatsApp gratis](/blog/automatizar-whatsapp-gratis) detalla los créditos.
-5. **Conectá WhatsApp.** Podés vincular tu número desde la app por QR. Para la API oficial de Meta, coordiná el alta en la [demo](/demo). Por QR, en la pantalla WhatsApp abrí el QR y escanealo desde dispositivos vinculados, con el teléfono del negocio. Necesitás otra pantalla para verlo: si estabas haciendo todo desde ese celular, abrí el panel en una compu.
+1. **Creá tu espacio.** Creás tu cuenta y le ponés el nombre de tu negocio.
+2. **Contale qué hace tu negocio.** Pegá la plantilla y cargá tus preguntas frecuentes. El asistente sin contexto no sirve.
+3. **Probalo en el chat de prueba.** Cada espacio lo tiene gratis, antes de elegir un plan. Ensayá primero las consultas habituales. Sus herramientas pueden modificar tu sistema real.
+4. **Elegí un plan.** Sin un plan no se puede vincular WhatsApp. Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta.
+5. **Conectá WhatsApp.** Para la API oficial de Meta, coordiná el alta en la [demo](/demo). Desde la app, vinculás tu número con un QR o con un código. El QR lo abrís en la pantalla WhatsApp y lo escaneás desde dispositivos vinculados, con el teléfono del negocio, así que necesitás otra pantalla para verlo. Si hacés todo desde ese celular, elegí el código: lo escribís en WhatsApp, en el mismo teléfono.
 
-Por QR, tus clientes te siguen escribiendo al mismo número. Si vas por la API oficial, los pasos los vemos con vos en la [demo](/demo).
-
-**Probá antes de activar el número.** Cargá el contexto y las preguntas frecuentes. Si administración habilitó un chat de prueba para tu espacio, ensayá primero las consultas habituales. Sus herramientas pueden modificar tu sistema real. Cuando vincules el número, el modo CRM te permite atender a mano hasta que elijas activar al asistente.
+Tus clientes te siguen escribiendo al mismo número. Invitá a tu equipo cuando quieras: cada persona entra con su cuenta. Cuando vincules el número, el modo CRM te permite atender a mano hasta que elijas activar al asistente.
 
 ## 5. Probá una conversación completa desde otro número
 
-Probalo desde otro número; usa créditos. No alcanza con mirar una respuesta aislada. Este intercambio es un objetivo de prueba para el ejemplo:
+Con el número vinculado, probalo desde otro número; esas respuestas usan las de tu plan. No alcanza con mirar una respuesta aislada. Este intercambio es un objetivo de prueba para el ejemplo:
 
 > **Ejemplo ilustrativo, sin conexión**
 >

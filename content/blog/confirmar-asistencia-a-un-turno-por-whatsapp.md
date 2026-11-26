@@ -4,8 +4,8 @@ seoTitle: 'Cómo confirmar asistencia a un turno por WhatsApp'
 description: 'Qué preguntar en WhatsApp para confirmar un turno y qué anotar en la agenda cuando contestan «voy», llega un mensaje ambiguo o la persona cambia de idea.'
 summary: 'Pedí que la persona confirme una fecha y una hora concretas. Cuando responde que va, verificá que el turno siga vigente y registrá la confirmación sobre esa reserva. Una consulta, un «gracias» o un mensaje leído dejan la asistencia pendiente. Al llegar la persona, recepción puede registrar que efectivamente vino.'
 salesIntro:
-  - 'Atende anota el «sí, voy».'
-  - 'Lo ves en tu agenda conectada.'
+  - 'Conectado a tu agenda, a pedido, Atende anota el «sí, voy».'
+  - 'Tu equipo lo ve en la agenda y sigue los cambios desde la bandeja.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

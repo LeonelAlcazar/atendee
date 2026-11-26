@@ -11,7 +11,7 @@ summary: >-
   puede abrir la foto del remito en la bandeja y revisar el caso antes de
   comprometer una entrega.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: industria-y-logistica
 sector: Empresas de logística y transporte
 tags:
@@ -116,6 +116,6 @@ Pensá el volumen antes de pedirlo, porque pesa en cómo conectás la línea: co
 
 Elegí un frente. Si tu problema es el seguimiento, la conexión con el sistema de envíos es lo primero. Si son las cotizaciones, empezá sin conexión: cargá zonas, tipos de carga y modalidades, y dejá que el asistente junte los datos para operaciones.
 
-Desde que escaneás el QR atiende a todos, choferes incluidos. Probalo desde otro número, que usa créditos, con una guía que no exista y un “¿me llega hoy?”.
+Desde que vinculás el número atiende a todos, choferes incluidos. Antes, ensayalo en el chat de prueba con una guía que no exista y un “¿me llega hoy?”.
 
 Pensá también el consumo. El seguimiento mueve mucho volumen y cada respuesta del asistente descuenta de tu plan. Si se agotan las respuestas y los créditos, deja de contestar y no hay aviso, y la pantalla Plan muestra los créditos disponibles, no lo que te queda del mes.

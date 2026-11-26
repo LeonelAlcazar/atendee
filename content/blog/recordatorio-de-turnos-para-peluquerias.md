@@ -4,12 +4,13 @@ seoTitle: 'Recordatorio de turnos para peluquerías por WhatsApp'
 description: 'Textos de recordatorio para corte y color. Qué hacer si la clienta llega tarde, quiere sumar un servicio o necesita mover su turno con la misma profesional.'
 summary: 'Un recordatorio de peluquería identifica el servicio reservado, la profesional, el día y la hora. Para un trabajo largo, sumá cuánto dura según tu agenda y pedí que te avisen si cambia el plan. Para reubicarlo, buscá un bloque completo que tenga los recursos que usa ese servicio.'
 salesIntro:
-  - 'Atende reubica el turno de color.'
-  - 'Conectamos la agenda de tu salón.'
+  - 'Conectado a la agenda de tu salón, a pedido, Atende reubica el turno de color.'
+  - 'Tu equipo ve cada cambio en la conversación.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos
 sector: Peluquerías
+rubro: peluquerias-y-estetica
 tags: ['recordatorios por WhatsApp', 'peluquerías', 'color', 'agenda del salón']
 related:
   - recordatorios-de-turnos-por-whatsapp
