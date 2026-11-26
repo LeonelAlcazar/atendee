@@ -37,6 +37,11 @@ const sizes: Record<Size, string> = {
   lg: 'min-h-13 px-7 py-3 text-[1.0625rem]',
 };
 
+// For a real <button> that has to look like one of these links (a form submit).
+export function buttonClass(variant: Variant = 'primary', size: Size = 'md') {
+  return `${base} ${variants[variant]} ${sizes[size]}`;
+}
+
 export function Button({
   variant = 'primary',
   size = 'md',

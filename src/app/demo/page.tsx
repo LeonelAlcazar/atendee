@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Check, Mail, MessageCircle } from 'lucide-react';
 import { pages } from '@/content/pages';
 import { site } from '@/content/site';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 import { createPageMetadata } from '@/lib/metadata';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
@@ -51,6 +51,7 @@ export default function DemoPage() {
                 <a
                   href={buildWaLink(
                     'Hola, quiero pedir una demo de Atende para mi negocio',
+                    waRef('/demo', 'directo'),
                   )}
                   data-cta="demo-direct-whatsapp"
                   target="_blank"

@@ -3,7 +3,7 @@ export const demoTasks = [
   'Tomar reservas',
   'Consultar stock y registrar pedidos',
   'Cotizar o calcular financiación',
-  'Registrar interesados en mi CRM o planilla',
+  'Anotar interesados en mi planilla de Google Sheets o en mi CRM',
   'Responder consultas y derivar a mi equipo',
   'Recordatorios y seguimientos',
   'Todavía no lo sé',

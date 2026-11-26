@@ -10,7 +10,7 @@ import { pages } from '@/content/pages';
 import { rubros } from '@/content/rubros';
 import { createPageMetadata } from '@/lib/metadata';
 import { pageGraph } from '@/lib/structured-data';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 
 export const metadata: Metadata = createPageMetadata(pages.cases);
 
@@ -60,11 +60,14 @@ export default function CasosDeUsoPage() {
           <h2 className="max-w-4xl text-balance text-headline">¿Qué podés ver funcionando en una demo?</h2>
           <div className="mt-6 max-w-3xl space-y-4 text-pretty text-lead text-muted md:mt-8">
             <p>
-              La única conexión de un rubro que ya funciona es nuestra{' '}
+              Nuestra{' '}
               <Link href="/casos-de-uso/concesionarias-e-inmobiliarias" className={inlineLinkClass}>
                 demo de concesionaria de motos
-              </Link>
-              : consulta stock y precios, calcula financiación y registra interesados en una planilla.
+              </Link>{' '}
+              consulta stock y precios, calcula financiación y registra interesados en una planilla.
+              Si trabajás con una planilla de Google Sheets, la conectás vos desde el panel: el
+              asistente la consulta y, si lo permitís, anota filas. La conexión con tu agenda o tu
+              CRM la armamos a pedido.
             </p>
             <p>
               Tu equipo sigue al tanto: ve toda la conversación en la bandeja y lo que necesita una
@@ -123,7 +126,7 @@ export default function CasosDeUsoPage() {
                 Pedir una demo para mi rubro
               </Button>
               <Button
-                href={buildWaLink('Hola, mi rubro no está en los casos de uso y quiero saber qué tarea podría resolver Atende')}
+                href={buildWaLink('Hola, mi rubro no está en los casos de uso y quiero saber qué tarea podría resolver Atende', waRef('/casos-de-uso', 'otro rubro'))}
                 data-cta="cases-other-whatsapp"
                 variant="glass"
                 size="lg"

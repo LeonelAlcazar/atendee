@@ -130,11 +130,17 @@ export function linkMetric(
   if (url.origin === sourceOrigin) {
     if (url.pathname === '/precios') metric = 'to_pricing';
     if (url.pathname === '/demo') metric = 'to_demo';
-  } else if (url.origin === site.appUrl && !url.search && !url.hash) {
-    if (url.pathname === '/planes' && placement === 'pricing-plans')
-      metric = 'to_plans';
+  } else if (url.origin === site.appUrl && !url.hash) {
     if (
-      url.pathname === '/' &&
+      !url.search &&
+      url.pathname === '/planes' &&
+      placement === 'pricing-plans'
+    )
+      metric = 'to_plans';
+    // The sign-up door carries its own ref and campaign query; only the
+    // fixed placement is counted, never the query.
+    if (
+      url.pathname === '/empezar' &&
       (placement === 'footer-signup' ||
         (page === 'home' && placement === 'hero-signup'))
     )
@@ -211,6 +217,14 @@ export function recordMetricLink(
   observeMetricsPage(pathname);
   const metric = linkMetric(metricPage(pathname), href, placement);
   if (metric) tracker.click(metric);
+}
+
+// The home hero form opens the sign-up door with the visitor's description.
+// Only the fixed metric is sent; the typed text never leaves the form.
+export function recordSignupStart(pathname: string | null) {
+  if (!active()) return;
+  observeMetricsPage(pathname);
+  if (metricPage(pathname) === 'home') tracker.click('to_signup');
 }
 
 export function recordDemoStarted() {

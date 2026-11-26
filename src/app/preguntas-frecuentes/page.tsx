@@ -4,6 +4,7 @@ import { ArrowRight, Plus } from 'lucide-react';
 import { faqGroups, faqPageItems } from '@/content/faq-page';
 import { pages } from '@/content/pages';
 import { createPageMetadata } from '@/lib/metadata';
+import { faqAnchors } from '@/lib/faq-anchors';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -11,6 +12,11 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { CtaFinal } from '@/components/landing/CtaFinal';
 
 export const metadata = createPageMetadata(pages.faq);
+// One id per answer across every group, unique on the page.
+const answerIds = faqAnchors(faqGroups.flatMap((group) => group.items.map((item) => item.q)));
+const groupOffsets = faqGroups.map((_, index) =>
+  faqGroups.slice(0, index).reduce((total, group) => total + group.items.length, 0),
+);
 const breadcrumbs = [
   { name: 'Inicio', path: '/' },
   { name: 'Preguntas frecuentes', path: '/preguntas-frecuentes' },
@@ -75,7 +81,7 @@ export default function PreguntasFrecuentesPage() {
         </div>
       </section>
 
-      {faqGroups.map((group) => (
+      {faqGroups.map((group, groupIndex) => (
         <section key={group.id} id={group.id} className="scroll-mt-20 py-8 md:py-12">
           <div className="mx-auto grid max-w-7xl gap-5 px-5 md:px-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-16">
             <div className="lg:sticky lg:top-24 lg:self-start lg:pt-5">
@@ -94,8 +100,12 @@ export default function PreguntasFrecuentesPage() {
               )}
             </div>
             <div className="rounded-4xl bg-surface px-5 shadow-card sm:px-8">
-              {group.items.map((item) => (
-                <details key={item.q} className="group border-b border-line last:border-b-0">
+              {group.items.map((item, index) => (
+                <details
+                  key={item.q}
+                  id={answerIds[groupOffsets[groupIndex] + index]}
+                  className="group scroll-mt-24 border-b border-line last:border-b-0"
+                >
                   <summary className="flex min-h-16 items-center justify-between gap-5 rounded-xl py-5">
                     <span className="text-lg font-semibold leading-snug tracking-[-0.015em]">
                       {item.q}

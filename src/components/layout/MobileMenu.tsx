@@ -8,7 +8,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { site } from '@/content/site';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 
 type Nav = { href: string; label: string }[];
 
@@ -87,7 +87,12 @@ export function MobileMenu({ nav }: { nav: Nav }) {
         <Link
           href={demoHref}
           data-cta="mobile-header-demo"
-          className="inline-flex min-h-11 items-center whitespace-nowrap rounded-full bg-coral-fill px-4 text-sm font-semibold text-white transition-colors duration-200 active:bg-coral-strong md:hidden"
+          className={`inline-flex min-h-11 items-center whitespace-nowrap rounded-full px-4 text-sm font-semibold transition-colors duration-200 md:hidden ${
+            // On the home the hero form is the primary action.
+            pathname === '/'
+              ? 'bg-surface text-ink ring-1 ring-inset ring-line-strong'
+              : 'bg-coral-fill text-white active:bg-coral-strong'
+          }`}
         >
           Pedí una demo
         </Link>
@@ -176,7 +181,7 @@ export function MobileMenu({ nav }: { nav: Nav }) {
               Pedí una demo
             </Button>
             <a
-              href={buildWaLink('Hola, vi atende.com.ar y quiero saber más')}
+              href={buildWaLink('Hola, vi atende.com.ar y quiero saber más', waRef(pathname, 'menú'))}
               target="_blank"
               rel="noopener noreferrer"
               data-cta="mobile-whatsapp"

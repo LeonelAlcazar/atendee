@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/Button';
+import { HeaderDemo } from './HeaderDemo';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { MobileMenu } from './MobileMenu';
 import { site } from '@/content/site';
@@ -49,9 +49,7 @@ export function Header() {
           >
             Entrar
           </a>
-          <Button href="/demo" data-cta="header-demo" variant="primary" size="md">
-            Pedí una demo
-          </Button>
+          <HeaderDemo />
         </div>
 
         <MobileMenu nav={nav} />

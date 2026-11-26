@@ -122,7 +122,8 @@ export default function IntegracionesPage() {
             })}
           </div>
           <p className="mt-8 max-w-3xl leading-relaxed text-muted">
-            Vincular tu número con el QR del panel habilita el canal de WhatsApp.
+            Vincular tu número desde el panel, con QR o con un código, habilita
+            el canal de WhatsApp.
             Para registrar un pedido también hace falta conectar tu sistema.{' '}
             <Link
               href="/que-es-atende#conexion"

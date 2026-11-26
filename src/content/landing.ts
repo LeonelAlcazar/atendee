@@ -6,8 +6,9 @@ export const landing = {
     titleLead: 'Tu WhatsApp',
     titleRest: 'Vos seguís trabajando.',
     actionDurationMs: 1500,
+    // The first action is the H1's static reading, for crawlers, screen
+    // readers and reduced motion: "Tu WhatsApp reserva el turno."
     actions: [
-      'hace todo esto.',
       'reserva el turno.',
       'consulta stock.',
       'resuelve dudas.',
@@ -18,9 +19,17 @@ export const landing = {
     pause: 'Pausar las acciones del titular',
     play: 'Reproducir las acciones del titular',
     description:
-      'Atende es el bot de WhatsApp que, conectado a tu agenda o a tu sistema, responde a cualquier hora y termina la tarea en el chat: reserva, toma el pedido, cotiza.',
-    primaryCta: 'Pedí una demo',
-    secondaryCta: 'Crear mi espacio',
+      'Atende es el bot de WhatsApp que, conectado a tu agenda o a tu sistema, termina la tarea en el chat.',
+    // The funnel starts here: one field, one button. The text travels to the
+    // app's sign-up door (?negocio=) and prefills the assistant setup.
+    start: {
+      label: 'Contanos de tu negocio',
+      placeholder: 'Ej.: peluquería en Nueva Córdoba, damos turnos de corte y color',
+      submit: 'Armar mi asistente',
+      note: 'Probalo gratis antes de elegir un plan',
+      demoLead: 'o',
+      demoLink: 'pedí una demo',
+    },
     scene: {
       label:
         'Una clienta pide un turno por WhatsApp. Atende le ofrece horarios, lo reserva en la agenda y se lo confirma.',
@@ -154,7 +163,7 @@ export const landing = {
     titleRest: 'también.',
     recurring: {
       title: 'Recordatorios y seguimientos',
-      text: 'Los programás una vez. Salen cada día, semana o mes, a los contactos que elijas.',
+      text: 'Los programás una vez y salen cada día, semana o mes. Conectado a tu agenda, a pedido, reserva el turno cuando te responden.',
       rule: 'Cada mes · día 1 · 10:00',
       audience: 'Etiqueta: Clientes',
       sample: 'Hola Sofi, ¿te reservo el turno de este mes?',
@@ -226,6 +235,20 @@ export const landing = {
         title: 'Conectamos tu sistema',
         text: 'Tu agenda, tu stock o tu CRM. Lo armamos a pedido, para tu negocio.',
       },
+    ],
+  },
+  // A quiet row of links under the steps: where to read more.
+  links: {
+    title: 'Más sobre Atende',
+    items: [
+      { href: '/servicios/turnos-whatsapp', label: 'Turnos y reservas' },
+      { href: '/servicios/ventas-whatsapp', label: 'Pedidos y ventas' },
+      { href: '/servicios/atencion-automatica-whatsapp', label: 'Atención automática' },
+      { href: '/precios', label: 'Precios' },
+      { href: '/integraciones', label: 'Integraciones' },
+      { href: '/blog/bot-de-whatsapp', label: 'Qué es un bot de WhatsApp' },
+      { href: '/blog/recordatorios-de-turnos-por-whatsapp', label: 'Recordatorios de turnos' },
+      { href: '/blog/cuanto-cuesta-automatizar-whatsapp', label: 'Cuánto cuesta automatizar WhatsApp' },
     ],
   },
   // Shared with the secondary pages: keep both blocks generic.

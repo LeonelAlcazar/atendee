@@ -2,7 +2,7 @@ import { Check } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import type { Rubro } from '@/content/rubros';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 import { buildDemoLink } from '@/lib/leads';
 
 // The rubro page's closing band, built like CtaFinal: what to try in the demo
@@ -55,7 +55,7 @@ export function RubroCta({ rubro }: { rubro: Rubro }) {
               {rubro.cta.demoLabel}
             </Button>
             <Button
-              href={buildWaLink(rubro.cta.context)}
+              href={buildWaLink(rubro.cta.context, waRef(`/casos-de-uso/${rubro.slug}`, 'prueba'))}
               data-cta={`rubro-${rubro.slug}-whatsapp`}
               variant="glass"
               size="lg"

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { site } from '@/content/site';
@@ -29,12 +29,69 @@ function shareRegistrationChoice(choice: Choice | null) {
   }
 }
 
+// A first-visit card never covers the page's main form (the home hero marks
+// it with data-consent-avoid). While it would overlap, or while the visitor
+// is typing there, the card waits out of sight and comes back on scroll.
+function overlaps(card: Element, target: Element) {
+  const a = card.getBoundingClientRect();
+  const b = target.getBoundingClientRect();
+  return a.top < b.bottom && a.bottom > b.top && a.left < b.right && a.right > b.left;
+}
+
 export function MetaPixelPreferences() {
   const pathname = usePathname();
   const [choice, setChoice] = useState<Choice | null>();
   const [editing, setEditing] = useState(false);
+  // Starts out of sight, so a card that would cover the form never flashes.
+  const [waiting, setWaiting] = useState(true);
+  const card = useRef<HTMLElement>(null);
   const initialized = useRef(false);
   const lastPage = useRef<string | null>(null);
+  const asking = choice === null && !editing;
+
+  useLayoutEffect(() => {
+    if (!asking) {
+      setWaiting(false);
+      return;
+    }
+    const target = document.querySelector('[data-consent-avoid]');
+    if (!target) {
+      setWaiting(false);
+      return;
+    }
+    let frame = 0;
+    const check = () => {
+      frame = 0;
+      if (!card.current) return;
+      setWaiting(
+        overlaps(card.current, target) || target.contains(document.activeElement),
+      );
+    };
+    const schedule = () => {
+      if (!frame) frame = window.requestAnimationFrame(check);
+    };
+    check();
+    // Fonts and late layout move the form: check again when anything resizes.
+    const layout = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(schedule);
+    layout?.observe(target);
+    layout?.observe(document.body);
+    document.fonts?.ready.then(schedule).catch(() => {});
+    const viewport = window.visualViewport;
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    viewport?.addEventListener('resize', schedule);
+    document.addEventListener('focusin', schedule);
+    document.addEventListener('focusout', schedule);
+    return () => {
+      if (frame) window.cancelAnimationFrame(frame);
+      layout?.disconnect();
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+      viewport?.removeEventListener('resize', schedule);
+      document.removeEventListener('focusin', schedule);
+      document.removeEventListener('focusout', schedule);
+    };
+  }, [asking, pathname]);
 
   useEffect(() => {
     if (window.location.origin !== site.url) return;
@@ -102,8 +159,14 @@ export function MetaPixelPreferences() {
       </button>
       {(choice === null || editing) && (
         <section
+          ref={card}
           aria-label="Preferencias de cookies publicitarias"
-          className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-lg rounded-2xl bg-surface p-5 text-base text-ink shadow-float"
+          data-waiting={waiting}
+          className={`fixed inset-x-3 bottom-3 z-50 mx-auto max-w-lg rounded-2xl bg-surface p-5 text-base text-ink shadow-float ${
+            waiting
+              ? 'invisible opacity-0'
+              : 'visible opacity-100 transition-opacity duration-300 ease-smooth motion-reduce:transition-none'
+          }`}
         >
           <p>
             ¿Aceptás que compartamos con Meta tus visitas, los clics en WhatsApp

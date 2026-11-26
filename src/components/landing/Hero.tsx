@@ -1,9 +1,10 @@
-import { Button } from '@/components/ui/Button';
 import { landing } from '@/content/landing';
-import { site } from '@/content/site';
 import { HeroScene } from './HeroScene';
 import { HeroHeadline } from './HeroHeadline';
+import { HeroStart } from './HeroStart';
 
+// The funnel starts on the home: the finished task as the headline, one line
+// that names the connection, and one field to start the assistant.
 export function Hero() {
   const { hero } = landing;
 
@@ -18,29 +19,10 @@ export function Hero() {
           pause={hero.pause}
           play={hero.play}
         />
-        <p className="mx-auto mt-5 max-w-3xl text-balance text-lead text-muted md:mt-6">
+        <p className="mx-auto mt-5 max-w-2xl text-balance text-lead text-muted md:mt-6">
           {hero.description}
         </p>
-        <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row md:mt-8">
-          <Button
-            href="/demo"
-            data-cta="hero-demo"
-            variant="primary"
-            size="lg"
-            className="w-full sm:w-auto"
-          >
-            {hero.primaryCta}
-          </Button>
-          <Button
-            href={site.appUrl}
-            data-cta="hero-signup"
-            variant="outline"
-            size="lg"
-            className="w-full sm:w-auto"
-          >
-            {hero.secondaryCta}
-          </Button>
-        </div>
+        <HeroStart />
       </div>
       <HeroScene />
     </section>

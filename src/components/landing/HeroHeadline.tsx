@@ -12,6 +12,10 @@ type Props = {
   play: string;
 };
 
+// The H1 reads as one sentence: "Tu WhatsApp reserva el turno. Vos seguís
+// trabajando." That is its only text in the DOM, for crawlers, screen readers
+// and visitors without CSS. The rotating actions are drawn from a data
+// attribute as generated content, so they never join the heading's text.
 export function HeroHeadline({ lead, rest, actions, actionDurationMs, pause, play }: Props) {
   const root = useRef<HTMLDivElement>(null);
   const [step, setStep] = useState(0);
@@ -46,16 +50,17 @@ export function HeroHeadline({ lead, rest, actions, actionDurationMs, pause, pla
     <div ref={root} className="relative @container">
       <h1 className="text-center text-display [font-size:min(var(--text-display),9.8cqw)]">
         <span className="block">{lead}</span>{' '}
-        <span className="sr-only">{actions[0]}</span>
+        <span className="sr-only">{actions[0]}</span>{' '}
         {/* Every action shares the middle row, keeping the other two lines still. */}
         <span aria-hidden="true" data-advanced={step > 0} className="grid place-items-center">
           {actions.map((action, index) => (
             <span
               key={action}
-              className={`col-start-1 row-start-1 ${index === active ? 'hero-action' : 'invisible'}`}
-            >
-              {action}
-            </span>
+              data-action={action}
+              className={`col-start-1 row-start-1 before:content-[attr(data-action)] ${
+                index === active ? 'hero-action' : 'invisible'
+              }`}
+            />
           ))}
         </span>{' '}
         <span className="block text-faint">{rest}</span>

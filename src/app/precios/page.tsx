@@ -11,7 +11,8 @@ import { pricingFaq } from '@/content/pricing';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
 import { buildDemoLink } from '@/lib/leads';
-import { getPublicPlans } from '@/lib/public-plans';
+import { getCatalog } from '@/lib/pricing-catalog';
+import { catalogSentence, responseLine } from '@/lib/pricing-copy';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -26,7 +27,9 @@ import { FactRows } from '@/components/servicios/FactRows';
 import { StepCards } from '@/components/servicios/StepCards';
 
 export const metadata = createPageMetadata(pages.pricing);
-export const dynamic = 'force-dynamic';
+// ISR: regenerated every 10 minutes from the last good catalog. A catalog
+// that fails to load never replaces the plans already on the page.
+export const revalidate = 600;
 const appPlansUrl = new URL('/planes', site.appUrl).toString();
 const breadcrumbs = [
   { name: 'Inicio', path: '/' },
@@ -60,8 +63,8 @@ const credits = [
     text: 'Un crédito es una respuesta del asistente. Se usan después de la cantidad del plan.',
   },
   {
-    label: 'Créditos de bienvenida',
-    text: 'Si tenés créditos de bienvenida disponibles, podés activarlos desde la app sin tarjeta. La cantidad y las condiciones se muestran en Suscripción.',
+    label: 'Chat de prueba',
+    text: 'Probá tu asistente gratis antes de elegir un plan, en el chat de prueba de tu espacio. No usa las respuestas del plan ni créditos.',
   },
 ];
 
@@ -133,8 +136,13 @@ function Availability({ value }: { value: string }) {
   return <>{value}</>;
 }
 
+const fallbackSub =
+  'Para reservar turnos o registrar pedidos, sumá el plan con IA y la conexión con tu sistema, que se cotiza por separado. Compará los precios publicados y calculá cuántas respuestas usaría tu negocio.';
+
 export default async function PricingPage() {
-  const plans = await getPublicPlans();
+  const catalog = await getCatalog();
+  const plans = catalog?.plans.length ? catalog.plans : null;
+  const opening = catalog && plans ? catalogSentence(plans, catalog.checkedAt) : null;
   return (
     <>
       <Breadcrumbs items={breadcrumbs} />
@@ -152,7 +160,7 @@ export default async function PricingPage() {
                   <span className="block text-faint">que reserva, cotiza y toma pedidos?</span>
                 </>
               }
-              sub="Para reservar turnos o registrar pedidos, sumá el plan con IA y la conexión con tu sistema, que se cotiza por separado. Compará los precios publicados y calculá cuántas respuestas usaría tu negocio."
+              sub={opening ?? fallbackSub}
             />
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="#planes" size="lg" className="w-full sm:w-auto">
@@ -199,15 +207,26 @@ export default async function PricingPage() {
         <div className={container}>
           <SectionHeader title="Planes generales" />
           {plans === null ? (
-            <p className="mt-8 max-w-3xl rounded-3xl bg-surface p-7 leading-relaxed text-muted shadow-card md:mt-12 md:p-9">
-              No pudimos cargar los planes. Podés ver los de tu espacio en la
-              app o consultarnos por WhatsApp o email.
-            </p>
-          ) : plans.length === 0 ? (
-            <p className="mt-8 max-w-3xl rounded-3xl bg-surface p-7 leading-relaxed text-muted shadow-card md:mt-12 md:p-9">
-              No hay planes publicados en este momento. Podés consultarnos por
-              WhatsApp o email.
-            </p>
+            // No catalog yet (or none published): a calm next step, never an error.
+            <div
+              data-plans-fallback
+              className="mt-8 max-w-3xl rounded-3xl bg-surface p-7 shadow-card md:mt-12 md:p-9"
+            >
+              <p className="text-title">Te mostramos los planes en la demo.</p>
+              <p className="mt-2 leading-relaxed text-muted">
+                Contanos qué tarea querés sacarte de encima y te pasamos el plan
+                que le sirve a tu negocio y lo que cuesta la conexión con tu
+                sistema.
+              </p>
+              <Button
+                href={buildDemoLink('precios')}
+                data-cta="pricing-fallback-demo"
+                size="lg"
+                className="mt-6 w-full sm:w-auto"
+              >
+                Pedí una demo
+              </Button>
+            </div>
           ) : (
             <div className={`mt-8 grid gap-4 md:mt-12 md:gap-5 ${planGrid(plans.length)}`}>
               {plans.map((plan, index) => (
@@ -233,11 +252,7 @@ export default async function PricingPage() {
                     )}
                   </div>
                   <p className="mt-6 max-w-full border-t border-line pt-5 text-[0.9375rem] font-medium leading-snug">
-                    {!plan.automationAllowed
-                      ? 'Atención manual, sin asistente.'
-                      : plan.monthlyAgentResponseLimit === 0
-                        ? 'Sin respuestas mensuales incluidas.'
-                        : `Hasta ${plan.monthlyAgentResponseLimit.toLocaleString('es-AR')} respuestas del asistente por mes.`}
+                    {responseLine(plan)}
                   </p>
                 </article>
               ))}

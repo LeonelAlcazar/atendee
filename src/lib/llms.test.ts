@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { pages } from '@/content/pages';
 import { rubros } from '@/content/rubros';
 import { servicios } from '@/content/servicios';
+import { definition } from '@/content/que-es-atende';
 import { actionStatus } from '@/content/status';
 import type { BlogPost } from './blog-content';
 import { checkClaims } from './claims';
@@ -42,14 +43,18 @@ describe('llms.txt', () => {
   });
   it('leads with the action, conditional on the connection', () => {
     const summary = text.split('\n')[2];
-    expect(summary).toContain('Conectado a la agenda');
-    expect(summary).toContain('se arma a pedido');
-    expect(summary).toContain('el equipo confirma');
+    expect(summary).toBe(`> ${definition}`);
+    expect(summary).toContain('hecho en Córdoba');
+    expect(summary).toContain('Conectado a tu agenda');
+    expect(summary).toContain('a pedido');
+    expect(summary).toContain('tu equipo confirma');
   });
   it('publishes the full status table and the real limits', () => {
     for (const row of actionStatus)
       expect(text).toContain(`${row.action}: ${row.label}.`);
-    expect(text).toContain('escanea un QR desde el panel');
+    expect(text).toContain('con QR o con un código en su mismo teléfono');
+    expect(text).toContain('chat de prueba');
+    expect(text).not.toMatch(/se ven en la app|créditos de bienvenida/);
     expect(text).toContain('la transcripción disponible');
     expect(text).toContain('programar textos recurrentes');
     expect(text).not.toContain('No es la API oficial');

@@ -84,8 +84,9 @@ export default function EditorialPage() {
             cambió, la de actualización. Esa fecha se mueve cuando hay un cambio
             real, no para que el artículo parezca nuevo. Cada fuente tiene su
             propia fecha de consulta: es la última vez que la abrimos. Los
-            precios de Atende no están en las guías; los planes vigentes se ven
-            en la app antes de pagar.
+            precios de Atende no están en las guías: los planes vigentes están
+            en la <Link href="/precios">página de precios</Link>, sin crear una
+            cuenta, y la conexión a pedido se cotiza para cada negocio.
           </p>
           <h2>Cómo avisarnos de un error</h2>
           <p>

@@ -105,19 +105,25 @@ describe('known link intentions', () => {
     expect(linkMetric('pricing', '/precios')).toBeNull();
   });
   it('distinguishes prospects from existing-account entry using fixed tags and destinations', () => {
-    expect(linkMetric('home', site.appUrl, 'hero-signup')).toBe('to_signup');
+    const signup = `${site.appUrl}/empezar?ref=home-footer&utm_source=PRIVATE-CANARY`;
+    expect(linkMetric('home', signup, 'hero-signup')).toBe('to_signup');
     for (const page of ['home', 'pricing', 'demo'] as const) {
-      expect(linkMetric(page, site.appUrl, 'footer-signup')).toBe('to_signup');
+      expect(linkMetric(page, signup, 'footer-signup')).toBe('to_signup');
+      expect(linkMetric(page, `${site.appUrl}/empezar`, 'footer-signup')).toBe('to_signup');
+      // "Entrar" keeps the bare app root and is never a sign-up.
+      expect(linkMetric(page, site.appUrl, 'footer-signup')).toBeNull();
       expect(linkMetric(page, site.appUrl)).toBeNull();
-      expect(linkMetric(page, site.appUrl, 'inline')).toBeNull();
+      expect(linkMetric(page, signup)).toBeNull();
+      expect(linkMetric(page, signup, 'inline')).toBeNull();
     }
+    expect(linkMetric('home', `${signup}#PRIVATE-CANARY`, 'footer-signup')).toBeNull();
+    expect(linkMetric('pricing', signup, 'hero-signup')).toBeNull();
     expect(
       linkMetric('pricing', `${site.appUrl}/planes`, 'pricing-plans'),
     ).toBe('to_plans');
     expect(
       linkMetric('home', `${site.appUrl}/planes`, 'pricing-plans'),
     ).toBeNull();
-    expect(linkMetric('pricing', site.appUrl, 'hero-signup')).toBeNull();
     expect(
       linkMetric(
         'pricing',
@@ -128,7 +134,7 @@ describe('known link intentions', () => {
     expect(
       linkMetric(
         'home',
-        `${site.appUrl}/?returnTo=PRIVATE-CANARY`,
+        `${site.appUrl}/empezar/x?returnTo=PRIVATE-CANARY`,
         'hero-signup',
       ),
     ).toBeNull();
@@ -384,6 +390,19 @@ describe('isolated best-effort transport', () => {
       });
       expect(options.body).not.toContain('PRIVATE-CANARY');
     }
+  });
+  it('counts a hero sign-up start on the home only, without the typed text', async () => {
+    const { metrics, fetch } = await browser();
+    metrics.recordSignupStart('/');
+    metrics.recordSignupStart('/precios');
+    metrics.recordSignupStart('/blog/a');
+    expect(
+      fetch.mock.calls.map(([, options]) => JSON.parse(options.body)),
+    ).toEqual([
+      { v: 1, page: 'home', metric: 'view' },
+      { v: 1, page: 'home', metric: 'to_signup' },
+      { v: 1, page: 'pricing', metric: 'view' },
+    ]);
   });
   it('does not wait for a pending request or prevent the next action', async () => {
     const { metrics, fetch } = await browser();

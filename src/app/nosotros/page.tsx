@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { ArrowUpRight, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { pages } from '@/content/pages';
+import { definition } from '@/content/que-es-atende';
 import { site } from '@/content/site';
 import { createPageMetadata } from '@/lib/metadata';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 import { pageGraph } from '@/lib/structured-data';
 import { JsonLd } from '@/components/jsonld';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
@@ -39,7 +40,7 @@ export default function NosotrosPage() {
                 <span className="block text-faint">para que tu WhatsApp termine tareas.</span>
               </>
             }
-            sub="Atende se hace en Córdoba, Argentina. Es un asistente para el WhatsApp de negocios argentinos: conectado a tu sistema, reserva el turno, registra el pedido o cotiza en la conversación, con tu equipo al tanto."
+            sub={definition}
           />
         </div>
       </section>
@@ -119,7 +120,7 @@ export default function NosotrosPage() {
                 <MessageCircle size={20} strokeWidth={1.75} />
               </span>
               <a
-                href={buildWaLink('Hola, quiero hablar con el equipo de Atende')}
+                href={buildWaLink('Hola, quiero hablar con el equipo de Atende', waRef('/nosotros', 'contacto'))}
                 data-cta="about-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"

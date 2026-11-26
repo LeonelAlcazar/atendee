@@ -6,8 +6,12 @@ import { formatBlogDate } from '@/lib/blog-content';
 import { postBreadcrumbs, postGraph, postMetadata } from '@/lib/blog-seo';
 import { getBlogTopic, rubroByTopic } from '@/content/blog-topics';
 import { rubros } from '@/content/rubros';
-import { site } from '@/content/site';
-import { buildWaLink } from '@/lib/wa';
+import { servicios } from '@/content/servicios';
+import { buildDemoLink } from '@/lib/leads';
+import { closingServiceByTopic } from '@/lib/blog-closing';
+import { faqAnchors } from '@/lib/faq-anchors';
+import { buildSignupLink, pageRef, signupRef } from '@/lib/signup';
+import { buildWaLink, waRef } from '@/lib/wa';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { JsonLd } from '@/components/jsonld';
 import { Button } from '@/components/ui/Button';
@@ -52,29 +56,63 @@ export async function generateMetadata({ params }: Props) {
 }
 // The site audit reads the header as a contract: one opening (the sales intro
 // or the description <p>, the only direct <p>), then the CTA row with its two
-// links as direct children, then the byline. Keep that order.
+// links as direct children, then the byline block. Keep that order.
 export default async function PostPage({ params }: Props) {
   const post = getPost((await params).slug);
   if (!post) notFound();
   const related = post.related.map(
     (slug) => getPosts().find((item) => item.slug === slug)!,
   );
-  const rubro = rubros.find((item) => item.slug === rubroByTopic[post.category]);
+  const path = `/blog/${post.slug}`;
+  // A per-post rubro (front matter) wins over the topic's default.
+  const rubroSlug = post.rubro ?? rubroByTopic[post.category];
+  const rubro = rubros.find((item) => item.slug === rubroSlug);
+  // /demo?rubro=… when the rubro is known, so the form opens on that trade.
+  const demoHref = buildDemoLink(rubro?.slug);
+  // Without a rubro page, the next step is the closest service page.
+  const closingService = rubro
+    ? undefined
+    : servicios.find((item) => item.slug === closingServiceByTopic[post.category]);
+  const faqIds = faqAnchors(post.faq.map((item) => item.q));
   const pitchOnlyInHeader = post.salesIntro && (post.lead || post.category === 'recordatorio-de-turnos');
+  // The next page after the guide: its rubro, else the closest service.
+  const nextStep = rubro
+    ? { href: `/casos-de-uso/${rubro.slug}`, label: rubro.title, cta: 'closing-rubro' }
+    : closingService
+      ? { href: `/servicios/${closingService.slug}`, label: closingService.title, cta: 'closing-service' }
+      : null;
   // White on the forest panel, coral text on the canvas.
-  const rubroLink = (inverse: boolean) =>
-    rubro && (
+  const nextStepLink = (inverse: boolean) =>
+    nextStep && (
       <p className="mt-6">
         <Link
-          href={`/casos-de-uso/${rubro.slug}`}
+          href={nextStep.href}
+          data-cta={`blog-${post.slug}-${nextStep.cta}`}
           className={`group inline-block min-h-11 py-2.5 font-semibold underline-offset-4 hover:underline ${
             inverse ? 'text-white' : 'text-coral-strong'
           }`}
         >
-          {withArrow(rubro.title)}
+          {withArrow(nextStep.label)}
         </Link>
       </p>
     );
+  // The closing step when the pitch lives only in the header: the next
+  // page, or the demo when there is none.
+  const closingLink = () => (
+    <div data-closing>
+      {nextStepLink(false) ?? (
+        <p className="mt-6">
+          <Link
+            href={demoHref}
+            data-cta={`blog-${post.slug}-closing-demo`}
+            className="group inline-block min-h-11 py-2.5 font-semibold text-coral-strong underline-offset-4 hover:underline"
+          >
+            {withArrow('Pedí una demo para tu negocio')}
+          </Link>
+        </p>
+      )}
+    </div>
+  );
   return (
     <>
       <Breadcrumbs items={postBreadcrumbs(post)} />
@@ -102,7 +140,7 @@ export default async function PostPage({ params }: Props) {
           {post.lead ? (
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
-                href={buildWaLink(post.lead.message)}
+                href={buildWaLink(post.lead.message, waRef(path, 'guía'))}
                 data-cta={`blog-${post.slug}-lead-whatsapp`}
                 aria-label={`${post.lead.label} (abre WhatsApp)`}
                 size="lg"
@@ -111,7 +149,7 @@ export default async function PostPage({ params }: Props) {
                 {post.lead.label} →
               </Button>
               <Button
-                href="/demo"
+                href={demoHref}
                 data-cta={`blog-${post.slug}-lead-demo`}
                 variant="outline"
                 size="lg"
@@ -123,7 +161,7 @@ export default async function PostPage({ params }: Props) {
           ) : post.salesIntro && (
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
-                href="/demo"
+                href={demoHref}
                 data-cta={`blog-${post.slug}-sales-demo`}
                 size="lg"
                 className="w-full sm:w-auto"
@@ -131,7 +169,7 @@ export default async function PostPage({ params }: Props) {
                 Pedí una demo
               </Button>
               <Button
-                href={site.appUrl}
+                href={buildSignupLink(signupRef(pageRef(path), 'sales'))}
                 data-cta={`blog-${post.slug}-sales-app`}
                 variant="outline"
                 size="lg"
@@ -141,7 +179,8 @@ export default async function PostPage({ params }: Props) {
               </Button>
             </div>
           )}
-          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-muted">
+          <div className="mt-6">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm text-muted">
             <Link
               href="/blog/editorial"
               rel="author"
@@ -164,6 +203,19 @@ export default async function PostPage({ params }: Props) {
               </span>
             )}
             <span>{post.readingMinutes} min de lectura</span>
+          </div>
+          {/* Who publishes, in one line, so a quoted chunk names the entity. */}
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted" data-publisher>
+            Esta guía la publica Atende, un asistente de WhatsApp para PyMEs
+            argentinas hecho en Córdoba.{' '}
+            <Link
+              href="/que-es-atende"
+              className="font-semibold text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
+            >
+              Qué es Atende
+            </Link>
+            .
+          </p>
           </div>
         </header>
         <div className="mt-10 grid max-w-3xl gap-10 md:mt-14 lg:max-w-none lg:grid-cols-[minmax(0,48rem)_13rem] lg:gap-x-12 xl:grid-cols-[minmax(0,48rem)_15rem] xl:gap-x-24">
@@ -225,10 +277,11 @@ export default async function PostPage({ params }: Props) {
             <section id="preguntas-frecuentes" className="mt-16 max-w-xl md:mt-20">
               <h2 className="blog-heading">Preguntas frecuentes</h2>
               <div className="mt-6 rounded-3xl bg-surface px-5 shadow-card sm:px-8">
-                {post.faq.map((item) => (
+                {post.faq.map((item, index) => (
                   <details
                     key={item.q}
-                    className="group border-b border-line last:border-b-0"
+                    id={faqIds[index]}
+                    className="group scroll-mt-24 border-b border-line last:border-b-0"
                   >
                     <summary className="flex min-h-16 items-center justify-between gap-5 rounded-xl py-5">
                       <span className="text-lg font-semibold leading-snug tracking-[-0.015em]">
@@ -286,7 +339,7 @@ export default async function PostPage({ params }: Props) {
                 )}
               </section>
             )}
-            {pitchOnlyInHeader ? rubroLink(false) : (
+            {pitchOnlyInHeader ? closingLink() : (
               <section className="relative mt-16 max-w-xl overflow-hidden rounded-4xl bg-forest px-6 py-10 text-white sm:px-10 sm:py-12 md:mt-20">
                 <div
                   className="absolute inset-x-0 bottom-0 h-2/3 bg-[radial-gradient(60%_100%_at_30%_100%,rgb(230_72_44/0.22),transparent_70%)]"
@@ -304,14 +357,14 @@ export default async function PostPage({ params }: Props) {
                     los datos y tu equipo confirma.
                   </p>
                   <Button
-                    href="/demo"
+                    href={demoHref}
                     data-cta="blog-demo"
                     size="lg"
                     className="mt-8 w-full sm:w-auto"
                   >
                     Pedí una demo
                   </Button>
-                  {rubroLink(true)}
+                  {nextStepLink(true)}
                 </div>
               </section>
             )}

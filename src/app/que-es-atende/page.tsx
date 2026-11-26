@@ -10,6 +10,8 @@ import {
   facts,
   inbox,
   included,
+  namesakeAnswer,
+  namesakes,
   nextLinks,
   notDone,
   positioning,
@@ -202,25 +204,25 @@ export default function QueEsAtendePage() {
               Desde el panel, vinculás el WhatsApp que ya usa tu negocio.
             </p>
             <p className="mt-4 max-w-xl leading-relaxed text-muted">
-              Abrí el QR del panel en otra pantalla. En tu teléfono, entrá a
-              Dispositivos vinculados y escanealo. Tus clientes siguen
-              escribiendo al mismo número.
+              Lo vinculás desde Dispositivos vinculados, con QR o con un código
+              en tu mismo teléfono. Tus clientes siguen escribiendo al mismo
+              número.
             </p>
             <p className="mt-3 max-w-xl leading-relaxed text-muted">
               Si necesitás la API oficial de Meta, consultá el alta y las
-              condiciones de esa ruta en la demo. Vincular un dispositivo por QR
-              es una conexión distinta.
+              condiciones de esa ruta en la demo. Vincular un dispositivo con QR
+              o con un código es una conexión distinta.
             </p>
           </div>
           <div className={sheet}>
             <h2 className="text-balance text-title">Cómo se empieza</h2>
             <ol className="mt-5 flex flex-col">
               {[
-                'Creás tu espacio.',
                 'Le contás qué hace tu negocio.',
-                'Invitás a tu equipo.',
-                'Activás créditos o un plan.',
-                'Vinculás tu número de WhatsApp.',
+                'Creás tu espacio y Atende arma tu asistente.',
+                'Lo probás gratis en el chat de prueba.',
+                'Elegís un plan.',
+                'Vinculás tu número con QR o con un código.',
               ].map((step, index) => (
                 <li
                   key={step}
@@ -277,10 +279,13 @@ export default function QueEsAtendePage() {
             No conviene si necesitás campañas de difusión masivas, interpretar el contenido de
             imágenes o documentos sin intervención de tu equipo o varios canales además de WhatsApp.
           </p>
+          {/* One namesake list for every surface (src/content/que-es-atende.ts). */}
           <p className="mt-4 max-w-3xl rounded-2xl bg-surface/60 px-5 py-4 leading-relaxed ring-1 ring-inset ring-line">
-            <strong className="font-semibold">No confundir:</strong> Atende
-            (atende.com.ar) no tiene relación con AtiendeApp, Atendium ni otros
-            productos de nombres parecidos.
+            <strong className="font-semibold">
+              ¿Atende es lo mismo que {namesakes.slice(0, -1).join(', ')} o{' '}
+              {namesakes[namesakes.length - 1]}?
+            </strong>{' '}
+            {namesakeAnswer}
           </p>
         </div>
       </section>

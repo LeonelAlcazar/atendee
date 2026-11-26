@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/Button';
 import { landing } from '@/content/landing';
-import { buildWaLink } from '@/lib/wa';
+import { WaButton } from '@/components/links/WaLink';
 import { buildDemoLink } from '@/lib/leads';
 
 type Props = {
@@ -44,17 +44,16 @@ export function CtaFinal({
             >
               {copy.primaryCta}
             </Button>
-            <Button
-              href={buildWaLink(context)}
+            <WaButton
+              context={context}
+              placement="cierre"
               data-cta="final-whatsapp"
               variant="glass"
               size="lg"
               className="w-full sm:w-auto"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               {copy.secondaryCta}
-            </Button>
+            </WaButton>
           </div>
           <p className="mt-6 text-sm text-white/70">{reassurance}</p>
         </div>

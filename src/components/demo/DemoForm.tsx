@@ -11,7 +11,7 @@ import {
   demoVolumes,
   getDemoContext,
 } from '@/lib/leads';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 import { trackConversion } from '@/lib/conversions';
 import { recordDemoStarted, recordPreparedDemo } from '@/lib/metrics';
 import { Button } from '@/components/ui/Button';
@@ -116,6 +116,7 @@ export function DemoForm() {
             <a
               href={buildWaLink(
                 'Hola, quiero pedir una demo de Atende para mi negocio',
+                waRef('/demo', 'sin formulario'),
               )}
               target="_blank"
               rel="noopener noreferrer"

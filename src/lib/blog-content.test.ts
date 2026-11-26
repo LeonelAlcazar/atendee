@@ -104,6 +104,9 @@ describe('Markdown publication boundary', () => {
     expect(() =>
       parsePost(fixture({ draft: 'false' }), 'example.md'),
     ).toThrow();
+    expect(() =>
+      parsePost(fixture({ rubro: 'consorcios' }), 'example.md'),
+    ).toThrow();
     expect(() => parsePost(example, '../secret.md')).toThrow();
     expect(() =>
       parsePost('---js\nprocess.exit()\n---\ntext', 'example.md'),
@@ -269,5 +272,14 @@ describe('Markdown publication boundary', () => {
     );
     expect(feed('item title').text()).toBe('Atende & WhatsApp <guía>');
     expect(feed('item pubDate').text()).toBe('Thu, 10 Sep 2026 12:00:00 GMT');
+  });
+});
+
+describe('per-post rubro', () => {
+  it('accepts a rubro slug from the catalog and leaves it out by default', () => {
+    expect(parsePost(example, 'example.md').rubro).toBeUndefined();
+    expect(
+      parsePost(fixture({ rubro: 'servicios-profesionales' }), 'example.md').rubro,
+    ).toBe('servicios-profesionales');
   });
 });

@@ -2,13 +2,15 @@ import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { faq, type FaqItem } from '@/content/faq';
 import { landing } from '@/content/landing';
-import { buildWaLink } from '@/lib/wa';
+import { faqAnchors } from '@/lib/faq-anchors';
+import { WaLink } from '@/components/links/WaLink';
 
 // Shared with the secondary pages, so it pads itself above and below. One
 // native <details> per item and no other <details> here: the site audit counts
 // them against the FAQ schema.
 export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
   const copy = landing.faq;
+  const ids = faqAnchors(items.map((item) => item.q));
 
   return (
     <section id="faq" className="scroll-mt-20 py-24 md:py-32">
@@ -16,8 +18,12 @@ export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
         <h2 className="text-center text-headline">{copy.title}</h2>
 
         <div className="mt-8 rounded-4xl bg-surface px-5 shadow-card sm:px-8 md:mt-12">
-          {items.map((item) => (
-            <details key={item.q} className="group border-b border-line last:border-b-0">
+          {items.map((item, index) => (
+            <details
+              key={item.q}
+              id={ids[index]}
+              className="group scroll-mt-24 border-b border-line last:border-b-0"
+            >
               <summary className="flex min-h-16 items-center justify-between gap-5 rounded-xl py-5">
                 <span className="text-lg font-semibold leading-snug tracking-[-0.015em] md:text-xl">
                   {item.q}
@@ -42,15 +48,14 @@ export function Faq({ items = faq }: { items?: readonly FaqItem[] }) {
 
         <p className="mt-6 flex flex-col items-center justify-center gap-x-2 text-center text-muted sm:flex-row">
           {copy.whatsappLead}
-          <a
-            href={buildWaLink('Hola, tengo una pregunta sobre Atende')}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WaLink
+            context="Hola, tengo una pregunta sobre Atende"
+            placement="preguntas"
             data-cta="faq-whatsapp"
             className="inline-flex min-h-11 items-center font-semibold text-coral-strong underline-offset-4 hover:underline"
           >
             {copy.whatsappLink}
-          </a>
+          </WaLink>
           <span className="hidden sm:inline" aria-hidden="true">
             ·
           </span>

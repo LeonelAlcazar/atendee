@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile, readdir, stat } from 'node:fs/promises';
+import { readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:net';
 import { createServer as createHttpServer } from 'node:http';
@@ -17,6 +17,16 @@ import {
   rubroByTopic,
 } from '../src/content/blog-topics.ts';
 import { guideRedirects } from '../next.config.ts';
+import { buildDemoLink } from '../src/lib/leads.ts';
+import { nextStepPath } from '../src/lib/blog-closing.ts';
+import { catalogSentence } from '../src/lib/pricing-copy.ts';
+import {
+  buildSignupLink,
+  pageRef,
+  refPattern,
+  signupRef,
+} from '../src/lib/signup.ts';
+import { buildWaLink, waRef } from '../src/lib/wa.ts';
 import { load } from 'cheerio';
 
 // Start the actual production runtime on an available local port and audit HTTP HTML.
@@ -67,6 +77,37 @@ const catalog = createHttpServer((request, response) => {
 });
 catalog.listen(0, '127.0.0.1');
 await once(catalog, 'listening');
+// The /precios regenerations below write to the standalone runtime's cache.
+// Keep the build's copy and put it back afterwards, so `npm start` serves the
+// page the build produced.
+const standaloneApp = new URL('.next/standalone/.next/server/app/', root);
+const fetchCache = new URL('.next/standalone/.next/cache/fetch-cache/', root);
+const pricingFiles = ['precios.html', 'precios.meta', 'precios.rsc'];
+const pricingSnapshot = await Promise.all(
+  pricingFiles.map((file) => readFile(new URL(file, standaloneApp)).catch(() => null)),
+);
+const fetchCacheBefore = new Map(
+  await Promise.all(
+    (await readdir(fetchCache).catch(() => [])).map(async (file) => [
+      file,
+      await readFile(new URL(file, fetchCache)).catch(() => null),
+    ]),
+  ),
+);
+const restoreRuntimeCache = async () => {
+  await Promise.all(
+    pricingFiles.map((file, index) =>
+      pricingSnapshot[index]
+        ? writeFile(new URL(file, standaloneApp), pricingSnapshot[index])
+        : rm(new URL(file, standaloneApp), { force: true }),
+    ),
+  );
+  for (const file of await readdir(fetchCache).catch(() => [])) {
+    const saved = fetchCacheBefore.get(file);
+    if (saved) await writeFile(new URL(file, fetchCache), saved);
+    else await rm(new URL(file, fetchCache), { force: true, recursive: true });
+  }
+};
 const child = spawn(process.execPath, ['.next/standalone/server.js'], {
   cwd: root,
   env: {
@@ -103,6 +144,9 @@ try {
   assert.ok(ready, `Production server did not start: ${serverOutput}`);
 
   const origin = 'https://www.atende.com.ar';
+  const prerender = JSON.parse(
+    await readFile(new URL('.next/prerender-manifest.json', root), 'utf8'),
+  );
   const read = async (path) => {
     const response = await fetch(`${base}/${path.replace(/^\//, '')}`);
     assert.equal(response.status, 200, `${path}: expected HTTP 200`);
@@ -173,6 +217,7 @@ try {
       `${path}: sitemap date must reflect this page's content update`,
     );
   }
+  const appOrigin = 'https://app.atende.com.ar';
   const titles = new Set();
   const descriptions = new Set();
   const documents = new Map();
@@ -343,6 +388,36 @@ try {
         `${url}: missing sales CTA`,
       );
     }
+    const ids = $('[id]')
+      .map((_, el) => $(el).attr('id'))
+      .get();
+    assert.equal(new Set(ids).size, ids.length, `${url}: duplicate element id`);
+    // Every team WhatsApp prefill outside an article body names its source.
+    for (const anchor of $(`a[href^="https://wa.me/${site.whatsapp.number}?text="]`).toArray()) {
+      if ($(anchor).closest('.blog-prose').length) continue;
+      const text = new URL($(anchor).attr('href')).searchParams.get('text');
+      assert.match(text, /\(Ref: [^)]+\)$/, `${url}: WhatsApp prefill without a source reference`);
+    }
+    // Sign-up links open the app's sign-up door with a ref; "Entrar" stays
+    // the bare app root.
+    for (const anchor of $('a[href^="https://app.atende.com.ar"]').toArray()) {
+      const href = $(anchor).attr('href');
+      const label = normalize($(anchor).text());
+      const target = new URL(href);
+      if (/^Entrar\b/.test(label))
+        assert.equal(href, appOrigin, `${url}: "${label}" must open the app root`);
+      if (/^(Crear mi espacio|Empezá en la app)$/.test(label))
+        assert.equal(target.pathname, '/empezar', `${url}: "${label}" must open the sign-up door`);
+      if (target.pathname === '/empezar') {
+        assert.deepEqual([...target.searchParams.keys()], ['ref'], `${url}: sign-up link query`);
+        assert.match(target.searchParams.get('ref'), refPattern, `${url}: sign-up ref`);
+      }
+    }
+    assert.equal(
+      $('a[data-cta="footer-signup"]').attr('href'),
+      buildSignupLink(signupRef(pageRef(parsed.pathname), 'footer')),
+      `${url}: footer account creation must open the sign-up door with its page`,
+    );
   }
 
   const linkedPages = new Set(['/']);
@@ -397,7 +472,12 @@ try {
       count: 2,
     })),
     { path: '/integraciones', source: 'integraciones', count: 3 },
-    { path: '/precios', source: 'precios', count: 2 },
+    // The calm fallback (no catalog yet) adds one demo link of its own.
+    {
+      path: '/precios',
+      source: 'precios',
+      count: documents.get('/precios')('[data-plans-fallback]').length ? 3 : 2,
+    },
   ]) {
     const $ = documents.get(path);
     assert.equal(
@@ -407,13 +487,44 @@ try {
     );
   }
   const home = documents.get('/');
-  const appOrigin = 'https://app.atende.com.ar';
+  const pricingPlansHref = (page) => page('a[data-cta="pricing-plans"]').attr('href');
   assert.equal(
-    documents.get('/precios')('a[data-cta="pricing-plans"]').attr('href'),
+    pricingPlansHref(documents.get('/precios')),
     `${appOrigin}/planes`,
     'Pricing must preserve the fixed app-owned plan entry without plan or return parameters',
   );
-  const pricing = documents.get('/precios');
+
+  // /precios is ISR: regenerated every 10 minutes from the last good catalog
+  // (unstable_cache keeps the stale entry when a refresh fails). It never
+  // renders an error. The build-time page holds the live catalog or, without
+  // one, the calm fallback that sends people to the demo.
+  assert.equal(
+    prerender.routes['/precios']?.initialRevalidateSeconds,
+    600,
+    '/precios: must be static with a 10-minute revalidation',
+  );
+  const builtPricing = documents.get('/precios');
+  assert.ok(
+    !builtPricing('main').text().includes('No pudimos cargar los planes'),
+    '/precios: no error state',
+  );
+  assert.ok(
+    builtPricing('[data-public-plan]').length ||
+      builtPricing('[data-plans-fallback] a[href="/demo?desde=precios"]').length,
+    '/precios: plans or the calm fallback to the demo',
+  );
+  // An on-demand regeneration re-reads the fixture catalog right away.
+  const regeneratePricing = async () => {
+    const response = await fetch(base + '/precios', {
+      headers: { 'x-prerender-revalidate': prerender.preview.previewModeId },
+    });
+    assert.equal(response.status, 200, '/precios: regeneration');
+    assert.equal(response.headers.get('x-nextjs-cache'), 'REVALIDATED');
+    await response.arrayBuffer();
+    return load(await read('/precios'));
+  };
+  const pricingText = (page) => normalize(page('main').text());
+  const pricing = await regeneratePricing();
   const cards = pricing('[data-public-plan]');
   assert.equal(
     cards.length,
@@ -445,6 +556,31 @@ try {
     pricing('a[data-cta="pricing-plans"]').text().trim(),
     'Continuar en la app →',
   );
+  // The opening under the H1 comes from the catalog only.
+  const opening = catalogSentence(catalogData, '2026-01-01').replace(
+    / Precios publicados al .*$/,
+    '',
+  );
+  assert.ok(
+    normalize(pricing('h1').parent().text()).includes(opening),
+    '/precios: opening sentence built from the catalog',
+  );
+  assert.match(
+    normalize(pricing('h1').parent().text()),
+    /Precios publicados al \d{1,2} de [a-z]+ de \d{4}\./,
+    '/precios: catalog date',
+  );
+  // The page's own copy (the FAQ answers live in src/content/pricing.ts).
+  const pricingOwnCopy = pricing('main').clone();
+  pricingOwnCopy.find('#faq, script').remove();
+  assert.ok(
+    !/cr[eé]ditos de bienvenida/i.test(normalize(pricingOwnCopy.text())),
+    '/precios: free credits are gone',
+  );
+  assert.ok(
+    pricingText(pricing).includes('Probá tu asistente gratis antes de elegir un plan'),
+    '/precios: the free path is the test chat',
+  );
 
   catalogData = [
     {
@@ -454,7 +590,7 @@ try {
       monthlyAgentResponseLimit: 567,
     },
   ];
-  const refreshedPricing = load(await read('/precios'));
+  const refreshedPricing = await regeneratePricing();
   assert.equal(refreshedPricing('[data-public-plan]').length, 1);
   assert.ok(
     refreshedPricing('[data-public-plan]')
@@ -469,49 +605,48 @@ try {
   assert.ok(
     !refreshedPricing('main').text().includes('Importe de prueba no numérico'),
   );
-  catalogData = [];
-  const emptyPricing = load(await read('/precios'));
-  assert.equal(emptyPricing('[data-public-plan]').length, 0);
-  assert.ok(
-    emptyPricing('main')
-      .text()
-      .includes('No hay planes publicados en este momento.'),
-  );
-  assert.ok(
-    !emptyPricing('main').text().includes('Importe actualizado de prueba'),
-  );
-  catalogStatus = 503;
-  catalogData = [{ name: 'UPSTREAM_PRIVATE_CANARY' }];
-  const unavailablePricing = load(await read('/precios'));
-  assert.equal(unavailablePricing('[data-public-plan]').length, 0);
-  assert.ok(
-    unavailablePricing('main').text().includes('No pudimos cargar los planes.'),
-  );
-  assert.ok(
-    !unavailablePricing('main').text().includes('UPSTREAM_PRIVATE_CANARY'),
-  );
-  catalogStatus = 200;
-  catalogData = [
+  // No plans published, catalog down, or an invalid catalog with no good
+  // one before it (an on-demand regeneration skips the data cache): the
+  // same calm fallback, with no upstream text.
+  const fallbackStates = [
+    { status: 200, data: [], label: 'empty catalog' },
+    { status: 503, data: [{ name: 'UPSTREAM_PRIVATE_CANARY' }], label: 'unavailable catalog' },
     {
-      name: 'PRIVATE_PLAN_CANARY',
-      priceLabel: 'PRIVATE_PRICE_CANARY',
-      bestFor: null,
-      monthlyAgentResponseLimit: 1,
-      automationAllowed: true,
-      recommended: false,
-      tenantId: 'PRIVATE_TENANT_CANARY',
+      status: 200,
+      data: [
+        {
+          name: 'PRIVATE_PLAN_CANARY',
+          priceLabel: 'PRIVATE_PRICE_CANARY',
+          bestFor: null,
+          monthlyAgentResponseLimit: 1,
+          automationAllowed: true,
+          recommended: false,
+          tenantId: 'PRIVATE_TENANT_CANARY',
+        },
+      ],
+      label: 'invalid catalog',
     },
   ];
-  const invalidPricing = load(await read('/precios'));
-  assert.equal(invalidPricing('[data-public-plan]').length, 0);
-  assert.ok(
-    invalidPricing('main').text().includes('No pudimos cargar los planes.'),
-  );
-  assert.ok(!invalidPricing('main').text().includes('PRIVATE_PLAN_CANARY'));
-  assert.ok(!invalidPricing('main').text().includes('PRIVATE_PRICE_CANARY'));
+  for (const state of fallbackStates) {
+    catalogStatus = state.status;
+    catalogData = state.data;
+    const page = await regeneratePricing();
+    const text = pricingText(page);
+    assert.equal(page('[data-public-plan]').length, 0, `/precios ${state.label}: no cards`);
+    assert.equal(
+      page('[data-plans-fallback] a[href="/demo?desde=precios"]').length,
+      1,
+      `/precios ${state.label}: calm fallback to the demo`,
+    );
+    assert.ok(!text.includes('No pudimos cargar los planes'), `/precios ${state.label}: no error`);
+    for (const canary of ['CANARY', 'Importe actualizado de prueba'])
+      assert.ok(!text.includes(canary), `/precios ${state.label}: leaked ${canary}`);
+    assert.equal(pricingPlansHref(page), `${appOrigin}/planes`);
+  }
+  catalogStatus = 200;
   assert.ok(
     catalogRequests.length >= 5,
-    'Pricing must reload the uncached catalog',
+    'Each regeneration must read the catalog again',
   );
   for (const request of catalogRequests) {
     assert.equal(request.path, '/api/public/plans');
@@ -519,24 +654,72 @@ try {
     assert.equal(request.headers.cookie, undefined);
     assert.equal(request.headers['x-tenant-id'], undefined);
   }
+
+  // The home starts the funnel: an H1 that names the action, one field and
+  // one button. A plain GET form, so it works without JavaScript (contract C1).
   assert.equal(
-    home('a[data-cta="hero-signup"]').attr('href'),
-    appOrigin,
-    'Generic account creation must keep its neutral app entry',
+    normalize(home('h1').text()),
+    'Tu WhatsApp reserva el turno. Vos seguís trabajando.',
+    'Home H1 static reading names the action',
   );
-  for (const [path, $] of documents) {
-    assert.equal(
-      $('a[data-cta="footer-signup"]').attr('href'),
-      appOrigin,
-      `${path}: generic footer account creation must keep its neutral app entry`,
-    );
-  }
+  const heroForm = home('main form[data-consent-avoid]');
+  assert.equal(heroForm.length, 1, 'Home hero form');
+  assert.equal(heroForm.attr('action'), `${appOrigin}/empezar`, 'Hero form opens the sign-up door');
+  assert.equal(heroForm.attr('method')?.toLowerCase(), 'get', 'Hero form is a plain GET');
+  assert.deepEqual(
+    heroForm
+      .find('input, textarea, select')
+      .map((_, el) => heroForm.find(el).attr('name'))
+      .get(),
+    ['ref', 'negocio'],
+    'Hero form sends only ref and negocio without JavaScript',
+  );
+  assert.equal(heroForm.find('input[name="ref"]').attr('value'), 'home-hero');
+  const negocioField = heroForm.find('textarea[name="negocio"]');
+  assert.equal(negocioField.attr('maxlength'), '600');
+  assert.ok(negocioField.attr('placeholder')?.startsWith('Ej.:'), 'Hero field example');
+  assert.ok(
+    normalize(negocioField.closest('label').text()).startsWith('Contanos de tu negocio'),
+    'Hero field label',
+  );
+  assert.equal(
+    normalize(heroForm.find('button[type="submit"]').text()),
+    'Armar mi asistente',
+  );
+  assert.equal(home('main a[href^="https://app.atende.com.ar"]').length, 0, 'Home body: no bare app links');
   for (const placement of ['hero-demo', 'final-demo']) {
     assert.equal(
       home(`a[data-cta="${placement}"]`).attr('href'),
       '/demo',
       'Homepage demo CTAs must leave the task choice open',
     );
+  }
+  // The body links where a buyer reads next (services, prices, integrations,
+  // cornerstone guides), and the control list is a valid <dl>.
+  const homeLinks = home('main a[href]')
+    .map((_, el) => home(el).attr('href'))
+    .get();
+  for (const path of ['/servicios/turnos-whatsapp', '/servicios/ventas-whatsapp', '/precios', '/integraciones'])
+    assert.ok(homeLinks.includes(path), `Home body must link ${path}`);
+  assert.ok(
+    homeLinks.filter((href) => /^\/blog\/[a-z0-9-]+$/.test(href)).length >= 2,
+    'Home body must link cornerstone guides',
+  );
+  for (const list of home('dl').toArray())
+    for (const child of home(list).children().toArray()) {
+      assert.equal(child.tagName, 'div', 'Home <dl> holds dt/dd groups');
+      assert.deepEqual(
+        home(child).children().map((_, el) => el.tagName).get(),
+        ['dt', 'dd'],
+        'Home <dl> groups hold one dt and one dd',
+      );
+    }
+  // Every FAQ answer can be linked on its own.
+  for (const path of ['/', '/preguntas-frecuentes']) {
+    const $ = documents.get(path);
+    assert.ok($('details').length, `${path}: FAQ`);
+    for (const details of $('details').toArray())
+      assert.match($(details).attr('id') ?? '', /^pregunta-[a-z0-9-]+$/, `${path}: FAQ anchor`);
   }
 
   for (const path of [
@@ -582,6 +765,9 @@ try {
       `${path}: visible summary`,
     );
     assert.equal($('h1').text(), post.title);
+    // A per-post rubro wins over the topic default; demo CTAs keep it.
+    const rubroSlug = post.rubro ?? rubroByTopic[post.category];
+    const demoHref = buildDemoLink(rubroSlug);
     if (post.category === 'recordatorio-de-turnos') {
       assert.equal($('article header [data-sales-intro] p').length, 2, `${path}: two pitch lines`);
       assert.equal($('article [data-cta="blog-demo"]').length, 0, `${path}: no second pitch after the guide`);
@@ -598,8 +784,8 @@ try {
       const opening = $('article header > [data-sales-intro], article header > p');
       const buttons = opening.next().children('a');
       const destinations = post.lead
-        ? [`https://wa.me/${site.whatsapp.number}?text=${encodeURIComponent(post.lead.message)}`, '/demo']
-        : ['/demo', site.appUrl];
+        ? [buildWaLink(post.lead.message, waRef(path, 'guía')), demoHref]
+        : [demoHref, buildSignupLink(signupRef(pageRef(path), 'sales'))];
       assert.deepEqual(
         buttons.map((_, el) => $(el).attr('href')).get(),
         destinations,
@@ -632,12 +818,39 @@ try {
           dates.includes('Actualizado el'),
         `${path}: visible update date`,
       );
-    const rubro = rubroByTopic[post.category];
-    if (rubro)
+    if (rubroSlug)
       assert.ok(
-        $('a[href="/casos-de-uso/' + rubro + '"]').length,
+        $('a[href="/casos-de-uso/' + rubroSlug + '"]').length,
         `${path}: link to its rubro`,
       );
+    // Every guide ends on a next step: the closing panel (demo plus the
+    // rubro or closest service) or, when the pitch is only in the header, a
+    // closing link to that page, else to the demo.
+    const closingPanel = $('article [data-cta="blog-demo"]');
+    const closingLink = $('article [data-closing] a');
+    const nextPath = nextStepPath(rubroSlug, post.category);
+    assert.equal(
+      closingPanel.length + (closingLink.length ? 1 : 0),
+      1,
+      `${path}: one closing CTA`,
+    );
+    if (closingPanel.length) {
+      assert.equal(closingPanel.attr('href'), demoHref, `${path}: closing demo keeps the rubro`);
+      if (nextPath)
+        assert.equal(
+          closingPanel.parent().find(`a[href="${nextPath}"]`).length,
+          1,
+          `${path}: closing panel links its next page`,
+        );
+    } else
+      assert.equal(closingLink.attr('href'), nextPath ?? demoHref, `${path}: closing link`);
+    const publisher = $('article header [data-publisher]');
+    assert.ok(
+      normalize(publisher.text()).startsWith(
+        'Esta guía la publica Atende, un asistente de WhatsApp para PyMEs argentinas hecho en Córdoba.',
+      ) && publisher.find('a[href="/que-es-atende"]').length,
+      `${path}: publisher line`,
+    );
     assert.equal($('a[rel="author"]').attr('href'), '/blog/editorial');
     assert.equal(
       $('.blog-prose h2').length,
@@ -739,9 +952,6 @@ try {
   }
 
   // ISR: prerendered at build, regenerated hourly so scheduled posts go live.
-  const prerender = JSON.parse(
-    await readFile(new URL('.next/prerender-manifest.json', root), 'utf8'),
-  );
   for (const path of [
     '/blog',
     '/sitemap.xml',
@@ -792,5 +1002,6 @@ try {
     await new Promise((resolve, reject) =>
       catalog.close((error) => (error ? reject(error) : resolve())),
     );
+    await restoreRuntimeCache();
   }
 }

@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { site } from '@/content/site';
 import { trackConversion, type ConversionDestination } from '@/lib/conversions';
 import { observeMetricsPage, recordMetricLink } from '@/lib/metrics';
+import { isSignupHref } from '@/lib/signup';
 
 export function ConversionEvents() {
   const pathname = usePathname();
@@ -38,6 +39,14 @@ export function ConversionEvents() {
         destination,
         placement: anchor.dataset.cta ?? 'inline',
       });
+      // One name for every sign-up start, link or home form. Meta ignores it.
+      if (isSignupHref(anchor.href))
+        trackConversion({
+          event: 'atende_signup_start',
+          page: window.location.pathname,
+          destination: 'app',
+          placement: anchor.dataset.cta ?? 'inline',
+        });
     };
     const onVisibility = () => observeMetricsPage(pathname);
     const onPageShow = (event: PageTransitionEvent) => {

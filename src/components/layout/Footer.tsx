@@ -2,10 +2,12 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { MetaPixelPreferences } from '@/components/MetaPixelPreferences';
+import { SignupLink } from '@/components/links/SignupLink';
+import { WaLink } from '@/components/links/WaLink';
+import { definition } from '@/content/que-es-atende';
 import { rubros } from '@/content/rubros';
 import { servicios } from '@/content/servicios';
 import { site } from '@/content/site';
-import { buildWaLink } from '@/lib/wa';
 
 type FooterLink = { href: string; label: string };
 
@@ -60,9 +62,9 @@ export function Footer() {
               <Wordmark className="text-4xl" />
               <span className="sr-only">Inicio</span>
             </Link>
-            <p className="mt-3 max-w-md leading-relaxed text-muted">
-              El asistente de WhatsApp para negocios argentinos. Conectado a tu
-              sistema, reserva, cotiza y toma pedidos, con tu equipo al tanto.
+            {/* The one definition, word for word on every surface. */}
+            <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-muted">
+              {definition}
             </p>
           </div>
           <Button
@@ -96,15 +98,14 @@ export function Footer() {
             <p className={titleClass}>Contacto</p>
             <ul>
               <li>
-                <a
-                  href={buildWaLink('Hola, vi atende.com.ar y quiero hacer una consulta')}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WaLink
+                  context="Hola, vi atende.com.ar y quiero hacer una consulta"
+                  placement="pie"
                   data-cta="footer-whatsapp"
                   className={linkClass}
                 >
                   WhatsApp {site.whatsapp.display}
-                </a>
+                </WaLink>
               </li>
               <li>
                 <a
@@ -121,9 +122,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href={site.appUrl} data-cta="footer-signup" className={linkClass}>
+                <SignupLink placement="footer" data-cta="footer-signup" className={linkClass}>
                   Crear mi espacio
-                </a>
+                </SignupLink>
               </li>
             </ul>
           </div>

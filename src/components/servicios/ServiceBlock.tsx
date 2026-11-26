@@ -5,7 +5,7 @@ import type { ChatMessage, Servicio } from '@/content/servicios';
 import { Button } from '@/components/ui/Button';
 import { ChatMockup } from '@/components/ui/ChatMockup';
 import { SectionHeader } from '@/components/ui/SectionHeader';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 
 // Small pieces shared by /servicios, /servicios/<slug> and /integraciones.
 
@@ -185,7 +185,7 @@ export function ServiceBlock({
             <DoneList items={servicio.bullets} />
             <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-7">
               <Button
-                href={buildWaLink(servicio.ctaContext)}
+                href={buildWaLink(servicio.ctaContext, waRef('/servicios', servicio.id))}
                 data-cta={`solutions-hub-${servicio.id}-whatsapp`}
                 variant="primary"
                 size="lg"

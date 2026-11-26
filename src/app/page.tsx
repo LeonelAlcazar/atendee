@@ -5,6 +5,7 @@ import { Extras } from '@/components/landing/Extras';
 import { Faq } from '@/components/landing/Faq';
 import { Flood } from '@/components/landing/Flood';
 import { Hero } from '@/components/landing/Hero';
+import { HomeLinks } from '@/components/landing/HomeLinks';
 import { Showcase } from '@/components/landing/Showcase';
 import { Start } from '@/components/landing/Start';
 import { faq } from '@/content/faq';
@@ -25,6 +26,7 @@ export default function HomePage() {
       <Extras />
       <Control />
       <Start />
+      <HomeLinks />
       <Faq />
       <CtaFinal context="Hola, vi atende.com.ar y quiero saber qué tarea puede terminar Atende en mi negocio" />
       <JsonLd value={pageGraph({ ...pages.home, faq })} />

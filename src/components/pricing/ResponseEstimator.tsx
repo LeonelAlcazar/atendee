@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/Button';
 import { estimateResponses, type EstimatePlan } from '@/lib/response-estimate';
-import { buildWaLink } from '@/lib/wa';
+import { buildWaLink, waRef } from '@/lib/wa';
 
 const number = new Intl.NumberFormat('es-AR');
 // Large, calm number fields without spinners. The label wraps the field, so the
@@ -100,7 +100,7 @@ export function ResponseEstimator({ plans }: { plans: EstimatePlan[] }) {
               )}
             </div>
             <Button
-              href={buildWaLink(message)}
+              href={buildWaLink(message, waRef('/precios', 'calculadora'))}
               data-cta="pricing-estimate-whatsapp"
               target="_blank"
               rel="noopener noreferrer"
