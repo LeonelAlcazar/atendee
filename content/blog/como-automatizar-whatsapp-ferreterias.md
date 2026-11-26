@@ -12,7 +12,7 @@ summary: >-
   el mostrador cotiza la lista. Tu equipo ve la foto de la pieza y confirma la
   compatibilidad.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: comercio
 sector: Ferreterías
 tags:
@@ -122,6 +122,6 @@ Cuando el asistente deriva, marca la conversación como Necesita humano y deja d
 
 ## Por dónde arrancar sin tocar tu sistema
 
-Empezá por lo que ya sabés de memoria: horarios, formas de pago, condiciones de envío y tu lista de equivalencias. Recién después conectá el número del local, con la API oficial de Meta o con un QR: lo elegís vos. Una vez conectado le contesta a todo el que escriba, así que probalo desde otro número, que usa créditos, con una lista real y dos palabras que sepas que confunden.
+Empezá por lo que ya sabés de memoria: horarios, formas de pago, condiciones de envío y tu lista de equivalencias. Recién después conectá el número del local, con la API oficial de Meta o con un QR: lo elegís vos. Una vez conectado le contesta a todo el que escriba, así que antes probalo en el chat de prueba, con una lista real y dos palabras que sepas que confunden.
 
 Cuando veas qué piden más, pedí conectar eso. Lo que hace Atende con [stock y pedidos](/servicios/ventas-whatsapp) se arma sobre lo que ya tengas, y el caso general está en [comercios y distribuidoras](/casos-de-uso/comercios-y-distribuidoras). Si le vendés a otras ferreterías o a corralones, lo tuyo se parece a la [guía para distribuidores](/blog/como-automatizar-whatsapp-distribuidoras). Si lo que más pesa son los presupuestos, seguí con [cotizaciones por WhatsApp](/blog/cotizaciones-por-whatsapp-automaticas).

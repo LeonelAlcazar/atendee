@@ -13,7 +13,7 @@ summary: >-
   sistema, con la conexión armada a pedido, solo en WhatsApp. El número lo conectás
   con la API oficial de Meta o con un QR, como prefieras.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Wati
@@ -40,7 +40,8 @@ faq:
     a: >-
       Un crédito es una respuesta del asistente, y varios mensajes seguidos del
       contacto cuentan como una sola. Si se terminan el plan y los créditos, el
-      asistente deja de responder y nadie te avisa. Los importes se ven en la app.
+      asistente deja de responder y nadie te avisa. Los planes vigentes están en
+      la página de precios, sin crear una cuenta.
   - q: ¿Atende sirve si necesito la API oficial?
     a: >-
       Sí. Elegís cómo conectar tu número: con la API oficial de Meta o con un QR. Lo
@@ -124,7 +125,7 @@ Cuatro cosas para preguntar:
 - **Las reservas.** La demo de su portada confirma un pedido, pero las páginas que abrimos no describen reservar turnos. Pedí que te lo muestren con tu agenda.
 - **Los mensajes.** Todos los planes llevan cargos por mensaje según su tarifario, y cada número extra suma US$ 29 por mes.
 
-Los planes de Atende se ven [en la app](/precios).
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Cómo se comparan
 

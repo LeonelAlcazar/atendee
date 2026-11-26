@@ -4,8 +4,8 @@ seoTitle: '4 mensajes de recordatorio de turnos para copiar en WhatsApp'
 description: 'Cuatro textos de recordatorio de turnos para adaptar y enviar por WhatsApp. Elegí qué escribir si necesitás confirmar, indicar una sede o recordar una videollamada.'
 summary: 'Un mensaje de recordatorio de turno tiene que decir quién escribe, para qué día y hora es la cita y dónde se atiende. Si necesitás una confirmación, hacé una sola pregunta. Si la persona ya confirmó, mandale la indicación que le falta para llegar y explicale cómo avisar si tiene un imprevisto.'
 salesIntro:
-  - 'Atende manda el aviso por vos.'
-  - 'Tu agenda conectada indica cuándo.'
+  - 'Conectado a tu agenda, a pedido, Atende manda el aviso por vos.'
+  - 'Tu agenda indica cuándo y tu equipo ve las respuestas.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

@@ -559,7 +559,7 @@ const restaurantes: Rubro = {
       kind: 'table',
       id: 'problemas',
       title: 'Los mensajes que arman problema un sábado a la noche',
-      intro: 'Acá se ve si la configuración está bien hecha. No hay modo de prueba: una vez conectado el número, el asistente responde a todos. Probá estos casos desde otro número; usa créditos.',
+      intro: 'Acá se ve si la configuración está bien hecha. Probá estos casos en el chat de prueba de tu espacio, gratis y antes de elegir un plan. Una vez conectado el número, el asistente responde a todos.',
       caption: 'Mensajes problemáticos, por qué lo son y qué conviene que haga el asistente',
       columns: ['El mensaje', 'El problema', 'Qué conviene que haga'],
       rows: [
@@ -913,7 +913,7 @@ const concesionarias: Rubro = {
       tone: 'surface',
       title: 'Qué hace la demo hoy y qué se arma para vos',
       intro:
-        'De los seis rubros, este es el único con una conexión funcionando: una demo interna de concesionaria de motos, con stock, precios e interesados en una planilla de Google Sheets. La contamos porque funciona, y aclaramos hasta dónde llega.',
+        'De los seis rubros, este es el único con una demo funcionando: una demo interna de concesionaria de motos, con stock, precios e interesados en una planilla de Google Sheets. La contamos porque funciona, y aclaramos hasta dónde llega.',
       caption: 'Tareas de una concesionaria, estado en la demo y qué hace falta para un negocio real',
       columns: ['Tarea', 'En la demo de motos', 'Para tu negocio'],
       rows: [
@@ -1214,7 +1214,7 @@ const profesionales: Rubro = {
   faq: [
     {
       q: '¿El asistente da asesoramiento legal o impositivo?',
-      a: 'No. Se configura para ordenar la consulta y pasarla al profesional. Si alguien pregunta qué le corresponde o qué le conviene, dice que eso lo responde el estudio. Es una instrucción, así que conviene probarla desde otro número con frases reales; usa créditos.',
+      a: 'No. Se configura para ordenar la consulta y pasarla al profesional. Si alguien pregunta qué le corresponde o qué le conviene, dice que eso lo responde el estudio. Es una instrucción, así que conviene probarla en el chat de prueba con frases reales.',
     },
     {
       q: '¿Se mantiene la confidencialidad de la consulta?',

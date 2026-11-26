@@ -11,7 +11,9 @@ export type ActionStatusRow = {
 export const actionStatus: ActionStatusRow[] = [
   { action: 'Responder mensajes de texto a cualquier hora', status: 'included', label: 'Incluido en los planes con IA' },
   { action: 'Responder una nota de voz desde su transcripción', status: 'included', label: 'Incluido con el asistente activo' },
-  { action: 'Programar mensajes diarios, semanales o mensuales', status: 'included', label: 'Incluido. Tu equipo elige el texto y los destinatarios en Contactos' },
+  { action: 'Programar mensajes diarios, semanales o mensuales', status: 'included', label: 'Incluido. Tu equipo elige el texto y los destinatarios en Contactos, y quien responde BAJA deja de recibirlos' },
+  { action: 'Programar mensajes a las filas de una planilla de Google Sheets que cumplen un filtro', status: 'included', label: 'Incluido, con la planilla conectada. Cada envío vuelve a leer las filas' },
+  { action: 'Consultar una planilla de Google Sheets y, si lo permitís, anotar filas', status: 'included', label: 'Incluido en los planes con IA, con la planilla conectada desde el panel' },
   { action: 'Derivar a una persona y cerrar la conversación', status: 'included', label: 'Incluido en los planes con IA' },
   { action: 'Enviar fotos y videos de tu biblioteca', status: 'included', label: 'Incluido en los planes con IA' },
   { action: 'Recordar datos del contacto y del negocio', status: 'included', label: 'Incluido en los planes con IA' },
@@ -19,6 +21,6 @@ export const actionStatus: ActionStatusRow[] = [
   { action: 'Tomar reservas y consultar disponibilidad', status: 'on-request', label: 'A pedido, conectado a tu sistema' },
   { action: 'Registrar pedidos y consultar stock o precios', status: 'on-request', label: 'A pedido, conectado a tu sistema' },
   { action: 'Cotizar y calcular financiación', status: 'on-request', label: 'A pedido, conectado a tu sistema' },
-  { action: 'Registrar interesados en tu CRM o planilla', status: 'on-request', label: 'A pedido, conectado a tu sistema' },
+  { action: 'Registrar interesados en tu CRM', status: 'on-request', label: 'A pedido, conectado a tu sistema' },
   { action: 'Avisar por WhatsApp que un pedido está listo', status: 'on-request', label: 'A pedido, con un envío iniciado por tu sistema' },
 ];

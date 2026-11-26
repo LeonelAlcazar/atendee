@@ -4,8 +4,8 @@ seoTitle: 'Cómo evitar recordatorios de turnos duplicados por WhatsApp'
 description: 'Identificá por qué llegó dos veces el mismo aviso, cómo reintentar un recordatorio desde la agenda y qué hacer cuando cambia la hora del turno.'
 summary: 'Para evitar recordatorios duplicados, dejá una sola vía de envío para cada turno y tipo de aviso. Si tu agenda le pide a Atende repetir el intento por un corte, debe conservar la misma referencia, el teléfono y el texto. Antes de reintentar, verificá que la cita siga vigente. Un cambio de horario ya guardado puede requerir un aviso nuevo.'
 salesIntro:
-  - 'Atende envía el aviso de tu agenda.'
-  - 'Recepción ve a quién se le avisó.'
+  - 'Conectado a tu agenda, a pedido, Atende envía el aviso del turno.'
+  - 'Recepción ve en la bandeja a quién se le avisó.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

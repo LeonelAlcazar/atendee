@@ -137,7 +137,8 @@ export const rubroByTopic: Partial<Record<BlogTopicSlug, string>> = {
   comercio: 'comercios-y-distribuidoras',
   'gastronomia-y-turismo': 'restaurantes-y-hoteles',
   'servicios-profesionales': 'servicios-profesionales',
-  'industria-y-logistica': 'comercios-y-distribuidoras',
+  // industria-y-logistica has no matching rubro: its sales path is
+  // /servicios/ventas-whatsapp. A post can still set `rubro` in front matter.
 };
 export const blogPage = {
   path: '/blog' as const,

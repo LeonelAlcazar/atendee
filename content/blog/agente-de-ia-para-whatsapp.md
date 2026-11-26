@@ -13,7 +13,7 @@ summary: >-
   en los planes con IA; las acciones sobre tu sistema se arman a pedido para tu
   negocio. Sin conexión, el asistente junta el pedido y tu equipo lo confirma.
 publishedAt: '2026-11-06'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: bot-de-whatsapp
 tags:
   - agente de IA
@@ -50,7 +50,8 @@ faq:
       El asistente está armado para no confirmar una acción sin un resultado
       exitoso. Si la conexión no carga, la conversación sigue sin esa
       herramienta, y hoy el panel no te avisa. Por eso conviene revisar lo que
-      entra. Para probarla, escribile desde otro número; usa créditos.
+      entra. Para probarla, usá el chat de prueba o escribile desde otro
+      número, que usa respuestas de tu plan.
 sources:
   - title: 'Model Context Protocol: qué es MCP'
     url: 'https://modelcontextprotocol.io/docs/getting-started/intro'

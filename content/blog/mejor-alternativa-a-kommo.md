@@ -13,7 +13,7 @@ summary: >-
   la conexión armada a pedido, solo en WhatsApp. Cómo conectar el número lo decidís
   vos: API oficial de Meta o QR.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Kommo
@@ -93,7 +93,7 @@ La página aclara que "el pago mensual no está disponible actualmente", que tod
 
 Sobre esos cargos, confirmá el dato vigente. [Meta cobra](https://developers.facebook.com/docs/whatsapp/pricing) desde el 1 de octubre de 2026 los mensajes de servicio a partir del 1.001 de cada mes, por número. Si alguna página todavía dice que esos mensajes son gratis, pedí el dato actualizado.
 
-Atende no publica importes acá: [los planes se ven en la app](/precios) antes de pagar.
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Qué comprás en cada caso
 
@@ -105,7 +105,7 @@ Atende no publica importes acá: [los planes se ven en la app](/precios) antes d
 | Quién lo configura | Tu equipo, con sus bots y agentes | Vos cargás el contexto y nosotros armamos la conexión |
 | Canales | WhatsApp, Instagram, TikTok, Messenger y más | Solo WhatsApp, un número por espacio |
 | Conexión con WhatsApp | Flujo con cuenta de Meta | API oficial de Meta o QR, a elección |
-| Contrato | Mínimo 6 meses, en dólares | Condiciones en la app |
+| Contrato | Mínimo 6 meses, en dólares | Planes en la [página de precios](/precios). Las condiciones se ven al pagar |
 
 ## Cuándo Kommo es mejor elección
 

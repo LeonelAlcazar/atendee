@@ -17,7 +17,7 @@ salesIntro:
   - "Poné precio a una tarea concreta, como registrar un pedido de WhatsApp en tu sistema. En Atende esa conexión se arma a pedido y el equipo supervisa cada conversación."
   - "Para comparar propuestas, separá la cantidad de respuestas que vas a usar, el trabajo de conexión y las horas que sigue poniendo tu equipo."
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: guias
 tags:
   - WhatsApp
@@ -58,10 +58,11 @@ faq:
       pedido para tu negocio. Pedí ese alcance por escrito.
   - q: ¿Cuánto cuesta Atende?
     a: >-
-      Los planes vigentes se ven en la app antes de pagar, y no los copiamos en
-      esta guía para no dejarte un número viejo. Se miden en respuestas del
-      asistente. Podés empezar con 100 créditos de bienvenida, sin tarjeta. En
-      la página de precios está qué entra en cada plan.
+      Los planes vigentes están en la página de precios, sin crear una cuenta,
+      y no los copiamos en esta guía para no dejarte un número viejo. Se miden
+      en respuestas del asistente. Antes de elegir uno, cada espacio puede
+      probar su asistente gratis en el chat de prueba. La conexión a pedido se
+      cotiza para cada negocio.
 sources:
   - title: 'Meta: precios de WhatsApp Business Platform y tarifas por país'
     url: 'https://developers.facebook.com/docs/whatsapp/pricing'
@@ -151,7 +152,7 @@ Por ninguna de las dos rutas te pueden prometer que WhatsApp no va a restringir 
 
 Acá el valor depende de quién pone las horas. Pedí que la propuesta diga qué hace el proveedor y qué te queda a vos: escribir la información del negocio, cargar preguntas frecuentes, invitar al equipo, probar y corregir. Si te dicen “la implementación está incluida”, preguntá cuántas rondas de ajustes entran y qué pasa cuando cambian tus precios.
 
-En Atende, por QR, esa parte la hacés vos desde el panel, con pasos concretos: creás tu espacio, le contás qué hace tu negocio, invitás a tu equipo, activás créditos o un plan y escaneás el QR. El costo es tu tiempo, y las pruebas consumen respuestas: probalo desde otro número; usa créditos. Por la API oficial, los pasos los vemos con vos en la [demo](/demo).
+En Atende, si vinculás el número desde el panel, esa parte la hacés vos, con pasos concretos: creás tu espacio, le contás qué hace tu negocio, lo probás gratis en el chat de prueba, elegís un plan y vinculás el número con un QR o con un código en tu mismo teléfono. El costo es tu tiempo. Las pruebas desde otro número, con el número ya vinculado, consumen respuestas. Por la API oficial, los pasos los vemos con vos en la [demo](/demo).
 
 ## La conexión: lo que separa juntar el pedido de registrarlo
 
@@ -191,7 +192,7 @@ Multiplicalo por lo que te cuesta una hora de esa persona y sumalo al resto. Us�
 
 | Parte | En Atende |
 | --- | --- |
-| Suscripción | Se mide en respuestas del asistente. Una conversación usa varias. Si el cliente manda varios mensajes seguidos, se agrupan en una respuesta, y lo que escribe tu equipo no consume. Los planes vigentes se ven en la app antes de pagar. |
+| Suscripción | Se mide en respuestas del asistente. Una conversación usa varias. Si el cliente manda varios mensajes seguidos, se agrupan en una respuesta, y lo que escribe tu equipo no consume. Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. |
 | Mensajes de Meta | Dependen de la ruta que elijas: corren por la API oficial y, según nuestra lectura, no por QR. Miralo al elegir. |
 | Implementación | Por QR, desde el panel, a cargo tuyo. Por la API oficial, lo vemos con vos en la demo. |
 | Conexión | A pedido, para tu negocio. |
@@ -199,7 +200,7 @@ Multiplicalo por lo que te cuesta una hora de esa persona y sumalo al resto. Us�
 
 Si se agotan las respuestas del mes y los créditos, el asistente deja de responder. Estimá cuántas respuestas necesitás según tus consultas y la cantidad de intercambios por consulta en la [calculadora de Atende](/precios#calculadora). El Plan CRM permite trabajar desde la bandeja de forma manual.
 
-Para probar sin gastar, cada espacio puede activar [100 créditos de bienvenida](/blog/automatizar-whatsapp-gratis), una sola vez y sin tarjeta.
+Para probar sin gastar, cada espacio tiene gratis el [chat de prueba](/blog/automatizar-whatsapp-gratis), antes de elegir un plan.
 
 ## Cómo comparar dos presupuestos
 

@@ -11,7 +11,7 @@ summary: >-
   fotos llegan a la bandeja para que la oficina técnica revise el cómputo, el
   presupuesto y los plazos.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: inmuebles-y-hogar
 sector: Constructoras y reformas
 tags:
@@ -107,7 +107,7 @@ Los clientes con obra en marcha son otro caso. “¿Cuándo vienen los yeseros?�
 
 Si el capataz y el yesero escriben al mismo número que un posible cliente, sus consultas pueden entrar al circuito comercial. Para que el asistente responda hacen falta un chat individual habilitado y saldo. Al elegir qué número vincular, fijate si conviene separar la atención comercial de la coordinación de obra.
 
-Probalo desde otro número, que usa créditos, haciéndote pasar por el capataz: si le contesta como a un cliente, sumá esa instrucción a la descripción de tu negocio.
+Ensayalo en el chat de prueba haciéndote pasar por el capataz: si le contesta como a un cliente, sumá esa instrucción a la descripción de tu negocio.
 
 ## Un presupuesto que tarda meses en cerrarse
 

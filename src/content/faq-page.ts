@@ -1,4 +1,5 @@
 import type { FaqItem } from './faq';
+import { definition, namesakeAnswer } from './que-es-atende';
 import { site } from './site';
 
 export type FaqGroup = {
@@ -13,6 +14,21 @@ export type FaqGroup = {
 // and the FAQ schema, and the site audit compares them.
 export const faqGroups: FaqGroup[] = [
   {
+    id: 'atende',
+    next: { href: '/que-es-atende', label: 'Ver la ficha de Atende' },
+    title: 'Qué es Atende',
+    items: [
+      {
+        q: '¿Qué es Atende?',
+        a: definition,
+      },
+      {
+        q: '¿Atende es lo mismo que Atendium o AtiendeApp?',
+        a: namesakeAnswer,
+      },
+    ],
+  },
+  {
     id: 'numero',
     title: 'Tu número y la conexión',
     items: [
@@ -22,19 +38,19 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Atende usa la API oficial de Meta o un QR?',
-        a: 'Para vincular tu número desde el panel, escaneás un QR desde Dispositivos vinculados. Si tu negocio necesita la API oficial de Meta, pedí una demo para revisar con el equipo el alta y las condiciones de esa ruta.',
+        a: 'Para vincular tu número desde el panel, escaneás un QR o escribís un código en tu mismo teléfono, desde Dispositivos vinculados. Si tu negocio necesita la API oficial de Meta, pedí una demo para revisar con el equipo el alta y las condiciones de esa ruta.',
       },
       {
         q: '¿Qué pasos hay que seguir para empezar?',
-        a: 'Creás tu espacio, configurás qué puede resolver el asistente, invitás a tu equipo y activás créditos o un plan. Para vincular WhatsApp desde el panel, escaneás el QR con tu teléfono.',
+        a: 'Creás tu espacio, le contás qué hace tu negocio y probás el asistente gratis en el chat de prueba. Cuando te convence, elegís un plan y vinculás tu WhatsApp con un QR o con un código en tu mismo teléfono.',
       },
       {
-        q: '¿Qué necesito para escanear el QR?',
-        a: 'El teléfono del negocio y otra pantalla. Abrís el QR en la pantalla WhatsApp del panel y lo escaneás desde dispositivos vinculados. Antes tenés que activar créditos o un plan.',
+        q: '¿Qué necesito para vincular mi número?',
+        a: 'El teléfono del negocio y un plan elegido. Con QR, abrís el código en otra pantalla y lo escaneás desde Dispositivos vinculados. Con un código, alcanza con el mismo teléfono: lo pedís en la pantalla WhatsApp del panel y lo escribís en WhatsApp.',
       },
       {
         q: '¿Apenas conecto ya les responde a mis clientes?',
-        a: 'Con WhatsApp vinculado, IA activa y saldo disponible, el asistente puede responder a los contactos que escriban. Si tu espacio tiene habilitado el chat de prueba, podés probar respuestas en el panel sin gastar créditos. Las herramientas que uses en esa prueba pueden realizar acciones reales.',
+        a: 'Con WhatsApp vinculado, IA activa y saldo disponible, el asistente puede responder a los contactos que escriban. Antes, cada espacio puede probarlo gratis en el chat de prueba del panel, que tiene un límite de mensajes. Esas respuestas no salen por WhatsApp. Las herramientas que uses en esa prueba pueden realizar acciones reales.',
       },
       {
         q: '¿Qué pasa si se desconecta mi WhatsApp?',
@@ -111,7 +127,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Se puede usar desde el celular?',
-        a: 'Sí. La bandeja funciona en el celu: leés, respondés y asignás desde el navegador. No hay una app nativa, y para conectar por QR necesitás otra pantalla que lo muestre.',
+        a: 'Sí. La bandeja funciona en el celu: leés, respondés y asignás desde el navegador. No hay una app nativa. Para vincular el número desde el celu, elegí la opción con código: no hace falta otra pantalla.',
       },
     ],
   },
@@ -126,7 +142,11 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Con qué sistemas se conecta?',
-        a: 'Con el que usa tu negocio, si ese sistema permite conectarse. No hay una lista de integraciones listas para activar: te armamos la conexión a pedido. Contanos cuál usás y qué acceso tenés.',
+        a: 'Una planilla de Google Sheets la conectás vos desde el panel. Para tu agenda, tu stock o tu CRM, te armamos la conexión a pedido, si ese sistema permite conectarse. Contanos cuál usás y qué acceso tenés.',
+      },
+      {
+        q: '¿El asistente puede consultar o anotar en mi planilla de Google Sheets?',
+        a: 'Sí. Con tu planilla conectada desde el panel, el asistente la consulta en la conversación, por ejemplo para ver un precio o un horario. Si lo permitís, también anota una fila, como un pedido o un interesado, y le confirma al contacto lo que quedó anotado.',
       },
       {
         q: '¿Cuánto cuesta una conexión?',
@@ -142,11 +162,11 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Puede mandar recordatorios o seguimientos?',
-        a: 'Tu equipo puede programar mensajes diarios, semanales o mensuales desde Contactos para una lista o una etiqueta. Para avisar que un pedido está listo o recordar un turno en su fecha exacta, el aviso lo inicia tu sistema mediante una conexión que habilitamos a pedido. El asistente no elige por su cuenta a quién volver a escribirle.',
+        a: 'Sí. Tu equipo programa en Contactos un mensaje para cada día, semana o mes, a una etiqueta o a los contactos que elija. Con una planilla de Google Sheets conectada, la regla vuelve a leer las filas antes de cada envío y le escribe solo a quien cumple el filtro. Para avisar a la hora exacta de cada turno, el envío lo inicia tu agenda con una conexión que armamos a pedido. Quien responde BAJA deja de recibir esos mensajes hasta que responda ALTA. El asistente no elige por su cuenta a quién volver a escribirle.',
       },
       {
         q: '¿Tienen alguna conexión funcionando?',
-        a: 'Sí, una demo para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente.',
+        a: 'Sí. Google Sheets lo conecta cada espacio desde el panel. De las conexiones a pedido, la que podés ver andando es una demo para una concesionaria de motos: consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente.',
       },
       {
         q: '¿Qué es WhatsApp MCP y en qué se diferencia?',
@@ -164,12 +184,12 @@ export const faqGroups: FaqGroup[] = [
         a: 'Podés consultar los planes generales en la página Precios, sin crear una cuenta. En Suscripción ves las opciones disponibles para tu espacio antes de pagar. Las conexiones con tu sistema se cotizan por separado.',
       },
       {
-        q: '¿Puedo empezar sin tarjeta?',
-        a: 'Sí, si tenés créditos de bienvenida disponibles. En Suscripción ves la cantidad y las condiciones antes de activarlos. Cada respuesta del asistente consume una unidad.',
+        q: '¿Puedo probarlo sin tarjeta?',
+        a: 'Sí. Cada espacio puede probar su asistente gratis en el chat de prueba, antes de elegir un plan. Para que conteste en tu WhatsApp necesitás un plan con IA.',
       },
       {
         q: '¿Qué diferencia hay entre Plan CRM y los planes con IA?',
-        a: 'Plan CRM es manual: bandeja, etiquetas, notas y WhatsApp MCP, sin asistente. Los planes con IA, Starter, Pro y Business, suman el asistente y cambian en la cantidad de respuestas por mes.',
+        a: 'Plan CRM es manual: bandeja, etiquetas, notas y WhatsApp MCP, sin asistente. Los planes con IA suman el asistente y cambian en la cantidad de respuestas por mes. Los nombres y precios vigentes están en la página de precios.',
       },
       {
         q: '¿Qué pasa si se terminan las respuestas y los créditos?',

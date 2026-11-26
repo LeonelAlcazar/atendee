@@ -4,8 +4,8 @@ seoTitle: 'Reprogramar un turno desde el recordatorio de WhatsApp'
 description: 'Qué hacer cuando alguien responde «¿me lo cambiás?». Cómo ofrecer un horario disponible, conservar el turno mientras elige y confirmar el cambio en la agenda.'
 summary: 'Para reprogramar un turno desde el recordatorio, identificá la reserva original y preguntá qué franja le sirve a la persona. Ofrecé opciones compatibles con el servicio. Cuando elija, verificá la disponibilidad, guardá el cambio y comunicá la fecha y la hora que aceptó la agenda. Si solo pregunta qué opciones tiene, conservá su reserva.'
 salesIntro:
-  - 'Atende mueve el turno por chat'
-  - 'si tu agenda conectada lo permite.'
+  - 'Conectado a tu agenda, a pedido, Atende mueve el turno por chat.'
+  - 'Si la agenda no lo permite, junta el pedido y tu equipo confirma.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos

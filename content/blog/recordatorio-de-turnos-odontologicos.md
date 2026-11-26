@@ -4,12 +4,13 @@ seoTitle: 'Recordatorio de turnos odontológicos por WhatsApp'
 description: 'Un modelo de mensaje para que recepción confirme la cita, resuelva dudas de sede y cuide la privacidad cuando varias personas comparten el mismo teléfono.'
 summary: 'Para recordar un turno odontológico por WhatsApp, identificá al consultorio, indicá día, hora y sede y preguntá si la persona puede venir. Dejá el motivo de consulta fuera del aviso. Si el número se usa para varios turnos de la familia, identificá la cita por su horario antes de cambiarla.'
 salesIntro:
-  - 'Atende le recuerda la cita al paciente.'
-  - 'Conectamos la agenda de recepción.'
+  - 'Conectado a tu agenda, a pedido, Atende le recuerda la cita al paciente.'
+  - 'Tu recepción ve la respuesta y sigue los cambios desde la bandeja.'
 publishedAt: '2026-11-26'
 updatedAt: '2026-11-26'
 category: recordatorio-de-turnos
 sector: Consultorios odontológicos
+rubro: clinicas-y-consultorios
 tags: ['turnos odontológicos', 'WhatsApp', 'recepción', 'privacidad']
 related:
   - recordatorios-de-turnos-por-whatsapp

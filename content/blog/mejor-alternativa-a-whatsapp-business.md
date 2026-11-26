@@ -13,7 +13,7 @@ summary: >-
   tu sistema, con la conexión armada a pedido, y elegís cómo conectar tu número:
   con la API oficial de Meta o con un QR.
 publishedAt: '2026-09-10'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - WhatsApp Business
@@ -115,7 +115,7 @@ Un dato más para no comprar humo: el [anuncio global](https://about.fb.com/news
 - **Más capacidad.** [Meta One](https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/) ofrece planes para empresas desde USD 14,99 por mes, con "more access to Meta Business Agent on WhatsApp", y avisa que planes y precios varían por región y cuenta.
 - **Por la API.** [Meta cobra](https://developers.facebook.com/docs/whatsapp/pricing) USD 2 por millón de tokens, y calcula entre 4 y 5 centavos de dólar por mensaje. Desde el 1 de octubre de 2026 además cobra los mensajes de servicio desde el 1.001 de cada mes, por número.
 
-Los planes de Atende se ven [en la app](/precios) antes de pagar. Para armar la cuenta completa, mirá [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio. Para armar la cuenta completa, mirá [cuánto cuesta automatizar WhatsApp](/blog/cuanto-cuesta-automatizar-whatsapp).
 
 ## Qué hace cada opción
 

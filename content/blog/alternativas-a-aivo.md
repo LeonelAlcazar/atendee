@@ -14,7 +14,7 @@ summary: >-
   tiene un solo canal y no tiene permisos por rol, así que no sirve para un entorno
   regulado.
 publishedAt: '2026-10-28'
-updatedAt: '2026-11-18'
+updatedAt: '2026-11-26'
 category: alternativas
 tags:
   - Aivo
@@ -90,7 +90,7 @@ La [comparativa por tipo de negocio](/blog/chatbots-whatsapp-argentina-comparati
 
 Poco. [Su página](https://engageware.com/aivo/) dice "Scalable pricing that grows with usage" y, al 6 de noviembre de 2026, no muestra planes ni montos. Para un presupuesto real hay que hablar con ventas de Engageware. Es normal en software para grandes cuentas, y es una señal de a quién apunta.
 
-Los planes de Atende [se ven en la app](/precios) antes de pagar.
+Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio.
 
 ## Aivo y Atende, punto por punto
 
@@ -101,7 +101,7 @@ Los planes de Atende [se ven en la app](/precios) antes de pagar.
 | Quién lo arma | Tiene Studio para diseñar experiencias. Cómo se implementa hay que pedirlo | Vos cargás el contexto y nosotros armamos la conexión |
 | Conexión con WhatsApp | Figura como canal. El tipo de conexión no aparece en lo que abrimos | API oficial de Meta o QR, a elección |
 | Canales | WhatsApp, SMS y voz, con agentes y atención en vivo | Solo WhatsApp, mensajes de texto |
-| Precio | Sin cifras públicas | Sin importes en este sitio: los planes se ven en la app. La conexión a pedido no tiene precio publicado |
+| Precio | Sin cifras públicas | Planes vigentes en la [página de precios](/precios), sin crear una cuenta. La conexión a pedido se cotiza para cada negocio |
 
 ## Cuándo quedarte con Aivo
 
