@@ -204,14 +204,14 @@ export default function QueEsAtendePage() {
               Desde el panel, vinculás el WhatsApp que ya usa tu negocio.
             </p>
             <p className="mt-4 max-w-xl leading-relaxed text-muted">
-              Lo vinculás escaneando un QR desde Dispositivos vinculados; el QR
-              lo abrís en otra pantalla. Tus clientes siguen escribiendo al mismo
+              Lo vinculás desde Dispositivos vinculados, con QR o con un código
+              en tu mismo teléfono. Tus clientes siguen escribiendo al mismo
               número.
             </p>
             <p className="mt-3 max-w-xl leading-relaxed text-muted">
               Si necesitás la API oficial de Meta, consultá el alta y las
               condiciones de esa ruta en la demo. Vincular un dispositivo con QR
-              es una conexión distinta.
+              o con un código es una conexión distinta.
             </p>
           </div>
           <div className={sheet}>
@@ -222,7 +222,7 @@ export default function QueEsAtendePage() {
                 'Creás tu espacio y Atende arma tu asistente.',
                 'Lo probás gratis en el chat de prueba.',
                 'Elegís un plan.',
-                'Vinculás tu número con un QR.',
+                'Vinculás tu número con QR o con un código.',
               ].map((step, index) => (
                 <li
                   key={step}

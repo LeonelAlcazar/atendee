@@ -32,7 +32,7 @@ faq:
       mantenga al día y un proceso para las excepciones. En Atende, además, creás
       tu espacio, le contás qué hace tu negocio, lo probás gratis en el chat de
       prueba, elegís un plan y conectás tu número, con la API oficial de Meta o
-      desde el panel, con un QR.
+      desde el panel, con un QR o con un código.
   - q: ¿Necesito un CRM para empezar con WhatsApp automático?
     a: >-
       No. Podés empezar con respuestas configuradas y una bandeja compartida. Si

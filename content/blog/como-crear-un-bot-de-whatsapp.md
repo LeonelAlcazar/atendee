@@ -10,8 +10,8 @@ summary: >-
   como registrar una solicitud de alquiler. Definí qué datos pide, qué sistema
   tiene que confirmar el resultado y cuándo deriva a una persona. En Atende
   configurás el espacio y el asistente, y lo probás gratis en el chat de prueba
-  antes de elegir un plan. El número se vincula desde la app con un QR, y la
-  API oficial se coordina en la demo.
+  antes de elegir un plan. El número se vincula desde la app, con un QR o con
+  un código en el mismo teléfono, y la API oficial se coordina en la demo.
 publishedAt: '2026-11-04'
 updatedAt: '2026-11-26'
 category: bot-de-whatsapp
@@ -123,7 +123,7 @@ En [la app de Atende](https://app.atende.com.ar/empezar?ref=blog-como-crear-un-b
 2. **Contale qué hace tu negocio.** Pegá la plantilla y cargá tus preguntas frecuentes. El asistente sin contexto no sirve.
 3. **Probalo en el chat de prueba.** Cada espacio lo tiene gratis, antes de elegir un plan. Ensayá primero las consultas habituales. Sus herramientas pueden modificar tu sistema real.
 4. **Elegí un plan.** Sin un plan no se puede vincular WhatsApp. Los planes vigentes están en la [página de precios](/precios), sin crear una cuenta.
-5. **Conectá WhatsApp.** Para la API oficial de Meta, coordiná el alta en la [demo](/demo). Desde la app, vinculás tu número con un QR. El QR lo abrís en la pantalla WhatsApp y lo escaneás desde dispositivos vinculados, con el teléfono del negocio, así que necesitás otra pantalla para verlo.
+5. **Conectá WhatsApp.** Para la API oficial de Meta, coordiná el alta en la [demo](/demo). Desde la app, vinculás tu número con un QR o con un código. El QR lo abrís en la pantalla WhatsApp y lo escaneás desde dispositivos vinculados, con el teléfono del negocio, así que necesitás otra pantalla para verlo. Si hacés todo desde ese celular, elegí el código: lo escribís en WhatsApp, en el mismo teléfono.
 
 Tus clientes te siguen escribiendo al mismo número. Invitá a tu equipo cuando quieras: cada persona entra con su cuenta. Cuando vincules el número, el modo CRM te permite atender a mano hasta que elijas activar al asistente.
 

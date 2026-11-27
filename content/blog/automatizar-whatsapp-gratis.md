@@ -81,7 +81,7 @@ Gratis del todo, sin IA, tenés las herramientas de la app de WhatsApp Business:
 3. **Si usás Google Sheets, conectá tu planilla.** El asistente la consulta en la conversación y, si lo permitís, anota filas. Es opcional.
 4. **Abrí el chat de prueba y escribile como un cliente.** Las respuestas quedan en el panel.
 5. **Corregí y repetí.** Si una respuesta no cierra, ajustá las instrucciones y probá de nuevo ese caso.
-6. **Cuando te convence, elegí un plan y vinculá tu número.** Elegís cómo conectar tu número: con la API oficial de Meta, que vemos con vos en la [demo](/demo), o desde el panel, con un QR.
+6. **Cuando te convence, elegí un plan y vinculá tu número.** Elegís cómo conectar tu número: con la API oficial de Meta, que vemos con vos en la [demo](/demo), o desde el panel, con un QR o con un código en tu mismo teléfono.
 
 Desde que vinculás el número, el asistente les contesta a los contactos que escriben, a cualquier hora, mientras el servicio y tu WhatsApp estén conectados. Revisá que el número siga conectado.
 

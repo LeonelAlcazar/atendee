@@ -152,7 +152,7 @@ Por ninguna de las dos rutas te pueden prometer que WhatsApp no va a restringir 
 
 Acá el valor depende de quién pone las horas. Pedí que la propuesta diga qué hace el proveedor y qué te queda a vos: escribir la información del negocio, cargar preguntas frecuentes, invitar al equipo, probar y corregir. Si te dicen “la implementación está incluida”, preguntá cuántas rondas de ajustes entran y qué pasa cuando cambian tus precios.
 
-En Atende, si vinculás el número desde el panel, esa parte la hacés vos, con pasos concretos: creás tu espacio, le contás qué hace tu negocio, lo probás gratis en el chat de prueba, elegís un plan y vinculás el número con un QR. El costo es tu tiempo. Las pruebas desde otro número, con el número ya vinculado, consumen respuestas. Por la API oficial, los pasos los vemos con vos en la [demo](/demo).
+En Atende, si vinculás el número desde el panel, esa parte la hacés vos, con pasos concretos: creás tu espacio, le contás qué hace tu negocio, lo probás gratis en el chat de prueba, elegís un plan y vinculás el número con un QR o con un código en tu mismo teléfono. El costo es tu tiempo. Las pruebas desde otro número, con el número ya vinculado, consumen respuestas. Por la API oficial, los pasos los vemos con vos en la [demo](/demo).
 
 ## La conexión: lo que separa juntar el pedido de registrarlo
 
