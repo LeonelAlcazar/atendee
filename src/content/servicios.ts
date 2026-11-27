@@ -497,7 +497,7 @@ export const servicios: Servicio[] = [
       },
       {
         title: 'Conectá el número',
-        text: 'Elegís un plan con IA y vinculás tu número con un QR o con un código en tu mismo teléfono. Si necesitás la API oficial de Meta, consultá el alcance en la demo. Invitás a tu equipo cuando quieras.',
+        text: 'Elegís un plan con IA y vinculás tu número con un QR. Si necesitás la API oficial de Meta, consultá el alcance en la demo. Invitás a tu equipo cuando quieras.',
       },
     ],
     human: {
@@ -511,7 +511,7 @@ export const servicios: Servicio[] = [
     },
     notes: [],
     requirements: [
-      'El teléfono del negocio, para vincular el número con un QR o con un código en ese mismo teléfono.',
+      'El teléfono del negocio, y otra pantalla donde ver el QR para vincularlo.',
       'Tus horarios, zonas, condiciones y preguntas frecuentes al día.',
       'Una persona que mire la bandeja y tome las conversaciones marcadas.',
       'Si querés que busque pedidos: qué sistema usás y qué dato puede leer.',

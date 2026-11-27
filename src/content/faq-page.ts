@@ -38,15 +38,15 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Atende usa la API oficial de Meta o un QR?',
-        a: 'Para vincular tu número desde el panel, escaneás un QR o escribís un código en tu mismo teléfono, desde Dispositivos vinculados. Si tu negocio necesita la API oficial de Meta, pedí una demo para revisar con el equipo el alta y las condiciones de esa ruta.',
+        a: 'Para vincular tu número desde el panel, escaneás un QR desde Dispositivos vinculados. Si tu negocio necesita la API oficial de Meta, pedí una demo para revisar con el equipo el alta y las condiciones de esa ruta.',
       },
       {
         q: '¿Qué pasos hay que seguir para empezar?',
-        a: 'Creás tu espacio, le contás qué hace tu negocio y probás el asistente gratis en el chat de prueba. Cuando te convence, elegís un plan y vinculás tu WhatsApp con un QR o con un código en tu mismo teléfono.',
+        a: 'Creás tu espacio, le contás qué hace tu negocio y probás el asistente gratis en el chat de prueba. Cuando te convence, elegís un plan y vinculás tu WhatsApp con un QR.',
       },
       {
         q: '¿Qué necesito para vincular mi número?',
-        a: 'El teléfono del negocio y un plan elegido. Con QR, abrís el código en otra pantalla y lo escaneás desde Dispositivos vinculados. Con un código, alcanza con el mismo teléfono: lo pedís en la pantalla WhatsApp del panel y lo escribís en WhatsApp.',
+        a: 'El teléfono del negocio y un plan elegido. El QR lo abrís en otra pantalla (una compu o una tablet) y lo escaneás con el teléfono desde Dispositivos vinculados.',
       },
       {
         q: '¿Apenas conecto ya les responde a mis clientes?',
@@ -127,7 +127,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: '¿Se puede usar desde el celular?',
-        a: 'Sí. La bandeja funciona en el celu: leés, respondés y asignás desde el navegador. No hay una app nativa. Para vincular el número desde el celu, elegí la opción con código: no hace falta otra pantalla.',
+        a: 'Sí. La bandeja funciona en el celu: leés, respondés y asignás desde el navegador. No hay una app nativa. Para vincular el número necesitás otra pantalla donde ver el QR.',
       },
     ],
   },

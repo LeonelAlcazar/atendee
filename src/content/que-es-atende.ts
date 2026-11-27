@@ -29,7 +29,7 @@ export const facts: { label: string; text: string }[] = [
   { label: 'Dónde se hace', text: 'Córdoba, Argentina.' },
   {
     label: 'Cómo se conecta',
-    text: 'Desde el panel, con un QR o con un código en tu mismo teléfono. Si necesitás la API oficial de Meta, consultá el alta en la demo.',
+    text: 'Desde el panel, con un QR que abrís en otra pantalla. Si necesitás la API oficial de Meta, consultá el alta en la demo.',
   },
   { label: 'Qué recibe', text: 'Textos, notas de voz, fotos, videos, documentos y stickers de chats individuales.' },
   {

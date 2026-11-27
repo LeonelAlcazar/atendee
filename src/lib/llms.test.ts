@@ -52,7 +52,7 @@ describe('llms.txt', () => {
   it('publishes the full status table and the real limits', () => {
     for (const row of actionStatus)
       expect(text).toContain(`${row.action}: ${row.label}.`);
-    expect(text).toContain('con QR o con un código en su mismo teléfono');
+    expect(text).toContain('con un QR que abre en otra pantalla');
     expect(text).toContain('chat de prueba');
     expect(text).not.toMatch(/se ven en la app|créditos de bienvenida/);
     expect(text).toContain('la transcripción disponible');

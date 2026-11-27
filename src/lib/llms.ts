@@ -41,7 +41,7 @@ export function createLlmsTxt(posts: BlogPost[]) {
     `Estado de hoy:`,
     actionStatus.map((row) => `- ${row.action}: ${row.label}.`).join('\n'),
     `Demo real: para una concesionaria de motos consulta stock y precios, calcula financiación y registra al interesado en Google Sheets. Es una demo, no un cliente.`,
-    `Conexión: el negocio vincula el número que ya usa desde el panel, con QR o con un código en su mismo teléfono. El alta por la API oficial de Meta se consulta en la demo.`,
+    `Conexión: el negocio vincula el número que ya usa desde el panel, con un QR que abre en otra pantalla. El alta por la API oficial de Meta se consulta en la demo.`,
     [
       `Límites:`,
       `- Responde mensajes de texto, a cualquier hora, mientras el servicio y el WhatsApp del negocio estén conectados. La bandeja recibe fotos, videos, documentos, stickers y notas de voz de chats individuales. Con la IA activa, el asistente puede responder a partir de la transcripción disponible del audio. Para interpretar imágenes y documentos interviene el equipo.`,
